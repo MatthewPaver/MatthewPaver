@@ -1,5 +1,5 @@
 ############################################################################
-### Written by Gaojie Jin and updated by Xiaowei Huang, 2021
+### 
 ###
 ### For a 2-nd year undergraduate student competition on 
 ### the robustness of deep neural networks, where a student 
