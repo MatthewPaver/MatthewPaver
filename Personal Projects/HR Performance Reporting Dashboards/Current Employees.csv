@@ -1,0 +1,291 @@
+﻿BusinessEntityID,Title,FirstName,MiddleName,LastName,JobTitle,Department,Gender,YearsEmployed,Age
+1,,Ken,J,Sánchez,Chief Executive Officer,Executive,M,5,45
+2,,Terri,Lee,Duffy,Vice President of Engineering,Engineering,F,6,43
+3,,Roberto,,Tamburello,Engineering Manager,Engineering,M,7,40
+4,,Rob,,Walters,Senior Tool Designer,Tool Design,M,7,40
+5,Ms.,Gail,A,Erickson,Design Engineer,Engineering,F,6,62
+6,Mr.,Jossef,H,Goldberg,Design Engineer,Engineering,M,6,55
+7,,Dylan,A,Miller,Research and Development Manager,Research and Development,M,5,27
+8,,Diane,L,Margheim,Research and Development Engineer,Research and Development,F,6,28
+9,,Gigi,N,Matthew,Research and Development Engineer,Research and Development,F,5,35
+10,,Michael,,Raheem,Research and Development Manager,Research and Development,M,5,30
+11,,Ovidiu,V,Cracium,Senior Tool Designer,Tool Design,M,4,36
+12,,Thierry,B,D'Hers,Tool Designer,Tool Design,M,7,55
+13,Ms.,Janice,M,Galvin,Tool Designer,Tool Design,F,4,25
+14,,Michael,I,Sullivan,Senior Design Engineer,Engineering,M,4,35
+15,,Sharon,B,Salavaria,Design Engineer,Engineering,F,3,53
+16,,David,M,Bradley,Marketing Manager,Marketing,M,7,39
+17,,Kevin,F,Brown,Marketing Assistant,Marketing,M,7,27
+18,,John,L,Wood,Marketing Specialist,Marketing,M,3,36
+19,,Mary,A,Dempsey,Marketing Assistant,Marketing,F,3,36
+20,,Wanida,M,Benshoof,Marketing Assistant,Marketing,F,3,39
+21,,Terry,J,Eminhizer,Marketing Specialist,Marketing,M,5,28
+22,,Sariya,E,Harnpadoungsataya,Marketing Specialist,Marketing,M,6,27
+23,,Mary,E,Gibson,Marketing Specialist,Marketing,F,5,52
+24,Ms.,Jill,A,Williams,Marketing Specialist,Marketing,F,5,35
+25,,James,R,Hamilton,Vice President of Production,Production,M,5,31
+26,,Peter,J,Krebs,Production Control Manager,Production Control,M,6,32
+27,,Jo,A,Brown,Production Supervisor - WC60,Production,F,6,58
+28,,Guy,R,Gilbert,Production Technician - WC60,Production,M,8,26
+29,,Mark,K,McArthur,Production Technician - WC60,Production,M,5,35
+30,,Britta,L,Simon,Production Technician - WC60,Production,F,5,25
+31,,Margie,W,Shoop,Production Technician - WC60,Production,F,5,28
+32,,Rebecca,A,Laszlo,Production Technician - WC60,Production,F,6,37
+33,,Annik,O,Stahl,Production Technician - WC60,Production,M,6,38
+34,,Suchitra,O,Mohan,Production Technician - WC60,Production,F,5,27
+35,,Brandon,G,Heidepriem,Production Technician - WC60,Production,M,5,37
+36,,Jose,R,Lugo,Production Technician - WC60,Production,M,5,30
+37,,Chris,O,Okelberry,Production Technician - WC60,Production,M,5,28
+38,,Kim,B,Abercrombie,Production Technician - WC60,Production,F,4,48
+39,,Ed,R,Dudenhoefer,Production Technician - WC60,Production,M,4,43
+40,,JoLynn,M,Dobney,Production Supervisor - WC60,Production,F,7,58
+41,,Bryan,,Baker,Production Technician - WC60,Production,M,5,41
+42,,James,D,Kramer,Production Technician - WC60,Production,M,6,30
+43,,Nancy,A,Anderson,Production Technician - WC60,Production,F,5,26
+44,,Simon,D,Rapier,Production Technician - WC60,Production,M,6,24
+45,,Thomas,R,Michaels,Production Technician - WC60,Production,M,5,28
+46,,Eugene,O,Kogan,Production Technician - WC60,Production,M,5,38
+47,,Andrew,R,Hill,Production Supervisor - WC10,Production,M,5,26
+48,,Ruth,Ann,Ellerbrock,Production Technician - WC10,Production,F,6,58
+49,,Barry,K,Johnson,Production Technician - WC10,Production,M,6,58
+50,,Sidney,M,Higa,Production Technician - WC10,Production,M,6,58
+51,,Jeffrey,L,Ford,Production Technician - WC10,Production,M,6,58
+52,,Doris,M,Hartwig,Production Technician - WC10,Production,F,6,58
+53,,Diane,R,Glimp,Production Technician - WC10,Production,F,6,58
+54,,Bonnie,N,Kearney,Production Technician - WC10,Production,F,4,28
+55,,Taylor,R,Maxwell,Production Supervisor - WC50,Production,M,6,58
+56,,Denise,H,Smith,Production Technician - WC50,Production,F,5,26
+57,,Frank,T,Miller,Production Technician - WC50,Production,M,5,43
+58,,Kendall,C,Keil,Production Technician - WC50,Production,M,6,28
+59,,Bob,N,Hohman,Production Technician - WC50,Production,M,6,35
+60,,Pete,C,Male,Production Technician - WC50,Production,M,5,37
+61,,Diane,H,Tibbott,Production Technician - WC50,Production,F,5,25
+62,,John,T,Campbell,Production Supervisor - WC60,Production,M,6,58
+63,,Maciej,W,Dusza,Production Technician - WC60,Production,M,4,59
+64,,Michael,J,Zwilling,Production Technician - WC60,Production,M,4,41
+65,,Randy,T,Reeves,Production Technician - WC60,Production,M,4,44
+66,,Karan,R,Khanna,Production Technician - WC60,Production,M,5,44
+67,,Jay,G,Adams,Production Technician - WC60,Production,M,5,38
+68,,Charles,B,Fitzgerald,Production Technician - WC60,Production,M,5,43
+69,,Steve,F,Masters,Production Technician - WC60,Production,M,5,23
+70,,David,J,Ortiz,Production Technician - WC60,Production,M,6,30
+71,,Michael,Sean,Ray,Production Supervisor - WC30,Production,M,5,25
+72,,Steven,T,Selikoff,Production Technician - WC30,Production,M,6,37
+73,,Carole,M,Poland,Production Technician - WC30,Production,F,6,31
+74,,Bjorn,M,Rettig,Production Technician - WC30,Production,M,5,25
+75,,Michiko,F,Osada,Production Technician - WC30,Production,M,5,32
+76,,Carol,M,Philips,Production Technician - WC30,Production,F,5,26
+77,,Merav,A,Netz,Production Technician - WC30,Production,F,5,31
+78,,Reuben,H,D'sa,Production Supervisor - WC40,Production,M,6,27
+79,,Eric,L,Brown,Production Technician - WC40,Production,M,4,48
+80,,Sandeep,P,Kaliyath,Production Technician - WC40,Production,M,4,44
+81,,Mihail,U,Frintu,Production Technician - WC40,Production,M,5,43
+82,,Jack,T,Creasey,Production Technician - WC40,Production,M,4,41
+83,,Patrick,M,Cook,Production Technician - WC40,Production,M,4,41
+84,,Frank,R,Martinez,Production Technician - WC40,Production,M,4,62
+85,,Brian,Richard,Goldstein,Production Technician - WC40,Production,M,5,44
+86,,Ryan,L,Cornelsen,Production Technician - WC40,Production,M,5,42
+87,,Cristian,K,Petculescu,Production Supervisor - WC10,Production,M,6,30
+88,,Betsy,A,Stadick,Production Technician - WC10,Production,F,5,48
+89,,Patrick,C,Wedge,Production Technician - WC10,Production,M,4,28
+90,,Danielle,C,Tiedt,Production Technician - WC10,Production,F,4,28
+91,,Kimberly,B,Zimmerman,Production Technician - WC10,Production,F,4,28
+92,,Tom,M,Vande Velde,Production Technician - WC10,Production,M,4,28
+93,,Kok-Ho,T,Loh,Production Supervisor - WC50,Production,M,6,34
+94,,Russell,,Hunter,Production Technician - WC50,Production,M,6,42
+95,,Jim,H,Scardelis,Production Technician - WC50,Production,M,6,28
+96,,Elizabeth,I,Keyser,Production Technician - WC50,Production,F,5,24
+97,,Mandar,H,Samant,Production Technician - WC50,Production,M,5,28
+98,,Sameer,A,Tejani,Production Technician - WC50,Production,M,5,36
+99,,Nuan,,Yu,Production Technician - WC50,Production,M,5,35
+100,,Lolan,B,Song,Production Technician - WC50,Production,M,5,41
+101,,Houman,N,Pournasseh,Production Technician - WC50,Production,M,5,43
+102,,Zheng,W,Mu,Production Supervisor - WC10,Production,M,6,31
+103,,Ebru,N,Ersan,Production Technician - WC10,Production,M,5,28
+104,,Mary,R,Baker,Production Technician - WC10,Production,F,5,28
+105,,Kevin,M,Homer,Production Technician - WC10,Production,M,5,28
+106,,John,T,Kane,Production Technician - WC10,Production,M,4,28
+107,,Christopher,E,Hill,Production Technician - WC10,Production,M,4,28
+108,,Jinghao,K,Liu,Production Supervisor - WC50,Production,M,6,25
+109,,Alice,O,Ciccu,Production Technician - WC50,Production,F,6,36
+110,,Jun,T,Cao,Production Technician - WC50,Production,M,6,35
+111,,Suroor,R,Fatima,Production Technician - WC50,Production,M,6,36
+112,,John,P,Evans,Production Technician - WC50,Production,M,5,36
+113,,Linda,K,Moschell,Production Technician - WC50,Production,F,6,27
+114,,Mindaugas,J,Krapauskas,Production Technician - WC50,Production,M,5,36
+115,,Angela,W,Barbariol,Production Technician - WC50,Production,F,5,23
+116,,Michael,W,Patten,Production Technician - WC50,Production,M,5,40
+117,,Chad,W,Niswonger,Production Technician - WC50,Production,M,5,24
+118,,Don,L,Hall,Production Technician - WC50,Production,M,5,43
+119,,Michael,T,Entin,Production Technician - WC50,Production,M,5,25
+120,,Kitti,H,Lertpiriyasuwat,Production Technician - WC50,Production,F,5,27
+121,,Pilar,G,Ackerman,Shipping and Receiving Supervisor,Shipping and Receiving,M,5,42
+122,,Susan,W,Eaton,Stocker,Shipping and Receiving,F,6,36
+123,,Vamsi,N,Kuppa,Shipping and Receiving Clerk,Shipping and Receiving,M,6,37
+124,,Kim,T,Ralls,Stocker,Shipping and Receiving,F,6,30
+125,,Matthias,T,Berndt,Shipping and Receiving Clerk,Shipping and Receiving,M,5,41
+126,,Jimmy,T,Bischoff,Stocker,Shipping and Receiving,M,5,29
+127,,David,P,Hamilton,Production Supervisor - WC40,Production,M,5,31
+128,,Paul,B,Komosinski,Production Technician - WC40,Production,M,6,34
+129,,Gary,W,Yukish,Production Technician - WC40,Production,M,6,26
+130,,Rob,T,Caron,Production Technician - WC40,Production,M,5,41
+131,,Baris,F,Cetinok,Production Technician - WC40,Production,M,5,24
+132,,Nicole,B,Holliday,Production Technician - WC40,Production,F,5,28
+133,,Michael,L,Rothkugel,Production Technician - WC40,Production,M,5,23
+134,,Eric,,Gubbels,Production Supervisor - WC20,Production,M,5,29
+135,,Ivo,William,Salmre,Production Technician - WC20,Production,M,6,32
+136,,Sylvester,A,Valdez,Production Technician - WC20,Production,M,5,44
+137,,Anibal,T,Sousa,Production Technician - WC20,Production,F,5,40
+138,,Samantha,H,Smith,Production Technician - WC20,Production,F,5,27
+139,Mr.,Hung-Fu,T,Ting,Production Technician - WC20,Production,M,4,43
+140,,Prasanna,E,Samarawickrama,Production Technician - WC20,Production,M,4,61
+141,,Min,G,Su,Production Technician - WC20,Production,M,4,40
+142,,Olinda,C,Turner,Production Technician - WC20,Production,F,4,44
+143,,Krishna,,Sunkammurali,Production Technician - WC20,Production,M,4,43
+144,,Paul,R,Singh,Production Technician - WC20,Production,M,5,24
+145,,Cynthia,S,Randall,Production Supervisor - WC30,Production,F,5,33
+146,,Jian Shuo,,Wang,Production Technician - WC30,Production,M,6,25
+147,,Sandra,,Reátegui Alayo,Production Technician - WC30,Production,F,6,39
+148,,Jason,M,Watters,Production Technician - WC30,Production,M,5,26
+149,,Andy,M,Ruth,Production Technician - WC30,Production,M,5,31
+150,,Michael,T,Vanderhyde,Production Technician - WC30,Production,M,5,32
+151,,Rostislav,E,Shabalin,Production Technician - WC30,Production,M,5,37
+152,,Yuhong,L,Li,Production Supervisor - WC20,Production,M,5,37
+153,,Hanying,P,Feng,Production Technician - WC20,Production,M,6,40
+154,,Raymond,K,Sam,Production Technician - WC20,Production,M,6,47
+155,,Fadi,K,Fakhouri,Production Technician - WC20,Production,M,5,25
+156,,Lane,M,Sacksteder,Production Technician - WC20,Production,M,5,40
+157,,Linda,A,Randall,Production Technician - WC20,Production,F,5,37
+158,,Shelley,N,Dyck,Production Technician - WC20,Production,F,5,28
+159,,Terrence,W,Earls,Production Technician - WC20,Production,M,5,30
+160,,Jeff,V,Hay,Production Supervisor - WC45,Production,M,5,37
+161,,Kirk,J,Koenigsbauer,Production Technician - WC45,Production,M,6,29
+162,,Laura,C,Steele,Production Technician - WC45,Production,F,5,34
+163,,Alex,M,Nayberg,Production Technician - WC45,Production,M,5,24
+164,,Andrew,M,Cencini,Production Technician - WC45,Production,M,5,26
+165,,Chris,T,Preston,Production Technician - WC45,Production,M,5,26
+166,,Jack,S,Richins,Production Supervisor - WC30,Production,M,5,31
+167,,David,N,Johnson,Production Technician - WC30,Production,M,6,35
+168,,Garrett,R,Young,Production Technician - WC30,Production,M,6,30
+169,,Susan,A,Metters,Production Technician - WC30,Production,F,6,31
+170,,George,Z,Li,Production Technician - WC30,Production,M,6,37
+171,,David,A,Yalovsky,Production Technician - WC30,Production,M,5,33
+172,,Marc,J,Ingle,Production Technician - WC30,Production,M,5,28
+173,,Eugene,R,Zabokritski,Production Technician - WC30,Production,M,5,27
+174,,Benjamin,R,Martin,Production Technician - WC30,Production,M,5,28
+175,,Reed,T,Koch,Production Technician - WC30,Production,M,5,25
+176,,David,Oliver,Lawrence,Production Technician - WC30,Production,M,5,29
+177,,Russell,M,King,Production Technician - WC30,Production,M,5,32
+178,,John,N,Frum,Production Technician - WC30,Production,M,5,32
+179,,Jan,S,Miksovsky,Production Technician - WC30,Production,M,5,40
+180,,Katie,L,McAskill-White,Production Supervisor - WC20,Production,F,5,30
+181,,Michael,T,Hines,Production Technician - WC20,Production,M,6,30
+182,,Nitin,S,Mirchandani,Production Technician - WC20,Production,M,6,28
+183,,Barbara,S,Decker,Production Technician - WC20,Production,F,5,35
+184,,John,Y,Chen,Production Technician - WC20,Production,M,5,28
+185,,Stefen,A,Hesse,Production Technician - WC20,Production,M,5,39
+186,,Shane,S,Kim,Production Supervisor - WC45,Production,M,5,24
+187,,Yvonne,S,McKay,Production Technician - WC45,Production,F,6,25
+188,,Douglas,B,Hite,Production Technician - WC45,Production,M,6,29
+189,,Janeth,M,Esteves,Production Technician - WC45,Production,F,5,42
+190,,Robert,J,Rounthwaite,Production Technician - WC45,Production,M,5,29
+191,,Lionel,C,Penuchot,Production Technician - WC45,Production,M,5,26
+192,,Brenda,M,Diaz,Production Supervisor - WC40,Production,F,5,31
+193,,Alejandro,E,McGuel,Production Technician - WC40,Production,M,6,26
+194,,Fred,T,Northup,Production Technician - WC40,Production,M,6,25
+195,,Kevin,H,Liu,Production Technician - WC40,Production,M,6,29
+196,,Shammi,G,Mohamed,Production Technician - WC40,Production,M,6,34
+197,,Rajesh,M,Patel,Production Technician - WC40,Production,M,6,37
+198,,Lorraine,O,Nay,Production Technician - WC40,Production,F,5,26
+199,,Paula,R,Nartker,Production Technician - WC40,Production,F,5,27
+200,,Frank,T,Lee,Production Technician - WC40,Production,M,5,27
+201,,Brian,T,Lloyd,Production Technician - WC40,Production,M,5,37
+202,,Tawana,G,Nusbaum,Production Technician - WC40,Production,M,5,25
+203,,Ken,L,Myer,Production Technician - WC40,Production,M,5,33
+204,,Gabe,B,Mares,Production Technician - WC40,Production,M,5,26
+205,,Lori,A,Kane,Production Supervisor - WC45,Production,F,5,34
+206,,Stuart,V,Munson,Production Technician - WC45,Production,M,6,52
+207,,Greg,F,Alderson,Production Technician - WC45,Production,M,6,44
+208,,Scott,R,Gode,Production Technician - WC45,Production,M,5,27
+209,,Kathie,E,Flood,Production Technician - WC45,Production,F,5,24
+210,,Belinda,M,Newman,Production Technician - WC45,Production,F,5,45
+211,,Hazem,E,Abolrous,Quality Assurance Manager,Quality Assurance,M,5,37
+212,,Peng,J,Wu,Quality Assurance Supervisor,Quality Assurance,M,6,38
+213,,Sootha,T,Charncherngkha,Quality Assurance Technician,Quality Assurance,M,4,48
+214,,Andreas,T,Berglund,Quality Assurance Technician,Quality Assurance,M,5,25
+215,,Mark,L,Harrington,Quality Assurance Technician,Quality Assurance,M,5,28
+216,,Sean,P,Alexander,Quality Assurance Technician,Quality Assurance,M,6,38
+217,,Zainal,T,Arifin,Document Control Manager,Document Control,M,5,38
+218,,Tengiz,N,Kharatishvili,Control Specialist,Document Control,M,6,24
+219,,Sean,N,Chai,Document Control Assistant,Document Control,M,5,27
+220,,Karen,R,Berge,Document Control Assistant,Document Control,F,5,39
+221,,Chris,K,Norred,Control Specialist,Document Control,M,5,27
+222,,A. Scott,,Wright,Master Scheduler,Production Control,M,6,46
+223,,Sairaj,L,Uddin,Scheduling Assistant,Production Control,M,5,27
+224,,William,S,Vong,Scheduling Assistant,Production Control,M,5,33
+225,,Alan,J,Brewer,Scheduling Assistant,Production Control,M,5,30
+226,,Brian,P,LaMee,Scheduling Assistant,Production Control,M,5,30
+227,,Gary,E.,Altman,Facilities Manager,Facilities and Maintenance,M,5,43
+228,,Christian,E,Kleinerman,Maintenance Supervisor,Facilities and Maintenance,M,6,38
+229,,Lori,K,Penor,Janitor,Facilities and Maintenance,F,4,44
+230,,Stuart,J,Macrae,Janitor,Facilities and Maintenance,M,4,43
+231,,Jo,L,Berry,Janitor,Facilities and Maintenance,F,4,60
+232,,Pat,H,Coleman,Janitor,Facilities and Maintenance,M,4,44
+233,,Magnus,E,Hedlund,Facilities Administrative Assistant,Facilities and Maintenance,M,5,43
+234,,Laura,F,Norman,Chief Financial Officer,Executive,F,5,38
+235,,Paula,M,Barreto de Mattos,Human Resources Manager,Human Resources,F,6,38
+236,,Grant,N,Culbertson,Human Resources Administrative Assistant,Human Resources,M,5,38
+237,,Hao,O,Chen,Human Resources Administrative Assistant,Human Resources,M,5,37
+238,,Vidur,X,Luthra,Recruiter,Human Resources,M,5,30
+239,,Mindy,C,Martin,Benefits Specialist,Human Resources,F,6,30
+240,,Willis,T,Johnson,Recruiter,Human Resources,M,6,36
+241,,David,J,Liu,Accounts Manager,Finance,M,5,31
+242,,Deborah,E,Poe,Accounts Receivable Specialist,Finance,F,6,38
+243,,Candy,L,Spoon,Accounts Receivable Specialist,Finance,F,5,38
+244,,Bryan,A,Walton,Accounts Receivable Specialist,Finance,M,5,30
+245,,Barbara,C,Moreland,Accountant,Finance,F,5,38
+246,,Dragan,K,Tomic,Accounts Payable Specialist,Finance,M,5,37
+247,,Janet,L,Sheperdigian,Accounts Payable Specialist,Finance,F,5,35
+248,,Mike,K,Seamans,Accountant,Finance,M,5,35
+249,,Wendy,Beth,Kahn,Finance Manager,Finance,F,6,30
+250,,Sheela,H,Word,Purchasing Manager,Purchasing,F,3,36
+251,,Mikael,Q,Sandberg,Buyer,Purchasing,M,5,30
+252,,Arvind,B,Rao,Buyer,Purchasing,M,5,40
+253,,Linda,P,Meisner,Buyer,Purchasing,F,5,44
+254,,Fukiko,J,Ogisu,Buyer,Purchasing,M,4,44
+255,,Gordon,L,Hee,Buyer,Purchasing,M,4,48
+256,,Frank,S,Pellow,Buyer,Purchasing,M,4,62
+257,,Eric,S,Kurjan,Buyer,Purchasing,M,4,42
+258,,Erin,M,Hagens,Buyer,Purchasing,F,4,43
+259,,Ben,T,Miller,Buyer,Purchasing,M,4,41
+260,,Annette,L,Hill,Purchasing Assistant,Purchasing,F,4,36
+261,,Reinout,N,Hillmann,Purchasing Assistant,Purchasing,M,4,36
+262,,David,M,Barber,Assistant to the Chief Financial Officer,Finance,M,5,50
+263,,Jean,E,Trenary,Information Services Manager,Information Services,F,6,39
+264,,Stephanie,A,Conroy,Network Manager,Information Services,F,5,30
+265,,Ashvini,R,Sharma,Network Administrator,Information Services,M,6,37
+266,,Peter,I,Connelly,Network Administrator,Information Services,M,5,34
+267,,Karen,A,Berg,Application Specialist,Information Services,F,5,36
+268,,Ramesh,V,Meyyappan,Application Specialist,Information Services,M,5,26
+269,,Dan,K,Bacon,Application Specialist,Information Services,M,5,27
+270,,François,P,Ajenstat,Database Administrator,Information Services,M,5,39
+271,,Dan,B,Wilson,Database Administrator,Information Services,M,5,38
+272,,Janaina,Barreiro Gambaro,Bueno,Application Specialist,Information Services,F,6,29
+273,Mr.,Brian,S,Welcker,Vice President of Sales,Sales,M,3,37
+274,,Stephen,Y,Jiang,North American Sales Manager,Sales,M,3,63
+275,,Michael,G,Blythe,Sales Representative,Sales,M,3,46
+276,,Linda,C,Mitchell,Sales Representative,Sales,F,3,34
+277,,Jillian,,Carson,Sales Representative,Sales,F,3,52
+278,,Garrett,R,Vargas,Sales Representative,Sales,M,3,39
+279,,Tsvi,Michael,Reiter,Sales Representative,Sales,M,3,40
+280,,Pamela,O,Ansman-Wolfe,Sales Representative,Sales,F,3,40
+281,,Shu,K,Ito,Sales Representative,Sales,M,3,46
+282,,José,Edvaldo,Saraiva,Sales Representative,Sales,M,3,51
+283,,David,R,Campbell,Sales Representative,Sales,M,3,40
+284,Mr.,Tete,A,Mensa-Annan,Sales Representative,Sales,M,2,36
+285,Mr.,Syed,E,Abbas,Pacific Sales Manager,Sales,M,1,39
+286,,Lynn,N,Tsoflias,Sales Representative,Sales,F,1,37
+287,,Amy,E,Alberts,European Sales Manager,Sales,F,2,57
+288,,Rachel,B,Valdez,Sales Representative,Sales,F,1,39
+289,,Jae,B,Pak,Sales Representative,Sales,F,2,46
+290,,Ranjit,R,Varkey Chudukatil,Sales Representative,Sales,M,2,39

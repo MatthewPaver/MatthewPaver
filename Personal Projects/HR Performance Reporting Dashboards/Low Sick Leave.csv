@@ -1,0 +1,291 @@
+﻿BusinessEntityID,JobTitle,Gender,AverageCalendarYearSickLeave
+1,Chief Executive Officer,M,13
+2,Vice President of Engineering,F,3
+3,Engineering Manager,M,3
+4,Senior Tool Designer,M,11
+5,Design Engineer,F,3
+6,Design Engineer,M,3
+7,Research and Development Manager,M,10
+8,Research and Development Engineer,F,8
+9,Research and Development Engineer,F,10
+10,Research and Development Manager,M,12
+11,Senior Tool Designer,M,5
+12,Tool Designer,M,3
+13,Tool Designer,F,6
+14,Senior Design Engineer,M,5
+15,Design Engineer,F,7
+16,Marketing Manager,M,5
+17,Marketing Assistant,M,5
+18,Marketing Specialist,M,14
+19,Marketing Assistant,F,13
+20,Marketing Assistant,F,13
+21,Marketing Specialist,M,8
+22,Marketing Specialist,M,7
+23,Marketing Specialist,F,8
+24,Marketing Specialist,F,8
+25,Vice President of Production,M,10
+26,Production Control Manager,M,6
+27,Production Supervisor - WC60,F,10
+28,Production Technician - WC60,M,3
+29,Production Technician - WC60,M,5
+30,Production Technician - WC60,F,5
+31,Production Technician - WC60,F,5
+32,Production Technician - WC60,F,5
+33,Production Technician - WC60,M,4
+34,Production Technician - WC60,F,5
+35,Production Technician - WC60,M,6
+36,Production Technician - WC60,M,6
+37,Production Technician - WC60,M,5
+38,Production Technician - WC60,F,8
+39,Production Technician - WC60,M,8
+40,Production Supervisor - WC60,F,8
+41,Production Technician - WC60,M,7
+42,Production Technician - WC60,M,6
+43,Production Technician - WC60,F,7
+44,Production Technician - WC60,M,6
+45,Production Technician - WC60,M,7
+46,Production Technician - WC60,M,7
+47,Production Supervisor - WC10,M,10
+48,Production Technician - WC10,F,10
+49,Production Technician - WC10,M,10
+50,Production Technician - WC10,M,10
+51,Production Technician - WC10,M,10
+52,Production Technician - WC10,F,10
+53,Production Technician - WC10,F,10
+54,Production Technician - WC10,F,16
+55,Production Supervisor - WC50,M,9
+56,Production Technician - WC50,F,4
+57,Production Technician - WC50,M,5
+58,Production Technician - WC50,M,4
+59,Production Technician - WC50,M,4
+60,Production Technician - WC50,M,5
+61,Production Technician - WC50,F,4
+62,Production Supervisor - WC60,M,10
+63,Production Technician - WC60,M,8
+64,Production Technician - WC60,M,8
+65,Production Technician - WC60,M,8
+66,Production Technician - WC60,M,6
+67,Production Technician - WC60,M,7
+68,Production Technician - WC60,M,6
+69,Production Technician - WC60,M,7
+70,Production Technician - WC60,M,6
+71,Production Supervisor - WC30,M,11
+72,Production Technician - WC30,M,6
+73,Production Technician - WC30,F,6
+74,Production Technician - WC30,M,8
+75,Production Technician - WC30,M,8
+76,Production Technician - WC30,F,8
+77,Production Technician - WC30,F,8
+78,Production Supervisor - WC40,M,9
+79,Production Technician - WC40,M,12
+80,Production Technician - WC40,M,13
+81,Production Technician - WC40,M,10
+82,Production Technician - WC40,M,12
+83,Production Technician - WC40,M,12
+84,Production Technician - WC40,M,13
+85,Production Technician - WC40,M,10
+86,Production Technician - WC40,M,9
+87,Production Supervisor - WC10,M,8
+88,Production Technician - WC10,F,13
+89,Production Technician - WC10,M,17
+90,Production Technician - WC10,F,17
+91,Production Technician - WC10,F,16
+92,Production Technician - WC10,M,17
+93,Production Supervisor - WC50,M,9
+94,Production Technician - WC50,M,3
+95,Production Technician - WC50,M,3
+96,Production Technician - WC50,F,4
+97,Production Technician - WC50,M,4
+98,Production Technician - WC50,M,4
+99,Production Technician - WC50,M,4
+100,Production Technician - WC50,M,4
+101,Production Technician - WC50,M,4
+102,Production Supervisor - WC10,M,8
+103,Production Technician - WC10,M,13
+104,Production Technician - WC10,F,13
+105,Production Technician - WC10,M,13
+106,Production Technician - WC10,M,16
+107,Production Technician - WC10,M,16
+108,Production Supervisor - WC50,M,9
+109,Production Technician - WC50,F,11
+110,Production Technician - WC50,M,10
+111,Production Technician - WC50,M,11
+112,Production Technician - WC50,M,13
+113,Production Technician - WC50,F,11
+114,Production Technician - WC50,M,13
+115,Production Technician - WC50,F,13
+116,Production Technician - WC50,M,13
+117,Production Technician - WC50,M,13
+118,Production Technician - WC50,M,12
+119,Production Technician - WC50,M,13
+120,Production Technician - WC50,F,12
+121,Shipping and Receiving Supervisor,M,13
+122,Stocker,F,11
+123,Shipping and Receiving Clerk,M,11
+124,Stocker,F,11
+125,Shipping and Receiving Clerk,M,13
+126,Stocker,M,13
+127,Production Supervisor - WC40,M,11
+128,Production Technician - WC40,M,9
+129,Production Technician - WC40,M,9
+130,Production Technician - WC40,M,11
+131,Production Technician - WC40,M,11
+132,Production Technician - WC40,F,10
+133,Production Technician - WC40,M,11
+134,Production Supervisor - WC20,M,8
+135,Production Technician - WC20,M,4
+136,Production Technician - WC20,M,4
+137,Production Technician - WC20,F,4
+138,Production Technician - WC20,F,4
+139,Production Technician - WC20,M,5
+140,Production Technician - WC20,M,5
+141,Production Technician - WC20,M,5
+142,Production Technician - WC20,F,5
+143,Production Technician - WC20,M,5
+144,Production Technician - WC20,M,4
+145,Production Supervisor - WC30,F,10
+146,Production Technician - WC30,M,6
+147,Production Technician - WC30,F,6
+148,Production Technician - WC30,M,7
+149,Production Technician - WC30,M,7
+150,Production Technician - WC30,M,7
+151,Production Technician - WC30,M,8
+152,Production Supervisor - WC20,M,8
+153,Production Technician - WC20,M,4
+154,Production Technician - WC20,M,4
+155,Production Technician - WC20,M,5
+156,Production Technician - WC20,M,5
+157,Production Technician - WC20,F,5
+158,Production Technician - WC20,F,5
+159,Production Technician - WC20,M,5
+160,Production Supervisor - WC45,M,11
+161,Production Technician - WC45,M,9
+162,Production Technician - WC45,F,11
+163,Production Technician - WC45,M,11
+164,Production Technician - WC45,M,11
+165,Production Technician - WC45,M,11
+166,Production Supervisor - WC30,M,10
+167,Production Technician - WC30,M,5
+168,Production Technician - WC30,M,6
+169,Production Technician - WC30,F,5
+170,Production Technician - WC30,M,5
+171,Production Technician - WC30,M,7
+172,Production Technician - WC30,M,6
+173,Production Technician - WC30,M,7
+174,Production Technician - WC30,M,6
+175,Production Technician - WC30,M,6
+176,Production Technician - WC30,M,6
+177,Production Technician - WC30,M,6
+178,Production Technician - WC30,M,6
+179,Production Technician - WC30,M,7
+180,Production Supervisor - WC20,F,8
+181,Production Technician - WC20,M,5
+182,Production Technician - WC20,M,5
+183,Production Technician - WC20,F,5
+184,Production Technician - WC20,M,5
+185,Production Technician - WC20,M,5
+186,Production Supervisor - WC45,M,11
+187,Production Technician - WC45,F,9
+188,Production Technician - WC45,M,10
+189,Production Technician - WC45,F,12
+190,Production Technician - WC45,M,12
+191,Production Technician - WC45,M,11
+192,Production Supervisor - WC40,F,11
+193,Production Technician - WC40,M,7
+194,Production Technician - WC40,M,7
+195,Production Technician - WC40,M,8
+196,Production Technician - WC40,M,7
+197,Production Technician - WC40,M,7
+198,Production Technician - WC40,F,8
+199,Production Technician - WC40,F,9
+200,Production Technician - WC40,M,9
+201,Production Technician - WC40,M,9
+202,Production Technician - WC40,M,9
+203,Production Technician - WC40,M,9
+204,Production Technician - WC40,M,9
+205,Production Supervisor - WC45,F,11
+206,Production Technician - WC45,M,10
+207,Production Technician - WC45,M,10
+208,Production Technician - WC45,M,12
+209,Production Technician - WC45,F,12
+210,Production Technician - WC45,F,12
+211,Quality Assurance Manager,M,12
+212,Quality Assurance Supervisor,M,10
+213,Quality Assurance Technician,M,15
+214,Quality Assurance Technician,M,12
+215,Quality Assurance Technician,M,12
+216,Quality Assurance Technician,M,10
+217,Document Control Manager,M,11
+218,Control Specialist,M,9
+219,Document Control Assistant,M,11
+220,Document Control Assistant,F,11
+221,Control Specialist,M,11
+222,Master Scheduler,M,7
+223,Scheduling Assistant,M,8
+224,Scheduling Assistant,M,8
+225,Scheduling Assistant,M,8
+226,Scheduling Assistant,M,8
+227,Facilities Manager,M,12
+228,Maintenance Supervisor,M,11
+229,Janitor,F,16
+230,Janitor,M,16
+231,Janitor,F,16
+232,Janitor,M,16
+233,Facilities Administrative Assistant,M,12
+234,Chief Financial Officer,F,4
+235,Human Resources Manager,F,7
+236,Human Resources Administrative Assistant,M,9
+237,Human Resources Administrative Assistant,M,9
+238,Recruiter,M,9
+239,Benefits Specialist,F,7
+240,Recruiter,M,7
+241,Accounts Manager,M,9
+242,Accounts Receivable Specialist,F,8
+243,Accounts Receivable Specialist,F,10
+244,Accounts Receivable Specialist,M,10
+245,Accountant,F,9
+246,Accounts Payable Specialist,M,10
+247,Accounts Payable Specialist,F,10
+248,Accountant,M,9
+249,Finance Manager,F,7
+250,Purchasing Manager,F,14
+251,Buyer,M,9
+252,Buyer,M,10
+253,Buyer,F,9
+254,Buyer,M,12
+255,Buyer,M,11
+256,Buyer,M,12
+257,Buyer,M,11
+258,Buyer,F,11
+259,Buyer,M,11
+260,Purchasing Assistant,F,11
+261,Purchasing Assistant,M,11
+262,Assistant to the Chief Financial Officer,M,9
+263,Information Services Manager,F,8
+264,Network Manager,F,10
+265,Network Administrator,M,9
+266,Network Administrator,M,10
+267,Application Specialist,F,11
+268,Application Specialist,M,11
+269,Application Specialist,M,11
+270,Database Administrator,M,10
+271,Database Administrator,M,10
+272,Application Specialist,F,9
+273,Vice President of Sales,M,8
+274,North American Sales Manager,M,9
+275,Sales Representative,M,13
+276,Sales Representative,F,11
+277,Sales Representative,F,10
+278,Sales Representative,M,12
+279,Sales Representative,M,11
+280,Sales Representative,F,10
+281,Sales Representative,M,11
+282,Sales Representative,M,11
+283,Sales Representative,M,10
+284,Sales Representative,M,19
+285,Pacific Sales Manager,M,30
+286,Sales Representative,F,38
+287,European Sales Manager,F,15
+288,Sales Representative,F,37
+289,Sales Representative,F,19
+290,Sales Representative,M,18
