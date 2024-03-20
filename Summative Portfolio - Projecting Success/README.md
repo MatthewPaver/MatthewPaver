@@ -12,7 +12,7 @@ This repository hosts a collection of files related to HR performance reporting 
 - `Project A HR Performance Reporting Documentation.pdf`: A thorough account of the HR reporting project’s structure, analysis, and actionable insights.
 - `Project 3 Dashboard.PNG`: Snapshot of the dashboard pertaining to Project 3, illustrating project health indicators.
 - `Summative Portfolio.pdf`: A portfolio compiling detailed information on several key projects, including project overviews, challenges, and achievements.
-- `[Project 3 Walkthrough.mp4](https://youtu.be/jrVF1tpDumQ)`: A video guide providing a step-by-step tutorial on the creation and analysis of Project 3's dashboard.
+- [Project 3 Walkthrough.mp4](https://youtu.be/jrVF1tpDumQ): A video guide providing a step-by-step tutorial on the creation and analysis of Project 3's dashboard.
 
 ## Detailed Descriptions
 
