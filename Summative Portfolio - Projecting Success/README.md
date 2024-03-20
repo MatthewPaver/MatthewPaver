@@ -12,7 +12,7 @@ This repository hosts a collection of files related to HR performance reporting 
 - `Project A HR Performance Reporting Documentation.pdf`: A thorough account of the HR reporting project’s structure, analysis, and actionable insights.
 - `Project 3 Dashboard.PNG`: Snapshot of the dashboard pertaining to Project 3, illustrating project health indicators.
 - `Summative Portfolio.pdf`: A portfolio compiling detailed information on several key projects, including project overviews, challenges, and achievements.
-- `Project 3 Walkthrough.mp4`: A video guide providing a step-by-step tutorial on the creation and analysis of Project 3's dashboard.
+- `[Project 3 Walkthrough.mp4](https://youtu.be/jrVF1tpDumQ)`: A video guide providing a step-by-step tutorial on the creation and analysis of Project 3's dashboard.
 
 ## Detailed Descriptions
 
@@ -26,7 +26,7 @@ The CSV files offer raw data which can be analyzed to identify trends, draw corr
 The provided PDF documents serve as a comprehensive reference on the HR performance project, detailing every aspect from planning to execution and future recommendations.
 
 ### Visual and Media Resources
-The PNG image and MP4 video offer visual representations and demonstrations of the dashboards, enhancing understanding of the data and its presentation.
+The PNG image and [Project 3 Walkthrough.mp4](https://youtu.be/jrVF1tpDumQ) offer visual representations and demonstrations of the dashboards, enhancing understanding of the data and its presentation.
 
 ## Getting Started
 1. View the `Summative Portfolio.pdf` for a comprehensive overview of the included projects.
@@ -39,9 +39,7 @@ The PNG image and MP4 video offer visual representations and demonstrations of t
 - **Insight Generation**: Based on the provided data and documentation, draft a hypothetical executive summary outlining potential HR strategies to enhance company performance.
 
 ## Additional Resources
-- For a step-by-step guide on navigating Project 3's dashboard, view `Project 3 Walkthrough.mp4`.
+- For a step-by-step guide on navigating Project 3's dashboard, view [Project 3 Walkthrough.mp4](https://youtu.be/jrVF1tpDumQ)
 - To understand the impact of HR metrics on sales, refer to `TopSalesPerformers.csv` and associated documentation in the `Summative Portfolio.pdf`.
 
 ---
-
-Please note that this README is a draft and may be tailored to better suit the repository's final structure or additional content.
