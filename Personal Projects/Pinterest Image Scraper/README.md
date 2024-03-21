@@ -12,12 +12,12 @@ This Python script is designed to automate the process of scraping and downloadi
 ## Prerequisites
 
 - Python 3.x
-- `pinscrape` module (This seems to be a custom or third-party module, so make sure to provide installation instructions or a link to its source.)
+- `pinscrape` module
 
 ## Setup
 
 1. Ensure Python 3 is installed on your system.
-2. Install the `pinscrape` module. (Include specific installation commands or steps here.)
+2. Install the `pinscrape` module. `pip install pinscrape`
 3. Clone or download this script to your local machine.
 
 ## Usage
