@@ -1,6 +1,6 @@
 # AI-Powered Coding Assistance with Amazon CodeWhisperer
 
-**Date: 22/04/24**
+**Date: 29/04/24**
 
 Amazon has taken a significant leap forward in developer productivity tools with the launch of Amazon CodeWhisperer. This AI-powered tool integrates seamlessly into IDEs, providing real-time code suggestions across over 15 programming languages, including infrastructure as code frameworks like CloudFormation, AWS CDK, and Terraform. Designed to enhance coding efficiency, CodeWhisperer tailors suggestions specifically for AWS services, making it an indispensable tool for developers working in the cloud environment.
 
