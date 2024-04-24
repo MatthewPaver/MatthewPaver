@@ -6,8 +6,8 @@ Welcome to the Weekly Tech News GitHub repository! Here, we publish weekly updat
 ---
 ### April 2024
 #### Globe Engineer introduces "Explorer," 
-a revolutionary search discovery engine that organizes and visually enhances information into a navigable table of contents. Alongside, "Index" offers a dynamic Q&A experience, allowing deep dives into topics with uninterrupted, progressive discussions supported by Markdown rendering. [Read More](https://github.com/MatthewPaver/MatthewPaver/tree/main/Weekly%20Tech%20News/2024/22-04-24)
 ![Explorer Search Discovery](https://github.com/MatthewPaver/MatthewPaver/blob/main/Weekly%20Tech%20News/2024/22-04-24/Explorer%20Search%20Discovery.png)
+A revolutionary search discovery engine that organizes and visually enhances information into a navigable table of contents. Alongside, "Index" offers a dynamic Q&A experience, allowing deep dives into topics with uninterrupted, progressive discussions supported by Markdown rendering. [Read More](https://github.com/MatthewPaver/MatthewPaver/tree/main/Weekly%20Tech%20News/2024/22-04-24)
 
 ---
 
