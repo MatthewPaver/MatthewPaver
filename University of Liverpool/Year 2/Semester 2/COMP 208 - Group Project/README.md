@@ -30,5 +30,5 @@ This README provides a comprehensive overview of the various folders within the 
 Each folder is structured to provide clarity and ease of access to the project's resources. Users are encouraged to explore the `Dataset` folder for data-related scripts and the `Neural Network Code` folder to engage with the model's training and testing scripts. Adjustments to scripts such as `test_model.py` should be made carefully to ensure accurate outputs.
 
 For further details on running specific scripts or setting up the environment, refer to the individual README files within each folder or contact the project maintainers.
-This respository can be found [Here](https://github.com/MatthewPaver/208-Project)
+This respository can be found [here](https://github.com/MatthewPaver/208-Project)
 
