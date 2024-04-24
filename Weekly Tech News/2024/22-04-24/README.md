@@ -8,9 +8,13 @@ In an innovative leap forward in digital information discovery, Globe Engineer h
 
 Hosted at [explorer.globe.engineer](https://explorer.globe.engineer), Explorer uses a sophisticated algorithm to dissect and display information in a user-friendly format. Whether it's for academic research, professional use, or personal curiosity, Explorer ensures that users can quickly locate the precise information they require.
 
+![Explorer Search Discovery](https://github.com/MatthewPaver/MatthewPaver/blob/main/Weekly%20Tech%20News/2024/22-04-24/Explorer%20Search%20Discovery.png)
+
 ## Progressive Learning with Index
 
-In conjunction with Explorer, Globe Engineer has also introduced "Index," a dynamic learning tool that enhances the Q&A experience. Available at [index.globe.engineer](https://index.globe.engineer), Index progressively answers questions while allowing users to ask follow-up questions on parallel topics without losing the thread of the primary discussion. This tool supports Markdown rendering, making it particularly useful for educational purposes, technical documentation, and collaborative projects.
+In conjunction with Explorer, Globe Engineer has also introduced "Index," a dynamic learning tool that enhances the Q&A experience. Available at [index.globe.engineer](https://index.globe.engineer), Index progressively answers questions while allowing users to ask follow-up questions on parallel topics without losing the primary discussion thread. This tool supports Markdown rendering, making it particularly useful for educational purposes, technical documentation, and collaborative projects.
+
+![Explorer Index Learning](https://github.com/MatthewPaver/MatthewPaver/blob/main/Weekly%20Tech%20News/2024/22-04-24/Explorer%20Index%20Learning.png)
 
 ## Experiments and Innovations
 
