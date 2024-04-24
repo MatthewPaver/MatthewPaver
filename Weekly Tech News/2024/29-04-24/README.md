@@ -8,7 +8,7 @@ Amazon has taken a significant leap forward in developer productivity tools with
 
 Hosted at [AWS CodeWhisperer](https://aws.amazon.com/codewhisperer/), this tool leverages advanced machine learning algorithms to deliver contextually relevant code suggestions, optimize interactions with AWS APIs, and ensure that developers can achieve more in less time with fewer errors.
 
-![Amazon CodeWhisperer Interface](XXX)
+![Amazon CodeWhisperer Interface](https://github.com/MatthewPaver/MatthewPaver/blob/main/Weekly%20Tech%20News/2024/29-04-24/codewhisperer.gif)
 
 ## Optimized Code Suggestions
 
