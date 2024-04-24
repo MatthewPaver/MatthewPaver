@@ -4,9 +4,6 @@
 
 This project aims to provide comprehensive HR performance reports for a global utility products company concerned with low performance attributed to high volumes of absences and poor service delivery, leading to an increase in customer complaints. The project leverages Excel 2021 for data analysis and Power BI for dashboard visualizations, focusing on employee performance, sick leave, and sales performance metrics.
 
-![Alt text](https://github.com/MatthewPaver/MatthewPaver/blob/main/Personal%20Projects/HR%20Performance%20Reporting%20Dashboards/HR%20Performance%20Reporting%20Dashboards.pdf)
-
-
 ## Contents
 
 1. **HR Performance Reporting Dashboards.pbix**
@@ -15,12 +12,12 @@ This project aims to provide comprehensive HR performance reports for a global u
 
 2. **High Sick Leave.csv & Low Sick Leave.csv**
     - CSV files listing employees with high (> 37.5 hours/year) and low (< 15 hours/year) sick leave, respectively.
+      ![Performance Report Sick Leave](https://github.com/MatthewPaver/MatthewPaver/blob/main/Personal%20Projects/HR%20Performance%20Reporting%20Dashboards/Dashboard%20Images/HR%20Performance%20Reporting%20Sick%20Leave.png)
 
-3. **Current Employees.csv**
-    - A CSV file containing a comprehensive list of all current employees, including details such as BusinessEntityID, Department, JobTitle, and Years Employed.
 
-4. **TopSalesPerformers.csv**
+3. **TopSalesPerformers.csv**
     - A CSV file highlighting the top sales performers within the company.
+      ![Performance Report Sales](https://github.com/MatthewPaver/MatthewPaver/blob/main/Personal%20Projects/HR%20Performance%20Reporting%20Dashboards/Dashboard%20Images/HR%20Performance%20Reporting%20Sales.png)
 
 ## Project Documentation
 
