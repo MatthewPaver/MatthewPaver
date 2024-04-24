@@ -21,10 +21,11 @@ This project aims to provide comprehensive HR performance reports for a global u
 
 ## Project Documentation
 
-- **HR Performance Reporting Dashboards.pdf**
+- [**HR Performance Reporting Dashboards.pdf**](https://github.com/MatthewPaver/MatthewPaver/blob/main/Personal%20Projects/HR%20Performance%20Reporting%20Dashboards/HR%20Performance%20Reporting%20Dashboards.pdf)
     - A detailed report illustrating the dashboard components, including employee decomposition, age distribution, and sick leave analysis.
 
-- **Project A HR Performance Reporting Documentation.pdf**
+- [**Project A HR Performance Reporting Documentation.pdf**](https://github.com/MatthewPaver/MatthewPaver/blob/main/Personal%20Projects/HR%20Performance%20Reporting%20Dashboards/Project%20A%20HR%20Performance%20Reporting%20Documentation.pdf)
+
     - Provides an in-depth overview of the project's planning, structure, data gathering, analysis, insights, and recommendations. Authored by Matthew Paver - Projecting Success.
 
 ## Key Insights
