@@ -15,6 +15,9 @@ The task was to create a poster and a video disseminating information about the 
 
 ## Poster Highlights
 
+![Bearable Poster](https://github.com/MatthewPaver/MatthewPaver/blob/main/University%20of%20Liverpool/Year%201/Designing%20Systems%20for%20the%20Digital%20Society%20107/Bearable%20Healthtech.png)
+
+
 - **Introduction to Bearable:** Overview of the app's capability to track various health-related metrics.
 - **Target Audience:** Identify the app's primary users and needs.
 - **Key Benefits:** Discussion on how Bearable can improve users' health and well-being.
