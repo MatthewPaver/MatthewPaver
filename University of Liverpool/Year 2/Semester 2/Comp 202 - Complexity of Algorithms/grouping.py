@@ -7,7 +7,7 @@ def min_value_grouping():
     the minimum value for the first i numbers grouped into j groups.
     A cumulative sum array is used for efficient calculation of group sums.
 
-    Time Complexity: O(kn^3), due to three nested loops iterating up to k, n, and n.
+    Time Complexity: O(kn^2), due to three nested loops iterating up to k, n, and n.
     Space Complexity: O(nk), for the dynamic programming table and cumulative sum array.
 
     :return: Tuple of the minimum objective value and list of cutting positions.
