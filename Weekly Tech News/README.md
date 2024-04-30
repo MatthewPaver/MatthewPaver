@@ -7,7 +7,8 @@ Welcome to the Weekly Tech News GitHub repository! Here, we publish weekly updat
 ### April 2024
 
 #### GitHub introduces "Copilot Workspace,"
-![GitHub Copilot Workspace Interface](https://img.youtube.com/vi/pkotufZchjE/0.jpg)
+[![Watch the Video](https://img.youtube.com/vi/pkotufZchjE/0.jpg)](https://www.youtube.com/watch?v=pkotufZchjE)
+
 An AI-enhanced software engineering environment that assists developers from the inception of an idea to the execution of code. Utilizing OpenAI's GPT-4 Turbo model, it provides natural language interactions, automated code suggestions, and integration with existing tools, aiming to streamline the development process. Workspace is currently in technical preview, optimized for various devices, including mobile. [Learn More](https://github.com/MatthewPaver/MatthewPaver/tree/main/Weekly%20Tech%20News/2024/30-04-24)
 
 ---
