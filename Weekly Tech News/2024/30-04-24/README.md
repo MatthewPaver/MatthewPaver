@@ -1,5 +1,7 @@
 # [GitHub Copilot Workspace](https://githubnext.com/projects/copilot-workspace/)
 
+**Date: 30/04/24**
+
 
 ## Introduction
 GitHub Copilot Workspace is an AI-powered software engineering environment designed to revolutionize the way developers brainstorm, plan, build, test, and run code. Developed by GitHub Next, the company's software R&D team, Workspace is an evolution of the popular Copilot coding assistant, now enhanced with new capabilities such as natural language processing to interact more intuitively with developers.
