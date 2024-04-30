@@ -12,7 +12,7 @@ The goal is to find such a grouping so that the objective function is minimized,
 The solution implements a dynamic programming approach, where `dp[i][j]` represents the minimum value for the first `i` numbers grouped into `j` groups. A cumulative sum array is used for efficient calculation of group sums.
 
 ## Time and Space Complexity
-- Time Complexity: `O(kn^3)`, due to three nested loops iterating up to `k`, `n`, and `n`.
+- Time Complexity: `O(kn^2)`, due to three nested loops iterating up to `k`, `n`, and `n`.
 - Space Complexity: `O(nk)`, for the dynamic programming table and cumulative sum array.
 
 ## Input Format
