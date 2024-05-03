@@ -4,12 +4,24 @@ Welcome to the Weekly Tech News GitHub repository! Here, we publish weekly updat
 
 ## Tech News
 ---
+
+### May 2024
+
+#### Apple launches "OpenELM,"
+![OpenELM on-device](https://miro.medium.com/v2/resize:fit:690/0*J3SWiVZJAkdmlDO5.png)
+
+An open-source suite of language models designed for efficient on-device AI processing, emphasizing privacy and user data security. Though compact and community-driven, OpenELM faces criticism for underperforming against competitors like Microsoft's Phi-3 Mini. It's optimized for use on smartphones and laptops, aiming to enhance AI accessibility without compromising on privacy.
+
+[Learn More](https://machinelearning.apple.com/research/openelm)
+
+---
+
 ### April 2024
 
 #### GitHub introduces "Copilot Workspace,"
 [![Watch the Video](https://img.youtube.com/vi/pkotufZchjE/0.jpg)](https://www.youtube.com/watch?v=pkotufZchjE)
 
-An AI-enhanced software engineering environment that assists developers from the inception of an idea to the execution of code. Utilizing OpenAI's GPT-4 Turbo model, it provides natural language interactions, automated code suggestions, and integration with existing tools, aiming to streamline the development process. Workspace is currently in technical preview, optimized for various devices, including mobile. [Learn More](https://github.com/MatthewPaver/MatthewPaver/tree/main/Weekly%20Tech%20News/2024/30-04-24)
+An AI-enhanced software engineering environment that assists developers from the inception of an idea to the execution of code. Utilizing OpenAI's GPT-4 Turbo model, it provides natural language interactions, automated code suggestions, and integration with existing tools, aiming to streamline the development process. Workspace is currently in technical preview, optimized for various devices, including mobile. [Learn More](https://github.com/MatthewPaver/MatthewPaver/tree/main/Weekly%20Tech%20News/2024/03-05-24)
 
 ---
 
