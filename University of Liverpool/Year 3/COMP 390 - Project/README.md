@@ -85,23 +85,38 @@ df.show()
 ### Example 2: Real-Time Data Processing with Kafka
 This script demonstrates how to read streaming data from Kafka and process it using PySpark:
 ```python
-import os
-os.environ['SPARK_HOME'] = 'C:/Users/MattPaver/AppData/Local/Spark'
+from pyspark.sql import SparkSession  # Import SparkSession from pyspark.sql
+from pyspark.sql.functions import *  # Import all sql functions like avg, sum, etc.
+from pyspark.sql.types import *  # Import all data types
 
-from pyspark.sql import SparkSession
+# Initialize a SparkSession with an application name "RealTimeExample"
+spark = SparkSession.builder.appName("RealTimeExample").getOrCreate()
 
-# Create Spark session
-spark = SparkSession.builder     .appName("RealTimeExample")     .getOrCreate()
+# Reading streaming data from Kafka
+# .format("kafka"): Specifies the source format as Kafka
+# .option("kafka.bootstrap.servers", "localhost:9092"): Sets the Kafka server address
+# .option("subscribe", "topic"): Subscribes to a Kafka topic named "topic"
+# .load(): Loads the data as a DataFrame
+df = spark.readStream \
+    .format("kafka") \
+    .option("kafka.bootstrap.servers", "localhost:9092") \
+    .option("subscribe", "topic") \
+    .load()
 
-# Read from Kafka
-df = spark.readStream     .format("kafka")     .option("kafka.bootstrap.servers", "localhost:9092")     .option("subscribe", "test-topic")     .load()
-
-# Select key and value from Kafka message
+# Processing the DataFrame
+# .selectExpr(): Allows SQL-like expressions; here, casting key and value to string
 df = df.selectExpr("CAST(key AS STRING)", "CAST(value AS STRING)")
 
-# Write to console
-query = df.writeStream     .outputMode("append")     .format("console")     .start()
+# Writing the processed stream to the console
+# .outputMode("append"): Adds new rows to the output sink
+# .format("console"): Specifies the sink type as console output
+# .start(): Starts the streaming query
+query = df.writeStream \
+    .outputMode("append") \
+    .format("console") \
+    .start()
 
+# Waits for the termination signal to stop the query
 query.awaitTermination()
 ```
 
