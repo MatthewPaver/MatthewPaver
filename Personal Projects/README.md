@@ -108,4 +108,31 @@ This Python script automates scraping and downloading images from Pinterest base
 
 This script is for educational and research purposes only. Always respect Pinterest's terms of service and ensure you have the rights to use the images.
 
+---
+
+## PySpark and Kafka Integration Example
+
+### Overview
+This repository demonstrates the integration of PySpark with Apache Kafka for real-time data streaming and processing. It illustrates how PySpark can consume and process streaming data from Kafka topics, perform basic DataFrame operations, and output the processed data.
+
+### Prerequisites
+- Java Development Kit (JDK)
+- Apache Spark
+- Python with PySpark installed
+- Apache Kafka
+
+### How It Works
+1. **Start Zookeeper**: Initialize the Zookeeper server required by Kafka.
+2. **Start Kafka Server**: Launch the Kafka server to handle messaging.
+3. **Create Kafka Topic**: Set up a Kafka topic named `test-topic`.
+4. **Execute PySpark Script**: Run the PySpark script to process streaming data from Kafka.
+
+### PySpark Scripts
+- **Example 1**: Creates a simple DataFrame and displays its contents.
+- **Example 2**: Reads and processes streaming data from a Kafka topic using PySpark, then writes the output to the console.
+
+### Conclusion
+This example showcases setting up and running a PySpark application that processes real-time data from Kafka, highlighting the integration between PySpark and Kafka for efficient streaming data processing.
+
+
 
