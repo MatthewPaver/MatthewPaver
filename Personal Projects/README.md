@@ -96,4 +96,16 @@ This Python script automates scraping and downloading images from Pinterest base
 2. Run the script:
    ```sh
    python "Pinterest image scraper.py"
+      ```
+
+### Important Notes
+
+- Ensure permissions for scraping and downloading images from Pinterest.
+- Efficiency varies based on threads and proxies.
+- Duplicate removal extends processing time.
+
+### Disclaimer
+
+This script is for educational and research purposes only. Always respect Pinterest's terms of service and ensure you have the rights to use the images.
+
 
