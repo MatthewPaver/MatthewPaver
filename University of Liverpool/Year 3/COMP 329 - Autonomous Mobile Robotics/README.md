@@ -1,4 +1,4 @@
-# Webots Exploration and Mapping Project
+# Webots Exploration and Mapping Assignment
 
 ## Overview
 This project focuses on developing an autonomous robot for exploration and mapping using the Webots simulation environment. It leverages various SLAM techniques, path planning algorithms, and motion control methods to generate occupancy maps.
