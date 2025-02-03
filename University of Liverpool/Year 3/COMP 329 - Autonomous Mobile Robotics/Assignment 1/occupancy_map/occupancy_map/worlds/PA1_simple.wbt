@@ -1,0 +1,70 @@
+#VRML_SIM R2023b utf8
+
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/objects/backgrounds/protos/TexturedBackground.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/objects/backgrounds/protos/TexturedBackgroundLight.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/objects/floors/protos/RectangleArena.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/objects/apartment_structure/protos/Wall.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/robots/adept/pioneer3/protos/Pioneer3dx.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/objects/factory/pallet/protos/WoodenPalletStack.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/objects/traffic/protos/TrafficCone.proto"
+
+WorldInfo {
+}
+Viewpoint {
+  fieldOfView 1
+  orientation -0.5773502691896258 0.5773502691896258 0.5773502691896258 2.0944
+  position 0.0010096948609729331 2.3810762393173692e-05 13.043459714522495
+}
+TexturedBackground {
+}
+TexturedBackgroundLight {
+}
+DEF ARENA RectangleArena {
+  floorSize 6 6
+  wallHeight 0.4
+}
+Pioneer3dx {
+  translation -2 -2 0.0975
+  controller "my_assignment_controller"
+  supervisor TRUE
+  extensionSlot [
+    TouchSensor {
+      translation 0.175 0 0.05
+      children [
+        Shape {
+          appearance PBRAppearance {
+          }
+          geometry DEF BUMPER Box {
+            size 0.01 0.28 0.05
+          }
+        }
+      ]
+      boundingObject USE BUMPER
+    }
+    Display {
+      width 400
+      height 400
+    }
+  ]
+}
+Wall {
+  translation -1.4 -0.4 0
+  name "NW Diag (2)"
+  size 0.4 1.6 0.4
+}
+Wall {
+  translation 1 0.6 0
+  name "Spiral (1)"
+  size 2 0.3 0.4
+}
+Wall {
+  translation 1 1 0
+  name "Spiral (3)"
+  size 0.4 1 0.4
+}
+WoodenPalletStack {
+  translation 1.1 -1.4 0
+}
+TrafficCone {
+  translation -1.2 1.7 0
+}
