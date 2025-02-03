@@ -1,18 +1,3 @@
-﻿BusinessEntityID,TerritoryID,Name,CountryRegionCode,Group,SalesYTD,SalesLastYear,FirstName,MiddleName,SurName,ModifiedDate,Type of Sales
-280,1,Northwest,US,North America,7887186.788,3298694.494,Pamela,O,Ansman-Wolfe,24/05/2011 00:00,Sales Year to Date
-283,1,Northwest,US,North America,7887186.788,3298694.494,David,R,Campbell,24/05/2011 00:00,Sales Last Year
-284,1,Northwest,US,North America,7887186.788,3298694.494,Tete,A,Mensa-Annan,23/09/2012 00:00,
-275,2,Northeast,US,North America,2402176.848,3607148.937,Michael,G,Blythe,24/05/2011 00:00,
-277,3,Central,US,North America,3072175.118,3205014.077,Jillian,,Carson,24/05/2011 00:00,
-276,4,Southwest,US,North America,10510853.87,5366575.71,Linda,C,Mitchell,24/05/2011 00:00,
-281,4,Southwest,US,North America,10510853.87,5366575.71,Shu,K,Ito,24/05/2011 00:00,
-279,5,Southeast,US,North America,2538667.252,3925071.432,Tsvi,Michael,Reiter,24/05/2011 00:00,
-278,6,Canada,CA,North America,6771829.138,5693988.86,Garrett,R,Vargas,24/05/2011 00:00,
-282,6,Canada,CA,North America,6771829.138,5693988.86,José,Edvaldo,Saraiva,24/05/2011 00:00,
-290,7,France,FR,Europe,4772398.308,2396539.76,Ranjit,R,Varkey Chudukatil,23/05/2012 00:00,
-288,8,Germany,DE,Europe,3805202.348,1307949.792,Rachel,B,Valdez,23/05/2013 00:00,
-286,9,Australia,AU,Pacific,5977814.915,2278548.978,Lynn,N,Tsoflias,23/05/2013 00:00,
-289,10,United Kingdom,GB,Europe,5012905.366,1635823.397,Jae,B,Pak,23/05/2012 00:00,
-274,,,,,,,Stephen,Y,Jiang,28/12/2010 00:00,
-285,,,,,,,Syed,E,Abbas,07/03/2013 00:00,
-287,,,,,,,Amy,E,Alberts,09/04/2012 00:00,
+version https://git-lfs.github.com/spec/v1
+oid sha256:d8d4cf532c34267a528f8de2f4c0efb8e06c9a14698c57665e709dfd82335fe4
+size 1575
