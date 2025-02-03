@@ -1,14 +1,3 @@
-'Construction': ['Construction AI', 'Construction Management','Construction Dive','Construction Executive','Scottish Construction Now','Construction News'],
-
-'Energy': ['Energy','Energy Central','Power Engineering International','GOV UK Energy efficiency','UK Parliament Energy','Bloomberg Law Energy'],
-
-'Transport': ['Transport','Department For Transport','Railway Technology','Forbes Transportation'],
-
-'Other': ['Power Automate', 'Power BI',''Power Apps', 'Medium.com', 'Exponential View', 'Data Visualisation', 'Information is Beautiful', 'Visualising Data', 'Forbes Future of Work', 'Forbes Healthcare', 'Forbes Cloud' ],
-
-
-'Project management': ['Project Management', 'Project management AI', 'project management analytics', 'data driven projects', 'AI risk management', 'Data/AI scheduling', 'AI cost control', 'predictive cost control', 'AI resource management', 'ProjectManagement.com', 'ProjectManager.com', 'Harvard Business Review Project Management' ],
-
-'AI & machine learning': ['AI & Machine Learning', 'AI benefits', 'Tech Crunch AI', 'Forbes AI', 'BBC News AI', 'Bloomberg Law AI', 'Risk.net AI', 'Venture Beat AI', 'MIT Technology Review AI'],
-
-'Data analytics': ['Data Analytics', 'data driven projects', 'Project Data Analytics', 'Forbes Big Data', 'Towards Data Science']
+version https://git-lfs.github.com/spec/v1
+oid sha256:545b31a3aa504aa10f45c9400e9b95a1d7aa00f6bd4a6315ab83c6b62be32f92
+size 1306
