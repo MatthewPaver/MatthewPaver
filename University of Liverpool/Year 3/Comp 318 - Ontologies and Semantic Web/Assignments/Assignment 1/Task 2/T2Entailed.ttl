@@ -1,0 +1,265 @@
+@prefix ns1: <http://example.org/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+ns1:Artist a rdfs:Class,
+        rdfs:Resource ;
+    rdfs:subClassOf ns1:Artist,
+        ns1:Person,
+        rdfs:Resource .
+
+ns1:CoolJazz a ns1:Genre,
+        rdfs:Class,
+        rdfs:Resource ;
+    rdfs:subClassOf ns1:CoolJazz,
+        ns1:Jazz,
+        rdfs:Resource .
+
+ns1:Genre a rdfs:Class,
+        rdfs:Resource ;
+    rdfs:subClassOf ns1:Genre,
+        rdfs:Resource .
+
+ns1:Jazz a ns1:Genre,
+        rdfs:Class,
+        rdfs:Resource ;
+    rdfs:subClassOf ns1:Jazz,
+        rdfs:Resource .
+
+ns1:JazzLabel a rdfs:Class,
+        rdfs:Resource ;
+    rdfs:subClassOf ns1:JazzLabel,
+        ns1:Label,
+        rdfs:Resource .
+
+ns1:Label a rdfs:Class,
+        rdfs:Resource ;
+    rdfs:subClassOf ns1:Label,
+        rdfs:Resource .
+
+ns1:Person a rdfs:Class,
+        rdfs:Resource ;
+    rdfs:subClassOf ns1:Person,
+        rdfs:Resource .
+
+ns1:Record a rdfs:Class,
+        rdfs:Resource ;
+    rdfs:subClassOf ns1:Record,
+        rdfs:Resource .
+
+rdf:Alt a rdfs:Class,
+        rdfs:Resource ;
+    rdfs:subClassOf rdf:Alt,
+        rdfs:Container,
+        rdfs:Resource .
+
+rdf:Bag a rdfs:Class,
+        rdfs:Resource ;
+    rdfs:subClassOf rdf:Bag,
+        rdfs:Container,
+        rdfs:Resource .
+
+rdf:List a rdfs:Class,
+        rdfs:Resource ;
+    rdfs:subClassOf rdf:List,
+        rdfs:Resource .
+
+rdf:Property a rdfs:Class,
+        rdfs:Resource ;
+    rdfs:subClassOf rdf:Property,
+        rdfs:Resource .
+
+rdf:Seq a rdfs:Class,
+        rdfs:Resource ;
+    rdfs:subClassOf rdf:Seq,
+        rdfs:Container,
+        rdfs:Resource .
+
+rdf:Statement a rdfs:Class,
+        rdfs:Resource ;
+    rdfs:subClassOf rdf:Statement,
+        rdfs:Resource .
+
+rdf:XMLLiteral a rdfs:Class,
+        rdfs:Datatype,
+        rdfs:Resource ;
+    rdfs:subClassOf rdf:XMLLiteral,
+        rdfs:Literal,
+        rdfs:Resource .
+
+rdfs:Class a rdfs:Class,
+        rdfs:Resource ;
+    rdfs:subClassOf rdfs:Class,
+        rdfs:Resource .
+
+rdfs:Container a rdfs:Class,
+        rdfs:Resource ;
+    rdfs:subClassOf rdfs:Container,
+        rdfs:Resource .
+
+rdfs:ContainerMembershipProperty a rdfs:Class,
+        rdfs:Resource ;
+    rdfs:subClassOf rdf:Property,
+        rdfs:ContainerMembershipProperty,
+        rdfs:Resource .
+
+rdfs:Datatype a rdfs:Class,
+        rdfs:Resource ;
+    rdfs:subClassOf rdfs:Class,
+        rdfs:Datatype,
+        rdfs:Resource .
+
+rdfs:Literal a rdfs:Class,
+        rdfs:Resource ;
+    rdfs:subClassOf rdfs:Literal,
+        rdfs:Resource .
+
+rdfs:Resource a rdfs:Class,
+        rdfs:Resource ;
+    rdfs:subClassOf rdfs:Resource .
+
+ns1:BlueNoteAlbum a ns1:Record,
+        rdfs:Resource ;
+    ns1:belongsToGenre ns1:CoolJazz ;
+    ns1:producedBy ns1:MilesDavis ;
+    ns1:releasedBy ns1:BlueNoteRecords .
+
+() a rdf:List,
+        rdfs:Resource .
+
+ns1:BlueNoteRecords a ns1:JazzLabel,
+        ns1:Label,
+        rdfs:Resource .
+
+ns1:MilesDavis a ns1:Artist,
+        ns1:Person,
+        rdfs:Resource ;
+    ns1:hasNationality ns1:USA .
+
+ns1:USA a rdfs:Resource .
+
+ns1:hasNationality a rdf:Property,
+        rdfs:Resource ;
+    rdfs:domain ns1:Person ;
+    rdfs:subPropertyOf ns1:hasNationality .
+
+ns1:producedBy a rdf:Property,
+        rdfs:Resource ;
+    rdfs:domain ns1:Record ;
+    rdfs:range ns1:Artist ;
+    rdfs:subPropertyOf ns1:producedBy .
+
+ns1:releasedBy a rdf:Property,
+        rdfs:Resource ;
+    rdfs:domain ns1:Record ;
+    rdfs:range ns1:Label ;
+    rdfs:subPropertyOf ns1:releasedBy .
+
+ns1:subGenreOf a rdf:Property,
+        rdfs:Resource ;
+    rdfs:subPropertyOf ns1:belongsToGenre,
+        ns1:subGenreOf .
+
+rdf:first a rdf:Property,
+        rdfs:Resource ;
+    rdfs:domain rdf:List ;
+    rdfs:range rdfs:Resource ;
+    rdfs:subPropertyOf rdf:first .
+
+rdf:object a rdf:Property,
+        rdfs:Resource ;
+    rdfs:domain rdf:Statement ;
+    rdfs:range rdfs:Resource ;
+    rdfs:subPropertyOf rdf:object .
+
+rdf:predicate a rdf:Property,
+        rdfs:Resource ;
+    rdfs:domain rdf:Statement ;
+    rdfs:range rdfs:Resource ;
+    rdfs:subPropertyOf rdf:predicate .
+
+rdf:rest a rdf:Property,
+        rdfs:Resource ;
+    rdfs:domain rdf:List ;
+    rdfs:range rdf:List ;
+    rdfs:subPropertyOf rdf:rest .
+
+rdf:subject a rdf:Property,
+        rdfs:Resource ;
+    rdfs:domain rdf:Statement ;
+    rdfs:range rdfs:Resource ;
+    rdfs:subPropertyOf rdf:subject .
+
+rdf:type a rdf:Property,
+        rdfs:Resource ;
+    rdfs:domain rdfs:Resource ;
+    rdfs:range rdfs:Class ;
+    rdfs:subPropertyOf rdf:type .
+
+rdf:value a rdf:Property,
+        rdfs:Resource ;
+    rdfs:domain rdfs:Resource ;
+    rdfs:range rdfs:Resource ;
+    rdfs:subPropertyOf rdf:value .
+
+rdfs:comment a rdf:Property,
+        rdfs:Resource ;
+    rdfs:domain rdfs:Resource ;
+    rdfs:range rdfs:Literal ;
+    rdfs:subPropertyOf rdfs:comment .
+
+rdfs:domain a rdf:Property,
+        rdfs:Resource ;
+    rdfs:domain rdf:Property ;
+    rdfs:range rdfs:Class ;
+    rdfs:subPropertyOf rdfs:domain .
+
+rdfs:isDefinedBy a rdf:Property,
+        rdfs:Resource ;
+    rdfs:domain rdfs:Resource ;
+    rdfs:range rdfs:Resource ;
+    rdfs:subPropertyOf rdfs:isDefinedBy,
+        rdfs:seeAlso .
+
+rdfs:label a rdf:Property,
+        rdfs:Resource ;
+    rdfs:domain rdfs:Resource ;
+    rdfs:range rdfs:Literal ;
+    rdfs:subPropertyOf rdfs:label .
+
+rdfs:member a rdf:Property,
+        rdfs:Resource ;
+    rdfs:domain rdfs:Resource ;
+    rdfs:range rdfs:Resource ;
+    rdfs:subPropertyOf rdfs:member .
+
+rdfs:range a rdf:Property,
+        rdfs:Resource ;
+    rdfs:domain rdf:Property ;
+    rdfs:range rdfs:Class ;
+    rdfs:subPropertyOf rdfs:range .
+
+rdfs:subClassOf a rdf:Property,
+        rdfs:Resource ;
+    rdfs:domain rdfs:Class ;
+    rdfs:range rdfs:Class ;
+    rdfs:subPropertyOf rdfs:subClassOf .
+
+rdfs:subPropertyOf a rdf:Property,
+        rdfs:Resource ;
+    rdfs:domain rdf:Property ;
+    rdfs:range rdf:Property ;
+    rdfs:subPropertyOf rdfs:subPropertyOf .
+
+ns1:belongsToGenre a rdf:Property,
+        rdfs:Resource ;
+    rdfs:domain ns1:Record ;
+    rdfs:range ns1:Genre ;
+    rdfs:subPropertyOf ns1:belongsToGenre .
+
+rdfs:seeAlso a rdf:Property,
+        rdfs:Resource ;
+    rdfs:domain rdfs:Resource ;
+    rdfs:range rdfs:Resource ;
+    rdfs:subPropertyOf rdfs:seeAlso .
+
