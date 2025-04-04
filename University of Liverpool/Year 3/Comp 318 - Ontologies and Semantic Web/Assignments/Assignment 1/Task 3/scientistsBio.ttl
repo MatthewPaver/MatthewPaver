@@ -1,0 +1,89 @@
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix ns1: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://www.wikidata.org/entity/Q103835> ns1:about "Debye length" ;
+    ns1:birthDate "1884-03-24"^^xsd:date ;
+    foaf:name "Peter Debye" .
+
+<http://www.wikidata.org/entity/Q104104> ns1:birthDate "1958-10-21"^^xsd:date ;
+    foaf:name "Andre Geim" .
+
+<http://www.wikidata.org/entity/Q105572> ns1:about "asymmetric organocatalysis" ;
+    ns1:birthDate "1968-01-11"^^xsd:date ;
+    foaf:name "Benjamin List" .
+
+<http://www.wikidata.org/entity/Q107420> ns1:about "string theory" ;
+    ns1:birthDate "1932-12-05"^^xsd:date ;
+    foaf:name "Sheldon Glashow" .
+
+<http://www.wikidata.org/entity/Q108551692> ns1:birthDate "1920-01-01"^^xsd:date ;
+    foaf:name "David Cardwell" .
+
+<http://www.wikidata.org/entity/Q108602> ns1:birthDate "1939-09-06"^^xsd:date ;
+    foaf:name "Susumu Tonegawa" .
+
+<http://www.wikidata.org/entity/Q109588> ns1:birthDate "1944-09-11"^^xsd:date ;
+    foaf:name "Serge Haroche" .
+
+<http://www.wikidata.org/entity/Q110106> ns1:birthDate "1912-05-30"^^xsd:date ;
+    foaf:name "Julius Axelrod" .
+
+<http://www.wikidata.org/entity/Q1235614> ns1:birthDate "1948-08-04"^^xsd:date ;
+    foaf:name "Giorgio Parisi" .
+
+<http://www.wikidata.org/entity/Q150630> ns1:birthDate "1843-07-07"^^xsd:date ;
+    foaf:name "Camillo Golgi" .
+
+<http://www.wikidata.org/entity/Q15118973> ns1:birthDate "1946-09-08"^^xsd:date ;
+    foaf:name "Aziz Sancar" .
+
+<http://www.wikidata.org/entity/Q16389> ns1:birthDate "1933-11-04"^^xsd:date ;
+    foaf:name "Charles K. Kao" .
+
+<http://www.wikidata.org/entity/Q1701279> ns1:birthDate "1939-11-18"^^xsd:date ;
+    foaf:name "John O'Keefe" .
+
+<http://www.wikidata.org/entity/Q17280087> ns1:birthDate "1968-12-11"^^xsd:date ;
+    foaf:name "Emmanuelle Charpentier" .
+
+<http://www.wikidata.org/entity/Q182964> ns1:birthDate "1860-12-15"^^xsd:date ;
+    foaf:name "Niels Ryberg Finsen" .
+
+<http://www.wikidata.org/entity/Q185007> ns1:birthDate "1909-04-22"^^xsd:date ;
+    foaf:name "Rita Levi-Montalcini" .
+
+<http://www.wikidata.org/entity/Q192688> ns1:birthDate "1929-04-05"^^xsd:date ;
+    foaf:name "Ivar Giaever" .
+
+<http://www.wikidata.org/entity/Q21106911> ns1:birthDate "1783-02-18"^^xsd:date ;
+    foaf:name "Ivan Pavlovich Mendeleyev" .
+
+<http://www.wikidata.org/entity/Q211097> ns1:about "real business cycle theory" ;
+    ns1:birthDate "1943-12-01"^^xsd:date ;
+    foaf:name "Finn E. Kydland" .
+
+<http://www.wikidata.org/entity/Q36488> ns1:birthDate "1874-04-25"^^xsd:date ;
+    foaf:name "Guglielmo Marconi" .
+
+<http://www.wikidata.org/entity/Q57100> ns1:about "nuclear shell model" ;
+    ns1:birthDate "1906-06-28"^^xsd:date ;
+    foaf:name "Maria Goeppert Mayer" .
+
+<http://www.wikidata.org/entity/Q58978> ns1:about "Born-Oppenheimer approximation" ;
+    ns1:birthDate "1882-12-11"^^xsd:date ;
+    foaf:name "Max Born" .
+
+<http://www.wikidata.org/entity/Q62891> ns1:about "superconductivity" ;
+    ns1:birthDate "1853-09-21"^^xsd:date ;
+    foaf:name "Heike Kamerlingh Onnes" .
+
+<http://www.wikidata.org/entity/Q65807> ns1:birthDate "1952-03-24"^^xsd:date ;
+    foaf:name "Reinhard Genzel" .
+
+<http://www.wikidata.org/entity/Q76373> ns1:birthDate "1930-05-10"^^xsd:date ;
+    foaf:name "George E. Smith" .
+
+<http://www.wikidata.org/entity/Q903471> ns1:birthDate "1930-03-15"^^xsd:date ;
+    foaf:name "Martin Karplus" .
+
