@@ -63,5 +63,13 @@ Occupancy-Map-Project/
 - If `ModuleNotFoundError` occurs, ensure dependencies are installed correctly.
 - If Webots crashes, check system memory and Webots version.
 
+## Testing
+Unit tests are written with [pytest](https://pytest.org). From the project root
+run the following command to execute them:
+
+```bash
+pytest
+```
+
 ## License
 This project is licensed under the MIT License.
