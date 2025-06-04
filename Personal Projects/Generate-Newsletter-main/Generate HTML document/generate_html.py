@@ -82,21 +82,21 @@ class HTML_Generation:
         self.html += self.footer_template
         
         # Save html without overwriting existing files
-        original_name = str(self.filename + '_web.html')
+        original_name = f"{self.filename}_web.html"
         save_path = self.join(self.newsletter_dir, original_name)
         counter = 1
         name, extension = os.path.splitext(original_name)
         while os.path.exists(save_path):
-            filename = f"{name}_{counter}{extension}"
-            save_path = self.join(self.newsletter_dir, filename)
+            new_name = f"{name}_{counter}{extension}"
+            save_path = self.join(self.newsletter_dir, new_name)
             counter += 1
-        
-        with open(save_path, "w", encoding='utf-8') as file:    
+
+        with open(save_path, "w", encoding='utf-8') as file:
             file.write(self.html)
-        
-        # print message
+
+        final_file = os.path.basename(save_path)
         print('Newsletter Generation script has finished running.')
-        print(f'The html file can be found at: newsletters/{self.filename}.html')
+        print(f'The html file can be found at: newsletters/{final_file}')
 
 if __name__ == "__main__":
     HTML = HTML_Generation()
