@@ -1,5 +1,5 @@
 # 💫 About Me:
-🎓 I recently completed my BSc in Computer Science with Artifical Intelligence from the University of Liverpool and now work as a **Solution Architect**.<br><br>
+🎓 I recently completed my BSc in Computer Science with Artificial Intelligence from the University of Liverpool and now work as a **Solution Architect**.<br><br>
 ⚙️ I'm passionate about designing scalable, automated systems that streamline workflows and deliver real impact.<br><br>
 🤖 I'm currently focused on:<br>
 - Automation and integration using low-code tools (e.g. n8n, Zapier)<br>
