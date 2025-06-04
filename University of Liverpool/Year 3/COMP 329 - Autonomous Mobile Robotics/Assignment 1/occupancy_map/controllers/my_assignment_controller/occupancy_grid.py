@@ -173,6 +173,16 @@ class OccupancyGrid:
 
     def get_cell_probability_at_pose(self, p):
         # determine the cell at pose p
+        x_inc = self.arena_width / self.num_row_cells
+        y_inc = self.arena_height / self.num_col_cells
+
+        col = int((p.x + self.arena_width / 2) / x_inc)
+        row = int((-p.y + self.arena_height / 2) / y_inc)
+
+        if col < 0 or col >= self.num_row_cells or row < 0 or row >= self.num_col_cells:
+            return None
+
+        i = row * self.num_row_cells + col
         return self.cell_probability(self.grid[i])
 
     # ================================================================================== 
