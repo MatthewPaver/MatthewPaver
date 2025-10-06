@@ -8,22 +8,23 @@
 - **Knowledge graph systems** for project insight and reasoning  
 - **Automation and data integration** using tools like n8n, Supabase, and Azure  
 - **AI-driven applications** powered by LangChain, GraphRAG, and vector search  
-<br>
-🤝 I’m open to collaborating on:  
+
+🤝 I’m open to collaborating on:
 - Applied **AI and automation** projects  
 - **Data and systems integration** tools  
 - Open-source initiatives that make intelligent systems more accessible  
-<br>
-🌱 Currently learning about:  
+
+🌱 Currently learning about:
 - Advanced orchestration and deployment techniques  
 - **RAG pipelines** and scalable vector databases  
 - Intelligent agents using **LangChain**, **AutoGen**, and other frameworks  
-<br>
-💬 Ask me about:  
+
+💬 Ask me about:
 - Building connected, data-rich platforms  
 - Automating workflows for teams and SMEs  
 - Integrating AI tools into real-world systems  
-<br>
+
+
 
 ---
 
