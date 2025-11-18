@@ -90,9 +90,9 @@ Work on ranking, matching and retrieval.
 
 # 📊 GitHub Stats
 
-### Only one reliable card  
-The rest are blocked by GitHub rate limits.
-
 ![Top Languages](https://github-readme-stats-git-masterrstaa-rickstaa.vercel.app/api/top-langs/?username=MatthewPaver&layout=compact&theme=dark&hide_border=false)
 
+![GitHub Streak](https://streak-stats.demolab.com/?user=MatthewPaver&theme=dark&hide_border=false)
+
 ![Visitor Count](https://visitcount.itsvg.in/api?id=MatthewPaver&icon=0&color=0)
+
