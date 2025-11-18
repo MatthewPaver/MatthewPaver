@@ -73,7 +73,6 @@ I build practical AI systems that connect data, automate work, and surface insig
 <table>
 <tr>
 <td valign="top" width="50%">
-<a href="https://github.com/MatthewPaver/marketing-ml-lakehouse" style="text-decoration: none; color: inherit; display: block;">
 <div style="display: block; width: 100%; min-height: 100%; padding: 0; margin: 0;">
 <div align="center">
 
@@ -91,14 +90,12 @@ I build practical AI systems that connect data, automate work, and surface insig
 
 <div align="center">
 
-![Repository](https://img.shields.io/badge/🔗_Repository-181717?style=for-the-badge&logo=github&logoColor=white)
+[![View Repository](https://img.shields.io/badge/🔗_View_Repository-0078D4?style=for-the-badge&logo=github&logoColor=white)](https://github.com/MatthewPaver/marketing-ml-lakehouse)
 
 </div>
 </div>
-</a>
 </td>
 <td valign="top" width="50%">
-<a href="https://github.com/MatthewPaver/208-Project" style="text-decoration: none; color: inherit; display: block;">
 <div style="display: block; width: 100%; min-height: 100%; padding: 0; margin: 0;">
 <div align="center">
 
@@ -116,16 +113,14 @@ I build practical AI systems that connect data, automate work, and surface insig
 
 <div align="center">
 
-![Repository](https://img.shields.io/badge/🔗_Repository-181717?style=for-the-badge&logo=github&logoColor=white) [![Live](https://img.shields.io/badge/Live_Site-000000?style=for-the-badge&logo=vercel&logoColor=white)](https://architexa.io)
+[![View Repository](https://img.shields.io/badge/🔗_View_Repository-0078D4?style=for-the-badge&logo=github&logoColor=white)](https://github.com/MatthewPaver/208-Project) [![Live](https://img.shields.io/badge/Live_Site-000000?style=for-the-badge&logo=vercel&logoColor=white)](https://architexa.io)
 
 </div>
 </div>
-</a>
 </td>
 </tr>
 <tr>
 <td valign="top" width="50%">
-<a href="https://github.com/MatthewPaver/sentence-similarity-analysis" style="text-decoration: none; color: inherit; display: block;">
 <div style="display: block; width: 100%; min-height: 100%; padding: 0; margin: 0;">
 <div align="center">
 
@@ -143,14 +138,12 @@ I build practical AI systems that connect data, automate work, and surface insig
 
 <div align="center">
 
-![Repository](https://img.shields.io/badge/🔗_Repository-181717?style=for-the-badge&logo=github&logoColor=white)
+[![View Repository](https://img.shields.io/badge/🔗_View_Repository-0078D4?style=for-the-badge&logo=github&logoColor=white)](https://github.com/MatthewPaver/sentence-similarity-analysis)
 
 </div>
 </div>
-</a>
 </td>
 <td valign="top" width="50%">
-<a href="https://github.com/MatthewPaver/dating-app-recommendation-system" style="text-decoration: none; color: inherit; display: block;">
 <div style="display: block; width: 100%; min-height: 100%; padding: 0; margin: 0;">
 <div align="center">
 
@@ -168,16 +161,14 @@ I build practical AI systems that connect data, automate work, and surface insig
 
 <div align="center">
 
-![Repository](https://img.shields.io/badge/🔗_Repository-181717?style=for-the-badge&logo=github&logoColor=white)
+[![View Repository](https://img.shields.io/badge/🔗_View_Repository-0078D4?style=for-the-badge&logo=github&logoColor=white)](https://github.com/MatthewPaver/dating-app-recommendation-system)
 
 </div>
 </div>
-</a>
 </td>
 </tr>
 <tr>
 <td valign="top" width="50%">
-<a href="https://github.com/MatthewPaver/ProjectLens" style="text-decoration: none; color: inherit; display: block;">
 <div style="display: block; width: 100%; min-height: 100%; padding: 0; margin: 0;">
 <div align="center">
 
@@ -195,14 +186,12 @@ I build practical AI systems that connect data, automate work, and surface insig
 
 <div align="center">
 
-![Repository](https://img.shields.io/badge/🔗_Repository-181717?style=for-the-badge&logo=github&logoColor=white)
+[![View Repository](https://img.shields.io/badge/🔗_View_Repository-0078D4?style=for-the-badge&logo=github&logoColor=white)](https://github.com/MatthewPaver/ProjectLens)
 
 </div>
 </div>
-</a>
 </td>
 <td valign="top" width="50%">
-<a href="https://github.com/MatthewPaver/pyspark-kafka-integration" style="text-decoration: none; color: inherit; display: block;">
 <div style="display: block; width: 100%; min-height: 100%; padding: 0; margin: 0;">
 <div align="center">
 
@@ -220,11 +209,10 @@ I build practical AI systems that connect data, automate work, and surface insig
 
 <div align="center">
 
-![Repository](https://img.shields.io/badge/🔗_Repository-181717?style=for-the-badge&logo=github&logoColor=white)
+[![View Repository](https://img.shields.io/badge/🔗_View_Repository-0078D4?style=for-the-badge&logo=github&logoColor=white)](https://github.com/MatthewPaver/pyspark-kafka-integration)
 
 </div>
 </div>
-</a>
 </td>
 </tr>
 </table>
