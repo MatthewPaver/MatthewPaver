@@ -227,9 +227,6 @@
 </div>
 
 </td>
-<td width="50%" valign="top">
-
-</td>
 </tr>
 </table>
 
