@@ -16,8 +16,8 @@ I build practical AI systems that connect data, automate work, and surface insig
 
 <div align="center">
 
-<a href="CV.pdf" style="text-decoration: none;">
-  <img src="https://img.shields.io/badge/📄_View_My_CV-0078D4?style=for-the-badge&logo=microsoft-word&logoColor=white&labelColor=0078D4&color=FFFFFF" alt="View CV" />
+<a href="CV.pdf" style="text-decoration: none; display: inline-block; transition: transform 0.2s;">
+  <img src="https://img.shields.io/badge/📄_View_My_CV-0078D4?style=for-the-badge&logo=microsoft-word&logoColor=white&labelColor=0078D4&color=FFFFFF" alt="View CV" style="box-shadow: 0 4px 8px rgba(0, 120, 212, 0.3); border-radius: 6px;" />
 </a>
 
 </div>
