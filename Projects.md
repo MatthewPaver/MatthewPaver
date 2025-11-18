@@ -189,6 +189,26 @@
 </td>
 <td width="50%" valign="top">
 
+### 📓 Colab Notebook Project
+
+> Interactive data analysis and experimentation notebook hosted on Google Colab. Provides an environment for exploring data, running analyses, and visualising results.
+
+**Tech Stack:** `Python` `Google Colab` `Jupyter Notebook` `Data Analysis`
+
+<div align="center">
+
+[![Repository](https://img.shields.io/badge/🔗_Repository-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/MatthewPaver/colab-notebook-project) [![Open in Colab](https://img.shields.io/badge/Open_in_Colab-F9AB00?style=for-the-badge&logo=googlecolab&logoColor=white)](https://colab.research.google.com/drive/1WsnSnIngH8xNdBNBWeJgJbKD2uMilVdS?usp=sharing)
+
+</div>
+
+</td>
+</tr>
+</table>
+
+<table>
+<tr>
+<td width="100%" valign="top">
+
 ### 🖼️ Pinterest Image Scraper
 
 > Python script for automated Pinterest image scraping with duplicate removal. Features multi-threading, proxy support, and content-based duplicate detection for efficient image collection.
