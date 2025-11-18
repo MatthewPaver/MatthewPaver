@@ -24,7 +24,7 @@
 
 <div align="center">
 
-[![Repository](https://img.shields.io/badge/🔗_Repository-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/MatthewPaver/marketing-ml-lakehouse)
+[![View Repository](https://img.shields.io/badge/🔗_View_Repository-0078D4?style=for-the-badge&logo=github&logoColor=white)](https://github.com/MatthewPaver/marketing-ml-lakehouse)
 
 </div>
 
@@ -39,7 +39,7 @@
 
 <div align="center">
 
-[![Repository](https://img.shields.io/badge/🔗_Repository-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/MatthewPaver/208-Project) [![Live](https://img.shields.io/badge/Live_Site-000000?style=for-the-badge&logo=vercel&logoColor=white)](https://architexa.io)
+[![View Repository](https://img.shields.io/badge/🔗_View_Repository-0078D4?style=for-the-badge&logo=github&logoColor=white)](https://github.com/MatthewPaver/208-Project) [![Live](https://img.shields.io/badge/Live_Site-000000?style=for-the-badge&logo=vercel&logoColor=white)](https://architexa.io)
 
 </div>
 
@@ -56,7 +56,7 @@
 
 <div align="center">
 
-[![Repository](https://img.shields.io/badge/🔗_Repository-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/MatthewPaver/sentence-similarity-analysis)
+[![View Repository](https://img.shields.io/badge/🔗_View_Repository-0078D4?style=for-the-badge&logo=github&logoColor=white)](https://github.com/MatthewPaver/sentence-similarity-analysis)
 
 </div>
 
@@ -71,7 +71,7 @@
 
 <div align="center">
 
-[![Repository](https://img.shields.io/badge/🔗_Repository-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/MatthewPaver/dating-app-recommendation-system)
+[![View Repository](https://img.shields.io/badge/🔗_View_Repository-0078D4?style=for-the-badge&logo=github&logoColor=white)](https://github.com/MatthewPaver/dating-app-recommendation-system)
 
 </div>
 
@@ -95,7 +95,7 @@
 
 <div align="center">
 
-[![Repository](https://img.shields.io/badge/🔗_Repository-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/MatthewPaver/pyspark-kafka-integration)
+[![View Repository](https://img.shields.io/badge/🔗_View_Repository-0078D4?style=for-the-badge&logo=github&logoColor=white)](https://github.com/MatthewPaver/pyspark-kafka-integration)
 
 </div>
 
@@ -112,7 +112,7 @@
 
 <div align="center">
 
-[![Repository](https://img.shields.io/badge/🔗_Repository-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/MatthewPaver/hr-performance-dashboards)
+[![View Repository](https://img.shields.io/badge/🔗_View_Repository-0078D4?style=for-the-badge&logo=github&logoColor=white)](https://github.com/MatthewPaver/hr-performance-dashboards)
 
 </div>
 
@@ -134,7 +134,7 @@
 
 <div align="center">
 
-[![Repository](https://img.shields.io/badge/🔗_Repository-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/MatthewPaver/hr-performance-portfolio)
+[![View Repository](https://img.shields.io/badge/🔗_View_Repository-0078D4?style=for-the-badge&logo=github&logoColor=white)](https://github.com/MatthewPaver/hr-performance-portfolio)
 
 </div>
 
@@ -158,7 +158,7 @@
 
 <div align="center">
 
-[![Repository](https://img.shields.io/badge/🔗_Repository-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/MatthewPaver/ProjectLens)
+[![View Repository](https://img.shields.io/badge/🔗_View_Repository-0078D4?style=for-the-badge&logo=github&logoColor=white)](https://github.com/MatthewPaver/ProjectLens)
 
 </div>
 
@@ -182,7 +182,7 @@
 
 <div align="center">
 
-[![Repository](https://img.shields.io/badge/🔗_Repository-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/MatthewPaver/colab-notebook-project) [![Open in Colab](https://img.shields.io/badge/Open_in_Colab-F9AB00?style=for-the-badge&logo=googlecolab&logoColor=white)](https://colab.research.google.com/drive/1WsnSnIngH8xNdBNBWeJgJbKD2uMilVdS?usp=sharing)
+[![View Repository](https://img.shields.io/badge/🔗_View_Repository-0078D4?style=for-the-badge&logo=github&logoColor=white)](https://github.com/MatthewPaver/colab-notebook-project) [![Open in Colab](https://img.shields.io/badge/Open_in_Colab-F9AB00?style=for-the-badge&logo=googlecolab&logoColor=white)](https://colab.research.google.com/drive/1WsnSnIngH8xNdBNBWeJgJbKD2uMilVdS?usp=sharing)
 
 </div>
 
@@ -197,7 +197,7 @@
 
 <div align="center">
 
-[![Repository](https://img.shields.io/badge/🔗_Repository-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/MatthewPaver/generate-newsletter)
+[![View Repository](https://img.shields.io/badge/🔗_View_Repository-0078D4?style=for-the-badge&logo=github&logoColor=white)](https://github.com/MatthewPaver/generate-newsletter)
 
 </div>
 
@@ -222,7 +222,7 @@
 
 <div align="center">
 
-[![Repository](https://img.shields.io/badge/🔗_Repository-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/MatthewPaver/pinterest-image-scraper-)
+[![View Repository](https://img.shields.io/badge/🔗_View_Repository-0078D4?style=for-the-badge&logo=github&logoColor=white)](https://github.com/MatthewPaver/pinterest-image-scraper-)
 
 </div>
 
@@ -246,7 +246,7 @@
 
 <div align="center">
 
-[![Repository](https://img.shields.io/badge/🔗_Repository-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/MatthewPaver/university-of-liverpool)
+[![View Repository](https://img.shields.io/badge/🔗_View_Repository-0078D4?style=for-the-badge&logo=github&logoColor=white)](https://github.com/MatthewPaver/university-of-liverpool)
 
 </div>
 
