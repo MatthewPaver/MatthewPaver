@@ -16,7 +16,9 @@ I build practical AI systems that connect data, automate work, and surface insig
 
 <div align="center">
 
-[![CV](https://img.shields.io/badge/📄_View_CV-181717?style=for-the-badge&logo=github&logoColor=white)](CV.pdf)
+<a href="CV.pdf" style="text-decoration: none;">
+  <img src="https://img.shields.io/badge/📄_View_My_CV-0078D4?style=for-the-badge&logo=microsoft-word&logoColor=white&labelColor=0078D4&color=FFFFFF" alt="View CV" />
+</a>
 
 </div>
 
@@ -71,8 +73,9 @@ I build practical AI systems that connect data, automate work, and surface insig
 <table>
 <tr>
 <td valign="top" width="50%">
+
 <a href="https://github.com/MatthewPaver/marketing-ml-lakehouse" style="text-decoration: none; color: inherit; display: block;">
-<div style="display: block; width: 100%; height: 100%;">
+
 <div align="center">
 
 ### 🏗️ Marketing ML – Local Lakehouse Dashboard
@@ -89,15 +92,17 @@ I build practical AI systems that connect data, automate work, and surface insig
 
 <div align="center">
 
-![Repository](https://img.shields.io/badge/🔗_Repository-181717?style=for-the-badge&logo=github&logoColor=white)
+[![Repository](https://img.shields.io/badge/🔗_Repository-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/MatthewPaver/marketing-ml-lakehouse)
 
 </div>
-</div>
+
 </a>
+
 </td>
 <td valign="top" width="50%">
+
 <a href="https://github.com/MatthewPaver/208-Project" style="text-decoration: none; color: inherit; display: block;">
-<div style="display: block; width: 100%; height: 100%;">
+
 <div align="center">
 
 ### 🎨 Architexa
@@ -114,20 +119,19 @@ I build practical AI systems that connect data, automate work, and surface insig
 
 <div align="center">
 
-![Repository](https://img.shields.io/badge/🔗_Repository-181717?style=for-the-badge&logo=github&logoColor=white) 
+[![Repository](https://img.shields.io/badge/🔗_Repository-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/MatthewPaver/208-Project) [![Live](https://img.shields.io/badge/Live_Site-000000?style=for-the-badge&logo=vercel&logoColor=white)](https://architexa.io)
 
 </div>
-</div>
+
 </a>
-<div align="center">
-[![Live](https://img.shields.io/badge/Live_Site-000000?style=for-the-badge&logo=vercel&logoColor=white)](https://architexa.io)
-</div>
+
 </td>
 </tr>
 <tr>
 <td valign="top" width="50%">
+
 <a href="https://github.com/MatthewPaver/sentence-similarity-analysis" style="text-decoration: none; color: inherit; display: block;">
-<div style="display: block; width: 100%; height: 100%;">
+
 <div align="center">
 
 ### 🔍 Sentence Similarity Analysis
@@ -144,15 +148,17 @@ I build practical AI systems that connect data, automate work, and surface insig
 
 <div align="center">
 
-![Repository](https://img.shields.io/badge/🔗_Repository-181717?style=for-the-badge&logo=github&logoColor=white)
+[![Repository](https://img.shields.io/badge/🔗_Repository-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/MatthewPaver/sentence-similarity-analysis)
 
 </div>
-</div>
+
 </a>
+
 </td>
 <td valign="top" width="50%">
+
 <a href="https://github.com/MatthewPaver/dating-app-recommendation-system" style="text-decoration: none; color: inherit; display: block;">
-<div style="display: block; width: 100%; height: 100%;">
+
 <div align="center">
 
 ### 💝 Dating App Recommendation System
@@ -169,17 +175,19 @@ I build practical AI systems that connect data, automate work, and surface insig
 
 <div align="center">
 
-![Repository](https://img.shields.io/badge/🔗_Repository-181717?style=for-the-badge&logo=github&logoColor=white)
+[![Repository](https://img.shields.io/badge/🔗_Repository-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/MatthewPaver/dating-app-recommendation-system)
 
 </div>
-</div>
+
 </a>
+
 </td>
 </tr>
 <tr>
 <td valign="top" width="50%">
+
 <a href="https://github.com/MatthewPaver/ProjectLens" style="text-decoration: none; color: inherit; display: block;">
-<div style="display: block; width: 100%; height: 100%;">
+
 <div align="center">
 
 ### 📊 ProjectLens
@@ -196,15 +204,17 @@ I build practical AI systems that connect data, automate work, and surface insig
 
 <div align="center">
 
-![Repository](https://img.shields.io/badge/🔗_Repository-181717?style=for-the-badge&logo=github&logoColor=white)
+[![Repository](https://img.shields.io/badge/🔗_Repository-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/MatthewPaver/ProjectLens)
 
 </div>
-</div>
+
 </a>
+
 </td>
 <td valign="top" width="50%">
+
 <a href="https://github.com/MatthewPaver/pyspark-kafka-integration" style="text-decoration: none; color: inherit; display: block;">
-<div style="display: block; width: 100%; height: 100%;">
+
 <div align="center">
 
 ### ⚡ PySpark & Kafka Integration
@@ -221,11 +231,12 @@ I build practical AI systems that connect data, automate work, and surface insig
 
 <div align="center">
 
-![Repository](https://img.shields.io/badge/🔗_Repository-181717?style=for-the-badge&logo=github&logoColor=white)
+[![Repository](https://img.shields.io/badge/🔗_Repository-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/MatthewPaver/pyspark-kafka-integration)
 
 </div>
-</div>
+
 </a>
+
 </td>
 </tr>
 </table>
