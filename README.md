@@ -1,98 +1,162 @@
+<div align="center">
+
 # 💫 About Me
 
-I build practical AI systems that connect data, automate work and surface insight. Most of my projects live where data engineering, machine learning and product thinking meet. I like taking rough ideas and turning them into something real that someone can actually use.
+*Building practical AI systems that connect data, automate work, and surface insight*
 
-## 🔍 What I work on
+![Typing SVG](https://readme-typing-svg.herokuapp.com/?lines=AI+Engineer;Data+Scientist;ML+Enthusiast;Building+Practical+AI+Systems&center=true&vCenter=true&width=500&height=50&size=20&color=00D9FF&duration=3000&pause=1000)
 
-- Retrieval and reasoning pipelines with Python, LangChain, LlamaIndex, custom RAG setups and vector search  
-- Knowledge graphs in Neo4j  
-- LLM based agents, routing systems and evaluation frameworks  
-- Data automation with Supabase, n8n, Azure Functions and Playwright  
-- Tools that make messy data easier to understand
+</div>
 
-## ⚡ Things I enjoy building
+I build practical AI systems that connect data, automate work, and surface insight. Most of my projects live where data engineering, machine learning, and product thinking meet. I like taking rough ideas and turning them into something real that someone can actually use.
 
-- Event scraping and enrichment pipelines  
-- AI assistants for structured tasks  
-- Ranking and recommendation systems  
+---
+
+## 🔍 What I Work On
+
+- **Retrieval and Reasoning Pipelines** — Python, LangChain, LlamaIndex, custom RAG setups, and vector search
+- **Knowledge Graphs** — Neo4j for structured knowledge representation
+- **LLM-Based Systems** — Agents, routing systems, and evaluation frameworks
+- **Data Automation** — Supabase, n8n, Azure Functions, and Playwright
+- **Data Tools** — Making messy data easier to understand and work with
+
+## ⚡ Things I Enjoy Building
+
+- Event scraping and enrichment pipelines
+- AI assistants for structured tasks
+- Ranking and recommendation systems
 - Lightweight platforms for teams and SMEs
 
-## 🧪 Recent work
+## 🧪 Recent Work
 
-- A London event discovery pipeline using Firecrawl and Playwright  
-- Graph based RAG experiments using Neo4j  
-- An agent evaluation framework with structured prompts and scoring  
-- Similarity ranking, embedding search and user recommendation modelling
+- A London event discovery pipeline using Firecrawl and Playwright
+- Graph-based RAG experiments using Neo4j
+- An agent evaluation framework with structured prompts and scoring
+- Similarity ranking, embedding search, and user recommendation modelling
 
-## 🎯 What I am looking for
+## 🎯 What I'm Looking For
 
-Roles that mix data, machine learning and systems. I like the modelling work and the engineering around it.
+Roles that mix data, machine learning, and systems engineering. I enjoy both the modelling work and the engineering around it.
 
 ---
 
 # 🚀 Featured Projects
 
-### Event Discovery Pipeline  
-A full scraping and enrichment pipeline that collects London events, cleans the data, classifies it with LLMs and stores structured output.  
-[Repository](#)
+### 🏗️ Marketing ML – Local Lakehouse Dashboard
 
-### Graph Based RAG  
-Experiments that use Neo4j to improve retrieval and structure.  
-[Repository](#)
+End-to-end local lakehouse: DuckDB (bronze→silver→gold), pandas transforms, XGBoost models, and a Streamlit dashboard. Includes automated data ingestion, ML-driven pacing and conversion modelling, and LM Studio-powered insight generation.
 
-### Agent Evaluation Framework  
-A small framework that tests LLM agents on structured tasks.  
-[Repository](#)
+**Tech Stack:** `Python` `DuckDB` `XGBoost` `Streamlit` `pandas` `Data Lakehouse` `ML`
 
-### Similarity Ranking and Recommendation Model  
-Work on ranking, matching and retrieval.  
-[Repository](#)
+[🔗 Repository](https://github.com/MatthewPaver/marketing-ml-lakehouse)
 
 ---
 
-## 📚 Learning Right Now
+### 🔍 Sentence Similarity Analysis
 
-- Evaluation for LLM systems  
-- Hybrid RAG setups  
-- Orchestration for multi agent workflows
+A demonstration of semantic sentence similarity using transformer-based embedding models. This project explores how modern NLP models can identify semantically similar sentences from a corpus of diverse factual statements.
+
+**Tech Stack:** `Python` `sentence-transformers` `PyTorch` `Cosine Similarity` `NLP` `Embeddings`
+
+[🔗 Repository](https://github.com/MatthewPaver/sentence-similarity-analysis)
+
+---
+
+### 💝 Dating App Recommendation System
+
+A user-user recommendation system for swipe-based dating apps, built using implicit feedback matrix factorisation. This system identifies which profiles to show each user to maximise the likelihood of a match.
+
+**Tech Stack:** `Python` `Matrix Factorisation` `Recommendation Systems` `Implicit Feedback` `ML`
+
+[🔗 Repository](https://github.com/MatthewPaver/dating-app-recommendation-system)
+
+---
+
+### 📊 ProjectLens
+
+Web application and project data analysis pipeline. ProjectLens provides a web interface and backend pipeline for analysing project schedule data, identifying risks, and generating actionable insights. Upload your project data, trigger the analysis, and view results—all from your browser.
+
+**Tech Stack:** `Python` `Web Application` `Data Analysis` `Risk Analysis` `Project Management`
+
+[🔗 Repository](https://github.com/MatthewPaver/ProjectLens)
+
+---
+
+## 📚 Currently Learning
+
+- Evaluation methodologies for LLM systems
+- Hybrid RAG setups combining multiple retrieval strategies
+- Orchestration patterns for multi-agent workflows
+
+## 🎯 Current Focus
+
+Building production-ready AI systems that combine retrieval, reasoning, and automation. Interested in exploring how knowledge graphs can enhance RAG systems and improve agent decision-making.
 
 ---
 
 # 🌐 Connect With Me
 
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5.svg?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/matthew-paver-534262166/)
+<div align="center">
+
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/matthew-paver-534262166/)
+[![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/MatthewPaver)
+
+*Feel free to reach out if you'd like to collaborate on AI/ML projects or discuss opportunities!*
+
+</div>
 
 ---
 
 # 💻 Tech Stack
 
 ### Languages
-![Python](https://img.shields.io/badge/Python-3670A0.svg?style=flat&logo=python&logoColor=ffdd54)
-![C](https://img.shields.io/badge/C-00599C.svg?style=flat&logo=c&logoColor=white)
-![C++](https://img.shields.io/badge/C++-00599C.svg?style=flat&logo=c%2B%2B&logoColor=white)
-![Java](https://img.shields.io/badge/Java-ED8B00.svg?style=flat&logo=openjdk&logoColor=white)
-![SQL](https://img.shields.io/badge/SQL-025E8C.svg?style=flat&logo=postgresql&logoColor=white)
+
+![Python](https://img.shields.io/badge/Python-3670A0?style=flat&logo=python&logoColor=ffdd54)
+![C](https://img.shields.io/badge/C-00599C?style=flat&logo=c&logoColor=white)
+![C++](https://img.shields.io/badge/C++-00599C?style=flat&logo=c%2B%2B&logoColor=white)
+![Java](https://img.shields.io/badge/Java-ED8B00?style=flat&logo=java&logoColor=white)
+![PostgreSQL](https://img.shields.io/badge/PostgreSQL-316192?style=flat&logo=postgresql&logoColor=white)
 
 ### AI, ML and Data
-![LangChain](https://img.shields.io/badge/LangChain-000000.svg?style=flat&logo=langchain&logoColor=white)
-![LlamaIndex](https://img.shields.io/badge/LlamaIndex-000000.svg?style=flat)
-![Neo4j](https://img.shields.io/badge/Neo4j-018BFF.svg?style=flat&logo=neo4j&logoColor=white)
-![Databricks](https://img.shields.io/badge/Databricks-EF3B2D.svg?style=flat&logo=databricks&logoColor=white)
-![Vector DB](https://img.shields.io/badge/Vector_DB-4A90E2.svg?style=flat)
+
+![LangChain](https://img.shields.io/badge/LangChain-1C3C3C?style=flat&logo=langchain&logoColor=white)
+![LlamaIndex](https://img.shields.io/badge/LlamaIndex-412F17?style=flat&logoColor=white)
+![Neo4j](https://img.shields.io/badge/Neo4j-018BFF?style=flat&logo=neo4j&logoColor=white)
+![Databricks](https://img.shields.io/badge/Databricks-FF3621?style=flat&logo=databricks&logoColor=white)
+![Pinecone](https://img.shields.io/badge/Pinecone-430098?style=flat&logo=pinecone&logoColor=white)
 
 ### Automation and Tooling
-![n8n](https://img.shields.io/badge/n8n-F3850D.svg?style=flat&logo=n8n&logoColor=white)
-![Supabase](https://img.shields.io/badge/Supabase-3ECF8E.svg?style=flat&logo=supabase&logoColor=white)
-![Azure](https://img.shields.io/badge/Azure-0078D4.svg?style=flat&logo=microsoftazure&logoColor=white)
-![Playwright](https://img.shields.io/badge/Playwright-2EAD33.svg?style=flat&logo=playwright&logoColor=white)
+
+![n8n](https://img.shields.io/badge/n8n-F3850D?style=flat&logo=n8n&logoColor=white)
+![Supabase](https://img.shields.io/badge/Supabase-3ECF8E?style=flat&logo=supabase&logoColor=white)
+![Azure](https://img.shields.io/badge/Azure-0078D4?style=flat&logo=microsoftazure&logoColor=white)
+![Playwright](https://img.shields.io/badge/Playwright-45ba4b?style=flat&logo=playwright&logoColor=white)
 
 ---
 
 # 📊 GitHub Stats
 
-![Top Languages](https://github-readme-stats-git-masterrstaa-rickstaa.vercel.app/api/top-langs/?username=MatthewPaver&layout=compact&theme=dark&hide_border=false)
+<div align="center">
 
-![GitHub Streak](https://streak-stats.demolab.com/?user=MatthewPaver&theme=dark&hide_border=false)
+<a href="https://github.com/MatthewPaver">
+  <img height="180em" src="https://github-readme-stats.vercel.app/api?username=MatthewPaver&show_icons=true&theme=dark&hide_border=false&include_all_commits=true&count_private=true" alt="GitHub Stats" />
+  <img height="180em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=MatthewPaver&layout=compact&theme=dark&hide_border=false&langs_count=8" alt="Top Languages" />
+</a>
 
-![Visitor Count](https://visitcount.itsvg.in/api?id=MatthewPaver&icon=0&color=0)
+</div>
 
+---
+
+<div align="center">
+
+![Profile Views](https://komarev.com/ghpvc/?username=MatthewPaver&color=blueviolet&style=flat-square)
+
+</div>
+
+---
+
+<div align="center">
+
+![Snake animation](https://github.com/MatthewPaver/MatthewPaver/blob/output/github-contribution-grid-snake.svg)
+
+</div>
