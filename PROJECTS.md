@@ -206,6 +206,14 @@
 <tr>
 <td width="50%" valign="top">
 
+</td>
+</tr>
+</table>
+
+<table>
+<tr>
+<td width="100%" valign="top">
+
 ### 🖼️ Pinterest Image Scraper
 
 > Python script for automated Pinterest image scraping with duplicate removal. Features multi-threading, proxy support, and content-based duplicate detection for efficient image collection.
