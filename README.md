@@ -91,6 +91,31 @@ I build practical AI systems that connect data, automate work, and surface insig
 
 <div align="center">
 
+### 🎨 Architexa
+
+</div>
+
+> AI-powered architectural image generation web application using Conditional Generative Adversarial Networks (CGAN). Generates architectural images across 9 different classes with a Flask-based REST API and distributed training support.
+
+<div align="center">
+
+**Tech Stack:** `Python` `TensorFlow` `Keras` `Flask` `CGAN` `Deep Learning` `Web App`
+
+</div>
+
+<div align="center">
+
+[![Repository](https://img.shields.io/badge/🔗_Repository-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/MatthewPaver/208-Project) [![Live](https://img.shields.io/badge/🌐_Live_Site-000000?style=for-the-badge&logo=vercel&logoColor=white)](https://architexa.io)
+
+</div>
+
+</td>
+</tr>
+<tr>
+<td valign="top" width="50%">
+
+<div align="center">
+
 ### 🔍 Sentence Similarity Analysis
 
 </div>
@@ -110,8 +135,6 @@ I build practical AI systems that connect data, automate work, and surface insig
 </div>
 
 </td>
-</tr>
-<tr>
 <td valign="top" width="50%">
 
 <div align="center">
@@ -135,6 +158,8 @@ I build practical AI systems that connect data, automate work, and surface insig
 </div>
 
 </td>
+</tr>
+<tr>
 <td valign="top" width="50%">
 
 <div align="center">
@@ -154,6 +179,29 @@ I build practical AI systems that connect data, automate work, and surface insig
 <div align="center">
 
 [![Repository](https://img.shields.io/badge/🔗_Repository-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/MatthewPaver/ProjectLens)
+
+</div>
+
+</td>
+<td valign="top" width="50%">
+
+<div align="center">
+
+### ⚡ PySpark & Kafka Integration
+
+</div>
+
+> Real-time data streaming and processing demonstration using PySpark and Apache Kafka. Includes examples of consuming streaming data, performing DataFrame operations, and building real-time analytics pipelines for big data processing.
+
+<div align="center">
+
+**Tech Stack:** `Python` `PySpark` `Apache Kafka` `Streaming` `Big Data` `Real-Time Analytics`
+
+</div>
+
+<div align="center">
+
+[![Repository](https://img.shields.io/badge/🔗_Repository-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/MatthewPaver/pyspark-kafka-integration)
 
 </div>
 
