@@ -14,6 +14,12 @@ I build practical AI systems that connect data, automate work, and surface insig
 
 </div>
 
+<div align="center">
+
+[![CV](https://img.shields.io/badge/📄_View_CV-181717?style=for-the-badge&logo=github&logoColor=white)](CV.pdf)
+
+</div>
+
 ---
 
 ## 🔍 What I Work On
@@ -211,7 +217,7 @@ I build practical AI systems that connect data, automate work, and surface insig
 
 <div align="center">
 
-**[📦 View All Projects →](Projects.md)**
+**[📦 View All Projects →](PROJECTS.md)**
 
 </div>
 
