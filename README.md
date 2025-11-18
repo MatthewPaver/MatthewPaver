@@ -211,7 +211,7 @@ I build practical AI systems that connect data, automate work, and surface insig
 
 <div align="center">
 
-[![View All Projects](https://img.shields.io/badge/View_All_Projects-181717?style=for-the-badge)](https://github.com/MatthewPaver?tab=repositories)
+**[📦 View All Projects →](https://github.com/MatthewPaver?tab=repositories)**
 
 </div>
 
