@@ -73,7 +73,6 @@ I build practical AI systems that connect data, automate work, and surface insig
 <table>
 <tr>
 <td valign="top" width="50%">
-<div style="display: block; width: 100%; min-height: 100%; padding: 0; margin: 0;">
 <div align="center">
 
 ### 🏗️ Marketing ML – Local Lakehouse Dashboard
@@ -96,7 +95,6 @@ I build practical AI systems that connect data, automate work, and surface insig
 </div>
 </td>
 <td valign="top" width="50%">
-<div style="display: block; width: 100%; min-height: 100%; padding: 0; margin: 0;">
 <div align="center">
 
 ### 🎨 Architexa
@@ -121,7 +119,6 @@ I build practical AI systems that connect data, automate work, and surface insig
 </tr>
 <tr>
 <td valign="top" width="50%">
-<div style="display: block; width: 100%; min-height: 100%; padding: 0; margin: 0;">
 <div align="center">
 
 ### 🔍 Sentence Similarity Analysis
@@ -144,7 +141,6 @@ I build practical AI systems that connect data, automate work, and surface insig
 </div>
 </td>
 <td valign="top" width="50%">
-<div style="display: block; width: 100%; min-height: 100%; padding: 0; margin: 0;">
 <div align="center">
 
 ### 💝 Dating App Recommendation System
@@ -169,7 +165,6 @@ I build practical AI systems that connect data, automate work, and surface insig
 </tr>
 <tr>
 <td valign="top" width="50%">
-<div style="display: block; width: 100%; min-height: 100%; padding: 0; margin: 0;">
 <div align="center">
 
 ### 📊 ProjectLens
@@ -192,7 +187,6 @@ I build practical AI systems that connect data, automate work, and surface insig
 </div>
 </td>
 <td valign="top" width="50%">
-<div style="display: block; width: 100%; min-height: 100%; padding: 0; margin: 0;">
 <div align="center">
 
 ### ⚡ PySpark & Kafka Integration
