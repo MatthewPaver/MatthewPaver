@@ -92,7 +92,7 @@ I build practical AI systems that connect data, automate work, and surface insig
 
 <div align="center">
 
-[![Repository](https://img.shields.io/badge/🔗_Repository-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/MatthewPaver/marketing-ml-lakehouse)
+![Repository](https://img.shields.io/badge/🔗_Repository-181717?style=for-the-badge&logo=github&logoColor=white)
 
 </div>
 
@@ -119,7 +119,7 @@ I build practical AI systems that connect data, automate work, and surface insig
 
 <div align="center">
 
-[![Repository](https://img.shields.io/badge/🔗_Repository-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/MatthewPaver/208-Project) [![Live](https://img.shields.io/badge/Live_Site-000000?style=for-the-badge&logo=vercel&logoColor=white)](https://architexa.io)
+![Repository](https://img.shields.io/badge/🔗_Repository-181717?style=for-the-badge&logo=github&logoColor=white) [![Live](https://img.shields.io/badge/Live_Site-000000?style=for-the-badge&logo=vercel&logoColor=white)](https://architexa.io)
 
 </div>
 
@@ -148,7 +148,7 @@ I build practical AI systems that connect data, automate work, and surface insig
 
 <div align="center">
 
-[![Repository](https://img.shields.io/badge/🔗_Repository-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/MatthewPaver/sentence-similarity-analysis)
+![Repository](https://img.shields.io/badge/🔗_Repository-181717?style=for-the-badge&logo=github&logoColor=white)
 
 </div>
 
@@ -175,7 +175,7 @@ I build practical AI systems that connect data, automate work, and surface insig
 
 <div align="center">
 
-[![Repository](https://img.shields.io/badge/🔗_Repository-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/MatthewPaver/dating-app-recommendation-system)
+![Repository](https://img.shields.io/badge/🔗_Repository-181717?style=for-the-badge&logo=github&logoColor=white)
 
 </div>
 
@@ -204,7 +204,7 @@ I build practical AI systems that connect data, automate work, and surface insig
 
 <div align="center">
 
-[![Repository](https://img.shields.io/badge/🔗_Repository-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/MatthewPaver/ProjectLens)
+![Repository](https://img.shields.io/badge/🔗_Repository-181717?style=for-the-badge&logo=github&logoColor=white)
 
 </div>
 
@@ -231,7 +231,7 @@ I build practical AI systems that connect data, automate work, and surface insig
 
 <div align="center">
 
-[![Repository](https://img.shields.io/badge/🔗_Repository-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/MatthewPaver/pyspark-kafka-integration)
+![Repository](https://img.shields.io/badge/🔗_Repository-181717?style=for-the-badge&logo=github&logoColor=white)
 
 </div>
 
