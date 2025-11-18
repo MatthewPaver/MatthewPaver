@@ -114,11 +114,14 @@ I build practical AI systems that connect data, automate work, and surface insig
 
 <div align="center">
 
-![Repository](https://img.shields.io/badge/🔗_Repository-181717?style=for-the-badge&logo=github&logoColor=white) [![Live](https://img.shields.io/badge/Live_Site-000000?style=for-the-badge&logo=vercel&logoColor=white)](https://architexa.io)
+![Repository](https://img.shields.io/badge/🔗_Repository-181717?style=for-the-badge&logo=github&logoColor=white) 
 
 </div>
 </div>
 </a>
+<div align="center">
+[![Live](https://img.shields.io/badge/Live_Site-000000?style=for-the-badge&logo=vercel&logoColor=white)](https://architexa.io)
+</div>
 </td>
 </tr>
 <tr>
