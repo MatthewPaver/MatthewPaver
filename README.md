@@ -213,7 +213,7 @@ I build practical AI systems that connect data, automate work, and surface insig
 
 <div align="center">
 
-**[📦 View All Projects →](PROJECTS.md)**
+**[📦 View All Projects →](Projects.md)**
 
 </div>
 
