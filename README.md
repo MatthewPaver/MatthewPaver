@@ -31,7 +31,7 @@ I build practical AI systems that sit at the intersection of data engineering, m
 <td valign="top" width="50%">
 <div align="center">
 
-### Paper Trading Bot
+### Paper Trading Bot ![Private](https://img.shields.io/badge/Private-grey?style=flat-square&logo=lock&logoColor=white)
 
 </div>
 
@@ -48,7 +48,7 @@ I build practical AI systems that sit at the intersection of data engineering, m
 <td valign="top" width="50%">
 <div align="center">
 
-### Happening — Event Discovery
+### Happening — Event Discovery ![Private](https://img.shields.io/badge/Private-grey?style=flat-square&logo=lock&logoColor=white)
 
 </div>
 
@@ -84,7 +84,7 @@ I build practical AI systems that sit at the intersection of data engineering, m
 <td valign="top" width="50%">
 <div align="center">
 
-### AI Weekly Newsletter
+### AI Weekly Newsletter ![Private](https://img.shields.io/badge/Private-grey?style=flat-square&logo=lock&logoColor=white)
 
 </div>
 
