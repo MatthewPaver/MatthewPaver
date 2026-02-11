@@ -8,16 +8,15 @@
 
 </div>
 
-<div align="left">
-
 I build practical AI systems that connect data, automate work, and surface insight. Most of my projects live where data engineering, machine learning, and product thinking meet. I like taking rough ideas and turning them into something real that someone can actually use.
-
-</div>
 
 <div align="center">
 
-<a href="CV.pdf" style="text-decoration: none; display: inline-block; transition: transform 0.2s;">
-  <img src="https://img.shields.io/badge/View_My_CV-0078D4?style=for-the-badge&logo=microsoft-word&logoColor=white&labelColor=0078D4&color=FFFFFF" alt="View CV" style="box-shadow: 0 4px 8px rgba(0, 120, 212, 0.3); border-radius: 6px;" />
+<a href="CV.pdf">
+  <img src="https://img.shields.io/badge/View_My_CV-0078D4?style=for-the-badge&logo=readthedocs&logoColor=white" alt="View CV" />
+</a>
+<a href="https://github.com/MatthewPaver/portfolio">
+  <img src="https://img.shields.io/badge/Browse_All_Projects-181717?style=for-the-badge&logo=github&logoColor=white" alt="Portfolio" />
 </a>
 
 </div>
@@ -26,45 +25,29 @@ I build practical AI systems that connect data, automate work, and surface insig
 
 ## What I Work On
 
-<div align="left">
-
 - **Retrieval and Reasoning Pipelines** — Python, LangChain, LlamaIndex, custom RAG setups, and vector search
 - **Knowledge Graphs** — Neo4j for structured knowledge representation
 - **LLM-Based Systems** — Agents, routing systems, and evaluation frameworks
 - **Data Automation** — Supabase, n8n, Azure Functions, and Playwright
 - **Data Tools** — Making messy data easier to understand and work with
 
-</div>
-
 ## Things I Enjoy Building
-
-<div align="left">
 
 - Event scraping and enrichment pipelines
 - AI assistants for structured tasks
 - Ranking and recommendation systems
 - Lightweight platforms for teams and SMEs
 
-</div>
-
 ## Recent Work
-
-<div align="left">
 
 - A London event discovery pipeline using Firecrawl and Playwright
 - Graph-based RAG experiments using Neo4j
 - An agent evaluation framework with structured prompts and scoring
 - Similarity ranking, embedding search, and user recommendation modelling
 
-</div>
-
 ## What I'm Looking For
 
-<div align="left">
-
 > Roles that mix data, machine learning, and systems engineering. I enjoy both the modelling work and the engineering around it.
-
-</div>
 
 ---
 
@@ -75,7 +58,7 @@ I build practical AI systems that connect data, automate work, and surface insig
 <td valign="top" width="50%">
 <div align="center">
 
-### Marketing ML – Local Lakehouse Dashboard
+### Marketing ML Lakehouse
 
 </div>
 
@@ -83,7 +66,7 @@ I build practical AI systems that connect data, automate work, and surface insig
 
 <div align="center">
 
-**Tech Stack:** `Python` `DuckDB` `XGBoost` `Streamlit` `pandas` `Data Lakehouse` `ML`
+**Tech Stack:** `Python` `DuckDB` `XGBoost` `Streamlit` `pandas` `ML`
 
 [![View Repository](https://img.shields.io/badge/View_Repository-0078D4?style=for-the-badge&logo=github&logoColor=white)](https://github.com/MatthewPaver/marketing-ml-lakehouse)
 
@@ -96,11 +79,11 @@ I build practical AI systems that connect data, automate work, and surface insig
 
 </div>
 
-> AI-powered architectural image generation web application using Conditional Generative Adversarial Networks (CGAN). Generates architectural images across 9 different classes with a Flask-based REST API and distributed training support.
+> AI-powered architectural image generation using Conditional Generative Adversarial Networks (CGAN). Generates images across 9 architectural classes with a Flask-based REST API and distributed training support.
 
 <div align="center">
 
-**Tech Stack:** `Python` `TensorFlow` `Keras` `Flask` `CGAN` `Deep Learning` `Web App`
+**Tech Stack:** `Python` `TensorFlow` `Keras` `Flask` `CGAN` `Deep Learning`
 
 [![View Repository](https://img.shields.io/badge/View_Repository-0078D4?style=for-the-badge&logo=github&logoColor=white)](https://github.com/MatthewPaver/Architexa) [![Live](https://img.shields.io/badge/Live_Site-000000?style=for-the-badge&logo=vercel&logoColor=white)](https://architexa.io)
 
@@ -115,11 +98,11 @@ I build practical AI systems that connect data, automate work, and surface insig
 
 </div>
 
-> A demonstration of semantic sentence similarity using transformer-based embedding models. This project explores how modern NLP models can identify semantically similar sentences from a corpus of diverse factual statements.
+> Semantic sentence similarity using transformer-based embedding models. Explores how modern NLP models identify semantically similar sentences from a corpus of diverse factual statements.
 
 <div align="center">
 
-**Tech Stack:** `Python` `sentence-transformers` `PyTorch` `Cosine Similarity` `NLP` `Embeddings`
+**Tech Stack:** `Python` `sentence-transformers` `PyTorch` `NLP` `Embeddings`
 
 [![View Repository](https://img.shields.io/badge/View_Repository-0078D4?style=for-the-badge&logo=github&logoColor=white)](https://github.com/MatthewPaver/sentence-similarity-analysis)
 
@@ -132,11 +115,11 @@ I build practical AI systems that connect data, automate work, and surface insig
 
 </div>
 
-> A user-user recommendation system for swipe-based dating apps, built using implicit feedback matrix factorisation. This system identifies which profiles to show each user to maximise the likelihood of a match.
+> User-user collaborative filtering for swipe-based dating apps, built using implicit feedback matrix factorisation. Identifies which profiles to show each user to maximise match likelihood.
 
 <div align="center">
 
-**Tech Stack:** `Python` `Matrix Factorisation` `Recommendation Systems` `Implicit Feedback` `ML`
+**Tech Stack:** `Python` `Matrix Factorisation` `Recommendation Systems` `ML`
 
 [![View Repository](https://img.shields.io/badge/View_Repository-0078D4?style=for-the-badge&logo=github&logoColor=white)](https://github.com/MatthewPaver/dating-app-recommendation-system)
 
@@ -151,11 +134,11 @@ I build practical AI systems that connect data, automate work, and surface insig
 
 </div>
 
-> Web application and project data analysis pipeline. Provides a web interface and backend pipeline for analysing project schedule data, identifying risks, and generating actionable insights. Upload your project data, trigger the analysis, and view results — all from your browser.
+> Web application for analysing project schedule data. Upload data, run risk analysis, and view slippage detection, change points, milestone tracking, and forecasting — all from your browser.
 
 <div align="center">
 
-**Tech Stack:** `Python` `Flask` `Data Analysis` `Risk Analysis` `Project Management`
+**Tech Stack:** `Python` `Flask` `pandas` `statsforecast`
 
 [![View Repository](https://img.shields.io/badge/View_Repository-0078D4?style=for-the-badge&logo=github&logoColor=white)](https://github.com/MatthewPaver/ProjectLens)
 
@@ -168,11 +151,11 @@ I build practical AI systems that connect data, automate work, and surface insig
 
 </div>
 
-> Real-time data streaming and processing demonstration using PySpark and Apache Kafka. Includes examples of consuming streaming data, performing DataFrame operations, and building real-time analytics pipelines for big data processing.
+> Real-time data streaming and processing with PySpark and Apache Kafka. Includes examples of consuming streaming data, performing DataFrame operations, and building real-time analytics pipelines.
 
 <div align="center">
 
-**Tech Stack:** `Python` `PySpark` `Apache Kafka` `Streaming` `Big Data` `Real-Time Analytics`
+**Tech Stack:** `Python` `PySpark` `Apache Kafka` `Streaming` `Big Data`
 
 [![View Repository](https://img.shields.io/badge/View_Repository-0078D4?style=for-the-badge&logo=github&logoColor=white)](https://github.com/MatthewPaver/pyspark-kafka-integration)
 
@@ -183,7 +166,7 @@ I build practical AI systems that connect data, automate work, and surface insig
 
 <div align="center">
 
-**[View All Projects](Projects.md)**
+**[Browse All Projects by Difficulty Level](https://github.com/MatthewPaver/portfolio)**
 
 </div>
 
@@ -191,16 +174,12 @@ I build practical AI systems that connect data, automate work, and surface insig
 
 ## Current Focus
 
-<div align="left">
-
 Building production-ready AI systems that combine retrieval, reasoning, and automation. Currently exploring:
 
 - Evaluation methodologies for LLM systems
 - Hybrid RAG setups combining multiple retrieval strategies
 - Orchestration patterns for multi-agent workflows
 - How knowledge graphs can enhance RAG systems and improve agent decision-making
-
-</div>
 
 ---
 
@@ -210,8 +189,7 @@ Building production-ready AI systems that combine retrieval, reasoning, and auto
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/matthew-paver-534262166/)
 [![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/MatthewPaver)
-
-*Feel free to reach out if you'd like to collaborate on AI/ML projects or discuss opportunities!*
+[![Portfolio](https://img.shields.io/badge/Project_Portfolio-4285F4?style=for-the-badge&logo=googledocs&logoColor=white)](https://github.com/MatthewPaver/portfolio)
 
 </div>
 
@@ -221,64 +199,16 @@ Building production-ready AI systems that combine retrieval, reasoning, and auto
 
 <div align="center">
 
-<table>
-<tr>
-<td align="center" width="33.33%">
-
-[![AWS CCP](https://img.shields.io/badge/AWS_Cloud_Practitioner-232F3E?style=flat-square&logo=amazonwebservices&logoColor=FF9900)](https://aws.amazon.com/verification)
-<sub>**Amazon Web Services**</sub>
-
-</td>
-<td align="center" width="33.33%">
-
-[![Neo4j](https://img.shields.io/badge/Neo4j_Professional-008CC1?style=flat-square&logo=neo4j&logoColor=FFFFFF)](https://drive.google.com/file/d/15oXe_G86TEiETdC8kGBhbnKoMjVZ5mQQ/view)
-<sub>**Neo4j**</sub>
-
-</td>
-<td align="center" width="33.33%">
-
-[![Agent Course](https://img.shields.io/badge/Agent_Course-FFD21E?style=flat-square&logo=huggingface&logoColor=000000)](https://drive.google.com/file/d/1NgSeIIF49Sqh2DAMY5KQEtnaddSc1Sqw/view)
-<sub>**Hugging Face**</sub>
-
-</td>
-</tr>
-<tr>
-<td align="center" width="33.33%">
-
-[![RPA](https://img.shields.io/badge/RPA_Developer_Advanced-D50037?style=flat-square&logoColor=FFFFFF)](https://drive.google.com/file/d/15lrcn5_Cn4g-kD165xGNLUGUGXtCptk-/view)
-<sub>**UiPath**</sub>
-
-</td>
-<td align="center" width="33.33%">
-
-[![BCS Diploma](https://img.shields.io/badge/BCS_Diploma-004C97?style=flat-square&logoColor=FFFFFF)](https://drive.google.com/file/d/15yLBx8nzlhn_PwrGoqQbumRG8zRQPC9t/view)
-<sub>**BCS**</sub>
-
-</td>
-<td align="center" width="33.33%">
-
-[![BCS Certificate](https://img.shields.io/badge/BCS_Certificate-004C97?style=flat-square&logoColor=FFFFFF)](https://drive.google.com/file/d/160nzem63oIEv3EF9mCU9NGWwwA4NMdMZ/view)
-<sub>**BCS**</sub>
-
-</td>
-</tr>
-<tr>
-<td align="center" width="33.33%">
-
-[![Safeguarding](https://img.shields.io/badge/Safeguarding-DE3163?style=flat-square&logoColor=FFFFFF)](https://drive.google.com/file/d/1Mq3-vuqTECkUQAmjF5iSjQiQXtjH4ZX7/view)
-<sub>**FutureLearn**</sub>
-
-</td>
-<td align="center" width="33.33%">
-
-[![Leadership](https://img.shields.io/badge/Leadership_&_Coaching-006B6B?style=flat-square&logoColor=FFFFFF)](https://drive.google.com/file/d/16AUSqrvRJvlfEnu15zRWeInN8Z4VFAsY/view)
-<sub>**Projecting Success**</sub>
-
-</td>
-<td align="center" width="33.33%">
-</td>
-</tr>
-</table>
+| Certification | Issued By |
+|:---:|:---:|
+| [![AWS CCP](https://img.shields.io/badge/AWS_Cloud_Practitioner-232F3E?style=flat-square&logo=amazonwebservices&logoColor=FF9900)](https://aws.amazon.com/verification) | Amazon Web Services |
+| [![Neo4j](https://img.shields.io/badge/Neo4j_Certified_Professional-008CC1?style=flat-square&logo=neo4j&logoColor=FFFFFF)](https://drive.google.com/file/d/15oXe_G86TEiETdC8kGBhbnKoMjVZ5mQQ/view) | Neo4j |
+| [![Agent Course](https://img.shields.io/badge/AI_Agents_Course-FFD21E?style=flat-square&logo=huggingface&logoColor=000000)](https://drive.google.com/file/d/1NgSeIIF49Sqh2DAMY5KQEtnaddSc1Sqw/view) | Hugging Face |
+| [![RPA](https://img.shields.io/badge/RPA_Developer_Advanced-D50037?style=flat-square&logoColor=FFFFFF)](https://drive.google.com/file/d/15lrcn5_Cn4g-kD165xGNLUGUGXtCptk-/view) | UiPath |
+| [![BCS Diploma](https://img.shields.io/badge/BCS_Diploma_in_IT-004C97?style=flat-square&logoColor=FFFFFF)](https://drive.google.com/file/d/15yLBx8nzlhn_PwrGoqQbumRG8zRQPC9t/view) | BCS, The Chartered Institute for IT |
+| [![BCS Certificate](https://img.shields.io/badge/BCS_Certificate_in_IT-004C97?style=flat-square&logoColor=FFFFFF)](https://drive.google.com/file/d/160nzem63oIEv3EF9mCU9NGWwwA4NMdMZ/view) | BCS, The Chartered Institute for IT |
+| [![Safeguarding](https://img.shields.io/badge/Safeguarding-DE3163?style=flat-square&logoColor=FFFFFF)](https://drive.google.com/file/d/1Mq3-vuqTECkUQAmjF5iSjQiQXtjH4ZX7/view) | FutureLearn |
+| [![Leadership](https://img.shields.io/badge/Leadership_&_Coaching-006B6B?style=flat-square&logoColor=FFFFFF)](https://drive.google.com/file/d/16AUSqrvRJvlfEnu15zRWeInN8Z4VFAsY/view) | Projecting Success |
 
 </div>
 
@@ -354,18 +284,3 @@ Building production-ready AI systems that combine retrieval, reasoning, and auto
 </td>
 </tr>
 </table>
-
----
-
-# GitHub Stats
-
-<div align="center">
-
-<img src="https://github-readme-stats.vercel.app/api?username=MatthewPaver&show_icons=true&theme=tokyonight&hide_border=true&include_all_commits=true&count_private=true&rank_icon=github" alt="GitHub Stats" height="180em" />
-<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=MatthewPaver&layout=compact&theme=tokyonight&hide_border=true&langs_count=8" alt="Top Languages" height="180em" />
-
-<img src="https://github-readme-streak-stats.herokuapp.com/?user=MatthewPaver&theme=tokyonight&hide_border=true" alt="GitHub Streak" />
-
-<img src="https://github-readme-activity-graph.vercel.app/graph?username=MatthewPaver&theme=tokyo-night&hide_border=true&area=true" alt="Activity Graph" width="95%" />
-
-</div>
