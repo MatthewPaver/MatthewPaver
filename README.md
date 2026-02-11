@@ -88,13 +88,13 @@ I build practical AI systems that sit at the intersection of data engineering, m
 
 </div>
 
-> Automated newsletter aggregating 15+ AI sources weekly. Extractive summarisation, keyword-based difficulty classification, and GitHub Actions publishing — no API key required.
+> Curated AI newsletter from 15+ sources with thumbnails, author extraction, GitHub trending repos, difficulty tagging, and an animated website with personalised filtering.
 
 <div align="center">
 
-`Python` `feedparser` `Jinja2` `GitHub Actions`
+`Python` `GitHub Actions` `GitHub Pages` `RSS`
 
-[![Generate](https://github.com/MatthewPaver/ai-weekly-newsletter/actions/workflows/generate.yml/badge.svg)](https://github.com/MatthewPaver/ai-weekly-newsletter/actions/workflows/generate.yml) [![Latest Issue](https://img.shields.io/badge/Latest_Issue-Read-brightgreen?style=flat-square)](https://github.com/MatthewPaver/ai-weekly-newsletter/blob/main/issues/latest.md)
+[![Generate](https://github.com/MatthewPaver/ai-weekly-newsletter/actions/workflows/generate.yml/badge.svg)](https://github.com/MatthewPaver/ai-weekly-newsletter/actions/workflows/generate.yml) [![Read Newsletter](https://img.shields.io/badge/Read_Newsletter-00D9FF?style=flat-square)](https://matthewpaver.github.io/ai-weekly/) [![RSS](https://img.shields.io/badge/RSS-orange?style=flat-square&logo=rss)](https://matthewpaver.github.io/ai-weekly/feed.xml)
 
 </div>
 </td>
