@@ -18,9 +18,9 @@
 
 ---
 
-I'm an AI engineer who spends most of his time building things that have to actually work — not just run cleanly in a notebook. RAG pipelines, trading systems, event scrapers, agentic workflows. Most of the serious stuff lives in private repos, but I try to document the thinking publicly where I can.
+I build AI systems and most of my time goes into making them work reliably rather than just getting them to work at all. The bigger projects tend to be private but I share what I can here.
 
-Right now I'm deep into LLM evaluation, multi-agent orchestration, and knowledge graph-enhanced retrieval. Just picked up my AWS Certified AI Practitioner certification too.
+Currently focused on retrieval that holds up in practice, evaluation that catches real failures, and building agents that behave. Just passed my AWS AI Practitioner exam too.
 
 ---
 
@@ -35,7 +35,7 @@ Right now I'm deep into LLM evaluation, multi-agent orchestration, and knowledge
 
 </div>
 
-> Production-grade trading simulator with a full broker engine, multi-strategy backtesting, and automated Discord reporting. Built with a proper test suite and CI pipeline.
+> A trading simulator built to stress test strategies properly. Runs a full broker engine, tests across years of historical data, and posts results to Discord automatically.
 
 <div align="center">
 
@@ -50,7 +50,7 @@ Right now I'm deep into LLM evaluation, multi-agent orchestration, and knowledge
 
 </div>
 
-> Automated event discovery platform covering London venues. Resilient multi-source crawling, structured data extraction, and daily scheduled automation.
+> Tracks events across London venues. Pulls from multiple sources, cleans and structures the data, and runs on a daily schedule.
 
 <div align="center">
 
@@ -67,7 +67,7 @@ Right now I'm deep into LLM evaluation, multi-agent orchestration, and knowledge
 
 </div>
 
-> End-to-end local lakehouse: DuckDB medallion architecture (bronze → silver → gold), XGBoost models for pacing and conversion, and a Streamlit dashboard with LLM-powered insights.
+> A local marketing analytics stack. DuckDB handles the data layers, XGBoost models predict pacing and conversion, and a Streamlit dashboard surfaces everything with AI-generated commentary.
 
 <div align="center">
 
@@ -84,7 +84,7 @@ Right now I'm deep into LLM evaluation, multi-agent orchestration, and knowledge
 
 </div>
 
-> Curated weekly AI newsletter with fully automated generation, personalised filtering, and a live website. Aggregates the best tools, papers, and repos.
+> A weekly AI newsletter that pulls from a range of sources, filters by relevance, and publishes itself. The website lets you browse by topic and difficulty.
 
 <div align="center">
 
@@ -103,7 +103,7 @@ Right now I'm deep into LLM evaluation, multi-agent orchestration, and knowledge
 
 </div>
 
-> AI-powered architectural image generation using Conditional GANs. Generates across 9 architectural classes with a Flask REST API.
+> Uses a conditional GAN to generate architectural images across 9 building styles. Flask API on top, deployable as a web app.
 
 <div align="center">
 
@@ -120,7 +120,7 @@ Right now I'm deep into LLM evaluation, multi-agent orchestration, and knowledge
 
 </div>
 
-> User-user collaborative filtering using implicit feedback matrix factorisation. Identifies which profiles to show each user to maximise match likelihood.
+> A recommendation system for swipe-based apps. Uses matrix factorisation on implicit feedback to figure out which profiles are worth showing to each user.
 
 <div align="center">
 
