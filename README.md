@@ -84,7 +84,7 @@ Currently focused on retrieval that holds up in practice, evaluation that catche
 
 </div>
 
-> Full-stack AI newsletter platform — Next.js 15 web app, Supabase Auth, personalised content, bookmarks, reading history, and an automated pipeline with Gemini summarisation, HN discussion counts, and Fuse.js search.
+> A full-stack AI newsletter platform. Next.js 15 web app with Supabase Auth, personalised content, bookmarks, reading history, and an automated pipeline covering Gemini summarisation, HN discussion counts, and Fuse.js search.
 
 <div align="center">
 
@@ -223,6 +223,15 @@ Currently focused on retrieval that holds up in practice, evaluation that catche
 <img src="https://github-readme-stats.vercel.app/api?username=MatthewPaver&show_icons=true&theme=tokyonight&hide_border=true&count_private=true&include_all_commits=true" alt="GitHub Stats" height="160"/>
 <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=MatthewPaver&layout=compact&theme=tokyonight&hide_border=true&langs_count=8" alt="Top Languages" height="160"/>
 
+
+<br>
+
+<img src="https://github-readme-streak-stats.herokuapp.com/?user=MatthewPaver&theme=tokyonight&hide_border=true" alt="GitHub Streak"/>
+
+<br>
+
+[![trophy](https://github-profile-trophy.vercel.app/?username=MatthewPaver&theme=tokyonight&no-frame=true&column=7&margin-w=4)](https://github.com/MatthewPaver)
+
 </div>
 
 <picture>
@@ -235,6 +244,6 @@ Currently focused on retrieval that holds up in practice, evaluation that catche
 
 <div align="center">
 
-*Open to collaboration and opportunities — [reach out on LinkedIn](https://www.linkedin.com/in/matthew-paver-534262166/)*
+*Open to collaboration and opportunities. [Reach out on LinkedIn](https://www.linkedin.com/in/matthew-paver-534262166/)*
 
 </div>
