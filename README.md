@@ -228,9 +228,6 @@ Currently focused on retrieval that holds up in practice, evaluation that catche
 
 <img src="https://github-readme-streak-stats.herokuapp.com/?user=MatthewPaver&theme=tokyonight&hide_border=true" alt="GitHub Streak"/>
 
-<br>
-
-[![trophy](https://github-profile-trophy.vercel.app/?username=MatthewPaver&theme=tokyonight&no-frame=true&column=7&margin-w=4)](https://github.com/MatthewPaver)
 
 </div>
 
