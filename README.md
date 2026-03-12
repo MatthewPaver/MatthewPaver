@@ -14,6 +14,9 @@
   <img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" />
 </a>
 
+<br><br>
+<img src="https://komarev.com/ghpvc/?username=MatthewPaver&color=00D9FF&style=flat-square&label=Profile+Views" alt="Profile Views" />
+
 </div>
 
 ---
@@ -223,6 +226,18 @@ Currently focused on retrieval that holds up in practice, evaluation that catche
 <img src="https://github-readme-stats.vercel.app/api?username=MatthewPaver&show_icons=true&theme=tokyonight&hide_border=true&count_private=true&include_all_commits=true" alt="GitHub Stats" height="160"/>
 <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=MatthewPaver&layout=compact&theme=tokyonight&hide_border=true&langs_count=8" alt="Top Languages" height="160"/>
 
+<br>
+
+<img src="https://github-readme-streak-stats.herokuapp.com/?user=MatthewPaver&theme=tokyonight&hide_border=true" alt="GitHub Streak"/>
+
+<br>
+
+[![trophy](https://github-profile-trophy.vercel.app/?username=MatthewPaver&theme=tokyonight&no-frame=true&column=7&margin-w=4)](https://github.com/MatthewPaver)
+
+<br>
+
+[![Activity Graph](https://github-readme-activity-graph.vercel.app/graph?username=MatthewPaver&theme=tokyo-night&hide_border=true&area=true)](https://github.com/MatthewPaver)
+
 </div>
 
 <picture>
@@ -235,6 +250,6 @@ Currently focused on retrieval that holds up in practice, evaluation that catche
 
 <div align="center">
 
-*Open to collaboration and opportunities — [reach out on LinkedIn](https://www.linkedin.com/in/matthew-paver-534262166/)*
+*Open to collaboration — [reach out on LinkedIn](https://www.linkedin.com/in/matthew-paver-534262166/)*
 
 </div>
