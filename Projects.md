@@ -217,7 +217,7 @@
 
 <div align="center">
 
-[![View Repository](https://img.shields.io/badge/🔗_View_Repository-0078D4?style=for-the-badge&logo=github&logoColor=white)](https://github.com/MatthewPaver/ai-weekly) [![Read Newsletter](https://img.shields.io/badge/Read_Newsletter-00D9FF?style=for-the-badge)](https://matthewpaver.github.io/ai-weekly/) [![RSS](https://img.shields.io/badge/RSS-FFA500?style=for-the-badge&logo=rss&logoColor=white)](https://matthewpaver.github.io/ai-weekly/feed.xml)
+[![View Repository](https://img.shields.io/badge/🔗_View_Repository-0078D4?style=for-the-badge&logo=github&logoColor=white)](https://github.com/MatthewPaver/ai-weekly) [![Read Newsletter](https://img.shields.io/badge/Read_Newsletter-00D9FF?style=for-the-badge)](https://inferencebrief.co/) [![RSS](https://img.shields.io/badge/RSS-FFA500?style=for-the-badge&logo=rss&logoColor=white)](https://matthewpaver.github.io/ai-weekly/feed.xml)
 
 </div>
 

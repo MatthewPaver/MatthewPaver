@@ -18,9 +18,9 @@
 
 ---
 
-I build practical AI systems that sit at the intersection of data engineering, machine learning, and product thinking. I like taking rough ideas and turning them into something real — whether that's a retrieval pipeline, a recommendation engine, or an automated scraping system.
+I'm an AI engineer who spends most of his time building things that have to actually work — not just run cleanly in a notebook. RAG pipelines, trading systems, event scrapers, agentic workflows. Most of the serious stuff lives in private repos, but I try to document the thinking publicly where I can.
 
-**Currently focused on:** LLM evaluation, hybrid RAG architectures, multi-agent orchestration, and knowledge graph-enhanced retrieval. AWS Certified AI Practitioner.
+Right now I'm deep into LLM evaluation, multi-agent orchestration, and knowledge graph-enhanced retrieval. Just picked up my AWS Certified AI Practitioner certification too.
 
 ---
 
@@ -67,13 +67,13 @@ I build practical AI systems that sit at the intersection of data engineering, m
 
 </div>
 
-> End-to-end local lakehouse: DuckDB medallion architecture (bronze > silver > gold), XGBoost models for pacing and conversion, and a Streamlit dashboard with LLM-powered insights.
+> End-to-end local lakehouse: DuckDB medallion architecture (bronze → silver → gold), XGBoost models for pacing and conversion, and a Streamlit dashboard with LLM-powered insights.
 
 <div align="center">
 
 `Python` `DuckDB` `XGBoost` `Streamlit` `Polars`
 
-[![View Repository](https://img.shields.io/badge/View_Repo-0078D4?style=flat-square&logo=github&logoColor=white)](https://github.com/MatthewPaver/marketing-ml-lakehouse)
+[![View Repo](https://img.shields.io/badge/View_Repo-0078D4?style=flat-square&logo=github&logoColor=white)](https://github.com/MatthewPaver/marketing-ml-lakehouse)
 
 </div>
 </td>
@@ -90,7 +90,7 @@ I build practical AI systems that sit at the intersection of data engineering, m
 
 `Python` `GitHub Actions` `GitHub Pages` `RSS`
 
-[![Read Newsletter](https://img.shields.io/badge/Read_Newsletter-00D9FF?style=flat-square)](https://matthewpaver.github.io/ai-weekly/) [![RSS](https://img.shields.io/badge/RSS-orange?style=flat-square&logo=rss)](https://matthewpaver.github.io/ai-weekly/feed.xml)
+[![Read Newsletter](https://img.shields.io/badge/Read_Newsletter-00D9FF?style=flat-square)](https://inferencebrief.co/) [![RSS](https://img.shields.io/badge/RSS-orange?style=flat-square&logo=rss)](https://matthewpaver.github.io/ai-weekly/feed.xml)
 
 </div>
 </td>
@@ -109,7 +109,7 @@ I build practical AI systems that sit at the intersection of data engineering, m
 
 `Python` `TensorFlow` `Keras` `Flask` `CGAN`
 
-[![View Repository](https://img.shields.io/badge/View_Repo-0078D4?style=flat-square&logo=github&logoColor=white)](https://github.com/MatthewPaver/Architexa)
+[![View Repo](https://img.shields.io/badge/View_Repo-0078D4?style=flat-square&logo=github&logoColor=white)](https://github.com/MatthewPaver/Architexa)
 
 </div>
 </td>
@@ -126,7 +126,7 @@ I build practical AI systems that sit at the intersection of data engineering, m
 
 `Python` `NumPy` `SciPy` `Matrix Factorisation`
 
-[![View Repository](https://img.shields.io/badge/View_Repo-0078D4?style=flat-square&logo=github&logoColor=white)](https://github.com/MatthewPaver/dating-app-recommendation-system)
+[![View Repo](https://img.shields.io/badge/View_Repo-0078D4?style=flat-square&logo=github&logoColor=white)](https://github.com/MatthewPaver/dating-app-recommendation-system)
 
 </div>
 </td>
@@ -135,19 +135,21 @@ I build practical AI systems that sit at the intersection of data engineering, m
 
 <div align="center">
 
-**[Browse All Projects by Difficulty Level](https://github.com/MatthewPaver/portfolio)**
+**[Browse All Projects →](https://github.com/MatthewPaver/portfolio)**
 
 </div>
 
 ---
 
-## What I Work With
+<details>
+<summary><b>🛠️ Tech & Tools</b></summary>
+<br>
 
 <table>
 <tr>
 <td valign="top" width="33.33%" align="center">
 
-### Languages
+**Languages**
 
 ![Python](https://img.shields.io/badge/Python-3670A0?style=flat&logo=python&logoColor=ffdd54)
 ![SQL](https://img.shields.io/badge/SQL-025E8C?style=flat&logo=postgresql&logoColor=white)
@@ -159,7 +161,7 @@ I build practical AI systems that sit at the intersection of data engineering, m
 </td>
 <td valign="top" width="33.33%" align="center">
 
-### AI, ML & Data
+**AI, ML & Data**
 
 ![LangChain](https://img.shields.io/badge/LangChain-1C3C3C?style=flat&logo=langchain&logoColor=white)
 ![LlamaIndex](https://img.shields.io/badge/LlamaIndex-412F17?style=flat&logo=python&logoColor=white)
@@ -175,7 +177,7 @@ I build practical AI systems that sit at the intersection of data engineering, m
 </td>
 <td valign="top" width="33.33%" align="center">
 
-### Cloud & Automation
+**Cloud & Automation**
 
 ![AWS](https://img.shields.io/badge/AWS-232F3E?style=flat&logo=amazonwebservices&logoColor=FF9900)
 ![Azure](https://img.shields.io/badge/Azure-0078D4?style=flat&logo=microsoftazure&logoColor=white)
@@ -190,9 +192,11 @@ I build practical AI systems that sit at the intersection of data engineering, m
 </tr>
 </table>
 
----
+</details>
 
-## Certifications
+<details>
+<summary><b>📜 Certifications</b></summary>
+<br>
 
 <div align="center">
 
@@ -208,6 +212,8 @@ I build practical AI systems that sit at the intersection of data engineering, m
 
 </div>
 
+</details>
+
 ---
 
 ## GitHub Stats
@@ -218,6 +224,12 @@ I build practical AI systems that sit at the intersection of data engineering, m
 <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=MatthewPaver&layout=compact&theme=tokyonight&hide_border=true&langs_count=8" alt="Top Languages" height="160"/>
 
 </div>
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/MatthewPaver/MatthewPaver/output/github-contribution-grid-snake-dark.svg">
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/MatthewPaver/MatthewPaver/output/github-contribution-grid-snake.svg">
+  <img alt="github contribution grid snake animation" src="https://raw.githubusercontent.com/MatthewPaver/MatthewPaver/output/github-contribution-grid-snake.svg">
+</picture>
 
 ---
 
