@@ -131,7 +131,7 @@ Recommendation engine for swipe-based apps using implicit-feedback matrix factor
 
 <div align="center">
 
-More work: [Project Index](Projects.md) for the curated view, or the [portfolio repository](https://github.com/MatthewPaver/portfolio) for the broader archive.
+More work: [Project Index](Projects.md) for the curated view of current systems, public repos, and older supporting work.
 
 </div>
 
