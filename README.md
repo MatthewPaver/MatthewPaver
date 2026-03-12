@@ -2,7 +2,7 @@
 
 # Matthew Paver
 
-![Typing SVG](https://readme-typing-svg.herokuapp.com/?lines=AI+Engineer+%26+Data+Scientist;Building+Production+AI+Systems;RAG+%7C+Agents+%7C+Knowledge+Graphs;Data+Engineering+%26+Automation&center=true&vCenter=true&width=500&height=45&size=22&color=00D9FF&duration=3000&pause=1500)
+![Typing SVG](https://readme-typing-svg.herokuapp.com/?lines=AI+Engineer+%26+Data+Scientist;Building+Production+AI+Systems;RAG+%7C+Agents+%7C+Knowledge+Graphs;AWS+Certified+AI+Practitioner;Data+Engineering+%26+Automation&center=true&vCenter=true&width=500&height=45&size=22&color=00D9FF&duration=3000&pause=1500)
 
 <a href="CV.pdf">
   <img src="https://img.shields.io/badge/CV-0078D4?style=for-the-badge&logo=readthedocs&logoColor=white" alt="CV" />
@@ -20,7 +20,7 @@
 
 I build practical AI systems that sit at the intersection of data engineering, machine learning, and product thinking. I like taking rough ideas and turning them into something real — whether that's a retrieval pipeline, a recommendation engine, or an automated scraping system.
 
-**Currently focused on:** LLM evaluation, hybrid RAG architectures, multi-agent orchestration, and knowledge graph-enhanced retrieval.
+**Currently focused on:** LLM evaluation, hybrid RAG architectures, multi-agent orchestration, and knowledge graph-enhanced retrieval. AWS Certified AI Practitioner.
 
 ---
 
@@ -35,13 +35,11 @@ I build practical AI systems that sit at the intersection of data engineering, m
 
 </div>
 
-> Production trading simulator with broker engine, walk-forward backtesting over 15 years, 3 strategies running in parallel, Monte Carlo validation, and automated Discord reporting.
+> Production-grade trading simulator with a full broker engine, multi-strategy backtesting, and automated Discord reporting. Built with a proper test suite and CI pipeline.
 
 <div align="center">
 
 `Python` `Pydantic` `yfinance` `XGBoost` `Discord`
-
-[![CI](https://github.com/MatthewPaver/paper-trading-bot/actions/workflows/ci.yml/badge.svg)](https://github.com/MatthewPaver/paper-trading-bot/actions/workflows/ci.yml) ![Tests](https://img.shields.io/badge/40_tests-passing-brightgreen?style=flat-square)
 
 </div>
 </td>
@@ -52,13 +50,11 @@ I build practical AI systems that sit at the intersection of data engineering, m
 
 </div>
 
-> Automated event ingestion from 103 London venues. Multi-strategy crawling (Playwright + HTTP), JSON-LD extraction, self-learning selectors, and daily GitHub Actions scraping.
+> Automated event discovery platform covering London venues. Resilient multi-source crawling, structured data extraction, and daily scheduled automation.
 
 <div align="center">
 
 `Python` `Playwright` `SQLite` `Pydantic` `Click`
-
-[![CI](https://github.com/MatthewPaver/Happening/actions/workflows/ci.yml/badge.svg)](https://github.com/MatthewPaver/Happening/actions/workflows/ci.yml) ![Tests](https://img.shields.io/badge/84_tests-passing-brightgreen?style=flat-square)
 
 </div>
 </td>
@@ -88,13 +84,13 @@ I build practical AI systems that sit at the intersection of data engineering, m
 
 </div>
 
-> Curated AI newsletter from 15+ sources with thumbnails, author extraction, GitHub trending repos, difficulty tagging, and an animated website with personalised filtering.
+> Curated weekly AI newsletter with fully automated generation, personalised filtering, and a live website. Aggregates the best tools, papers, and repos.
 
 <div align="center">
 
 `Python` `GitHub Actions` `GitHub Pages` `RSS`
 
-[![Generate](https://github.com/MatthewPaver/ai-weekly-newsletter/actions/workflows/generate.yml/badge.svg)](https://github.com/MatthewPaver/ai-weekly-newsletter/actions/workflows/generate.yml) [![Read Newsletter](https://img.shields.io/badge/Read_Newsletter-00D9FF?style=flat-square)](https://matthewpaver.github.io/ai-weekly/) [![RSS](https://img.shields.io/badge/RSS-orange?style=flat-square&logo=rss)](https://matthewpaver.github.io/ai-weekly/feed.xml)
+[![Read Newsletter](https://img.shields.io/badge/Read_Newsletter-00D9FF?style=flat-square)](https://matthewpaver.github.io/ai-weekly/) [![RSS](https://img.shields.io/badge/RSS-orange?style=flat-square&logo=rss)](https://matthewpaver.github.io/ai-weekly/feed.xml)
 
 </div>
 </td>
