@@ -27,7 +27,7 @@ Recent work has included large-scale event ingestion, adaptive study tooling, ne
 
 ---
 
-## What I Am Building
+## Selected Work
 
 <table>
 <tr>
@@ -76,7 +76,7 @@ Job market analytics platform for salary intelligence, skill trend tracking, pos
 
 ---
 
-## Featured Public Work
+## Public Repositories
 
 <table>
 <tr>
@@ -131,22 +131,23 @@ Recommendation engine for swipe-based apps using implicit-feedback matrix factor
 
 <div align="center">
 
-**[Browse the full project index](Projects.md)**  
-**[Browse the portfolio repository](https://github.com/MatthewPaver/portfolio)**
+More work: [Project Index](Projects.md) for the curated view, or the [portfolio repository](https://github.com/MatthewPaver/portfolio) for the broader archive.
 
 </div>
 
 ---
 
-## Stack
+## Current Focus
 
-- **Languages:** Python, SQL, TypeScript, JavaScript, Java, C++, Haskell
-- **AI and data:** FastAPI, LangChain, LlamaIndex, Neo4j, TensorFlow, PyTorch, XGBoost, DuckDB, Spark, pandas, Polars
-- **Cloud and product:** AWS, Azure, Supabase, Docker, GitHub Actions, Playwright, Stripe
+- Retrieval and automation systems that need to run cleanly and predictably.
+- AI products with real user-facing workflows, not just model demos.
+- Data and analytics tooling that turns messy inputs into something decision-useful.
+
+Working with: `Python`, `SQL`, `TypeScript`, `FastAPI`, `Next.js`, `Supabase`, `DuckDB`, `XGBoost`, `AWS`, `Docker`
 
 ---
 
-## Certifications
+## Selected Certifications
 
 <div align="center">
 
@@ -159,21 +160,6 @@ Recommendation engine for swipe-based apps using implicit-feedback matrix factor
 | [RPA Developer Advanced](https://drive.google.com/file/d/15lrcn5_Cn4g-kD165xGNLUGUGXtCptk-/view) | UiPath |
 | [BCS Diploma in IT](https://drive.google.com/file/d/15yLBx8nzlhn_PwrGoqQbumRG8zRQPC9t/view) | BCS |
 | [BCS Certificate in IT](https://drive.google.com/file/d/160nzem63oIEv3EF9mCU9NGWwwA4NMdMZ/view) | BCS |
-
-</div>
-
----
-
-## GitHub Stats
-
-<div align="center">
-
-<img src="https://github-readme-stats.vercel.app/api?username=MatthewPaver&show_icons=true&theme=tokyonight&hide_border=true&count_private=true&include_all_commits=true" alt="GitHub Stats" height="160"/>
-<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=MatthewPaver&layout=compact&theme=tokyonight&hide_border=true&langs_count=8" alt="Top Languages" height="160"/>
-
-<br>
-
-<img src="https://github-readme-streak-stats.herokuapp.com/?user=MatthewPaver&theme=tokyonight&hide_border=true" alt="GitHub Streak"/>
 
 </div>
 

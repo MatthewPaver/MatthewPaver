@@ -2,7 +2,7 @@
 
 <div align="center">
 
-Curated view of the systems, products, and experiments I have been building across AI, data, automation, and analytics.
+Curated view of the systems, products, and experiments I have been building across AI, data, automation, and analytics. This is selective rather than exhaustive.
 
 [Back to Profile](https://github.com/MatthewPaver/MatthewPaver)
 
@@ -12,7 +12,7 @@ Curated view of the systems, products, and experiments I have been building acro
 
 ## Current Systems
 
-These are the projects that best reflect the direction of my recent work. Some are private, but they are included here because they represent the strongest examples of how I build.
+These are the projects that best reflect the direction of my recent work. Some are private, but they are included here because they represent the strongest examples of how I build. Details are available on request where appropriate.
 
 <table>
 <tr>
@@ -69,7 +69,7 @@ Job market analytics platform for tracking salary ranges, trending skills, posti
 
 ---
 
-## Public Repositories
+## Selected Public Repositories
 
 ### Production-style applications
 
@@ -190,5 +190,5 @@ Coursework and study repository covering the technical foundation behind the lat
 ## Notes
 
 - Selected private systems are summarised here even where source is not public.
-- Public repositories above are ordered to reflect what feels most representative, not simply oldest to newest.
-- The profile README is the short version. This page is the fuller index.
+- Public repositories are ordered by how representative they feel, not by age.
+- The profile README is the short version. This page is the fuller view.
