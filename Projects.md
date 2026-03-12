@@ -89,7 +89,7 @@
 
 ### ⚡ PySpark & Kafka Integration
 
-> Streams and processes data in real time using PySpark and Apache Kafka. Covers consuming streams, DataFrame operations, and building analytics pipelines on live data.
+> Real-time data streaming and processing demonstration using PySpark and Apache Kafka. Includes examples of consuming streaming data, performing DataFrame operations, and building real-time analytics pipelines for big data processing.
 
 **Tech Stack:** `Python` `PySpark` `Apache Kafka` `Streaming` `Big Data` `Real-Time Analytics`
 
@@ -104,7 +104,7 @@
 
 ### 🎬 Netflix Content Analysis
 
-> Digs into the Netflix catalogue with Python and pandas. Looks at what gets made where, how genres shift over time, and what patterns actually show up in the data.
+> Exploratory analysis of the Netflix catalogue using Python and pandas. Uncovers content trends by country, genre, and release year with statistical pattern detection and rich visualisations.
 
 **Tech Stack:** `Python` `pandas` `Matplotlib` `Seaborn` `Jupyter` `Data Visualisation`
 
@@ -124,9 +124,9 @@
 
 ### 📊 HR Performance Dashboards
 
-> The technical side of the HR performance project. Power BI `.pbix` files, CSV data sources, and dashboard visualisations for HR reporting.
+> **Technical Implementation** — Power BI dashboard files, CSV data sources, and analysis outputs. This repository contains the technical components including `.pbix` files, datasets, and dashboard visualisations for HR performance reporting.
 
-**Note:** For the full documentation and video walkthroughs, see [HR Performance Portfolio](https://github.com/MatthewPaver/hr-performance-portfolio).
+**Note:** For complete project documentation and video walkthroughs, see [HR Performance Portfolio](https://github.com/MatthewPaver/hr-performance-portfolio).
 
 **Tech Stack:** `Power BI` `Excel` `Data Analysis` `HR Analytics` `Dashboard`
 
@@ -146,7 +146,7 @@
 
 ### 📈 HR Performance Portfolio
 
-> Documentation, video walkthroughs, and presentation materials for the HR performance project. The full picture of the analysis and how it was delivered.
+> **Portfolio Repository** — Complete project documentation, video walkthroughs, and presentation materials. This repository contains the comprehensive portfolio showcasing HR performance reporting and project delivery analysis, including detailed documentation PDFs and video tutorials.
 
 **Note:** For the technical implementation (Power BI dashboards and data files), see [HR Performance Dashboards](https://github.com/MatthewPaver/hr-performance-dashboards).
 
@@ -209,15 +209,15 @@
 </td>
 <td width="50%" valign="top">
 
-### 📰 AI Weekly Newsletter
+### 📰 Inference — AI Weekly Newsletter
 
-> Pulls from 15+ sources, tags by difficulty, and publishes a weekly AI newsletter automatically. Includes a live website with filtering by topic.
+> Full-stack AI newsletter platform — Next.js 15 web app with Supabase Auth, personalised content, bookmarks, reading history dashboard, and an automated pipeline (15+ sources, Gemini summarisation, HN discussion counts, Fuse.js search). Deployed on Vercel.
 
-**Tech Stack:** `Python` `GitHub Actions` `GitHub Pages` `RSS` `HTML`
+**Tech Stack:** `Next.js 15` `TypeScript` `Supabase` `Python` `GitHub Actions` `Vercel` `Tailwind CSS`
 
 <div align="center">
 
-[![View Repository](https://img.shields.io/badge/🔗_View_Repository-0078D4?style=for-the-badge&logo=github&logoColor=white)](https://github.com/MatthewPaver/ai-weekly) [![Read Newsletter](https://img.shields.io/badge/Read_Newsletter-00D9FF?style=for-the-badge)](https://inferencebrief.co/) [![RSS](https://img.shields.io/badge/RSS-FFA500?style=for-the-badge&logo=rss&logoColor=white)](https://matthewpaver.github.io/ai-weekly/feed.xml)
+[![View Repository](https://img.shields.io/badge/🔗_View_Repository-0078D4?style=for-the-badge&logo=github&logoColor=white)](https://github.com/MatthewPaver/inference-web) [![Read Newsletter](https://img.shields.io/badge/Read_Newsletter-00D9FF?style=for-the-badge)](https://inferencebrief.co/)
 
 </div>
 
@@ -243,7 +243,7 @@
 
 ### 🖼️ Pinterest Image Scraper
 
-> Scrapes images from Pinterest with threading and proxy support. Removes duplicates using content-based detection so you don't end up with the same image twice.
+> Python script for automated Pinterest image scraping with duplicate removal. Features multi-threading, proxy support, and content-based duplicate detection for efficient image collection.
 
 **Tech Stack:** `Python` `Web Scraping` `Image Processing` `Automation` `Multi-threading`
 
