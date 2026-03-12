@@ -95,11 +95,31 @@
 
 <div align="center">
 
-[![View Repository](https://img.shields.io/badge/🔗_View_Repository-0078D4?style=for-the-badge&logo=github&logoColor=white)](https://github.com/MatthewPaver/pyspark-kafka-integration)
+[![View Repository](https://img.shields.io/badge/🔗_View_Repository-0078D4?style=for-the-badge&logo=github&logoColor=white)](https://github.com/MatthewPaver/pyspark-kafka-streaming)
 
 </div>
 
 </td>
+<td width="50%" valign="top">
+
+### 🎬 Netflix Content Analysis
+
+> Exploratory analysis of the Netflix catalogue using Python and pandas. Uncovers content trends by country, genre, and release year with statistical pattern detection and rich visualisations.
+
+**Tech Stack:** `Python` `pandas` `Matplotlib` `Seaborn` `Jupyter` `Data Visualisation`
+
+<div align="center">
+
+[![View Repository](https://img.shields.io/badge/🔗_View_Repository-0078D4?style=for-the-badge&logo=github&logoColor=white)](https://github.com/MatthewPaver/netflix-content-analysis) [![Open in Colab](https://img.shields.io/badge/Open_in_Colab-F9AB00?style=for-the-badge&logo=googlecolab&logoColor=white)](https://colab.research.google.com)
+
+</div>
+
+</td>
+</tr>
+</table>
+
+<table>
+<tr>
 <td width="50%" valign="top">
 
 ### 📊 HR Performance Dashboards
@@ -189,9 +209,26 @@
 </td>
 <td width="50%" valign="top">
 
+### 📰 AI Weekly Newsletter
+
+> Curated AI newsletter aggregating 15+ sources — thumbnails, author extraction, GitHub trending repos, difficulty tagging, and an animated website with personalised filtering. Fully automated via GitHub Actions.
+
+**Tech Stack:** `Python` `GitHub Actions` `GitHub Pages` `RSS` `HTML`
+
+<div align="center">
+
+[![View Repository](https://img.shields.io/badge/🔗_View_Repository-0078D4?style=for-the-badge&logo=github&logoColor=white)](https://github.com/MatthewPaver/ai-weekly) [![Read Newsletter](https://img.shields.io/badge/Read_Newsletter-00D9FF?style=for-the-badge)](https://matthewpaver.github.io/ai-weekly/) [![RSS](https://img.shields.io/badge/RSS-FFA500?style=for-the-badge&logo=rss&logoColor=white)](https://matthewpaver.github.io/ai-weekly/feed.xml)
+
+</div>
+
+</td>
+</tr>
+<tr>
+<td width="50%" valign="top">
+
 ### 📰 Generate Newsletter
 
-> Automated newsletter generation system that scrapes news articles and generates HTML newsletters. Uses Python, gnews library, and template-based HTML generation.
+> Earlier newsletter generation prototype that scrapes news articles and generates HTML newsletters using Python, gnews library, and template-based HTML generation.
 
 **Tech Stack:** `Python` `Web Scraping` `HTML` `Automation` `Newsletter`
 
@@ -202,17 +239,7 @@
 </div>
 
 </td>
-</tr>
-<tr>
 <td width="50%" valign="top">
-
-</td>
-</tr>
-</table>
-
-<table>
-<tr>
-<td width="100%" valign="top">
 
 ### 🖼️ Pinterest Image Scraper
 

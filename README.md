@@ -202,12 +202,24 @@ I build practical AI systems that sit at the intersection of data engineering, m
 
 | Certification | Issued By |
 |:---:|:---:|
-| [![AWS CCP](https://img.shields.io/badge/AWS_Cloud_Practitioner-232F3E?style=flat-square&logo=amazonwebservices&logoColor=FF9900)](https://aws.amazon.com/verification) | Amazon Web Services |
+| [![AWS AI Practitioner](https://img.shields.io/badge/AWS_Certified_AI_Practitioner-232F3E?style=flat-square&logo=amazonwebservices&logoColor=FF9900)](https://cp.certmetrics.com/amazon/en/public/verify/credential/455c09a58c6c43beb001b21d3ccec2a0) | Amazon Web Services |
+| [![AWS CCP](https://img.shields.io/badge/AWS_Cloud_Practitioner-232F3E?style=flat-square&logo=amazonwebservices&logoColor=FF9900)](https://cp.certmetrics.com/amazon/en/public/verify/credential/d0dd54bf93df495da5c3e75ee69940fe) | Amazon Web Services |
 | [![Neo4j](https://img.shields.io/badge/Neo4j_Certified_Professional-008CC1?style=flat-square&logo=neo4j&logoColor=FFFFFF)](https://drive.google.com/file/d/15oXe_G86TEiETdC8kGBhbnKoMjVZ5mQQ/view) | Neo4j |
 | [![Agent Course](https://img.shields.io/badge/AI_Agents_Course-FFD21E?style=flat-square&logo=huggingface&logoColor=000000)](https://drive.google.com/file/d/1NgSeIIF49Sqh2DAMY5KQEtnaddSc1Sqw/view) | Hugging Face |
 | [![RPA](https://img.shields.io/badge/RPA_Developer_Advanced-D50037?style=flat-square&logoColor=FFFFFF)](https://drive.google.com/file/d/15lrcn5_Cn4g-kD165xGNLUGUGXtCptk-/view) | UiPath |
 | [![BCS Diploma](https://img.shields.io/badge/BCS_Diploma_in_IT-004C97?style=flat-square&logoColor=FFFFFF)](https://drive.google.com/file/d/15yLBx8nzlhn_PwrGoqQbumRG8zRQPC9t/view) | BCS |
 | [![BCS Certificate](https://img.shields.io/badge/BCS_Certificate_in_IT-004C97?style=flat-square&logoColor=FFFFFF)](https://drive.google.com/file/d/160nzem63oIEv3EF9mCU9NGWwwA4NMdMZ/view) | BCS |
+
+</div>
+
+---
+
+## GitHub Stats
+
+<div align="center">
+
+<img src="https://github-readme-stats.vercel.app/api?username=MatthewPaver&show_icons=true&theme=tokyonight&hide_border=true&count_private=true&include_all_commits=true" alt="GitHub Stats" height="160"/>
+<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=MatthewPaver&layout=compact&theme=tokyonight&hide_border=true&langs_count=8" alt="Top Languages" height="160"/>
 
 </div>
 
