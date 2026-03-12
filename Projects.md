@@ -1,79 +1,67 @@
-# 📦 All Projects
+# Project Index
 
 <div align="center">
 
-### 🚀 A Comprehensive Overview of All My Projects and Repositories
+Curated view of the systems, products, and experiments I have been building across AI, data, automation, and analytics.
 
-[← Back to Profile](https://github.com/MatthewPaver)
+[Back to Profile](https://github.com/MatthewPaver/MatthewPaver)
 
 </div>
 
 ---
 
-## 🤖 Machine Learning & AI
+## Current Systems
+
+These are the projects that best reflect the direction of my recent work. Some are private, but they are included here because they represent the strongest examples of how I build.
 
 <table>
 <tr>
 <td width="50%" valign="top">
 
-### 🏗️ Marketing ML – Local Lakehouse Dashboard
+### Happening ![Private](https://img.shields.io/badge/Private-grey?style=flat-square&logo=lock&logoColor=white)
 
-> End-to-end local lakehouse: DuckDB (bronze→silver→gold), pandas transforms, XGBoost models, and a Streamlit dashboard. Includes automated data ingestion, ML-driven pacing and conversion modelling, and LM Studio-powered insight generation.
+Event ingestion and normalisation platform covering **103 London venues**. Uses multi-strategy crawling, structured extraction, selector learning, deduplication, and daily automation. Built to run reliably rather than just scrape once.
 
-**Tech Stack:** `Python` `DuckDB` `XGBoost` `Streamlit` `pandas` `Data Lakehouse` `ML`
+**Highlights:** 103 source configs, SQLite pipeline, daily scheduled runs, 167 tests
 
-<div align="center">
-
-[![View Repository](https://img.shields.io/badge/🔗_View_Repository-0078D4?style=for-the-badge&logo=github&logoColor=white)](https://github.com/MatthewPaver/marketing-ml-lakehouse)
-
-</div>
+**Tech:** `Python` `Playwright` `SQLite` `Pydantic` `GitHub Actions`
 
 </td>
 <td width="50%" valign="top">
 
-### 🎨 Architexa
+### AI Study Companion ![Private](https://img.shields.io/badge/Private-grey?style=flat-square&logo=lock&logoColor=white)
 
-> AI-powered architectural image generation web application using Conditional Generative Adversarial Networks (CGAN). Generates architectural images across 9 different classes with a Flask-based REST API and distributed training support.
+Study product that turns documents into flashcards, quizzes, and adaptive study plans. Includes PDF parsing, token-aware chunking, spaced repetition, async generation jobs, billing, and support for local or hosted LLMs.
 
-**Tech Stack:** `Python` `TensorFlow` `Keras` `Flask` `CGAN` `Deep Learning` `Web App`
+**Highlights:** document upload pipeline, SM-2 review loop, Stripe billing, voice features, multi-provider LLM support
 
-<div align="center">
-
-[![View Repository](https://img.shields.io/badge/🔗_View_Repository-0078D4?style=for-the-badge&logo=github&logoColor=white)](https://github.com/MatthewPaver/208-Project) [![Live](https://img.shields.io/badge/Live_Site-000000?style=for-the-badge&logo=vercel&logoColor=white)](https://architexa.io)
-
-</div>
+**Tech:** `Python` `FastAPI` `PostgreSQL` `Redis` `Celery`
 
 </td>
 </tr>
 <tr>
 <td width="50%" valign="top">
 
-### 🔍 Sentence Similarity Analysis
+### Inference Brief
 
-> A demonstration of semantic sentence similarity using transformer-based embedding models. This project explores how modern NLP models can identify semantically similar sentences from a corpus of diverse factual statements.
+AI newsletter platform and reading product. The stack combines a weekly editorial pipeline with a personalised web app, issue archive, bookmarks, reading history, topic preferences, and subscription flows.
 
-**Tech Stack:** `Python` `sentence-transformers` `PyTorch` `Cosine Similarity` `NLP` `Embeddings`
+**Highlights:** live publication workflow, personalised feed, search, issue archive, automated summarisation and scoring
 
-<div align="center">
+**Tech:** `Next.js` `TypeScript` `Supabase` `Python` `Stripe`
 
-[![View Repository](https://img.shields.io/badge/🔗_View_Repository-0078D4?style=for-the-badge&logo=github&logoColor=white)](https://github.com/MatthewPaver/sentence-similarity-analysis)
-
-</div>
+[![Live Site](https://img.shields.io/badge/Live_Site-00D9FF?style=flat-square)](https://inferencebrief.co/)
 
 </td>
 <td width="50%" valign="top">
 
-### 💝 Dating App Recommendation System
+### Smart Job Market Intelligence ![Private](https://img.shields.io/badge/Private-grey?style=flat-square&logo=lock&logoColor=white)
 
-> A user-user recommendation system for swipe-based dating apps, built using implicit feedback matrix factorisation. This system identifies which profiles to show each user to maximise the likelihood of a match.
+Job market analytics platform for tracking salary ranges, trending skills, posting volume, remote ratios, and alerting. Framed as a product with API tiers, billing hooks, and recurring analysis jobs.
 
-**Tech Stack:** `Python` `Matrix Factorisation` `Recommendation Systems` `Implicit Feedback` `ML`
+**Highlights:** scraping plus analytics pipeline, alerting, trend reporting, rate-limited API design
 
-<div align="center">
-
-[![View Repository](https://img.shields.io/badge/🔗_View_Repository-0078D4?style=for-the-badge&logo=github&logoColor=white)](https://github.com/MatthewPaver/dating-app-recommendation-system)
-
-</div>
+**Tech:** `Python` `FastAPI` `PostgreSQL` `Redis` `Celery`
 
 </td>
 </tr>
@@ -81,210 +69,126 @@
 
 ---
 
-## 📊 Data Engineering & Analytics
+## Public Repositories
 
-<table>
-<tr>
-<td width="50%" valign="top">
+### Production-style applications
 
-### ⚡ PySpark & Kafka Integration
+#### Marketing ML Lakehouse
 
-> Real-time data streaming and processing demonstration using PySpark and Apache Kafka. Includes examples of consuming streaming data, performing DataFrame operations, and building real-time analytics pipelines for big data processing.
+Local-first marketing analytics lakehouse with DuckDB medallion layers, XGBoost forecasting and conversion models, and a Streamlit dashboard for analysis and commentary.
 
-**Tech Stack:** `Python` `PySpark` `Apache Kafka` `Streaming` `Big Data` `Real-Time Analytics`
+`Python` `DuckDB` `XGBoost` `Streamlit` `Polars`
 
-<div align="center">
+[View Repository](https://github.com/MatthewPaver/marketing-ml-lakehouse)
 
-[![View Repository](https://img.shields.io/badge/🔗_View_Repository-0078D4?style=for-the-badge&logo=github&logoColor=white)](https://github.com/MatthewPaver/pyspark-kafka-streaming)
+#### ProjectLens
 
-</div>
+Web app and backend analysis pipeline for project schedules. Designed to surface slippage, forecasting issues, milestone risks, and delivery insights from uploaded data.
 
-</td>
-<td width="50%" valign="top">
+`Python` `Flask` `pandas` `Analytics` `Forecasting`
 
-### 🎬 Netflix Content Analysis
+[View Repository](https://github.com/MatthewPaver/ProjectLens)
 
-> Exploratory analysis of the Netflix catalogue using Python and pandas. Uncovers content trends by country, genre, and release year with statistical pattern detection and rich visualisations.
+#### AI Weekly
 
-**Tech Stack:** `Python` `pandas` `Matplotlib` `Seaborn` `Jupyter` `Data Visualisation`
+Public AI newsletter repository and site that curates tools, research, and trends. Complements the more recent Inference Brief product work.
 
-<div align="center">
+`Python` `GitHub Actions` `RSS` `Jinja2` `Publishing`
 
-[![View Repository](https://img.shields.io/badge/🔗_View_Repository-0078D4?style=for-the-badge&logo=github&logoColor=white)](https://github.com/MatthewPaver/netflix-content-analysis) [![Open in Colab](https://img.shields.io/badge/Open_in_Colab-F9AB00?style=for-the-badge&logo=googlecolab&logoColor=white)](https://colab.research.google.com)
+[View Repository](https://github.com/MatthewPaver/ai-weekly) | [Read Newsletter](https://matthewpaver.github.io/ai-weekly/)
 
-</div>
+#### HR Performance Dashboards
 
-</td>
-</tr>
-</table>
+Power BI implementation repo containing dashboard files, datasets, screenshots, and supporting material for HR performance reporting and sales analysis.
 
-<table>
-<tr>
-<td width="50%" valign="top">
+`Power BI` `Excel` `CSV` `Dashboarding`
 
-### 📊 HR Performance Dashboards
+[View Repository](https://github.com/MatthewPaver/hr-performance-dashboards)
 
-> **Technical Implementation** — Power BI dashboard files, CSV data sources, and analysis outputs. This repository contains the technical components including `.pbix` files, datasets, and dashboard visualisations for HR performance reporting.
+#### HR Performance Portfolio
 
-**Note:** For complete project documentation and video walkthroughs, see [HR Performance Portfolio](https://github.com/MatthewPaver/hr-performance-portfolio).
+Companion portfolio repo with the write-up, presentation material, and walkthrough content for the HR analytics project.
 
-**Tech Stack:** `Power BI` `Excel` `Data Analysis` `HR Analytics` `Dashboard`
+`Power BI` `Documentation` `Portfolio`
 
-<div align="center">
-
-[![View Repository](https://img.shields.io/badge/🔗_View_Repository-0078D4?style=for-the-badge&logo=github&logoColor=white)](https://github.com/MatthewPaver/hr-performance-dashboards)
-
-</div>
-
-</td>
-</tr>
-</table>
-
-<table>
-<tr>
-<td width="100%" valign="top">
-
-### 📈 HR Performance Portfolio
-
-> **Portfolio Repository** — Complete project documentation, video walkthroughs, and presentation materials. This repository contains the comprehensive portfolio showcasing HR performance reporting and project delivery analysis, including detailed documentation PDFs and video tutorials.
-
-**Note:** For the technical implementation (Power BI dashboards and data files), see [HR Performance Dashboards](https://github.com/MatthewPaver/hr-performance-dashboards).
-
-**Tech Stack:** `Power BI` `Data Analysis` `Portfolio` `Documentation` `Video Walkthroughs`
-
-<div align="center">
-
-[![View Repository](https://img.shields.io/badge/🔗_View_Repository-0078D4?style=for-the-badge&logo=github&logoColor=white)](https://github.com/MatthewPaver/hr-performance-portfolio)
-
-</div>
-
-</td>
-</tr>
-</table>
+[View Repository](https://github.com/MatthewPaver/hr-performance-portfolio)
 
 ---
 
-## 🌐 Web Applications
+### ML and data projects
 
-<table>
-<tr>
-<td width="100%" valign="top">
+#### Architexa
 
-### 📊 ProjectLens
+Architectural image generation project built with a conditional GAN and exposed through a Flask API. Produces outputs across nine architectural styles.
 
-> Web application and project data analysis pipeline. ProjectLens provides a web interface and backend pipeline for analysing project schedule data, identifying risks, and generating actionable insights. Upload your project data, trigger the analysis, and view results—all from your browser.
+`Python` `TensorFlow` `Keras` `Flask` `CGAN`
 
-**Tech Stack:** `Python` `Flask` `Web Application` `Data Analysis` `Risk Analysis` `Project Management`
+[View Repository](https://github.com/MatthewPaver/Architexa) | [Live Site](https://architexa.io)
 
-<div align="center">
+#### Dating App Recommendation System
 
-[![View Repository](https://img.shields.io/badge/🔗_View_Repository-0078D4?style=for-the-badge&logo=github&logoColor=white)](https://github.com/MatthewPaver/ProjectLens)
+Recommendation engine for swipe-based apps using implicit-feedback matrix factorisation, framed around practical ranking quality and user matching.
 
-</div>
+`Python` `NumPy` `SciPy` `Recommendation Systems`
 
-</td>
-</tr>
-</table>
+[View Repository](https://github.com/MatthewPaver/dating-app-recommendation-system)
 
----
+#### Sentence Similarity Analysis
 
-## 🛠️ Automation & Tools
+NLP project exploring semantic similarity with transformer embeddings and cosine similarity across factual statements.
 
-<table>
-<tr>
-<td width="50%" valign="top">
+`Python` `sentence-transformers` `PyTorch` `NLP`
 
-### 📓 Colab Notebook Project
+[View Repository](https://github.com/MatthewPaver/sentence-similarity-analysis)
 
-> Interactive data analysis and experimentation notebook hosted on Google Colab. Provides an environment for exploring data, running analyses, and visualising results.
+#### PySpark Kafka Streaming
 
-**Tech Stack:** `Python` `Google Colab` `Jupyter Notebook` `Data Analysis`
+Streaming examples that combine PySpark Structured Streaming with Kafka producers and consumers for real-time processing demos.
 
-<div align="center">
+`Python` `PySpark` `Kafka` `Streaming`
 
-[![View Repository](https://img.shields.io/badge/🔗_View_Repository-0078D4?style=for-the-badge&logo=github&logoColor=white)](https://github.com/MatthewPaver/colab-notebook-project) [![Open in Colab](https://img.shields.io/badge/Open_in_Colab-F9AB00?style=for-the-badge&logo=googlecolab&logoColor=white)](https://colab.research.google.com/drive/1WsnSnIngH8xNdBNBWeJgJbKD2uMilVdS?usp=sharing)
+[View Repository](https://github.com/MatthewPaver/pyspark-kafka-streaming)
 
-</div>
+#### Netflix Content Analysis
 
-</td>
-<td width="50%" valign="top">
+Exploratory data analysis of the Netflix catalogue using pandas, matplotlib, and seaborn, with trend analysis across genre, geography, and release timelines.
 
-### 📰 Inference — AI Weekly Newsletter
+`Python` `pandas` `Matplotlib` `Seaborn` `Colab`
 
-> Full-stack AI newsletter platform — Next.js 15 web app with Supabase Auth, personalised content, bookmarks, reading history dashboard, and an automated pipeline (15+ sources, Gemini summarisation, HN discussion counts, Fuse.js search). Deployed on Vercel.
-
-**Tech Stack:** `Next.js 15` `TypeScript` `Supabase` `Python` `GitHub Actions` `Vercel` `Tailwind CSS`
-
-<div align="center">
-
-[![View Repository](https://img.shields.io/badge/🔗_View_Repository-0078D4?style=for-the-badge&logo=github&logoColor=white)](https://github.com/MatthewPaver/inference-web) [![Read Newsletter](https://img.shields.io/badge/Read_Newsletter-00D9FF?style=for-the-badge)](https://inferencebrief.co/)
-
-</div>
-
-</td>
-</tr>
-<tr>
-<td width="50%" valign="top">
-
-### 📰 Generate Newsletter
-
-> Earlier newsletter generation prototype that scrapes news articles and generates HTML newsletters using Python, gnews library, and template-based HTML generation.
-
-**Tech Stack:** `Python` `Web Scraping` `HTML` `Automation` `Newsletter`
-
-<div align="center">
-
-[![View Repository](https://img.shields.io/badge/🔗_View_Repository-0078D4?style=for-the-badge&logo=github&logoColor=white)](https://github.com/MatthewPaver/generate-newsletter)
-
-</div>
-
-</td>
-<td width="50%" valign="top">
-
-### 🖼️ Pinterest Image Scraper
-
-> Python script for automated Pinterest image scraping with duplicate removal. Features multi-threading, proxy support, and content-based duplicate detection for efficient image collection.
-
-**Tech Stack:** `Python` `Web Scraping` `Image Processing` `Automation` `Multi-threading`
-
-<div align="center">
-
-[![View Repository](https://img.shields.io/badge/🔗_View_Repository-0078D4?style=for-the-badge&logo=github&logoColor=white)](https://github.com/MatthewPaver/pinterest-image-scraper-)
-
-</div>
-
-</td>
-</tr>
-</table>
+[View Repository](https://github.com/MatthewPaver/netflix-content-analysis) | [Open in Colab](https://colab.research.google.com/drive/1WsnSnIngH8xNdBNBWeJgJbKD2uMilVdS?usp=sharing)
 
 ---
 
-## 🎓 Academic & Learning
+### Automation and supporting work
 
-<table>
-<tr>
-<td width="100%" valign="top">
+#### Generate Newsletter
 
-### 🎓 University of Liverpool
+Earlier newsletter-generation prototype that scrapes stories and renders HTML issues through a Python pipeline.
 
-> Computer Science coursework and study materials from University of Liverpool, organised by academic year. Includes assignments, projects, lecture notes, and tutorials covering programming, algorithms, databases, distributed systems, and more.
+`Python` `HTML` `Automation` `Newsletter`
 
-**Tech Stack:** `Python` `Java` `C++` `Haskell` `SQL` `Various Academic Tools`
+[View Repository](https://github.com/MatthewPaver/generate-newsletter)
 
-<div align="center">
+#### Pinterest Image Scraper
 
-[![View Repository](https://img.shields.io/badge/🔗_View_Repository-0078D4?style=for-the-badge&logo=github&logoColor=white)](https://github.com/MatthewPaver/university-of-liverpool)
+Automation utility for collecting Pinterest images with duplicate detection, multithreading, and proxy support.
 
-</div>
+`Python` `Web Scraping` `Image Processing`
 
-</td>
-</tr>
-</table>
+[View Repository](https://github.com/MatthewPaver/pinterest-image-scraper)
+
+#### University of Liverpool
+
+Coursework and study repository covering the technical foundation behind the later project work: programming, algorithms, databases, distributed systems, and software engineering.
+
+`Python` `Java` `C++` `Haskell` `SQL`
+
+[View Repository](https://github.com/MatthewPaver/university-of-liverpool)
 
 ---
 
-<div align="center">
+## Notes
 
-[← Back to Profile](https://github.com/MatthewPaver)
-
-</div>
+- Selected private systems are summarised here even where source is not public.
+- Public repositories above are ordered to reflect what feels most representative, not simply oldest to newest.
+- The profile README is the short version. This page is the fuller index.

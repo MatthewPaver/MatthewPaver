@@ -2,13 +2,16 @@
 
 # Matthew Paver
 
-![Typing SVG](https://readme-typing-svg.herokuapp.com/?lines=AI+Engineer+%26+Data+Scientist;Building+Production+AI+Systems;RAG+%7C+Agents+%7C+Knowledge+Graphs;AWS+Certified+AI+Practitioner;Data+Engineering+%26+Automation&center=true&vCenter=true&width=500&height=45&size=22&color=00D9FF&duration=3000&pause=1500)
+![Typing SVG](https://readme-typing-svg.herokuapp.com/?lines=AI+Engineer+%26+Data+Scientist;Production-minded+AI+%26+Data+Systems;RAG+%7C+Automation+%7C+Analytics;AWS+Certified+AI+Practitioner;Building+useful+systems%2C+not+just+demos&center=true&vCenter=true&width=700&height=45&size=22&color=00D9FF&duration=3000&pause=1500)
 
 <a href="CV.pdf">
   <img src="https://img.shields.io/badge/CV-0078D4?style=for-the-badge&logo=readthedocs&logoColor=white" alt="CV" />
 </a>
-<a href="https://github.com/MatthewPaver/portfolio">
-  <img src="https://img.shields.io/badge/All_Projects-181717?style=for-the-badge&logo=github&logoColor=white" alt="Portfolio" />
+<a href="Projects.md">
+  <img src="https://img.shields.io/badge/Project_Index-181717?style=for-the-badge&logo=github&logoColor=white" alt="Project Index" />
+</a>
+<a href="https://inferencebrief.co/">
+  <img src="https://img.shields.io/badge/Inference_Brief-00D9FF?style=for-the-badge" alt="Inference Brief" />
 </a>
 <a href="https://www.linkedin.com/in/matthew-paver-534262166/">
   <img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" />
@@ -18,201 +21,146 @@
 
 ---
 
-I build AI systems and most of my time goes into making them work reliably rather than just getting them to work at all. The bigger projects tend to be private but I share what I can here.
+I build AI, data, and automation systems with a bias toward reliability. The work I care about most sits in the gap between a proof of concept and something you would trust to run every day: retrieval pipelines that hold up, data products with clear feedback loops, and automation that is testable, observable, and actually useful.
 
-Currently focused on retrieval that holds up in practice, evaluation that catches real failures, and building agents that behave. Just passed my AWS AI Practitioner exam too.
+Recent work has included large-scale event ingestion, adaptive study tooling, newsletter automation, recommendation systems, analytics dashboards, and full-stack AI products. Some of the strongest projects are private, but I have summarised them here and linked the public work where I can.
 
 ---
 
-## Featured Projects
+## What I Am Building
 
 <table>
 <tr>
 <td valign="top" width="50%">
-<div align="center">
 
-### Paper Trading Bot ![Private](https://img.shields.io/badge/Private-grey?style=flat-square&logo=lock&logoColor=white)
+### Happening ![Private](https://img.shields.io/badge/Private-grey?style=flat-square&logo=lock&logoColor=white)
 
-</div>
+Deterministic event ingestion and normalisation system covering **103 London venues**. Multi-strategy crawling, structured extraction, deduplication, SQLite storage, and daily automation with a **167-test** suite behind it.
 
-> A trading simulator built to stress test strategies properly. Runs a full broker engine, tests across years of historical data, and posts results to Discord automatically.
+`Python` `Playwright` `SQLite` `Pydantic` `GitHub Actions`
 
-<div align="center">
-
-`Python` `Pydantic` `yfinance` `XGBoost` `Discord`
-
-</div>
 </td>
 <td valign="top" width="50%">
-<div align="center">
 
-### Happening — Event Discovery ![Private](https://img.shields.io/badge/Private-grey?style=flat-square&logo=lock&logoColor=white)
+### AI Study Companion ![Private](https://img.shields.io/badge/Private-grey?style=flat-square&logo=lock&logoColor=white)
 
-</div>
+Full-stack study platform for turning PDFs and notes into flashcards, quizzes, and adaptive study plans. Includes spaced repetition, background jobs, usage tiers, and support for local or hosted LLMs.
 
-> Tracks events across London venues. Pulls from multiple sources, cleans and structures the data, and runs on a daily schedule.
+`Python` `FastAPI` `PostgreSQL` `Redis` `Celery`
 
-<div align="center">
-
-`Python` `Playwright` `SQLite` `Pydantic` `Click`
-
-</div>
 </td>
 </tr>
 <tr>
 <td valign="top" width="50%">
-<div align="center">
+
+### Inference Brief
+
+Weekly AI briefing product with a personalised web experience, bookmarks, reading history, and an editorial pipeline that collects, filters, scores, summarises, and publishes each issue.
+
+`Next.js` `TypeScript` `Supabase` `Python` `Stripe`
+
+[![Live Site](https://img.shields.io/badge/Live_Site-00D9FF?style=flat-square)](https://inferencebrief.co/)
+
+</td>
+<td valign="top" width="50%">
+
+### Smart Job Market Intelligence ![Private](https://img.shields.io/badge/Private-grey?style=flat-square&logo=lock&logoColor=white)
+
+Job market analytics platform for salary intelligence, skill trend tracking, posting volume analysis, and alerts. Built around scraping, background processing, and product-style API tiers.
+
+`Python` `FastAPI` `PostgreSQL` `Redis` `Celery`
+
+</td>
+</tr>
+</table>
+
+---
+
+## Featured Public Work
+
+<table>
+<tr>
+<td valign="top" width="50%">
 
 ### Marketing ML Lakehouse
 
-</div>
-
-> A local marketing analytics stack. DuckDB handles the data layers, XGBoost models predict pacing and conversion, and a Streamlit dashboard surfaces everything with AI-generated commentary.
-
-<div align="center">
+Local-first marketing analytics stack using a bronze to silver to gold flow in DuckDB, XGBoost models for pacing and conversion, and a Streamlit interface for analysis and commentary.
 
 `Python` `DuckDB` `XGBoost` `Streamlit` `Polars`
 
 [![View Repo](https://img.shields.io/badge/View_Repo-0078D4?style=flat-square&logo=github&logoColor=white)](https://github.com/MatthewPaver/marketing-ml-lakehouse)
 
-</div>
 </td>
 <td valign="top" width="50%">
-<div align="center">
 
-### Inference — AI Weekly Newsletter
+### ProjectLens
 
-</div>
+Web app and backend pipeline for analysing project schedules, surfacing slippage, identifying risk, and generating actionable delivery insights from uploaded data.
 
-> A full-stack AI newsletter platform. Next.js 15 web app with Supabase Auth, personalised content, bookmarks, reading history, and an automated pipeline covering Gemini summarisation, HN discussion counts, and Fuse.js search.
+`Python` `Flask` `pandas` `Forecasting` `Analytics`
 
-<div align="center">
+[![View Repo](https://img.shields.io/badge/View_Repo-0078D4?style=flat-square&logo=github&logoColor=white)](https://github.com/MatthewPaver/ProjectLens)
 
-`Next.js 15` `TypeScript` `Supabase` `Python` `Vercel`
-
-[![View Repository](https://img.shields.io/badge/View_Repo-0078D4?style=flat-square&logo=github&logoColor=white)](https://github.com/MatthewPaver/inference-web) [![Read Newsletter](https://img.shields.io/badge/Read_Newsletter-00D9FF?style=flat-square)](https://inferencebrief.co/)
-
-</div>
 </td>
 </tr>
 <tr>
 <td valign="top" width="50%">
-<div align="center">
 
 ### Architexa
 
-</div>
+Architectural image generation project built with a conditional GAN and exposed through a Flask API. Trained to generate outputs across nine architectural styles.
 
-> Uses a conditional GAN to generate architectural images across 9 building styles. Flask API on top, deployable as a web app.
-
-<div align="center">
-
-`Python` `TensorFlow` `Keras` `Flask` `CGAN`
+`Python` `TensorFlow` `Keras` `Flask` `Computer Vision`
 
 [![View Repo](https://img.shields.io/badge/View_Repo-0078D4?style=flat-square&logo=github&logoColor=white)](https://github.com/MatthewPaver/Architexa)
 
-</div>
 </td>
 <td valign="top" width="50%">
-<div align="center">
 
 ### Dating App Recommendation System
 
-</div>
+Recommendation engine for swipe-based apps using implicit-feedback matrix factorisation and a practical framing of ranking quality over explicit ratings.
 
-> A recommendation system for swipe-based apps. Uses matrix factorisation on implicit feedback to figure out which profiles are worth showing to each user.
-
-<div align="center">
-
-`Python` `NumPy` `SciPy` `Matrix Factorisation`
+`Python` `NumPy` `SciPy` `Recommendation Systems` `ML`
 
 [![View Repo](https://img.shields.io/badge/View_Repo-0078D4?style=flat-square&logo=github&logoColor=white)](https://github.com/MatthewPaver/dating-app-recommendation-system)
 
-</div>
 </td>
 </tr>
 </table>
 
 <div align="center">
 
-**[Browse All Projects →](https://github.com/MatthewPaver/portfolio)**
+**[Browse the full project index](Projects.md)**  
+**[Browse the portfolio repository](https://github.com/MatthewPaver/portfolio)**
 
 </div>
 
 ---
 
-<details>
-<summary><b>🛠️ Tech & Tools</b></summary>
-<br>
+## Stack
 
-<table>
-<tr>
-<td valign="top" width="33.33%" align="center">
+- **Languages:** Python, SQL, TypeScript, JavaScript, Java, C++, Haskell
+- **AI and data:** FastAPI, LangChain, LlamaIndex, Neo4j, TensorFlow, PyTorch, XGBoost, DuckDB, Spark, pandas, Polars
+- **Cloud and product:** AWS, Azure, Supabase, Docker, GitHub Actions, Playwright, Stripe
 
-**Languages**
+---
 
-![Python](https://img.shields.io/badge/Python-3670A0?style=flat&logo=python&logoColor=ffdd54)
-![SQL](https://img.shields.io/badge/SQL-025E8C?style=flat&logo=postgresql&logoColor=white)
-![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=flat&logo=javascript&logoColor=black)
-![Java](https://img.shields.io/badge/Java-ED8B00?style=flat&logo=openjdk&logoColor=white)
-![C++](https://img.shields.io/badge/C++-00599C?style=flat&logo=c%2B%2B&logoColor=white)
-![Haskell](https://img.shields.io/badge/Haskell-5D4F85?style=flat&logo=haskell&logoColor=white)
-
-</td>
-<td valign="top" width="33.33%" align="center">
-
-**AI, ML & Data**
-
-![LangChain](https://img.shields.io/badge/LangChain-1C3C3C?style=flat&logo=langchain&logoColor=white)
-![LlamaIndex](https://img.shields.io/badge/LlamaIndex-412F17?style=flat&logo=python&logoColor=white)
-![Neo4j](https://img.shields.io/badge/Neo4j-018BFF?style=flat&logo=neo4j&logoColor=white)
-![TensorFlow](https://img.shields.io/badge/TensorFlow-FF6F00?style=flat&logo=tensorflow&logoColor=white)
-![PyTorch](https://img.shields.io/badge/PyTorch-EE4C2C?style=flat&logo=pytorch&logoColor=white)
-![scikit-learn](https://img.shields.io/badge/scikit--learn-F7931E?style=flat&logo=scikit-learn&logoColor=white)
-![Pinecone](https://img.shields.io/badge/Pinecone-430098?style=flat&logoColor=white)
-![Databricks](https://img.shields.io/badge/Databricks-FF3621?style=flat&logo=databricks&logoColor=white)
-![pandas](https://img.shields.io/badge/pandas-150458?style=flat&logo=pandas&logoColor=white)
-![Apache Spark](https://img.shields.io/badge/Spark-E25A1C?style=flat&logo=apache-spark&logoColor=white)
-
-</td>
-<td valign="top" width="33.33%" align="center">
-
-**Cloud & Automation**
-
-![AWS](https://img.shields.io/badge/AWS-232F3E?style=flat&logo=amazonwebservices&logoColor=FF9900)
-![Azure](https://img.shields.io/badge/Azure-0078D4?style=flat&logo=microsoftazure&logoColor=white)
-![Docker](https://img.shields.io/badge/Docker-2496ED?style=flat&logo=docker&logoColor=white)
-![GitHub Actions](https://img.shields.io/badge/GitHub_Actions-2088FF?style=flat&logo=github-actions&logoColor=white)
-![Supabase](https://img.shields.io/badge/Supabase-3ECF8E?style=flat&logo=supabase&logoColor=white)
-![n8n](https://img.shields.io/badge/n8n-F3850D?style=flat&logo=n8n&logoColor=white)
-![Playwright](https://img.shields.io/badge/Playwright-45ba4b?style=flat&logo=playwright&logoColor=white)
-![Git](https://img.shields.io/badge/Git-F05032?style=flat&logo=git&logoColor=white)
-
-</td>
-</tr>
-</table>
-
-</details>
-
-<details>
-<summary><b>📜 Certifications</b></summary>
-<br>
+## Certifications
 
 <div align="center">
 
 | Certification | Issued By |
-|:---:|:---:|
-| [![AWS AI Practitioner](https://img.shields.io/badge/AWS_Certified_AI_Practitioner-232F3E?style=flat-square&logo=amazonwebservices&logoColor=FF9900)](https://cp.certmetrics.com/amazon/en/public/verify/credential/455c09a58c6c43beb001b21d3ccec2a0) | Amazon Web Services |
-| [![AWS CCP](https://img.shields.io/badge/AWS_Cloud_Practitioner-232F3E?style=flat-square&logo=amazonwebservices&logoColor=FF9900)](https://cp.certmetrics.com/amazon/en/public/verify/credential/d0dd54bf93df495da5c3e75ee69940fe) | Amazon Web Services |
-| [![Neo4j](https://img.shields.io/badge/Neo4j_Certified_Professional-008CC1?style=flat-square&logo=neo4j&logoColor=FFFFFF)](https://drive.google.com/file/d/15oXe_G86TEiETdC8kGBhbnKoMjVZ5mQQ/view) | Neo4j |
-| [![Agent Course](https://img.shields.io/badge/AI_Agents_Course-FFD21E?style=flat-square&logo=huggingface&logoColor=000000)](https://drive.google.com/file/d/1NgSeIIF49Sqh2DAMY5KQEtnaddSc1Sqw/view) | Hugging Face |
-| [![RPA](https://img.shields.io/badge/RPA_Developer_Advanced-D50037?style=flat-square&logoColor=FFFFFF)](https://drive.google.com/file/d/15lrcn5_Cn4g-kD165xGNLUGUGXtCptk-/view) | UiPath |
-| [![BCS Diploma](https://img.shields.io/badge/BCS_Diploma_in_IT-004C97?style=flat-square&logoColor=FFFFFF)](https://drive.google.com/file/d/15yLBx8nzlhn_PwrGoqQbumRG8zRQPC9t/view) | BCS |
-| [![BCS Certificate](https://img.shields.io/badge/BCS_Certificate_in_IT-004C97?style=flat-square&logoColor=FFFFFF)](https://drive.google.com/file/d/160nzem63oIEv3EF9mCU9NGWwwA4NMdMZ/view) | BCS |
+|:---|:---|
+| [AWS Certified AI Practitioner](https://cp.certmetrics.com/amazon/en/public/verify/credential/455c09a58c6c43beb001b21d3ccec2a0) | Amazon Web Services |
+| [AWS Certified Cloud Practitioner](https://cp.certmetrics.com/amazon/en/public/verify/credential/d0dd54bf93df495da5c3e75ee69940fe) | Amazon Web Services |
+| [Neo4j Certified Professional](https://drive.google.com/file/d/15oXe_G86TEiETdC8kGBhbnKoMjVZ5mQQ/view) | Neo4j |
+| [AI Agents Course](https://drive.google.com/file/d/1NgSeIIF49Sqh2DAMY5KQEtnaddSc1Sqw/view) | Hugging Face |
+| [RPA Developer Advanced](https://drive.google.com/file/d/15lrcn5_Cn4g-kD165xGNLUGUGXtCptk-/view) | UiPath |
+| [BCS Diploma in IT](https://drive.google.com/file/d/15yLBx8nzlhn_PwrGoqQbumRG8zRQPC9t/view) | BCS |
+| [BCS Certificate in IT](https://drive.google.com/file/d/160nzem63oIEv3EF9mCU9NGWwwA4NMdMZ/view) | BCS |
 
 </div>
-
-</details>
 
 ---
 
@@ -223,11 +171,9 @@ Currently focused on retrieval that holds up in practice, evaluation that catche
 <img src="https://github-readme-stats.vercel.app/api?username=MatthewPaver&show_icons=true&theme=tokyonight&hide_border=true&count_private=true&include_all_commits=true" alt="GitHub Stats" height="160"/>
 <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=MatthewPaver&layout=compact&theme=tokyonight&hide_border=true&langs_count=8" alt="Top Languages" height="160"/>
 
-
 <br>
 
 <img src="https://github-readme-streak-stats.herokuapp.com/?user=MatthewPaver&theme=tokyonight&hide_border=true" alt="GitHub Streak"/>
-
 
 </div>
 
@@ -241,6 +187,7 @@ Currently focused on retrieval that holds up in practice, evaluation that catche
 
 <div align="center">
 
-*Open to collaboration and opportunities. [Reach out on LinkedIn](https://www.linkedin.com/in/matthew-paver-534262166/)*
+Open to collaboration, interesting product work, and AI/data engineering opportunities.  
+[LinkedIn](https://www.linkedin.com/in/matthew-paver-534262166/)
 
 </div>
