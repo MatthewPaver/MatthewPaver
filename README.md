@@ -2,7 +2,7 @@
 
 # Matthew Paver
 
-![Typing SVG](https://readme-typing-svg.herokuapp.com/?lines=AI+Engineer+%26+Data+Scientist;Production-minded+AI+%26+Data+Systems;RAG+%7C+Automation+%7C+Analytics;AWS+Certified+AI+Practitioner;Building+useful+systems%2C+not+just+demos&center=true&vCenter=true&width=700&height=45&size=22&color=00D9FF&duration=3000&pause=1500)
+![Typing SVG](https://readme-typing-svg.demolab.com/?lines=AI+Engineer+%26+Data+Scientist;Production-minded+AI+%26+Data+Systems;RAG+%7C+Automation+%7C+Analytics;AWS+Certified+AI+Practitioner;Building+useful+systems%2C+not+just+demos&center=true&vCenter=true&width=700&height=45&size=22&color=00D9FF&duration=3000&pause=1500)
 
 <a href="CV.pdf">
   <img src="https://img.shields.io/badge/CV-0078D4?style=for-the-badge&logo=readthedocs&logoColor=white" alt="CV" />
@@ -23,7 +23,7 @@
 
 I build AI, data, and automation systems with a bias toward reliability. The work I care about most sits in the gap between a proof of concept and something you would trust to run every day: retrieval pipelines that hold up, data products with clear feedback loops, and automation that is testable, observable, and actually useful.
 
-Recent work has included large-scale event ingestion, adaptive study tooling, newsletter automation, recommendation systems, analytics dashboards, and full-stack AI products. Some of the strongest projects are private, but I have summarised them here and linked the public work where I can.
+Recent work spans large-scale event ingestion, adaptive study tooling, newsletter automation, recommendation systems, analytics dashboards, and full-stack AI products. The strongest projects are private but summarised below alongside the public work.
 
 ---
 
@@ -143,7 +143,20 @@ More work: [Project Index](Projects.md) for the curated view of current systems,
 - AI products with real user-facing workflows, not just model demos.
 - Data and analytics tooling that turns messy inputs into something decision-useful.
 
-Working with: `Python`, `SQL`, `TypeScript`, `FastAPI`, `Next.js`, `Supabase`, `DuckDB`, `XGBoost`, `AWS`, `Docker`
+<div align="center">
+
+![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white)
+![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white)
+![SQL](https://img.shields.io/badge/SQL-4479A1?style=flat-square&logo=postgresql&logoColor=white)
+![FastAPI](https://img.shields.io/badge/FastAPI-009688?style=flat-square&logo=fastapi&logoColor=white)
+![Next.js](https://img.shields.io/badge/Next.js-000000?style=flat-square&logo=nextdotjs&logoColor=white)
+![Supabase](https://img.shields.io/badge/Supabase-3FCF8E?style=flat-square&logo=supabase&logoColor=white)
+![DuckDB](https://img.shields.io/badge/DuckDB-FFF000?style=flat-square&logo=duckdb&logoColor=black)
+![XGBoost](https://img.shields.io/badge/XGBoost-189FDD?style=flat-square)
+![AWS](https://img.shields.io/badge/AWS-232F3E?style=flat-square&logo=amazonwebservices&logoColor=white)
+![Docker](https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white)
+
+</div>
 
 ---
 
@@ -163,17 +176,26 @@ Working with: `Python`, `SQL`, `TypeScript`, `FastAPI`, `Next.js`, `Supabase`, `
 
 </div>
 
+---
+
+<div align="center">
+
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/MatthewPaver/MatthewPaver/output/github-contribution-grid-snake-dark.svg">
   <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/MatthewPaver/MatthewPaver/output/github-contribution-grid-snake.svg">
   <img alt="github contribution grid snake animation" src="https://raw.githubusercontent.com/MatthewPaver/MatthewPaver/output/github-contribution-grid-snake.svg">
 </picture>
 
+</div>
+
 ---
 
 <div align="center">
 
-Open to collaboration, interesting product work, and AI/data engineering opportunities.  
-[LinkedIn](https://www.linkedin.com/in/matthew-paver-534262166/)
+Open to collaboration, interesting product work, and AI/data engineering opportunities.
+
+<a href="https://www.linkedin.com/in/matthew-paver-534262166/">
+  <img src="https://img.shields.io/badge/Connect_on_LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" />
+</a>
 
 </div>
