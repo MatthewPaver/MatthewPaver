@@ -195,33 +195,9 @@ Exploratory data analysis of the Netflix catalogue using pandas, matplotlib, and
 
 ---
 
-### Automation and supporting work
+### Supporting work
 
 <table>
-<tr>
-<td width="50%" valign="top">
-
-#### Generate Newsletter
-
-Earlier newsletter-generation prototype that scrapes stories and renders HTML issues through a Python pipeline.
-
-`Python` `HTML` `Automation` `Newsletter`
-
-[![View Repo](https://img.shields.io/badge/View_Repo-0078D4?style=flat-square&logo=github&logoColor=white)](https://github.com/MatthewPaver/generate-newsletter)
-
-</td>
-<td width="50%" valign="top">
-
-#### Pinterest Image Scraper
-
-Automation utility for collecting Pinterest images with duplicate detection, multithreading, and proxy support.
-
-`Python` `Web Scraping` `Image Processing`
-
-[![View Repo](https://img.shields.io/badge/View_Repo-0078D4?style=flat-square&logo=github&logoColor=white)](https://github.com/MatthewPaver/pinterest-image-scraper)
-
-</td>
-</tr>
 <tr>
 <td width="50%" valign="top">
 
