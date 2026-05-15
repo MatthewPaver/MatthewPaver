@@ -35,11 +35,15 @@ I build practical systems around messy inputs: crawled websites, scraped listing
 ![Supabase](https://img.shields.io/badge/Supabase-3FCF8E?style=flat-square&logo=supabase&logoColor=white)
 ![GCP](https://img.shields.io/badge/GCP-4285F4?style=flat-square&logo=googlecloud&logoColor=white)
 
+**At a glance** — This repository is for hiring managers, recruiters, and collaborators who want evidence-led context fast. Start with the interactive **[Idea Store](https://matthewpaver.github.io/MatthewPaver/store/)** (search and filters), read **[case studies](CASE_STUDIES.md)**, or skim the **[project index](Projects.md)**. Prefer a local file? Open [`store/index.html`](store/index.html) in the repo.
+
 </div>
 
 ---
 
 ## Snapshot
+
+Four fast entry points. The **Featured shelf** below shows three of them with thumbnails; the fourth (largest public ML dataset) sits alongside everything else in the **[Idea Store](https://matthewpaver.github.io/MatthewPaver/store/)**, which adds search and filters.
 
 <table>
 <tr>
@@ -68,7 +72,9 @@ I build practical systems around messy inputs: crawled websites, scraped listing
 
 ---
 
-## Featured Shelf
+## Featured shelf
+
+Thumbnails for Inference Brief, Happening, and Marketing ML Lakehouse (the first three snapshot tiles). Browse the full set—including the recommender dataset tile—in the [Idea Store](https://matthewpaver.github.io/MatthewPaver/store/).
 
 <table>
 <tr>
@@ -114,6 +120,8 @@ I build practical systems around messy inputs: crawled websites, scraped listing
 ---
 
 ## Project Map
+
+Longer-term showcase plans live in **[SHOWCASE_ROADMAP.md](SHOWCASE_ROADMAP.md)**.
 
 | Project | Type | What it does | Stack |
 |:---|:---|:---|:---|
@@ -162,7 +170,7 @@ The part I care about is the whole loop: not just the model, not just the dashbo
 <table>
 <tr>
 <td width="33%" valign="top">
-  <h3>Productising AI work</h3>
+  <h3>Shipping AI as products</h3>
   <p>Turning AI workflows into usable apps with accounts, state, background jobs, and a clear user path.</p>
 </td>
 <td width="33%" valign="top">
@@ -175,6 +183,20 @@ The part I care about is the whole loop: not just the model, not just the dashbo
 </td>
 </tr>
 </table>
+
+---
+
+## Development
+
+Preview the Idea Store from the repository root (so asset paths resolve correctly):
+
+```bash
+python3 -m http.server 8000
+```
+
+Then open `http://localhost:8000/store/` in your browser.
+
+**GitHub Pages:** Publishing runs from `main` via [`.github/workflows/pages.yml`](.github/workflows/pages.yml), which uploads the **repository root** as the site artifact, so the Idea Store is served at `/store/` on Pages (for example `https://matthewpaver.github.io/MatthewPaver/store/`).
 
 ---
 
@@ -232,5 +254,7 @@ The visual version is the [Idea Store](https://matthewpaver.github.io/MatthewPav
 <a href="https://www.linkedin.com/in/matthew-paver-534262166/">
   <img src="https://img.shields.io/badge/Connect_on_LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" />
 </a>
+
+Roadmap notes: [SHOWCASE_ROADMAP.md](SHOWCASE_ROADMAP.md).
 
 </div>

@@ -8,13 +8,36 @@
       name="description"
       content="A clear app-store style showcase of Matthew Paver's AI products, data pipelines, automation tools, analytics apps, and ML projects."
     />
+    <!-- Open Graph / Twitter: image URL is absolute so social crawlers resolve it reliably -->
+    <meta property="og:title" content="Matthew Paver Idea Store" />
+    <meta
+      property="og:description"
+      content="A clear app-store style showcase of Matthew Paver's AI products, data pipelines, automation tools, analytics apps, and ML projects."
+    />
+    <meta property="og:url" content="https://matthewpaver.github.io/MatthewPaver/store/" />
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:image"
+      content="https://matthewpaver.github.io/MatthewPaver/store/assets/inference-brief.png"
+    />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Matthew Paver Idea Store" />
+    <meta
+      name="twitter:description"
+      content="A clear app-store style showcase of Matthew Paver's AI products, data pipelines, automation tools, analytics apps, and ML projects."
+    />
+    <meta
+      name="twitter:image"
+      content="https://matthewpaver.github.io/MatthewPaver/store/assets/inference-brief.png"
+    />
     <link
       rel="icon"
       href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='10' fill='%23d9a441'/%3E%3Cpath d='M12 44V18h9l11 14 11-14h9v26h-9V30L32 44 21 30v14z' fill='%23161411'/%3E%3C/svg%3E"
     />
-    <link rel="stylesheet" href="./styles.css?v=20260515-7" />
+    <link rel="stylesheet" href="./styles.css?v=20260516-1" />
   </head>
   <body>
+    <a class="skip-link" href="#store">Skip to ideas</a>
     <header class="shell hero">
       <nav class="topbar" aria-label="Primary navigation">
         <a class="brand" href="https://github.com/MatthewPaver/MatthewPaver" aria-label="Back to Matthew Paver profile">
@@ -51,7 +74,7 @@
         <aside class="signal-panel" aria-label="Portfolio proof points">
           <div class="console-card">
             <span class="console-label">current pattern</span>
-            <code>messy_input -> clean_system -> usable_product</code>
+            <code>messy_input → clean_system → usable_product</code>
           </div>
           <div>
             <span class="metric">103+</span>
@@ -145,11 +168,14 @@
             <button id="clear-search" class="clear-search" type="button">Clear</button>
           </span>
         </label>
-        <div class="result-count" aria-live="polite">
+        <div class="result-count">
           <span id="visible-count">13</span>
           <span>ideas showing</span>
         </div>
       </div>
+
+      <!-- aria-live on one node avoids duplicate polite announcements from the grid -->
+      <p id="store-filter-announcement" class="visually-hidden" aria-live="polite" aria-atomic="true"></p>
 
       <div class="filters" role="toolbar" aria-label="Filter projects">
         <button class="filter active" data-filter="all" type="button" aria-pressed="true">All</button>
@@ -161,6 +187,10 @@
         <button class="filter" data-filter="archive" type="button" aria-pressed="false">Archive</button>
       </div>
 
+      <p class="filter-sublabel">
+        Shelves jump to a curated grouping; chip filters narrow what you see in the grid.
+      </p>
+
       <div class="collection-rail" aria-label="Curated collections">
         <a href="#store" data-collection="product"><span>Product shelf</span><small>apps with workflows</small></a>
         <a href="#store" data-collection="automation"><span>Automation shelf</span><small>jobs that run</small></a>
@@ -168,7 +198,7 @@
         <a href="#store" data-collection="analytics"><span>Analytics shelf</span><small>dashboards and reports</small></a>
       </div>
 
-      <section class="store-grid" aria-live="polite">
+      <section class="store-grid">
         <article class="app-card featured image-card" data-tags="product automation data" data-status="Live product">
           <img class="inference-shot" src="./assets/inference-brief.png" alt="Inference Brief live product screenshot" />
           <div class="app-body">
@@ -504,7 +534,10 @@
         </article>
       </section>
 
-      <p class="empty-state" hidden>No ideas match that search or shelf yet.</p>
+      <div class="empty-state" hidden>
+        <p>No ideas match that search or shelf yet.</p>
+        <p class="empty-state-hint">Try clearing the search or choosing <strong>All</strong>.</p>
+      </div>
     </main>
 
     <footer class="shell footer">
@@ -514,6 +547,6 @@
       <a href="https://www.linkedin.com/in/matthew-paver-534262166/">Connect on LinkedIn</a>
     </footer>
 
-    <script src="./script.js?v=20260515-7"></script>
+    <script src="./script.js?v=20260516-1"></script>
   </body>
 </html>

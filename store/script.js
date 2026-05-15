@@ -5,6 +5,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const clearSearch = document.querySelector("#clear-search");
   const visibleCount = document.querySelector("#visible-count");
   const emptyState = document.querySelector(".empty-state");
+  const announcer = document.querySelector("#store-filter-announcement");
   const collectionLinks = Array.from(document.querySelectorAll("[data-collection]"));
 
   if (!searchInput || !visibleCount || !emptyState) return;
@@ -27,6 +28,14 @@ document.addEventListener("DOMContentLoaded", () => {
     visibleCount.textContent = String(count);
     emptyState.hidden = count > 0;
     if (clearSearch) clearSearch.hidden = searchInput.value.length === 0;
+
+    // Single polite live region so empty results get announced without duplicating the grid
+    if (announcer) {
+      announcer.textContent =
+        count === 0
+          ? "No ideas match your search or filters. Try clearing the search or choosing All."
+          : `${count} ideas showing`;
+    }
   }
 
   function setFilter(filterName) {
