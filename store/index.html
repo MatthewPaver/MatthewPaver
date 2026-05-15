@@ -8,7 +8,11 @@
       name="description"
       content="A clear app-store style showcase of Matthew Paver's AI products, data pipelines, automation tools, analytics apps, and ML projects."
     />
-    <link rel="stylesheet" href="./styles.css?v=20260515-6" />
+    <link
+      rel="icon"
+      href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='10' fill='%23d9a441'/%3E%3Cpath d='M12 44V18h9l11 14 11-14h9v26h-9V30L32 44 21 30v14z' fill='%23161411'/%3E%3C/svg%3E"
+    />
+    <link rel="stylesheet" href="./styles.css?v=20260515-7" />
   </head>
   <body>
     <header class="shell hero">
@@ -26,17 +30,17 @@
 
       <section class="hero-grid">
         <div class="hero-copy">
-          <p class="eyebrow">AI, data, automation, analytics</p>
-          <h1>Apps, pipelines, and data products you can inspect quickly.</h1>
+          <p class="eyebrow">Matthew Paver / product lab</p>
+          <h1>A personal app store for the systems I am building.</h1>
           <p class="lede">
-            A concise storefront for the strongest work: what each project does, the proof behind it,
-            the stack used, and where to open the live product, case study, or repository.
+            Live products, private systems, runnable public repos, and earlier prototypes in one place.
+            Open a product, inspect a repo, or read the case study behind the work.
           </p>
           <div class="hero-pills" aria-label="Portfolio highlights">
-            <span>Live product</span>
-            <span>Private systems</span>
-            <span>Runnable repos</span>
-            <span>Case studies</span>
+            <span>AI products</span>
+            <span>Data pipelines</span>
+            <span>Automation</span>
+            <span>Analytics apps</span>
           </div>
           <div class="hero-actions">
             <a class="button primary" href="#store">Browse ideas</a>
@@ -45,6 +49,10 @@
         </div>
 
         <aside class="signal-panel" aria-label="Portfolio proof points">
+          <div class="console-card">
+            <span class="console-label">current pattern</span>
+            <code>messy_input -> clean_system -> usable_product</code>
+          </div>
           <div>
             <span class="metric">103+</span>
             <span class="metric-label">London venue sources</span>
@@ -66,12 +74,35 @@
     </header>
 
     <main id="store" class="shell">
+      <section class="snapshot-board" aria-label="Matthew Paver portfolio snapshot">
+        <a href="https://inferencebrief.co/">
+          <span>Live now</span>
+          <strong>Inference Brief</strong>
+          <small>AI news product</small>
+        </a>
+        <a href="https://github.com/MatthewPaver/MatthewPaver/blob/main/CASE_STUDIES.md#happening">
+          <span>Best private system</span>
+          <strong>Happening</strong>
+          <small>103+ venues into data</small>
+        </a>
+        <a href="https://github.com/MatthewPaver/marketing-ml-lakehouse">
+          <span>Best public data app</span>
+          <strong>Marketing ML Lakehouse</strong>
+          <small>DuckDB + ML + dashboard</small>
+        </a>
+        <a href="https://github.com/MatthewPaver/dating-app-recommendation-system">
+          <span>Largest ML dataset</span>
+          <strong>3.4M+ interactions</strong>
+          <small>recommender evaluation</small>
+        </a>
+      </section>
+
       <section class="today-shelf" aria-labelledby="today-heading">
         <div class="shelf-copy">
-          <p class="eyebrow">Today</p>
-          <h2 id="today-heading">Start with the clearest proof.</h2>
+          <p class="eyebrow">First three opens</p>
+          <h2 id="today-heading">The shortest route through the work.</h2>
           <p>
-            Three quick reads: a live product, a private ingestion platform, and a runnable public data app.
+            Start with one live product, one private system case study, and one public repo you can clone.
           </p>
         </div>
         <div class="spotlight-grid">
@@ -98,11 +129,11 @@
 
       <section class="section-heading">
         <div>
-          <p class="eyebrow">The shelves</p>
-          <h2>Browse by what you want to inspect</h2>
+          <p class="eyebrow">Store shelves</p>
+          <h2>Choose the kind of proof you want.</h2>
         </div>
         <p>
-          Filter by product, data engineering, automation, analytics, ML, or earlier prototypes.
+          Product screens, data systems, automated jobs, analytics interfaces, ML experiments, and archived prototypes.
         </p>
       </section>
 
@@ -131,10 +162,10 @@
       </div>
 
       <div class="collection-rail" aria-label="Curated collections">
-        <a href="#store" data-collection="product">Products</a>
-        <a href="#store" data-collection="automation">Automation</a>
-        <a href="#store" data-collection="ml">ML projects</a>
-        <a href="#store" data-collection="analytics">Analytics apps</a>
+        <a href="#store" data-collection="product"><span>Product shelf</span><small>apps with workflows</small></a>
+        <a href="#store" data-collection="automation"><span>Automation shelf</span><small>jobs that run</small></a>
+        <a href="#store" data-collection="ml"><span>ML shelf</span><small>models and metrics</small></a>
+        <a href="#store" data-collection="analytics"><span>Analytics shelf</span><small>dashboards and reports</small></a>
       </div>
 
       <section class="store-grid" aria-live="polite">
@@ -483,6 +514,6 @@
       <a href="https://www.linkedin.com/in/matthew-paver-534262166/">Connect on LinkedIn</a>
     </footer>
 
-    <script src="./script.js?v=20260515-6"></script>
+    <script src="./script.js?v=20260515-7"></script>
   </body>
 </html>
