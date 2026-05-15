@@ -1,0 +1,37 @@
+<svg width="1200" height="360" viewBox="0 0 1200 360" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">Matthew Paver portfolio banner</title>
+  <desc id="desc">A portfolio storefront banner for AI, data, automation, and product systems.</desc>
+  <rect width="1200" height="360" fill="#F7F1E6"/>
+  <path d="M0 40H1200M0 80H1200M0 120H1200M0 160H1200M0 200H1200M0 240H1200M0 280H1200M0 320H1200" stroke="#161411" stroke-opacity="0.08"/>
+  <path d="M40 0V360M80 0V360M120 0V360M160 0V360M200 0V360M240 0V360M280 0V360M320 0V360M360 0V360M400 0V360M440 0V360M480 0V360M520 0V360M560 0V360M600 0V360M640 0V360M680 0V360M720 0V360M760 0V360M800 0V360M840 0V360M880 0V360M920 0V360M960 0V360M1000 0V360M1040 0V360M1080 0V360M1120 0V360M1160 0V360" stroke="#161411" stroke-opacity="0.08"/>
+  <circle cx="1010" cy="24" r="220" fill="#1F5F9F" fill-opacity="0.12"/>
+  <circle cx="176" cy="38" r="230" fill="#D9A441" fill-opacity="0.17"/>
+
+  <rect x="54" y="52" width="58" height="58" fill="#D9A441" stroke="#161411" stroke-width="4"/>
+  <rect x="62" y="60" width="58" height="58" stroke="#161411" stroke-width="4"/>
+  <text x="83" y="88" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="19" font-weight="900" fill="#161411">MP</text>
+
+  <text x="54" y="148" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="900" letter-spacing="4" fill="#AD3F32">AI, DATA, AUTOMATION, ANALYTICS</text>
+  <text x="54" y="204" font-family="Georgia, serif" font-size="58" font-weight="700" fill="#161411">Systems from messy inputs.</text>
+  <text x="54" y="256" font-family="Georgia, serif" font-size="58" font-weight="700" fill="#161411">Products people can inspect.</text>
+  <text x="58" y="302" font-family="Arial, Helvetica, sans-serif" font-size="20" font-weight="700" fill="#4E473F">A curated app-store style profile for live products, private systems, and public proof.</text>
+
+  <g transform="translate(800 66)">
+    <rect x="8" y="8" width="316" height="72" fill="#161411"/>
+    <rect x="0" y="0" width="316" height="72" fill="#FFF8EB" stroke="#161411" stroke-width="3"/>
+    <text x="22" y="34" font-family="Arial, Helvetica, sans-serif" font-size="24" font-weight="900" fill="#161411">103+ sources</text>
+    <text x="22" y="56" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="800" fill="#6F675D">Happening event ingestion</text>
+  </g>
+  <g transform="translate(800 156)">
+    <rect x="8" y="8" width="316" height="72" fill="#161411"/>
+    <rect x="0" y="0" width="316" height="72" fill="#FFF8EB" stroke="#161411" stroke-width="3"/>
+    <text x="22" y="34" font-family="Arial, Helvetica, sans-serif" font-size="24" font-weight="900" fill="#161411">3.4M+ interactions</text>
+    <text x="22" y="56" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="800" fill="#6F675D">Recommendation modelling</text>
+  </g>
+  <g transform="translate(800 246)">
+    <rect x="8" y="8" width="316" height="72" fill="#161411"/>
+    <rect x="0" y="0" width="316" height="72" fill="#FFF8EB" stroke="#161411" stroke-width="3"/>
+    <text x="22" y="34" font-family="Arial, Helvetica, sans-serif" font-size="24" font-weight="900" fill="#161411">Live AI product</text>
+    <text x="22" y="56" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="800" fill="#6F675D">Inference Brief</text>
+  </g>
+</svg>

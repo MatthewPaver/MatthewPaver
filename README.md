@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="assets/profile-hero.svg" alt="Matthew Paver portfolio banner: AI, data, automation, and analytics systems" />
+</p>
+
 <div align="center">
 
 # Matthew Paver
@@ -6,26 +10,53 @@
 
 I build production-minded AI, automation, and analytics systems: retrieval pipelines, event ingestion, full-stack AI products, recommendation engines, and data products that can be tested, operated, and improved.
 
-<a href="CV.pdf">
-  <img src="https://img.shields.io/badge/CV-0078D4?style=for-the-badge&logo=readthedocs&logoColor=white" alt="CV" />
+<a href="https://matthewpaver.github.io/MatthewPaver/store/">
+  <img src="https://img.shields.io/badge/Browse_the_Idea_Store-D9A441?style=for-the-badge" alt="Browse the Idea Store" />
+</a>
+<a href="CASE_STUDIES.md">
+  <img src="https://img.shields.io/badge/Read_Case_Studies-0F766E?style=for-the-badge" alt="Read Case Studies" />
 </a>
 <a href="Projects.md">
   <img src="https://img.shields.io/badge/Project_Index-181717?style=for-the-badge&logo=github&logoColor=white" alt="Project Index" />
 </a>
-<a href="https://matthewpaver.github.io/MatthewPaver/store/">
-  <img src="https://img.shields.io/badge/Idea_Store-D9A441?style=for-the-badge" alt="Idea Store" />
-</a>
-<a href="CASE_STUDIES.md">
-  <img src="https://img.shields.io/badge/Case_Studies-0F766E?style=for-the-badge" alt="Case Studies" />
-</a>
 <a href="https://inferencebrief.co/">
-  <img src="https://img.shields.io/badge/Inference_Brief-00D9FF?style=for-the-badge" alt="Inference Brief" />
+  <img src="https://img.shields.io/badge/Live_Product-Inference_Brief-00D9FF?style=for-the-badge" alt="Inference Brief" />
+</a>
+<a href="CV.pdf">
+  <img src="https://img.shields.io/badge/CV-0078D4?style=for-the-badge&logo=readthedocs&logoColor=white" alt="CV" />
+</a>
+<a href="CV_EVIDENCE_LOG.md">
+  <img src="https://img.shields.io/badge/CV_Evidence_Log-6F675D?style=for-the-badge" alt="CV Evidence Log" />
 </a>
 <a href="https://www.linkedin.com/in/matthew-paver-534262166/">
   <img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" />
 </a>
 
 </div>
+
+---
+
+## Start Here
+
+| If you have... | Open this | What it proves |
+|:---|:---|:---|
+| 30 seconds | [Idea Store](https://matthewpaver.github.io/MatthewPaver/store/) | The curated app-store view of the strongest work |
+| 2 minutes | [Case Studies](CASE_STUDIES.md) | Architecture, tradeoffs, reliability, and product thinking |
+| 5 minutes | [Project Index](Projects.md) | The full map across public, private, live, and archived work |
+| Want a live example | [Inference Brief](https://inferencebrief.co/) | A shipped AI briefing product with a real reading workflow |
+| Want CV evidence | [CV Evidence Log](CV_EVIDENCE_LOG.md) | Anonymised delivery evidence and CV-ready bullet bank |
+
+---
+
+## Portfolio Signal
+
+| Signal | Evidence | Why it matters |
+|:---|:---|:---|
+| **Live AI product** | Inference Brief | Product surface, account flows, editorial automation, and publishing loop |
+| **103+ messy sources** | Happening | Config-driven ingestion, extraction, deduplication, tests, and scheduled automation |
+| **3.4M+ interactions** | Dating App Recommendation System | Practical recommendation modelling with temporal evaluation |
+| **Runnable data app** | Marketing ML Lakehouse | DuckDB medallion layers, XGBoost, Streamlit, and local-first analytics |
+| **Private product depth** | AI Study Companion, Job Intelligence, QuickSupply | Auth, async jobs, tiers, alerts, operations workflows, and deployment thinking |
 
 ---
 
@@ -37,171 +68,87 @@ I build production-minded AI, automation, and analytics systems: retrieval pipel
 | Data engineering | Messy inputs into structured, queryable, repeatable outputs | Happening, Marketing ML Lakehouse |
 | Automation | Jobs that can run every day with tests and observability | Happening, newsletter pipelines |
 | Analytics | Decision-useful dashboards and reporting systems | ProjectLens, HR analytics, Netflix EDA |
-| ML systems | Practical ranking, retrieval, forecasting, and generation | recommendation system, Architexa, sentence similarity |
+| ML systems | Practical ranking, retrieval, forecasting, and generation | Recommendation system, Architexa, sentence similarity |
 
 ---
 
-## Flagship Systems
+## Featured Systems
 
-<table>
-<tr>
-<td valign="top" width="50%">
-
-### Happening ![Private](https://img.shields.io/badge/Private-grey?style=flat-square&logo=lock&logoColor=white)
-
-Deterministic event ingestion and normalisation system covering **103 London venues**. Built around multi-strategy crawling, structured extraction, deduplication, SQLite storage, and daily automation with a **167-test** suite behind it.
-
-**Signal:** web automation, data quality, source configuration, scheduled runs, reliability engineering.
-
-`Python` `Playwright` `SQLite` `Pydantic` `GitHub Actions`
-
-</td>
-<td valign="top" width="50%">
-
-### Inference Brief
-
-AI briefing product with a personalised reading experience, bookmarks, reading history, topic preferences, subscription flows, and an editorial pipeline that collects, filters, scores, summarises, and publishes issues.
-
-**Signal:** product thinking, full-stack delivery, AI-assisted publishing workflow.
-
-`Next.js` `TypeScript` `Supabase` `Python` `Stripe`
-
-[![Live Site](https://img.shields.io/badge/Live_Site-00D9FF?style=flat-square)](https://inferencebrief.co/)
-
-</td>
-</tr>
-<tr>
-<td valign="top" width="50%">
-
-### AI Study Companion ![Private](https://img.shields.io/badge/Private-grey?style=flat-square&logo=lock&logoColor=white)
-
-Full-stack study platform for turning PDFs and notes into flashcards, quizzes, and adaptive study plans. Includes parsing, token-aware chunking, spaced repetition, async generation jobs, usage tiers, and local or hosted LLM support.
-
-**Signal:** document AI, background jobs, auth/billing boundaries, learning loops.
-
-`Python` `FastAPI` `PostgreSQL` `Redis` `Celery`
-
-</td>
-<td valign="top" width="50%">
-
-### Smart Job Market Intelligence ![Private](https://img.shields.io/badge/Private-grey?style=flat-square&logo=lock&logoColor=white)
-
-Job market analytics platform for salary intelligence, skill trend tracking, posting volume analysis, and alerts with background processing and product-style API tiering.
-
-**Signal:** scraping + analytics pipeline, alerts, trend reporting, API thinking.
-
-`Python` `FastAPI` `PostgreSQL` `Redis` `Celery`
-
-</td>
-</tr>
-</table>
+| System | Status | Signal | Stack |
+|:---|:---|:---|:---|
+| [Inference Brief](https://inferencebrief.co/) | Live product | Personalised AI briefing product with collection, filtering, scoring, summarisation, publishing, bookmarks, history, preferences, and subscription flows | `Next.js` `TypeScript` `Supabase` `Python` `Stripe` |
+| [Happening](CASE_STUDIES.md#happening) | Private system | Deterministic event ingestion across **103+ London venue sources** with Playwright crawling, structured extraction, deduplication, SQLite storage, daily automation, and **167 tests** | `Python` `Playwright` `SQLite` `Pydantic` `GitHub Actions` |
+| [AI Study Companion](CASE_STUDIES.md#ai-study-companion) | Private product | Documents into flashcards, quizzes, adaptive study plans, token-aware chunking, async generation jobs, review loops, tiers, and export paths | `Python` `FastAPI` `PostgreSQL` `Redis` `Celery` |
+| [Smart Job Market Intelligence](CASE_STUDIES.md#smart-job-market-intelligence) | Private system | Job scraping, salary trends, skill trends, posting volume, remote ratios, alerts, and product-style API tiers | `Python` `FastAPI` `PostgreSQL` `Redis` `Celery` |
 
 ---
 
 ## Public Repositories
 
-<table>
-<tr>
-<td valign="top" width="50%">
+| Project | What to inspect | Stack |
+|:---|:---|:---|
+| [Marketing ML Lakehouse](https://github.com/MatthewPaver/marketing-ml-lakehouse) | Local-first analytics lakehouse with medallion layers, model training, quality checks, and Streamlit reporting | `Python` `DuckDB` `XGBoost` `Streamlit` |
+| [ProjectLens](https://github.com/MatthewPaver/ProjectLens) | Project schedule risk analysis with a Flask app, processing pipeline, and reporting outputs | `Python` `Flask` `pandas` |
+| [Architexa](https://github.com/MatthewPaver/Architexa) | Conditional GAN project for architecture-themed image generation with API and training assets | `TensorFlow` `Keras` `Flask` |
+| [Dating App Recommendation System](https://github.com/MatthewPaver/dating-app-recommendation-system) | Implicit-feedback recommendation engine with notebook walkthrough and lightweight CLI | `Python` `NumPy` `SciPy` |
+| [Sentence Similarity Analysis](https://github.com/MatthewPaver/sentence-similarity-analysis) | Compact NLP retrieval demo using transformer embeddings and cosine similarity | `Python` `sentence-transformers` |
 
-### Marketing ML Lakehouse
-
-Local-first marketing analytics stack using bronze/silver/gold DuckDB layers, XGBoost models, and a Streamlit reporting interface.
-
-`Python` `DuckDB` `XGBoost` `Streamlit` `Polars`
-
-[![View Repo](https://img.shields.io/badge/View_Repo-0078D4?style=flat-square&logo=github&logoColor=white)](https://github.com/MatthewPaver/marketing-ml-lakehouse)
-
-</td>
-<td valign="top" width="50%">
-
-### ProjectLens
-
-Web application and backend pipeline for project schedule risk analysis, slippage visibility, and reporting outputs.
-
-`Python` `Flask` `pandas` `Forecasting` `Analytics`
-
-[![View Repo](https://img.shields.io/badge/View_Repo-0078D4?style=flat-square&logo=github&logoColor=white)](https://github.com/MatthewPaver/ProjectLens)
-
-</td>
-</tr>
-<tr>
-<td valign="top" width="50%">
-
-### Architexa
-
-Architecture-themed image generation project with a conditional GAN and Flask API.
-
-`Python` `TensorFlow` `Keras` `Flask` `Computer Vision`
-
-[![View Repo](https://img.shields.io/badge/View_Repo-0078D4?style=flat-square&logo=github&logoColor=white)](https://github.com/MatthewPaver/Architexa)
-
-</td>
-<td valign="top" width="50%">
-
-### Dating App Recommendation System
-
-Recommendation system for swipe-style data using implicit feedback and top-K ranking.
-
-`Python` `NumPy` `SciPy` `Recommendation Systems` `ML`
-
-[![View Repo](https://img.shields.io/badge/View_Repo-0078D4?style=flat-square&logo=github&logoColor=white)](https://github.com/MatthewPaver/dating-app-recommendation-system)
-
-</td>
-</tr>
-</table>
-
-<div align="center">
-
-More work: [Project Index](Projects.md) and [Case Studies](CASE_STUDIES.md).
-
-</div>
+More work: [Project Index](Projects.md), [Case Studies](CASE_STUDIES.md), and the [Idea Store](https://matthewpaver.github.io/MatthewPaver/store/).
 
 ---
 
-## 30-Second Snapshot
+## System Pattern
 
-- Build focus: production-minded AI, data, and automation systems.
-- Strengths: turning early prototypes into secure, reliable, repeatable workflows.
-- Current stack: `Python` `TypeScript` `FastAPI` `n8n` `Firebase` `GCP` `PostgreSQL` `Redis` `Docker` `GitHub Actions`.
-- Delivery style: governance-first, measurable outcomes, strong operational documentation.
+```mermaid
+flowchart LR
+    A["Messy source data"] --> B["Ingestion and validation"]
+    B --> C["Structured storage"]
+    C --> D["Models, retrieval, or analytics"]
+    D --> E["User-facing product"]
+    E --> F["Feedback, tests, monitoring"]
+    F --> B
+```
+
+The pattern I keep coming back to: make the inputs explicit, make the pipeline repeatable, expose the result through a useful workflow, and close the loop with tests or feedback.
+
+---
 
 ## Current Focus
 
 - Retrieval and automation systems that need to run cleanly and predictably.
 - AI products with real user-facing workflows, not just model demos.
 - Data and analytics tooling that turns messy inputs into something decision-useful.
+- Portfolio packaging that makes private-system engineering visible without exposing sensitive details.
 
+---
 
-## What I'm Building in Professional Settings (Anonymised)
+## Professional Work, Anonymised
 
 - Internal AI assistants and workflow automations, taken from discovery through production readiness.
 - Delivery governance design: intake, risk classification, security and privacy gates, and clear go-live criteria.
 - Production hardening for lightweight apps: authentication, access boundaries, service-account hygiene, auditability, and handover readiness.
 - Documentation operations: linked playbooks, decision logs, and portfolio views maintained through recurring review loops.
 
-## Operational Tech Stack
-
-`Python` `TypeScript` `n8n` `FastAPI` `Firebase` `GCP` `PostgreSQL` `Redis` `GitHub Actions` `Docker` `Obsidian`
-
-_All professional examples are intentionally anonymised and focused on engineering patterns rather than internal identifiers._
+All professional examples are intentionally anonymised and focused on engineering patterns rather than internal identifiers.
 
 ---
 
-<div align="center">
+## Operating Stack
 
-![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white)
-![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white)
-![SQL](https://img.shields.io/badge/SQL-4479A1?style=flat-square&logo=postgresql&logoColor=white)
-![FastAPI](https://img.shields.io/badge/FastAPI-009688?style=flat-square&logo=fastapi&logoColor=white)
-![Next.js](https://img.shields.io/badge/Next.js-000000?style=flat-square&logo=nextdotjs&logoColor=white)
-![Supabase](https://img.shields.io/badge/Supabase-3FCF8E?style=flat-square&logo=supabase&logoColor=white)
-![DuckDB](https://img.shields.io/badge/DuckDB-FFF000?style=flat-square&logo=duckdb&logoColor=black)
-![XGBoost](https://img.shields.io/badge/XGBoost-189FDD?style=flat-square)
-![AWS](https://img.shields.io/badge/AWS-232F3E?style=flat-square&logo=amazonwebservices&logoColor=white)
-![Docker](https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white)
+`Python` `TypeScript` `FastAPI` `n8n` `PostgreSQL` `Redis` `DuckDB` `Firebase` `GCP` `GitHub Actions` `Docker` `Supabase` `Next.js` `Playwright`
 
-</div>
+<p align="center">
+  <img src="https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white" alt="Python" />
+  <img src="https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white" alt="TypeScript" />
+  <img src="https://img.shields.io/badge/SQL-4479A1?style=flat-square&logo=postgresql&logoColor=white" alt="SQL" />
+  <img src="https://img.shields.io/badge/FastAPI-009688?style=flat-square&logo=fastapi&logoColor=white" alt="FastAPI" />
+  <img src="https://img.shields.io/badge/Next.js-000000?style=flat-square&logo=nextdotjs&logoColor=white" alt="Next.js" />
+  <img src="https://img.shields.io/badge/Supabase-3FCF8E?style=flat-square&logo=supabase&logoColor=white" alt="Supabase" />
+  <img src="https://img.shields.io/badge/DuckDB-FFF000?style=flat-square&logo=duckdb&logoColor=black" alt="DuckDB" />
+  <img src="https://img.shields.io/badge/XGBoost-189FDD?style=flat-square" alt="XGBoost" />
+  <img src="https://img.shields.io/badge/GCP-4285F4?style=flat-square&logo=googlecloud&logoColor=white" alt="GCP" />
+  <img src="https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white" alt="Docker" />
+</p>
 
 ---
 
@@ -223,23 +170,11 @@ _All professional examples are intentionally anonymised and focused on engineeri
 
 Open to collaboration, interesting product work, and AI/data engineering opportunities.
 
+<a href="https://matthewpaver.github.io/MatthewPaver/store/">
+  <img src="https://img.shields.io/badge/Explore_the_Idea_Store-D9A441?style=for-the-badge" alt="Explore the Idea Store" />
+</a>
 <a href="https://www.linkedin.com/in/matthew-paver-534262166/">
   <img src="https://img.shields.io/badge/Connect_on_LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" />
 </a>
 
 </div>
-
-
-<!-- AUTO:ACTIVITY_START -->
-## Latest Public Activity (Auto-Updated)
-
-_This section is automatically refreshed by GitHub Actions._
-
-- Last refresh (UTC): pending first scheduled run
-
-| Repo | Last push | What it is |
-|:---|:---:|:---|
-| Pending first automation run | - | This table will auto-populate from public repositories. |
-
-<!-- AUTO:ACTIVITY_END -->
-

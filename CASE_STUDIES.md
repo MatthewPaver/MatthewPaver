@@ -2,9 +2,22 @@
 
 Short, sanitised case studies across AI, data, automation, and analytics.
 
-[Back to Profile](README.md) | [Project Index](Projects.md)
+[Back to Profile](README.md) | [Idea Store](https://matthewpaver.github.io/MatthewPaver/store/) | [Project Index](Projects.md)
 
 All professional examples are intentionally anonymised and focused on architecture, tradeoffs, and delivery patterns rather than internal identifiers.
+
+---
+
+## How To Read These
+
+Each case study is deliberately short: problem, goal, what I built, architecture, engineering signal, and stack. The point is to show product judgment and system design without exposing private repo contents or professional identifiers.
+
+| Case study | Best signal |
+|:---|:---|
+| [Happening](#happening) | Reliable ingestion from fragmented public web sources |
+| [Inference Brief](#inference-brief) | Live AI product plus publishing workflow |
+| [AI Study Companion](#ai-study-companion) | Document AI, async jobs, and adaptive learning loops |
+| [Smart Job Market Intelligence](#smart-job-market-intelligence) | Repeatable market intelligence product from scraped listings |
 
 ---
 
