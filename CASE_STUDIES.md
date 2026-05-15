@@ -1,25 +1,27 @@
 # Case Studies
 
-These are short, sanitized summaries of systems I have been building across AI, data, automation, and analytics. Some code is private, but the architecture, tradeoffs, and engineering patterns are representative.
+Short, sanitised case studies across AI, data, automation, and analytics.
 
 [Back to Profile](README.md) | [Project Index](Projects.md)
+
+All professional examples are intentionally anonymised and focused on architecture, tradeoffs, and delivery patterns rather than internal identifiers.
 
 ---
 
 ## Happening
 
 **Type:** Private system  
-**Problem:** Event listings are spread across venue sites with inconsistent HTML, date formats, ticket links, and update patterns.  
-**Goal:** Build a repeatable ingestion system that can collect, normalize, deduplicate, and store London event data every day.
+**Problem:** Event listings are fragmented across many sites with inconsistent formats and update patterns.  
+**Goal:** Build a repeatable daily ingestion system with reliable normalisation and storage.
 
 ### What I Built
 
-- Source configuration for **103 London venues**
+- Source configuration for **103 venues**
 - Multi-strategy crawling with Playwright-backed extraction
-- Structured event validation using Pydantic-style schemas
-- Deduplication and normalization before SQLite persistence
+- Structured validation using Pydantic-style schemas
+- Deduplication and normalisation before SQLite persistence
 - Daily automation workflow
-- **167-test** suite covering adapters, agents, source behavior, and pipeline reliability
+- **167-test** suite covering adapters and pipeline reliability
 
 ```mermaid
 flowchart LR
@@ -33,10 +35,7 @@ flowchart LR
     H --> A
 ```
 
-### Engineering Signal
-
-The important part is not just scraping pages. It is making source behavior explicit, turning unpredictable HTML into structured records, and building enough tests around the system that changes can be made without guessing.
-
+**Engineering signal:** reliability, explicit source behaviour, and safe iteration under test coverage.  
 **Stack:** `Python` `Playwright` `SQLite` `Pydantic` `GitHub Actions`
 
 ---
@@ -44,15 +43,15 @@ The important part is not just scraping pages. It is making source behavior expl
 ## AI Study Companion
 
 **Type:** Private product  
-**Problem:** Students often have long PDFs, notes, and revision material but no quick way to turn them into active recall workflows.  
-**Goal:** Build a full-stack study tool that converts documents into flashcards, quizzes, and adaptive study plans.
+**Problem:** Learners have long documents but weak active-recall workflows.  
+**Goal:** Convert documents into flashcards, quizzes, and adaptive study plans.
 
 ### What I Built
 
 - PDF, DOCX, and text ingestion paths
 - Token-aware chunking before LLM generation
 - Flashcard, quiz, and study-plan generation
-- Spaced repetition based on SM-2 style review loops
+- SM-2 style spaced-repetition loop
 - Async generation jobs
 - Auth, tiers, rate limits, billing boundaries, and export paths
 - Local or hosted LLM provider support
@@ -68,10 +67,7 @@ flowchart LR
     G --> E
 ```
 
-### Engineering Signal
-
-This is a product-shaped AI system: parsing and chunking matter as much as model calls, background jobs need clean status tracking, and the learning loop has to persist user progress over time.
-
+**Engineering signal:** product-grade pipeline design, not just prompt orchestration.  
 **Stack:** `Python` `FastAPI` `PostgreSQL` `Redis` `Celery`
 
 ---
@@ -79,14 +75,14 @@ This is a product-shaped AI system: parsing and chunking matter as much as model
 ## Inference Brief
 
 **Type:** Live product  
-**Problem:** AI news is noisy, repetitive, and hard to turn into a useful weekly reading habit.  
-**Goal:** Build a briefing product with a curated editorial pipeline and a personalized reading surface.
+**Problem:** AI news is noisy and difficult to convert into a consistent reading workflow.  
+**Goal:** Build a curated briefing pipeline and personalised reading experience.
 
 ### What I Built
 
 - Weekly publishing workflow
-- Collection, filtering, scoring, summarization, and issue assembly pipeline
-- Personalized web experience
+- Collection, filtering, scoring, summarisation, and issue assembly pipeline
+- Personalised web experience
 - Bookmarks, reading history, issue archive, and topic preferences
 - Subscription and account flows
 
@@ -100,12 +96,8 @@ flowchart LR
     F --> G["Bookmarks and reading history"]
 ```
 
-### Engineering Signal
-
-The product combines editorial judgment with automation. The point is not to publish more content; it is to make a smaller amount of better-filtered information easier to read and return to.
-
-**Stack:** `Next.js` `TypeScript` `Supabase` `Python` `Stripe`
-
+**Engineering signal:** combines editorial judgment with automation into a reusable product loop.  
+**Stack:** `Next.js` `TypeScript` `Supabase` `Python` `Stripe`  
 [Live site](https://inferencebrief.co/)
 
 ---
@@ -113,16 +105,16 @@ The product combines editorial judgment with automation. The point is not to pub
 ## Smart Job Market Intelligence
 
 **Type:** Private system  
-**Problem:** Job postings contain useful signals about salary, skills, remote work, and demand trends, but the data is messy and changes constantly.  
-**Goal:** Build a job-market intelligence product around scraping, analysis, alerts, and product-style API tiers.
+**Problem:** Job posting data is high-volume, messy, and constantly changing.  
+**Goal:** Build a repeatable intelligence product for trends, insights, and alerting.
 
 ### What I Built
 
-- Scraping and ingestion layer for job listings
+- Scraping and ingestion layer for listings
 - Salary and skill trend analysis
 - Posting volume and remote-ratio tracking
 - Alerting workflows
-- API routes with tier and rate-limit thinking
+- API surface with tier and rate-limit design
 - Background processing architecture
 
 ```mermaid
@@ -135,23 +127,20 @@ flowchart LR
     D --> G["API tier surface"]
 ```
 
-### Engineering Signal
-
-This is a data product rather than a one-off scrape. The value comes from repeatability, trend tracking, and turning changing public data into useful signals.
-
+**Engineering signal:** repeatable data-product architecture over one-off analysis.  
 **Stack:** `Python` `FastAPI` `PostgreSQL` `Redis` `Celery`
 
 ---
 
 ## Public Portfolio Notes
 
-The public repositories provide runnable proof around the same themes:
+Public repositories provide runnable proof across the same themes:
 
 | Repo | Portfolio role |
 |:---|:---|
-| [Marketing ML Lakehouse](https://github.com/MatthewPaver/marketing-ml-lakehouse) | Data engineering plus ML workflow |
-| [ProjectLens](https://github.com/MatthewPaver/ProjectLens) | Analytics application and project-risk reporting |
-| [Architexa](https://github.com/MatthewPaver/Architexa) | Model training, image generation, and API integration |
-| [Dating App Recommendation System](https://github.com/MatthewPaver/dating-app-recommendation-system) | Practical recommendation-system modelling |
-| [Sentence Similarity Analysis](https://github.com/MatthewPaver/sentence-similarity-analysis) | Embedding-based retrieval thinking |
-| [PySpark Kafka Streaming](https://github.com/MatthewPaver/pyspark-kafka-streaming) | Streaming-data foundations |
+| [Marketing ML Lakehouse](https://github.com/MatthewPaver/marketing-ml-lakehouse) | Data engineering + ML workflow |
+| [ProjectLens](https://github.com/MatthewPaver/ProjectLens) | Analytics application + project-risk reporting |
+| [Architexa](https://github.com/MatthewPaver/Architexa) | Model training + image generation + API integration |
+| [Dating App Recommendation System](https://github.com/MatthewPaver/dating-app-recommendation-system) | Practical recommendation modelling |
+| [Sentence Similarity Analysis](https://github.com/MatthewPaver/sentence-similarity-analysis) | Embedding-based retrieval patterns |
+| [PySpark Kafka Streaming](https://github.com/MatthewPaver/pyspark-kafka-streaming) | Streaming data foundations |
