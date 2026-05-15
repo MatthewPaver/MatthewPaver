@@ -2,7 +2,7 @@
 
 Focused view of the systems, products, and experiments I build across AI, data, automation, and analytics.
 
-[Back to Profile](README.md) | [Idea Store](https://matthewpaver.github.io/MatthewPaver/store/) | [Case Studies](CASE_STUDIES.md) | [CV Evidence Log](CV_EVIDENCE_LOG.md)
+[Back to Profile](README.md) | [Idea Store](https://matthewpaver.github.io/MatthewPaver/store/) | [Case Studies](CASE_STUDIES.md) | [Showcase Roadmap](SHOWCASE_ROADMAP.md) | [CV Evidence Log](CV_EVIDENCE_LOG.md)
 
 For a browsable storefront view, open the [Idea Store](https://matthewpaver.github.io/MatthewPaver/store/).
 

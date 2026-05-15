@@ -19,6 +19,9 @@ I build production-minded AI, automation, and analytics systems: retrieval pipel
 <a href="Projects.md">
   <img src="https://img.shields.io/badge/Project_Index-181717?style=for-the-badge&logo=github&logoColor=white" alt="Project Index" />
 </a>
+<a href="SHOWCASE_ROADMAP.md">
+  <img src="https://img.shields.io/badge/Showcase_Roadmap-AD3F32?style=for-the-badge" alt="Showcase Roadmap" />
+</a>
 <a href="https://inferencebrief.co/">
   <img src="https://img.shields.io/badge/Live_Product-Inference_Brief-00D9FF?style=for-the-badge" alt="Inference Brief" />
 </a>
@@ -45,6 +48,7 @@ I build production-minded AI, automation, and analytics systems: retrieval pipel
 | 5 minutes | [Project Index](Projects.md) | The full map across public, private, live, and archived work |
 | Want a live example | [Inference Brief](https://inferencebrief.co/) | A shipped AI briefing product with a real reading workflow |
 | Want CV evidence | [CV Evidence Log](CV_EVIDENCE_LOG.md) | Anonymised delivery evidence and CV-ready bullet bank |
+| Want the upgrade plan | [Showcase Roadmap](SHOWCASE_ROADMAP.md) | The next assets, repos, and QA passes to make this sharper |
 
 ---
 

@@ -480,6 +480,10 @@ h1 {
   filter: saturate(0.9) contrast(1.04);
 }
 
+.image-card img.study-shot {
+  object-position: top center;
+}
+
 .inference-visual {
   background:
     linear-gradient(135deg, rgba(13, 111, 95, 0.92), rgba(21, 18, 15, 0.84)),
