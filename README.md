@@ -2,13 +2,21 @@
 
 # Matthew Paver
 
-![Typing SVG](https://readme-typing-svg.demolab.com/?lines=AI+Engineer+%26+Data+Scientist;Production-minded+AI+%26+Data+Systems;RAG+%7C+Automation+%7C+Analytics;AWS+Certified+AI+Practitioner;Building+useful+systems%2C+not+just+demos&center=true&vCenter=true&width=700&height=45&size=22&color=00D9FF&duration=3000&pause=1500)
+### AI and data engineer building reliable systems from messy inputs
+
+I build production-minded AI, automation, and analytics systems: retrieval pipelines, event ingestion, full-stack AI products, recommendation engines, and data products that can be tested, operated, and improved.
 
 <a href="CV.pdf">
   <img src="https://img.shields.io/badge/CV-0078D4?style=for-the-badge&logo=readthedocs&logoColor=white" alt="CV" />
 </a>
 <a href="Projects.md">
   <img src="https://img.shields.io/badge/Project_Index-181717?style=for-the-badge&logo=github&logoColor=white" alt="Project Index" />
+</a>
+<a href="https://matthewpaver.github.io/MatthewPaver/store/">
+  <img src="https://img.shields.io/badge/Idea_Store-D9A441?style=for-the-badge" alt="Idea Store" />
+</a>
+<a href="CASE_STUDIES.md">
+  <img src="https://img.shields.io/badge/Case_Studies-0F766E?style=for-the-badge" alt="Case Studies" />
 </a>
 <a href="https://inferencebrief.co/">
   <img src="https://img.shields.io/badge/Inference_Brief-00D9FF?style=for-the-badge" alt="Inference Brief" />
@@ -21,13 +29,19 @@
 
 ---
 
-I build AI, data, and automation systems with a bias toward reliability. The work I care about most sits in the gap between a proof of concept and something you would trust to run every day: retrieval pipelines that hold up, data products with clear feedback loops, and automation that is testable, observable, and actually useful.
+## What I Build
 
-Recent work spans large-scale event ingestion, adaptive study tooling, newsletter automation, recommendation systems, analytics dashboards, and full-stack AI products. The strongest projects are private but summarised below alongside the public work.
+| Area | What I care about | Evidence |
+|:---|:---|:---|
+| AI products | Useful workflows around models, not just prompts | Inference Brief, AI Study Companion |
+| Data engineering | Messy inputs into structured, queryable, repeatable outputs | Happening, Marketing ML Lakehouse |
+| Automation | Jobs that can run every day with tests and observability | Happening, newsletter pipelines |
+| Analytics | Decision-useful dashboards and reporting systems | ProjectLens, HR analytics, Netflix EDA |
+| ML systems | Practical ranking, retrieval, forecasting, and generation | recommendation system, Architexa, sentence similarity |
 
 ---
 
-## Selected Work
+## Flagship Systems
 
 <table>
 <tr>
@@ -35,38 +49,46 @@ Recent work spans large-scale event ingestion, adaptive study tooling, newslette
 
 ### Happening ![Private](https://img.shields.io/badge/Private-grey?style=flat-square&logo=lock&logoColor=white)
 
-Deterministic event ingestion and normalisation system covering **103 London venues**. Multi-strategy crawling, structured extraction, deduplication, SQLite storage, and daily automation with a **167-test** suite behind it.
+Deterministic event ingestion and normalisation system covering **103 London venues**. Built around multi-strategy crawling, structured extraction, deduplication, SQLite storage, and daily automation with a **167-test** suite behind it.
+
+**Signal:** web automation, data quality, source configuration, scheduled runs, reliability engineering.
 
 `Python` `Playwright` `SQLite` `Pydantic` `GitHub Actions`
 
 </td>
 <td valign="top" width="50%">
 
-### AI Study Companion ![Private](https://img.shields.io/badge/Private-grey?style=flat-square&logo=lock&logoColor=white)
-
-Full-stack study platform for turning PDFs and notes into flashcards, quizzes, and adaptive study plans. Includes spaced repetition, background jobs, usage tiers, and support for local or hosted LLMs.
-
-`Python` `FastAPI` `PostgreSQL` `Redis` `Celery`
-
-</td>
-</tr>
-<tr>
-<td valign="top" width="50%">
-
 ### Inference Brief
 
-Weekly AI briefing product with a personalised web experience, bookmarks, reading history, and an editorial pipeline that collects, filters, scores, summarises, and publishes each issue.
+AI briefing product with a personalised reading experience, bookmarks, reading history, topic preferences, subscription flows, and an editorial pipeline that collects, filters, scores, summarises, and publishes issues.
+
+**Signal:** product thinking, full-stack delivery, AI-assisted publishing workflow.
 
 `Next.js` `TypeScript` `Supabase` `Python` `Stripe`
 
 [![Live Site](https://img.shields.io/badge/Live_Site-00D9FF?style=flat-square)](https://inferencebrief.co/)
 
 </td>
+</tr>
+<tr>
+<td valign="top" width="50%">
+
+### AI Study Companion ![Private](https://img.shields.io/badge/Private-grey?style=flat-square&logo=lock&logoColor=white)
+
+Full-stack study platform for turning PDFs and notes into flashcards, quizzes, and adaptive study plans. Includes parsing, token-aware chunking, spaced repetition, async generation jobs, usage tiers, and local or hosted LLM support.
+
+**Signal:** document AI, background jobs, auth/billing boundaries, learning loops.
+
+`Python` `FastAPI` `PostgreSQL` `Redis` `Celery`
+
+</td>
 <td valign="top" width="50%">
 
 ### Smart Job Market Intelligence ![Private](https://img.shields.io/badge/Private-grey?style=flat-square&logo=lock&logoColor=white)
 
-Job market analytics platform for salary intelligence, skill trend tracking, posting volume analysis, and alerts. Built around scraping, background processing, and product-style API tiers.
+Job market analytics platform for salary intelligence, skill trends, posting volume analysis, remote ratio tracking, and alerts. Built around scraping, background processing, and product-style API tiers.
+
+**Signal:** data ingestion, trend analysis, API design, recurring jobs.
 
 `Python` `FastAPI` `PostgreSQL` `Redis` `Celery`
 
@@ -76,64 +98,34 @@ Job market analytics platform for salary intelligence, skill trend tracking, pos
 
 ---
 
-## Public Repositories
+## Public Proof
 
-<table>
-<tr>
-<td valign="top" width="50%">
+| Project | Why it matters | Stack |
+|:---|:---|:---|
+| [Marketing ML Lakehouse](https://github.com/MatthewPaver/marketing-ml-lakehouse) | Local-first analytics lakehouse with medallion layers, ML models, and Streamlit reporting | `Python` `DuckDB` `XGBoost` `Streamlit` |
+| [ProjectLens](https://github.com/MatthewPaver/ProjectLens) | Project schedule risk analysis with a Flask app, processing pipeline, and reporting outputs | `Python` `Flask` `pandas` |
+| [Architexa](https://github.com/MatthewPaver/Architexa) | Conditional GAN project for architecture-themed image generation with API and training assets | `TensorFlow` `Keras` `Flask` |
+| [Dating App Recommendation System](https://github.com/MatthewPaver/dating-app-recommendation-system) | Implicit-feedback recommendation engine with notebook walkthrough and lightweight CLI | `Python` `NumPy` `SciPy` |
 
-### Marketing ML Lakehouse
+More: [Project Index](Projects.md) for the fuller curated portfolio.
 
-Local-first marketing analytics stack using a bronze to silver to gold flow in DuckDB, XGBoost models for pacing and conversion, and a Streamlit interface for analysis and commentary.
+For a more browsable version, open the [Idea Store](https://matthewpaver.github.io/MatthewPaver/store/).
 
-`Python` `DuckDB` `XGBoost` `Streamlit` `Polars`
+---
 
-[![View Repo](https://img.shields.io/badge/View_Repo-0078D4?style=flat-square&logo=github&logoColor=white)](https://github.com/MatthewPaver/marketing-ml-lakehouse)
+## How I Think About Systems
 
-</td>
-<td valign="top" width="50%">
+```mermaid
+flowchart LR
+    A["Messy source data"] --> B["Ingestion and validation"]
+    B --> C["Structured storage"]
+    C --> D["Models, retrieval, or analytics"]
+    D --> E["User-facing product"]
+    E --> F["Feedback, tests, monitoring"]
+    F --> B
+```
 
-### ProjectLens
-
-Web app and backend pipeline for analysing project schedules, surfacing slippage, identifying risk, and generating actionable delivery insights from uploaded data.
-
-`Python` `Flask` `pandas` `Forecasting` `Analytics`
-
-[![View Repo](https://img.shields.io/badge/View_Repo-0078D4?style=flat-square&logo=github&logoColor=white)](https://github.com/MatthewPaver/ProjectLens)
-
-</td>
-</tr>
-<tr>
-<td valign="top" width="50%">
-
-### Architexa
-
-Architectural image generation project built with a conditional GAN and exposed through a Flask API. Trained to generate outputs across nine architectural styles.
-
-`Python` `TensorFlow` `Keras` `Flask` `Computer Vision`
-
-[![View Repo](https://img.shields.io/badge/View_Repo-0078D4?style=flat-square&logo=github&logoColor=white)](https://github.com/MatthewPaver/Architexa)
-
-</td>
-<td valign="top" width="50%">
-
-### Dating App Recommendation System
-
-Recommendation engine for swipe-based apps using implicit-feedback matrix factorisation and a practical framing of ranking quality over explicit ratings.
-
-`Python` `NumPy` `SciPy` `Recommendation Systems` `ML`
-
-[![View Repo](https://img.shields.io/badge/View_Repo-0078D4?style=flat-square&logo=github&logoColor=white)](https://github.com/MatthewPaver/dating-app-recommendation-system)
-
-</td>
-</tr>
-</table>
-
-<div align="center">
-
-More work: [Project Index](Projects.md) for the curated view of current systems, public repos, and older supporting work.
-
-</div>
+The pattern I keep coming back to is simple: make the inputs explicit, make the pipeline repeatable, expose the result through a useful workflow, and close the loop with tests or feedback.
 
 ---
 
@@ -176,9 +168,7 @@ _All professional examples are intentionally anonymised and focused on engineeri
 
 ---
 
-## Selected Certifications
-
-<div align="center">
+## Certifications
 
 | Certification | Issued By |
 |:---|:---|
@@ -189,20 +179,6 @@ _All professional examples are intentionally anonymised and focused on engineeri
 | [RPA Developer Advanced](https://drive.google.com/file/d/15lrcn5_Cn4g-kD165xGNLUGUGXtCptk-/view) | UiPath |
 | [BCS Diploma in IT](https://drive.google.com/file/d/15yLBx8nzlhn_PwrGoqQbumRG8zRQPC9t/view) | BCS |
 | [BCS Certificate in IT](https://drive.google.com/file/d/160nzem63oIEv3EF9mCU9NGWwwA4NMdMZ/view) | BCS |
-
-</div>
-
----
-
-<div align="center">
-
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/MatthewPaver/MatthewPaver/output/github-contribution-grid-snake-dark.svg">
-  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/MatthewPaver/MatthewPaver/output/github-contribution-grid-snake.svg">
-  <img alt="github contribution grid snake animation" src="https://raw.githubusercontent.com/MatthewPaver/MatthewPaver/output/github-contribution-grid-snake.svg">
-</picture>
-
-</div>
 
 ---
 

@@ -1,18 +1,29 @@
 # Project Index
 
-<div align="center">
-
 Curated view of the systems, products, and experiments I have been building across AI, data, automation, and analytics. Selected by representativeness, not age.
 
-[Back to Profile](https://github.com/MatthewPaver/MatthewPaver)
+[Back to Profile](README.md) | [Case Studies](CASE_STUDIES.md)
 
-</div>
+For a browsable storefront view, open the [Idea Store](https://matthewpaver.github.io/MatthewPaver/store/).
 
 ---
 
-## Current Systems
+## Portfolio Map
 
-These are the projects that best reflect the direction of my recent work. Some are private, but they are included here because they represent the strongest examples of how I build. Details are available on request where appropriate.
+| Project | Status | Best signal | Link |
+|:---|:---|:---|:---|
+| Happening | Private system | 103 configured sources, daily event ingestion, 167 tests | [Case study](CASE_STUDIES.md#happening) |
+| Inference Brief | Live product | AI briefing workflow plus personalized reading surface | [Live site](https://inferencebrief.co/) |
+| AI Study Companion | Private product | Document AI, spaced repetition, async generation jobs | [Case study](CASE_STUDIES.md#ai-study-companion) |
+| Smart Job Market Intelligence | Private system | Scraping, trend analysis, alerts, API-tier thinking | [Case study](CASE_STUDIES.md#smart-job-market-intelligence) |
+| QuickSupply | Private MVP | Three-sided scheduling workflow with real-time sequential assignment | Private |
+| Cadence | Private prototype | Enterprise block operations, payments, tickets, AI triage, governance docs | Private |
+| Marketing ML Lakehouse | Public runnable app | DuckDB medallion layers, XGBoost models, Streamlit dashboard | [Repo](https://github.com/MatthewPaver/marketing-ml-lakehouse) |
+| ProjectLens | Public runnable app | Schedule risk analysis with Flask and reporting outputs | [Repo](https://github.com/MatthewPaver/ProjectLens) |
+
+---
+
+## Flagship Systems
 
 <table>
 <tr>
@@ -20,37 +31,41 @@ These are the projects that best reflect the direction of my recent work. Some a
 
 ### Happening ![Private](https://img.shields.io/badge/Private-grey?style=flat-square&logo=lock&logoColor=white)
 
-Event ingestion and normalisation platform covering **103 London venues**. Uses multi-strategy crawling, structured extraction, selector learning, deduplication, and daily automation. Built to run reliably rather than just scrape once.
+Event ingestion and normalisation platform covering **103 London venues**. Uses multi-strategy crawling, structured extraction, selector learning, deduplication, and daily automation. Built to run reliably rather than scrape once.
 
-**Highlights:** 103 source configs, SQLite pipeline, daily scheduled runs, 167 tests
+**Proof points:** 103 source configs, SQLite pipeline, daily scheduled runs, 167 tests
 
 **Tech:** `Python` `Playwright` `SQLite` `Pydantic` `GitHub Actions`
+
+[Case study](CASE_STUDIES.md#happening)
 
 </td>
 <td width="50%" valign="top">
 
-### AI Study Companion ![Private](https://img.shields.io/badge/Private-grey?style=flat-square&logo=lock&logoColor=white)
+### Inference Brief
 
-Study product that turns documents into flashcards, quizzes, and adaptive study plans. Includes PDF parsing, token-aware chunking, spaced repetition, async generation jobs, billing, and support for local or hosted LLMs.
+AI newsletter platform and reading product. The stack combines a weekly editorial pipeline with a personalized web app, issue archive, bookmarks, reading history, topic preferences, and subscription flows.
 
-**Highlights:** document upload pipeline, SM-2 review loop, Stripe billing, voice features, multi-provider LLM support
+**Proof points:** live product, personalized feed, issue archive, automated summarization and scoring
 
-**Tech:** `Python` `FastAPI` `PostgreSQL` `Redis` `Celery`
+**Tech:** `Next.js` `TypeScript` `Supabase` `Python` `Stripe`
+
+[Live site](https://inferencebrief.co/) | [Case study](CASE_STUDIES.md#inference-brief)
 
 </td>
 </tr>
 <tr>
 <td width="50%" valign="top">
 
-### Inference Brief
+### AI Study Companion ![Private](https://img.shields.io/badge/Private-grey?style=flat-square&logo=lock&logoColor=white)
 
-AI newsletter platform and reading product. The stack combines a weekly editorial pipeline with a personalised web app, issue archive, bookmarks, reading history, topic preferences, and subscription flows.
+Study product that turns documents into flashcards, quizzes, and adaptive study plans. Includes parsing, token-aware chunking, spaced repetition, async generation jobs, billing boundaries, and support for local or hosted LLMs.
 
-**Highlights:** live publication workflow, personalised feed, search, issue archive, automated summarisation and scoring
+**Proof points:** document upload pipeline, SM-2 review loop, Stripe billing, voice features, multi-provider LLM support
 
-**Tech:** `Next.js` `TypeScript` `Supabase` `Python` `Stripe`
+**Tech:** `Python` `FastAPI` `PostgreSQL` `Redis` `Celery`
 
-[![Live Site](https://img.shields.io/badge/Live_Site-00D9FF?style=flat-square)](https://inferencebrief.co/)
+[Case study](CASE_STUDIES.md#ai-study-companion)
 
 </td>
 <td width="50%" valign="top">
@@ -59,66 +74,11 @@ AI newsletter platform and reading product. The stack combines a weekly editoria
 
 Job market analytics platform for tracking salary ranges, trending skills, posting volume, remote ratios, and alerting. Framed as a product with API tiers, billing hooks, and recurring analysis jobs.
 
-**Highlights:** scraping plus analytics pipeline, alerting, trend reporting, rate-limited API design
+**Proof points:** scraping plus analytics pipeline, alerting, trend reporting, rate-limited API design
 
 **Tech:** `Python` `FastAPI` `PostgreSQL` `Redis` `Celery`
 
-</td>
-</tr>
-</table>
-
----
-
-## Selected Public Repositories
-
-### Production-style applications
-
-<table>
-<tr>
-<td width="50%" valign="top">
-
-#### Marketing ML Lakehouse
-
-Local-first marketing analytics lakehouse with DuckDB medallion layers, XGBoost forecasting and conversion models, and a Streamlit dashboard for analysis and commentary.
-
-`Python` `DuckDB` `XGBoost` `Streamlit` `Polars`
-
-[![View Repo](https://img.shields.io/badge/View_Repo-0078D4?style=flat-square&logo=github&logoColor=white)](https://github.com/MatthewPaver/marketing-ml-lakehouse)
-
-</td>
-<td width="50%" valign="top">
-
-#### ProjectLens
-
-Web app and backend analysis pipeline for project schedules. Surfaces slippage, forecasting issues, milestone risks, and delivery insights from uploaded data.
-
-`Python` `Flask` `pandas` `Analytics` `Forecasting`
-
-[![View Repo](https://img.shields.io/badge/View_Repo-0078D4?style=flat-square&logo=github&logoColor=white)](https://github.com/MatthewPaver/ProjectLens)
-
-</td>
-</tr>
-<tr>
-<td width="50%" valign="top">
-
-#### AI Weekly
-
-Public AI newsletter repository and site that curates tools, research, and trends. Complements the more recent Inference Brief product work.
-
-`Python` `GitHub Actions` `RSS` `Jinja2` `Publishing`
-
-[![View Repo](https://img.shields.io/badge/View_Repo-0078D4?style=flat-square&logo=github&logoColor=white)](https://github.com/MatthewPaver/ai-weekly) [![Read Newsletter](https://img.shields.io/badge/Read_Newsletter-00D9FF?style=flat-square)](https://matthewpaver.github.io/ai-weekly/)
-
-</td>
-<td width="50%" valign="top">
-
-#### HR Performance Analytics
-
-Power BI dashboards for HR performance reporting and sales analysis, with datasets, documentation, and walkthrough material.
-
-`Power BI` `Excel` `CSV` `Dashboarding` `Documentation`
-
-[![Dashboards](https://img.shields.io/badge/Dashboards-0078D4?style=flat-square&logo=github&logoColor=white)](https://github.com/MatthewPaver/hr-performance-dashboards) [![Portfolio](https://img.shields.io/badge/Portfolio-0078D4?style=flat-square&logo=github&logoColor=white)](https://github.com/MatthewPaver/hr-performance-portfolio)
+[Case study](CASE_STUDIES.md#smart-job-market-intelligence)
 
 </td>
 </tr>
@@ -126,98 +86,53 @@ Power BI dashboards for HR performance reporting and sales analysis, with datase
 
 ---
 
-### ML and data projects
+## Public Repositories
 
-<table>
-<tr>
-<td width="50%" valign="top">
+### Additional Private Product Work
 
-#### Architexa
+| Project | Status | What to look for |
+|:---|:---|:---|
+| QuickSupply | MVP application | School, teacher, and agency portals; sequential assignment engine; SSE updates; production hardening notes |
+| Cadence | Product strategy prototype | UK block-operations workflows, resident clarity, Faster Payments-first flows, auditable tickets, AI triage, governance docs |
 
-Architectural image generation built with a conditional GAN and exposed through a Flask API. Produces outputs across nine architectural styles.
+### Product-Style Applications
 
-`Python` `TensorFlow` `Keras` `Flask` `CGAN`
+| Project | Status | What to look for |
+|:---|:---|:---|
+| [Marketing ML Lakehouse](https://github.com/MatthewPaver/marketing-ml-lakehouse) | Runnable application | Bronze/silver/gold DuckDB flow, model training, Streamlit reporting |
+| [ProjectLens](https://github.com/MatthewPaver/ProjectLens) | Runnable application | Flask interface, schedule-risk pipeline, Power BI-ready outputs |
+| [AI Weekly](https://github.com/MatthewPaver/ai-weekly) | Archived output | Earlier newsletter publishing surface superseded by Inference Brief |
+| [HR Performance Analytics](https://github.com/MatthewPaver/hr-performance-dashboards) | Dashboard portfolio | Power BI dashboards, datasets, methodology, documentation |
 
-[![View Repo](https://img.shields.io/badge/View_Repo-0078D4?style=flat-square&logo=github&logoColor=white)](https://github.com/MatthewPaver/Architexa) [![Live Site](https://img.shields.io/badge/Live_Site-00D9FF?style=flat-square)](https://architexa.io)
+### ML, Data, and Streaming
 
-</td>
-<td width="50%" valign="top">
+| Project | Status | What to look for |
+|:---|:---|:---|
+| [Architexa](https://github.com/MatthewPaver/Architexa) | Completed portfolio project | Conditional GAN, dataset pipeline, Flask API, trained model assets |
+| [Dating App Recommendation System](https://github.com/MatthewPaver/dating-app-recommendation-system) | Notebook project with CLI | Implicit feedback, temporal holdout, top-K recommendation lookup |
+| [Sentence Similarity Analysis](https://github.com/MatthewPaver/sentence-similarity-analysis) | Notebook demo | Transformer embeddings, cosine similarity, retrieval caveats |
+| [PySpark Kafka Streaming](https://github.com/MatthewPaver/pyspark-kafka-streaming) | Technical example | Structured Streaming consumer, Kafka producer, Spark setup |
+| [Netflix Content Analysis](https://github.com/MatthewPaver/netflix-content-analysis) | Notebook EDA | Country, genre, and timeline analysis in pandas and seaborn |
 
-#### Dating App Recommendation System
+### Supporting Work
 
-Recommendation engine for swipe-based apps using implicit-feedback matrix factorisation, framed around practical ranking quality and user matching.
-
-`Python` `NumPy` `SciPy` `Recommendation Systems`
-
-[![View Repo](https://img.shields.io/badge/View_Repo-0078D4?style=flat-square&logo=github&logoColor=white)](https://github.com/MatthewPaver/dating-app-recommendation-system)
-
-</td>
-</tr>
-<tr>
-<td width="50%" valign="top">
-
-#### Sentence Similarity Analysis
-
-NLP project exploring semantic similarity with transformer embeddings and cosine similarity across factual statements.
-
-`Python` `sentence-transformers` `PyTorch` `NLP`
-
-[![View Repo](https://img.shields.io/badge/View_Repo-0078D4?style=flat-square&logo=github&logoColor=white)](https://github.com/MatthewPaver/sentence-similarity-analysis)
-
-</td>
-<td width="50%" valign="top">
-
-#### PySpark Kafka Streaming
-
-Streaming examples combining PySpark Structured Streaming with Kafka producers and consumers for real-time processing demos.
-
-`Python` `PySpark` `Kafka` `Streaming`
-
-[![View Repo](https://img.shields.io/badge/View_Repo-0078D4?style=flat-square&logo=github&logoColor=white)](https://github.com/MatthewPaver/pyspark-kafka-streaming)
-
-</td>
-</tr>
-<tr>
-<td width="50%" valign="top">
-
-#### Netflix Content Analysis
-
-Exploratory data analysis of the Netflix catalogue using pandas, matplotlib, and seaborn, with trend analysis across genre, geography, and release timelines.
-
-`Python` `pandas` `Matplotlib` `Seaborn` `Colab`
-
-[![View Repo](https://img.shields.io/badge/View_Repo-0078D4?style=flat-square&logo=github&logoColor=white)](https://github.com/MatthewPaver/netflix-content-analysis) [![Open in Colab](https://img.shields.io/badge/Open_in_Colab-F9AB00?style=flat-square&logo=googlecolab&logoColor=white)](https://colab.research.google.com/drive/1WsnSnIngH8xNdBNBWeJgJbKD2uMilVdS?usp=sharing)
-
-</td>
-<td></td>
-</tr>
-</table>
+| Project | Status | What to look for |
+|:---|:---|:---|
+| [Generate Newsletter](https://github.com/MatthewPaver/generate-newsletter) | Archived prototype | Early collection-to-HTML newsletter pipeline before Inference Brief |
+| [Pinterest Image Scraper](https://github.com/MatthewPaver/pinterest-image-scraper) | Archived utility | Image collection helper used as supporting data work for Architexa |
+| [University of Liverpool](https://github.com/MatthewPaver/university-of-liverpool) | Coursework archive | Programming, algorithms, databases, distributed systems, software engineering |
 
 ---
 
-### Supporting work
+## Next Improvements
 
-<table>
-<tr>
-<td width="50%" valign="top">
+These are the highest-signal upgrades still worth doing:
 
-#### University of Liverpool
-
-Coursework and study repository covering the technical foundation behind the later project work: programming, algorithms, databases, distributed systems, and software engineering.
-
-`Python` `Java` `C++` `Haskell` `SQL`
-
-[![View Repo](https://img.shields.io/badge/View_Repo-0078D4?style=flat-square&logo=github&logoColor=white)](https://github.com/MatthewPaver/university-of-liverpool)
-
-</td>
-<td></td>
-</tr>
-</table>
+1. Add screenshots to `marketing-ml-lakehouse` and `Architexa`.
+2. Add real `evaluate` and `recommend` CLI output to `dating-app-recommendation-system` after installing dependencies.
+3. Update archived repo descriptions if you temporarily unarchive `ai-weekly`, `generate-newsletter`, or `pinterest-image-scraper`.
+4. Package private-system screenshots or diagrams where they can be safely shared.
 
 ---
 
-<div align="center">
-
-Private systems are summarised even where source is not public. The profile README is the short version — this page is the fuller view.
-
-</div>
+Private systems are summarised where source is not public. The profile README is the short version; this page is the structured portfolio map.
