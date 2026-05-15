@@ -43,7 +43,7 @@ a {
 }
 
 .hero {
-  padding: 28px 0 56px;
+  padding: 24px 0 34px;
 }
 
 .topbar {
@@ -51,7 +51,7 @@ a {
   align-items: center;
   justify-content: space-between;
   gap: 20px;
-  padding: 12px 0 48px;
+  padding: 10px 0 30px;
 }
 
 .brand,
@@ -118,12 +118,12 @@ h3 {
 
 h1 {
   max-width: 880px;
-  font-size: clamp(3.4rem, 8vw, 7.4rem);
+  font-size: clamp(2.8rem, 6vw, 5.7rem);
 }
 
 .lede {
   max-width: 710px;
-  margin: 24px 0 0;
+  margin: 18px 0 0;
   color: #3f3932;
   font-size: clamp(1.08rem, 1.8vw, 1.34rem);
   line-height: 1.55;
@@ -133,7 +133,7 @@ h1 {
   display: flex;
   flex-wrap: wrap;
   gap: 12px;
-  margin-top: 28px;
+  margin-top: 22px;
 }
 
 .button {
@@ -300,6 +300,12 @@ h1 {
   text-transform: uppercase;
 }
 
+.search-row {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  gap: 8px;
+}
+
 .search-box input {
   width: 100%;
   min-height: 48px;
@@ -314,6 +320,26 @@ h1 {
 .search-box input:focus {
   outline: 3px solid rgba(217, 164, 65, 0.5);
   outline-offset: 2px;
+}
+
+.clear-search {
+  min-width: 78px;
+  min-height: 48px;
+  border: 2px solid var(--ink);
+  background: var(--gold);
+  color: var(--ink);
+  cursor: pointer;
+  font-family: "Avenir Next", "Segoe UI", sans-serif;
+  font-weight: 950;
+  box-shadow: 4px 4px 0 var(--ink);
+}
+
+.clear-search:hover {
+  background: #f0c766;
+}
+
+.clear-search[hidden] {
+  display: none;
 }
 
 .result-count {
@@ -654,7 +680,8 @@ h1 {
   }
 
   .spotlight-grid,
-  .collection-rail {
+  .collection-rail,
+  .search-row {
     grid-template-columns: 1fr;
   }
 

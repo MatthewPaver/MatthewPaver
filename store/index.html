@@ -8,7 +8,7 @@
       name="description"
       content="A curated app-store style showcase of Matthew Paver's AI, data, automation, analytics, and product systems."
     />
-    <link rel="stylesheet" href="./styles.css" />
+    <link rel="stylesheet" href="./styles.css?v=20260515-2" />
   </head>
   <body>
     <header class="shell hero">
@@ -102,7 +102,10 @@
       <div class="store-toolbar">
         <label class="search-box">
           <span>Search ideas</span>
-          <input id="store-search" type="search" placeholder="Try automation, product, embeddings..." />
+          <span class="search-row">
+            <input id="store-search" type="search" placeholder="Try automation, product, embeddings..." />
+            <button id="clear-search" class="clear-search" type="button">Clear</button>
+          </span>
         </label>
         <div class="result-count" aria-live="polite">
           <span id="visible-count">13</span>
@@ -441,7 +444,7 @@
         </article>
       </section>
 
-      <p class="empty-state" hidden>No ideas match that filter yet.</p>
+      <p class="empty-state" hidden>No ideas match that search or shelf yet.</p>
     </main>
 
     <footer class="shell footer">
@@ -451,6 +454,6 @@
       <a href="https://www.linkedin.com/in/matthew-paver-534262166/">Connect on LinkedIn</a>
     </footer>
 
-    <script src="./script.js"></script>
+    <script src="./script.js?v=20260515-2"></script>
   </body>
 </html>
