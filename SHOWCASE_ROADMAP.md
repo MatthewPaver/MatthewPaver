@@ -28,6 +28,7 @@ Practical next steps for keeping this profile and Idea Store at a gold-standard 
 | `marketing-ml-lakehouse` | Add a Streamlit dashboard screenshot so the public runnable app feels tangible | Replaced with designed workflow visual until dashboard deps are available |
 | `ai-study-companion` | Use the smoke-test product screenshot in the store card | Done |
 | `QuickSupply` | Extract a poster frame or compressed clip from `Agency Demo.mov`; this is one of the strongest product/workflow proofs | Poster added; compressed clip still useful |
+| `agency-idea` | Rename vague Cadence wording into a clear private operations-platform explanation | Done |
 | `hr-performance-dashboards` | Consider a small dashboard gallery rather than a single summary screenshot | Done |
 | `dating-app-recommendation-system` | Add a metrics/evaluation visual for the 3.4M+ interactions signal | Done |
 | `pyspark-kafka-streaming` | Keep in the index as technical breadth; promote only if you want stronger streaming/data-platform positioning | Medium |

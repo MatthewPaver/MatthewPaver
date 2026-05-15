@@ -6,9 +6,9 @@
     <title>Matthew Paver Idea Store</title>
     <meta
       name="description"
-      content="A curated app-store style showcase of Matthew Paver's AI, data, automation, analytics, and product systems."
+      content="A clear app-store style showcase of Matthew Paver's AI products, data pipelines, automation tools, analytics apps, and ML projects."
     />
-    <link rel="stylesheet" href="./styles.css?v=20260515-4" />
+    <link rel="stylesheet" href="./styles.css?v=20260515-5" />
   </head>
   <body>
     <header class="shell hero">
@@ -27,10 +27,10 @@
       <section class="hero-grid">
         <div class="hero-copy">
           <p class="eyebrow">AI, data, automation, analytics</p>
-          <h1>One place for the systems, products, and experiments worth showing.</h1>
+          <h1>Apps, pipelines, and data products you can inspect quickly.</h1>
           <p class="lede">
-            A curated storefront of the strongest ideas: live products, private systems, runnable apps,
-            technical demos, and older prototypes that show how the work evolved.
+            A concise storefront for the strongest work: what each project does, the proof behind it,
+            the stack used, and where to open the live product, case study, or repository.
           </p>
           <div class="hero-actions">
             <a class="button primary" href="#store">Browse ideas</a>
@@ -63,22 +63,21 @@
       <section class="today-shelf" aria-labelledby="today-heading">
         <div class="shelf-copy">
           <p class="eyebrow">Today</p>
-          <h2 id="today-heading">Start with the strongest signals.</h2>
+          <h2 id="today-heading">Start with the clearest proof.</h2>
           <p>
-            Three entry points for a quick read: a live product, a serious ingestion system,
-            and a runnable public analytics app.
+            Three quick reads: a live product, a private ingestion platform, and a runnable public data app.
           </p>
         </div>
         <div class="spotlight-grid">
           <a class="spotlight-card" href="https://inferencebrief.co/">
             <span class="spotlight-rank">01</span>
             <strong>Inference Brief</strong>
-            <span>Live AI briefing product</span>
+            <span>Live AI news reader</span>
           </a>
           <a class="spotlight-card" href="https://github.com/MatthewPaver/MatthewPaver/blob/main/CASE_STUDIES.md#happening">
             <span class="spotlight-rank">02</span>
             <strong>Happening</strong>
-            <span>103+ sources into event data</span>
+            <span>103+ venues into clean events</span>
           </a>
           <a class="spotlight-card" href="https://github.com/MatthewPaver/marketing-ml-lakehouse">
             <span class="spotlight-rank">03</span>
@@ -91,11 +90,10 @@
       <section class="section-heading">
         <div>
           <p class="eyebrow">The shelves</p>
-          <h2>Browse by type of proof</h2>
+          <h2>Browse by what you want to inspect</h2>
         </div>
         <p>
-          Filter the store by what you want to evaluate: product thinking, data engineering,
-          automation, analytics, ML, or supporting prototypes.
+          Filter by product, data engineering, automation, analytics, ML, or earlier prototypes.
         </p>
       </section>
 
@@ -124,10 +122,10 @@
       </div>
 
       <div class="collection-rail" aria-label="Curated collections">
-        <a href="#store" data-collection="product">Product systems</a>
-        <a href="#store" data-collection="automation">Automation engines</a>
-        <a href="#store" data-collection="ml">Machine learning proof</a>
-        <a href="#store" data-collection="analytics">Analytics portfolio</a>
+        <a href="#store" data-collection="product">Products</a>
+        <a href="#store" data-collection="automation">Automation</a>
+        <a href="#store" data-collection="ml">ML projects</a>
+        <a href="#store" data-collection="analytics">Analytics apps</a>
       </div>
 
       <section class="store-grid" aria-live="polite">
@@ -139,14 +137,17 @@
               <span class="status live">Live</span>
             </div>
             <p>
-              Personalized AI briefing product with an editorial pipeline for collection, filtering,
-              scoring, summarization, rendering, and publishing.
+              A live web app for reading curated AI news. It collects stories, scores them,
+              writes brief summaries, publishes issues, and gives readers bookmarks and history.
             </p>
             <ul class="proof-list">
-              <li>Next.js reading product</li>
-              <li>Bookmarks, history, preferences</li>
-              <li>Python publishing pipeline</li>
+              <li>Live public product</li>
+              <li>Editorial scoring and publishing pipeline</li>
+              <li>Reader accounts, bookmarks, and preferences</li>
             </ul>
+            <div class="stack-list" aria-label="Tech stack">
+              <span>Next.js</span><span>TypeScript</span><span>Supabase</span><span>Python</span><span>Stripe</span>
+            </div>
             <div class="card-actions">
               <a href="https://inferencebrief.co/">Open</a>
               <a href="https://github.com/MatthewPaver/MatthewPaver/blob/main/CASE_STUDIES.md#inference-brief">Case study</a>
@@ -162,14 +163,17 @@
               <span class="status private">Private</span>
             </div>
             <p>
-              Deterministic event ingestion and normalization system for London venues with crawling,
-              extraction, deduplication, quality checks, and daily automation.
+              A private ingestion platform that turns venue websites into structured London event data.
+              Each source has explicit config, extraction rules, dedupe checks, and scheduled runs.
             </p>
             <ul class="proof-list">
               <li>103+ source configs</li>
               <li>Playwright crawling</li>
-              <li>Tested quality pipeline</li>
+              <li>167-test reliability suite</li>
             </ul>
+            <div class="stack-list" aria-label="Tech stack">
+              <span>Python</span><span>Playwright</span><span>SQLite</span><span>Pydantic</span><span>GitHub Actions</span>
+            </div>
             <div class="card-actions">
               <a href="https://github.com/MatthewPaver/MatthewPaver/blob/main/CASE_STUDIES.md#happening">Case study</a>
             </div>
@@ -184,14 +188,17 @@
               <span class="status private">Private</span>
             </div>
             <p>
-              Upload PDFs and notes, generate flashcards and quizzes, and track mastery through
-              spaced repetition and adaptive plans.
+              A study workspace for uploading notes, generating flashcards and quizzes, and tracking
+              review progress with spaced repetition.
             </p>
             <ul class="proof-list">
               <li>PDF/DOCX/TXT ingestion</li>
-              <li>Celery generation jobs</li>
+              <li>Background generation jobs</li>
               <li>SM-2 review loop</li>
             </ul>
+            <div class="stack-list" aria-label="Tech stack">
+              <span>FastAPI</span><span>PostgreSQL</span><span>Redis</span><span>Celery</span><span>LLMs</span>
+            </div>
             <div class="card-actions">
               <a href="https://github.com/MatthewPaver/MatthewPaver/blob/main/CASE_STUDIES.md#ai-study-companion">Case study</a>
             </div>
@@ -209,14 +216,17 @@
               <span class="status private">Private</span>
             </div>
             <p>
-              Scrapes listings, tracks salaries, skills, volume, remote ratios, alerts, and product-style
-              API tiers for job-market analysis.
+              A private job-market tracker that scrapes listings, normalises them, and turns salary,
+              skill, remote-work, and volume changes into reports and alerts.
             </p>
             <ul class="proof-list">
-              <li>Scraper abstractions</li>
-              <li>Trend analysis</li>
-              <li>Alert workflows</li>
+              <li>Listing ingestion and normalisation</li>
+              <li>Salary and skill trend reports</li>
+              <li>Alerts and API tier design</li>
             </ul>
+            <div class="stack-list" aria-label="Tech stack">
+              <span>Python</span><span>FastAPI</span><span>PostgreSQL</span><span>Redis</span><span>Celery</span>
+            </div>
             <div class="card-actions">
               <a href="https://github.com/MatthewPaver/MatthewPaver/blob/main/CASE_STUDIES.md#smart-job-market-intelligence">Case study</a>
             </div>
@@ -231,36 +241,39 @@
               <span class="status private">Private</span>
             </div>
             <p>
-              Three-sided scheduling MVP for schools, teachers/TAs, and agency staff with sequential
-              assignment, SSE updates, and production hardening notes.
+              A supply-teaching scheduling MVP for schools, teachers, and agency staff. It handles
+              cover requests, availability, sequential assignment, and live status updates.
             </p>
             <ul class="proof-list">
               <li>Sequential assignment engine</li>
-              <li>School, teacher, agency portals</li>
-              <li>Real-time operations</li>
+              <li>School, teacher, and agency portals</li>
+              <li>Server-sent event updates</li>
             </ul>
+            <div class="stack-list" aria-label="Tech stack">
+              <span>Next.js</span><span>TypeScript</span><span>PostgreSQL</span><span>SSE</span><span>Auth</span>
+            </div>
           </div>
         </article>
 
-        <article class="app-card" data-tags="product automation" data-status="Private prototype">
-          <div class="app-visual cadence-visual">
-            <span class="visual-kicker">Cadence</span>
-            <strong>Enterprise block operations</strong>
-          </div>
+        <article class="app-card image-card" data-tags="product automation" data-status="Private prototype">
+          <img src="./assets/operations-platform.svg" alt="Private operations platform prototype visual" />
           <div class="app-body">
             <div class="app-title-row">
-              <h3>Cadence</h3>
+              <h3>Operations Platform Prototype</h3>
               <span class="status private">Private</span>
             </div>
             <p>
-              UK block-operations prototype for service-charge clarity, Faster Payments-first flows,
-              auditable tickets, resident workflows, and AI triage.
+              A private property-operations prototype for resident requests, service-charge visibility,
+              ticket audit trails, payment flows, and AI-assisted triage.
             </p>
             <ul class="proof-list">
-              <li>Domain-specific product strategy</li>
-              <li>Governance docs</li>
-              <li>AI ticket triage</li>
+              <li>Resident request intake</li>
+              <li>Operations console and audit trail</li>
+              <li>Payment and AI triage concepts</li>
             </ul>
+            <div class="stack-list" aria-label="Tech stack">
+              <span>Next.js</span><span>TypeScript</span><span>Payments</span><span>AI triage</span><span>Product docs</span>
+            </div>
           </div>
         </article>
 
@@ -272,14 +285,17 @@
               <span class="status public">Public</span>
             </div>
             <p>
-              Local-first marketing analytics stack with DuckDB medallion layers, XGBoost models,
-              quality checks, and a Streamlit dashboard.
+              A runnable local analytics app that loads raw marketing CSVs into DuckDB, builds clean
+              tables, trains XGBoost models, checks data quality, and serves a dashboard.
             </p>
             <ul class="proof-list">
               <li>Bronze/silver/gold flow</li>
               <li>XGBoost model training</li>
-              <li>Dashboard consumption</li>
+              <li>Streamlit dashboard</li>
             </ul>
+            <div class="stack-list" aria-label="Tech stack">
+              <span>Python</span><span>DuckDB</span><span>XGBoost</span><span>Streamlit</span><span>Makefile</span>
+            </div>
             <div class="card-actions">
               <a href="https://github.com/MatthewPaver/marketing-ml-lakehouse">Repo</a>
             </div>
@@ -294,14 +310,17 @@
               <span class="status public">Public</span>
             </div>
             <p>
-              Flask app and backend pipeline for schedule-risk analysis, slippage, forecasting issues,
-              milestone risks, and reporting outputs.
+              A Flask app for uploading project schedule data and spotting delivery risk: slippage,
+              milestone pressure, forecast issues, and reporting outputs.
             </p>
             <ul class="proof-list">
               <li>Upload-to-analysis flow</li>
-              <li>Project risk reporting</li>
+              <li>Schedule-risk reporting</li>
               <li>Power BI-ready outputs</li>
             </ul>
+            <div class="stack-list" aria-label="Tech stack">
+              <span>Python</span><span>Flask</span><span>pandas</span><span>Forecasting</span><span>Power BI</span>
+            </div>
             <div class="card-actions">
               <a href="https://github.com/MatthewPaver/ProjectLens">Repo</a>
             </div>
@@ -316,14 +335,17 @@
               <span class="status public">Public</span>
             </div>
             <p>
-              Architecture-themed image generation project with a conditional GAN, dataset pipeline,
-              Flask API, trained model assets, and project documentation.
+              A computer-vision project that trains a conditional GAN to generate architecture-themed
+              images and exposes the model through a small Flask API.
             </p>
             <ul class="proof-list">
               <li>Conditional GAN</li>
               <li>Dataset preparation</li>
               <li>API integration</li>
             </ul>
+            <div class="stack-list" aria-label="Tech stack">
+              <span>Python</span><span>TensorFlow</span><span>Keras</span><span>Flask</span><span>GAN</span>
+            </div>
             <div class="card-actions">
               <a href="https://github.com/MatthewPaver/Architexa">Repo</a>
             </div>
@@ -338,14 +360,17 @@
               <span class="status public">Public</span>
             </div>
             <p>
-              Implicit-feedback collaborative filtering project with a notebook walkthrough and CLI for
-              dataset summary, evaluation, and recommendation lookup.
+              A recommendation-model project using swipe-style interaction data. It evaluates ranked
+              candidates with a temporal split instead of a random split.
             </p>
             <ul class="proof-list">
               <li>3.4M+ positive interactions</li>
               <li>Temporal holdout</li>
               <li>Top-K metrics</li>
             </ul>
+            <div class="stack-list" aria-label="Tech stack">
+              <span>Python</span><span>NumPy</span><span>SciPy</span><span>Jupyter</span><span>CLI</span>
+            </div>
             <div class="card-actions">
               <a href="https://github.com/MatthewPaver/dating-app-recommendation-system">Repo</a>
             </div>
@@ -364,14 +389,17 @@
               <span class="status public">Public</span>
             </div>
             <p>
-              Power BI dashboard portfolio with prepared datasets, PBIX, static exports, documentation,
-              and walkthrough material.
+              A Power BI dashboard package with prepared data, PBIX files, exported screenshots,
+              business commentary, and walkthrough material.
             </p>
             <ul class="proof-list">
-              <li>Dashboard packaging</li>
-              <li>Business findings</li>
-              <li>Stakeholder documentation</li>
+              <li>Summary, sales, and absence views</li>
+              <li>Prepared CSVs and PBIX</li>
+              <li>Stakeholder-ready writeup</li>
             </ul>
+            <div class="stack-list" aria-label="Tech stack">
+              <span>Power BI</span><span>DAX</span><span>CSV</span><span>Reporting</span><span>PDF exports</span>
+            </div>
             <div class="card-actions">
               <a href="https://github.com/MatthewPaver/hr-performance-dashboards">Repo</a>
             </div>
@@ -389,14 +417,17 @@
               <span class="status public">Public</span>
             </div>
             <p>
-              Compact NLP notebook using sentence-transformer embeddings and cosine similarity to show
-              what retrieval-style similarity can and cannot prove.
+              A compact NLP notebook that embeds sentences, ranks them by cosine similarity, and explains
+              why similarity search is useful but not the same as fact checking.
             </p>
             <ul class="proof-list">
               <li>Transformer embeddings</li>
               <li>Cosine ranking</li>
               <li>Retrieval caveats</li>
             </ul>
+            <div class="stack-list" aria-label="Tech stack">
+              <span>Python</span><span>Jupyter</span><span>sentence-transformers</span><span>PyTorch</span>
+            </div>
             <div class="card-actions">
               <a href="https://github.com/MatthewPaver/sentence-similarity-analysis">Repo</a>
             </div>
@@ -414,14 +445,17 @@
               <span class="status archive">Archive</span>
             </div>
             <p>
-              Earlier newsletter-generation and Pinterest image-collection utilities that show the path
-              toward Inference Brief and Architexa.
+              Archived utilities that show earlier versions of the current work: article-to-newsletter
+              rendering and image collection for model training.
             </p>
             <ul class="proof-list">
-              <li>Collection-to-HTML pipeline</li>
+              <li>Article-to-HTML pipeline</li>
               <li>Image data collection helper</li>
               <li>Archived intentionally</li>
             </ul>
+            <div class="stack-list" aria-label="Tech stack">
+              <span>Python</span><span>HTML</span><span>Automation</span><span>Scraping</span>
+            </div>
             <div class="card-actions">
               <a href="https://github.com/MatthewPaver/generate-newsletter">Newsletter</a>
               <a href="https://github.com/MatthewPaver/pinterest-image-scraper">Scraper</a>
@@ -440,6 +474,6 @@
       <a href="https://www.linkedin.com/in/matthew-paver-534262166/">Connect on LinkedIn</a>
     </footer>
 
-    <script src="./script.js?v=20260515-4"></script>
+    <script src="./script.js?v=20260515-5"></script>
   </body>
 </html>

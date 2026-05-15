@@ -1,0 +1,33 @@
+<svg width="1200" height="680" viewBox="0 0 1200 680" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">Operations platform prototype</title>
+  <desc id="desc">A safe visual showing a private operations platform prototype for resident requests, payments, tickets, and AI triage.</desc>
+  <rect width="1200" height="680" fill="#F7F1E6"/>
+  <path d="M0 68H1200M0 136H1200M0 204H1200M0 272H1200M0 340H1200M0 408H1200M0 476H1200M0 544H1200M0 612H1200" stroke="#161411" stroke-opacity="0.08"/>
+  <path d="M68 0V680M136 0V680M204 0V680M272 0V680M340 0V680M408 0V680M476 0V680M544 0V680M612 0V680M680 0V680M748 0V680M816 0V680M884 0V680M952 0V680M1020 0V680M1088 0V680M1156 0V680" stroke="#161411" stroke-opacity="0.08"/>
+  <text x="72" y="92" font-family="Arial, Helvetica, sans-serif" font-size="18" font-weight="900" letter-spacing="5" fill="#AD3F32">OPERATIONS PLATFORM</text>
+  <text x="72" y="154" font-family="Georgia, serif" font-size="58" font-weight="700" fill="#161411">Resident requests, payments, and tickets</text>
+  <text x="74" y="198" font-family="Arial, Helvetica, sans-serif" font-size="22" font-weight="700" fill="#4E473F">Private prototype for property operations, service-charge clarity, audit trails, and AI triage.</text>
+
+  <g font-family="Arial, Helvetica, sans-serif">
+    <rect x="80" y="288" width="260" height="156" fill="#FFF8EB" stroke="#161411" stroke-width="3"/>
+    <text x="112" y="338" font-size="28" font-weight="900" fill="#161411">Resident app</text>
+    <text x="112" y="378" font-size="18" font-weight="800" fill="#4E473F">Raise issues</text>
+    <text x="112" y="408" font-size="18" font-weight="800" fill="#4E473F">Track progress</text>
+
+    <rect x="470" y="248" width="260" height="236" fill="#161411" stroke="#D9A441" stroke-width="3"/>
+    <text x="502" y="314" font-size="30" font-weight="900" fill="#FFF8EB">Ops console</text>
+    <text x="502" y="356" font-size="18" font-weight="800" fill="#D9A441">Tickets</text>
+    <text x="502" y="388" font-size="18" font-weight="800" fill="#D9A441">Approvals</text>
+    <text x="502" y="420" font-size="18" font-weight="800" fill="#D9A441">Audit trail</text>
+
+    <rect x="860" y="288" width="260" height="156" fill="#0D6F5F" stroke="#161411" stroke-width="3"/>
+    <text x="892" y="338" font-size="28" font-weight="900" fill="#FFF8EB">Payments</text>
+    <text x="892" y="378" font-size="18" font-weight="800" fill="#D4EFEA">Faster Payments</text>
+    <text x="892" y="408" font-size="18" font-weight="800" fill="#D4EFEA">Service charges</text>
+  </g>
+
+  <path d="M348 366H462M738 366H852" stroke="#161411" stroke-width="6"/>
+  <path d="M462 366L446 352M462 366L446 380M852 366L836 352M852 366L836 380" stroke="#161411" stroke-width="6" stroke-linecap="round"/>
+  <rect x="252" y="538" width="696" height="74" fill="#AD3F32" stroke="#161411" stroke-width="3"/>
+  <text x="292" y="584" font-family="Arial, Helvetica, sans-serif" font-size="24" font-weight="900" fill="#FFF8EB">AI triage routes noisy requests into auditable work queues.</text>
+</svg>

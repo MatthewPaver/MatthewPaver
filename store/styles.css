@@ -615,7 +615,7 @@ h1 {
 .proof-list {
   display: grid;
   gap: 8px;
-  margin: 10px 0 18px;
+  margin: 10px 0 14px;
   padding: 0;
   list-style: none;
 }
@@ -627,6 +627,24 @@ h1 {
   font-family: "Avenir Next", "Segoe UI", sans-serif;
   font-size: 0.92rem;
   font-weight: 760;
+}
+
+.stack-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 7px;
+  margin: 0 0 18px;
+}
+
+.stack-list span {
+  border: 1px solid rgba(22, 20, 17, 0.18);
+  background: rgba(22, 20, 17, 0.055);
+  color: #3a332d;
+  font-family: "Avenir Next", "Segoe UI", sans-serif;
+  font-size: 0.74rem;
+  font-weight: 850;
+  line-height: 1;
+  padding: 7px 8px;
 }
 
 .card-actions {
