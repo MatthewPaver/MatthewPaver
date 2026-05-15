@@ -1,0 +1,42 @@
+<svg width="1200" height="680" viewBox="0 0 1200 680" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">Marketing ML Lakehouse workflow</title>
+  <desc id="desc">A visual summary of a DuckDB lakehouse moving raw marketing data through bronze, silver, gold, model training, quality checks, and dashboard reporting.</desc>
+  <rect width="1200" height="680" fill="#F7F1E6"/>
+  <circle cx="1040" cy="30" r="260" fill="#0D6F5F" fill-opacity="0.16"/>
+  <circle cx="120" cy="670" r="260" fill="#D9A441" fill-opacity="0.18"/>
+  <text x="70" y="88" font-family="Arial, Helvetica, sans-serif" font-size="18" font-weight="900" letter-spacing="5" fill="#AD3F32">MARKETING ML LAKEHOUSE</text>
+  <text x="70" y="150" font-family="Georgia, serif" font-size="58" font-weight="700" fill="#161411">Local analytics stack with ML proof</text>
+  <text x="72" y="192" font-family="Arial, Helvetica, sans-serif" font-size="22" font-weight="700" fill="#4E473F">DuckDB medallion layers, XGBoost models, quality checks, and Streamlit reporting.</text>
+
+  <g font-family="Arial, Helvetica, sans-serif">
+    <rect x="78" y="280" width="142" height="112" fill="#AD3F32" stroke="#161411" stroke-width="3"/>
+    <text x="104" y="328" font-size="20" font-weight="900" fill="#FFF8EB">Raw CSVs</text>
+    <text x="104" y="360" font-size="16" font-weight="800" fill="#FFF8EB">Campaign data</text>
+
+    <rect x="270" y="250" width="142" height="172" fill="#6F675D" stroke="#161411" stroke-width="3"/>
+    <text x="300" y="318" font-size="23" font-weight="900" fill="#FFF8EB">Bronze</text>
+    <text x="300" y="352" font-size="16" font-weight="800" fill="#FFF8EB">Ingest</text>
+
+    <rect x="462" y="220" width="142" height="232" fill="#1F5F9F" stroke="#161411" stroke-width="3"/>
+    <text x="492" y="318" font-size="23" font-weight="900" fill="#FFF8EB">Silver</text>
+    <text x="492" y="352" font-size="16" font-weight="800" fill="#FFF8EB">Clean</text>
+
+    <rect x="654" y="190" width="142" height="292" fill="#D9A441" stroke="#161411" stroke-width="3"/>
+    <text x="690" y="318" font-size="23" font-weight="900" fill="#161411">Gold</text>
+    <text x="684" y="352" font-size="16" font-weight="800" fill="#161411">Features</text>
+
+    <rect x="846" y="250" width="142" height="172" fill="#0D6F5F" stroke="#161411" stroke-width="3"/>
+    <text x="886" y="318" font-size="23" font-weight="900" fill="#FFF8EB">ML</text>
+    <text x="880" y="352" font-size="16" font-weight="800" fill="#FFF8EB">XGBoost</text>
+
+    <rect x="1038" y="280" width="84" height="112" fill="#FFF8EB" stroke="#161411" stroke-width="3"/>
+    <text x="1058" y="328" font-size="20" font-weight="900" fill="#161411">UI</text>
+    <text x="1054" y="360" font-size="14" font-weight="800" fill="#4E473F">Streamlit</text>
+  </g>
+
+  <path d="M224 336H264M416 336H456M608 336H648M800 336H840M992 336H1032" stroke="#161411" stroke-width="5"/>
+  <path d="M264 336L250 324M264 336L250 348M456 336L442 324M456 336L442 348M648 336L634 324M648 336L634 348M840 336L826 324M840 336L826 348M1032 336L1018 324M1032 336L1018 348" stroke="#161411" stroke-width="5" stroke-linecap="round"/>
+
+  <rect x="70" y="548" width="1052" height="72" fill="#161411"/>
+  <text x="104" y="592" font-family="Arial, Helvetica, sans-serif" font-size="24" font-weight="900" fill="#FFF8EB">Runnable public proof: pipeline, models, quality checks, dashboard.</text>
+</svg>

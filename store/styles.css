@@ -480,8 +480,39 @@ h1 {
   filter: saturate(0.9) contrast(1.04);
 }
 
+.image-card img.inference-shot,
 .image-card img.study-shot {
   object-position: top center;
+}
+
+.image-card img.quick-shot {
+  object-position: center 38%;
+}
+
+.dashboard-strip {
+  height: 240px;
+  display: grid;
+  grid-template-columns: 1.35fr 0.9fr;
+  grid-template-rows: 1fr 1fr;
+  overflow: hidden;
+  border-bottom: 2px solid var(--ink);
+}
+
+.dashboard-strip img {
+  height: 100%;
+  border-bottom: 0;
+}
+
+.dashboard-strip img:first-child {
+  grid-row: span 2;
+}
+
+.dashboard-strip img + img {
+  border-left: 2px solid var(--ink);
+}
+
+.dashboard-strip img:nth-child(2) {
+  border-bottom: 2px solid var(--ink);
 }
 
 .inference-visual {

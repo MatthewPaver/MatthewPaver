@@ -23,13 +23,13 @@ Practical next steps for keeping this profile and Idea Store at a gold-standard 
 
 | Repo | Opportunity | Priority |
 |:---|:---|:---|
-| `QuickSupply` | Extract a poster frame or compressed clip from `Agency Demo.mov`; this is one of the strongest product/workflow proofs | High |
+| `inference-web` | Capture a real product screenshot or issue preview for the live-product card | Done |
+| `Happening` | Add a sanitised source-health or ingestion-pipeline visual | Done |
+| `marketing-ml-lakehouse` | Add a Streamlit dashboard screenshot so the public runnable app feels tangible | Replaced with designed workflow visual until dashboard deps are available |
 | `ai-study-companion` | Use the smoke-test product screenshot in the store card | Done |
-| `inference-web` | Capture a real product screenshot or issue preview for the live-product card | High |
-| `Happening` | Add a sanitised source-health or ingestion-pipeline visual | High |
-| `marketing-ml-lakehouse` | Add a Streamlit dashboard screenshot so the public runnable app feels tangible | High |
-| `hr-performance-dashboards` | Consider a small dashboard gallery rather than a single summary screenshot | Medium |
-| `dating-app-recommendation-system` | Add a metrics/evaluation visual for the 3.4M+ interactions signal | Medium |
+| `QuickSupply` | Extract a poster frame or compressed clip from `Agency Demo.mov`; this is one of the strongest product/workflow proofs | Poster added; compressed clip still useful |
+| `hr-performance-dashboards` | Consider a small dashboard gallery rather than a single summary screenshot | Done |
+| `dating-app-recommendation-system` | Add a metrics/evaluation visual for the 3.4M+ interactions signal | Done |
 | `pyspark-kafka-streaming` | Keep in the index as technical breadth; promote only if you want stronger streaming/data-platform positioning | Medium |
 | `university-of-liverpool` | Do not elevate until copyright/coursework suitability has been reviewed | Low |
 

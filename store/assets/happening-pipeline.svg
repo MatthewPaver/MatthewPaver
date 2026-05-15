@@ -1,0 +1,39 @@
+<svg width="1200" height="680" viewBox="0 0 1200 680" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">Happening event ingestion pipeline</title>
+  <desc id="desc">An anonymised visual showing venue source configs flowing through crawling, extraction, validation, deduplication, storage, and quality checks.</desc>
+  <rect width="1200" height="680" fill="#161411"/>
+  <path d="M0 80H1200M0 160H1200M0 240H1200M0 320H1200M0 400H1200M0 480H1200M0 560H1200" stroke="#FFF8EB" stroke-opacity="0.08"/>
+  <path d="M80 0V680M160 0V680M240 0V680M320 0V680M400 0V680M480 0V680M560 0V680M640 0V680M720 0V680M800 0V680M880 0V680M960 0V680M1040 0V680M1120 0V680" stroke="#FFF8EB" stroke-opacity="0.08"/>
+  <text x="72" y="86" font-family="Arial, Helvetica, sans-serif" font-size="18" font-weight="900" letter-spacing="5" fill="#D9A441">HAPPENING</text>
+  <text x="72" y="142" font-family="Georgia, serif" font-size="56" font-weight="700" fill="#FFF8EB">103+ venue sources into clean event data</text>
+  <text x="72" y="186" font-family="Arial, Helvetica, sans-serif" font-size="21" font-weight="700" fill="#CFC4B3">Config-driven crawling, extraction, validation, deduplication, and quality checks.</text>
+
+  <g font-family="Arial, Helvetica, sans-serif" font-weight="900" font-size="20">
+    <rect x="72" y="270" width="160" height="110" fill="#AD3F32" stroke="#FFF8EB" stroke-width="3"/>
+    <text x="96" y="318" fill="#FFF8EB">Sources</text>
+    <text x="96" y="350" font-size="36" fill="#FFF8EB">103+</text>
+
+    <rect x="284" y="270" width="160" height="110" fill="#0D6F5F" stroke="#FFF8EB" stroke-width="3"/>
+    <text x="308" y="318" fill="#FFF8EB">Crawler</text>
+    <text x="308" y="350" font-size="18" fill="#FFF8EB">Playwright</text>
+
+    <rect x="496" y="270" width="160" height="110" fill="#1F5F9F" stroke="#FFF8EB" stroke-width="3"/>
+    <text x="520" y="318" fill="#FFF8EB">Extract</text>
+    <text x="520" y="350" font-size="18" fill="#FFF8EB">Structured</text>
+
+    <rect x="708" y="270" width="160" height="110" fill="#D9A441" stroke="#FFF8EB" stroke-width="3"/>
+    <text x="732" y="318" fill="#161411">Validate</text>
+    <text x="732" y="350" font-size="18" fill="#161411">Schemas</text>
+
+    <rect x="920" y="270" width="160" height="110" fill="#FFF8EB" stroke="#D9A441" stroke-width="3"/>
+    <text x="944" y="318" fill="#161411">SQLite</text>
+    <text x="944" y="350" font-size="18" fill="#161411">Event store</text>
+  </g>
+
+  <path d="M236 325H276M448 325H488M660 325H700M872 325H912" stroke="#FFF8EB" stroke-width="5"/>
+  <path d="M276 325L262 313M276 325L262 337M488 325L474 313M488 325L474 337M700 325L686 313M700 325L686 337M912 325L898 313M912 325L898 337" stroke="#FFF8EB" stroke-width="5" stroke-linecap="round"/>
+
+  <rect x="72" y="466" width="1008" height="98" fill="#FFF8EB" stroke="#D9A441" stroke-width="3"/>
+  <text x="104" y="508" font-family="Arial, Helvetica, sans-serif" font-size="22" font-weight="900" fill="#161411">Reliability signal</text>
+  <text x="104" y="544" font-family="Arial, Helvetica, sans-serif" font-size="22" font-weight="800" fill="#4E473F">167 tests, daily automation, source configuration, dedupe checks, and safe iteration.</text>
+</svg>
