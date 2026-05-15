@@ -143,6 +143,16 @@ More work: [Project Index](Projects.md) for the curated view of current systems,
 - AI products with real user-facing workflows, not just model demos.
 - Data and analytics tooling that turns messy inputs into something decision-useful.
 
+
+## What I'm Building Operationally
+
+- A governance-first delivery pattern for AI apps and automations (gate checks, security checks, ownership checks).
+- A structured documentation system that keeps project updates, decision logs, and implementation guides tightly linked.
+- Repeatable review loops for quality control: link integrity, stale-state detection, and portfolio-level risk tracking.
+- Practical productionisation discipline for lightweight internal tools: auth, permissions, observability, and handover readiness.
+
+---
+
 <div align="center">
 
 ![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white)
