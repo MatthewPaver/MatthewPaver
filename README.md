@@ -86,9 +86,9 @@ Full-stack study platform for turning PDFs and notes into flashcards, quizzes, a
 
 ### Smart Job Market Intelligence ![Private](https://img.shields.io/badge/Private-grey?style=flat-square&logo=lock&logoColor=white)
 
-Job market analytics platform for salary intelligence, skill trends, posting volume analysis, remote ratio tracking, and alerts. Built around scraping, background processing, and product-style API tiers.
+Job market analytics platform for salary intelligence, skill trend tracking, posting volume analysis, and alerts with background processing and product-style API tiering.
 
-**Signal:** data ingestion, trend analysis, API design, recurring jobs.
+**Signal:** scraping + analytics pipeline, alerts, trend reporting, API thinking.
 
 `Python` `FastAPI` `PostgreSQL` `Redis` `Celery`
 
@@ -98,36 +98,73 @@ Job market analytics platform for salary intelligence, skill trends, posting vol
 
 ---
 
-## Public Proof
+## Public Repositories
 
-| Project | Why it matters | Stack |
-|:---|:---|:---|
-| [Marketing ML Lakehouse](https://github.com/MatthewPaver/marketing-ml-lakehouse) | Local-first analytics lakehouse with medallion layers, ML models, and Streamlit reporting | `Python` `DuckDB` `XGBoost` `Streamlit` |
-| [ProjectLens](https://github.com/MatthewPaver/ProjectLens) | Project schedule risk analysis with a Flask app, processing pipeline, and reporting outputs | `Python` `Flask` `pandas` |
-| [Architexa](https://github.com/MatthewPaver/Architexa) | Conditional GAN project for architecture-themed image generation with API and training assets | `TensorFlow` `Keras` `Flask` |
-| [Dating App Recommendation System](https://github.com/MatthewPaver/dating-app-recommendation-system) | Implicit-feedback recommendation engine with notebook walkthrough and lightweight CLI | `Python` `NumPy` `SciPy` |
+<table>
+<tr>
+<td valign="top" width="50%">
 
-More: [Project Index](Projects.md) for the fuller curated portfolio.
+### Marketing ML Lakehouse
 
-For a more browsable version, open the [Idea Store](https://matthewpaver.github.io/MatthewPaver/store/).
+Local-first marketing analytics stack using bronze/silver/gold DuckDB layers, XGBoost models, and a Streamlit reporting interface.
+
+`Python` `DuckDB` `XGBoost` `Streamlit` `Polars`
+
+[![View Repo](https://img.shields.io/badge/View_Repo-0078D4?style=flat-square&logo=github&logoColor=white)](https://github.com/MatthewPaver/marketing-ml-lakehouse)
+
+</td>
+<td valign="top" width="50%">
+
+### ProjectLens
+
+Web application and backend pipeline for project schedule risk analysis, slippage visibility, and reporting outputs.
+
+`Python` `Flask` `pandas` `Forecasting` `Analytics`
+
+[![View Repo](https://img.shields.io/badge/View_Repo-0078D4?style=flat-square&logo=github&logoColor=white)](https://github.com/MatthewPaver/ProjectLens)
+
+</td>
+</tr>
+<tr>
+<td valign="top" width="50%">
+
+### Architexa
+
+Architecture-themed image generation project with a conditional GAN and Flask API.
+
+`Python` `TensorFlow` `Keras` `Flask` `Computer Vision`
+
+[![View Repo](https://img.shields.io/badge/View_Repo-0078D4?style=flat-square&logo=github&logoColor=white)](https://github.com/MatthewPaver/Architexa)
+
+</td>
+<td valign="top" width="50%">
+
+### Dating App Recommendation System
+
+Recommendation system for swipe-style data using implicit feedback and top-K ranking.
+
+`Python` `NumPy` `SciPy` `Recommendation Systems` `ML`
+
+[![View Repo](https://img.shields.io/badge/View_Repo-0078D4?style=flat-square&logo=github&logoColor=white)](https://github.com/MatthewPaver/dating-app-recommendation-system)
+
+</td>
+</tr>
+</table>
+
+<div align="center">
+
+More work: [Project Index](Projects.md) and [Case Studies](CASE_STUDIES.md).
+
+</div>
 
 ---
 
-## How I Think About Systems
+## 30-Second Snapshot
 
-```mermaid
-flowchart LR
-    A["Messy source data"] --> B["Ingestion and validation"]
-    B --> C["Structured storage"]
-    C --> D["Models, retrieval, or analytics"]
-    D --> E["User-facing product"]
-    E --> F["Feedback, tests, monitoring"]
-    F --> B
-```
-
-The pattern I keep coming back to is simple: make the inputs explicit, make the pipeline repeatable, expose the result through a useful workflow, and close the loop with tests or feedback.
-
----
+- Build focus: production-minded AI, data, and automation systems.
+- Strengths: turning early prototypes into secure, reliable, repeatable workflows.
+- Current stack: `Python` `TypeScript` `FastAPI` `n8n` `Firebase` `GCP` `PostgreSQL` `Redis` `Docker` `GitHub Actions`.
+- Delivery style: governance-first, measurable outcomes, strong operational documentation.
 
 ## Current Focus
 
@@ -191,3 +228,18 @@ Open to collaboration, interesting product work, and AI/data engineering opportu
 </a>
 
 </div>
+
+
+<!-- AUTO:ACTIVITY_START -->
+## Latest Public Activity (Auto-Updated)
+
+_This section is automatically refreshed by GitHub Actions._
+
+- Last refresh (UTC): pending first scheduled run
+
+| Repo | Last push | What it is |
+|:---|:---:|:---|
+| Pending first automation run | - | This table will auto-populate from public repositories. |
+
+<!-- AUTO:ACTIVITY_END -->
+
