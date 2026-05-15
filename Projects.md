@@ -2,7 +2,7 @@
 
 Focused view of the systems, products, and experiments I build across AI, data, automation, and analytics.
 
-[Back to Profile](README.md) | [Case Studies](CASE_STUDIES.md)
+[Back to Profile](README.md) | [Case Studies](CASE_STUDIES.md) | [CV Evidence Log](CV_EVIDENCE_LOG.md)
 
 For a browsable storefront view, open the [Idea Store](https://matthewpaver.github.io/MatthewPaver/store/).
 
@@ -19,7 +19,7 @@ All professional examples are intentionally anonymised and focused on engineerin
 | AI Study Companion | Private product | Document AI + spaced repetition + async jobs | [Case study](CASE_STUDIES.md#ai-study-companion) |
 | Smart Job Market Intelligence | Private system | Scraping, trend analysis, alerts, API tiering | [Case study](CASE_STUDIES.md#smart-job-market-intelligence) |
 | QuickSupply | Private MVP | Multi-sided scheduling workflow + sequential assignment | Private |
-| Cadence | Private prototype | Operations workflow + payments + AI triage | Private |
+| Operations Platform Prototype | Private prototype | Operations workflow + payment rails + AI triage pattern | Private |
 | Marketing ML Lakehouse | Public runnable app | DuckDB medallion layers + XGBoost + Streamlit | [Repo](https://github.com/MatthewPaver/marketing-ml-lakehouse) |
 | ProjectLens | Public runnable app | Schedule risk analysis + reporting outputs | [Repo](https://github.com/MatthewPaver/ProjectLens) |
 
