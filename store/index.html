@@ -60,6 +60,34 @@
     </header>
 
     <main id="store" class="shell">
+      <section class="today-shelf" aria-labelledby="today-heading">
+        <div class="shelf-copy">
+          <p class="eyebrow">Today</p>
+          <h2 id="today-heading">Start with the strongest signals.</h2>
+          <p>
+            Three entry points for a quick read: a live product, a serious ingestion system,
+            and a runnable public analytics app.
+          </p>
+        </div>
+        <div class="spotlight-grid">
+          <a class="spotlight-card" href="https://inferencebrief.co/">
+            <span class="spotlight-rank">01</span>
+            <strong>Inference Brief</strong>
+            <span>Live AI briefing product</span>
+          </a>
+          <a class="spotlight-card" href="https://github.com/MatthewPaver/MatthewPaver/blob/main/CASE_STUDIES.md#happening">
+            <span class="spotlight-rank">02</span>
+            <strong>Happening</strong>
+            <span>103+ sources into event data</span>
+          </a>
+          <a class="spotlight-card" href="https://github.com/MatthewPaver/marketing-ml-lakehouse">
+            <span class="spotlight-rank">03</span>
+            <strong>Marketing ML Lakehouse</strong>
+            <span>Runnable data + ML workflow</span>
+          </a>
+        </div>
+      </section>
+
       <section class="section-heading">
         <div>
           <p class="eyebrow">The shelves</p>
@@ -71,14 +99,32 @@
         </p>
       </section>
 
+      <div class="store-toolbar">
+        <label class="search-box">
+          <span>Search ideas</span>
+          <input id="store-search" type="search" placeholder="Try automation, product, embeddings..." />
+        </label>
+        <div class="result-count" aria-live="polite">
+          <span id="visible-count">13</span>
+          <span>ideas showing</span>
+        </div>
+      </div>
+
       <div class="filters" role="toolbar" aria-label="Filter projects">
-        <button class="filter active" data-filter="all" type="button">All</button>
-        <button class="filter" data-filter="product" type="button">Products</button>
-        <button class="filter" data-filter="data" type="button">Data systems</button>
-        <button class="filter" data-filter="automation" type="button">Automation</button>
-        <button class="filter" data-filter="ml" type="button">ML</button>
-        <button class="filter" data-filter="analytics" type="button">Analytics</button>
-        <button class="filter" data-filter="archive" type="button">Archive</button>
+        <button class="filter active" data-filter="all" type="button" aria-pressed="true">All</button>
+        <button class="filter" data-filter="product" type="button" aria-pressed="false">Products</button>
+        <button class="filter" data-filter="data" type="button" aria-pressed="false">Data systems</button>
+        <button class="filter" data-filter="automation" type="button" aria-pressed="false">Automation</button>
+        <button class="filter" data-filter="ml" type="button" aria-pressed="false">ML</button>
+        <button class="filter" data-filter="analytics" type="button" aria-pressed="false">Analytics</button>
+        <button class="filter" data-filter="archive" type="button" aria-pressed="false">Archive</button>
+      </div>
+
+      <div class="collection-rail" aria-label="Curated collections">
+        <a href="#store" data-collection="product">Product systems</a>
+        <a href="#store" data-collection="automation">Automation engines</a>
+        <a href="#store" data-collection="ml">Machine learning proof</a>
+        <a href="#store" data-collection="analytics">Analytics portfolio</a>
       </div>
 
       <section class="store-grid" aria-live="polite">
@@ -394,6 +440,8 @@
           </div>
         </article>
       </section>
+
+      <p class="empty-state" hidden>No ideas match that filter yet.</p>
     </main>
 
     <footer class="shell footer">

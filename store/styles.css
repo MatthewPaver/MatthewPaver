@@ -207,6 +207,131 @@ h1 {
   line-height: 1.5;
 }
 
+.today-shelf {
+  display: grid;
+  grid-template-columns: minmax(0, 0.8fr) minmax(0, 1.2fr);
+  gap: 18px;
+  margin: 8px 0 42px;
+  padding: 20px;
+  border: 2px solid var(--ink);
+  background: rgba(255, 248, 235, 0.72);
+  box-shadow: 9px 9px 0 rgba(22, 20, 17, 0.88);
+}
+
+.today-shelf h2 {
+  font-size: clamp(2rem, 4.2vw, 4.4rem);
+}
+
+.today-shelf p {
+  max-width: 520px;
+  color: var(--muted);
+  font-family: "Avenir Next", "Segoe UI", sans-serif;
+  font-weight: 700;
+  line-height: 1.5;
+}
+
+.spotlight-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 12px;
+}
+
+.spotlight-card {
+  min-height: 190px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border: 2px solid var(--ink);
+  background: var(--black);
+  color: #fff8eb;
+  padding: 16px;
+  text-decoration: none;
+  transition: transform 180ms ease, background 180ms ease;
+}
+
+.spotlight-card:nth-child(2) {
+  background: var(--green);
+}
+
+.spotlight-card:nth-child(3) {
+  background: var(--blue);
+}
+
+.spotlight-card:hover {
+  transform: translateY(-4px);
+}
+
+.spotlight-rank {
+  font-family: "Avenir Next", "Segoe UI", sans-serif;
+  font-size: 0.8rem;
+  font-weight: 950;
+  letter-spacing: 0.16em;
+}
+
+.spotlight-card strong {
+  display: block;
+  font-size: 1.6rem;
+  line-height: 1;
+}
+
+.spotlight-card span:last-child {
+  color: rgba(255, 248, 235, 0.76);
+  font-family: "Avenir Next", "Segoe UI", sans-serif;
+  font-size: 0.86rem;
+  font-weight: 800;
+  line-height: 1.35;
+}
+
+.store-toolbar {
+  display: grid;
+  grid-template-columns: minmax(240px, 520px) auto;
+  gap: 12px;
+  align-items: end;
+  margin: 20px 0 0;
+}
+
+.search-box {
+  display: grid;
+  gap: 8px;
+  font-family: "Avenir Next", "Segoe UI", sans-serif;
+  font-size: 0.78rem;
+  font-weight: 900;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.search-box input {
+  width: 100%;
+  min-height: 48px;
+  border: 2px solid var(--ink);
+  background: #fff8eb;
+  color: var(--ink);
+  font: 800 1rem "Avenir Next", "Segoe UI", sans-serif;
+  padding: 0 14px;
+  box-shadow: 4px 4px 0 var(--ink);
+}
+
+.search-box input:focus {
+  outline: 3px solid rgba(217, 164, 65, 0.5);
+  outline-offset: 2px;
+}
+
+.result-count {
+  display: flex;
+  align-items: baseline;
+  justify-content: flex-end;
+  gap: 8px;
+  color: var(--muted);
+  font-family: "Avenir Next", "Segoe UI", sans-serif;
+  font-weight: 800;
+}
+
+#visible-count {
+  color: var(--ink);
+  font-size: 2rem;
+  font-weight: 950;
+}
+
 .filters {
   position: sticky;
   top: 0;
@@ -236,6 +361,41 @@ h1 {
   border-color: var(--ink);
   background: var(--ink);
   color: #fff8eb;
+}
+
+.collection-rail {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 10px;
+  margin: 0 0 8px;
+}
+
+.collection-rail a {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 58px;
+  border: 1px solid var(--line);
+  background: rgba(255, 248, 235, 0.62);
+  color: #3e372f;
+  font-family: "Avenir Next", "Segoe UI", sans-serif;
+  font-size: 0.9rem;
+  font-weight: 900;
+  padding: 0 14px;
+  text-decoration: none;
+}
+
+.collection-rail a::after {
+  content: "Browse";
+  color: var(--red);
+  font-size: 0.7rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.collection-rail a:hover {
+  border-color: var(--ink);
+  background: #fff8eb;
 }
 
 .store-grid {
@@ -442,10 +602,31 @@ h1 {
   font-weight: 900;
 }
 
+.empty-state {
+  margin: -36px 0 64px;
+  border: 2px dashed var(--line);
+  color: var(--muted);
+  font-family: "Avenir Next", "Segoe UI", sans-serif;
+  font-weight: 900;
+  padding: 28px;
+  text-align: center;
+}
+
 @media (max-width: 920px) {
   .hero-grid,
-  .section-heading {
+  .section-heading,
+  .today-shelf,
+  .store-toolbar {
     grid-template-columns: 1fr;
+  }
+
+  .spotlight-grid,
+  .collection-rail {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .result-count {
+    justify-content: flex-start;
   }
 
   .store-grid {
@@ -469,6 +650,11 @@ h1 {
   }
 
   .store-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .spotlight-grid,
+  .collection-rail {
     grid-template-columns: 1fr;
   }
 

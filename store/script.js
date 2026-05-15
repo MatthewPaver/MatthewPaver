@@ -1,16 +1,38 @@
 const filters = Array.from(document.querySelectorAll(".filter"));
 const cards = Array.from(document.querySelectorAll(".app-card"));
+const searchInput = document.querySelector("#store-search");
+const visibleCount = document.querySelector("#visible-count");
+const emptyState = document.querySelector(".empty-state");
+const collectionLinks = Array.from(document.querySelectorAll("[data-collection]"));
 
-function setFilter(filterName) {
-  filters.forEach((button) => {
-    button.classList.toggle("active", button.dataset.filter === filterName);
-  });
+let activeFilter = "all";
+
+function updateStore() {
+  const query = searchInput.value.trim().toLowerCase();
+  let count = 0;
 
   cards.forEach((card) => {
     const tags = card.dataset.tags.split(" ");
-    const isVisible = filterName === "all" || tags.includes(filterName);
+    const matchesFilter = activeFilter === "all" || tags.includes(activeFilter);
+    const matchesSearch = !query || card.textContent.toLowerCase().includes(query);
+    const isVisible = matchesFilter && matchesSearch;
     card.classList.toggle("hidden", !isVisible);
+    if (isVisible) count += 1;
   });
+
+  visibleCount.textContent = String(count);
+  emptyState.hidden = count > 0;
+}
+
+function setFilter(filterName) {
+  activeFilter = filterName;
+  filters.forEach((button) => {
+    const isActive = button.dataset.filter === filterName;
+    button.classList.toggle("active", isActive);
+    button.setAttribute("aria-pressed", String(isActive));
+  });
+
+  updateStore();
 }
 
 filters.forEach((button) => {
@@ -18,3 +40,13 @@ filters.forEach((button) => {
     setFilter(button.dataset.filter);
   });
 });
+
+collectionLinks.forEach((link) => {
+  link.addEventListener("click", () => {
+    setFilter(link.dataset.collection);
+  });
+});
+
+searchInput.addEventListener("input", updateStore);
+
+updateStore();
