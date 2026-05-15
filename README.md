@@ -80,67 +80,100 @@ I build projects where the hard part is turning messy inputs into something peop
 
 ## Start Here
 
-| If you have... | Open this | Why |
-|:---|:---|:---|
-| 30 seconds | [Idea Store](https://matthewpaver.github.io/MatthewPaver/store/) | Visual app-store view of the strongest work |
-| 2 minutes | [Inference Brief](https://inferencebrief.co/) | Live AI news product you can open now |
-| 5 minutes | [Case Studies](CASE_STUDIES.md) | How the private systems are designed without exposing private details |
-| More time | [Project Index](Projects.md) | Full public/private/archive map |
-| CV update mode | [CV Evidence Log](CV_EVIDENCE_LOG.md) | Anonymised delivery evidence and draft bullets |
-
----
-
-## Snapshot
-
-```yaml
-live_product: Inference Brief
-strongest_private_system: Happening
-best_public_data_app: Marketing ML Lakehouse
-largest_public_ml_dataset: 3.4M+ recommendation interactions
-main_pattern: messy input -> clean data -> useful product
-```
+<table>
+<tr>
+<td width="20%" valign="top">
+  <h3>Browse</h3>
+  <p><a href="https://matthewpaver.github.io/MatthewPaver/store/"><strong>Idea Store</strong></a></p>
+  <p>Visual app-store view of the strongest projects.</p>
+</td>
+<td width="20%" valign="top">
+  <h3>Open</h3>
+  <p><a href="https://inferencebrief.co/"><strong>Inference Brief</strong></a></p>
+  <p>Live AI news product you can try now.</p>
+</td>
+<td width="20%" valign="top">
+  <h3>Read</h3>
+  <p><a href="CASE_STUDIES.md"><strong>Case Studies</strong></a></p>
+  <p>Short writeups for private systems and product decisions.</p>
+</td>
+<td width="20%" valign="top">
+  <h3>Compare</h3>
+  <p><a href="Projects.md"><strong>Project Index</strong></a></p>
+  <p>Full map across public, private, live, and archived work.</p>
+</td>
+<td width="20%" valign="top">
+  <h3>Evidence</h3>
+  <p><a href="CV_EVIDENCE_LOG.md"><strong>CV Log</strong></a></p>
+  <p>Anonymised delivery notes and draft CV bullets.</p>
+</td>
+</tr>
+</table>
 
 ---
 
 ## What I Build
 
-| Area | Plain-English version | Examples |
-|:---|:---|:---|
-| AI products | Apps where AI is part of a real user workflow | Inference Brief, AI Study Companion |
-| Data pipelines | Messy sources turned into clean, repeatable data | Happening, Marketing ML Lakehouse |
-| Automation | Jobs that run on a schedule and can be checked | Happening, newsletter tools |
-| Analytics apps | Analysis packaged for people to use, not just read | ProjectLens, HR dashboards |
-| ML projects | Ranking, embeddings, forecasting, and generation | Recommendation system, Architexa, sentence similarity |
+<table>
+<tr>
+<td width="20%" valign="top">
+  <h3>AI Products</h3>
+  <p>Apps where AI sits inside a real user workflow.</p>
+  <p><code>Inference Brief</code><br /><code>AI Study Companion</code></p>
+</td>
+<td width="20%" valign="top">
+  <h3>Data Pipelines</h3>
+  <p>Messy sources turned into clean, repeatable data.</p>
+  <p><code>Happening</code><br /><code>Marketing ML Lakehouse</code></p>
+</td>
+<td width="20%" valign="top">
+  <h3>Automation</h3>
+  <p>Scheduled jobs that can be checked and trusted.</p>
+  <p><code>Happening</code><br /><code>Newsletter tools</code></p>
+</td>
+<td width="20%" valign="top">
+  <h3>Analytics Apps</h3>
+  <p>Analysis packaged into something people can use.</p>
+  <p><code>ProjectLens</code><br /><code>HR dashboards</code></p>
+</td>
+<td width="20%" valign="top">
+  <h3>ML Projects</h3>
+  <p>Ranking, embeddings, forecasting, and generation.</p>
+  <p><code>Recommender</code><br /><code>Architexa</code></p>
+</td>
+</tr>
+</table>
 
 ---
 
-## Best Work
+## Project Map
 
-| Project | What it does | Stack |
-|:---|:---|:---|
-| [Inference Brief](https://inferencebrief.co/) | Collects AI stories, scores them, writes short briefings, publishes issues, and gives readers bookmarks/history/preferences | `Next.js` `TypeScript` `Supabase` `Python` `Stripe` |
-| [Happening](CASE_STUDIES.md#happening) | Turns 103+ London venue websites into clean event data with crawling, extraction, dedupe, daily checks, and 167 tests | `Python` `Playwright` `SQLite` `Pydantic` `GitHub Actions` |
-| [AI Study Companion](CASE_STUDIES.md#ai-study-companion) | Upload notes, generate flashcards/quizzes/study plans, and review with spaced repetition | `FastAPI` `PostgreSQL` `Redis` `Celery` `LLMs` |
-| [Smart Job Market Intelligence](CASE_STUDIES.md#smart-job-market-intelligence) | Scrapes job listings and turns salary, skill, remote-work, and volume changes into reports and alerts | `Python` `FastAPI` `PostgreSQL` `Redis` `Celery` |
-| QuickSupply | Scheduling MVP for schools, teachers, and agency staff with sequential assignment and live status updates | `Next.js` `TypeScript` `PostgreSQL` `SSE` |
-| Operations Platform Prototype | Private prototype for resident requests, service-charge visibility, ticket audit trails, payments, and AI triage | `Next.js` `TypeScript` `Payments` `AI triage` |
+| Project | Type | What it does | Stack |
+|:---|:---|:---|:---|
+| [Inference Brief](https://inferencebrief.co/) | Live product | Collects AI stories, scores them, writes short briefings, publishes issues, and gives readers bookmarks/history/preferences | `Next.js` `TypeScript` `Supabase` `Python` `Stripe` |
+| [Happening](CASE_STUDIES.md#happening) | Private system | Turns 103+ London venue websites into clean event data with crawling, extraction, dedupe, daily checks, and 167 tests | `Python` `Playwright` `SQLite` `Pydantic` |
+| [Marketing ML Lakehouse](https://github.com/MatthewPaver/marketing-ml-lakehouse) | Public repo | Runnable DuckDB lakehouse with model training, quality checks, and Streamlit reporting | `Python` `DuckDB` `XGBoost` `Streamlit` |
+| [AI Study Companion](CASE_STUDIES.md#ai-study-companion) | Private product | Upload notes, generate flashcards/quizzes/study plans, and review with spaced repetition | `FastAPI` `PostgreSQL` `Redis` `Celery` |
+| [ProjectLens](https://github.com/MatthewPaver/ProjectLens) | Public repo | Upload project schedule data and spot slippage, milestone pressure, and reporting issues | `Python` `Flask` `pandas` |
+| [Dating App Recommendation System](https://github.com/MatthewPaver/dating-app-recommendation-system) | Public repo | Implicit-feedback recommender with 3.4M+ interactions, temporal evaluation, and Top-K metrics | `Python` `NumPy` `SciPy` |
+| QuickSupply | Private MVP | Scheduling MVP for schools, teachers, and agency staff with sequential assignment and live status updates | `Next.js` `TypeScript` `PostgreSQL` `SSE` |
+| Operations Platform Prototype | Private prototype | Resident requests, service-charge visibility, ticket audit trails, payments, and AI triage | `Next.js` `TypeScript` `Payments` |
 
----
-
-## Public Repos To Inspect
+<details>
+<summary>More public repos</summary>
 
 | Repo | What to look at |
 |:---|:---|
-| [marketing-ml-lakehouse](https://github.com/MatthewPaver/marketing-ml-lakehouse) | Runnable DuckDB lakehouse, XGBoost models, quality checks, Streamlit dashboard |
-| [ProjectLens](https://github.com/MatthewPaver/ProjectLens) | Flask upload flow for project schedule risk and reporting outputs |
 | [Architexa](https://github.com/MatthewPaver/Architexa) | Conditional GAN, image-generation API, dataset pipeline |
-| [dating-app-recommendation-system](https://github.com/MatthewPaver/dating-app-recommendation-system) | Implicit-feedback recommender with temporal evaluation and Top-K metrics |
 | [sentence-similarity-analysis](https://github.com/MatthewPaver/sentence-similarity-analysis) | Sentence-transformer embeddings and cosine similarity caveats |
 | [pyspark-kafka-streaming](https://github.com/MatthewPaver/pyspark-kafka-streaming) | Compact Kafka and PySpark streaming examples |
+| [hr-performance-dashboards](https://github.com/MatthewPaver/hr-performance-dashboards) | Power BI dashboards, prepared CSVs, screenshots, and stakeholder notes |
+
+</details>
 
 ---
 
-## How I Think About Projects
+## Operating Model
 
 ```mermaid
 flowchart LR
@@ -159,28 +192,49 @@ The goal is simple: make the input clear, make the process repeatable, expose th
 
 ## Current Focus
 
-- AI products that have a real interface, not just a prompt.
-- Data pipelines that can be rerun and checked.
-- Analytics tools that package the answer for the person who needs it.
-- Public-safe writeups for private systems, so the engineering is visible without leaking sensitive context.
+<table>
+<tr>
+<td width="33%" valign="top">
+  <h3>Ship the interface</h3>
+  <p>AI work should have a screen, a user path, or an output someone can actually inspect.</p>
+</td>
+<td width="33%" valign="top">
+  <h3>Make the data repeatable</h3>
+  <p>Pipelines should be rerunnable, checked, and documented enough to survive beyond a one-off notebook.</p>
+</td>
+<td width="33%" valign="top">
+  <h3>Show private work safely</h3>
+  <p>Use anonymised case studies, diagrams, and delivery notes when the real repo or context cannot be public.</p>
+</td>
+</tr>
+</table>
 
 ---
 
-## Stack
+## Selected Credentials
 
-`Python` `TypeScript` `FastAPI` `Next.js` `PostgreSQL` `Redis` `DuckDB` `Supabase` `Firebase` `GCP` `Docker` `GitHub Actions` `Playwright` `n8n`
+<p align="center">
+  <a href="https://cp.certmetrics.com/amazon/en/public/verify/credential/455c09a58c6c43beb001b21d3ccec2a0">
+    <img src="https://img.shields.io/badge/AWS-AI_Practitioner-FF9900?style=for-the-badge&logo=amazonwebservices&logoColor=white" alt="AWS Certified AI Practitioner" />
+  </a>
+  <a href="https://cp.certmetrics.com/amazon/en/public/verify/credential/d0dd54bf93df495da5c3e75ee69940fe">
+    <img src="https://img.shields.io/badge/AWS-Cloud_Practitioner-232F3E?style=for-the-badge&logo=amazonwebservices&logoColor=white" alt="AWS Certified Cloud Practitioner" />
+  </a>
+  <a href="https://drive.google.com/file/d/15oXe_G86TEiETdC8kGBhbnKoMjVZ5mQQ/view">
+    <img src="https://img.shields.io/badge/Neo4j-Certified_Professional-008CC1?style=for-the-badge&logo=neo4j&logoColor=white" alt="Neo4j Certified Professional" />
+  </a>
+  <a href="https://drive.google.com/file/d/1NgSeIIF49Sqh2DAMY5KQEtnaddSc1Sqw/view">
+    <img src="https://img.shields.io/badge/Hugging_Face-AI_Agents_Course-FFD21E?style=for-the-badge" alt="Hugging Face AI Agents Course" />
+  </a>
+</p>
 
----
+Certifications are supporting evidence. The project work above is the main proof.
 
 <details>
-<summary>Certifications</summary>
+<summary>More credentials</summary>
 
 | Certification | Issued By |
 |:---|:---|
-| [AWS Certified AI Practitioner](https://cp.certmetrics.com/amazon/en/public/verify/credential/455c09a58c6c43beb001b21d3ccec2a0) | Amazon Web Services |
-| [AWS Certified Cloud Practitioner](https://cp.certmetrics.com/amazon/en/public/verify/credential/d0dd54bf93df495da5c3e75ee69940fe) | Amazon Web Services |
-| [Neo4j Certified Professional](https://drive.google.com/file/d/15oXe_G86TEiETdC8kGBhbnKoMjVZ5mQQ/view) | Neo4j |
-| [AI Agents Course](https://drive.google.com/file/d/1NgSeIIF49Sqh2DAMY5KQEtnaddSc1Sqw/view) | Hugging Face |
 | [RPA Developer Advanced](https://drive.google.com/file/d/15lrcn5_Cn4g-kD165xGNLUGUGXtCptk-/view) | UiPath |
 | [BCS Diploma in IT](https://drive.google.com/file/d/15yLBx8nzlhn_PwrGoqQbumRG8zRQPC9t/view) | BCS |
 | [BCS Certificate in IT](https://drive.google.com/file/d/160nzem63oIEv3EF9mCU9NGWwwA4NMdMZ/view) | BCS |
