@@ -31,7 +31,50 @@ I build projects where the hard part is turning messy inputs into something peop
   <img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" />
 </a>
 
+<br />
+
+![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white)
+![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white)
+![FastAPI](https://img.shields.io/badge/FastAPI-009688?style=flat-square&logo=fastapi&logoColor=white)
+![Next.js](https://img.shields.io/badge/Next.js-000000?style=flat-square&logo=nextdotjs&logoColor=white)
+![DuckDB](https://img.shields.io/badge/DuckDB-FFF000?style=flat-square&logo=duckdb&logoColor=black)
+![Supabase](https://img.shields.io/badge/Supabase-3FCF8E?style=flat-square&logo=supabase&logoColor=white)
+![GCP](https://img.shields.io/badge/GCP-4285F4?style=flat-square&logo=googlecloud&logoColor=white)
+
 </div>
+
+---
+
+## Featured Shelf
+
+<table>
+<tr>
+<td width="33%" valign="top">
+  <a href="https://inferencebrief.co/">
+    <img src="store/assets/inference-brief.png" alt="Inference Brief screenshot" />
+  </a>
+  <h3>Inference Brief</h3>
+  <p>Live AI news product. Collects stories, scores them, writes short briefings, and gives readers bookmarks, history, and preferences.</p>
+  <p><code>Next.js</code> <code>TypeScript</code> <code>Supabase</code> <code>Python</code></p>
+</td>
+<td width="33%" valign="top">
+  <a href="CASE_STUDIES.md#happening">
+    <img src="store/assets/happening-pipeline.svg" alt="Happening ingestion pipeline visual" />
+  </a>
+  <h3>Happening</h3>
+  <p>Private ingestion platform. Turns 103+ London venue websites into structured event data with crawling, dedupe, checks, and tests.</p>
+  <p><code>Python</code> <code>Playwright</code> <code>SQLite</code> <code>Pydantic</code></p>
+</td>
+<td width="33%" valign="top">
+  <a href="https://github.com/MatthewPaver/marketing-ml-lakehouse">
+    <img src="store/assets/marketing-lakehouse.svg" alt="Marketing ML Lakehouse workflow visual" />
+  </a>
+  <h3>Marketing ML Lakehouse</h3>
+  <p>Runnable data app. Loads raw marketing CSVs into DuckDB, trains XGBoost models, checks quality, and serves a dashboard.</p>
+  <p><code>Python</code> <code>DuckDB</code> <code>XGBoost</code> <code>Streamlit</code></p>
+</td>
+</tr>
+</table>
 
 ---
 
@@ -126,19 +169,6 @@ The goal is simple: make the input clear, make the process repeatable, expose th
 ## Stack
 
 `Python` `TypeScript` `FastAPI` `Next.js` `PostgreSQL` `Redis` `DuckDB` `Supabase` `Firebase` `GCP` `Docker` `GitHub Actions` `Playwright` `n8n`
-
-<p align="center">
-  <img src="https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white" alt="Python" />
-  <img src="https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white" alt="TypeScript" />
-  <img src="https://img.shields.io/badge/FastAPI-009688?style=flat-square&logo=fastapi&logoColor=white" alt="FastAPI" />
-  <img src="https://img.shields.io/badge/Next.js-000000?style=flat-square&logo=nextdotjs&logoColor=white" alt="Next.js" />
-  <img src="https://img.shields.io/badge/PostgreSQL-4169E1?style=flat-square&logo=postgresql&logoColor=white" alt="PostgreSQL" />
-  <img src="https://img.shields.io/badge/Redis-DC382D?style=flat-square&logo=redis&logoColor=white" alt="Redis" />
-  <img src="https://img.shields.io/badge/DuckDB-FFF000?style=flat-square&logo=duckdb&logoColor=black" alt="DuckDB" />
-  <img src="https://img.shields.io/badge/Supabase-3FCF8E?style=flat-square&logo=supabase&logoColor=white" alt="Supabase" />
-  <img src="https://img.shields.io/badge/GCP-4285F4?style=flat-square&logo=googlecloud&logoColor=white" alt="GCP" />
-  <img src="https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white" alt="Docker" />
-</p>
 
 ---
 
