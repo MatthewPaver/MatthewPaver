@@ -144,12 +144,18 @@ More work: [Project Index](Projects.md) for the curated view of current systems,
 - Data and analytics tooling that turns messy inputs into something decision-useful.
 
 
-## What I'm Building Operationally
+## What I'm Building in Professional Settings (Anonymised)
 
-- A governance-first delivery pattern for AI apps and automations (gate checks, security checks, ownership checks).
-- A structured documentation system that keeps project updates, decision logs, and implementation guides tightly linked.
-- Repeatable review loops for quality control: link integrity, stale-state detection, and portfolio-level risk tracking.
-- Practical productionisation discipline for lightweight internal tools: auth, permissions, observability, and handover readiness.
+- Internal AI assistants and workflow automations, taken from discovery through production readiness.
+- Delivery governance design: intake, risk classification, security and privacy gates, and clear go-live criteria.
+- Production hardening for lightweight apps: authentication, access boundaries, service-account hygiene, auditability, and handover readiness.
+- Documentation operations: linked playbooks, decision logs, and portfolio views maintained through recurring review loops.
+
+## Operational Tech Stack
+
+`Python` `TypeScript` `n8n` `FastAPI` `Firebase` `GCP` `PostgreSQL` `Redis` `GitHub Actions` `Docker` `Obsidian`
+
+_All professional examples are intentionally anonymised and focused on engineering patterns rather than internal identifiers._
 
 ---
 
