@@ -1,27 +1,31 @@
 <svg width="1200" height="680" viewBox="0 0 1200 680" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
   <title id="title">Sentence similarity embedding thumbnail</title>
-  <desc id="desc">A portfolio thumbnail showing sentence embeddings, cosine similarity scores, and retrieval caveats.</desc>
+  <desc id="desc">A thumbnail showing sentence embeddings, vector search, cosine scores, and a reminder that similarity is not fact checking.</desc>
   <rect width="1200" height="680" fill="#FBFAF7"/>
-  <rect x="52" y="52" width="1096" height="576" fill="#FFFFFF" stroke="#151515" stroke-width="4"/>
-  <text x="88" y="116" font-family="Arial, Helvetica, sans-serif" font-size="18" font-weight="900" letter-spacing="5" fill="#1D4F91">SENTENCE SIMILARITY</text>
-  <text x="88" y="180" font-family="Georgia, serif" font-size="60" font-weight="700" fill="#151515">Embeddings rank meaning, not truth</text>
-  <text x="90" y="222" font-family="Arial, Helvetica, sans-serif" font-size="22" font-weight="700" fill="#57534E">Transformer vectors, cosine ranking, and clear caveats for retrieval workflows.</text>
-  <rect x="90" y="294" width="352" height="240" fill="#F4F0E9" stroke="#151515" stroke-width="3"/>
-  <text x="120" y="342" font-family="Arial, Helvetica, sans-serif" font-size="22" font-weight="900" fill="#151515">Query sentence</text>
-  <text x="120" y="390" font-family="Georgia, serif" font-size="31" font-weight="700" fill="#151515">"Which sentences are closest?"</text>
-  <rect x="514" y="294" width="250" height="240" fill="#151515"/>
-  <circle cx="578" cy="370" r="12" fill="#0F766E"/>
-  <circle cx="620" cy="430" r="12" fill="#0F766E"/>
-  <circle cx="704" cy="354" r="12" fill="#8F5D12"/>
-  <circle cx="668" cy="474" r="12" fill="#1D4F91"/>
-  <path d="M578 370L620 430L668 474L704 354" stroke="#FFFFFF" stroke-opacity="0.55" stroke-width="3"/>
-  <text x="548" y="578" font-family="Arial, Helvetica, sans-serif" font-size="20" font-weight="900" fill="#151515">Vector space</text>
-  <rect x="834" y="294" width="276" height="240" fill="#FFFFFF" stroke="#D8D2C8" stroke-width="3"/>
-  <g font-family="Arial, Helvetica, sans-serif" font-size="18" font-weight="900">
-    <text x="862" y="352" fill="#151515">0.91 · nearest match</text>
-    <text x="862" y="410" fill="#151515">0.78 · related context</text>
-    <text x="862" y="468" fill="#151515">0.42 · weaker signal</text>
+  <rect x="56" y="56" width="1088" height="568" fill="#FFFFFF" stroke="#151515" stroke-width="4"/>
+  <text x="90" y="120" font-family="Arial, Helvetica, sans-serif" font-size="18" font-weight="900" letter-spacing="5" fill="#1D4F91">SENTENCE SIMILARITY</text>
+  <text x="90" y="178" font-family="Georgia, serif" font-size="50" font-weight="700" fill="#151515">Vector search with clear caveats</text>
+  <text x="92" y="220" font-family="Arial, Helvetica, sans-serif" font-size="22" font-weight="800" fill="#57534E">Embeddings, cosine ranking, and retrieval limits.</text>
+
+  <rect x="90" y="294" width="284" height="204" fill="#F4F0E9" stroke="#151515" stroke-width="3"/>
+  <text x="120" y="346" font-family="Arial, Helvetica, sans-serif" font-size="22" font-weight="900" fill="#151515">Query</text>
+  <text x="120" y="394" font-family="Georgia, serif" font-size="30" font-weight="700" fill="#151515">closest meaning?</text>
+
+  <rect x="460" y="270" width="280" height="252" fill="#151515"/>
+  <circle cx="534" cy="356" r="14" fill="#0F766E"/>
+  <circle cx="590" cy="428" r="14" fill="#0F766E"/>
+  <circle cx="672" cy="338" r="14" fill="#D9A441"/>
+  <circle cx="654" cy="462" r="14" fill="#1D4F91"/>
+  <path d="M534 356L590 428L654 462L672 338" stroke="#FFFFFF" stroke-opacity="0.58" stroke-width="4"/>
+  <text x="500" y="570" font-family="Arial, Helvetica, sans-serif" font-size="20" font-weight="900" fill="#151515">Embedding space</text>
+
+  <rect x="826" y="294" width="286" height="204" fill="#FFFFFF" stroke="#D8D2C8" stroke-width="3"/>
+  <g font-family="Arial, Helvetica, sans-serif" font-size="20" font-weight="900">
+    <text x="858" y="354" fill="#151515">0.91 nearest match</text>
+    <text x="858" y="414" fill="#151515">0.78 related context</text>
+    <text x="858" y="474" fill="#151515">0.42 weak signal</text>
   </g>
-  <rect x="834" y="552" width="276" height="44" fill="#9F3A2F"/>
-  <text x="862" y="581" font-family="Arial, Helvetica, sans-serif" font-size="17" font-weight="900" fill="#FFFFFF">Caveat: similarity ≠ fact check</text>
+
+  <rect x="90" y="548" width="1022" height="48" fill="#9F3A2F"/>
+  <text x="122" y="580" font-family="Arial, Helvetica, sans-serif" font-size="21" font-weight="900" fill="#FFFFFF">Similarity is useful for retrieval. It is not fact checking.</text>
 </svg>

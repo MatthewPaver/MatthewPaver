@@ -294,6 +294,11 @@ h1 {
   border-bottom: 1px solid var(--line);
 }
 
+.selected-card img[src$=".svg"] {
+  object-fit: contain;
+  background: var(--surface-warm);
+}
+
 .selected-card span,
 .selected-card small {
   color: var(--muted);
@@ -534,6 +539,11 @@ h1 {
   object-fit: cover;
   border-bottom: 1px solid var(--line);
   filter: saturate(0.96) contrast(1.02);
+}
+
+.image-card img[src$=".svg"] {
+  object-fit: contain;
+  background: var(--surface-warm);
 }
 
 .image-card img.inference-shot,

@@ -1,39 +1,32 @@
 <svg width="1200" height="680" viewBox="0 0 1200 680" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
   <title id="title">Happening event ingestion pipeline</title>
-  <desc id="desc">An anonymised visual showing venue source configs flowing through crawling, extraction, validation, deduplication, storage, and quality checks.</desc>
+  <desc id="desc">An anonymised thumbnail showing venue source configs flowing through crawling, extraction, validation, storage, and reliability checks.</desc>
   <rect width="1200" height="680" fill="#161411"/>
-  <path d="M0 80H1200M0 160H1200M0 240H1200M0 320H1200M0 400H1200M0 480H1200M0 560H1200" stroke="#FFF8EB" stroke-opacity="0.08"/>
-  <path d="M80 0V680M160 0V680M240 0V680M320 0V680M400 0V680M480 0V680M560 0V680M640 0V680M720 0V680M800 0V680M880 0V680M960 0V680M1040 0V680M1120 0V680" stroke="#FFF8EB" stroke-opacity="0.08"/>
-  <text x="72" y="86" font-family="Arial, Helvetica, sans-serif" font-size="18" font-weight="900" letter-spacing="5" fill="#D9A441">HAPPENING</text>
-  <text x="72" y="142" font-family="Georgia, serif" font-size="56" font-weight="700" fill="#FFF8EB">103+ venue sources into clean event data</text>
-  <text x="72" y="186" font-family="Arial, Helvetica, sans-serif" font-size="21" font-weight="700" fill="#CFC4B3">Config-driven crawling, extraction, validation, deduplication, and quality checks.</text>
+  <path d="M0 85H1200M0 170H1200M0 255H1200M0 340H1200M0 425H1200M0 510H1200M0 595H1200" stroke="#FFF8EB" stroke-opacity="0.07"/>
+  <path d="M85 0V680M170 0V680M255 0V680M340 0V680M425 0V680M510 0V680M595 0V680M680 0V680M765 0V680M850 0V680M935 0V680M1020 0V680M1105 0V680" stroke="#FFF8EB" stroke-opacity="0.07"/>
+  <rect x="58" y="54" width="1084" height="572" fill="#161411" stroke="#FFF8EB" stroke-opacity="0.2" stroke-width="3"/>
+  <text x="86" y="108" font-family="Arial, Helvetica, sans-serif" font-size="18" font-weight="900" letter-spacing="5" fill="#D9A441">HAPPENING</text>
+  <text x="84" y="172" font-family="Georgia, serif" font-size="48" font-weight="700" fill="#FFF8EB">Venue sources into clean event data</text>
+  <text x="88" y="214" font-family="Arial, Helvetica, sans-serif" font-size="22" font-weight="800" fill="#CFC4B3">103+ configs · daily automation · dedupe · validation · 167 tests</text>
 
-  <g font-family="Arial, Helvetica, sans-serif" font-weight="900" font-size="20">
-    <rect x="72" y="270" width="160" height="110" fill="#AD3F32" stroke="#FFF8EB" stroke-width="3"/>
-    <text x="96" y="318" fill="#FFF8EB">Sources</text>
-    <text x="96" y="350" font-size="36" fill="#FFF8EB">103+</text>
-
-    <rect x="284" y="270" width="160" height="110" fill="#0D6F5F" stroke="#FFF8EB" stroke-width="3"/>
-    <text x="308" y="318" fill="#FFF8EB">Crawler</text>
-    <text x="308" y="350" font-size="18" fill="#FFF8EB">Playwright</text>
-
-    <rect x="496" y="270" width="160" height="110" fill="#1F5F9F" stroke="#FFF8EB" stroke-width="3"/>
-    <text x="520" y="318" fill="#FFF8EB">Extract</text>
-    <text x="520" y="350" font-size="18" fill="#FFF8EB">Structured</text>
-
-    <rect x="708" y="270" width="160" height="110" fill="#D9A441" stroke="#FFF8EB" stroke-width="3"/>
-    <text x="732" y="318" fill="#161411">Validate</text>
-    <text x="732" y="350" font-size="18" fill="#161411">Schemas</text>
-
-    <rect x="920" y="270" width="160" height="110" fill="#FFF8EB" stroke="#8F5D12" stroke-width="3"/>
-    <text x="944" y="318" fill="#161411">SQLite</text>
-    <text x="944" y="350" font-size="18" fill="#161411">Event store</text>
+  <g font-family="Arial, Helvetica, sans-serif">
+    <rect x="84" y="292" width="176" height="132" fill="#AD3F32" stroke="#FFF8EB" stroke-width="3"/>
+    <text x="112" y="344" font-size="20" font-weight="900" fill="#FFF8EB">Sources</text>
+    <text x="112" y="386" font-size="42" font-weight="900" fill="#FFF8EB">103+</text>
+    <rect x="324" y="292" width="176" height="132" fill="#0D6F5F" stroke="#FFF8EB" stroke-width="3"/>
+    <text x="352" y="344" font-size="20" font-weight="900" fill="#FFF8EB">Crawl</text>
+    <text x="352" y="382" font-size="22" font-weight="900" fill="#D4EFEA">Playwright</text>
+    <rect x="564" y="292" width="176" height="132" fill="#1F5F9F" stroke="#FFF8EB" stroke-width="3"/>
+    <text x="592" y="344" font-size="20" font-weight="900" fill="#FFF8EB">Extract</text>
+    <text x="592" y="382" font-size="22" font-weight="900" fill="#D3E5F6">Structured</text>
+    <rect x="804" y="292" width="176" height="132" fill="#D9A441" stroke="#FFF8EB" stroke-width="3"/>
+    <text x="832" y="344" font-size="20" font-weight="900" fill="#161411">Validate</text>
+    <text x="832" y="382" font-size="22" font-weight="900" fill="#161411">SQLite</text>
   </g>
 
-  <path d="M236 325H276M448 325H488M660 325H700M872 325H912" stroke="#FFF8EB" stroke-width="5"/>
-  <path d="M276 325L262 313M276 325L262 337M488 325L474 313M488 325L474 337M700 325L686 313M700 325L686 337M912 325L898 313M912 325L898 337" stroke="#FFF8EB" stroke-width="5" stroke-linecap="round"/>
+  <path d="M270 358H314M510 358H554M750 358H794" stroke="#FFF8EB" stroke-width="6"/>
+  <path d="M314 358L298 344M314 358L298 372M554 358L538 344M554 358L538 372M794 358L778 344M794 358L778 372" stroke="#FFF8EB" stroke-width="6" stroke-linecap="round"/>
 
-  <rect x="72" y="466" width="1008" height="98" fill="#FFF8EB" stroke="#8F5D12" stroke-width="3"/>
-  <text x="104" y="508" font-family="Arial, Helvetica, sans-serif" font-size="22" font-weight="900" fill="#161411">Reliability signal</text>
-  <text x="104" y="544" font-family="Arial, Helvetica, sans-serif" font-size="22" font-weight="800" fill="#4E473F">167 tests, daily automation, source configuration, dedupe checks, and safe iteration.</text>
+  <rect x="84" y="496" width="896" height="70" fill="#FFF8EB" stroke="#8F5D12" stroke-width="3"/>
+  <text x="118" y="540" font-family="Arial, Helvetica, sans-serif" font-size="24" font-weight="900" fill="#161411">Reliability signal: 167 tests and source-level quality checks</text>
 </svg>
