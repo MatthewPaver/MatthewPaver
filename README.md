@@ -76,7 +76,7 @@ I build practical systems from messy inputs: crawled websites, scraped listings,
 </tr>
 </table>
 
-Open the [Portfolio Store](https://matthewpaver.github.io/MatthewPaver/store/) for the full app-store view across live products, private systems, public repos, credentials, and archived experiments.
+Open the [Portfolio Store](https://matthewpaver.github.io/MatthewPaver/store/) for the full app-store view, screenshots, demos, credentials, and archived experiments.
 
 ---
 
@@ -147,45 +147,12 @@ Open the [Portfolio Store](https://matthewpaver.github.io/MatthewPaver/store/) f
 
 ---
 
-## Project Map
+## Explore
 
-| Project | Why it exists | What to inspect |
-|:---|:---|:---|
-| [Inference Brief](https://inferencebrief.co/) | AI-news overload | Live product, issue archive, accounts, bookmarks, history, preferences |
-| [Happening](CASE_STUDIES.md#happening) | Fragmented event listings | 103+ source configs, ingestion workflow, dedupe, validation, scheduled checks |
-| [Marketing ML Lakehouse](https://github.com/MatthewPaver/marketing-ml-lakehouse) | Notebook-to-product analytics | DuckDB medallion flow, quality checks, XGBoost training, Streamlit app |
-| [AI Study Companion](CASE_STUDIES.md#ai-study-companion) | Turning notes into revision | Upload flow, generated flashcards/quizzes/study plans, spaced repetition |
-| [ProjectLens](https://github.com/MatthewPaver/ProjectLens) | Project schedule risk | Upload-to-analysis flow, slippage reporting, milestone pressure, Power BI outputs |
-| [Dating App Recommendation System](https://github.com/MatthewPaver/dating-app-recommendation-system) | Ranking candidates from interaction data | 3.4M+ interactions, temporal evaluation, Top-K metrics |
+The [Portfolio Store](https://matthewpaver.github.io/MatthewPaver/store/) is the main index. The [case studies](CASE_STUDIES.md) cover the private systems without exposing private code, and [Projects.md](Projects.md) keeps the full public/private/archive map.
 
 <details>
-<summary>More repos</summary>
-
-| Repo | Why it exists | What to inspect |
-|:---|:---|
-| [Architexa](https://github.com/MatthewPaver/Architexa) | Architecture image generation | Conditional GAN, dataset pipeline, Flask API |
-| [sentence-similarity-analysis](https://github.com/MatthewPaver/sentence-similarity-analysis) | Explaining semantic search | Sentence-transformer embeddings, cosine ranking, retrieval caveats |
-| [pyspark-kafka-streaming](https://github.com/MatthewPaver/pyspark-kafka-streaming) | Streaming data examples | Kafka and PySpark pipeline basics |
-| [hr-performance-dashboards](https://github.com/MatthewPaver/hr-performance-dashboards) | Stakeholder reporting | Power BI dashboards, prepared CSVs, screenshots, commentary |
-
-</details>
-
----
-
-## Build Pattern
-
-```mermaid
-flowchart LR
-    A["Messy input"] --> B["Collect"]
-    B --> C["Clean + validate"]
-    C --> D["Store"]
-    D --> E["Model / analyse / rank"]
-    E --> F["Interface / report / workflow"]
-    F --> G["Tests + feedback"]
-    G --> C
-```
-
-The strongest work is the whole loop: not just the model, not just the dashboard, not just the script. The data path should be repeatable, the output should be easy to inspect, and failures should be visible.
+<summary>Latest public activity</summary>
 
 <!-- AUTO:ACTIVITY_START -->
 ## Latest Public Activity (Auto-Updated)
@@ -204,3 +171,5 @@ _This section is automatically refreshed by GitHub Actions._
 | [netflix-content-analysis](https://github.com/MatthewPaver/netflix-content-analysis) | 2026-05-15 | Notebook EDA of Netflix title data with country, genre, timeline, and catalog growth an… |
 
 <!-- AUTO:ACTIVITY_END -->
+
+</details>

@@ -341,6 +341,66 @@ h1 {
   line-height: 1.4;
 }
 
+.demo-reels {
+  margin: 0 0 42px;
+}
+
+.demo-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 16px;
+}
+
+.demo-card {
+  display: grid;
+  gap: 10px;
+  border: 1px solid var(--line);
+  background: var(--surface);
+  color: var(--ink);
+  padding-bottom: 16px;
+  text-decoration: none;
+  transition: border-color 160ms ease, background 160ms ease;
+}
+
+.demo-card:hover {
+  border-color: var(--line-strong);
+  background: var(--surface-warm);
+}
+
+.demo-card img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-bottom: 1px solid var(--line);
+}
+
+.demo-card span,
+.demo-card small {
+  color: var(--muted);
+  padding: 0 16px;
+}
+
+.demo-card span {
+  margin-top: 4px;
+  color: var(--accent);
+  font-size: 0.7rem;
+  font-weight: 850;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.demo-card strong {
+  padding: 0 16px;
+  font-family: Charter, "Iowan Old Style", Georgia, serif;
+  font-size: 1.55rem;
+}
+
+.demo-card small {
+  font-size: 0.9rem;
+  font-weight: 600;
+  line-height: 1.4;
+}
+
 .credential-band {
   display: grid;
   grid-template-columns: minmax(240px, 320px) minmax(0, 1fr);
@@ -564,7 +624,8 @@ h1 {
 
 .image-card img.inference-shot,
 .image-card img.study-shot,
-.image-card img.poster-shot {
+.image-card img.poster-shot,
+.image-card img.product-shot {
   object-position: top center;
 }
 
@@ -805,6 +866,7 @@ h1 {
   }
 
   .selected-grid,
+  .demo-grid,
   .store-grid {
     grid-template-columns: 1fr;
   }

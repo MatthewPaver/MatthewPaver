@@ -14,10 +14,26 @@ Each case study is deliberately short: problem, goal, what I built, architecture
 
 | Case study | Best signal |
 |:---|:---|
-| [Happening](#happening) | Reliable ingestion from fragmented public web sources |
+| [Featured Build: Happening](#featured-build-happening) | Reliable ingestion from fragmented public web sources |
 | [Inference Brief](#inference-brief) | Live AI product plus publishing workflow |
 | [AI Study Companion](#ai-study-companion) | Document AI, async jobs, and adaptive learning loops |
 | [Smart Job Market Intelligence](#smart-job-market-intelligence) | Repeatable market intelligence product from scraped listings |
+
+---
+
+## Featured Build: Happening
+
+**Problem:** London event data looks simple from the outside, but the source material is messy: venue pages change structure, dates and prices are inconsistent, images go missing, and the same event can appear in more than one place.
+
+**Constraints:** the system needed to handle many public sources without exposing private operational details, stay cheap to run, make failures visible, and let new sources be added without rewriting the pipeline each time.
+
+**Decisions:** I treated each venue as an explicit source configuration, separated crawling from extraction and normalisation, kept SQLite as the reliable local store, and made source quality visible through checks rather than hiding scrape failures in logs.
+
+**Tradeoffs:** deterministic rules are less glamorous than an all-LLM scraper, but they are easier to debug, test, and operate. Playwright is heavier than plain HTTP, but it handles modern venue sites that render useful content client-side.
+
+**Result:** the system maps **103+ venue sources** into structured event data, with dedupe, validation, source-level quality checks, and a **167-test** reliability suite. The important part is not just collecting events; it is knowing when the data path is healthy.
+
+**Stack:** `Python` `Playwright` `SQLite` `Pydantic` `Next.js`
 
 ---
 
