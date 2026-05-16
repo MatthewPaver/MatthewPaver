@@ -47,7 +47,7 @@ I build practical systems from messy inputs: crawled websites, scraped listings,
 <tr>
 <td width="33%" valign="top">
   <a href="https://inferencebrief.co/">
-    <img src="store/assets/inference-brief.png" alt="Inference Brief product screenshot" />
+    <img src="store/assets/inference-preview.gif" alt="Animated Inference Brief product preview" />
   </a>
   <h3>Inference Brief</h3>
   <p>A working reader for staying current with AI without chasing noisy feeds. It has story collection, scoring, summaries, publishing, accounts, bookmarks, and history.</p>
@@ -56,7 +56,7 @@ I build practical systems from messy inputs: crawled websites, scraped listings,
 </td>
 <td width="33%" valign="top">
   <a href="CASE_STUDIES.md#happening">
-    <img src="store/assets/happening-pipeline.svg" alt="Happening ingestion pipeline visual" />
+    <img src="store/assets/happening-preview.gif" alt="Animated Happening ingestion preview" />
   </a>
   <h3>Happening</h3>
   <p>Venue event data is scattered across inconsistent public websites. Happening turns 103+ sources into structured event data with crawling, extraction, dedupe, checks, and tests.</p>
@@ -64,13 +64,13 @@ I build practical systems from messy inputs: crawled websites, scraped listings,
   <p><a href="CASE_STUDIES.md#happening">Read case study</a></p>
 </td>
 <td width="33%" valign="top">
-  <a href="https://github.com/MatthewPaver/marketing-ml-lakehouse">
-    <img src="store/assets/marketing-lakehouse.svg" alt="Marketing ML Lakehouse workflow visual" />
+  <a href="https://matthewpaver.github.io/MatthewPaver/store/#quicksupply">
+    <img src="store/assets/quicksupply-preview.gif" alt="Animated QuickSupply workflow preview" />
   </a>
-  <h3>Marketing ML Lakehouse</h3>
-  <p>A public analytics project that goes past the notebook: DuckDB medallion tables, quality checks, XGBoost training, and Streamlit reporting.</p>
-  <p><code>Python</code> <code>DuckDB</code> <code>XGBoost</code> <code>Streamlit</code></p>
-  <p><a href="https://github.com/MatthewPaver/marketing-ml-lakehouse">Inspect repo</a></p>
+  <h3>QuickSupply</h3>
+  <p>A workflow app for school cover: requests, agency assignment, teacher offers, compliance, and live booking status across three portals.</p>
+  <p><code>Next.js</code> <code>TypeScript</code> <code>Drizzle</code> <code>SSE</code></p>
+  <p><a href="https://matthewpaver.github.io/MatthewPaver/store/#quicksupply">View in store</a></p>
 </td>
 </tr>
 </table>
