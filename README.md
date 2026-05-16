@@ -38,6 +38,23 @@ I build practical software around messy information: crawled websites, scraped l
 
 ---
 
+## Portfolio Map
+
+```mermaid
+flowchart LR
+    A["Messy inputs"] --> B["Checked data"]
+    B --> C["Useful product"]
+    C --> D["Evidence someone can inspect"]
+```
+
+| Shelf | Best first | Why it matters |
+|:---|:---|:---|
+| [Products](https://matthewpaver.github.io/MatthewPaver/store/?filter=product) | Inference Brief, QuickSupply | Real workflows with users, state, and decisions |
+| [Data systems](https://matthewpaver.github.io/MatthewPaver/store/?filter=data) | Happening, Marketing ML Lakehouse | Messy sources turned into repeatable pipelines |
+| [Automation](https://matthewpaver.github.io/MatthewPaver/store/?filter=automation) | Happening, Smart Job Market Intelligence | Scheduled jobs, checks, and operational handoff |
+| [ML and retrieval](https://matthewpaver.github.io/MatthewPaver/store/?filter=ml) | Recommendation System, Sentence Similarity | Ranking, embeddings, evaluation, and model packaging |
+| [Analytics](https://matthewpaver.github.io/MatthewPaver/store/?filter=analytics) | ProjectLens, HR Performance Analytics | Analysis packaged as tools and dashboards people can use |
+
 ## Start Here
 
 | If you want | Open | What it shows |

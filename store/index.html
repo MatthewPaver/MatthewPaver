@@ -35,7 +35,7 @@
       rel="icon"
       href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='10' fill='%23d9a441'/%3E%3Cpath d='M12 44V18h9l11 14 11-14h9v26h-9V30L32 44 21 30v14z' fill='%23161411'/%3E%3C/svg%3E"
     />
-    <link rel="stylesheet" href="./styles.css?v=20260516-21" />
+    <link rel="stylesheet" href="./styles.css?v=20260516-22" />
   </head>
   <body>
     <a class="skip-link" href="#store">Skip to ideas</a>
@@ -191,6 +191,50 @@
           tools that collect messy information and turn it into something useful.
         </p>
         <a class="button primary" href="https://www.linkedin.com/in/matthew-paver-534262166/">Connect with me</a>
+      </section>
+
+      <section class="shelf-index" aria-labelledby="shelf-index-heading">
+        <div class="shelf-index-copy">
+          <p class="eyebrow">Catalogue mode</p>
+          <h2 id="shelf-index-heading">Browse by shelf.</h2>
+          <p>
+            The store is organised like a working lab: live products first, then the data systems,
+            automation, ML, analytics, and archive work that show how the ideas are built.
+          </p>
+          <a class="text-link dark" href="./catalogue.csv">Open catalogue CSV</a>
+        </div>
+        <div class="shelf-grid" aria-label="Project shelves">
+          <a href="?filter=product#store" data-filter-link="product">
+            <span>01</span>
+            <strong>Products</strong>
+            <small>Inference Brief, QuickSupply, Study Companion</small>
+          </a>
+          <a href="?filter=data#store" data-filter-link="data">
+            <span>02</span>
+            <strong>Data systems</strong>
+            <small>Happening, Lakehouse, job-market signals</small>
+          </a>
+          <a href="?filter=automation#store" data-filter-link="automation">
+            <span>03</span>
+            <strong>Automation</strong>
+            <small>Scheduled jobs, checks, and handoff paths</small>
+          </a>
+          <a href="?filter=ml#store" data-filter-link="ml">
+            <span>04</span>
+            <strong>ML and retrieval</strong>
+            <small>Ranking, embeddings, GANs, evaluation</small>
+          </a>
+          <a href="?filter=analytics#store" data-filter-link="analytics">
+            <span>05</span>
+            <strong>Analytics</strong>
+            <small>ProjectLens, HR dashboards, reporting outputs</small>
+          </a>
+          <a href="?filter=archive#store" data-filter-link="archive">
+            <span>06</span>
+            <strong>Archive</strong>
+            <small>Earlier utilities kept for provenance</small>
+          </a>
+        </div>
       </section>
 
       <section class="section-heading">
@@ -616,6 +660,6 @@
       <a href="https://www.linkedin.com/in/matthew-paver-534262166/">Connect on LinkedIn</a>
     </footer>
 
-    <script src="./script.js?v=20260516-20"></script>
+    <script src="./script.js?v=20260516-22"></script>
   </body>
 </html>

@@ -554,6 +554,14 @@ h1 {
   color: #7dd3c7;
 }
 
+.text-link.dark {
+  color: var(--ink);
+}
+
+.text-link.dark:hover {
+  color: var(--accent);
+}
+
 .credential-band {
   display: grid;
   grid-template-columns: minmax(240px, 300px) minmax(0, 1fr);
@@ -660,6 +668,80 @@ h1 {
   font-size: clamp(1.28rem, 2.1vw, 1.75rem);
   font-weight: 700;
   line-height: 1.2;
+}
+
+.shelf-index {
+  display: grid;
+  grid-template-columns: minmax(240px, 340px) minmax(0, 1fr);
+  gap: 18px;
+  margin: 0 0 42px;
+  padding: 26px 0 34px;
+  border-top: 1px solid var(--line);
+  border-bottom: 1px solid var(--line);
+}
+
+.shelf-index h2 {
+  font-family: Charter, "Iowan Old Style", Georgia, serif;
+  font-size: clamp(2rem, 4vw, 3.7rem);
+  font-weight: 700;
+}
+
+.shelf-index-copy p:not(.eyebrow) {
+  margin: 14px 0 16px;
+  color: var(--muted);
+  font-weight: 650;
+  line-height: 1.5;
+}
+
+.shelf-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1px;
+  align-self: start;
+  border: 1px solid var(--line);
+  background: var(--line);
+}
+
+.shelf-grid a {
+  min-height: 156px;
+  display: grid;
+  align-content: start;
+  gap: 8px;
+  background: var(--surface);
+  padding: 15px;
+  text-decoration: none;
+  transition: background 180ms var(--ease-smooth), color 180ms var(--ease-smooth), transform 180ms var(--ease-smooth);
+}
+
+.shelf-grid a:hover {
+  background: var(--ink);
+  color: var(--surface);
+  transform: translateY(-1px);
+}
+
+.shelf-grid span {
+  color: var(--accent);
+  font-size: 0.68rem;
+  font-weight: 900;
+  letter-spacing: 0.1em;
+}
+
+.shelf-grid a:hover span,
+.shelf-grid a:hover small {
+  color: rgba(255, 255, 255, 0.72);
+}
+
+.shelf-grid strong {
+  font-family: Charter, "Iowan Old Style", Georgia, serif;
+  font-size: 1.35rem;
+  line-height: 1.08;
+}
+
+.shelf-grid small {
+  color: var(--muted);
+  font-size: 0.82rem;
+  font-weight: 700;
+  line-height: 1.35;
 }
 
 .section-heading {
@@ -1275,6 +1357,7 @@ h1 {
   .section-heading,
   .store-toolbar,
   .featured-build,
+  .shelf-index,
   .credential-band {
     grid-template-columns: 1fr;
   }
@@ -1282,7 +1365,8 @@ h1 {
   .selected-grid,
   .preview-meta,
   .credential-groups,
-  .story-steps {
+  .story-steps,
+  .shelf-grid {
     grid-template-columns: 1fr 1fr;
   }
 
@@ -1318,7 +1402,8 @@ h1 {
   .preview-meta,
   .store-grid,
   .credential-groups,
-  .story-steps {
+  .story-steps,
+  .shelf-grid {
     grid-template-columns: 1fr;
   }
 

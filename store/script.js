@@ -74,7 +74,7 @@ document.addEventListener("DOMContentLoaded", () => {
     if (prefersReducedMotion || !("IntersectionObserver" in window)) return;
 
     const targets = Array.from(
-      document.querySelectorAll(".selected-card, .credential-group a, .featured-build, .personal-note, .app-card")
+      document.querySelectorAll(".selected-card, .credential-group a, .featured-build, .personal-note, .shelf-grid a, .app-card")
     );
 
     targets.forEach((target, index) => {
@@ -161,6 +161,16 @@ document.addEventListener("DOMContentLoaded", () => {
   filters.forEach((button) => {
     button.addEventListener("click", () => {
       setFilter(button.dataset.filter);
+    });
+  });
+
+  document.querySelectorAll("[data-filter-link]").forEach((link) => {
+    link.addEventListener("click", (event) => {
+      const filterName = link.dataset.filterLink;
+      if (!filterName || !validFilters.has(filterName)) return;
+      event.preventDefault();
+      setFilter(filterName);
+      document.querySelector("#store")?.scrollIntoView({ block: "start" });
     });
   });
 

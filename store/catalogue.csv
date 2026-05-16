@@ -1,0 +1,11 @@
+slug,title,shelf,status,best_for,stack,open
+inference,Inference Brief,product,Live product,AI news reader workflow,"Next.js; TypeScript; Supabase; Python; Stripe",https://inferencebrief.co/
+happening,Happening,automation,Private system,Reliable venue-event ingestion,"Python; Playwright; SQLite; Pydantic",preview.html?app=happening
+quicksupply,QuickSupply,product,Private MVP,Supply-cover workflow,"Next.js; TypeScript; PostgreSQL; Drizzle; SSE",preview.html?app=quicksupply
+study,AI Study Companion,product,Private product,Document-to-study workflow,"FastAPI; PostgreSQL; Redis; Celery; LLMs",preview.html?app=study
+smart-job,Smart Job Market Intelligence,data,Private system,Labour-market signals,"Python; FastAPI; PostgreSQL; Redis; Celery",preview.html?app=smart-job
+lakehouse,Marketing ML Lakehouse,data,Public application,Local analytics and ML loop,"Python; DuckDB; XGBoost; Streamlit",preview.html?app=lakehouse
+projectlens,ProjectLens,analytics,Public application,Schedule-risk reporting,"Python; Flask; pandas; Power BI",preview.html?app=projectlens
+recommender,Dating App Recommendation System,ml,Public ML project,Implicit-feedback ranking,"Python; NumPy; SciPy; Jupyter",preview.html?app=recommender
+hr,HR Performance Analytics,analytics,Public dashboard,Dashboard handoff package,"Power BI; DAX; CSV",preview.html?app=hr
+sentence,Sentence Similarity Analysis,ml,Public NLP demo,Embedding retrieval caveats,"Python; Jupyter; sentence-transformers; PyTorch",preview.html?app=sentence
