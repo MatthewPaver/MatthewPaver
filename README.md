@@ -4,11 +4,11 @@
 
 ### AI products, data systems, and analytics apps
 
-I build practical systems from messy inputs: crawled websites, scraped listings, raw CSVs, notes, schedules, dashboards, and recommendation data. The work usually follows one loop: collect the data, clean it, check it, and turn it into something someone can open.
+I build practical systems from messy inputs: crawled websites, scraped listings, raw CSVs, notes, schedules, dashboards, and recommendation data. The pattern is simple: collect the data, clean it, check it, and turn it into something someone can open.
 
 <p>
-  <a href="https://matthewpaver.github.io/MatthewPaver/store/"><strong>Idea Store</strong></a> ·
-  <a href="https://inferencebrief.co/"><strong>Inference Brief</strong></a> ·
+  <a href="https://matthewpaver.github.io/MatthewPaver/store/"><strong>Portfolio Store</strong></a> ·
+  <a href="https://inferencebrief.co/"><strong>Live Product</strong></a> ·
   <a href="CASE_STUDIES.md"><strong>Case Studies</strong></a> ·
   <a href="Projects.md"><strong>Project Index</strong></a> ·
   <a href="CV.pdf"><strong>CV</strong></a> ·
@@ -21,14 +21,41 @@ I build practical systems from messy inputs: crawled websites, scraped listings,
 
 ---
 
-## Portfolio Snapshot
+## Selected Work
 
-| Open first | What it proves | Stack |
-|:---|:---|:---|
-| [Inference Brief](https://inferencebrief.co/) | Live AI news product with publishing, accounts, bookmarks, history, preferences, and a working reader experience | `Next.js` `TypeScript` `Supabase` `Python` `Stripe` |
-| [Happening](CASE_STUDIES.md#happening) | Private ingestion system turning 103+ London venue sources into structured event data with crawling, dedupe, checks, and tests | `Python` `Playwright` `SQLite` `Pydantic` |
-| [Marketing ML Lakehouse](https://github.com/MatthewPaver/marketing-ml-lakehouse) | Public, runnable data app with DuckDB, quality checks, XGBoost training, and Streamlit reporting | `Python` `DuckDB` `XGBoost` `Streamlit` |
-| [Dating App Recommendation System](https://github.com/MatthewPaver/dating-app-recommendation-system) | Recommendation-system project with 3.4M+ interactions, temporal evaluation, and Top-K metrics | `Python` `NumPy` `SciPy` |
+<table>
+<tr>
+<td width="33%" valign="top">
+  <a href="https://inferencebrief.co/">
+    <img src="store/assets/inference-brief.png" alt="Inference Brief product screenshot" />
+  </a>
+  <h3>Inference Brief</h3>
+  <p>Live AI news product with publishing, accounts, bookmarks, history, preferences, and a working reader experience.</p>
+  <p><code>Next.js</code> <code>TypeScript</code> <code>Supabase</code> <code>Python</code></p>
+  <p><a href="https://inferencebrief.co/">Open product</a></p>
+</td>
+<td width="33%" valign="top">
+  <a href="CASE_STUDIES.md#happening">
+    <img src="store/assets/happening-pipeline.svg" alt="Happening ingestion pipeline visual" />
+  </a>
+  <h3>Happening</h3>
+  <p>Private ingestion system turning 103+ London venue sources into structured event data with crawling, dedupe, checks, and tests.</p>
+  <p><code>Python</code> <code>Playwright</code> <code>SQLite</code> <code>Pydantic</code></p>
+  <p><a href="CASE_STUDIES.md#happening">Read case study</a></p>
+</td>
+<td width="33%" valign="top">
+  <a href="https://github.com/MatthewPaver/marketing-ml-lakehouse">
+    <img src="store/assets/marketing-lakehouse.svg" alt="Marketing ML Lakehouse workflow visual" />
+  </a>
+  <h3>Marketing ML Lakehouse</h3>
+  <p>Public, runnable data app with DuckDB, quality checks, XGBoost training, and Streamlit reporting.</p>
+  <p><code>Python</code> <code>DuckDB</code> <code>XGBoost</code> <code>Streamlit</code></p>
+  <p><a href="https://github.com/MatthewPaver/marketing-ml-lakehouse">Inspect repo</a></p>
+</td>
+</tr>
+</table>
+
+Open the [Portfolio Store](https://matthewpaver.github.io/MatthewPaver/store/) for the full app-store view across live products, private systems, public repos, credentials, and archived experiments.
 
 ---
 
@@ -111,19 +138,19 @@ I build practical systems from messy inputs: crawled websites, scraped listings,
 
 ---
 
-## Project Map
+## Project Index
 
 | Project | Type | What it does |
 |:---|:---|:---|
-| [Inference Brief](https://inferencebrief.co/) | Live product | Collects AI stories, scores them, writes briefings, publishes issues, and gives readers bookmarks/history/preferences |
-| [Happening](CASE_STUDIES.md#happening) | Private system | Turns 103+ London venue websites into clean event data with crawling, extraction, dedupe, checks, and tests |
-| [Marketing ML Lakehouse](https://github.com/MatthewPaver/marketing-ml-lakehouse) | Public repo | Runnable DuckDB lakehouse with model training, quality checks, and Streamlit reporting |
-| [AI Study Companion](CASE_STUDIES.md#ai-study-companion) | Private product | Upload notes, generate flashcards/quizzes/study plans, and review with spaced repetition |
-| [ProjectLens](https://github.com/MatthewPaver/ProjectLens) | Public repo | Upload project schedule data and spot slippage, milestone pressure, and reporting issues |
-| [Dating App Recommendation System](https://github.com/MatthewPaver/dating-app-recommendation-system) | Public repo | Implicit-feedback recommender with 3.4M+ interactions, temporal evaluation, and Top-K metrics |
+| [Inference Brief](https://inferencebrief.co/) | Live product | Curated AI-news reader with issue publishing, accounts, bookmarks, history, and preferences |
+| [Happening](CASE_STUDIES.md#happening) | Private system | 103+ venue sources normalised into structured London event data with scheduled checks |
+| [Marketing ML Lakehouse](https://github.com/MatthewPaver/marketing-ml-lakehouse) | Public repo | DuckDB lakehouse with model training, quality checks, and Streamlit reporting |
+| [AI Study Companion](CASE_STUDIES.md#ai-study-companion) | Private product | Document upload, generated flashcards/quizzes/study plans, and spaced repetition |
+| [ProjectLens](https://github.com/MatthewPaver/ProjectLens) | Public repo | Project schedule upload, slippage analysis, milestone pressure, and reporting outputs |
+| [Dating App Recommendation System](https://github.com/MatthewPaver/dating-app-recommendation-system) | Public repo | Implicit-feedback recommender with 3.4M+ interactions and temporal evaluation |
 
 <details>
-<summary>More public repos</summary>
+<summary>More repos</summary>
 
 | Repo | What to look at |
 |:---|:---|
@@ -136,7 +163,7 @@ I build practical systems from messy inputs: crawled websites, scraped listings,
 
 ---
 
-## How I Think About Projects
+## Build Pattern
 
 ```mermaid
 flowchart LR
@@ -150,11 +177,3 @@ flowchart LR
 ```
 
 The strongest work is the whole loop: not just the model, not just the dashboard, not just the script. The data path should be repeatable, the output should be easy to inspect, and failures should be visible.
-
----
-
-<div align="center">
-
-Open the [Idea Store](https://matthewpaver.github.io/MatthewPaver/store/) for the browsable version.
-
-</div>

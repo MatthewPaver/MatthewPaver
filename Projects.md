@@ -2,9 +2,9 @@
 
 Focused view of the systems, products, and experiments I build across AI, data, automation, and analytics.
 
-[Back to Profile](README.md) | [Idea Store](https://matthewpaver.github.io/MatthewPaver/store/) | [Case Studies](CASE_STUDIES.md) | [CV](CV.pdf)
+[Back to Profile](README.md) | [Portfolio Store](https://matthewpaver.github.io/MatthewPaver/store/) | [Case Studies](CASE_STUDIES.md) | [CV](CV.pdf)
 
-For a browsable storefront view, open the [Idea Store](https://matthewpaver.github.io/MatthewPaver/store/).
+For a browsable storefront view, open the [Portfolio Store](https://matthewpaver.github.io/MatthewPaver/store/).
 
 All professional examples are intentionally anonymised and focused on engineering patterns rather than internal identifiers.
 
@@ -14,7 +14,7 @@ All professional examples are intentionally anonymised and focused on engineerin
 
 | Step | Open | Use it for |
 |:---|:---|:---|
-| 1 | [Idea Store](https://matthewpaver.github.io/MatthewPaver/store/) | Fast visual scan of the best work |
+| 1 | [Portfolio Store](https://matthewpaver.github.io/MatthewPaver/store/) | Fast visual scan of the best work |
 | 2 | This index | Compare status, signal, and repo links |
 | 3 | [Case Studies](CASE_STUDIES.md) | Read the architecture and tradeoff story |
 | 4 | Public repos | Inspect runnable code, docs, and outputs |
