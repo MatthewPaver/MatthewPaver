@@ -760,13 +760,14 @@ h1 {
 
 .store-toolbar {
   display: grid;
-  grid-template-columns: minmax(240px, 520px) auto;
+  grid-template-columns: minmax(240px, 520px) auto minmax(180px, 220px);
   gap: 14px;
   align-items: end;
   margin: 22px 0 16px;
 }
 
-.search-box {
+.search-box,
+.sort-box {
   display: grid;
   gap: 8px;
   color: var(--soft);
@@ -796,6 +797,26 @@ h1 {
 .search-box input::placeholder {
   color: var(--soft);
   opacity: 1;
+}
+
+.sort-box select {
+  width: 100%;
+  min-height: 44px;
+  border: 1px solid var(--line-strong);
+  border-radius: 0;
+  appearance: none;
+  background-color: var(--surface);
+  background-image:
+    linear-gradient(45deg, transparent 50%, var(--ink) 50%),
+    linear-gradient(135deg, var(--ink) 50%, transparent 50%);
+  background-position:
+    calc(100% - 18px) 18px,
+    calc(100% - 12px) 18px;
+  background-repeat: no-repeat;
+  background-size: 6px 6px, 6px 6px;
+  color: var(--ink);
+  font: 850 0.95rem "Avenir Next", "Segoe UI", Helvetica, Arial, sans-serif;
+  padding: 0 38px 0 12px;
 }
 
 .clear-search {

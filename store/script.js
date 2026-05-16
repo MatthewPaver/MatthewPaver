@@ -2,9 +2,11 @@ document.addEventListener("DOMContentLoaded", () => {
   const filters = Array.from(document.querySelectorAll(".filter"));
   const cards = Array.from(document.querySelectorAll(".app-card"));
   const searchInput = document.querySelector("#store-search");
+  const sortSelect = document.querySelector("#store-sort");
   const clearSearch = document.querySelector("#clear-search");
   const visibleCount = document.querySelector("#visible-count");
   const emptyState = document.querySelector(".empty-state");
+  const storeGrid = document.querySelector(".store-grid");
   const archiveShelf = document.querySelector(".archive-shelf");
   const announcer = document.querySelector("#store-filter-announcement");
 
@@ -37,6 +39,8 @@ document.addEventListener("DOMContentLoaded", () => {
       const proofList = card.querySelector(".proof-list");
 
       card.style.setProperty("--card-number", `"${String(index + 1).padStart(2, "0")}"`);
+      card.dataset.order = String(index);
+      if (title) card.dataset.title = title;
 
       if (titleRow && title && !titleRow.querySelector(".app-icon")) {
         const icon = document.createElement("span");
@@ -99,6 +103,7 @@ document.addEventListener("DOMContentLoaded", () => {
   function updateUrlState() {
     const url = new URL(window.location.href);
     const query = searchInput.value.trim();
+    const sortMode = sortSelect?.value || "curated";
 
     if (activeFilter === "all") {
       url.searchParams.delete("filter");
@@ -112,12 +117,40 @@ document.addEventListener("DOMContentLoaded", () => {
       url.searchParams.delete("q");
     }
 
+    if (sortMode === "curated") {
+      url.searchParams.delete("sort");
+    } else {
+      url.searchParams.set("sort", sortMode);
+    }
+
     window.history.replaceState({}, "", url);
+  }
+
+  function sortCards() {
+    if (!storeGrid || !sortSelect) return;
+
+    const sortedCards = [...cards].sort((a, b) => {
+      if (sortSelect.value === "alpha") {
+        return (a.dataset.title || "").localeCompare(b.dataset.title || "");
+      }
+
+      if (sortSelect.value === "public") {
+        const aPublic = a.dataset.status?.toLowerCase().includes("public") || a.querySelector(".status.public");
+        const bPublic = b.dataset.status?.toLowerCase().includes("public") || b.querySelector(".status.public");
+        if (Boolean(aPublic) !== Boolean(bPublic)) return aPublic ? -1 : 1;
+      }
+
+      return Number(a.dataset.order || 0) - Number(b.dataset.order || 0);
+    });
+
+    sortedCards.forEach((card) => storeGrid.append(card));
   }
 
   function updateStore({ syncUrl = true } = {}) {
     const query = searchInput.value.trim().toLowerCase();
     let count = 0;
+
+    sortCards();
 
     cards.forEach((card) => {
       const tags = (card.dataset.tags || "").split(" ");
@@ -175,6 +208,7 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 
   searchInput.addEventListener("input", updateStore);
+  sortSelect?.addEventListener("change", updateStore);
   if (clearSearch) {
     clearSearch.addEventListener("click", () => {
       searchInput.value = "";
@@ -186,9 +220,16 @@ document.addEventListener("DOMContentLoaded", () => {
   const initialParams = new URLSearchParams(window.location.search);
   const initialFilter = initialParams.get("filter");
   const initialQuery = initialParams.get("q");
+  const initialSort = initialParams.get("sort");
+
+  initCardDetails();
 
   if (initialQuery) {
     searchInput.value = initialQuery;
+  }
+
+  if (sortSelect && ["curated", "public", "alpha"].includes(initialSort)) {
+    sortSelect.value = initialSort;
   }
 
   if (initialFilter && validFilters.has(initialFilter)) {
@@ -197,6 +238,5 @@ document.addEventListener("DOMContentLoaded", () => {
     updateStore({ syncUrl: false });
   }
 
-  initCardDetails();
   initRevealMotion();
 });

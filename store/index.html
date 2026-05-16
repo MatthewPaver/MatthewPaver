@@ -35,7 +35,7 @@
       rel="icon"
       href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='10' fill='%23d9a441'/%3E%3Cpath d='M12 44V18h9l11 14 11-14h9v26h-9V30L32 44 21 30v14z' fill='%23161411'/%3E%3C/svg%3E"
     />
-    <link rel="stylesheet" href="./styles.css?v=20260516-22" />
+    <link rel="stylesheet" href="./styles.css?v=20260516-23" />
   </head>
   <body>
     <a class="skip-link" href="#store">Skip to ideas</a>
@@ -202,6 +202,7 @@
             automation, ML, analytics, and archive work that show how the ideas are built.
           </p>
           <a class="text-link dark" href="./catalogue.csv">Open catalogue CSV</a>
+          <a class="text-link dark" href="./app-index.csv">Open app index</a>
         </div>
         <div class="shelf-grid" aria-label="Project shelves">
           <a href="?filter=product#store" data-filter-link="product">
@@ -259,6 +260,14 @@
           <span id="visible-count">13</span>
           <span>ideas showing</span>
         </div>
+        <label class="sort-box">
+          <span>Sort</span>
+          <select id="store-sort" name="store-sort">
+            <option value="curated">Curated order</option>
+            <option value="public">Public first</option>
+            <option value="alpha">A-Z</option>
+          </select>
+        </label>
       </div>
 
       <!-- aria-live on one node avoids duplicate polite announcements from the grid -->
@@ -656,10 +665,11 @@
     <footer class="shell footer">
       <p>
         Built as a curated storefront for Matthew Paver's AI, data, and product systems.
+        The catalogue is indexed in CSV and checked before deploy.
       </p>
       <a href="https://www.linkedin.com/in/matthew-paver-534262166/">Connect on LinkedIn</a>
     </footer>
 
-    <script src="./script.js?v=20260516-22"></script>
+    <script src="./script.js?v=20260516-23"></script>
   </body>
 </html>
