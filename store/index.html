@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#111715" />
     <title>Matthew Paver Idea Store</title>
     <meta
       name="description"
@@ -34,7 +35,7 @@
       rel="icon"
       href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='10' fill='%23d9a441'/%3E%3Cpath d='M12 44V18h9l11 14 11-14h9v26h-9V30L32 44 21 30v14z' fill='%23161411'/%3E%3C/svg%3E"
     />
-    <link rel="stylesheet" href="./styles.css?v=20260516-1" />
+    <link rel="stylesheet" href="./styles.css?v=20260516-2" />
   </head>
   <body>
     <a class="skip-link" href="#store">Skip to ideas</a>
@@ -59,6 +60,12 @@
             Live products, private systems, runnable public repos, and earlier prototypes in one place.
             Open a product, inspect a repo, or read the case study behind the work.
           </p>
+          <div class="signal-strip" aria-label="Portfolio modes">
+            <span>Live</span>
+            <span>Private</span>
+            <span>Runnable</span>
+            <span>Archived</span>
+          </div>
           <div class="hero-pills" aria-label="Portfolio highlights">
             <span>AI products</span>
             <span>Data pipelines</span>
@@ -72,6 +79,16 @@
         </div>
 
         <aside class="signal-panel" aria-label="Portfolio proof points">
+          <div class="lab-preview" aria-label="Featured product previews">
+            <div class="preview-window primary-preview">
+              <span>Open now</span>
+              <img src="./assets/inference-brief.png" width="1200" height="760" alt="Inference Brief product preview" fetchpriority="high" />
+            </div>
+            <div class="preview-window small-preview">
+              <span>Pipeline</span>
+              <img src="./assets/happening-pipeline.svg" width="1200" height="675" alt="Happening pipeline preview" fetchpriority="high" />
+            </div>
+          </div>
           <div class="console-card">
             <span class="console-label">current pattern</span>
             <code>messy_input → clean_system → usable_product</code>
@@ -120,6 +137,15 @@
         </a>
       </section>
 
+      <section class="build-loop" aria-label="How the work is built">
+        <span>Collect</span>
+        <span>Clean</span>
+        <span>Model</span>
+        <span>Package</span>
+        <span>Ship</span>
+        <span>Watch</span>
+      </section>
+
       <section class="today-shelf" aria-labelledby="today-heading">
         <div class="shelf-copy">
           <p class="eyebrow">First three opens</p>
@@ -164,7 +190,7 @@
         <label class="search-box">
           <span>Search ideas</span>
           <span class="search-row">
-            <input id="store-search" type="search" placeholder="Try automation, product, embeddings..." />
+            <input id="store-search" name="store-search" type="search" autocomplete="off" placeholder="Try automation, product, embeddings…" />
             <button id="clear-search" class="clear-search" type="button">Clear</button>
           </span>
         </label>
@@ -200,7 +226,7 @@
 
       <section class="store-grid">
         <article class="app-card featured image-card" data-tags="product automation data" data-status="Live product">
-          <img class="inference-shot" src="./assets/inference-brief.png" alt="Inference Brief live product screenshot" />
+          <img class="inference-shot" src="./assets/inference-brief.png" width="1200" height="760" alt="Inference Brief live product screenshot" fetchpriority="high" />
           <div class="app-body">
             <div class="app-title-row">
               <h3>Inference Brief</h3>
@@ -226,7 +252,7 @@
         </article>
 
         <article class="app-card featured image-card" data-tags="automation data" data-status="Private system">
-          <img src="./assets/happening-pipeline.svg" alt="Anonymised Happening event ingestion pipeline visual" />
+          <img src="./assets/happening-pipeline.svg" width="1200" height="675" alt="Anonymised Happening event ingestion pipeline visual" fetchpriority="high" />
           <div class="app-body">
             <div class="app-title-row">
               <h3>Happening</h3>
@@ -251,7 +277,7 @@
         </article>
 
         <article class="app-card image-card" data-tags="product ml" data-status="Private product">
-          <img class="study-shot" src="./assets/ai-study-companion.png" alt="AI Study Companion product workspace screenshot" />
+          <img class="study-shot" src="./assets/ai-study-companion.png" width="1200" height="760" loading="lazy" alt="AI Study Companion product workspace screenshot" />
           <div class="app-body">
             <div class="app-title-row">
               <h3>AI Study Companion</h3>
@@ -304,7 +330,7 @@
         </article>
 
         <article class="app-card image-card" data-tags="product automation" data-status="Private MVP">
-          <img class="quick-shot" src="./assets/quicksupply-poster.png" alt="QuickSupply three-portal product demo screenshot" />
+          <img class="quick-shot" src="./assets/quicksupply-poster.png" width="1200" height="760" loading="lazy" alt="QuickSupply three-portal product demo screenshot" />
           <div class="app-body">
             <div class="app-title-row">
               <h3>QuickSupply</h3>
@@ -326,7 +352,7 @@
         </article>
 
         <article class="app-card image-card" data-tags="product automation" data-status="Private prototype">
-          <img src="./assets/operations-platform.svg" alt="Private operations platform prototype visual" />
+          <img src="./assets/operations-platform.svg" width="1200" height="675" loading="lazy" alt="Private operations platform prototype visual" />
           <div class="app-body">
             <div class="app-title-row">
               <h3>Operations Platform Prototype</h3>
@@ -348,7 +374,7 @@
         </article>
 
         <article class="app-card image-card" data-tags="data ml analytics" data-status="Runnable application">
-          <img src="./assets/marketing-lakehouse.svg" alt="Marketing ML Lakehouse workflow visual" />
+          <img src="./assets/marketing-lakehouse.svg" width="1200" height="675" loading="lazy" alt="Marketing ML Lakehouse workflow visual" />
           <div class="app-body">
             <div class="app-title-row">
               <h3>Marketing ML Lakehouse</h3>
@@ -373,7 +399,7 @@
         </article>
 
         <article class="app-card image-card" data-tags="analytics product" data-status="Runnable application">
-          <img src="./assets/projectlens.png" alt="ProjectLens portfolio overview" />
+          <img src="./assets/projectlens.png" width="1200" height="760" loading="lazy" alt="ProjectLens portfolio overview" />
           <div class="app-body">
             <div class="app-title-row">
               <h3>ProjectLens</h3>
@@ -398,7 +424,7 @@
         </article>
 
         <article class="app-card image-card" data-tags="ml product" data-status="Completed project">
-          <img src="./assets/architexa.jpeg" alt="Architexa generated architecture preview" />
+          <img src="./assets/architexa.jpeg" width="1200" height="760" loading="lazy" alt="Architexa generated architecture preview" />
           <div class="app-body">
             <div class="app-title-row">
               <h3>Architexa</h3>
@@ -423,7 +449,7 @@
         </article>
 
         <article class="app-card image-card" data-tags="ml data" data-status="Notebook project">
-          <img src="./assets/recommender-metrics.svg" alt="Dating app recommendation metrics visual" />
+          <img src="./assets/recommender-metrics.svg" width="1200" height="675" loading="lazy" alt="Dating app recommendation metrics visual" />
           <div class="app-body">
             <div class="app-title-row">
               <h3>Dating App Recommendation System</h3>
@@ -449,9 +475,9 @@
 
         <article class="app-card image-card" data-tags="analytics" data-status="Dashboard portfolio">
           <div class="dashboard-strip" aria-label="HR dashboard preview gallery">
-            <img src="./assets/hr-summary.png" alt="HR performance dashboard summary" />
-            <img src="./assets/hr-sales.png" alt="HR performance sales dashboard" />
-            <img src="./assets/hr-sick-leave.png" alt="HR performance sick leave dashboard" />
+            <img src="./assets/hr-summary.png" width="1200" height="760" loading="lazy" alt="HR performance dashboard summary" />
+            <img src="./assets/hr-sales.png" width="1200" height="760" loading="lazy" alt="HR performance sales dashboard" />
+            <img src="./assets/hr-sick-leave.png" width="1200" height="760" loading="lazy" alt="HR performance sick leave dashboard" />
           </div>
           <div class="app-body">
             <div class="app-title-row">
@@ -547,6 +573,6 @@
       <a href="https://www.linkedin.com/in/matthew-paver-534262166/">Connect on LinkedIn</a>
     </footer>
 
-    <script src="./script.js?v=20260516-1"></script>
+    <script src="./script.js?v=20260516-2"></script>
   </body>
 </html>
