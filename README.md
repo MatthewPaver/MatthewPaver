@@ -1,10 +1,14 @@
 <div align="center">
 
+<a href="https://matthewpaver.github.io/MatthewPaver/store/">
+  <img src="store/assets/portfolio-mark.svg" width="100%" alt="Matthew Paver portfolio mark" />
+</a>
+
 # Matthew Paver
 
 ### AI products, data systems, and analytics apps
 
-I build practical systems from messy inputs: crawled websites, scraped listings, raw CSVs, notes, schedules, dashboards, and recommendation data. The pattern is simple: collect the data, clean it, check it, and turn it into something someone can open.
+I build practical systems from messy inputs: crawled websites, scraped listings, raw CSVs, notes, schedules, dashboards, and recommendation data. The pattern is simple: collect the data, clean it, check it, and ship something someone can open.
 
 <p>
   <a href="https://matthewpaver.github.io/MatthewPaver/store/"><strong>Portfolio Store</strong></a> ·
@@ -15,7 +19,23 @@ I build practical systems from messy inputs: crawled websites, scraped listings,
   <a href="https://www.linkedin.com/in/matthew-paver-534262166/"><strong>LinkedIn</strong></a>
 </p>
 
-`Python` `TypeScript` `FastAPI` `Next.js` `DuckDB` `Supabase` `GCP`
+<p>
+  <img src="https://img.shields.io/badge/Python-151515?style=for-the-badge&logo=python&logoColor=white" alt="Python" />
+  <img src="https://img.shields.io/badge/TypeScript-151515?style=for-the-badge&logo=typescript&logoColor=white" alt="TypeScript" />
+  <img src="https://img.shields.io/badge/FastAPI-151515?style=for-the-badge&logo=fastapi&logoColor=white" alt="FastAPI" />
+  <img src="https://img.shields.io/badge/Next.js-151515?style=for-the-badge&logo=nextdotjs&logoColor=white" alt="Next.js" />
+  <img src="https://img.shields.io/badge/DuckDB-151515?style=for-the-badge&logo=duckdb&logoColor=white" alt="DuckDB" />
+  <img src="https://img.shields.io/badge/Supabase-151515?style=for-the-badge&logo=supabase&logoColor=white" alt="Supabase" />
+</p>
+
+<table>
+<tr>
+<td align="center"><strong>Live product</strong><br /><sub>Inference Brief</sub></td>
+<td align="center"><strong>103+ sources</strong><br /><sub>Happening ingestion</sub></td>
+<td align="center"><strong>3.4M+ interactions</strong><br /><sub>Recommendation dataset</sub></td>
+<td align="center"><strong>167 tests</strong><br /><sub>Private crawler suite</sub></td>
+</tr>
+</table>
 
 </div>
 

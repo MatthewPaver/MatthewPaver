@@ -216,19 +216,33 @@ h1 {
 
 .signal-panel {
   display: grid;
-  border-top: 1px solid var(--ink);
+  align-self: stretch;
+  overflow: hidden;
+  border: 1px solid var(--line-strong);
   background: var(--surface);
-  padding: 0 16px;
 }
 
-.signal-panel > div {
-  display: grid;
-  gap: 5px;
-  padding: 15px 0;
+.signal-panel img {
+  display: block;
+  width: 100%;
+  height: auto;
   border-bottom: 1px solid var(--line);
 }
 
-.metric-label {
+.proof-strip {
+  display: grid;
+  gap: 4px;
+  min-height: 72px;
+  align-content: center;
+  padding: 12px 16px;
+  border-bottom: 1px solid var(--line);
+}
+
+.proof-strip:last-child {
+  border-bottom: 0;
+}
+
+.proof-strip span {
   color: var(--soft);
   font-size: 0.72rem;
   font-weight: 850;
@@ -236,7 +250,7 @@ h1 {
   text-transform: uppercase;
 }
 
-.metric {
+.proof-strip strong {
   color: var(--ink);
   font-size: 1rem;
   font-weight: 850;
@@ -797,7 +811,11 @@ h1 {
   }
 
   .signal-panel {
-    display: none;
+    margin-top: 8px;
+  }
+
+  .proof-strip {
+    min-height: 58px;
   }
 
   .filters {

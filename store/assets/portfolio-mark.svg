@@ -1,0 +1,28 @@
+<svg width="1200" height="360" viewBox="0 0 1200 360" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">Matthew Paver portfolio mark</title>
+  <desc id="desc">A branded portfolio banner showing messy inputs becoming reliable systems and usable products.</desc>
+  <rect width="1200" height="360" fill="#151515"/>
+  <path d="M0 72H1200M0 144H1200M0 216H1200M0 288H1200" stroke="#F4F0E9" stroke-opacity="0.08"/>
+  <path d="M72 0V360M144 0V360M216 0V360M288 0V360M360 0V360M432 0V360M504 0V360M576 0V360M648 0V360M720 0V360M792 0V360M864 0V360M936 0V360M1008 0V360M1080 0V360M1152 0V360" stroke="#F4F0E9" stroke-opacity="0.08"/>
+  <rect x="52" y="46" width="108" height="108" fill="#D9A441"/>
+  <path d="M76 124V76h17l13 18 13-18h17v48h-17V99l-13 25-13-25v25H76Z" fill="#151515"/>
+  <text x="194" y="88" font-family="Arial, Helvetica, sans-serif" font-size="18" font-weight="900" letter-spacing="5" fill="#D9A441">MATTHEW PAVER</text>
+  <text x="192" y="154" font-family="Georgia, serif" font-size="44" font-weight="700" fill="#FFFFFF">AI products. Data systems. Analytics apps.</text>
+  <text x="194" y="202" font-family="Arial, Helvetica, sans-serif" font-size="22" font-weight="700" fill="#D8D2C8">Messy inputs turned into reliable pipelines, useful interfaces, and proof you can inspect.</text>
+  <g font-family="Arial, Helvetica, sans-serif" font-size="17" font-weight="900">
+    <rect x="194" y="250" width="170" height="48" fill="#F4F0E9"/>
+    <text x="220" y="281" fill="#151515">Collect</text>
+    <path d="M374 274H426" stroke="#F4F0E9" stroke-width="4"/>
+    <path d="M426 274L414 264M426 274L414 284" stroke="#F4F0E9" stroke-width="4" stroke-linecap="round"/>
+    <rect x="438" y="250" width="170" height="48" fill="#0F766E"/>
+    <text x="464" y="281" fill="#FFFFFF">Clean + check</text>
+    <path d="M618 274H670" stroke="#F4F0E9" stroke-width="4"/>
+    <path d="M670 274L658 264M670 274L658 284" stroke="#F4F0E9" stroke-width="4" stroke-linecap="round"/>
+    <rect x="682" y="250" width="170" height="48" fill="#1D4F91"/>
+    <text x="708" y="281" fill="#FFFFFF">Model + rank</text>
+    <path d="M862 274H914" stroke="#F4F0E9" stroke-width="4"/>
+    <path d="M914 274L902 264M914 274L902 284" stroke="#F4F0E9" stroke-width="4" stroke-linecap="round"/>
+    <rect x="926" y="250" width="198" height="48" fill="#D9A441"/>
+    <text x="952" y="281" fill="#151515">Ship the product</text>
+  </g>
+</svg>
