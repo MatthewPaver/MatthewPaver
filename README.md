@@ -26,6 +26,7 @@ I build practical systems from messy inputs: crawled websites, scraped listings,
   <img src="https://img.shields.io/badge/Next.js-151515?style=for-the-badge&logo=nextdotjs&logoColor=white" alt="Next.js" />
   <img src="https://img.shields.io/badge/DuckDB-151515?style=for-the-badge&logo=duckdb&logoColor=white" alt="DuckDB" />
   <img src="https://img.shields.io/badge/Supabase-151515?style=for-the-badge&logo=supabase&logoColor=white" alt="Supabase" />
+  <img src="https://img.shields.io/badge/GCP-151515?style=for-the-badge&logo=googlecloud&logoColor=white" alt="GCP" />
 </p>
 
 <table>
@@ -41,7 +42,7 @@ I build practical systems from messy inputs: crawled websites, scraped listings,
 
 ---
 
-## Selected Work
+## Open First
 
 <table>
 <tr>
@@ -50,7 +51,8 @@ I build practical systems from messy inputs: crawled websites, scraped listings,
     <img src="store/assets/inference-brief.png" alt="Inference Brief product screenshot" />
   </a>
   <h3>Inference Brief</h3>
-  <p>Live AI news product with publishing, accounts, bookmarks, history, preferences, and a working reader experience.</p>
+  <p><strong>Problem:</strong> keeping up with AI news without reading a pile of noisy feeds.</p>
+  <p><strong>Build:</strong> live reader product with story collection, scoring, summaries, publishing, accounts, bookmarks, and history.</p>
   <p><code>Next.js</code> <code>TypeScript</code> <code>Supabase</code> <code>Python</code></p>
   <p><a href="https://inferencebrief.co/">Open product</a></p>
 </td>
@@ -59,7 +61,8 @@ I build practical systems from messy inputs: crawled websites, scraped listings,
     <img src="store/assets/happening-pipeline.svg" alt="Happening ingestion pipeline visual" />
   </a>
   <h3>Happening</h3>
-  <p>Private ingestion system turning 103+ London venue sources into structured event data with crawling, dedupe, checks, and tests.</p>
+  <p><strong>Problem:</strong> venue event data is scattered across inconsistent public websites.</p>
+  <p><strong>Build:</strong> private ingestion system with 103+ source configs, crawling, extraction, dedupe, checks, and tests.</p>
   <p><code>Python</code> <code>Playwright</code> <code>SQLite</code> <code>Pydantic</code></p>
   <p><a href="CASE_STUDIES.md#happening">Read case study</a></p>
 </td>
@@ -68,7 +71,8 @@ I build practical systems from messy inputs: crawled websites, scraped listings,
     <img src="store/assets/marketing-lakehouse.svg" alt="Marketing ML Lakehouse workflow visual" />
   </a>
   <h3>Marketing ML Lakehouse</h3>
-  <p>Public, runnable data app with DuckDB, quality checks, XGBoost training, and Streamlit reporting.</p>
+  <p><strong>Problem:</strong> analytics projects often stop at notebooks instead of a repeatable data product.</p>
+  <p><strong>Build:</strong> public DuckDB lakehouse with quality checks, XGBoost training, and Streamlit reporting.</p>
   <p><code>Python</code> <code>DuckDB</code> <code>XGBoost</code> <code>Streamlit</code></p>
   <p><a href="https://github.com/MatthewPaver/marketing-ml-lakehouse">Inspect repo</a></p>
 </td>
@@ -146,38 +150,26 @@ Open the [Portfolio Store](https://matthewpaver.github.io/MatthewPaver/store/) f
 
 ---
 
-## What I Build
+## Project Map
 
-| Area | Plain-English version | Examples |
+| Project | Solves | What to inspect |
 |:---|:---|:---|
-| AI products | AI inside a usable workflow, not just a prompt demo | [Inference Brief](https://inferencebrief.co/), [AI Study Companion](CASE_STUDIES.md#ai-study-companion) |
-| Data systems | Messy sources turned into clean, repeatable datasets | [Happening](CASE_STUDIES.md#happening), [Marketing ML Lakehouse](https://github.com/MatthewPaver/marketing-ml-lakehouse) |
-| Automation | Scheduled jobs with checks and visible outputs | Happening checks, newsletter tools, scrape monitors |
-| Analytics apps | Analysis packaged into something people can use | [ProjectLens](https://github.com/MatthewPaver/ProjectLens), HR dashboards |
-| ML projects | Ranking, embeddings, forecasting, and generation | Recommendation systems, Architexa, sentence similarity |
-
----
-
-## Project Index
-
-| Project | Type | What it does |
-|:---|:---|:---|
-| [Inference Brief](https://inferencebrief.co/) | Live product | Curated AI-news reader with issue publishing, accounts, bookmarks, history, and preferences |
-| [Happening](CASE_STUDIES.md#happening) | Private system | 103+ venue sources normalised into structured London event data with scheduled checks |
-| [Marketing ML Lakehouse](https://github.com/MatthewPaver/marketing-ml-lakehouse) | Public repo | DuckDB lakehouse with model training, quality checks, and Streamlit reporting |
-| [AI Study Companion](CASE_STUDIES.md#ai-study-companion) | Private product | Document upload, generated flashcards/quizzes/study plans, and spaced repetition |
-| [ProjectLens](https://github.com/MatthewPaver/ProjectLens) | Public repo | Project schedule upload, slippage analysis, milestone pressure, and reporting outputs |
-| [Dating App Recommendation System](https://github.com/MatthewPaver/dating-app-recommendation-system) | Public repo | Implicit-feedback recommender with 3.4M+ interactions and temporal evaluation |
+| [Inference Brief](https://inferencebrief.co/) | AI-news overload | Live product, issue archive, accounts, bookmarks, history, preferences |
+| [Happening](CASE_STUDIES.md#happening) | Fragmented event listings | 103+ source configs, ingestion workflow, dedupe, validation, scheduled checks |
+| [Marketing ML Lakehouse](https://github.com/MatthewPaver/marketing-ml-lakehouse) | Notebook-to-product analytics | DuckDB medallion flow, quality checks, XGBoost training, Streamlit app |
+| [AI Study Companion](CASE_STUDIES.md#ai-study-companion) | Turning notes into revision | Upload flow, generated flashcards/quizzes/study plans, spaced repetition |
+| [ProjectLens](https://github.com/MatthewPaver/ProjectLens) | Project schedule risk | Upload-to-analysis flow, slippage reporting, milestone pressure, Power BI outputs |
+| [Dating App Recommendation System](https://github.com/MatthewPaver/dating-app-recommendation-system) | Ranking candidates from interaction data | 3.4M+ interactions, temporal evaluation, Top-K metrics |
 
 <details>
 <summary>More repos</summary>
 
-| Repo | What to look at |
+| Repo | Solves | What to inspect |
 |:---|:---|
-| [Architexa](https://github.com/MatthewPaver/Architexa) | Conditional GAN, image-generation API, dataset pipeline |
-| [sentence-similarity-analysis](https://github.com/MatthewPaver/sentence-similarity-analysis) | Sentence-transformer embeddings and cosine similarity caveats |
-| [pyspark-kafka-streaming](https://github.com/MatthewPaver/pyspark-kafka-streaming) | Compact Kafka and PySpark streaming examples |
-| [hr-performance-dashboards](https://github.com/MatthewPaver/hr-performance-dashboards) | Power BI dashboards, prepared CSVs, screenshots, and stakeholder notes |
+| [Architexa](https://github.com/MatthewPaver/Architexa) | Architecture image generation | Conditional GAN, dataset pipeline, Flask API |
+| [sentence-similarity-analysis](https://github.com/MatthewPaver/sentence-similarity-analysis) | Explaining semantic search | Sentence-transformer embeddings, cosine ranking, retrieval caveats |
+| [pyspark-kafka-streaming](https://github.com/MatthewPaver/pyspark-kafka-streaming) | Streaming data examples | Kafka and PySpark pipeline basics |
+| [hr-performance-dashboards](https://github.com/MatthewPaver/hr-performance-dashboards) | Stakeholder reporting | Power BI dashboards, prepared CSVs, screenshots, commentary |
 
 </details>
 

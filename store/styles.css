@@ -311,6 +311,7 @@ h1 {
 .selected-card img[src$=".svg"] {
   object-fit: contain;
   background: var(--surface-warm);
+  padding: 10px;
 }
 
 .selected-card span,
@@ -558,6 +559,7 @@ h1 {
 .image-card img[src$=".svg"] {
   object-fit: contain;
   background: var(--surface-warm);
+  padding: 10px;
 }
 
 .image-card img.inference-shot,

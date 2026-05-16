@@ -35,7 +35,7 @@
       rel="icon"
       href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='10' fill='%23d9a441'/%3E%3Cpath d='M12 44V18h9l11 14 11-14h9v26h-9V30L32 44 21 30v14z' fill='%23161411'/%3E%3C/svg%3E"
     />
-    <link rel="stylesheet" href="./styles.css?v=20260516-9" />
+    <link rel="stylesheet" href="./styles.css?v=20260516-10" />
   </head>
   <body>
     <a class="skip-link" href="#store">Skip to ideas</a>
@@ -56,10 +56,10 @@
       <section class="hero-grid">
         <div class="hero-copy">
           <p class="eyebrow">Matthew Paver</p>
-          <h1>Portfolio store for AI products, data systems, and analytics work.</h1>
+          <h1>Portfolio store for practical AI, data, and analytics systems.</h1>
           <p class="lede">
-            A curated view of the work worth opening first: live products, private-system case studies,
-            public repos, credentials, and the stack behind each one.
+            A curated view of what each project is trying to solve, how it is built,
+            and what proof you can inspect.
           </p>
           <div class="hero-actions">
             <a class="button primary" href="#store">Browse projects</a>
@@ -102,19 +102,19 @@
             <img src="./assets/inference-brief.png" width="1200" height="760" alt="Inference Brief product screenshot" fetchpriority="high" />
             <span>Live product</span>
             <strong>Inference Brief</strong>
-            <small>AI news reader with accounts, bookmarks, publishing, and a live issue archive.</small>
+            <small>Solves: keeping up with AI news without reading a pile of noisy feeds.</small>
           </a>
           <a class="selected-card" href="https://github.com/MatthewPaver/MatthewPaver/blob/main/CASE_STUDIES.md#happening">
             <img src="./assets/happening-pipeline.svg" width="1200" height="675" alt="Happening pipeline visual" fetchpriority="high" />
             <span>Private system</span>
             <strong>Happening</strong>
-            <small>103+ venue sources normalised into structured London event data.</small>
+            <small>Solves: turning fragmented venue pages into clean event data that can be checked.</small>
           </a>
           <a class="selected-card" href="https://github.com/MatthewPaver/marketing-ml-lakehouse">
             <img src="./assets/marketing-lakehouse.svg" width="1200" height="675" alt="Marketing ML Lakehouse workflow visual" loading="lazy" />
             <span>Public repo</span>
             <strong>Marketing ML Lakehouse</strong>
-            <small>DuckDB, quality checks, XGBoost, and Streamlit in one runnable project.</small>
+            <small>Solves: proving a local analytics stack can go from raw CSVs to usable ML reporting.</small>
           </a>
         </div>
       </section>
@@ -204,8 +204,8 @@
               <span class="status live">Live</span>
             </div>
             <p>
-              A live web app for reading curated AI news. It collects stories, scores them,
-              writes brief summaries, publishes issues, and gives readers bookmarks and history.
+              Solves the AI-news overload problem with a real reader product: stories are collected,
+              scored, summarised, published into issues, and saved through bookmarks and history.
             </p>
             <ul class="proof-list">
               <li>Live public product</li>
@@ -230,8 +230,8 @@
               <span class="status private">Private</span>
             </div>
             <p>
-              A private ingestion platform that turns venue websites into structured London event data.
-              Each source has explicit config, extraction rules, dedupe checks, and scheduled runs.
+              Solves the fragmented-events problem by turning venue websites into structured London
+              event data with explicit source config, extraction rules, dedupe, checks, and scheduled runs.
             </p>
             <ul class="proof-list">
               <li>103+ source configs</li>
@@ -255,8 +255,8 @@
               <span class="status private">Private</span>
             </div>
             <p>
-              A study workspace for uploading notes, generating flashcards and quizzes, and tracking
-              review progress with spaced repetition.
+              Solves the revision-prep problem by turning uploaded notes into flashcards, quizzes,
+              study plans, and a tracked spaced-repetition loop.
             </p>
             <ul class="proof-list">
               <li>PDF/DOCX/TXT ingestion</li>
@@ -280,7 +280,7 @@
               <span class="status private">Private</span>
             </div>
             <p>
-              A private job-market tracker that scrapes listings, normalises them, and turns salary,
+              Solves the job-market signal problem by normalising listings and turning salary,
               skill, remote-work, and volume changes into reports and alerts.
             </p>
             <ul class="proof-list">
@@ -305,8 +305,8 @@
               <span class="status private">Private</span>
             </div>
             <p>
-              A supply-teaching scheduling MVP for schools, teachers, and agency staff. It handles
-              cover requests, availability, sequential assignment, and live status updates.
+              Solves the supply-cover coordination problem with school, teacher, and agency portals
+              for requests, availability, sequential assignment, and live status updates.
             </p>
             <ul class="proof-list">
               <li>Sequential assignment engine</li>
@@ -327,7 +327,7 @@
               <span class="status private">Private</span>
             </div>
             <p>
-              A private property-operations prototype for resident requests, service-charge visibility,
+              Solves the property-ops visibility problem with resident requests, service-charge views,
               ticket audit trails, payment flows, and AI-assisted triage.
             </p>
             <ul class="proof-list">
@@ -349,8 +349,8 @@
               <span class="status public">Public</span>
             </div>
             <p>
-              A runnable local analytics app that loads raw marketing CSVs into DuckDB, builds clean
-              tables, trains XGBoost models, checks data quality, and serves a dashboard.
+              Solves the local-analytics proof problem by loading raw marketing CSVs into DuckDB,
+              building clean tables, training XGBoost models, checking quality, and serving a dashboard.
             </p>
             <ul class="proof-list">
               <li>Bronze/silver/gold flow</li>
@@ -374,7 +374,7 @@
               <span class="status public">Public</span>
             </div>
             <p>
-              A Flask app for uploading project schedule data and spotting delivery risk: slippage,
+              Solves the project-control problem by uploading schedules and surfacing slippage,
               milestone pressure, forecast issues, and reporting outputs.
             </p>
             <ul class="proof-list">
@@ -399,8 +399,8 @@
               <span class="status public">Public</span>
             </div>
             <p>
-              A computer-vision project that trains a conditional GAN to generate architecture-themed
-              images and exposes the model through a small Flask API.
+              Solves the image-generation pipeline problem by taking a curated architecture dataset
+              through conditional GAN training and a small Flask API.
             </p>
             <ul class="proof-list">
               <li>Conditional GAN</li>
@@ -424,8 +424,8 @@
               <span class="status public">Public</span>
             </div>
             <p>
-              A recommendation-model project using swipe-style interaction data. It evaluates ranked
-              candidates with a temporal split instead of a random split.
+              Solves the ranking-evaluation problem with swipe-style interaction data, temporal
+              holdouts, and Top-K recommendation metrics.
             </p>
             <ul class="proof-list">
               <li>3.4M+ positive interactions</li>
@@ -453,7 +453,7 @@
               <span class="status public">Public</span>
             </div>
             <p>
-              A Power BI dashboard package with prepared data, PBIX files, exported screenshots,
+              Solves the stakeholder-reporting problem with prepared data, PBIX files, screenshots,
               business commentary, and walkthrough material.
             </p>
             <ul class="proof-list">
@@ -478,8 +478,8 @@
               <span class="status public">Public</span>
             </div>
             <p>
-              A compact NLP notebook that embeds sentences, ranks them by cosine similarity, and explains
-              why similarity search is useful but not the same as fact checking.
+              Solves the semantic-search explanation problem by embedding sentences, ranking them by
+              cosine similarity, and showing why similarity is not fact checking.
             </p>
             <ul class="proof-list">
               <li>Transformer embeddings</li>
@@ -503,8 +503,8 @@
               <span class="status archive">Archive</span>
             </div>
             <p>
-              Archived utilities that show earlier versions of the current work: article-to-newsletter
-              rendering and image collection for model training.
+              Solves small automation chores from earlier work: article-to-newsletter rendering and
+              image collection for model-training datasets.
             </p>
             <ul class="proof-list">
               <li>Article-to-HTML pipeline</li>
@@ -535,6 +535,6 @@
       <a href="https://www.linkedin.com/in/matthew-paver-534262166/">Connect on LinkedIn</a>
     </footer>
 
-    <script src="./script.js?v=20260516-9"></script>
+    <script src="./script.js?v=20260516-10"></script>
   </body>
 </html>
