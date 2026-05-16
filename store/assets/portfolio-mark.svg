@@ -8,7 +8,7 @@
   <path d="M76 124V76h17l13 18 13-18h17v48h-17V99l-13 25-13-25v25H76Z" fill="#151515"/>
   <text x="194" y="88" font-family="Arial, Helvetica, sans-serif" font-size="18" font-weight="900" letter-spacing="5" fill="#D9A441">MATTHEW PAVER</text>
   <text x="192" y="154" font-family="Georgia, serif" font-size="44" font-weight="700" fill="#FFFFFF">AI products. Data systems. Analytics apps.</text>
-  <text x="194" y="202" font-family="Arial, Helvetica, sans-serif" font-size="22" font-weight="700" fill="#D8D2C8">Messy inputs turned into reliable pipelines, useful interfaces, and proof you can inspect.</text>
+  <text x="194" y="202" font-family="Arial, Helvetica, sans-serif" font-size="22" font-weight="700" fill="#D8D2C8">Messy inputs turned into reliable pipelines, useful interfaces, and things you can open.</text>
   <g font-family="Arial, Helvetica, sans-serif" font-size="17" font-weight="900">
     <rect x="194" y="250" width="170" height="48" fill="#F4F0E9"/>
     <text x="220" y="281" fill="#151515">Collect</text>

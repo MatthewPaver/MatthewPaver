@@ -33,7 +33,7 @@ I build practical systems from messy inputs: crawled websites, scraped listings,
 <tr>
 <td align="center"><strong>Live product</strong><br /><sub>Inference Brief</sub></td>
 <td align="center"><strong>103+ sources</strong><br /><sub>Happening ingestion</sub></td>
-<td align="center"><strong>3.4M+ interactions</strong><br /><sub>Recommendation dataset</sub></td>
+<td align="center"><strong>3.4M+ interactions</strong><br /><sub>Recommendation data</sub></td>
 <td align="center"><strong>167 tests</strong><br /><sub>Private crawler suite</sub></td>
 </tr>
 </table>
