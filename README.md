@@ -6,25 +6,25 @@
 
 # Matthew Paver
 
-### AI products, data systems, and analytics apps
+### Product-minded AI and data engineering
 
-I build practical systems from messy inputs: crawled websites, scraped listings, raw CSVs, notes, schedules, dashboards, and recommendation data. The pattern is simple: collect the data, clean it, check it, and ship something someone can open.
+I like turning rough data and half-formed ideas into things people can actually use: live products, crawlers, workflow tools, dashboards, and ML experiments. The common thread is making messy information easier to collect, trust, and act on.
 
 <p>
   <a href="https://matthewpaver.github.io/MatthewPaver/store/">
-    <img src="https://img.shields.io/badge/Portfolio_Store-Open-151515?style=for-the-badge&labelColor=0f766e&color=151515" alt="Open Portfolio Store" />
+    <img src="https://img.shields.io/badge/Browse-Portfolio_Store-151515?style=for-the-badge&labelColor=0f766e&color=151515" alt="Browse Portfolio Store" />
   </a>
   <a href="https://matthewpaver.github.io/MatthewPaver/store/preview.html?app=inference">
-    <img src="https://img.shields.io/badge/Live_Product-Inference_Brief-151515?style=for-the-badge&labelColor=8f5d12&color=151515" alt="Open Inference Brief" />
+    <img src="https://img.shields.io/badge/Try-Inference_Brief-151515?style=for-the-badge&labelColor=8f5d12&color=151515" alt="Try Inference Brief" />
   </a>
   <a href="CASE_STUDIES.md">
-    <img src="https://img.shields.io/badge/Case_Studies-Read-151515?style=for-the-badge&labelColor=1d4f91&color=151515" alt="Read Case Studies" />
+    <img src="https://img.shields.io/badge/Read-Case_Studies-151515?style=for-the-badge&labelColor=1d4f91&color=151515" alt="Read Case Studies" />
   </a>
   <a href="CV.pdf">
-    <img src="https://img.shields.io/badge/CV-Open-151515?style=for-the-badge&labelColor=9f3a2f&color=151515" alt="Open CV" />
+    <img src="https://img.shields.io/badge/View-CV-151515?style=for-the-badge&labelColor=9f3a2f&color=151515" alt="View CV" />
   </a>
   <a href="https://www.linkedin.com/in/matthew-paver-534262166/">
-    <img src="https://img.shields.io/badge/LinkedIn-Connect-151515?style=for-the-badge&logo=linkedin&logoColor=white&labelColor=0a66c2&color=151515" alt="Connect on LinkedIn" />
+    <img src="https://img.shields.io/badge/Connect_with_me-LinkedIn-151515?style=for-the-badge&logo=linkedin&logoColor=white&labelColor=0a66c2&color=151515" alt="Connect with me on LinkedIn" />
   </a>
 </p>
 
@@ -37,15 +37,6 @@ I build practical systems from messy inputs: crawled websites, scraped listings,
   <img src="https://img.shields.io/badge/Supabase-151515?style=for-the-badge&logo=supabase&logoColor=white" alt="Supabase" />
   <img src="https://img.shields.io/badge/GCP-151515?style=for-the-badge&logo=googlecloud&logoColor=white" alt="GCP" />
 </p>
-
-<table>
-<tr>
-<td align="center"><strong>Live product</strong><br /><sub>Inference Brief</sub></td>
-<td align="center"><strong>103+ sources</strong><br /><sub>Happening ingestion</sub></td>
-<td align="center"><strong>Ranking systems</strong><br /><sub>Recommendations + retrieval</sub></td>
-<td align="center"><strong>167 tests</strong><br /><sub>Private crawler suite</sub></td>
-</tr>
-</table>
 
 </div>
 
