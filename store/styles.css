@@ -280,22 +280,13 @@ h1 {
   padding: 10px;
 }
 
-.selected-card span,
 .selected-card small {
   color: var(--muted);
   padding: 0 16px;
 }
 
-.selected-card span {
-  margin-top: 4px;
-  color: var(--accent);
-  font-size: 0.7rem;
-  font-weight: 850;
-  letter-spacing: 0.1em;
-  text-transform: uppercase;
-}
-
 .selected-card strong {
+  margin-top: 6px;
   padding: 0 16px;
   font-family: Charter, "Iowan Old Style", Georgia, serif;
   font-size: 1.55rem;
@@ -1336,14 +1327,6 @@ h1 {
 
   h1 {
     font-size: clamp(2.24rem, 12vw, 3.1rem);
-  }
-
-  .signal-panel {
-    margin-top: 8px;
-  }
-
-  .proof-strip {
-    min-height: 58px;
   }
 
   .filters {
