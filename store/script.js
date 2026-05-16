@@ -11,8 +11,28 @@ document.addEventListener("DOMContentLoaded", () => {
   if (!searchInput || !visibleCount || !emptyState) return;
 
   let activeFilter = "all";
+  const validFilters = new Set(filters.map((button) => button.dataset.filter).filter(Boolean));
 
-  function updateStore() {
+  function updateUrlState() {
+    const url = new URL(window.location.href);
+    const query = searchInput.value.trim();
+
+    if (activeFilter === "all") {
+      url.searchParams.delete("filter");
+    } else {
+      url.searchParams.set("filter", activeFilter);
+    }
+
+    if (query) {
+      url.searchParams.set("q", query);
+    } else {
+      url.searchParams.delete("q");
+    }
+
+    window.history.replaceState({}, "", url);
+  }
+
+  function updateStore({ syncUrl = true } = {}) {
     const query = searchInput.value.trim().toLowerCase();
     let count = 0;
 
@@ -28,6 +48,7 @@ document.addEventListener("DOMContentLoaded", () => {
     visibleCount.textContent = String(count);
     emptyState.hidden = count > 0;
     if (clearSearch) clearSearch.hidden = searchInput.value.length === 0;
+    if (syncUrl) updateUrlState();
 
     // Single polite live region so empty results get announced without duplicating the grid
     if (announcer) {
@@ -46,6 +67,16 @@ document.addEventListener("DOMContentLoaded", () => {
       button.setAttribute("aria-pressed", String(isActive));
     });
 
+    collectionLinks.forEach((link) => {
+      const isActive = link.dataset.collection === filterName;
+      link.classList.toggle("active", isActive);
+      if (isActive) {
+        link.setAttribute("aria-current", "true");
+      } else {
+        link.removeAttribute("aria-current");
+      }
+    });
+
     updateStore();
   }
 
@@ -56,8 +87,10 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 
   collectionLinks.forEach((link) => {
-    link.addEventListener("click", () => {
+    link.addEventListener("click", (event) => {
+      event.preventDefault();
       setFilter(link.dataset.collection);
+      document.querySelector("#store")?.scrollIntoView({ block: "start" });
     });
   });
 
@@ -70,5 +103,17 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 
-  updateStore();
+  const initialParams = new URLSearchParams(window.location.search);
+  const initialFilter = initialParams.get("filter");
+  const initialQuery = initialParams.get("q");
+
+  if (initialQuery) {
+    searchInput.value = initialQuery;
+  }
+
+  if (initialFilter && validFilters.has(initialFilter)) {
+    setFilter(initialFilter);
+  } else {
+    updateStore({ syncUrl: false });
+  }
 });
