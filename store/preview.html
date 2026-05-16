@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#fbfaf7" />
+    <title>Project Preview · Matthew Paver Portfolio Store</title>
+    <meta
+      name="description"
+      content="App-store style project preview for Matthew Paver's selected AI, data, and workflow systems."
+    />
+    <link
+      rel="icon"
+      href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='10' fill='%23d9a441'/%3E%3Cpath d='M12 44V18h9l11 14 11-14h9v26h-9V30L32 44 21 30v14z' fill='%23161411'/%3E%3C/svg%3E"
+    />
+    <link rel="stylesheet" href="./styles.css?v=20260516-17" />
+  </head>
+  <body>
+    <main class="shell preview-shell">
+      <nav class="preview-nav" aria-label="Preview navigation">
+        <a href="./">Back to store</a>
+        <a href="https://github.com/MatthewPaver/MatthewPaver">GitHub profile</a>
+      </nav>
+
+      <section class="preview-hero">
+        <div class="preview-copy">
+          <p id="preview-kicker" class="eyebrow">Selected work</p>
+          <h1 id="preview-title">Project preview</h1>
+          <p id="preview-summary" class="lede"></p>
+          <div id="preview-actions" class="preview-actions"></div>
+        </div>
+
+        <figure class="preview-media">
+          <img id="preview-image" src="./assets/inference-brief.png" width="1200" height="760" alt="" />
+          <figcaption class="preview-meta">
+            <div>
+              <span>Role</span>
+              <strong id="preview-role"></strong>
+            </div>
+            <div>
+              <span>Status</span>
+              <strong id="preview-status"></strong>
+            </div>
+            <div>
+              <span>Focus</span>
+              <strong id="preview-focus"></strong>
+            </div>
+          </figcaption>
+        </figure>
+      </section>
+
+      <section class="preview-layout">
+        <article class="preview-panel">
+          <h2>What it solves</h2>
+          <p id="preview-problem"></p>
+          <ul id="preview-points" class="preview-list"></ul>
+        </article>
+
+        <aside class="preview-panel">
+          <h3>Stack</h3>
+          <div id="preview-stack" class="preview-stack"></div>
+          <p id="preview-note" class="motion-note"></p>
+        </aside>
+      </section>
+    </main>
+
+    <script src="./preview.js?v=20260516-17"></script>
+  </body>
+</html>

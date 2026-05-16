@@ -11,11 +11,21 @@
 I build practical systems from messy inputs: crawled websites, scraped listings, raw CSVs, notes, schedules, dashboards, and recommendation data. The pattern is simple: collect the data, clean it, check it, and ship something someone can open.
 
 <p>
-  <a href="https://matthewpaver.github.io/MatthewPaver/store/"><strong>Portfolio Store</strong></a> ·
-  <a href="https://inferencebrief.co/"><strong>Live Product</strong></a> ·
-  <a href="CASE_STUDIES.md"><strong>Case Studies</strong></a> ·
-  <a href="CV.pdf"><strong>CV</strong></a> ·
-  <a href="https://www.linkedin.com/in/matthew-paver-534262166/"><strong>LinkedIn</strong></a>
+  <a href="https://matthewpaver.github.io/MatthewPaver/store/">
+    <img src="https://img.shields.io/badge/Portfolio_Store-Open-151515?style=for-the-badge&labelColor=0f766e&color=151515" alt="Open Portfolio Store" />
+  </a>
+  <a href="https://matthewpaver.github.io/MatthewPaver/store/preview.html?app=inference">
+    <img src="https://img.shields.io/badge/Live_Product-Inference_Brief-151515?style=for-the-badge&labelColor=8f5d12&color=151515" alt="Open Inference Brief" />
+  </a>
+  <a href="CASE_STUDIES.md">
+    <img src="https://img.shields.io/badge/Case_Studies-Read-151515?style=for-the-badge&labelColor=1d4f91&color=151515" alt="Read Case Studies" />
+  </a>
+  <a href="CV.pdf">
+    <img src="https://img.shields.io/badge/CV-Open-151515?style=for-the-badge&labelColor=9f3a2f&color=151515" alt="Open CV" />
+  </a>
+  <a href="https://www.linkedin.com/in/matthew-paver-534262166/">
+    <img src="https://img.shields.io/badge/LinkedIn-Connect-151515?style=for-the-badge&logo=linkedin&logoColor=white&labelColor=0a66c2&color=151515" alt="Connect on LinkedIn" />
+  </a>
 </p>
 
 <p>
@@ -46,31 +56,31 @@ I build practical systems from messy inputs: crawled websites, scraped listings,
 <table>
 <tr>
 <td width="33%" valign="top">
-  <a href="https://inferencebrief.co/">
-    <img src="store/assets/inference-preview.gif" alt="Animated Inference Brief product preview" />
+  <a href="https://matthewpaver.github.io/MatthewPaver/store/preview.html?app=inference">
+    <img src="store/assets/inference-brief.png" alt="Inference Brief product preview" />
   </a>
   <h3>Inference Brief</h3>
   <p>A working reader for staying current with AI without chasing noisy feeds. It has story collection, scoring, summaries, publishing, accounts, bookmarks, and history.</p>
   <p><code>Next.js</code> <code>TypeScript</code> <code>Supabase</code> <code>Python</code></p>
-  <p><a href="https://inferencebrief.co/">Open product</a></p>
+  <p><a href="https://matthewpaver.github.io/MatthewPaver/store/preview.html?app=inference">Open preview</a> · <a href="https://inferencebrief.co/">Live product</a></p>
 </td>
 <td width="33%" valign="top">
-  <a href="CASE_STUDIES.md#happening">
-    <img src="store/assets/happening-preview.gif" alt="Animated Happening ingestion preview" />
+  <a href="https://matthewpaver.github.io/MatthewPaver/store/preview.html?app=happening">
+    <img src="store/assets/happening-web.png" alt="Happening product preview" />
   </a>
   <h3>Happening</h3>
   <p>Venue event data is scattered across inconsistent public websites. Happening turns 103+ sources into structured event data with crawling, extraction, dedupe, checks, and tests.</p>
   <p><code>Python</code> <code>Playwright</code> <code>SQLite</code> <code>Pydantic</code></p>
-  <p><a href="CASE_STUDIES.md#happening">Read case study</a></p>
+  <p><a href="https://matthewpaver.github.io/MatthewPaver/store/preview.html?app=happening">Open preview</a></p>
 </td>
 <td width="33%" valign="top">
-  <a href="https://matthewpaver.github.io/MatthewPaver/store/#quicksupply">
-    <img src="store/assets/quicksupply-preview.gif" alt="Animated QuickSupply workflow preview" />
+  <a href="https://matthewpaver.github.io/MatthewPaver/store/preview.html?app=quicksupply">
+    <img src="store/assets/quicksupply-dashboard.png" alt="QuickSupply product preview" />
   </a>
   <h3>QuickSupply</h3>
   <p>A workflow app for school cover: requests, agency assignment, teacher offers, compliance, and live booking status across three portals.</p>
   <p><code>Next.js</code> <code>TypeScript</code> <code>Drizzle</code> <code>SSE</code></p>
-  <p><a href="https://matthewpaver.github.io/MatthewPaver/store/#quicksupply">View in store</a></p>
+  <p><a href="https://matthewpaver.github.io/MatthewPaver/store/preview.html?app=quicksupply">Open preview</a></p>
 </td>
 </tr>
 </table>
