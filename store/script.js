@@ -12,6 +12,62 @@ document.addEventListener("DOMContentLoaded", () => {
   let activeFilter = "all";
   const validFilters = new Set(filters.map((button) => button.dataset.filter).filter(Boolean));
   const prefersReducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+  const cardSpecs = {
+    "Inference Brief": ["Cuts through AI-news noise", "Live product workflow"],
+    "Happening": ["Turns venue pages into data", "103+ sources, 167 tests"],
+    "AI Study Companion": ["Makes revision material usable", "Ingestion + generation loop"],
+    "Smart Job Market Intelligence": ["Finds labour-market signals", "Reports, alerts, API shape"],
+    "QuickSupply": ["Coordinates supply-cover work", "Three-sided workflow model"],
+    "Operations Platform Prototype": ["Organises property ops requests", "Audit trail + triage concept"],
+    "Marketing ML Lakehouse": ["Packages local analytics", "Pipeline, ML, dashboard"],
+    "ProjectLens": ["Reads schedule delivery risk", "Upload-to-report flow"],
+    "Architexa": ["Generates architecture imagery", "Dataset, GAN, API"],
+    "Dating App Recommendation System": ["Ranks candidate profiles", "Temporal evaluation discipline"],
+    "HR Performance Analytics": ["Turns HR data into decisions", "Stakeholder-ready dashboards"],
+    "Sentence Similarity Analysis": ["Compares meaning with embeddings", "Retrieval caveats made clear"],
+    "Newsletter + Scraper Utilities": ["Archives earlier automation", "Useful provenance, not front door"]
+  };
+
+  function initCardDetails() {
+    cards.forEach((card, index) => {
+      const title = card.querySelector("h3")?.textContent?.trim();
+      const spec = title ? cardSpecs[title] : null;
+      const titleRow = card.querySelector(".app-title-row");
+      const proofList = card.querySelector(".proof-list");
+
+      card.style.setProperty("--card-number", `"${String(index + 1).padStart(2, "0")}"`);
+
+      if (titleRow && title && !titleRow.querySelector(".app-icon")) {
+        const icon = document.createElement("span");
+        icon.className = "app-icon";
+        icon.setAttribute("aria-hidden", "true");
+        icon.textContent = title
+          .split(/\s+/)
+          .filter(Boolean)
+          .slice(0, 2)
+          .map((word) => word[0])
+          .join("")
+          .toUpperCase();
+        titleRow.prepend(icon);
+      }
+
+      if (!spec || !proofList || card.querySelector(".card-snapshot")) return;
+
+      const snapshot = document.createElement("dl");
+      snapshot.className = "card-snapshot";
+      snapshot.innerHTML = `
+        <div>
+          <dt>Solves</dt>
+          <dd>${spec[0]}</dd>
+        </div>
+        <div>
+          <dt>Shows</dt>
+          <dd>${spec[1]}</dd>
+        </div>
+      `;
+      proofList.insertAdjacentElement("afterend", snapshot);
+    });
+  }
 
   function initRevealMotion() {
     if (prefersReducedMotion || !("IntersectionObserver" in window)) return;
@@ -125,5 +181,6 @@ document.addEventListener("DOMContentLoaded", () => {
     updateStore({ syncUrl: false });
   }
 
+  initCardDetails();
   initRevealMotion();
 });

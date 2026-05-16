@@ -713,6 +713,8 @@ h1 {
 }
 
 .app-card {
+  position: relative;
+  isolation: isolate;
   min-height: 500px;
   display: flex;
   flex-direction: column;
@@ -720,6 +722,25 @@ h1 {
   border: 1px solid var(--line);
   background: var(--surface);
   transition: border-color 220ms var(--ease-smooth), background 220ms var(--ease-smooth), box-shadow 220ms var(--ease-smooth), transform 220ms var(--ease-smooth);
+}
+
+.app-card::before {
+  content: var(--card-number, "");
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  z-index: 2;
+  display: grid;
+  place-items: center;
+  min-width: 34px;
+  height: 26px;
+  border: 1px solid rgba(255, 255, 255, 0.72);
+  background: rgba(21, 21, 21, 0.78);
+  color: var(--surface);
+  font-size: 0.7rem;
+  font-weight: 900;
+  letter-spacing: 0.07em;
+  backdrop-filter: blur(10px);
 }
 
 .app-card:hover {
@@ -843,8 +864,23 @@ h1 {
 }
 
 .app-title-row h3 {
+  flex: 1 1 auto;
   font-family: Charter, "Iowan Old Style", Georgia, serif;
   font-size: 1.45rem;
+}
+
+.app-icon {
+  flex: 0 0 auto;
+  display: grid;
+  place-items: center;
+  width: 38px;
+  height: 38px;
+  border: 1px solid var(--ink);
+  background: var(--ink);
+  color: var(--surface);
+  font-size: 0.72rem;
+  font-weight: 900;
+  letter-spacing: 0.04em;
 }
 
 .status {
@@ -907,6 +943,38 @@ h1 {
   height: 5px;
   margin-top: 0.4rem;
   background: var(--accent);
+}
+
+.card-snapshot {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1px;
+  margin: 0 0 14px;
+  border: 1px solid var(--line);
+  background: var(--line);
+}
+
+.card-snapshot div {
+  min-width: 0;
+  background: var(--bg);
+  padding: 10px;
+}
+
+.card-snapshot dt {
+  margin: 0 0 5px;
+  color: var(--soft);
+  font-size: 0.62rem;
+  font-weight: 900;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+}
+
+.card-snapshot dd {
+  margin: 0;
+  color: var(--ink);
+  font-size: 0.82rem;
+  font-weight: 850;
+  line-height: 1.24;
 }
 
 .stack-list {
@@ -1166,6 +1234,10 @@ h1 {
 
   .app-card {
     min-height: auto;
+  }
+
+  .card-snapshot {
+    grid-template-columns: 1fr;
   }
 }
 
