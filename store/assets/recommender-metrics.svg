@@ -1,6 +1,6 @@
 <svg width="1200" height="680" viewBox="0 0 1200 680" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
   <title id="title">Recommendation system metrics visual</title>
-  <desc id="desc">A visual for a dating app recommendation system showing 3.4 million interactions, temporal holdout evaluation, and top-K ranking.</desc>
+  <desc id="desc">A visual for a dating app recommendation system showing implicit-feedback ranking, temporal holdout evaluation, and top-K metrics.</desc>
   <rect width="1200" height="680" fill="#FFF8EB"/>
   <rect x="36" y="36" width="1128" height="608" fill="#F7F1E6" stroke="#161411" stroke-width="4"/>
   <text x="78" y="104" font-family="Arial, Helvetica, sans-serif" font-size="18" font-weight="900" letter-spacing="5" fill="#AD3F32">RECOMMENDATION SYSTEM</text>
@@ -9,9 +9,9 @@
 
   <g font-family="Arial, Helvetica, sans-serif">
     <rect x="78" y="294" width="300" height="188" fill="#161411"/>
-    <text x="108" y="356" font-size="62" font-weight="900" fill="#D9A441">3.4M+</text>
-    <text x="112" y="404" font-size="24" font-weight="900" fill="#FFF8EB">positive interactions</text>
-    <text x="112" y="442" font-size="18" font-weight="800" fill="#CFC4B3">public modelling signal</text>
+    <text x="108" y="356" font-size="44" font-weight="900" fill="#D9A441">Implicit</text>
+    <text x="112" y="404" font-size="24" font-weight="900" fill="#FFF8EB">feedback ranking</text>
+    <text x="112" y="442" font-size="18" font-weight="800" fill="#CFC4B3">behaviour-based signal</text>
 
     <rect x="450" y="294" width="300" height="188" fill="#0D6F5F"/>
     <text x="482" y="356" font-size="50" font-weight="900" fill="#FFF8EB">Top-K</text>

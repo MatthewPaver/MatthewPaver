@@ -14,7 +14,6 @@ I build practical systems from messy inputs: crawled websites, scraped listings,
   <a href="https://matthewpaver.github.io/MatthewPaver/store/"><strong>Portfolio Store</strong></a> ·
   <a href="https://inferencebrief.co/"><strong>Live Product</strong></a> ·
   <a href="CASE_STUDIES.md"><strong>Case Studies</strong></a> ·
-  <a href="Projects.md"><strong>Project Index</strong></a> ·
   <a href="CV.pdf"><strong>CV</strong></a> ·
   <a href="https://www.linkedin.com/in/matthew-paver-534262166/"><strong>LinkedIn</strong></a>
 </p>
@@ -33,7 +32,7 @@ I build practical systems from messy inputs: crawled websites, scraped listings,
 <tr>
 <td align="center"><strong>Live product</strong><br /><sub>Inference Brief</sub></td>
 <td align="center"><strong>103+ sources</strong><br /><sub>Happening ingestion</sub></td>
-<td align="center"><strong>3.4M+ interactions</strong><br /><sub>Recommendation data</sub></td>
+<td align="center"><strong>Ranking systems</strong><br /><sub>Recommendations + retrieval</sub></td>
 <td align="center"><strong>167 tests</strong><br /><sub>Private crawler suite</sub></td>
 </tr>
 </table>
@@ -76,7 +75,7 @@ I build practical systems from messy inputs: crawled websites, scraped listings,
 </tr>
 </table>
 
-Open the [Portfolio Store](https://matthewpaver.github.io/MatthewPaver/store/) for the full app-store view, screenshots, demos, credentials, and archived experiments.
+Open the [Portfolio Store](https://matthewpaver.github.io/MatthewPaver/store/) for the full app-store view, screenshots, credentials, and archived experiments.
 
 ---
 
@@ -149,7 +148,7 @@ Open the [Portfolio Store](https://matthewpaver.github.io/MatthewPaver/store/) f
 
 ## Explore
 
-The [Portfolio Store](https://matthewpaver.github.io/MatthewPaver/store/) is the main index. The [case studies](CASE_STUDIES.md) cover the private systems without exposing private code, and [Projects.md](Projects.md) keeps the full public/private/archive map.
+The [Portfolio Store](https://matthewpaver.github.io/MatthewPaver/store/) is the front door. The [case studies](CASE_STUDIES.md) explain the private systems without exposing private code. [Projects.md](Projects.md) is the appendix: useful when someone wants the full public/private/archive map, but not the first thing to open.
 
 <details>
 <summary>Latest public activity</summary>

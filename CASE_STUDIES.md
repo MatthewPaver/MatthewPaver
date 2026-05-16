@@ -2,7 +2,7 @@
 
 Short, sanitised case studies across AI, data, automation, and analytics.
 
-[Back to Profile](README.md) | [Portfolio Store](https://matthewpaver.github.io/MatthewPaver/store/) | [Project Index](Projects.md)
+[Back to Profile](README.md) | [Portfolio Store](https://matthewpaver.github.io/MatthewPaver/store/) | [Project Appendix](Projects.md)
 
 All professional examples are intentionally anonymised and focused on architecture, tradeoffs, and delivery patterns rather than internal identifiers.
 
