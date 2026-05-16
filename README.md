@@ -1,9 +1,5 @@
 <div align="center">
 
-<a href="https://matthewpaver.github.io/MatthewPaver/store/">
-  <img src="store/assets/portfolio-mark.svg" width="100%" alt="Matthew Paver portfolio mark" />
-</a>
-
 # Matthew Paver
 
 ### Product-minded AI and data engineering
