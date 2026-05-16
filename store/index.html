@@ -35,7 +35,7 @@
       rel="icon"
       href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='10' fill='%23d9a441'/%3E%3Cpath d='M12 44V18h9l11 14 11-14h9v26h-9V30L32 44 21 30v14z' fill='%23161411'/%3E%3C/svg%3E"
     />
-    <link rel="stylesheet" href="./styles.css?v=20260516-18" />
+    <link rel="stylesheet" href="./styles.css?v=20260516-20" />
   </head>
   <body>
     <a class="skip-link" href="#store">Skip to ideas</a>
@@ -107,43 +107,93 @@
         </div>
       </section>
 
+      <section class="featured-build" aria-labelledby="featured-build-heading">
+        <div class="featured-build-copy">
+          <p class="eyebrow">Featured build</p>
+          <h2 id="featured-build-heading">Happening: messy venue pages into checked event data.</h2>
+          <p>
+            The hard part was not scraping one website. It was making 103+ different source shapes
+            predictable enough to run, inspect, and trust.
+          </p>
+        </div>
+        <div class="story-steps" aria-label="Featured build story">
+          <div>
+            <span>Problem</span>
+            <strong>Event listings are scattered, inconsistent, and easy to break.</strong>
+          </div>
+          <div>
+            <span>Decision</span>
+            <strong>Treat each venue as a configured source with explicit extraction rules.</strong>
+          </div>
+          <div>
+            <span>Proof</span>
+            <strong>103+ source configs, dedupe, checks, scheduled runs, and a 167-test reliability suite.</strong>
+          </div>
+          <div>
+            <span>Lesson</span>
+            <strong>Good automation is not just collection. It is collection you can explain when it fails.</strong>
+          </div>
+        </div>
+        <a class="text-link" href="./preview.html?app=happening">Open Happening preview</a>
+      </section>
+
       <section id="credentials" class="credential-band" aria-labelledby="credentials-heading">
         <div>
           <p class="eyebrow">Credentials</p>
           <h2 id="credentials-heading">Certifications behind the build work.</h2>
         </div>
-        <div class="credential-grid">
-          <a href="https://cp.certmetrics.com/amazon/en/public/verify/credential/455c09a58c6c43beb001b21d3ccec2a0">
-            <span>AWS</span>
-            <strong>AI Practitioner</strong>
-            <small>AI and cloud fundamentals</small>
-          </a>
-          <a href="https://cp.certmetrics.com/amazon/en/public/verify/credential/d0dd54bf93df495da5c3e75ee69940fe">
-            <span>AWS</span>
-            <strong>Cloud Practitioner</strong>
-            <small>Cloud architecture foundations</small>
-          </a>
-          <a href="https://drive.google.com/file/d/15oXe_G86TEiETdC8kGBhbnKoMjVZ5mQQ/view">
-            <span>Neo4j</span>
-            <strong>Certified Professional</strong>
-            <small>Graph data modelling</small>
-          </a>
-          <a href="https://drive.google.com/file/d/1NgSeIIF49Sqh2DAMY5KQEtnaddSc1Sqw/view">
-            <span>Hugging Face</span>
-            <strong>AI Agents</strong>
-            <small>Agent workflows and evaluation</small>
-          </a>
-          <a href="https://drive.google.com/file/d/15lrcn5_Cn4g-kD165xGNLUGUGXtCptk-/view">
-            <span>UiPath</span>
-            <strong>RPA Developer</strong>
-            <small>Automation delivery</small>
-          </a>
-          <a href="https://drive.google.com/file/d/15yLBx8nzlhn_PwrGoqQbumRG8zRQPC9t/view">
-            <span>BCS</span>
-            <strong>Diploma in IT</strong>
-            <small>Professional IT foundations</small>
-          </a>
+        <div class="credential-groups">
+          <section class="credential-group" aria-label="Cloud credentials">
+            <h3>Cloud</h3>
+            <a href="https://cp.certmetrics.com/amazon/en/public/verify/credential/d0dd54bf93df495da5c3e75ee69940fe">
+              <span class="issuer-mark">AWS</span>
+              <strong>Cloud Practitioner</strong>
+              <small>Verified foundation in cloud architecture and services.</small>
+            </a>
+          </section>
+          <section class="credential-group" aria-label="AI credentials">
+            <h3>AI</h3>
+            <a href="https://cp.certmetrics.com/amazon/en/public/verify/credential/455c09a58c6c43beb001b21d3ccec2a0">
+              <span class="issuer-mark">AWS</span>
+              <strong>AI Practitioner</strong>
+              <small>AI and cloud fundamentals.</small>
+            </a>
+            <a href="https://drive.google.com/file/d/1NgSeIIF49Sqh2DAMY5KQEtnaddSc1Sqw/view">
+              <span class="issuer-mark">HF</span>
+              <strong>Hugging Face AI Agents</strong>
+              <small>Agent workflows and evaluation.</small>
+            </a>
+            <a href="https://drive.google.com/file/d/15oXe_G86TEiETdC8kGBhbnKoMjVZ5mQQ/view">
+              <span class="issuer-mark">N4J</span>
+              <strong>Neo4j Certified Professional</strong>
+              <small>Graph data modelling.</small>
+            </a>
+          </section>
+          <section class="credential-group" aria-label="Automation credentials">
+            <h3>Automation</h3>
+            <a href="https://drive.google.com/file/d/15lrcn5_Cn4g-kD165xGNLUGUGXtCptk-/view">
+              <span class="issuer-mark">Ui</span>
+              <strong>UiPath RPA Developer</strong>
+              <small>Automation and RPA delivery.</small>
+            </a>
+          </section>
+          <section class="credential-group" aria-label="Professional IT credentials">
+            <h3>Professional IT</h3>
+            <a href="https://drive.google.com/file/d/15yLBx8nzlhn_PwrGoqQbumRG8zRQPC9t/view">
+              <span class="issuer-mark">BCS</span>
+              <strong>BCS Diploma in IT</strong>
+              <small>Professional IT foundations.</small>
+            </a>
+          </section>
         </div>
+      </section>
+
+      <section class="personal-note" aria-label="Personal focus">
+        <p>
+          I am most interested in systems where AI, data, and product design meet:
+          tools that collect messy information and turn it into something useful.
+        </p>
+        <a class="button primary" href="https://www.linkedin.com/in/matthew-paver-534262166/">Connect with me</a>
       </section>
 
       <section class="section-heading">
@@ -340,7 +390,7 @@
         </article>
 
         <article class="app-card image-card" data-tags="data ml analytics" data-status="Runnable application">
-          <img src="./assets/marketing-lakehouse.svg" width="1200" height="675" loading="lazy" alt="Marketing ML Lakehouse workflow visual" />
+          <img src="./assets/marketing-lakehouse-thumb.svg" width="1200" height="675" loading="lazy" alt="Marketing ML Lakehouse product thumbnail" />
           <div class="app-body">
             <div class="app-title-row">
               <h3>Marketing ML Lakehouse</h3>
@@ -355,6 +405,9 @@
               <li>XGBoost model training</li>
               <li>Streamlit dashboard</li>
             </ul>
+            <div class="repo-confidence" aria-label="Public repo signals">
+              <span>Open repo</span><span>Run locally</span><span>Tests</span>
+            </div>
             <div class="stack-list" aria-label="Tech stack">
               <span>Python</span><span>DuckDB</span><span>XGBoost</span><span>Streamlit</span><span>Makefile</span>
             </div>
@@ -381,6 +434,9 @@
               <li>Schedule-risk reporting</li>
               <li>Power BI-ready outputs</li>
             </ul>
+            <div class="repo-confidence" aria-label="Public repo signals">
+              <span>Open repo</span><span>Run tests</span><span>Upload flow</span>
+            </div>
             <div class="stack-list" aria-label="Tech stack">
               <span>Python</span><span>Flask</span><span>pandas</span><span>Forecasting</span><span>Power BI</span>
             </div>
@@ -392,7 +448,7 @@
         </article>
 
         <article class="app-card image-card" data-tags="ml product" data-status="Completed project">
-          <img src="./assets/architexa-preview.svg" width="1200" height="680" loading="lazy" alt="Architexa architecture image generation workflow visual" />
+          <img src="./assets/architexa-thumb.svg" width="1200" height="675" loading="lazy" alt="Architexa product thumbnail" />
           <div class="app-body">
             <div class="app-title-row">
               <h3>Architexa</h3>
@@ -407,6 +463,9 @@
               <li>Dataset preparation</li>
               <li>API integration</li>
             </ul>
+            <div class="repo-confidence" aria-label="Public repo signals">
+              <span>Open repo</span><span>Model demo</span><span>API shape</span>
+            </div>
             <div class="stack-list" aria-label="Tech stack">
               <span>Python</span><span>TensorFlow</span><span>Keras</span><span>Flask</span><span>GAN</span>
             </div>
@@ -418,7 +477,7 @@
         </article>
 
         <article class="app-card image-card" data-tags="ml data" data-status="Notebook project">
-          <img src="./assets/recommender-metrics.svg" width="1200" height="675" loading="lazy" alt="Dating app recommendation metrics visual" />
+          <img src="./assets/recommender-thumb.svg" width="1200" height="675" loading="lazy" alt="Dating app recommendation product thumbnail" />
           <div class="app-body">
             <div class="app-title-row">
               <h3>Dating App Recommendation System</h3>
@@ -433,6 +492,9 @@
               <li>Temporal holdout</li>
               <li>Top-K metrics</li>
             </ul>
+            <div class="repo-confidence" aria-label="Public repo signals">
+              <span>Open repo</span><span>Demo data</span><span>Tests</span>
+            </div>
             <div class="stack-list" aria-label="Tech stack">
               <span>Python</span><span>NumPy</span><span>SciPy</span><span>Jupyter</span><span>CLI</span>
             </div>
@@ -459,6 +521,9 @@
               <li>Prepared CSVs and PBIX</li>
               <li>Stakeholder-ready writeup</li>
             </ul>
+            <div class="repo-confidence" aria-label="Public repo signals">
+              <span>Open repo</span><span>PBIX files</span><span>Screenshots</span>
+            </div>
             <div class="stack-list" aria-label="Tech stack">
               <span>Power BI</span><span>DAX</span><span>CSV</span><span>Reporting</span><span>PDF exports</span>
             </div>
@@ -470,7 +535,7 @@
         </article>
 
         <article class="app-card image-card" data-tags="data ml" data-status="Notebook demo">
-          <img src="./assets/sentence-similarity.svg" width="1200" height="680" loading="lazy" alt="Sentence similarity embedding workflow visual" />
+          <img src="./assets/sentence-similarity-thumb.svg" width="1200" height="675" loading="lazy" alt="Sentence similarity product thumbnail" />
           <div class="app-body">
             <div class="app-title-row">
               <h3>Sentence Similarity Analysis</h3>
@@ -485,6 +550,9 @@
               <li>Cosine ranking</li>
               <li>Retrieval caveats</li>
             </ul>
+            <div class="repo-confidence" aria-label="Public repo signals">
+              <span>Open repo</span><span>Notebook</span><span>Concept demo</span>
+            </div>
             <div class="stack-list" aria-label="Tech stack">
               <span>Python</span><span>Jupyter</span><span>sentence-transformers</span><span>PyTorch</span>
             </div>
@@ -494,7 +562,18 @@
             </div>
           </div>
         </article>
+      </section>
 
+      <section class="archive-shelf" aria-labelledby="archive-heading">
+        <div class="section-heading compact">
+          <div>
+            <p class="eyebrow">Archive</p>
+            <h2 id="archive-heading">Earlier utilities.</h2>
+          </div>
+          <p>
+            Useful provenance kept out of the main shelf. These show earlier automation patterns without competing with the flagship builds.
+          </p>
+        </div>
         <article class="app-card image-card" data-tags="archive automation" data-status="Archived prototype">
           <div class="archive-thumb" role="img" aria-label="Newsletter and scraper utilities archive visual">
             <span>Archive shelf</span>
@@ -540,6 +619,6 @@
       <a href="https://www.linkedin.com/in/matthew-paver-534262166/">Connect on LinkedIn</a>
     </footer>
 
-    <script src="./script.js?v=20260516-19"></script>
+    <script src="./script.js?v=20260516-20"></script>
   </body>
 </html>

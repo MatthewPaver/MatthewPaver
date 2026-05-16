@@ -20,7 +20,7 @@ const previews = {
       { label: "Open product", href: "https://inferencebrief.co/", primary: true },
       { label: "Read case study", href: "https://github.com/MatthewPaver/MatthewPaver/blob/main/CASE_STUDIES.md#inference-brief" }
     ],
-    note: "Motion is deliberately kept out of the first store view. The still shows the actual product state faster."
+    note: "Best opened as the live product; the preview sets the context before you leave the store."
   },
   happening: {
     kicker: "Private system",
@@ -42,7 +42,7 @@ const previews = {
     links: [
       { label: "Read case study", href: "https://github.com/MatthewPaver/MatthewPaver/blob/main/CASE_STUDIES.md#featured-build-happening", primary: true }
     ],
-    note: "The preview uses a real interface screenshot rather than a pipeline diagram, so the system reads as a usable product."
+    note: "The preview shows the product surface and the private case study explains the reliability work behind it."
   },
   quicksupply: {
     kicker: "Workflow app",
@@ -64,7 +64,7 @@ const previews = {
     links: [
       { label: "View catalogue card", href: "./#quicksupply", primary: true }
     ],
-    note: "A still preview is more effective here than a fast GIF because the value is the workflow structure, not animation."
+    note: "The strongest signal is the operating model: who owns the request, what changed, and what happens next."
   },
   study: {
     kicker: "Private product",
@@ -136,8 +136,8 @@ const previews = {
     kicker: "Public application",
     title: "Marketing ML Lakehouse",
     summary: "A local analytics loop that moves raw marketing CSVs through DuckDB, model training, checks, and a dashboard.",
-    image: "./assets/marketing-lakehouse.svg",
-    imageAlt: "Marketing ML Lakehouse workflow visual",
+    image: "./assets/marketing-lakehouse-thumb.svg",
+    imageAlt: "Marketing ML Lakehouse product thumbnail",
     role: "Analytics engineering",
     status: "Public",
     focus: "Lakehouse + ML",
@@ -152,7 +152,7 @@ const previews = {
     links: [
       { label: "Open repo", href: "https://github.com/MatthewPaver/marketing-ml-lakehouse", primary: true }
     ],
-    note: "This is one of the better public repos to inspect because it shows an end-to-end data application shape."
+    note: "A strong public repo to inspect: end-to-end data flow, model training, tests, and a dashboard in one place."
   },
   projectlens: {
     kicker: "Public application",
@@ -174,14 +174,14 @@ const previews = {
     links: [
       { label: "Open repo", href: "https://github.com/MatthewPaver/ProjectLens", primary: true }
     ],
-    note: "The preview thumbnail is standardised so the store reads as a product shelf, while the repo still contains the detailed dashboard material."
+    note: "The repo is packaged for review with a clear workflow, tests, and public inspection path."
   },
   architexa: {
     kicker: "Public ML project",
     title: "Architexa",
     summary: "A compact architecture image-generation project built around dataset prep, conditional GAN training, and a small API.",
-    image: "./assets/architexa-preview.svg",
-    imageAlt: "Architexa architecture image generation workflow",
+    image: "./assets/architexa-thumb.svg",
+    imageAlt: "Architexa product thumbnail",
     role: "Generative ML",
     status: "Public",
     focus: "Architecture imagery",
@@ -196,14 +196,14 @@ const previews = {
     links: [
       { label: "Open repo", href: "https://github.com/MatthewPaver/Architexa", primary: true }
     ],
-    note: "This is best treated as an ML experiment: useful for showing model-building range, not a flagship product."
+    note: "A focused ML build that shows dataset preparation, model training, and a simple serving path."
   },
   recommender: {
     kicker: "Public ML project",
     title: "Dating App Recommendation System",
     summary: "A recommendation project focused on implicit-feedback ranking, temporal holdouts, and Top-K metrics.",
-    image: "./assets/recommender-metrics.svg",
-    imageAlt: "Dating app recommendation metrics visual",
+    image: "./assets/recommender-thumb.svg",
+    imageAlt: "Dating app recommendation product thumbnail",
     role: "Ranking system",
     status: "Public",
     focus: "Recommendation evaluation",
@@ -240,14 +240,14 @@ const previews = {
     links: [
       { label: "Open repo", href: "https://github.com/MatthewPaver/hr-performance-dashboards", primary: true }
     ],
-    note: "The store uses a standardised thumbnail; the repo remains the place for the full dashboard evidence."
+    note: "The repo is framed as a dashboard handoff package with files, screenshots, and commentary together."
   },
   sentence: {
     kicker: "Public NLP demo",
     title: "Sentence Similarity Analysis",
     summary: "A compact NLP notebook showing embeddings, cosine ranking, and the limits of similarity as a signal.",
-    image: "./assets/sentence-similarity.svg",
-    imageAlt: "Sentence similarity embedding workflow",
+    image: "./assets/sentence-similarity-thumb.svg",
+    imageAlt: "Sentence similarity product thumbnail",
     role: "NLP analysis",
     status: "Public",
     focus: "Embedding retrieval",

@@ -5,6 +5,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const clearSearch = document.querySelector("#clear-search");
   const visibleCount = document.querySelector("#visible-count");
   const emptyState = document.querySelector(".empty-state");
+  const archiveShelf = document.querySelector(".archive-shelf");
   const announcer = document.querySelector("#store-filter-announcement");
 
   if (!searchInput || !visibleCount || !emptyState) return;
@@ -73,7 +74,7 @@ document.addEventListener("DOMContentLoaded", () => {
     if (prefersReducedMotion || !("IntersectionObserver" in window)) return;
 
     const targets = Array.from(
-      document.querySelectorAll(".selected-card, .credential-grid a, .app-card")
+      document.querySelectorAll(".selected-card, .credential-group a, .featured-build, .personal-note, .app-card")
     );
 
     targets.forEach((target, index) => {
@@ -126,6 +127,11 @@ document.addEventListener("DOMContentLoaded", () => {
       card.classList.toggle("hidden", !isVisible);
       if (isVisible) count += 1;
     });
+
+    if (archiveShelf) {
+      const archiveCard = archiveShelf.querySelector(".app-card");
+      archiveShelf.hidden = archiveCard?.classList.contains("hidden") ?? true;
+    }
 
     visibleCount.textContent = String(count);
     emptyState.hidden = count > 0;
