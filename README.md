@@ -162,6 +162,10 @@ I build practical software around messy information: crawled websites, scraped l
 
 The [Portfolio Store](https://matthewpaver.github.io/MatthewPaver/store/) is the front door. The README stays deliberately lean; the store does the visual showing-off. The [case studies](CASE_STUDIES.md) explain the bigger private systems, and [Projects.md](Projects.md) is the full appendix when someone wants every public, private, live, and archived item.
 
+## Contact
+
+Interested in AI/data products, automation systems, and operational tooling. Best place to reach me is [LinkedIn](https://www.linkedin.com/in/matthew-paver-534262166/).
+
 <details>
 <summary>Latest public activity</summary>
 

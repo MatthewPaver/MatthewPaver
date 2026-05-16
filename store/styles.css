@@ -368,11 +368,17 @@ h1 {
   box-shadow: 0 24px 60px rgba(21, 21, 21, 0.12);
 }
 
-.preview-media img {
+.preview-media img,
+.preview-media video {
   display: block;
   width: 100%;
   height: auto;
   transition: transform 900ms var(--ease-out);
+}
+
+.preview-media video[hidden],
+.preview-media img[hidden] {
+  display: none;
 }
 
 .preview-meta {

@@ -104,16 +104,26 @@ flowchart LR
 ## Inference Brief
 
 **Type:** Live product  
-**Problem:** AI news is noisy and difficult to convert into a consistent reading workflow.  
-**Goal:** Build a curated briefing pipeline and personalised reading experience.
+**Problem:** AI news moves quickly, repeats across sources, and often rewards scrolling rather than useful reading. The product challenge was to make the workflow feel calm: collect enough signal, shape it into a briefing, and give readers a place to return to.
 
-### What I Built
+**Constraints:** the product needed to stay lightweight, publish consistently, support account-level reading features, and avoid becoming a static newsletter archive. It also had to separate editorial judgement from automation so the output could be reviewed before it reached readers.
 
-- Weekly publishing workflow
-- Collection, filtering, scoring, summarisation, and issue assembly pipeline
-- Personalised web experience
-- Bookmarks, reading history, issue archive, and topic preferences
-- Subscription and account flows
+**Decisions:** I built it as a product loop rather than a content dump: source collection, filtering, scoring, summarisation, issue assembly, publishing, reader accounts, bookmarks, history, and preferences. The product surface matters because the user job is not just "read AI news"; it is "stay current without losing the thread."
+
+**Tradeoffs:** full automation would be faster, but it risks publishing weak summaries or duplicate stories. A curated pipeline is slower, but easier to check and improve. Keeping the live product focused also means not adding every possible news feature until the reading loop is solid.
+
+**Result:** Inference Brief is live at [inferencebrief.co](https://inferencebrief.co/) with a working reader experience, account flows, issue archive, bookmarking, reading history, and an editorial publishing workflow.
+
+**What changed after shipping:** the store and profile now frame it as a product with a workflow, not just a newsletter. That is the right signal: the build is about turning noisy sources into a repeatable reader experience.
+
+### Product Shape
+
+- Source collection and filtering
+- Story scoring and summarisation
+- Issue assembly and publishing
+- Account-based reader experience
+- Bookmarks, reading history, archive, and preferences
+- Subscription boundary for future product growth
 
 ```mermaid
 flowchart LR
@@ -125,7 +135,8 @@ flowchart LR
     F --> G["Bookmarks and reading history"]
 ```
 
-**Engineering signal:** combines editorial judgment with automation into a reusable product loop.  
+**Engineering signal:** combines editorial judgment, automation, and product UX into a reusable publishing loop.
+
 **Stack:** `Next.js` `TypeScript` `Supabase` `Python` `Stripe`  
 [Live site](https://inferencebrief.co/)
 

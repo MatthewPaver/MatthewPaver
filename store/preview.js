@@ -50,6 +50,7 @@ const previews = {
     summary: "A supply-cover workflow for requests, agencies, teacher offers, compliance, and live status.",
     image: "./assets/quicksupply-dashboard.png",
     imageAlt: "QuickSupply agency dashboard interface",
+    video: "./assets/quicksupply-demo.m4v",
     role: "Workflow product",
     status: "Private MVP",
     focus: "School cover ops",
@@ -64,7 +65,7 @@ const previews = {
     links: [
       { label: "View catalogue card", href: "./#quicksupply", primary: true }
     ],
-    note: "The strongest signal is the operating model: who owns the request, what changed, and what happens next."
+    note: "The demo gives a quick pass through the agency workflow: request view, assignment context, and live booking status."
   },
   study: {
     kicker: "Private product",
@@ -310,9 +311,25 @@ function renderPreview() {
   setText("preview-note", preview.note);
 
   const image = document.querySelector("#preview-image");
+  const video = document.querySelector("#preview-video");
   if (image) {
     image.src = preview.image;
     image.alt = preview.imageAlt;
+    image.hidden = Boolean(preview.video);
+  }
+
+  if (video) {
+    if (preview.video) {
+      video.src = preview.video;
+      video.poster = preview.image;
+      video.hidden = false;
+      video.setAttribute("aria-label", `${preview.title} demo video`);
+    } else {
+      video.removeAttribute("src");
+      video.removeAttribute("poster");
+      video.hidden = true;
+      video.removeAttribute("aria-label");
+    }
   }
 
   const actions = document.querySelector("#preview-actions");
