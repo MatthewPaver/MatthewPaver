@@ -6,7 +6,6 @@ document.addEventListener("DOMContentLoaded", () => {
   const visibleCount = document.querySelector("#visible-count");
   const emptyState = document.querySelector(".empty-state");
   const announcer = document.querySelector("#store-filter-announcement");
-  const collectionLinks = Array.from(document.querySelectorAll("[data-collection]"));
 
   if (!searchInput || !visibleCount || !emptyState) return;
 
@@ -67,30 +66,12 @@ document.addEventListener("DOMContentLoaded", () => {
       button.setAttribute("aria-pressed", String(isActive));
     });
 
-    collectionLinks.forEach((link) => {
-      const isActive = link.dataset.collection === filterName;
-      link.classList.toggle("active", isActive);
-      if (isActive) {
-        link.setAttribute("aria-current", "true");
-      } else {
-        link.removeAttribute("aria-current");
-      }
-    });
-
     updateStore();
   }
 
   filters.forEach((button) => {
     button.addEventListener("click", () => {
       setFilter(button.dataset.filter);
-    });
-  });
-
-  collectionLinks.forEach((link) => {
-    link.addEventListener("click", (event) => {
-      event.preventDefault();
-      setFilter(link.dataset.collection);
-      document.querySelector("#store")?.scrollIntoView({ block: "start" });
     });
   });
 

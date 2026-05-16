@@ -321,6 +321,65 @@ h1 {
   line-height: 1.4;
 }
 
+.credential-band {
+  display: grid;
+  grid-template-columns: minmax(240px, 320px) minmax(0, 1fr);
+  gap: 18px;
+  margin: 0 0 42px;
+  padding: 24px 0 28px;
+  border-top: 1px solid var(--line);
+  border-bottom: 1px solid var(--line);
+}
+
+.credential-band h2 {
+  font-family: Charter, "Iowan Old Style", Georgia, serif;
+  font-size: clamp(1.8rem, 3.2vw, 3.2rem);
+  font-weight: 700;
+}
+
+.credential-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1px;
+  align-self: start;
+  border: 1px solid var(--line);
+  background: var(--line);
+}
+
+.credential-grid a {
+  display: grid;
+  gap: 7px;
+  min-height: 132px;
+  align-content: start;
+  background: var(--surface);
+  padding: 16px;
+  text-decoration: none;
+}
+
+.credential-grid a:hover {
+  background: var(--surface-warm);
+}
+
+.credential-grid span {
+  color: var(--accent);
+  font-size: 0.7rem;
+  font-weight: 850;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.credential-grid strong {
+  font-size: 1.05rem;
+  line-height: 1.2;
+}
+
+.credential-grid small {
+  color: var(--muted);
+  font-size: 0.82rem;
+  font-weight: 650;
+  line-height: 1.35;
+}
+
 .section-heading {
   display: grid;
   grid-template-columns: minmax(0, 1fr) minmax(260px, 430px);
@@ -436,54 +495,6 @@ h1 {
   background: var(--ink);
   border-color: var(--ink);
   color: var(--surface);
-}
-
-.filter-sublabel {
-  margin: 0 0 12px;
-  color: var(--muted);
-  font-size: 0.86rem;
-  font-weight: 650;
-}
-
-.collection-rail {
-  display: grid;
-  grid-template-columns: repeat(4, minmax(0, 1fr));
-  gap: 1px;
-  margin: 0 0 14px;
-  border: 1px solid var(--line);
-  background: var(--line);
-}
-
-.collection-rail a {
-  display: grid;
-  gap: 4px;
-  min-height: 62px;
-  align-content: center;
-  background: var(--surface);
-  padding: 0 14px;
-  text-decoration: none;
-}
-
-.collection-rail a:hover,
-.collection-rail a.active {
-  background: var(--surface-warm);
-}
-
-.collection-rail a.active {
-  box-shadow: inset 0 -3px 0 var(--accent);
-}
-
-.collection-rail span {
-  font-size: 0.92rem;
-  font-weight: 850;
-}
-
-.collection-rail small {
-  color: var(--accent);
-  font-size: 0.7rem;
-  font-weight: 850;
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
 }
 
 .store-grid {
@@ -724,12 +735,13 @@ h1 {
 @media (max-width: 920px) {
   .hero-grid,
   .section-heading,
-  .store-toolbar {
+  .store-toolbar,
+  .credential-band {
     grid-template-columns: 1fr;
   }
 
   .selected-grid,
-  .collection-rail {
+  .credential-grid {
     grid-template-columns: 1fr 1fr;
   }
 
@@ -762,7 +774,6 @@ h1 {
   }
 
   .selected-grid,
-  .collection-rail,
   .store-grid {
     grid-template-columns: 1fr;
   }

@@ -2,7 +2,7 @@
 
 Focused view of the systems, products, and experiments I build across AI, data, automation, and analytics.
 
-[Back to Profile](README.md) | [Idea Store](https://matthewpaver.github.io/MatthewPaver/store/) | [Case Studies](CASE_STUDIES.md) | [Showcase Roadmap](SHOWCASE_ROADMAP.md) | [CV Evidence Log](CV_EVIDENCE_LOG.md)
+[Back to Profile](README.md) | [Idea Store](https://matthewpaver.github.io/MatthewPaver/store/) | [Case Studies](CASE_STUDIES.md) | [CV](CV.pdf)
 
 For a browsable storefront view, open the [Idea Store](https://matthewpaver.github.io/MatthewPaver/store/).
 
@@ -112,10 +112,3 @@ All professional examples are intentionally anonymised and focused on engineerin
 `Python` `TypeScript` `FastAPI` `n8n` `PostgreSQL` `Redis` `DuckDB` `Firebase` `GCP` `GitHub Actions` `Docker` `Supabase`
 
 ---
-
-## Next Improvements
-
-1. Add screenshots to `marketing-ml-lakehouse` and `Architexa`.
-2. Add real `evaluate` and `recommend` CLI output to `dating-app-recommendation-system`.
-3. Keep archived repo descriptions explicit about what replaced them.
-4. Publish more private-system diagrams only when they are safe to share.
