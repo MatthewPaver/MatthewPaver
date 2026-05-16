@@ -25,7 +25,7 @@
     <text x="732" y="318" fill="#161411">Validate</text>
     <text x="732" y="350" font-size="18" fill="#161411">Schemas</text>
 
-    <rect x="920" y="270" width="160" height="110" fill="#FFF8EB" stroke="#D9A441" stroke-width="3"/>
+    <rect x="920" y="270" width="160" height="110" fill="#FFF8EB" stroke="#8F5D12" stroke-width="3"/>
     <text x="944" y="318" fill="#161411">SQLite</text>
     <text x="944" y="350" font-size="18" fill="#161411">Event store</text>
   </g>
@@ -33,7 +33,7 @@
   <path d="M236 325H276M448 325H488M660 325H700M872 325H912" stroke="#FFF8EB" stroke-width="5"/>
   <path d="M276 325L262 313M276 325L262 337M488 325L474 313M488 325L474 337M700 325L686 313M700 325L686 337M912 325L898 313M912 325L898 337" stroke="#FFF8EB" stroke-width="5" stroke-linecap="round"/>
 
-  <rect x="72" y="466" width="1008" height="98" fill="#FFF8EB" stroke="#D9A441" stroke-width="3"/>
+  <rect x="72" y="466" width="1008" height="98" fill="#FFF8EB" stroke="#8F5D12" stroke-width="3"/>
   <text x="104" y="508" font-family="Arial, Helvetica, sans-serif" font-size="22" font-weight="900" fill="#161411">Reliability signal</text>
   <text x="104" y="544" font-family="Arial, Helvetica, sans-serif" font-size="22" font-weight="800" fill="#4E473F">167 tests, daily automation, source configuration, dedupe checks, and safe iteration.</text>
 </svg>

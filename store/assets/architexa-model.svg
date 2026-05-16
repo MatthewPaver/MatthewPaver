@@ -1,0 +1,27 @@
+<svg width="1200" height="680" viewBox="0 0 1200 680" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">Architexa model pipeline thumbnail</title>
+  <desc id="desc">A portfolio thumbnail showing an architecture image dataset, conditional GAN training, generated previews, and a Flask API.</desc>
+  <rect width="1200" height="680" fill="#151515"/>
+  <path d="M0 85H1200M0 170H1200M0 255H1200M0 340H1200M0 425H1200M0 510H1200M0 595H1200" stroke="#FFFFFF" stroke-opacity="0.08"/>
+  <text x="74" y="96" font-family="Arial, Helvetica, sans-serif" font-size="18" font-weight="900" letter-spacing="5" fill="#D9A441">ARCHITEXA</text>
+  <text x="74" y="162" font-family="Georgia, serif" font-size="62" font-weight="700" fill="#FFFFFF">Conditional GAN for architecture images</text>
+  <text x="76" y="206" font-family="Arial, Helvetica, sans-serif" font-size="22" font-weight="700" fill="#D8D2C8">Dataset pipeline, model training, generated previews, and a small Flask API.</text>
+  <g font-family="Arial, Helvetica, sans-serif">
+    <rect x="78" y="290" width="210" height="170" fill="#F4F0E9" stroke="#FFFFFF" stroke-width="3"/>
+    <path d="M112 418L168 348L214 392L246 360L266 418H112Z" fill="#0F766E"/>
+    <text x="108" y="496" font-size="19" font-weight="900" fill="#FFFFFF">Image dataset</text>
+    <rect x="386" y="266" width="240" height="218" fill="#0F766E" stroke="#FFFFFF" stroke-width="3"/>
+    <text x="426" y="344" font-size="32" font-weight="900" fill="#FFFFFF">cGAN</text>
+    <text x="426" y="386" font-size="19" font-weight="800" fill="#DDF4EF">conditioning + training</text>
+    <rect x="724" y="290" width="130" height="130" fill="#FFFFFF" stroke="#8F5D12" stroke-width="3"/>
+    <path d="M750 388L790 330L832 388H750Z" fill="#1D4F91"/>
+    <rect x="872" y="290" width="130" height="130" fill="#FFFFFF" stroke="#8F5D12" stroke-width="3"/>
+    <path d="M896 388L934 338L978 388H896Z" fill="#9F3A2F"/>
+    <rect x="724" y="448" width="278" height="48" fill="#8F5D12"/>
+    <text x="756" y="479" font-size="19" font-weight="900" fill="#FFFFFF">Generated previews</text>
+  </g>
+  <path d="M296 376H378M634 376H716" stroke="#FFFFFF" stroke-width="6"/>
+  <path d="M378 376L362 362M378 376L362 390M716 376L700 362M716 376L700 390" stroke="#FFFFFF" stroke-width="6" stroke-linecap="round"/>
+  <rect x="78" y="558" width="1024" height="54" fill="#FFFFFF"/>
+  <text x="110" y="593" font-family="Arial, Helvetica, sans-serif" font-size="22" font-weight="900" fill="#151515">TensorFlow · Keras · Flask · API integration · computer vision</text>
+</svg>

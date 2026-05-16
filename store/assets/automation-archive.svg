@@ -1,0 +1,27 @@
+<svg width="1200" height="680" viewBox="0 0 1200 680" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">Newsletter and scraper utilities archive thumbnail</title>
+  <desc id="desc">A portfolio thumbnail showing archived newsletter rendering and image scraping utilities as earlier automation work.</desc>
+  <rect width="1200" height="680" fill="#F4F0E9"/>
+  <rect x="54" y="54" width="1092" height="572" fill="#FFFFFF" stroke="#151515" stroke-width="4"/>
+  <text x="88" y="118" font-family="Arial, Helvetica, sans-serif" font-size="18" font-weight="900" letter-spacing="5" fill="#69625B">ARCHIVE SHELF</text>
+  <text x="88" y="184" font-family="Georgia, serif" font-size="60" font-weight="700" fill="#151515">Earlier automation utilities</text>
+  <text x="90" y="226" font-family="Arial, Helvetica, sans-serif" font-size="22" font-weight="700" fill="#57534E">Newsletter rendering and image collection experiments, archived intentionally.</text>
+  <g font-family="Arial, Helvetica, sans-serif">
+    <rect x="92" y="306" width="292" height="210" fill="#FBFAF7" stroke="#151515" stroke-width="3"/>
+    <text x="126" y="362" font-size="28" font-weight="900" fill="#151515">Articles</text>
+    <text x="126" y="404" font-size="18" font-weight="800" fill="#57534E">input feeds</text>
+    <rect x="454" y="270" width="292" height="282" fill="#151515" stroke="#8F5D12" stroke-width="3"/>
+    <text x="494" y="348" font-size="30" font-weight="900" fill="#FFFFFF">Automation</text>
+    <text x="494" y="396" font-size="18" font-weight="800" fill="#D8D2C8">render HTML</text>
+    <text x="494" y="432" font-size="18" font-weight="800" fill="#D8D2C8">collect images</text>
+    <text x="494" y="468" font-size="18" font-weight="800" fill="#D8D2C8">package output</text>
+    <rect x="816" y="306" width="292" height="210" fill="#FBFAF7" stroke="#151515" stroke-width="3"/>
+    <text x="850" y="362" font-size="28" font-weight="900" fill="#151515">Outputs</text>
+    <text x="850" y="404" font-size="18" font-weight="800" fill="#57534E">HTML + datasets</text>
+  </g>
+  <path d="M392 412H446M754 412H808" stroke="#151515" stroke-width="6"/>
+  <path d="M446 412L430 398M446 412L430 426M808 412L792 398M808 412L792 426" stroke="#151515" stroke-width="6" stroke-linecap="round"/>
+  <rect x="92" y="562" width="1016" height="34" fill="#D8D2C8"/>
+  <rect x="92" y="562" width="612" height="34" fill="#69625B"/>
+  <text x="112" y="586" font-family="Arial, Helvetica, sans-serif" font-size="17" font-weight="900" fill="#FFFFFF">Archived because newer products supersede the pattern</text>
+</svg>

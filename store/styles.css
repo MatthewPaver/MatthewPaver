@@ -146,8 +146,7 @@ input:focus-visible {
   align-items: center;
 }
 
-.eyebrow,
-.visual-kicker {
+.eyebrow {
   margin: 0 0 12px;
   color: var(--accent);
   font-size: 0.72rem;
@@ -531,10 +530,6 @@ h1 {
   object-position: top center;
 }
 
-.image-card img.quick-shot {
-  object-position: center 38%;
-}
-
 .dashboard-strip {
   height: 230px;
   display: grid;
@@ -561,31 +556,6 @@ h1 {
 
 .dashboard-strip img:nth-child(2) {
   border-bottom: 1px solid var(--line);
-}
-
-.app-visual {
-  min-height: 216px;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
-  gap: 10px;
-  border-bottom: 1px solid var(--line);
-  background: var(--surface-warm);
-  color: var(--ink);
-  padding: 20px;
-}
-
-.app-visual strong {
-  max-width: 500px;
-  font-family: Charter, "Iowan Old Style", Georgia, serif;
-  font-size: clamp(1.6rem, 3vw, 2.7rem);
-  line-height: 1.02;
-}
-
-.market-visual,
-.similarity-visual,
-.archive-visual {
-  background: var(--surface-warm);
 }
 
 .app-body {

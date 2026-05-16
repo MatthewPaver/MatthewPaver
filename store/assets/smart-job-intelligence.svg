@@ -1,0 +1,29 @@
+<svg width="1200" height="680" viewBox="0 0 1200 680" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">Smart job market intelligence workflow</title>
+  <desc id="desc">A portfolio thumbnail showing job listings moving through ingestion, normalisation, signal extraction, and alerting.</desc>
+  <rect width="1200" height="680" fill="#FBFAF7"/>
+  <rect x="42" y="42" width="1116" height="596" fill="#FFFFFF" stroke="#151515" stroke-width="4"/>
+  <rect x="42" y="42" width="1116" height="86" fill="#151515"/>
+  <text x="78" y="95" font-family="Arial, Helvetica, sans-serif" font-size="24" font-weight="900" letter-spacing="4" fill="#F4F0E9">JOB MARKET INTELLIGENCE</text>
+  <text x="78" y="190" font-family="Georgia, serif" font-size="58" font-weight="700" fill="#151515">Listings into market signals</text>
+  <text x="80" y="232" font-family="Arial, Helvetica, sans-serif" font-size="22" font-weight="700" fill="#57534E">Scrape volume, salary, skills, and remote-work shifts from messy job boards.</text>
+  <g font-family="Arial, Helvetica, sans-serif">
+    <rect x="78" y="306" width="220" height="148" fill="#F4F0E9" stroke="#151515" stroke-width="3"/>
+    <text x="108" y="358" font-size="26" font-weight="900" fill="#151515">Ingest</text>
+    <text x="108" y="394" font-size="18" font-weight="800" fill="#57534E">listing crawlers</text>
+    <rect x="350" y="306" width="220" height="148" fill="#0F766E" stroke="#151515" stroke-width="3"/>
+    <text x="380" y="358" font-size="26" font-weight="900" fill="#FFFFFF">Normalise</text>
+    <text x="380" y="394" font-size="18" font-weight="800" fill="#DDF4EF">salary + skills</text>
+    <rect x="622" y="306" width="220" height="148" fill="#1D4F91" stroke="#151515" stroke-width="3"/>
+    <text x="652" y="358" font-size="26" font-weight="900" fill="#FFFFFF">Signals</text>
+    <text x="652" y="394" font-size="18" font-weight="800" fill="#DCE8F7">trend reports</text>
+    <rect x="894" y="306" width="220" height="148" fill="#8F5D12" stroke="#151515" stroke-width="3"/>
+    <text x="924" y="358" font-size="26" font-weight="900" fill="#FFFFFF">Alerts</text>
+    <text x="924" y="394" font-size="18" font-weight="800" fill="#FFF3CF">API tier design</text>
+  </g>
+  <path d="M304 380H344M576 380H616M848 380H888" stroke="#151515" stroke-width="6"/>
+  <path d="M344 380L330 368M344 380L330 392M616 380L602 368M616 380L602 392M888 380L874 368M888 380L874 392" stroke="#151515" stroke-width="6" stroke-linecap="round"/>
+  <rect x="78" y="520" width="1036" height="74" fill="#F4F0E9" stroke="#D8D2C8" stroke-width="3"/>
+  <path d="M118 560C184 534 236 582 302 556C366 531 424 548 486 570C548 592 602 532 668 552C734 572 798 532 858 546C918 560 976 590 1072 540" stroke="#9F3A2F" stroke-width="7" stroke-linecap="round"/>
+  <text x="104" y="492" font-family="Arial, Helvetica, sans-serif" font-size="18" font-weight="900" letter-spacing="3" fill="#0F766E">PRIVATE SYSTEM · PIPELINE + REPORTING</text>
+</svg>
