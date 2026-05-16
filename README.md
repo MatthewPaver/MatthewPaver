@@ -2,9 +2,9 @@
 
 # Matthew Paver
 
-### AI products, data systems, automation, and analytics apps
+### AI products, data systems, and analytics apps
 
-I build practical systems around messy inputs: crawled websites, scraped listings, raw CSVs, notes, schedules, dashboards, and recommendation data. The pattern is usually the same: collect it, clean it, test it, package it, and make it useful through a product or workflow someone can actually open.
+I build practical systems around messy inputs: crawled websites, scraped listings, raw CSVs, notes, schedules, dashboards, and recommendation data. Most of the work follows the same loop: collect the data, clean it, check it, and turn it into a product or workflow someone can open.
 
 <a href="https://matthewpaver.github.io/MatthewPaver/store/">
   <img src="https://img.shields.io/badge/Idea_Store-D9A441?style=for-the-badge" alt="Idea Store" />
@@ -35,15 +35,13 @@ I build practical systems around messy inputs: crawled websites, scraped listing
 ![Supabase](https://img.shields.io/badge/Supabase-3FCF8E?style=flat-square&logo=supabase&logoColor=white)
 ![GCP](https://img.shields.io/badge/GCP-4285F4?style=flat-square&logo=googlecloud&logoColor=white)
 
-**At a glance** — This repository is for hiring managers, recruiters, and collaborators who want evidence-led context fast. Start with the interactive **[Idea Store](https://matthewpaver.github.io/MatthewPaver/store/)** (search and filters), read **[case studies](CASE_STUDIES.md)**, or skim the **[project index](Projects.md)**. Prefer a local file? Open [`store/index.html`](store/index.html) in the repo.
+**Best starting point:** [Idea Store](https://matthewpaver.github.io/MatthewPaver/store/) for the visual catalogue, then [case studies](CASE_STUDIES.md) for private systems and [project index](Projects.md) for the full map.
 
 </div>
 
 ---
 
 ## Snapshot
-
-Four fast entry points. The **Featured shelf** below shows three of them with thumbnails; the fourth (largest public ML dataset) sits alongside everything else in the **[Idea Store](https://matthewpaver.github.io/MatthewPaver/store/)**, which adds search and filters.
 
 <table>
 <tr>
@@ -72,9 +70,7 @@ Four fast entry points. The **Featured shelf** below shows three of them with th
 
 ---
 
-## Featured shelf
-
-Thumbnails for Inference Brief, Happening, and Marketing ML Lakehouse (the first three snapshot tiles). Browse the full set—including the recommender dataset tile—in the [Idea Store](https://matthewpaver.github.io/MatthewPaver/store/).
+## Featured Shelf
 
 <table>
 <tr>
@@ -111,17 +107,15 @@ Thumbnails for Inference Brief, Happening, and Marketing ML Lakehouse (the first
 
 | Mode | What that means | Examples |
 |:---|:---|:---|
-| **AI products** | AI is part of a real workflow, not just a prompt demo | [Inference Brief](https://inferencebrief.co/), [AI Study Companion](CASE_STUDIES.md#ai-study-companion) |
+| **AI products** | AI inside a usable workflow, not a prompt demo | [Inference Brief](https://inferencebrief.co/), [AI Study Companion](CASE_STUDIES.md#ai-study-companion) |
 | **Data pipelines** | Messy sources become clean, repeatable datasets | [Happening](CASE_STUDIES.md#happening), [Marketing ML Lakehouse](https://github.com/MatthewPaver/marketing-ml-lakehouse) |
-| **Automation** | Jobs run on a schedule and leave evidence behind | Happening checks, newsletter tools, scrape monitors |
+| **Automation** | Scheduled jobs with checks and visible outputs | Happening checks, newsletter tools, scrape monitors |
 | **Analytics apps** | Analysis is packaged into an interface people can use | [ProjectLens](https://github.com/MatthewPaver/ProjectLens), HR dashboards |
 | **ML projects** | Ranking, embeddings, forecasting, and generation | recommender systems, Architexa, sentence similarity |
 
 ---
 
 ## Project Map
-
-Longer-term showcase plans live in **[SHOWCASE_ROADMAP.md](SHOWCASE_ROADMAP.md)**.
 
 | Project | Type | What it does | Stack |
 |:---|:---|:---|:---|
@@ -186,20 +180,6 @@ The part I care about is the whole loop: not just the model, not just the dashbo
 
 ---
 
-## Development
-
-Preview the Idea Store from the repository root (so asset paths resolve correctly):
-
-```bash
-python3 -m http.server 8000
-```
-
-Then open `http://localhost:8000/store/` in your browser.
-
-**GitHub Pages:** Publishing runs from `main` via [`.github/workflows/pages.yml`](.github/workflows/pages.yml), which uploads the **repository root** as the site artifact, so the Idea Store is served at `/store/` on Pages (for example `https://matthewpaver.github.io/MatthewPaver/store/`).
-
----
-
 ## Credentials
 
 <table>
@@ -246,7 +226,7 @@ Then open `http://localhost:8000/store/` in your browser.
 
 <div align="center">
 
-The visual version is the [Idea Store](https://matthewpaver.github.io/MatthewPaver/store/): a browsable shelf of live products, private systems, public repos, and earlier prototypes.
+Open the [Idea Store](https://matthewpaver.github.io/MatthewPaver/store/) for the browsable version.
 
 <a href="https://matthewpaver.github.io/MatthewPaver/store/">
   <img src="https://img.shields.io/badge/Open_the_Idea_Store-D9A441?style=for-the-badge" alt="Open the Idea Store" />
@@ -254,7 +234,5 @@ The visual version is the [Idea Store](https://matthewpaver.github.io/MatthewPav
 <a href="https://www.linkedin.com/in/matthew-paver-534262166/">
   <img src="https://img.shields.io/badge/Connect_on_LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" />
 </a>
-
-Roadmap notes: [SHOWCASE_ROADMAP.md](SHOWCASE_ROADMAP.md).
 
 </div>
