@@ -186,3 +186,21 @@ flowchart LR
 ```
 
 The strongest work is the whole loop: not just the model, not just the dashboard, not just the script. The data path should be repeatable, the output should be easy to inspect, and failures should be visible.
+
+<!-- AUTO:ACTIVITY_START -->
+## Latest Public Activity (Auto-Updated)
+
+_This section is automatically refreshed by GitHub Actions._
+
+- Last refresh (UTC): 2026-05-16 09:03
+
+| Repo | Last push | What it is |
+|:---|:---:|:---|
+| [MatthewPaver](https://github.com/MatthewPaver/MatthewPaver) | 2026-05-16 | AI and data engineering portfolio showcasing production-minded AI products, automation… |
+| [ai-weekly](https://github.com/MatthewPaver/ai-weekly) | 2026-05-15 | Archived AI newsletter output superseded by Inference Brief. |
+| [generate-newsletter](https://github.com/MatthewPaver/generate-newsletter) | 2026-05-15 | Archived newsletter-generation prototype for collecting articles and rendering HTML out… |
+| [pinterest-image-scraper](https://github.com/MatthewPaver/pinterest-image-scraper) | 2026-05-15 | Archived Pinterest image collection utility with duplicate detection, originally used t… |
+| [pyspark-kafka-streaming](https://github.com/MatthewPaver/pyspark-kafka-streaming) | 2026-05-15 | Compact PySpark and Kafka technical examples covering DataFrames, Structured Streaming,… |
+| [netflix-content-analysis](https://github.com/MatthewPaver/netflix-content-analysis) | 2026-05-15 | Notebook EDA of Netflix title data with country, genre, timeline, and catalog growth an… |
+
+<!-- AUTO:ACTIVITY_END -->
