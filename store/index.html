@@ -35,7 +35,7 @@
       rel="icon"
       href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='10' fill='%23d9a441'/%3E%3Cpath d='M12 44V18h9l11 14 11-14h9v26h-9V30L32 44 21 30v14z' fill='%23161411'/%3E%3C/svg%3E"
     />
-    <link rel="stylesheet" href="./styles.css?v=20260516-3" />
+    <link rel="stylesheet" href="./styles.css?v=20260516-4" />
   </head>
   <body>
     <a class="skip-link" href="#store">Skip to ideas</a>
@@ -88,55 +88,35 @@
     </header>
 
     <main id="store" class="shell">
-      <section class="snapshot-board" aria-label="Matthew Paver portfolio snapshot">
-        <a href="https://inferencebrief.co/">
-          <span>Live now</span>
-          <strong>Inference Brief</strong>
-          <small>AI news product</small>
-        </a>
-        <a href="https://github.com/MatthewPaver/MatthewPaver/blob/main/CASE_STUDIES.md#happening">
-          <span>Best private system</span>
-          <strong>Happening</strong>
-          <small>103+ venues into data</small>
-        </a>
-        <a href="https://github.com/MatthewPaver/marketing-ml-lakehouse">
-          <span>Best public data app</span>
-          <strong>Marketing ML Lakehouse</strong>
-          <small>DuckDB + ML + dashboard</small>
-        </a>
-        <a href="https://github.com/MatthewPaver/dating-app-recommendation-system">
-          <span>Largest ML dataset</span>
-          <strong>3.4M+ interactions</strong>
-          <small>recommender evaluation</small>
-        </a>
-      </section>
-
-      <section class="today-shelf" aria-labelledby="today-heading">
-        <div class="shelf-copy">
-          <p class="eyebrow">Start here</p>
-          <h2 id="today-heading">Three useful entry points.</h2>
+      <section class="selected-work" aria-labelledby="selected-heading">
+        <div class="section-heading compact">
+          <div>
+            <p class="eyebrow">Selected work</p>
+            <h2 id="selected-heading">Open these first.</h2>
+          </div>
           <p>
-            A live app, an anonymised private-system case study, and a public data app.
+            Three projects that show the range: a live product, a private data system, and a public repo you can inspect.
           </p>
         </div>
-        <div class="spotlight-grid">
-          <a class="spotlight-card" href="https://inferencebrief.co/">
-            <span class="spotlight-rank">01</span>
-            <span class="spotlight-type">Live product</span>
+
+        <div class="selected-grid">
+          <a class="selected-card" href="https://inferencebrief.co/">
+            <img src="./assets/inference-brief.png" width="1200" height="760" alt="Inference Brief product screenshot" fetchpriority="high" />
+            <span>Live product</span>
             <strong>Inference Brief</strong>
-            <span>Live AI news reader</span>
+            <small>AI news reader with accounts, bookmarks, publishing, and a live issue archive.</small>
           </a>
-          <a class="spotlight-card" href="https://github.com/MatthewPaver/MatthewPaver/blob/main/CASE_STUDIES.md#happening">
-            <span class="spotlight-rank">02</span>
-            <span class="spotlight-type">Private system</span>
+          <a class="selected-card" href="https://github.com/MatthewPaver/MatthewPaver/blob/main/CASE_STUDIES.md#happening">
+            <img src="./assets/happening-pipeline.svg" width="1200" height="675" alt="Happening pipeline visual" fetchpriority="high" />
+            <span>Private system</span>
             <strong>Happening</strong>
-            <span>103+ venues into clean events</span>
+            <small>103+ venue sources normalised into structured London event data.</small>
           </a>
-          <a class="spotlight-card" href="https://github.com/MatthewPaver/marketing-ml-lakehouse">
-            <span class="spotlight-rank">03</span>
-            <span class="spotlight-type">Public repo</span>
+          <a class="selected-card" href="https://github.com/MatthewPaver/marketing-ml-lakehouse">
+            <img src="./assets/marketing-lakehouse.svg" width="1200" height="675" alt="Marketing ML Lakehouse workflow visual" loading="lazy" />
+            <span>Public repo</span>
             <strong>Marketing ML Lakehouse</strong>
-            <span>Runnable data + ML workflow</span>
+            <small>DuckDB, quality checks, XGBoost, and Streamlit in one runnable project.</small>
           </a>
         </div>
       </section>
@@ -538,6 +518,6 @@
       <a href="https://www.linkedin.com/in/matthew-paver-534262166/">Connect on LinkedIn</a>
     </footer>
 
-    <script src="./script.js?v=20260516-3"></script>
+    <script src="./script.js?v=20260516-4"></script>
   </body>
 </html>

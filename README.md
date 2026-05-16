@@ -41,62 +41,29 @@ I build practical systems around messy inputs: crawled websites, scraped listing
 
 ---
 
-## Snapshot
+## Portfolio Snapshot
 
 <table>
 <tr>
 <td width="25%" valign="top">
-  <h3>Live product</h3>
+  <h3>Try</h3>
   <p><a href="https://inferencebrief.co/"><strong>Inference Brief</strong></a></p>
   <p>AI news product with publishing, accounts, bookmarks, history, preferences, and a working reader experience.</p>
 </td>
 <td width="25%" valign="top">
-  <h3>Strongest private system</h3>
+  <h3>Trust</h3>
   <p><a href="CASE_STUDIES.md#happening"><strong>Happening</strong></a></p>
   <p>103+ London venue sources turned into structured event data with crawling, dedupe, checks, and tests.</p>
 </td>
 <td width="25%" valign="top">
-  <h3>Best public data app</h3>
+  <h3>Inspect</h3>
   <p><a href="https://github.com/MatthewPaver/marketing-ml-lakehouse"><strong>Marketing ML Lakehouse</strong></a></p>
   <p>DuckDB lakehouse, data quality checks, XGBoost training, and a Streamlit dashboard.</p>
 </td>
 <td width="25%" valign="top">
-  <h3>Largest public ML dataset</h3>
+  <h3>Scale</h3>
   <p><a href="https://github.com/MatthewPaver/dating-app-recommendation-system"><strong>3.4M+ interactions</strong></a></p>
   <p>Recommendation-system project with temporal evaluation and Top-K metrics.</p>
-</td>
-</tr>
-</table>
-
----
-
-## Featured Shelf
-
-<table>
-<tr>
-<td width="33%" valign="top">
-  <a href="https://inferencebrief.co/">
-    <img src="store/assets/inference-brief.png" alt="Inference Brief screenshot" />
-  </a>
-  <h3>Inference Brief</h3>
-  <p>Live AI news reader. Collects stories, scores them, writes short briefings, publishes issues, and gives readers bookmarks, history, and preferences.</p>
-  <p><code>Next.js</code> <code>TypeScript</code> <code>Supabase</code> <code>Python</code> <code>Stripe</code></p>
-</td>
-<td width="33%" valign="top">
-  <a href="CASE_STUDIES.md#happening">
-    <img src="store/assets/happening-pipeline.svg" alt="Happening ingestion pipeline visual" />
-  </a>
-  <h3>Happening</h3>
-  <p>Private ingestion platform. Turns venue websites into clean London event data with adapters, extraction rules, dedupe, scheduled checks, and operational tests.</p>
-  <p><code>Python</code> <code>Playwright</code> <code>SQLite</code> <code>Pydantic</code></p>
-</td>
-<td width="33%" valign="top">
-  <a href="https://github.com/MatthewPaver/marketing-ml-lakehouse">
-    <img src="store/assets/marketing-lakehouse.svg" alt="Marketing ML Lakehouse workflow visual" />
-  </a>
-  <h3>Marketing ML Lakehouse</h3>
-  <p>Runnable public data app. Loads raw marketing CSVs into DuckDB, builds quality-checked tables, trains models, and serves a dashboard.</p>
-  <p><code>Python</code> <code>DuckDB</code> <code>XGBoost</code> <code>Streamlit</code></p>
 </td>
 </tr>
 </table>
