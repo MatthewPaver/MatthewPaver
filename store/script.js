@@ -203,7 +203,7 @@ document.addEventListener("DOMContentLoaded", () => {
       if (!filterName || !validFilters.has(filterName)) return;
       event.preventDefault();
       setFilter(filterName);
-      document.querySelector("#store")?.scrollIntoView({ block: "start" });
+      document.querySelector("#project-grid-heading")?.scrollIntoView({ block: "start" });
     });
   });
 
