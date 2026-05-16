@@ -51,8 +51,7 @@ I build practical systems from messy inputs: crawled websites, scraped listings,
     <img src="store/assets/inference-brief.png" alt="Inference Brief product screenshot" />
   </a>
   <h3>Inference Brief</h3>
-  <p><strong>Problem:</strong> keeping up with AI news without reading a pile of noisy feeds.</p>
-  <p><strong>Build:</strong> live reader product with story collection, scoring, summaries, publishing, accounts, bookmarks, and history.</p>
+  <p>A working reader for staying current with AI without chasing noisy feeds. It has story collection, scoring, summaries, publishing, accounts, bookmarks, and history.</p>
   <p><code>Next.js</code> <code>TypeScript</code> <code>Supabase</code> <code>Python</code></p>
   <p><a href="https://inferencebrief.co/">Open product</a></p>
 </td>
@@ -61,8 +60,7 @@ I build practical systems from messy inputs: crawled websites, scraped listings,
     <img src="store/assets/happening-pipeline.svg" alt="Happening ingestion pipeline visual" />
   </a>
   <h3>Happening</h3>
-  <p><strong>Problem:</strong> venue event data is scattered across inconsistent public websites.</p>
-  <p><strong>Build:</strong> private ingestion system with 103+ source configs, crawling, extraction, dedupe, checks, and tests.</p>
+  <p>Venue event data is scattered across inconsistent public websites. Happening turns 103+ sources into structured event data with crawling, extraction, dedupe, checks, and tests.</p>
   <p><code>Python</code> <code>Playwright</code> <code>SQLite</code> <code>Pydantic</code></p>
   <p><a href="CASE_STUDIES.md#happening">Read case study</a></p>
 </td>
@@ -71,8 +69,7 @@ I build practical systems from messy inputs: crawled websites, scraped listings,
     <img src="store/assets/marketing-lakehouse.svg" alt="Marketing ML Lakehouse workflow visual" />
   </a>
   <h3>Marketing ML Lakehouse</h3>
-  <p><strong>Problem:</strong> analytics projects often stop at notebooks instead of a repeatable data product.</p>
-  <p><strong>Build:</strong> public DuckDB lakehouse with quality checks, XGBoost training, and Streamlit reporting.</p>
+  <p>A public analytics project that goes past the notebook: DuckDB medallion tables, quality checks, XGBoost training, and Streamlit reporting.</p>
   <p><code>Python</code> <code>DuckDB</code> <code>XGBoost</code> <code>Streamlit</code></p>
   <p><a href="https://github.com/MatthewPaver/marketing-ml-lakehouse">Inspect repo</a></p>
 </td>
@@ -152,7 +149,7 @@ Open the [Portfolio Store](https://matthewpaver.github.io/MatthewPaver/store/) f
 
 ## Project Map
 
-| Project | Solves | What to inspect |
+| Project | Why it exists | What to inspect |
 |:---|:---|:---|
 | [Inference Brief](https://inferencebrief.co/) | AI-news overload | Live product, issue archive, accounts, bookmarks, history, preferences |
 | [Happening](CASE_STUDIES.md#happening) | Fragmented event listings | 103+ source configs, ingestion workflow, dedupe, validation, scheduled checks |
@@ -164,7 +161,7 @@ Open the [Portfolio Store](https://matthewpaver.github.io/MatthewPaver/store/) f
 <details>
 <summary>More repos</summary>
 
-| Repo | Solves | What to inspect |
+| Repo | Why it exists | What to inspect |
 |:---|:---|
 | [Architexa](https://github.com/MatthewPaver/Architexa) | Architecture image generation | Conditional GAN, dataset pipeline, Flask API |
 | [sentence-similarity-analysis](https://github.com/MatthewPaver/sentence-similarity-analysis) | Explaining semantic search | Sentence-transformer embeddings, cosine ranking, retrieval caveats |

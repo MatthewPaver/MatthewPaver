@@ -563,8 +563,13 @@ h1 {
 }
 
 .image-card img.inference-shot,
-.image-card img.study-shot {
+.image-card img.study-shot,
+.image-card img.poster-shot {
   object-position: top center;
+}
+
+.image-card img.architexa-shot {
+  object-position: center;
 }
 
 .dashboard-strip {
