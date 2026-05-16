@@ -2,9 +2,9 @@
 
 # Matthew Paver
 
-### Product-minded AI and data engineering
+### AI products, data systems, and useful analytics
 
-I like turning rough data and half-formed ideas into things people can actually use: live products, crawlers, workflow tools, dashboards, and ML experiments. The common thread is making messy information easier to collect, trust, and act on.
+I build practical software around messy information: crawled websites, scraped listings, raw CSVs, notes, schedules, dashboards, and recommendation data. The work usually sits where AI, data, and product design meet: collect the signal, check it, and turn it into something someone can open.
 
 <p>
   <a href="https://matthewpaver.github.io/MatthewPaver/store/">
@@ -38,7 +38,16 @@ I like turning rough data and half-formed ideas into things people can actually 
 
 ---
 
-## Open First
+## Start Here
+
+| If you want | Open | What it shows |
+|:---|:---|:---|
+| The best visual overview | [Portfolio Store](https://matthewpaver.github.io/MatthewPaver/store/) | App-store style previews across products, data systems, ML, analytics, credentials, and archive work |
+| A live product | [Inference Brief](https://inferencebrief.co/) | A working AI-news reader with collection, scoring, publishing, accounts, bookmarks, and history |
+| The private build story | [Case Studies](CASE_STUDIES.md) | How the larger private systems are designed without exposing private code |
+| A full appendix | [Project Index](Projects.md) | Public, private, live, and archived work in one place |
+
+## Featured Builds
 
 <table>
 <tr>
@@ -47,7 +56,7 @@ I like turning rough data and half-formed ideas into things people can actually 
     <img src="store/assets/inference-brief.png" alt="Inference Brief product preview" />
   </a>
   <h3>Inference Brief</h3>
-  <p>A working reader for staying current with AI without chasing noisy feeds. It has story collection, scoring, summaries, publishing, accounts, bookmarks, and history.</p>
+  <p>A live reader for keeping up with AI without chasing noisy feeds. The product wraps collection, scoring, summaries, publishing, bookmarks, preferences, and reading history into one workflow.</p>
   <p><code>Next.js</code> <code>TypeScript</code> <code>Supabase</code> <code>Python</code></p>
   <p><a href="https://matthewpaver.github.io/MatthewPaver/store/preview.html?app=inference">Open preview</a> · <a href="https://inferencebrief.co/">Live product</a></p>
 </td>
@@ -56,23 +65,30 @@ I like turning rough data and half-formed ideas into things people can actually 
     <img src="store/assets/happening-web.png" alt="Happening product preview" />
   </a>
   <h3>Happening</h3>
-  <p>Venue event data is scattered across inconsistent public websites. Happening turns 103+ sources into structured event data with crawling, extraction, dedupe, checks, and tests.</p>
+  <p>A private event-data system for London venues. It turns inconsistent source pages into checked event data using configured crawling, extraction, dedupe, validation, and regression tests.</p>
   <p><code>Python</code> <code>Playwright</code> <code>SQLite</code> <code>Pydantic</code></p>
-  <p><a href="https://matthewpaver.github.io/MatthewPaver/store/preview.html?app=happening">Open preview</a></p>
+  <p><a href="https://matthewpaver.github.io/MatthewPaver/store/preview.html?app=happening">Open preview</a> · <a href="CASE_STUDIES.md#featured-build-happening">Case study</a></p>
 </td>
 <td width="33%" valign="top">
   <a href="https://matthewpaver.github.io/MatthewPaver/store/preview.html?app=quicksupply">
     <img src="store/assets/quicksupply-dashboard.png" alt="QuickSupply product preview" />
   </a>
   <h3>QuickSupply</h3>
-  <p>A workflow app for school cover: requests, agency assignment, teacher offers, compliance, and live booking status across three portals.</p>
+  <p>A supply-cover workflow for schools, agencies, and teachers. It models requests, assignment, availability, compliance, offers, and live booking status as one operational flow.</p>
   <p><code>Next.js</code> <code>TypeScript</code> <code>Drizzle</code> <code>SSE</code></p>
   <p><a href="https://matthewpaver.github.io/MatthewPaver/store/preview.html?app=quicksupply">Open preview</a></p>
 </td>
 </tr>
 </table>
 
-Open the [Portfolio Store](https://matthewpaver.github.io/MatthewPaver/store/) for the full app-store view, screenshots, credentials, and archived experiments.
+## Public Repos Worth Opening
+
+| Repo | Why it is useful | Signals |
+|:---|:---|:---|
+| [Marketing ML Lakehouse](https://github.com/MatthewPaver/marketing-ml-lakehouse) | Local analytics loop from raw marketing CSVs to DuckDB, XGBoost, checks, and Streamlit | Run locally, tests, dashboard |
+| [ProjectLens](https://github.com/MatthewPaver/ProjectLens) | Schedule-risk app for slippage, milestone pressure, and reporting outputs | Upload flow, tests, Power BI-ready outputs |
+| [Dating App Recommendation System](https://github.com/MatthewPaver/dating-app-recommendation-system) | Ranking project focused on implicit feedback, temporal holdouts, and Top-K evaluation | Demo data, tests, CLI shape |
+| [HR Performance Analytics](https://github.com/MatthewPaver/hr-performance-dashboards) | Dashboard handoff package with PBIX files, screenshots, data, and business commentary | PBIX files, screenshots, prepared data |
 
 ---
 
@@ -80,72 +96,71 @@ Open the [Portfolio Store](https://matthewpaver.github.io/MatthewPaver/store/) f
 
 <table>
 <tr>
-<td width="25%" valign="top">
-  <a href="https://cp.certmetrics.com/amazon/en/public/verify/credential/455c09a58c6c43beb001b21d3ccec2a0">
-    <img src="https://img.shields.io/badge/AWS-AI_Practitioner-151515?style=for-the-badge&logo=amazonwebservices&logoColor=white" alt="AWS Certified AI Practitioner" />
-  </a>
-  <br />
-  <sub>AI and cloud fundamentals</sub>
-</td>
-<td width="25%" valign="top">
+<td width="25%" valign="top"><strong>Cloud</strong></td>
+<td width="75%" valign="top">
   <a href="https://cp.certmetrics.com/amazon/en/public/verify/credential/d0dd54bf93df495da5c3e75ee69940fe">
     <img src="https://img.shields.io/badge/AWS-Cloud_Practitioner-151515?style=for-the-badge&logo=amazonwebservices&logoColor=white" alt="AWS Certified Cloud Practitioner" />
   </a>
   <br />
-  <sub>Cloud architecture foundations</sub>
+  <sub>Verified foundation in cloud architecture and services.</sub>
 </td>
-<td width="25%" valign="top">
+</tr>
+<tr>
+<td width="25%" valign="top"><strong>AI and data</strong></td>
+<td width="75%" valign="top">
+  <a href="https://cp.certmetrics.com/amazon/en/public/verify/credential/455c09a58c6c43beb001b21d3ccec2a0">
+    <img src="https://img.shields.io/badge/AWS-AI_Practitioner-151515?style=for-the-badge&logo=amazonwebservices&logoColor=white" alt="AWS Certified AI Practitioner" />
+  </a>
   <a href="https://drive.google.com/file/d/15oXe_G86TEiETdC8kGBhbnKoMjVZ5mQQ/view">
     <img src="https://img.shields.io/badge/Neo4j-Certified_Professional-151515?style=for-the-badge&logo=neo4j&logoColor=white" alt="Neo4j Certified Professional" />
   </a>
-  <br />
-  <sub>Graph data modelling</sub>
-</td>
-<td width="25%" valign="top">
   <a href="https://drive.google.com/file/d/1NgSeIIF49Sqh2DAMY5KQEtnaddSc1Sqw/view">
     <img src="https://img.shields.io/badge/Hugging_Face-AI_Agents-151515?style=for-the-badge&logo=huggingface&logoColor=white" alt="Hugging Face AI Agents Course" />
   </a>
   <br />
-  <sub>Agent workflows and evaluation</sub>
+  <sub>AI fundamentals, graph data modelling, agent workflows, and evaluation.</sub>
 </td>
 </tr>
 <tr>
-<td width="25%" valign="top">
+<td width="25%" valign="top"><strong>Automation</strong></td>
+<td width="75%" valign="top">
   <a href="https://drive.google.com/file/d/15lrcn5_Cn4g-kD165xGNLUGUGXtCptk-/view">
     <img src="https://img.shields.io/badge/UiPath-RPA_Developer-151515?style=for-the-badge&logo=uipath&logoColor=white" alt="UiPath RPA Developer Advanced" />
   </a>
   <br />
-  <sub>Automation and RPA delivery</sub>
+  <sub>Automation and RPA delivery.</sub>
 </td>
-<td width="25%" valign="top">
+</tr>
+<tr>
+<td width="25%" valign="top"><strong>Professional IT</strong></td>
+<td width="75%" valign="top">
   <a href="https://drive.google.com/file/d/15yLBx8nzlhn_PwrGoqQbumRG8zRQPC9t/view">
     <img src="https://img.shields.io/badge/BCS-Diploma_in_IT-151515?style=for-the-badge&logo=bcs&logoColor=white" alt="BCS Diploma in IT" />
   </a>
-  <br />
-  <sub>Professional IT foundations</sub>
-</td>
-<td width="25%" valign="top">
   <a href="https://drive.google.com/file/d/160nzem63oIEv3EF9mCU9NGWwwA4NMdMZ/view">
     <img src="https://img.shields.io/badge/BCS-Certificate_in_IT-151515?style=for-the-badge&logo=bcs&logoColor=white" alt="BCS Certificate in IT" />
   </a>
   <br />
-  <sub>Core systems and practice</sub>
+  <sub>Professional IT foundations and core systems practice.</sub>
 </td>
-<td width="25%" valign="top">
+</tr>
+<tr>
+<td width="25%" valign="top"><strong>Background</strong></td>
+<td width="75%" valign="top">
   <a href="CV.pdf">
     <img src="https://img.shields.io/badge/CV-Open_Profile-151515?style=for-the-badge&logo=readthedocs&logoColor=white" alt="Open CV" />
   </a>
   <br />
-  <sub>Full background and experience</sub>
+  <sub>Full background and experience.</sub>
 </td>
 </tr>
 </table>
 
 ---
 
-## Explore
+## How To Read This
 
-The [Portfolio Store](https://matthewpaver.github.io/MatthewPaver/store/) is the front door. The [case studies](CASE_STUDIES.md) explain the private systems without exposing private code. [Projects.md](Projects.md) is the appendix: useful when someone wants the full public/private/archive map, but not the first thing to open.
+The [Portfolio Store](https://matthewpaver.github.io/MatthewPaver/store/) is the front door. The README stays deliberately lean; the store does the visual showing-off. The [case studies](CASE_STUDIES.md) explain the bigger private systems, and [Projects.md](Projects.md) is the full appendix when someone wants every public, private, live, and archived item.
 
 <details>
 <summary>Latest public activity</summary>
