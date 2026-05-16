@@ -81,6 +81,36 @@ input:focus-visible {
   border: 0;
 }
 
+.no-js .js-only {
+  display: none !important;
+}
+
+.no-js #project-grid-heading::after {
+  content: "JavaScript is off, so all projects are shown. Open a project preview or repo from the cards below.";
+  display: block;
+  max-width: 620px;
+  margin-top: 12px;
+  color: var(--muted);
+  font-family: "Avenir Next", "Segoe UI", Helvetica, Arial, sans-serif;
+  font-size: 1rem;
+  font-weight: 650;
+  line-height: 1.45;
+}
+
+.no-js .preview-copy,
+.no-js .preview-media,
+.no-js .preview-layout {
+  display: none;
+}
+
+.no-script-panel {
+  grid-column: 1 / -1;
+}
+
+.no-script-panel h1 {
+  font-size: clamp(2.25rem, 4vw, 4rem);
+}
+
 .shell {
   width: min(1160px, calc(100% - 32px));
   margin: 0 auto;

@@ -203,7 +203,10 @@ document.addEventListener("DOMContentLoaded", () => {
       if (!filterName || !validFilters.has(filterName)) return;
       event.preventDefault();
       setFilter(filterName);
-      document.querySelector("#project-grid-heading")?.scrollIntoView({ block: "start" });
+      const target = document.querySelector("#project-grid-heading");
+      if (target) {
+        window.requestAnimationFrame(() => target.scrollIntoView({ block: "start" }));
+      }
     });
   });
 

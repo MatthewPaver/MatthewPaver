@@ -59,7 +59,10 @@ const indexRows = parseCsv(readFile("store/app-index.csv"));
 const tagRows = parseCsv(readFile("store/tags.csv"));
 const catalogueRows = parseCsv(readFile("store/catalogue.csv"));
 const indexHtml = readFile("store/index.html");
+const previewHtml = readFile("store/preview.html");
 const previewJs = readFile("store/preview.js");
+const storeScript = readFile("store/script.js");
+const storeCss = readFile("store/styles.css");
 
 const slugs = new Set();
 const tagSet = new Set(tagRows.map((row) => row.tag));
@@ -92,6 +95,19 @@ for (const row of indexRows.filter((item) => item.slug !== "archive")) {
 
 for (const tag of tagSet) {
   assert(indexHtml.includes(`data-filter="${tag}"`), `Store page is missing filter button for ${tag}`);
+  assert(
+    indexHtml.includes(`href="?filter=${tag}#project-grid-heading"`),
+    `Shelf link for ${tag} should work as a no-JS jump to the project grid`
+  );
 }
+
+assert(indexHtml.includes('class="no-js"'), "Store HTML should start with a no-js class for progressive enhancement");
+assert(indexHtml.includes("js-enabled"), "Store HTML should switch to js-enabled when scripts run");
+assert(previewHtml.includes('class="no-js"'), "Preview HTML should start with a no-js class for progressive enhancement");
+assert(previewHtml.includes("<noscript>"), "Preview page should include a no-JS fallback");
+assert(indexHtml.includes('class="store-toolbar js-only"'), "Search/sort toolbar should be hidden when JS is disabled");
+assert(indexHtml.includes('class="filters js-only"'), "Filter toolbar should be hidden when JS is disabled");
+assert(storeCss.includes(".no-js .js-only"), "CSS should hide JS-only controls without JavaScript");
+assert(storeScript.includes("#project-grid-heading"), "Shelf filtering should scroll to the project grid heading");
 
 console.log(`Validated ${indexRows.length} indexed store entries and ${tagRows.length} shelves.`);
