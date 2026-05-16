@@ -13,6 +13,8 @@
   --gold: #8f5d12;
   --blue: #1d4f91;
   --red: #9f3a2f;
+  --ease-out: cubic-bezier(0.16, 1, 0.3, 1);
+  --ease-smooth: cubic-bezier(0.22, 0.61, 0.36, 1);
 }
 
 * {
@@ -196,7 +198,7 @@ h1 {
   color: var(--ink);
   font-weight: 800;
   text-decoration: none;
-  transition: background 160ms ease, color 160ms ease, border-color 160ms ease;
+  transition: background 180ms var(--ease-smooth), color 180ms var(--ease-smooth), border-color 180ms var(--ease-smooth), box-shadow 180ms var(--ease-smooth), transform 180ms var(--ease-smooth);
 }
 
 .button.primary {
@@ -211,7 +213,9 @@ h1 {
 .button:hover {
   background: var(--accent);
   border-color: var(--accent);
+  box-shadow: 0 10px 24px rgba(15, 118, 110, 0.14);
   color: var(--surface);
+  transform: translateY(-1px);
 }
 
 .signal-panel {
@@ -294,7 +298,7 @@ h1 {
   color: var(--ink);
   padding-bottom: 16px;
   text-decoration: none;
-  transition: border-color 160ms ease, background 160ms ease, transform 160ms ease, box-shadow 160ms ease;
+  transition: border-color 220ms var(--ease-smooth), background 220ms var(--ease-smooth), transform 220ms var(--ease-smooth), box-shadow 220ms var(--ease-smooth);
 }
 
 .selected-card:hover {
@@ -309,6 +313,7 @@ h1 {
   height: 212px;
   object-fit: cover;
   border-bottom: 1px solid var(--line);
+  transition: transform 700ms var(--ease-out), filter 220ms var(--ease-smooth);
 }
 
 .selected-card img[src$=".svg"] {
@@ -418,6 +423,7 @@ h1 {
   display: block;
   width: 100%;
   height: auto;
+  transition: transform 900ms var(--ease-out);
 }
 
 .preview-meta {
@@ -553,10 +559,13 @@ h1 {
   background: var(--surface);
   padding: 16px;
   text-decoration: none;
+  transition: background 180ms var(--ease-smooth), transform 180ms var(--ease-smooth), box-shadow 180ms var(--ease-smooth);
 }
 
 .credential-grid a:hover {
   background: var(--surface-warm);
+  box-shadow: 0 12px 26px rgba(21, 21, 21, 0.08);
+  transform: translateY(-1px);
 }
 
 .credential-grid span {
@@ -710,12 +719,14 @@ h1 {
   overflow: hidden;
   border: 1px solid var(--line);
   background: var(--surface);
-  transition: border-color 160ms ease, background 160ms ease;
+  transition: border-color 220ms var(--ease-smooth), background 220ms var(--ease-smooth), box-shadow 220ms var(--ease-smooth), transform 220ms var(--ease-smooth);
 }
 
 .app-card:hover {
   border-color: var(--line-strong);
   background: #fffdf9;
+  box-shadow: 0 18px 42px rgba(21, 21, 21, 0.09);
+  transform: translateY(-2px);
 }
 
 .app-card.featured {
@@ -733,6 +744,7 @@ h1 {
   object-fit: cover;
   border-bottom: 1px solid var(--line);
   filter: saturate(0.96) contrast(1.02);
+  transition: transform 760ms var(--ease-out), filter 220ms var(--ease-smooth);
 }
 
 .image-card img[src$=".svg"] {
@@ -931,6 +943,109 @@ h1 {
 
 .card-actions a:hover {
   color: var(--accent);
+}
+
+@keyframes rise-in {
+  from {
+    opacity: 0;
+    transform: translateY(18px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes scale-in {
+  from {
+    opacity: 0;
+    transform: translateY(14px) scale(0.985);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .hero-copy > *,
+  .signal-panel {
+    animation: rise-in 760ms var(--ease-out) both;
+  }
+
+  .hero-copy > *:nth-child(1) {
+    animation-delay: 60ms;
+  }
+
+  .hero-copy > *:nth-child(2) {
+    animation-delay: 130ms;
+  }
+
+  .hero-copy > *:nth-child(3) {
+    animation-delay: 200ms;
+  }
+
+  .hero-copy > *:nth-child(4) {
+    animation-delay: 280ms;
+  }
+
+  .signal-panel {
+    animation-delay: 220ms;
+  }
+
+  .selected-card:hover img,
+  .app-card:hover > img,
+  .app-card:hover .dashboard-strip img,
+  .preview-media:hover img {
+    filter: saturate(1.03) contrast(1.04);
+    transform: scale(1.025);
+  }
+
+  .reveal-item {
+    opacity: 0;
+    transform: translateY(18px);
+  }
+
+  .reveal-item.is-visible {
+    opacity: 1;
+    transform: translateY(0);
+    transition: opacity 620ms var(--ease-out), transform 620ms var(--ease-out);
+    transition-delay: calc(var(--reveal-index, 0) * 45ms);
+  }
+
+  .preview-copy > *,
+  .preview-media,
+  .preview-panel {
+    animation: scale-in 720ms var(--ease-out) both;
+  }
+
+  .preview-copy > *:nth-child(1) {
+    animation-delay: 40ms;
+  }
+
+  .preview-copy > *:nth-child(2) {
+    animation-delay: 100ms;
+  }
+
+  .preview-copy > *:nth-child(3) {
+    animation-delay: 170ms;
+  }
+
+  .preview-copy > *:nth-child(4) {
+    animation-delay: 240ms;
+  }
+
+  .preview-media {
+    animation-delay: 180ms;
+  }
+
+  .preview-panel:first-child {
+    animation-delay: 280ms;
+  }
+
+  .preview-panel:last-child {
+    animation-delay: 350ms;
+  }
 }
 
 .footer {

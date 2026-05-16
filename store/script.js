@@ -11,6 +11,33 @@ document.addEventListener("DOMContentLoaded", () => {
 
   let activeFilter = "all";
   const validFilters = new Set(filters.map((button) => button.dataset.filter).filter(Boolean));
+  const prefersReducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+
+  function initRevealMotion() {
+    if (prefersReducedMotion || !("IntersectionObserver" in window)) return;
+
+    const targets = Array.from(
+      document.querySelectorAll(".selected-card, .credential-grid a, .app-card")
+    );
+
+    targets.forEach((target, index) => {
+      target.classList.add("reveal-item");
+      target.style.setProperty("--reveal-index", String(index % 6));
+    });
+
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (!entry.isIntersecting) return;
+          entry.target.classList.add("is-visible");
+          observer.unobserve(entry.target);
+        });
+      },
+      { rootMargin: "0px 0px -10% 0px", threshold: 0.12 }
+    );
+
+    targets.forEach((target) => observer.observe(target));
+  }
 
   function updateUrlState() {
     const url = new URL(window.location.href);
@@ -97,4 +124,6 @@ document.addEventListener("DOMContentLoaded", () => {
   } else {
     updateStore({ syncUrl: false });
   }
+
+  initRevealMotion();
 });
