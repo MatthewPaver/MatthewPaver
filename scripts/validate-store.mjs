@@ -4,6 +4,16 @@ import path from "node:path";
 const root = process.cwd();
 const requiredColumns = ["slug", "title", "shelf", "status", "kind", "problem", "proof", "stack", "preview", "asset"];
 const allowedShelves = new Set(["product", "data", "automation", "ml", "analytics", "archive"]);
+const specDirectory = "specs/001-portfolio-store-reliability";
+const requiredSpecFiles = [
+  ".specify/memory/constitution.md",
+  `${specDirectory}/spec.md`,
+  `${specDirectory}/plan.md`,
+  `${specDirectory}/research.md`,
+  `${specDirectory}/quickstart.md`,
+  `${specDirectory}/tasks.md`,
+  `${specDirectory}/contracts/store-catalogue.md`
+];
 
 function readFile(relativePath) {
   return fs.readFileSync(path.join(root, relativePath), "utf8");
@@ -109,5 +119,26 @@ assert(indexHtml.includes('class="store-toolbar js-only"'), "Search/sort toolbar
 assert(indexHtml.includes('class="filters js-only"'), "Filter toolbar should be hidden when JS is disabled");
 assert(storeCss.includes(".no-js .js-only"), "CSS should hide JS-only controls without JavaScript");
 assert(storeScript.includes("#project-grid-heading"), "Shelf filtering should scroll to the project grid heading");
+
+for (const file of requiredSpecFiles) {
+  const absolutePath = path.join(root, file);
+  assert(fs.existsSync(absolutePath), `Missing Spec Kit artifact: ${file}`);
+  const contents = readFile(file);
+  assert(!contents.includes("[NEEDS CLARIFICATION]"), `Unresolved clarification marker in ${file}`);
+}
+
+const constitution = readFile(".specify/memory/constitution.md");
+assert(
+  constitution.includes("Progressive enhancement is mandatory"),
+  "Constitution must preserve the browser compatibility principle"
+);
+
+const spec = readFile(`${specDirectory}/spec.md`);
+assert(spec.includes("Story 2: Navigate by category"), "Feature spec must cover category navigation");
+assert(spec.includes("Story 3: Use previews safely"), "Feature spec must cover preview fallback behavior");
+
+const tasks = readFile(`${specDirectory}/tasks.md`);
+const uncheckedTasks = [...tasks.matchAll(/^- \[ \] /gm)];
+assert(uncheckedTasks.length === 0, "Spec task list contains unchecked tasks");
 
 console.log(`Validated ${indexRows.length} indexed store entries and ${tagRows.length} shelves.`);

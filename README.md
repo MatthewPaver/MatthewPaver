@@ -177,7 +177,7 @@ flowchart LR
 
 ## How To Read This
 
-The [Portfolio Store](https://matthewpaver.github.io/MatthewPaver/store/) is the front door. The README stays deliberately lean; the store does the visual showing-off. The store is backed by a small [app index](store/app-index.csv) and deploy-time checks, so new projects have to carry a preview, shelf, status, proof point, stack, and asset. The [case studies](CASE_STUDIES.md) explain the bigger private systems, and [Projects.md](Projects.md) is the full appendix when someone wants every public, private, live, and archived item.
+The [Portfolio Store](https://matthewpaver.github.io/MatthewPaver/store/) is the front door. The README stays deliberately lean; the store does the visual showing-off. The store is backed by a small [app index](store/app-index.csv), [Spec Kit-style feature spec](specs/001-portfolio-store-reliability/spec.md), and deploy-time checks, so new projects have to carry a preview, shelf, status, proof point, stack, asset, and browser-safe navigation path. The [case studies](CASE_STUDIES.md) explain the bigger private systems, and [Projects.md](Projects.md) is the full appendix when someone wants every public, private, live, and archived item.
 
 ## Contact
 
