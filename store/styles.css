@@ -22,49 +22,234 @@
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --bg: #131210;
-    --surface: #1a1815;
-    --surface-warm: #211e1a;
-    --ink: #f3eee5;
-    --muted: #b3aca0;
-    --soft: #8e867b;
-    --line: #2e2a25;
-    --line-strong: #4a443c;
-    --accent: #2dd4bf;
-    --accent-ink: #7dd3c7;
-    --gold: #d9a441;
-    --blue: #6ea8e6;
-    --red: #e07a6e;
-    --ink-soft: #0c0b09;
-    --surface-cream: #1c1a17;
+    --bg: #14110e;
+    --surface: #1f1b17;
+    --surface-warm: #26221d;
+    --surface-cream: #2c2722;
+    --ink: #f3ede1;
+    --muted: #b8b0a3;
+    --soft: #948b7e;
+    --line: #38322c;
+    --line-strong: #574e44;
+    --accent: #5eead4;
+    --accent-ink: #99e8d8;
+    --gold: #e8c47a;
+    --blue: #87b3eb;
+    --red: #ec9b8f;
+    --accent-soft: #5eead4;
+    --ink-soft: #0a0907;
   }
 
-  /* keep editorial inverted block always-dark in dark mode */
+  body {
+    -webkit-tap-highlight-color: rgba(94, 234, 212, 0.18);
+  }
+
+  a:focus-visible,
+  button:focus-visible,
+  input:focus-visible {
+    outline-color: rgba(94, 234, 212, 0.55);
+  }
+
+  /* lift card layers above the page so hover is visible */
+  .app-card,
+  .selected-card,
+  .preview-panel,
+  .preview-media,
+  .credential-group,
+  .personal-note,
+  .empty-state {
+    background: var(--surface);
+    border-color: var(--line-strong);
+  }
+
+  .preview-media {
+    box-shadow: 0 24px 60px rgba(0, 0, 0, 0.55);
+  }
+
+  .app-card:hover,
+  .selected-card:hover {
+    background: var(--surface-cream);
+    box-shadow: 0 18px 42px rgba(0, 0, 0, 0.45);
+  }
+
+  /* dim screenshots so they don't glare on dark page */
+  .image-card img,
+  .selected-card img,
+  .preview-media img {
+    filter: brightness(0.88) saturate(0.92);
+    transition: filter 320ms var(--ease-smooth), transform 700ms var(--ease-out);
+  }
+
+  .image-card:hover img,
+  .selected-card:hover img,
+  .preview-media:hover img {
+    filter: brightness(1) saturate(1);
+  }
+
+  /* featured-build stays deeper than page; story-step cards lift just enough */
   .featured-build {
-    background: #0c0b09;
-    color: #f3eee5;
+    background: var(--ink-soft);
+    color: var(--ink);
+    border-color: var(--ink-soft);
+  }
+
+  .featured-build p {
+    color: rgba(243, 237, 225, 0.78);
+  }
+
+  .story-steps {
+    background: rgba(94, 234, 212, 0.14);
+    border-color: rgba(94, 234, 212, 0.18);
   }
 
   .story-steps div {
-    background: #161412;
+    background: #15110e;
   }
 
+  .story-steps span,
+  .featured-build .eyebrow {
+    color: var(--accent-soft);
+  }
+
+  /* card number badge: light pill on dark card */
   .app-card::before {
-    border-color: rgba(0, 0, 0, 0.6);
-    background: rgba(243, 238, 229, 0.86);
-    color: #131210;
+    border-color: rgba(243, 237, 225, 0.18);
+    background: rgba(243, 237, 225, 0.92);
+    color: var(--bg);
   }
 
   .archive-thumb {
     background:
-      linear-gradient(90deg, rgba(243, 238, 229, 0.06) 1px, transparent 1px),
-      linear-gradient(180deg, rgba(243, 238, 229, 0.06) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(243, 237, 225, 0.05) 1px, transparent 1px),
+      linear-gradient(180deg, rgba(243, 237, 225, 0.05) 1px, transparent 1px),
       var(--surface-warm);
+  }
+
+  /* SVG thumbs sit on white in light mode; soften that on dark */
+  .image-card img[src$=".svg"],
+  .selected-card img[src$=".svg"] {
+    background: #efeae0;
+    filter: brightness(0.94) saturate(0.9);
+  }
+
+  /* shelf-grid hover swaps to surface-cream so text stays readable */
+  .shelf-grid {
+    border-color: var(--line);
+    background: var(--line);
+  }
+
+  .shelf-grid a {
+    background: var(--surface);
+  }
+
+  .shelf-grid a:hover {
+    background: var(--surface-cream);
+    color: var(--ink);
+    transform: translateY(-1px);
   }
 
   .shelf-grid a:hover span,
   .shelf-grid a:hover small {
-    color: rgba(19, 18, 16, 0.72);
+    color: var(--muted);
+  }
+
+  /* primary button: cream pill on dark page; ink stays dark */
+  .button.primary {
+    background: var(--ink);
+    color: var(--bg);
+    border-color: var(--ink);
+  }
+
+  .button.primary:hover {
+    background: var(--accent);
+    border-color: var(--accent);
+    color: var(--bg);
+  }
+
+  .button.ghost:hover {
+    color: var(--bg);
+  }
+
+  /* search input + select adapt the custom dropdown chevrons */
+  .sort-box select {
+    background-image:
+      linear-gradient(45deg, transparent 50%, var(--ink) 50%),
+      linear-gradient(135deg, var(--ink) 50%, transparent 50%);
+  }
+
+  .clear-search:hover {
+    background: var(--ink);
+    border-color: var(--ink);
+    color: var(--bg);
+  }
+
+  /* sticky filter bar — translucent layer on dark */
+  .filters {
+    background: rgba(20, 17, 14, 0.92);
+  }
+
+  /* status pills: keep semantic colour but ensure readability */
+  .status {
+    background: var(--surface-warm);
+  }
+
+  .status.live {
+    color: var(--accent-soft);
+  }
+
+  .status.public {
+    color: var(--blue);
+  }
+
+  .status.private {
+    color: var(--red);
+  }
+
+  .status.archive {
+    color: var(--soft);
+  }
+
+  /* repo confidence chips */
+  .repo-confidence span {
+    background: var(--surface-warm);
+    color: var(--accent-soft);
+    border-color: var(--line-strong);
+  }
+
+  .stack-list span,
+  .preview-stack span {
+    background: var(--surface-warm);
+    color: var(--muted);
+    border-color: var(--line-strong);
+  }
+
+  .brand-mark {
+    background: var(--ink);
+    color: var(--bg);
+    border-color: var(--ink);
+  }
+
+  .skip-link {
+    background: var(--surface);
+    color: var(--ink);
+    border-color: var(--ink);
+  }
+
+  /* link colour for inline text links */
+  .card-actions a:hover,
+  .nav-links a:hover,
+  .text-link:hover,
+  .footer a:hover,
+  .preview-nav a:hover {
+    color: var(--accent-soft);
+  }
+
+  .featured-build .text-link {
+    color: var(--ink);
+  }
+
+  .featured-build .text-link:hover {
+    color: var(--accent-soft);
   }
 }
 

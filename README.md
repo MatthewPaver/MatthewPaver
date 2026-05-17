@@ -2,9 +2,7 @@
 
 # Matthew Paver
 
-### I turn messy information into useful, inspectable products.
-
-Crawled pages, scraped listings, raw CSVs, schedules — collected, checked, and turned into something a real person can open. AI, data, and product design sitting in one workflow rather than three.
+I build software that turns messy information into useful tools. Most of what I work on starts with public web data, scraped pages, or raw CSVs, and ends with a product someone can actually open.
 
 <p>
   <a href="https://matthewpaver.github.io/MatthewPaver/store/">
@@ -28,45 +26,19 @@ Crawled pages, scraped listings, raw CSVs, schedules — collected, checked, and
 
 ---
 
-## Signals at a glance
+## What I'm working on
 
-| Signal | Where it shows up |
-|:---|:---|
-| **Live product with paying-grade infrastructure** | [Inference Brief](https://inferencebrief.co/) — accounts, bookmarks, history, publishing, billing surface |
-| **103+ configured sources · 167-test reliability suite** | Happening — venue ingestion done as a contract, not as one-off scraping |
-| **Spec-driven portfolio with deploy gates** | [This repo](specs/001-portfolio-store-reliability/) — Spec Kit constitution, validator, Lighthouse CI |
-| **Cross-stack delivery** | Python pipelines · Next.js products · DuckDB / Postgres · Power BI handoffs |
+I'm running **[Inference Brief](https://inferencebrief.co/)**, an AI-news reader I built end-to-end. It collects, scores, summarises, and publishes stories into issues. There's an account system, reading history, bookmarks, and a billing surface behind it.
 
-## What I build
+On the side I run **Happening**, a private system that watches 103 London venue pages and turns them into structured event data. It treats each venue as a configured source with extraction rules, dedupe, and validation, and has a 167-test reliability suite I keep adding to as the venues change shape.
 
-<table>
-<tr>
-<td width="33%" valign="top">
+## What I tend to work on
 
-### AI products
-End-to-end products where AI sits inside a workflow, not next to it. Source collection, scoring, summaries, publishing, accounts, history, and feedback loops.
+**Products.** Web apps where AI sits inside a real workflow rather than off to the side. Usually Next.js and TypeScript on the front, Python with Postgres or Supabase behind. Inference Brief is the live one; AI Study Companion and QuickSupply are private MVPs.
 
-Best examples: [Inference Brief](https://matthewpaver.github.io/MatthewPaver/store/preview.html?app=inference), [AI Study Companion](https://matthewpaver.github.io/MatthewPaver/store/preview.html?app=study), [QuickSupply](https://matthewpaver.github.io/MatthewPaver/store/preview.html?app=quicksupply)
+**Data systems.** Scrapers, pipelines, validation, and the boring infrastructure that makes a daily run trustworthy. Happening is the biggest example. Smart Job Market Intelligence is similar in shape.
 
-</td>
-<td width="33%" valign="top">
-
-### Data systems
-Messy public sources turned into checked, repeatable data with explicit source configs, dedupe, validation, scheduled runs, and source-level quality checks.
-
-Best examples: [Happening](https://matthewpaver.github.io/MatthewPaver/store/preview.html?app=happening), [Smart Job Market Intelligence](https://matthewpaver.github.io/MatthewPaver/store/preview.html?app=smart-job), [Marketing ML Lakehouse](https://github.com/MatthewPaver/marketing-ml-lakehouse)
-
-</td>
-<td width="33%" valign="top">
-
-### Analytics &amp; ML
-Analytics packaged as tools — upload flows, schedule-risk reports, ranking systems with proper temporal evaluation, dashboard handoffs that come with the data and commentary.
-
-Best examples: [ProjectLens](https://github.com/MatthewPaver/ProjectLens), [Dating App Recommendation System](https://github.com/MatthewPaver/dating-app-recommendation-system), [HR Performance Analytics](https://github.com/MatthewPaver/hr-performance-dashboards)
-
-</td>
-</tr>
-</table>
+**Analytics and ML.** Ranking systems with proper temporal evaluation, schedule-risk apps, dashboards that ship with the data and the methodology. ProjectLens, the Marketing ML Lakehouse, a dating-app recommender, and an HR analytics handoff package.
 
 ## Featured builds
 
@@ -76,8 +48,8 @@ Best examples: [ProjectLens](https://github.com/MatthewPaver/ProjectLens), [Dati
   <a href="https://matthewpaver.github.io/MatthewPaver/store/preview.html?app=inference">
     <img src="store/assets/inference-brief.png" alt="Inference Brief product preview" />
   </a>
-  <h3>Inference Brief · <a href="https://inferencebrief.co/">live</a></h3>
-  <p><strong>Calm AI reading.</strong> Collects, scores, summarises, and publishes stories into issues. Reader accounts with bookmarks, history, and preferences. Editorial workflow separates judgement from automation.</p>
+  <h3>Inference Brief</h3>
+  <p>Live AI-news reader. Collection, scoring, summaries, issues, accounts, bookmarks, reading history.</p>
   <p><code>Next.js</code> <code>TypeScript</code> <code>Supabase</code> <code>Python</code> <code>Stripe</code></p>
   <p><a href="https://matthewpaver.github.io/MatthewPaver/store/preview.html?app=inference">Preview</a> · <a href="https://inferencebrief.co/">Open product</a> · <a href="CASE_STUDIES.md#inference-brief">Case study</a></p>
 </td>
@@ -85,8 +57,8 @@ Best examples: [ProjectLens](https://github.com/MatthewPaver/ProjectLens), [Dati
   <a href="https://matthewpaver.github.io/MatthewPaver/store/preview.html?app=happening">
     <img src="store/assets/happening-web.png" alt="Happening event ingestion preview" />
   </a>
-  <h3>Happening · private</h3>
-  <p><strong>Reliable scraping at scale.</strong> Each venue is a configured data contract: extraction rules, dedupe, validation, regression tests. The hard part is not collecting events — it is knowing when the data path is healthy.</p>
+  <h3>Happening</h3>
+  <p>Private venue-event pipeline. 103 sources, dedupe, validation, a 167-test reliability suite, scheduled daily runs.</p>
   <p><code>Python</code> <code>Playwright</code> <code>SQLite</code> <code>Pydantic</code> <code>GitHub Actions</code></p>
   <p><a href="https://matthewpaver.github.io/MatthewPaver/store/preview.html?app=happening">Preview</a> · <a href="CASE_STUDIES.md#featured-build-happening">Case study</a></p>
 </td>
@@ -94,8 +66,8 @@ Best examples: [ProjectLens](https://github.com/MatthewPaver/ProjectLens), [Dati
   <a href="https://matthewpaver.github.io/MatthewPaver/store/preview.html?app=quicksupply">
     <img src="store/assets/quicksupply-dashboard.png" alt="QuickSupply product preview" />
   </a>
-  <h3>QuickSupply · private MVP</h3>
-  <p><strong>Three-sided cover ops.</strong> School cover requests, sequential agency assignment, teacher availability, compliance checks, and live status. Operational clarity instead of another spreadsheet.</p>
+  <h3>QuickSupply</h3>
+  <p>School cover ops MVP. Three sides of the workflow (school, agency, teacher) with sequential assignment and live status.</p>
   <p><code>Next.js</code> <code>TypeScript</code> <code>PostgreSQL</code> <code>Drizzle</code> <code>SSE</code></p>
   <p><a href="https://matthewpaver.github.io/MatthewPaver/store/preview.html?app=quicksupply">Preview</a></p>
 </td>
@@ -104,22 +76,20 @@ Best examples: [ProjectLens](https://github.com/MatthewPaver/ProjectLens), [Dati
 
 ## Public repos worth opening
 
-| Repo | What it shows | Open |
-|:---|:---|:---|
-| **Marketing ML Lakehouse** | Bronze/silver/gold DuckDB flow, XGBoost training, data-quality checks, Streamlit dashboard. Run locally end-to-end. | [Open](https://github.com/MatthewPaver/marketing-ml-lakehouse) |
-| **ProjectLens** | Schedule-risk app: upload, clean, slippage analysis, milestone pressure, Power BI-ready outputs. Tests + upload flow. | [Open](https://github.com/MatthewPaver/ProjectLens) |
-| **Dating App Recommendation System** | Implicit-feedback ranking with temporal holdouts and Top-K evaluation. Demo data + CLI smoke path. | [Open](https://github.com/MatthewPaver/dating-app-recommendation-system) |
-| **HR Performance Analytics** | Power BI handoff package: PBIX files, prepared data, screenshots, stakeholder commentary. | [Open](https://github.com/MatthewPaver/hr-performance-dashboards) |
-| **Sentence Similarity Analysis** | Embedding retrieval demo with deliberate caveats about similarity ≠ truth. | [Open](https://github.com/MatthewPaver/sentence-similarity-analysis) |
-| **PySpark Kafka Streaming** | Compact technical examples covering DataFrames, Structured Streaming, JSON event production. | [Open](https://github.com/MatthewPaver/pyspark-kafka-streaming) |
+| Repo | What you'll see |
+|:---|:---|
+| [Marketing ML Lakehouse](https://github.com/MatthewPaver/marketing-ml-lakehouse) | Bronze/silver/gold DuckDB flow, XGBoost training, data-quality checks, Streamlit dashboard. Runs locally end-to-end. |
+| [ProjectLens](https://github.com/MatthewPaver/ProjectLens) | Schedule-risk Flask app with upload flow, slippage analysis, milestone pressure, and Power BI-ready exports. |
+| [Dating App Recommendation System](https://github.com/MatthewPaver/dating-app-recommendation-system) | Implicit-feedback ranking with temporal holdouts and Top-K metrics. Demo data plus a CLI smoke path. |
+| [HR Performance Analytics](https://github.com/MatthewPaver/hr-performance-dashboards) | Power BI handoff package: PBIX files, prepared data, screenshots, and stakeholder commentary. |
+| [Sentence Similarity Analysis](https://github.com/MatthewPaver/sentence-similarity-analysis) | Embedding retrieval notebook with a deliberate point about similarity not being truth. |
+| [PySpark Kafka Streaming](https://github.com/MatthewPaver/pyspark-kafka-streaming) | Small technical examples covering DataFrames, Structured Streaming, and JSON event production. |
 
-## How I work
+## How the work is shaped
 
-- **Spec-first.** This repo runs on a Spec Kit constitution, feature spec, validator, and Lighthouse CI gates. Drift between CSV, HTML, JSON, sitemap, and assets is impossible by design.
-- **Evidence over decoration.** Every project on the [store](https://matthewpaver.github.io/MatthewPaver/store/) declares its problem, proof point, stack, status, and preview path. No decorative cards.
-- **Progressive enhancement.** Every link works without JavaScript. JS only enhances filtering, sorting, motion, and per-slug preview rendering.
-- **Reliability over cleverness.** Determinism beats elegance when the system has to run unattended. Happening is 103+ source configs and 167 tests for that reason.
-- **Inspectable handoffs.** Public repos ship with run instructions, tests, sample data, and notes on what to look at first.
+I run this repository as if it were a small product. There is a written constitution in `.specify/memory/`, a feature spec in `specs/001-portfolio-store-reliability/`, and a deploy-gate validator in `scripts/validate-store.mjs` that checks the catalogue, image dimensions, sitemap coverage, manifest, favicons, JSON-LD, CSP, dark and print stylesheets, and progressive-enhancement contracts. Lighthouse CI gates accessibility and SEO before each deploy.
+
+When I publish a project I try to write it so a reviewer can be running it locally inside a few minutes — README, run command, tests, sample data, a screenshot or two, and notes on what to look at first. The work is meant to be opened, not just admired.
 
 ## Credentials
 
@@ -168,21 +138,13 @@ Best examples: [ProjectLens](https://github.com/MatthewPaver/ProjectLens), [Dati
   <img src="https://img.shields.io/badge/Power_BI-151515?style=for-the-badge&logo=powerbi&logoColor=white" alt="Power BI" />
 </p>
 
-## How to read this
+## Routes through the work
 
-| If you want | Open |
-|:---|:---|
-| The best visual overview | [Portfolio Store](https://matthewpaver.github.io/MatthewPaver/store/) |
-| A live, paying-grade product | [Inference Brief](https://inferencebrief.co/) |
-| Architecture &amp; tradeoff stories | [Case Studies](CASE_STUDIES.md) |
-| Full repo + project map | [Projects appendix](Projects.md) |
-| Background &amp; experience | [CV](CV.pdf) |
-
-The store is the front door — a hand-coded static site with a Spec Kit governance layer, validator, Lighthouse CI, and progressive-enhancement contract. The [`specs/`](specs/001-portfolio-store-reliability/) directory shows how the work is governed; [`scripts/validate-store.mjs`](scripts/validate-store.mjs) is the deploy gate.
+The [Portfolio Store](https://matthewpaver.github.io/MatthewPaver/store/) is the best place to start — it has every project laid out with a problem statement, stack, status, and a preview. [Case studies](CASE_STUDIES.md) go deeper into the private builds. [Projects.md](Projects.md) is a fuller appendix when you want every repo, public or private. The [CV](CV.pdf) is there for the conventional read.
 
 ## Contact
 
-Open to AI/data product work, automation systems, and operational tooling. Best place to reach me is [LinkedIn](https://www.linkedin.com/in/matthew-paver-534262166/).
+Open to product, data, and automation work. [LinkedIn](https://www.linkedin.com/in/matthew-paver-534262166/) is the easiest way to reach me.
 
 <details>
 <summary>Latest public activity</summary>
