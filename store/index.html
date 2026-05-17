@@ -46,7 +46,7 @@
     <script>
       document.documentElement.className = document.documentElement.className.replace("no-js", "js-enabled");
     </script>
-    <link rel="stylesheet" href="./styles.css?v=20260517-3" />
+    <link rel="stylesheet" href="./styles.css?v=20260517-5" />
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
@@ -61,7 +61,7 @@
             "https://www.linkedin.com/in/matthew-paver-534262166/",
             "https://inferencebrief.co/"
           ],
-          "jobTitle": "AI, data, and analytics engineer",
+          "jobTitle": "Software engineer",
           "knowsAbout": ["AI products", "data engineering", "analytics", "machine learning", "automation"]
         },
         {
@@ -69,7 +69,7 @@
           "@id": "https://matthewpaver.github.io/MatthewPaver/store/#website",
           "url": "https://matthewpaver.github.io/MatthewPaver/store/",
           "name": "Matthew Paver Portfolio Store",
-          "description": "A portfolio-store showcase of Matthew Paver's AI products, data pipelines, automation tools, analytics apps, credentials, and ML projects.",
+          "description": "Matthew Paver's portfolio of AI products, data systems, ML projects, and analytics work.",
           "author": { "@id": "https://matthewpaver.github.io/MatthewPaver/store/#person" }
         },
         {
@@ -97,7 +97,7 @@
     </script>
   </head>
   <body>
-    <a class="skip-link" href="#store">Skip to ideas</a>
+    <a class="skip-link" href="#store">Skip to projects</a>
     <header class="shell hero">
       <nav class="topbar" aria-label="Primary navigation">
         <a class="brand" href="https://github.com/MatthewPaver/MatthewPaver" aria-label="Back to Matthew Paver profile">
@@ -113,7 +113,7 @@
       <section class="hero-grid">
         <div class="hero-copy">
           <p class="eyebrow">Matthew Paver</p>
-          <h1>AI products, data systems, and analytics — built to be opened.</h1>
+          <h1>AI products, data systems, and analytics. Built to be opened.</h1>
           <p class="lede">
             Every project here lists what it solves, how it is built, and what you can
             click into. The live ones link out, the private ones link to a preview.
@@ -293,19 +293,9 @@
         </div>
       </section>
 
-      <section id="project-grid-heading" class="section-heading">
-        <div>
-          <p class="eyebrow">Explore</p>
-          <h2>Choose a shelf.</h2>
-        </div>
-        <p>
-          Start with the selected work above, then use the shelves below to compare products, data systems, automation, ML, analytics, and archived experiments.
-        </p>
-      </section>
-
-      <div class="store-toolbar js-only">
+      <div id="project-grid-heading" class="store-toolbar js-only">
         <label class="search-box">
-          <span>Search ideas</span>
+          <span>Search projects</span>
           <span class="search-row">
             <input id="store-search" name="store-search" type="search" autocomplete="off" placeholder="Try automation, product, embeddings…" />
             <button id="clear-search" class="clear-search" type="button" hidden>Clear</button>
@@ -313,7 +303,7 @@
         </label>
         <div class="result-count">
           <span id="visible-count">13</span>
-          <span>ideas showing</span>
+          <span>projects showing</span>
         </div>
         <label class="sort-box">
           <span>Sort</span>
@@ -347,11 +337,12 @@
               <span class="status live">Live</span>
             </div>
             <p>
-              A live reader for keeping up with AI without chasing feeds. Stories are collected,
-              scored, summarised, published into issues, and saved through bookmarks and history.
+              Live AI-news reader with accounts, paid subscriptions, bookmarks, and reading
+              history. I collect, score, and summarise stories, then publish them as issues
+              that subscribers actually use.
             </p>
             <ul class="proof-list">
-              <li>Live public product</li>
+              <li>Live public product with billing surface</li>
               <li>Editorial scoring and publishing pipeline</li>
               <li>Reader accounts, bookmarks, and preferences</li>
             </ul>
@@ -712,20 +703,19 @@
       </section>
 
       <div class="empty-state" hidden>
-        <p>No ideas match that search or shelf yet.</p>
+        <p>No projects match that search or shelf yet.</p>
         <p class="empty-state-hint">Try clearing the search or choosing <strong>All</strong>.</p>
       </div>
     </main>
 
     <footer class="shell footer">
       <p>
-        Built as a curated storefront for Matthew Paver's AI, data, and product systems.
-        The catalogue is indexed in CSV and checked before deploy.
+        Hand-built. Catalogue indexed in CSV, checked before deploy.
         Build <a id="build-sha" href="https://github.com/MatthewPaver/MatthewPaver/commits/main">dev</a>.
       </p>
       <a href="https://www.linkedin.com/in/matthew-paver-534262166/">Connect on LinkedIn</a>
     </footer>
 
-    <script src="./script.js?v=20260517-3"></script>
+    <script src="./script.js?v=20260517-5"></script>
   </body>
 </html>

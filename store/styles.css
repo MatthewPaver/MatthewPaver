@@ -1645,11 +1645,11 @@ h1 {
   .store-toolbar,
   .featured-build,
   .shelf-index,
-  .credential-band {
+  .credential-band,
+  .selected-grid {
     grid-template-columns: 1fr;
   }
 
-  .selected-grid,
   .preview-meta,
   .credential-groups,
   .story-steps,
