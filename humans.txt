@@ -1,0 +1,16 @@
+/* TEAM */
+Owner: Matthew Paver
+Contact: https://www.linkedin.com/in/matthew-paver-534262166/
+GitHub: https://github.com/MatthewPaver
+
+/* SITE */
+Last update: 2026-05-17
+Language: English
+Standards: HTML5, CSS3, JavaScript (no framework, no bundler)
+Components: hand-built static site served by GitHub Pages
+Validation: scripts/validate-store.mjs runs in Pages workflow before deploy
+Specs: .specify/memory/constitution.md + specs/001-portfolio-store-reliability/
+
+/* THANKS */
+Spec Kit: https://github.com/github/spec-kit
+Impeccable design language: https://impeccable.style

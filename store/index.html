@@ -2,9 +2,13 @@
 <html lang="en" class="no-js">
   <head>
     <meta charset="utf-8" />
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self'; img-src 'self' data:; media-src 'self'; font-src 'self'; connect-src 'self'; base-uri 'self'; form-action 'self'; frame-ancestors 'none'" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="theme-color" content="#fbfaf7" />
+    <meta name="theme-color" content="#fbfaf7" media="(prefers-color-scheme: light)" />
+    <meta name="theme-color" content="#131210" media="(prefers-color-scheme: dark)" />
     <title>Matthew Paver Portfolio Store</title>
+    <link rel="canonical" href="https://matthewpaver.github.io/MatthewPaver/store/" />
+    <link rel="preload" as="image" href="./assets/inference-brief.png" fetchpriority="high" />
     <meta
       name="description"
       content="A portfolio-store showcase of Matthew Paver's AI products, data pipelines, automation tools, analytics apps, credentials, and ML projects."
@@ -19,8 +23,11 @@
     <meta property="og:type" content="website" />
     <meta
       property="og:image"
-      content="https://matthewpaver.github.io/MatthewPaver/store/assets/inference-brief.png"
+      content="https://matthewpaver.github.io/MatthewPaver/store/assets/og-image.png"
     />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content="Matthew Paver Portfolio Store: practical AI, data, and analytics systems." />
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content="Matthew Paver Portfolio Store" />
     <meta
@@ -29,16 +36,65 @@
     />
     <meta
       name="twitter:image"
-      content="https://matthewpaver.github.io/MatthewPaver/store/assets/inference-brief.png"
+      content="https://matthewpaver.github.io/MatthewPaver/store/assets/og-image.png"
     />
-    <link
-      rel="icon"
-      href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='10' fill='%23d9a441'/%3E%3Cpath d='M12 44V18h9l11 14 11-14h9v26h-9V30L32 44 21 30v14z' fill='%23161411'/%3E%3C/svg%3E"
-    />
+    <link rel="icon" type="image/svg+xml" href="./assets/favicon.svg" />
+    <link rel="icon" type="image/svg+xml" href="./assets/favicon-dark.svg" media="(prefers-color-scheme: dark)" />
+    <link rel="apple-touch-icon" href="./assets/apple-touch-icon.svg" />
+    <link rel="manifest" href="./manifest.webmanifest" />
+    <link rel="alternate" type="application/xml" title="Sitemap" href="/MatthewPaver/sitemap.xml" />
     <script>
       document.documentElement.className = document.documentElement.className.replace("no-js", "js-enabled");
     </script>
-    <link rel="stylesheet" href="./styles.css?v=20260516-24" />
+    <link rel="stylesheet" href="./styles.css?v=20260517-2" />
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "Person",
+          "@id": "https://matthewpaver.github.io/MatthewPaver/store/#person",
+          "name": "Matthew Paver",
+          "url": "https://matthewpaver.github.io/MatthewPaver/",
+          "sameAs": [
+            "https://github.com/MatthewPaver",
+            "https://www.linkedin.com/in/matthew-paver-534262166/",
+            "https://inferencebrief.co/"
+          ],
+          "jobTitle": "AI, data, and analytics engineer",
+          "knowsAbout": ["AI products", "data engineering", "analytics", "machine learning", "automation"]
+        },
+        {
+          "@type": "WebSite",
+          "@id": "https://matthewpaver.github.io/MatthewPaver/store/#website",
+          "url": "https://matthewpaver.github.io/MatthewPaver/store/",
+          "name": "Matthew Paver Portfolio Store",
+          "description": "A portfolio-store showcase of Matthew Paver's AI products, data pipelines, automation tools, analytics apps, credentials, and ML projects.",
+          "author": { "@id": "https://matthewpaver.github.io/MatthewPaver/store/#person" }
+        },
+        {
+          "@type": "ItemList",
+          "@id": "https://matthewpaver.github.io/MatthewPaver/store/#catalogue",
+          "name": "Portfolio catalogue",
+          "itemListElement": [
+            { "@type": "ListItem", "position": 1, "url": "https://matthewpaver.github.io/MatthewPaver/store/preview.html?app=inference", "name": "Inference Brief" },
+            { "@type": "ListItem", "position": 2, "url": "https://matthewpaver.github.io/MatthewPaver/store/preview.html?app=happening", "name": "Happening" },
+            { "@type": "ListItem", "position": 3, "url": "https://matthewpaver.github.io/MatthewPaver/store/preview.html?app=quicksupply", "name": "QuickSupply" },
+            { "@type": "ListItem", "position": 4, "url": "https://matthewpaver.github.io/MatthewPaver/store/preview.html?app=study", "name": "AI Study Companion" },
+            { "@type": "ListItem", "position": 5, "url": "https://matthewpaver.github.io/MatthewPaver/store/preview.html?app=smart-job", "name": "Smart Job Market Intelligence" },
+            { "@type": "ListItem", "position": 6, "url": "https://matthewpaver.github.io/MatthewPaver/store/preview.html?app=operations", "name": "Operations Platform Prototype" },
+            { "@type": "ListItem", "position": 7, "url": "https://matthewpaver.github.io/MatthewPaver/store/preview.html?app=lakehouse", "name": "Marketing ML Lakehouse" },
+            { "@type": "ListItem", "position": 8, "url": "https://matthewpaver.github.io/MatthewPaver/store/preview.html?app=projectlens", "name": "ProjectLens" },
+            { "@type": "ListItem", "position": 9, "url": "https://matthewpaver.github.io/MatthewPaver/store/preview.html?app=architexa", "name": "Architexa" },
+            { "@type": "ListItem", "position": 10, "url": "https://matthewpaver.github.io/MatthewPaver/store/preview.html?app=recommender", "name": "Dating App Recommendation System" },
+            { "@type": "ListItem", "position": 11, "url": "https://matthewpaver.github.io/MatthewPaver/store/preview.html?app=hr", "name": "HR Performance Analytics" },
+            { "@type": "ListItem", "position": 12, "url": "https://matthewpaver.github.io/MatthewPaver/store/preview.html?app=sentence", "name": "Sentence Similarity Analysis" },
+            { "@type": "ListItem", "position": 13, "url": "https://matthewpaver.github.io/MatthewPaver/store/preview.html?app=archive", "name": "Newsletter + Scraper Utilities" }
+          ]
+        }
+      ]
+    }
+    </script>
   </head>
   <body>
     <a class="skip-link" href="#store">Skip to ideas</a>
@@ -87,19 +143,19 @@
 
         <div class="selected-grid">
           <a class="selected-card" href="./preview.html?app=inference">
-            <img src="./assets/inference-brief.png" width="1200" height="760" alt="Inference Brief product screenshot" fetchpriority="high" />
+            <img src="./assets/inference-brief.png" width="1280" height="720" alt="Inference Brief product screenshot" fetchpriority="high" />
             <strong>Inference Brief</strong>
             <small>A working reader for staying current without living in noisy feeds.</small>
             <em>Open preview</em>
           </a>
           <a class="selected-card" href="./preview.html?app=happening">
-            <img src="./assets/happening-web.png" width="1200" height="760" alt="Happening web app screenshot" fetchpriority="high" />
+            <img src="./assets/happening-web.png" width="1200" height="760" alt="Happening web app screenshot" />
             <strong>Happening</strong>
             <small>103+ venue pages turned into event data with checks you can reason about.</small>
             <em>Open preview</em>
           </a>
           <a class="selected-card" href="./preview.html?app=quicksupply">
-            <img src="./assets/quicksupply-dashboard.png" width="1200" height="760" alt="QuickSupply dashboard screenshot" fetchpriority="high" />
+            <img src="./assets/quicksupply-dashboard.png" width="1200" height="760" alt="QuickSupply dashboard screenshot" />
             <strong>QuickSupply</strong>
             <small>School cover requests, agency assignment, teacher offers, and live status.</small>
             <em>Open preview</em>
@@ -285,8 +341,8 @@
       </div>
 
       <section class="store-grid">
-        <article class="app-card featured image-card" data-tags="product automation data" data-status="Live product">
-          <img class="inference-shot" src="./assets/inference-brief.png" width="1200" height="760" alt="Inference Brief live product screenshot" fetchpriority="high" />
+        <article class="app-card featured image-card" data-slug="inference" data-tags="product automation data" data-status="Live product" data-solves="Cuts through AI-news noise" data-shows="Live product workflow">
+          <img class="inference-shot" src="./assets/inference-brief.png" width="1280" height="720" loading="lazy" alt="Inference Brief live product screenshot" />
           <div class="app-body">
             <div class="app-title-row">
               <h3>Inference Brief</h3>
@@ -312,8 +368,8 @@
           </div>
         </article>
 
-        <article class="app-card featured image-card" data-tags="automation data" data-status="Private system">
-          <img src="./assets/happening-web.png" width="1200" height="760" alt="Happening event feed and map interface screenshot" fetchpriority="high" />
+        <article class="app-card featured image-card" data-slug="happening" data-tags="automation data" data-status="Private system" data-solves="Turns venue pages into data" data-shows="103+ sources, 167 tests">
+          <img src="./assets/happening-web.png" width="1200" height="760" loading="lazy" alt="Happening event feed and map interface screenshot" />
           <div class="app-body">
             <div class="app-title-row">
               <h3>Happening</h3>
@@ -338,8 +394,8 @@
           </div>
         </article>
 
-        <article class="app-card image-card" data-tags="product ml" data-status="Private product">
-          <img class="study-shot" src="./assets/ai-study-companion.png" width="1200" height="760" loading="lazy" alt="AI Study Companion product workspace screenshot" />
+        <article class="app-card image-card" data-slug="study" data-tags="product ml" data-status="Private product" data-solves="Makes revision material usable" data-shows="Ingestion + generation loop">
+          <img class="study-shot" src="./assets/ai-study-companion.png" width="1280" height="3418" loading="lazy" alt="AI Study Companion product workspace screenshot" />
           <div class="app-body">
             <div class="app-title-row">
               <h3>AI Study Companion</h3>
@@ -364,7 +420,7 @@
           </div>
         </article>
 
-        <article class="app-card image-card" data-tags="data product automation" data-status="Private system">
+        <article class="app-card image-card" data-slug="smart-job" data-tags="data product automation" data-status="Private system" data-solves="Finds labour-market signals" data-shows="Reports, alerts, API shape">
           <img class="product-shot" src="./assets/smart-job-market.png" width="1400" height="787" loading="lazy" alt="Smart Job Market Intelligence interface screenshot" />
           <div class="app-body">
             <div class="app-title-row">
@@ -390,7 +446,7 @@
           </div>
         </article>
 
-        <article id="quicksupply" class="app-card image-card" data-tags="product automation" data-status="Private MVP">
+        <article id="quicksupply" class="app-card image-card" data-slug="quicksupply" data-tags="product automation" data-status="Private MVP" data-solves="Coordinates supply-cover work" data-shows="Three-sided workflow model">
           <img class="poster-shot" src="./assets/quicksupply-dashboard.png" width="1200" height="760" loading="lazy" alt="QuickSupply agency dashboard screenshot" />
           <div class="app-body">
             <div class="app-title-row">
@@ -407,7 +463,7 @@
               <li>Server-sent event updates</li>
             </ul>
             <div class="stack-list" aria-label="Tech stack">
-              <span>Next.js</span><span>TypeScript</span><span>PostgreSQL</span><span>SSE</span><span>Auth</span>
+              <span>Next.js</span><span>TypeScript</span><span>PostgreSQL</span><span>Drizzle</span><span>SSE</span>
             </div>
             <div class="card-actions">
               <a href="./preview.html?app=quicksupply">Preview</a>
@@ -415,7 +471,7 @@
           </div>
         </article>
 
-        <article class="app-card image-card" data-tags="product automation" data-status="Private prototype">
+        <article class="app-card image-card" data-slug="operations" data-tags="product automation" data-status="Private prototype" data-solves="Organises property ops requests" data-shows="Audit trail + triage concept">
           <img class="product-shot" src="./assets/operations-platform.png" width="1400" height="787" loading="lazy" alt="Operations platform prototype interface screenshot" />
           <div class="app-body">
             <div class="app-title-row">
@@ -440,7 +496,7 @@
           </div>
         </article>
 
-        <article class="app-card image-card" data-tags="data ml analytics" data-status="Runnable application">
+        <article class="app-card image-card" data-slug="lakehouse" data-tags="data ml analytics" data-status="Runnable application" data-solves="Packages local analytics" data-shows="Pipeline, ML, dashboard">
           <img src="./assets/marketing-lakehouse-thumb.svg" width="1200" height="675" loading="lazy" alt="Marketing ML Lakehouse product thumbnail" />
           <div class="app-body">
             <div class="app-title-row">
@@ -469,7 +525,7 @@
           </div>
         </article>
 
-        <article class="app-card image-card" data-tags="analytics product" data-status="Runnable application">
+        <article class="app-card image-card" data-slug="projectlens" data-tags="analytics product" data-status="Runnable application" data-solves="Reads schedule delivery risk" data-shows="Upload-to-report flow">
           <img src="./assets/projectlens-thumb.svg" width="1200" height="675" loading="lazy" alt="ProjectLens schedule risk product thumbnail" />
           <div class="app-body">
             <div class="app-title-row">
@@ -498,7 +554,7 @@
           </div>
         </article>
 
-        <article class="app-card image-card" data-tags="ml product" data-status="Completed project">
+        <article class="app-card image-card" data-slug="architexa" data-tags="ml product" data-status="Completed project" data-solves="Generates architecture imagery" data-shows="Dataset, GAN, API">
           <img src="./assets/architexa-thumb.svg" width="1200" height="675" loading="lazy" alt="Architexa product thumbnail" />
           <div class="app-body">
             <div class="app-title-row">
@@ -527,7 +583,7 @@
           </div>
         </article>
 
-        <article class="app-card image-card" data-tags="ml data" data-status="Notebook project">
+        <article class="app-card image-card" data-slug="recommender" data-tags="ml data" data-status="Notebook project" data-solves="Ranks candidate profiles" data-shows="Temporal evaluation discipline">
           <img src="./assets/recommender-thumb.svg" width="1200" height="675" loading="lazy" alt="Dating app recommendation product thumbnail" />
           <div class="app-body">
             <div class="app-title-row">
@@ -556,7 +612,7 @@
           </div>
         </article>
 
-        <article class="app-card image-card" data-tags="analytics" data-status="Dashboard portfolio">
+        <article class="app-card image-card" data-slug="hr" data-tags="analytics" data-status="Dashboard portfolio" data-solves="Turns HR data into decisions" data-shows="Stakeholder-ready dashboards">
           <img src="./assets/hr-performance-thumb.svg" width="1200" height="675" loading="lazy" alt="HR Performance Analytics product thumbnail" />
           <div class="app-body">
             <div class="app-title-row">
@@ -585,7 +641,7 @@
           </div>
         </article>
 
-        <article class="app-card image-card" data-tags="data ml" data-status="Notebook demo">
+        <article class="app-card image-card" data-slug="sentence" data-tags="data ml" data-status="Notebook demo" data-solves="Compares meaning with embeddings" data-shows="Retrieval caveats made clear">
           <img src="./assets/sentence-similarity-thumb.svg" width="1200" height="675" loading="lazy" alt="Sentence similarity product thumbnail" />
           <div class="app-body">
             <div class="app-title-row">
@@ -625,7 +681,7 @@
             Useful provenance kept out of the main shelf. These show earlier automation patterns without competing with the flagship builds.
           </p>
         </div>
-        <article class="app-card image-card" data-tags="archive automation" data-status="Archived prototype">
+        <article class="app-card image-card" data-slug="archive" data-tags="archive automation" data-status="Archived prototype" data-solves="Archives earlier automation" data-shows="Useful provenance, not front door">
           <div class="archive-thumb" role="img" aria-label="Newsletter and scraper utilities archive visual">
             <span>Archive shelf</span>
             <strong>Earlier automation utilities</strong>
@@ -667,10 +723,11 @@
       <p>
         Built as a curated storefront for Matthew Paver's AI, data, and product systems.
         The catalogue is indexed in CSV and checked before deploy.
+        Build <a id="build-sha" href="https://github.com/MatthewPaver/MatthewPaver/commits/main">dev</a>.
       </p>
       <a href="https://www.linkedin.com/in/matthew-paver-534262166/">Connect on LinkedIn</a>
     </footer>
 
-    <script src="./script.js?v=20260516-24"></script>
+    <script src="./script.js?v=20260517-2"></script>
   </body>
 </html>

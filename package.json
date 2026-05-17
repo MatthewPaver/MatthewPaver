@@ -4,6 +4,7 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "test": "node scripts/validate-store.mjs"
+    "test": "node scripts/validate-store.mjs",
+    "bump": "node scripts/bump-cache-version.mjs"
   }
 }

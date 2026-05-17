@@ -15,28 +15,16 @@ document.addEventListener("DOMContentLoaded", () => {
   let activeFilter = "all";
   const validFilters = new Set(filters.map((button) => button.dataset.filter).filter(Boolean));
   const prefersReducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
-  const cardSpecs = {
-    "Inference Brief": ["Cuts through AI-news noise", "Live product workflow"],
-    "Happening": ["Turns venue pages into data", "103+ sources, 167 tests"],
-    "AI Study Companion": ["Makes revision material usable", "Ingestion + generation loop"],
-    "Smart Job Market Intelligence": ["Finds labour-market signals", "Reports, alerts, API shape"],
-    "QuickSupply": ["Coordinates supply-cover work", "Three-sided workflow model"],
-    "Operations Platform Prototype": ["Organises property ops requests", "Audit trail + triage concept"],
-    "Marketing ML Lakehouse": ["Packages local analytics", "Pipeline, ML, dashboard"],
-    "ProjectLens": ["Reads schedule delivery risk", "Upload-to-report flow"],
-    "Architexa": ["Generates architecture imagery", "Dataset, GAN, API"],
-    "Dating App Recommendation System": ["Ranks candidate profiles", "Temporal evaluation discipline"],
-    "HR Performance Analytics": ["Turns HR data into decisions", "Stakeholder-ready dashboards"],
-    "Sentence Similarity Analysis": ["Compares meaning with embeddings", "Retrieval caveats made clear"],
-    "Newsletter + Scraper Utilities": ["Archives earlier automation", "Useful provenance, not front door"]
-  };
+
+  const searchIndex = new Map();
 
   function initCardDetails() {
     cards.forEach((card, index) => {
       const title = card.querySelector("h3")?.textContent?.trim();
-      const spec = title ? cardSpecs[title] : null;
       const titleRow = card.querySelector(".app-title-row");
       const proofList = card.querySelector(".proof-list");
+      const solves = card.dataset.solves;
+      const shows = card.dataset.shows;
 
       card.style.setProperty("--card-number", `"${String(index + 1).padStart(2, "0")}"`);
       card.dataset.order = String(index);
@@ -56,21 +44,25 @@ document.addEventListener("DOMContentLoaded", () => {
         titleRow.prepend(icon);
       }
 
-      if (!spec || !proofList || card.querySelector(".card-snapshot")) return;
+      if (solves && shows && proofList && !card.querySelector(".card-snapshot")) {
+        const snapshot = document.createElement("dl");
+        snapshot.className = "card-snapshot";
+        snapshot.innerHTML = `
+          <div>
+            <dt>Solves</dt>
+            <dd></dd>
+          </div>
+          <div>
+            <dt>Shows</dt>
+            <dd></dd>
+          </div>
+        `;
+        snapshot.querySelectorAll("dd")[0].textContent = solves;
+        snapshot.querySelectorAll("dd")[1].textContent = shows;
+        proofList.insertAdjacentElement("afterend", snapshot);
+      }
 
-      const snapshot = document.createElement("dl");
-      snapshot.className = "card-snapshot";
-      snapshot.innerHTML = `
-        <div>
-          <dt>Solves</dt>
-          <dd>${spec[0]}</dd>
-        </div>
-        <div>
-          <dt>Shows</dt>
-          <dd>${spec[1]}</dd>
-        </div>
-      `;
-      proofList.insertAdjacentElement("afterend", snapshot);
+      searchIndex.set(card, card.textContent.toLowerCase());
     });
   }
 
@@ -155,7 +147,7 @@ document.addEventListener("DOMContentLoaded", () => {
     cards.forEach((card) => {
       const tags = (card.dataset.tags || "").split(" ");
       const matchesFilter = activeFilter === "all" || tags.includes(activeFilter);
-      const matchesSearch = !query || card.textContent.toLowerCase().includes(query);
+      const matchesSearch = !query || (searchIndex.get(card) || "").includes(query);
       const isVisible = matchesFilter && matchesSearch;
       card.classList.toggle("hidden", !isVisible);
       if (isVisible) count += 1;
@@ -171,7 +163,6 @@ document.addEventListener("DOMContentLoaded", () => {
     if (clearSearch) clearSearch.hidden = searchInput.value.length === 0;
     if (syncUrl) updateUrlState();
 
-    // Single polite live region so empty results get announced without duplicating the grid
     if (announcer) {
       announcer.textContent =
         count === 0

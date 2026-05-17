@@ -1,7 +1,8 @@
 # Portfolio Constitution
 
-Version: 1.0.0
+Version: 1.1.0
 Ratified: 2026-05-17
+Amended: 2026-05-17
 
 ## Principles
 
@@ -25,13 +26,24 @@ Public projects promoted by the store should be packaged so a reviewer can under
 
 Portfolio changes that affect navigation, catalogue structure, or project presentation must update the relevant spec artifacts and automated validation. CI should catch missing catalogue data, broken progressive-enhancement assumptions, and stale preview coverage before deploy.
 
+### 6. Data parity is enforced by validation
+
+Card content visible on the storefront must reuse the values declared in `store/app-index.csv` (slug, solves, shows, asset, preview, shelf). Preview content must live in `store/previews.json`. The validator fails on drift between CSV, HTML data attributes, JSON, sitemap coverage, and real image dimensions.
+
+### 7. Shipping discipline
+
+The site must be inspectable as a shipped product: canonical URLs, JSON-LD structured data, social meta, robots and sitemap, manifest and favicon set, CSP, print and dark-mode styles. Lighthouse CI gates accessibility and SEO regressions before deploy.
+
 ## Quality Gates
 
 - `npm test` must pass before deploy.
-- Store entries must be represented in `store/app-index.csv`.
+- Lighthouse CI accessibility and SEO categories must score ≥ 0.95.
+- Store entries must be represented in `store/app-index.csv` with matching card `data-*` attributes.
+- Every preview slug must appear in `sitemap.xml` and `store/previews.json`.
 - Store shelves must have no-JS fallback links to the project grid.
-- Preview pages must have JavaScript and no-JavaScript paths.
+- Preview pages must have JavaScript and no-JavaScript paths, plus an unknown-slug fallback.
 - Spec artifacts must have no unresolved clarification markers.
+- After CSS or JavaScript edits, run `npm run bump` to refresh the cache token.
 
 ## Governance
 
