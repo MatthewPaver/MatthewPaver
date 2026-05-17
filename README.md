@@ -191,16 +191,16 @@ Interested in AI/data products, automation systems, and operational tooling. Bes
 
 _This section is automatically refreshed by GitHub Actions._
 
-- Last refresh (UTC): 2026-05-16 09:03
+- Last refresh (UTC): 2026-05-17 09:14
 
 | Repo | Last push | What it is |
 |:---|:---:|:---|
-| [MatthewPaver](https://github.com/MatthewPaver/MatthewPaver) | 2026-05-16 | AI and data engineering portfolio showcasing production-minded AI products, automation… |
-| [ai-weekly](https://github.com/MatthewPaver/ai-weekly) | 2026-05-15 | Archived AI newsletter output superseded by Inference Brief. |
-| [generate-newsletter](https://github.com/MatthewPaver/generate-newsletter) | 2026-05-15 | Archived newsletter-generation prototype for collecting articles and rendering HTML out… |
-| [pinterest-image-scraper](https://github.com/MatthewPaver/pinterest-image-scraper) | 2026-05-15 | Archived Pinterest image collection utility with duplicate detection, originally used t… |
-| [pyspark-kafka-streaming](https://github.com/MatthewPaver/pyspark-kafka-streaming) | 2026-05-15 | Compact PySpark and Kafka technical examples covering DataFrames, Structured Streaming,… |
-| [netflix-content-analysis](https://github.com/MatthewPaver/netflix-content-analysis) | 2026-05-15 | Notebook EDA of Netflix title data with country, genre, timeline, and catalog growth an… |
+| [MatthewPaver](https://github.com/MatthewPaver/MatthewPaver) | 2026-05-17 | AI and data engineering portfolio: product store, case studies, public repo map, and cr… |
+| [sentence-similarity-analysis](https://github.com/MatthewPaver/sentence-similarity-analysis) | 2026-05-16 | Sentence-transformer notebook showing embedding similarity, cosine ranking, and retriev… |
+| [dating-app-recommendation-system](https://github.com/MatthewPaver/dating-app-recommendation-system) | 2026-05-16 | Swipe-style recommendation system with implicit feedback, temporal holdouts, and Top-K… |
+| [ProjectLens](https://github.com/MatthewPaver/ProjectLens) | 2026-05-16 | Flask schedule-risk app for slippage, milestone pressure, forecasting, and Power BI-rea… |
+| [marketing-ml-lakehouse](https://github.com/MatthewPaver/marketing-ml-lakehouse) | 2026-05-16 | Local DuckDB, XGBoost, and Streamlit analytics pipeline for marketing performance data. |
+| [hr-performance-dashboards](https://github.com/MatthewPaver/hr-performance-dashboards) | 2026-05-16 | Power BI dashboard handoff package for HR, absence, and sales performance analytics. |
 
 <!-- AUTO:ACTIVITY_END -->
 
