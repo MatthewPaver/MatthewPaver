@@ -1779,8 +1779,152 @@ h1 {
   padding: 12px 0;
 }
 
+/* hero ambient glow: subtle teal + gold corner washes on the warm cream bg */
 .hero {
-  padding-top: 32px;
+  position: relative;
+  padding-top: 36px;
+  border-bottom: 0;
+  background:
+    radial-gradient(900px circle at 88% -5%, rgba(15, 118, 110, 0.06), transparent 55%),
+    radial-gradient(820px circle at -6% 18%, rgba(143, 93, 18, 0.045), transparent 50%);
+}
+
+/* editorial rule mark on every eyebrow */
+.eyebrow {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.eyebrow::before {
+  content: "";
+  width: 22px;
+  height: 1px;
+  background: var(--accent);
+  flex: 0 0 auto;
+}
+
+/* stat row icons */
+.stat-label {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+}
+
+.stat-icon {
+  width: 14px;
+  height: 14px;
+  flex: 0 0 auto;
+  fill: none;
+  stroke: var(--accent);
+  stroke-width: 1.55;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  opacity: 0.88;
+}
+
+/* tinted status pill backgrounds — keeps semantic colour without shouting */
+.status {
+  background: rgba(21, 21, 21, 0.04);
+}
+
+.status.live {
+  background: rgba(22, 163, 74, 0.08);
+}
+
+.status.public {
+  background: rgba(29, 79, 145, 0.08);
+}
+
+.status.private {
+  background: rgba(159, 58, 47, 0.08);
+}
+
+.status.archive {
+  background: rgba(105, 98, 91, 0.08);
+}
+
+/* filter pills: softer hover, smoother transitions */
+.filter {
+  transition: background 240ms var(--ease-smooth), color 240ms var(--ease-smooth), border-color 240ms var(--ease-smooth), transform 220ms var(--ease-smooth);
+}
+
+.filter:hover:not(.active) {
+  background: var(--surface-warm);
+  border-color: var(--ink);
+  color: var(--ink);
+  transform: translateY(-1px);
+}
+
+.filter.active {
+  background: var(--ink);
+  border-color: var(--ink);
+  color: var(--surface);
+  box-shadow: 0 4px 12px rgba(21, 21, 21, 0.16);
+}
+
+/* shelf-grid tiles lift on hover and gain a sharper accent rule */
+.shelf-grid a {
+  transition: background 220ms var(--ease-smooth), color 220ms var(--ease-smooth), transform 220ms var(--ease-smooth), box-shadow 240ms var(--ease-smooth);
+}
+
+.shelf-grid a:hover {
+  background: var(--ink);
+  color: var(--surface);
+  transform: translateY(-2px);
+  box-shadow: 0 14px 26px rgba(21, 21, 21, 0.10);
+}
+
+/* featured-build moves to a light editorial treatment */
+.featured-build {
+  background: var(--surface-warm);
+  color: var(--ink);
+  border: 1px solid var(--line-strong);
+}
+
+.featured-build h2,
+.featured-build p {
+  color: var(--ink);
+}
+
+.featured-build p {
+  color: var(--muted);
+}
+
+.story-steps {
+  background: var(--line);
+  border: 1px solid var(--line-strong);
+}
+
+.story-steps div {
+  background: var(--surface);
+}
+
+.story-steps span {
+  color: var(--accent);
+}
+
+.story-steps strong {
+  color: var(--ink);
+}
+
+.featured-build .text-link {
+  color: var(--ink);
+}
+
+.featured-build .text-link:hover {
+  color: var(--accent);
+}
+
+/* slightly stronger hover affordance on cards */
+.app-card {
+  transform: translateZ(0);
+}
+
+.app-card:hover {
+  box-shadow:
+    0 2px 4px rgba(21, 21, 21, 0.04),
+    0 24px 48px rgba(21, 21, 21, 0.10);
 }
 
 /* slightly stronger hover affordance on cards */
