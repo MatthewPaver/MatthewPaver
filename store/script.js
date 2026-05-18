@@ -254,4 +254,91 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 
   initRevealMotion();
+  initScrollChrome();
+  initSpotlightCards();
+  initCountUp();
 });
+
+function initScrollChrome() {
+  const progress = document.querySelector(".scroll-progress");
+  const topbar = document.querySelector(".topbar-shell");
+  if (!progress && !topbar) return;
+
+  let ticking = false;
+  const update = () => {
+    const scrolled = window.scrollY;
+    const max = Math.max(1, document.documentElement.scrollHeight - window.innerHeight);
+    if (progress) progress.style.width = `${Math.min(100, (scrolled / max) * 100)}%`;
+    if (topbar) topbar.classList.toggle("is-scrolled", scrolled > 12);
+    ticking = false;
+  };
+  window.addEventListener(
+    "scroll",
+    () => {
+      if (!ticking) {
+        window.requestAnimationFrame(update);
+        ticking = true;
+      }
+    },
+    { passive: true }
+  );
+  update();
+}
+
+function initSpotlightCards() {
+  const cards = document.querySelectorAll(".selected-card, .app-card.featured");
+  if (!cards.length) return;
+  const fine = window.matchMedia("(hover: hover) and (pointer: fine)").matches;
+  if (!fine) return;
+
+  cards.forEach((card) => {
+    card.addEventListener("mousemove", (event) => {
+      const rect = card.getBoundingClientRect();
+      const x = ((event.clientX - rect.left) / rect.width) * 100;
+      const y = ((event.clientY - rect.top) / rect.height) * 100;
+      card.style.setProperty("--mx", `${x}%`);
+      card.style.setProperty("--my", `${y}%`);
+    });
+  });
+}
+
+function initCountUp() {
+  const targets = document.querySelectorAll("[data-count-to]");
+  if (!targets.length) return;
+
+  const prefersReducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+  if (prefersReducedMotion || !("IntersectionObserver" in window)) {
+    targets.forEach((node) => {
+      node.textContent = node.dataset.countTo;
+    });
+    return;
+  }
+
+  const animate = (node) => {
+    const target = Number(node.dataset.countTo) || 0;
+    const duration = 900 + Math.min(900, target * 6);
+    const start = performance.now();
+    node.textContent = "0";
+    const step = (now) => {
+      const progress = Math.min(1, (now - start) / duration);
+      const eased = 1 - Math.pow(1 - progress, 3);
+      node.textContent = String(Math.round(target * eased));
+      if (progress < 1) window.requestAnimationFrame(step);
+      else node.textContent = String(target);
+    };
+    window.requestAnimationFrame(step);
+  };
+
+  const observer = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        if (!entry.isIntersecting) return;
+        animate(entry.target);
+        observer.unobserve(entry.target);
+      });
+    },
+    { threshold: 0.4 }
+  );
+
+  targets.forEach((node) => observer.observe(node));
+}

@@ -4,8 +4,7 @@
     <meta charset="utf-8" />
     <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self'; img-src 'self' data:; media-src 'self'; font-src 'self'; connect-src 'self'; base-uri 'self'; form-action 'self'; frame-ancestors 'none'" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="theme-color" content="#fbfaf7" media="(prefers-color-scheme: light)" />
-    <meta name="theme-color" content="#14110e" media="(prefers-color-scheme: dark)" />
+    <meta name="theme-color" content="#fbfaf7" />
     <title>Matthew Paver Portfolio Store</title>
     <link rel="canonical" href="https://matthewpaver.github.io/MatthewPaver/store/" />
     <link rel="preload" as="image" href="./assets/inference-brief.png" fetchpriority="high" />
@@ -39,14 +38,13 @@
       content="https://matthewpaver.github.io/MatthewPaver/store/assets/og-image.png"
     />
     <link rel="icon" type="image/svg+xml" href="./assets/favicon.svg" />
-    <link rel="icon" type="image/svg+xml" href="./assets/favicon-dark.svg" media="(prefers-color-scheme: dark)" />
     <link rel="apple-touch-icon" href="./assets/apple-touch-icon.svg" />
     <link rel="manifest" href="./manifest.webmanifest" />
     <link rel="alternate" type="application/xml" title="Sitemap" href="/MatthewPaver/sitemap.xml" />
     <script>
       document.documentElement.className = document.documentElement.className.replace("no-js", "js-enabled");
     </script>
-    <link rel="stylesheet" href="./styles.css?v=20260518-3" />
+    <link rel="stylesheet" href="./styles.css?v=20260518-4" />
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
@@ -98,8 +96,9 @@
   </head>
   <body>
     <a class="skip-link" href="#store">Skip to projects</a>
-    <header class="shell hero">
-      <nav class="topbar" aria-label="Primary navigation">
+    <div class="scroll-progress" aria-hidden="true"></div>
+    <div class="topbar-shell">
+      <nav class="shell topbar" aria-label="Primary navigation">
         <a class="brand" href="https://github.com/MatthewPaver/MatthewPaver" aria-label="Back to Matthew Paver profile">
           <span class="brand-mark">MP</span>
           <span>Portfolio Store</span>
@@ -109,7 +108,9 @@
           <a href="#credentials">Credentials</a>
         </div>
       </nav>
+    </div>
 
+    <header class="shell hero">
       <section class="hero-grid">
         <div class="hero-copy">
           <p class="eyebrow">Matthew Paver</p>
@@ -122,6 +123,29 @@
             <a class="button primary" href="#store">Browse projects</a>
             <a class="button ghost" href="https://www.linkedin.com/in/matthew-paver-534262166/">Connect with me</a>
           </div>
+        </div>
+      </section>
+
+      <section class="stats-row" aria-label="Portfolio at a glance">
+        <div>
+          <strong data-count-to="13">13</strong>
+          <span>Projects shipped</span>
+        </div>
+        <div>
+          <strong data-count-to="1">1</strong>
+          <span>Live paid product</span>
+        </div>
+        <div>
+          <strong data-count-to="6">6</strong>
+          <span>Public repos</span>
+        </div>
+        <div>
+          <strong data-count-to="103">103</strong>
+          <span>Configured sources</span>
+        </div>
+        <div>
+          <strong data-count-to="167">167</strong>
+          <span>Reliability tests</span>
         </div>
       </section>
     </header>
@@ -716,6 +740,6 @@
       <a href="https://www.linkedin.com/in/matthew-paver-534262166/">Connect on LinkedIn</a>
     </footer>
 
-    <script src="./script.js?v=20260518-3"></script>
+    <script src="./script.js?v=20260518-4"></script>
   </body>
 </html>

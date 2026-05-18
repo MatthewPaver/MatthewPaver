@@ -1,5 +1,5 @@
 :root {
-  color-scheme: light dark;
+  color-scheme: light;
   --bg: #fbfaf7;
   --surface: #ffffff;
   --surface-warm: #f4f0e9;
@@ -20,238 +20,6 @@
   --ease-smooth: cubic-bezier(0.22, 0.61, 0.36, 1);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --bg: #14110e;
-    --surface: #1f1b17;
-    --surface-warm: #26221d;
-    --surface-cream: #2c2722;
-    --ink: #f3ede1;
-    --muted: #b8b0a3;
-    --soft: #948b7e;
-    --line: #38322c;
-    --line-strong: #574e44;
-    --accent: #5eead4;
-    --accent-ink: #99e8d8;
-    --gold: #e8c47a;
-    --blue: #87b3eb;
-    --red: #ec9b8f;
-    --accent-soft: #5eead4;
-    --ink-soft: #0a0907;
-  }
-
-  body {
-    -webkit-tap-highlight-color: rgba(94, 234, 212, 0.18);
-  }
-
-  a:focus-visible,
-  button:focus-visible,
-  input:focus-visible {
-    outline-color: rgba(94, 234, 212, 0.55);
-  }
-
-  /* lift card layers above the page so hover is visible */
-  .app-card,
-  .selected-card,
-  .preview-panel,
-  .preview-media,
-  .credential-group,
-  .personal-note,
-  .empty-state {
-    background: var(--surface);
-    border-color: var(--line-strong);
-  }
-
-  .preview-media {
-    box-shadow: 0 24px 60px rgba(0, 0, 0, 0.55);
-  }
-
-  .app-card:hover,
-  .selected-card:hover {
-    background: var(--surface-cream);
-    box-shadow: 0 18px 42px rgba(0, 0, 0, 0.45);
-  }
-
-  /* dim screenshots so they don't glare on dark page */
-  .image-card img,
-  .selected-card img,
-  .preview-media img {
-    filter: brightness(0.88) saturate(0.92);
-    transition: filter 320ms var(--ease-smooth), transform 700ms var(--ease-out);
-  }
-
-  .image-card:hover img,
-  .selected-card:hover img,
-  .preview-media:hover img {
-    filter: brightness(1) saturate(1);
-  }
-
-  /* featured-build stays deeper than page; story-step cards lift just enough */
-  .featured-build {
-    background: var(--ink-soft);
-    color: var(--ink);
-    border-color: var(--ink-soft);
-  }
-
-  .featured-build p {
-    color: rgba(243, 237, 225, 0.78);
-  }
-
-  .story-steps {
-    background: rgba(94, 234, 212, 0.14);
-    border-color: rgba(94, 234, 212, 0.18);
-  }
-
-  .story-steps div {
-    background: #15110e;
-  }
-
-  .story-steps span,
-  .featured-build .eyebrow {
-    color: var(--accent-soft);
-  }
-
-  /* card number badge: light pill on dark card */
-  .app-card::before {
-    border-color: rgba(243, 237, 225, 0.18);
-    background: rgba(243, 237, 225, 0.92);
-    color: var(--bg);
-  }
-
-  .archive-thumb {
-    background:
-      linear-gradient(90deg, rgba(243, 237, 225, 0.05) 1px, transparent 1px),
-      linear-gradient(180deg, rgba(243, 237, 225, 0.05) 1px, transparent 1px),
-      var(--surface-warm);
-  }
-
-  /* SVG thumbs sit on white in light mode; soften that on dark */
-  .image-card img[src$=".svg"],
-  .selected-card img[src$=".svg"] {
-    background: #efeae0;
-    filter: brightness(0.94) saturate(0.9);
-  }
-
-  /* shelf-grid hover swaps to surface-cream so text stays readable */
-  .shelf-grid {
-    border-color: var(--line);
-    background: var(--line);
-  }
-
-  .shelf-grid a {
-    background: var(--surface);
-  }
-
-  .shelf-grid a:hover {
-    background: var(--surface-cream);
-    color: var(--ink);
-    transform: translateY(-1px);
-  }
-
-  .shelf-grid a:hover span,
-  .shelf-grid a:hover small {
-    color: var(--muted);
-  }
-
-  /* primary button: cream pill on dark page; ink stays dark */
-  .button.primary {
-    background: var(--ink);
-    color: var(--bg);
-    border-color: var(--ink);
-  }
-
-  .button.primary:hover {
-    background: var(--accent);
-    border-color: var(--accent);
-    color: var(--bg);
-  }
-
-  .button.ghost:hover {
-    color: var(--bg);
-  }
-
-  /* search input + select adapt the custom dropdown chevrons */
-  .sort-box select {
-    background-image:
-      linear-gradient(45deg, transparent 50%, var(--ink) 50%),
-      linear-gradient(135deg, var(--ink) 50%, transparent 50%);
-  }
-
-  .clear-search:hover {
-    background: var(--ink);
-    border-color: var(--ink);
-    color: var(--bg);
-  }
-
-  /* sticky filter bar — translucent layer on dark */
-  .filters {
-    background: rgba(20, 17, 14, 0.92);
-  }
-
-  /* status pills: keep semantic colour but ensure readability */
-  .status {
-    background: var(--surface-warm);
-  }
-
-  .status.live {
-    color: var(--accent-soft);
-  }
-
-  .status.public {
-    color: var(--blue);
-  }
-
-  .status.private {
-    color: var(--red);
-  }
-
-  .status.archive {
-    color: var(--soft);
-  }
-
-  /* repo confidence chips */
-  .repo-confidence span {
-    background: var(--surface-warm);
-    color: var(--accent-soft);
-    border-color: var(--line-strong);
-  }
-
-  .stack-list span,
-  .preview-stack span {
-    background: var(--surface-warm);
-    color: var(--muted);
-    border-color: var(--line-strong);
-  }
-
-  .brand-mark {
-    background: var(--ink);
-    color: var(--bg);
-    border-color: var(--ink);
-  }
-
-  .skip-link {
-    background: var(--surface);
-    color: var(--ink);
-    border-color: var(--ink);
-  }
-
-  /* link colour for inline text links */
-  .card-actions a:hover,
-  .nav-links a:hover,
-  .text-link:hover,
-  .footer a:hover,
-  .preview-nav a:hover {
-    color: var(--accent-soft);
-  }
-
-  .featured-build .text-link {
-    color: var(--ink);
-  }
-
-  .featured-build .text-link:hover {
-    color: var(--accent-soft);
-  }
-}
 
 * {
   box-sizing: border-box;
@@ -1811,4 +1579,217 @@ h1 {
     max-width: 100%;
     page-break-inside: avoid;
   }
+}
+
+/* ---------- enterprise polish ---------- */
+
+/* scroll progress bar at top of viewport */
+.scroll-progress {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 2px;
+  width: 0;
+  z-index: 100;
+  background: linear-gradient(90deg, var(--accent) 0%, var(--gold) 60%, var(--red) 100%);
+  transition: width 120ms linear;
+  pointer-events: none;
+}
+
+/* topbar gets a translucent layer + bottom rule when scrolled */
+.topbar-shell {
+  position: sticky;
+  top: 0;
+  z-index: 8;
+  transition: background 260ms var(--ease-smooth), border-color 260ms var(--ease-smooth), box-shadow 260ms var(--ease-smooth);
+  border-bottom: 1px solid transparent;
+}
+
+.topbar-shell.is-scrolled {
+  background: rgba(251, 250, 247, 0.86);
+  -webkit-backdrop-filter: blur(10px) saturate(1.15);
+  backdrop-filter: blur(10px) saturate(1.15);
+  border-bottom-color: var(--line);
+  box-shadow: 0 6px 16px rgba(21, 21, 21, 0.04);
+}
+
+/* stats row */
+.stats-row {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(170px, 1fr));
+  gap: 0;
+  margin: 12px 0 26px;
+  border: 1px solid var(--line);
+  background: var(--surface);
+  overflow: hidden;
+}
+
+.stats-row > div {
+  padding: 16px 20px 18px;
+  border-right: 1px solid var(--line);
+}
+
+.stats-row > div:last-child {
+  border-right: 0;
+}
+
+.stats-row strong {
+  display: block;
+  font-family: Charter, "Iowan Old Style", Georgia, serif;
+  font-size: clamp(1.7rem, 2.6vw, 2.25rem);
+  font-variant-numeric: tabular-nums;
+  font-weight: 700;
+  line-height: 1;
+  color: var(--ink);
+}
+
+.stats-row span {
+  display: block;
+  margin-top: 8px;
+  color: var(--soft);
+  font-size: 0.7rem;
+  font-weight: 850;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+/* Live status pill with quiet pulse */
+.status.live {
+  position: relative;
+  padding-left: 22px;
+}
+
+.status.live::before {
+  content: "";
+  position: absolute;
+  left: 8px;
+  top: 50%;
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: #16a34a;
+  transform: translateY(-50%);
+  box-shadow: 0 0 0 0 rgba(22, 163, 74, 0.55);
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .status.live::before {
+    animation: live-pulse 1.8s var(--ease-out) infinite;
+  }
+}
+
+@keyframes live-pulse {
+  0%   { box-shadow: 0 0 0 0 rgba(22, 163, 74, 0.55); }
+  70%  { box-shadow: 0 0 0 8px rgba(22, 163, 74, 0); }
+  100% { box-shadow: 0 0 0 0 rgba(22, 163, 74, 0); }
+}
+
+/* cursor-tracking spotlight on featured / selected cards */
+.selected-card,
+.app-card.featured {
+  --mx: 50%;
+  --my: 50%;
+}
+
+.selected-card::after,
+.app-card.featured::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(420px circle at var(--mx) var(--my), rgba(15, 118, 110, 0.10), transparent 60%);
+  opacity: 0;
+  transition: opacity 260ms var(--ease-smooth);
+  pointer-events: none;
+  z-index: 1;
+}
+
+.selected-card:hover::after,
+.app-card.featured:hover::after {
+  opacity: 1;
+}
+
+.selected-card > *,
+.app-card.featured > * {
+  position: relative;
+  z-index: 2;
+}
+
+/* primary button hover sweep */
+.button.primary {
+  position: relative;
+  overflow: hidden;
+  isolation: isolate;
+}
+
+.button.primary::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -130%;
+  width: 60%;
+  height: 100%;
+  background: linear-gradient(115deg, transparent 0%, rgba(255, 255, 255, 0.22) 50%, transparent 100%);
+  transition: left 720ms var(--ease-out);
+  z-index: -1;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .button.primary:hover::before {
+    left: 130%;
+  }
+}
+
+/* anchor underline grow on link hover */
+.nav-links a,
+.preview-nav a,
+.footer a {
+  position: relative;
+}
+
+.nav-links a::after,
+.preview-nav a::after,
+.footer a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -3px;
+  height: 2px;
+  background: currentColor;
+  transform: scaleX(0);
+  transform-origin: left center;
+  transition: transform 260ms var(--ease-smooth);
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .nav-links a:hover::after,
+  .preview-nav a:hover::after,
+  .footer a:hover::after {
+    transform: scaleX(1);
+  }
+}
+
+/* tighten section spacing now that catalogue comes earlier */
+.shelf-index {
+  margin-top: 12px;
+}
+
+/* sticky topbar uses its own padding now that it sits outside .hero */
+.topbar-shell .topbar {
+  padding: 12px 0;
+}
+
+.hero {
+  padding-top: 32px;
+}
+
+/* slightly stronger hover affordance on cards */
+.app-card {
+  transform: translateZ(0);
+}
+
+.app-card:hover {
+  box-shadow:
+    0 2px 4px rgba(21, 21, 21, 0.04),
+    0 24px 48px rgba(21, 21, 21, 0.10);
 }
