@@ -1704,7 +1704,18 @@ h1 {
   }
 
   h1 {
-    font-size: clamp(2.24rem, 12vw, 3.1rem);
+    font-size: clamp(1.85rem, 7.5vw, 2.45rem);
+    letter-spacing: -0.012em;
+  }
+
+  .lede {
+    font-size: 0.98rem;
+  }
+
+  .section-heading h2,
+  .selected-card strong,
+  .preview-copy h1 {
+    font-size: clamp(1.7rem, 6vw, 2.2rem);
   }
 
   .filters {

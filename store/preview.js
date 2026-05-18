@@ -31,26 +31,17 @@ function updateSocialMeta(preview, slug) {
 function renderUnknown(slug) {
   document.title = "Unknown app · Matthew Paver Portfolio Store";
   setText("preview-kicker", "Not found");
-  setText("preview-title", `No preview for "${slug}"`);
+  setText("preview-title", `No preview for “${slug}”`);
   setText(
     "preview-summary",
-    "That preview slug is not in the store catalogue. Head back to browse every project."
-  );
-  setText("preview-role", "—");
-  setText("preview-status", "Unknown");
-  setText("preview-focus", "—");
-  setText(
-    "preview-problem",
-    "If you reached this page from a link, the project may have been renamed or archived. Return to the store to find the current catalogue."
+    "That preview slug is not in the store catalogue. The project may have been renamed or archived. Head back to browse every project."
   );
 
-  const image = document.querySelector("#preview-image");
-  if (image) image.hidden = true;
-  const video = document.querySelector("#preview-video");
-  if (video) {
-    video.hidden = true;
-    video.removeAttribute("src");
-  }
+  const media = document.querySelector(".preview-media");
+  if (media) media.hidden = true;
+
+  const layout = document.querySelector(".preview-layout");
+  if (layout) layout.hidden = true;
 
   const actions = document.querySelector("#preview-actions");
   if (actions) {
@@ -60,12 +51,6 @@ function renderUnknown(slug) {
     back.textContent = "Back to store";
     actions.replaceChildren(back);
   }
-
-  const points = document.querySelector("#preview-points");
-  if (points) points.replaceChildren();
-  const stack = document.querySelector("#preview-stack");
-  if (stack) stack.replaceChildren();
-  setText("preview-note", "");
 }
 
 function renderPreview(preview, slug) {
