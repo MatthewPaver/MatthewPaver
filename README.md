@@ -11,12 +11,49 @@
 </p>
 
 <p align="center">
-  <a href="https://matthewpaver.github.io/MatthewPaver/store/"><img src="https://img.shields.io/badge/Projects-13-151515?style=flat-square&labelColor=0f766e" alt="13 projects" /></a>
-  <a href="https://inferencebrief.co/"><img src="https://img.shields.io/badge/Live_paid_product-1-151515?style=flat-square&labelColor=16a34a" alt="1 live paid product" /></a>
-  <a href="https://github.com/MatthewPaver?tab=repositories"><img src="https://img.shields.io/badge/Public_repos-6-151515?style=flat-square&labelColor=1d4f91" alt="6 public repos" /></a>
-  <img src="https://img.shields.io/badge/Configured_sources-103-151515?style=flat-square&labelColor=8f5d12" alt="103 configured sources" />
-  <img src="https://img.shields.io/badge/Reliability_tests-167-151515?style=flat-square&labelColor=9f3a2f" alt="167 reliability tests" />
+  <img src="https://img.shields.io/github/actions/workflow/status/MatthewPaver/MatthewPaver/pages.yml?label=Pages%20deploy&style=flat-square&color=0f766e&labelColor=151515" alt="Pages deploy status" />
+  <img src="https://img.shields.io/github/last-commit/MatthewPaver/MatthewPaver?label=Last%20commit&style=flat-square&color=8f5d12&labelColor=151515" alt="Last commit" />
+  <img src="https://img.shields.io/badge/Projects-13-151515?style=flat-square&labelColor=151515&color=0f766e" alt="13 projects" />
+  <img src="https://img.shields.io/badge/Live_paid_product-1-151515?style=flat-square&labelColor=151515&color=16a34a" alt="1 live paid product" />
+  <img src="https://img.shields.io/badge/Configured_sources-103-151515?style=flat-square&labelColor=151515&color=8f5d12" alt="103 configured sources" />
+  <img src="https://img.shields.io/badge/Reliability_tests-167-151515?style=flat-square&labelColor=151515&color=9f3a2f" alt="167 reliability tests" />
 </p>
+
+---
+
+## Featured products
+
+<table>
+<tr>
+<td width="33%" valign="top">
+  <a href="https://matthewpaver.github.io/MatthewPaver/store/preview.html?app=inference">
+    <img src="store/assets/inference-preview.gif" alt="Inference Brief — live demo" />
+  </a>
+  <h3>Inference Brief <sub>· <a href="https://inferencebrief.co/">live</a></sub></h3>
+  <p>An AI-news reader with paid subscriptions. Source collection, scoring, summaries, issues, bookmarks, and reading history.</p>
+  <p><code>Next.js</code> <code>TypeScript</code> <code>Supabase</code> <code>Python</code> <code>Stripe</code></p>
+  <p><a href="https://matthewpaver.github.io/MatthewPaver/store/preview.html?app=inference">Preview ↗</a> · <a href="https://inferencebrief.co/">Open product ↗</a> · <a href="CASE_STUDIES.md#inference-brief">Case study ↗</a></p>
+</td>
+<td width="33%" valign="top">
+  <a href="https://matthewpaver.github.io/MatthewPaver/store/preview.html?app=happening">
+    <img src="store/assets/happening-preview.gif" alt="Happening — venue ingestion demo" />
+  </a>
+  <h3>Happening <sub>· private</sub></h3>
+  <p>Turns 103 inconsistent venue pages into structured event data. 167-test reliability suite, scheduled daily runs.</p>
+  <p><code>Python</code> <code>Playwright</code> <code>SQLite</code> <code>Pydantic</code> <code>GitHub Actions</code></p>
+  <p><a href="https://matthewpaver.github.io/MatthewPaver/store/preview.html?app=happening">Preview ↗</a> · <a href="CASE_STUDIES.md#featured-build-happening">Case study ↗</a></p>
+</td>
+<td width="33%" valign="top">
+  <a href="https://matthewpaver.github.io/MatthewPaver/store/preview.html?app=quicksupply">
+    <img src="store/assets/quicksupply-preview.gif" alt="QuickSupply — cover ops demo" />
+  </a>
+  <h3>QuickSupply <sub>· private MVP</sub></h3>
+  <p>A school cover-ops workflow built for three sides: school, agency, teacher. Sequential assignment, compliance checks, live status.</p>
+  <p><code>Next.js</code> <code>TypeScript</code> <code>PostgreSQL</code> <code>Drizzle</code> <code>SSE</code></p>
+  <p><a href="https://matthewpaver.github.io/MatthewPaver/store/preview.html?app=quicksupply">Preview ↗</a></p>
+</td>
+</tr>
+</table>
 
 ## At a glance
 
@@ -42,43 +79,9 @@ flowchart LR
     F -->|pass| G[Shipped]
 ```
 
-Every project I publish has this shape: a configured input, an explicit check, an artifact that can be opened, and a deploy gate that refuses drift. The [portfolio store](https://matthewpaver.github.io/MatthewPaver/store/) itself runs on that loop — a Spec Kit constitution, a validator, Lighthouse CI gates, no framework, no build system.
+Every project I publish has this shape: a configured input, an explicit check, an artifact that can be opened, and a deploy gate that refuses drift. The [portfolio store](https://matthewpaver.github.io/MatthewPaver/store/) runs on that loop — Spec Kit constitution, validator, Lighthouse CI gates, no framework, no build system.
 
-## Featured builds
-
-<table>
-<tr>
-<td width="33%" valign="top">
-  <a href="https://matthewpaver.github.io/MatthewPaver/store/preview.html?app=inference">
-    <img src="store/assets/inference-brief.png" alt="Inference Brief product preview" />
-  </a>
-  <h3>Inference Brief <sub>· <a href="https://inferencebrief.co/">live</a></sub></h3>
-  <p>An AI-news reader with paid subscriptions. Source collection, scoring, summaries, issues, bookmarks, and reading history.</p>
-  <p><code>Next.js</code> <code>TypeScript</code> <code>Supabase</code> <code>Python</code> <code>Stripe</code></p>
-  <p><a href="https://matthewpaver.github.io/MatthewPaver/store/preview.html?app=inference">Preview ↗</a> · <a href="https://inferencebrief.co/">Open product ↗</a> · <a href="CASE_STUDIES.md#inference-brief">Case study ↗</a></p>
-</td>
-<td width="33%" valign="top">
-  <a href="https://matthewpaver.github.io/MatthewPaver/store/preview.html?app=happening">
-    <img src="store/assets/happening-web.png" alt="Happening event ingestion preview" />
-  </a>
-  <h3>Happening <sub>· private</sub></h3>
-  <p>A venue-event pipeline that turns 103 inconsistent source pages into structured data. 167-test reliability suite, scheduled daily runs.</p>
-  <p><code>Python</code> <code>Playwright</code> <code>SQLite</code> <code>Pydantic</code> <code>GitHub Actions</code></p>
-  <p><a href="https://matthewpaver.github.io/MatthewPaver/store/preview.html?app=happening">Preview ↗</a> · <a href="CASE_STUDIES.md#featured-build-happening">Case study ↗</a></p>
-</td>
-<td width="33%" valign="top">
-  <a href="https://matthewpaver.github.io/MatthewPaver/store/preview.html?app=quicksupply">
-    <img src="store/assets/quicksupply-dashboard.png" alt="QuickSupply product preview" />
-  </a>
-  <h3>QuickSupply <sub>· private MVP</sub></h3>
-  <p>A school cover-ops workflow built for three sides: school, agency, teacher. Sequential assignment, compliance checks, live status.</p>
-  <p><code>Next.js</code> <code>TypeScript</code> <code>PostgreSQL</code> <code>Drizzle</code> <code>SSE</code></p>
-  <p><a href="https://matthewpaver.github.io/MatthewPaver/store/preview.html?app=quicksupply">Preview ↗</a></p>
-</td>
-</tr>
-</table>
-
-## Public repos to open
+## Open these next
 
 <table>
 <tr>
@@ -110,7 +113,7 @@ Every project I publish has this shape: a configured input, an explicit check, a
 
 | When | What |
 |:---|:---|
-| **2026-05** | Spec-driven portfolio governance: constitution, validator, Lighthouse CI, JSON-LD, manifest, CSP |
+| **2026-05** | Spec-driven portfolio governance: constitution, validator, Lighthouse CI, JSON-LD, manifest, CSP, custom OG card |
 | **2026-04** | Inference Brief — accounts, paid subscriptions, bookmarks, reading history |
 | **2026-03** | Happening — 167-test reliability suite, 103 venue source configs |
 | **2026-02** | QuickSupply MVP — three-sided workflow, sequential assignment, live SSE status |
@@ -118,8 +121,12 @@ Every project I publish has this shape: a configured input, an explicit check, a
 ## GitHub signals
 
 <p>
-  <img src="https://github-readme-stats.vercel.app/api?username=MatthewPaver&show_icons=true&hide_border=false&bg_color=fbfaf7&title_color=0f766e&text_color=151515&icon_color=8f5d12&border_color=d8d2c8&include_all_commits=true" alt="GitHub stats" height="160" />
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=MatthewPaver&layout=compact&hide_border=false&bg_color=fbfaf7&title_color=0f766e&text_color=151515&border_color=d8d2c8&langs_count=8" alt="Top languages" height="160" />
+  <a href="https://github.com/anuraghazra/github-readme-stats">
+    <img src="https://github-readme-stats.vercel.app/api?username=MatthewPaver&show_icons=true&hide_border=false&bg_color=fbfaf7&title_color=0f766e&text_color=151515&icon_color=8f5d12&border_color=d8d2c8&include_all_commits=true&count_private=false" alt="GitHub stats" height="170" />
+  </a>
+  <a href="https://github.com/anuraghazra/github-readme-stats">
+    <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=MatthewPaver&layout=compact&hide_border=false&bg_color=fbfaf7&title_color=0f766e&text_color=151515&border_color=d8d2c8&langs_count=8&hide=hcl" alt="Top languages" height="170" />
+  </a>
 </p>
 
 ## Credentials
