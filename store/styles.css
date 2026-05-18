@@ -1927,13 +1927,131 @@ h1 {
     0 24px 48px rgba(21, 21, 21, 0.10);
 }
 
-/* slightly stronger hover affordance on cards */
-.app-card {
-  transform: translateZ(0);
+/* --- Phase 1: rhythm + weight rationalisation --- */
+
+/* lock major sections to consistent 56px vertical gaps */
+.selected-work,
+.shelf-index,
+.archive-shelf,
+.featured-build,
+.credential-band {
+  margin: 56px 0;
 }
 
-.app-card:hover {
-  box-shadow:
-    0 2px 4px rgba(21, 21, 21, 0.04),
-    0 24px 48px rgba(21, 21, 21, 0.10);
+main.shell > section:first-child,
+main.shell > .section-heading:first-child {
+  margin-top: 32px;
+}
+
+/* font-weight system: keep to 400 / 600 / 800 / 900 */
+body {
+  font-weight: 400;
+}
+
+.lede,
+.app-body p,
+.preview-panel p,
+.shelf-index-copy p:not(.eyebrow),
+.empty-state {
+  font-weight: 400;
+}
+
+.nav-links a,
+.proof-list li,
+.preview-list li,
+.shelf-grid small,
+.credential-group small,
+.stack-list span,
+.preview-stack span,
+.repo-confidence span,
+.card-snapshot dd,
+.footer p {
+  font-weight: 600;
+}
+
+.brand,
+.button,
+.filter,
+.card-actions a,
+.text-link,
+.shelf-grid strong,
+.selected-card strong,
+.card-snapshot dt,
+.preview-meta strong,
+.app-icon,
+.brand-mark,
+.issuer-mark {
+  font-weight: 800;
+}
+
+.eyebrow,
+.status,
+.preview-meta span,
+.credential-group h3,
+#visible-count {
+  font-weight: 900;
+}
+
+/* re-balance stats row: lighter numbers, calmer labels */
+.stats-row strong {
+  font-family: Charter, "Iowan Old Style", Georgia, serif;
+  font-size: clamp(1.5rem, 2.2vw, 1.95rem);
+  font-weight: 700;
+}
+
+.stats-row span.stat-label {
+  font-size: 0.68rem;
+  letter-spacing: 0.11em;
+  color: var(--soft);
+}
+
+/* stats row: 2-column behavior at intermediate widths */
+@media (max-width: 920px) and (min-width: 561px) {
+  .stats-row {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .stats-row > div:nth-child(odd) {
+    border-right: 1px solid var(--line);
+  }
+
+  .stats-row > div:nth-child(2n+2) {
+    border-right: 0;
+  }
+
+  .stats-row > div:nth-child(-n+4) {
+    border-bottom: 1px solid var(--line);
+  }
+}
+
+/* --- Phase 2: shelf icons + filter pill colour --- */
+
+.shelf-icon {
+  width: 22px;
+  height: 22px;
+  fill: none;
+  stroke: var(--accent);
+  stroke-width: 1.5;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  opacity: 0.92;
+  transition: stroke 220ms var(--ease-smooth), transform 220ms var(--ease-smooth);
+}
+
+.shelf-grid a:hover .shelf-icon {
+  stroke: var(--surface);
+  transform: scale(1.08);
+}
+
+/* filter pill: switch active to a quietly tinted accent treatment */
+.filter.active {
+  background: var(--accent);
+  border-color: var(--accent);
+  color: var(--surface);
+  box-shadow: 0 4px 12px rgba(15, 118, 110, 0.18);
+}
+
+.filter.active:hover {
+  background: var(--accent-ink);
+  border-color: var(--accent-ink);
 }

@@ -26,11 +26,11 @@ I build software that turns messy information into useful tools. Most of what I 
 
 ---
 
-## What I'm working on
+## Currently shipping
 
-I'm running **[Inference Brief](https://inferencebrief.co/)**, an AI-news reader I built end-to-end. It collects, scores, summarises, and publishes stories into issues. There's an account system, reading history, bookmarks, and a billing surface behind it.
+**[Inference Brief](https://inferencebrief.co/)** — an AI-news reader I built end-to-end. Source collection, scoring, summarisation, issue publishing, accounts, reading history, bookmarks, and a billing surface.
 
-On the side I run **Happening**, a private system that watches 103 London venue pages and turns them into structured event data. It treats each venue as a configured source with extraction rules, dedupe, and validation, and has a 167-test reliability suite I keep adding to as the venues change shape.
+**Happening** — a private system that watches 103 London venue pages and turns them into structured event data. Each venue is a configured source with extraction rules, dedupe, validation, and a 167-test reliability suite that grows as the venues change shape.
 
 ## What I tend to work on
 
@@ -87,9 +87,9 @@ On the side I run **Happening**, a private system that watches 103 London venue 
 
 ## How the work is shaped
 
-I run this repository as if it were a small product. There is a written constitution in `.specify/memory/`, a feature spec in `specs/001-portfolio-store-reliability/`, and a deploy-gate validator in `scripts/validate-store.mjs` that checks the catalogue, image dimensions, sitemap coverage, manifest, favicons, JSON-LD, CSP, dark and print stylesheets, and progressive-enhancement contracts. Lighthouse CI gates accessibility and SEO before each deploy.
+I run this repository as if it were a small product. There is a written constitution in `.specify/memory/`, a feature spec in `specs/001-portfolio-store-reliability/`, and a deploy-gate validator in `scripts/validate-store.mjs` that checks the catalogue, image dimensions, sitemap coverage, manifest, favicons, JSON-LD, CSP, print stylesheet, and progressive-enhancement contracts. Lighthouse CI gates accessibility and SEO before each deploy.
 
-When I publish a project I try to write it so a reviewer can be running it locally inside a few minutes — README, run command, tests, sample data, a screenshot or two, and notes on what to look at first. The work is meant to be opened, not just admired.
+When I publish a project I write it so a reviewer can be running it locally inside a few minutes — README, run command, tests, sample data, a screenshot or two, and notes on what to look at first. The work is meant to be opened, not just admired.
 
 ## Credentials
 
