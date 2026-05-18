@@ -187,7 +187,7 @@ document.addEventListener("DOMContentLoaded", () => {
     if (announcer) {
       announcer.textContent =
         count === 0
-          ? "No projects match your search or filters. Try clearing the search or choosing All."
+          ? "Nothing matches that filter combination. Clear the search or choose All to see every project."
           : `${count} projects showing`;
     }
   }
