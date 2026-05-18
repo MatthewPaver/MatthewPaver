@@ -10,16 +10,39 @@
   <a href="https://www.linkedin.com/in/matthew-paver-534262166/"><img src="https://img.shields.io/badge/LinkedIn-Connect-0a66c2?style=for-the-badge&logo=linkedin&logoColor=white" alt="Connect on LinkedIn" /></a>
 </p>
 
+<p align="center">
+  <a href="https://matthewpaver.github.io/MatthewPaver/store/"><img src="https://img.shields.io/badge/Projects-13-151515?style=flat-square&labelColor=0f766e" alt="13 projects" /></a>
+  <a href="https://inferencebrief.co/"><img src="https://img.shields.io/badge/Live_paid_product-1-151515?style=flat-square&labelColor=16a34a" alt="1 live paid product" /></a>
+  <a href="https://github.com/MatthewPaver?tab=repositories"><img src="https://img.shields.io/badge/Public_repos-6-151515?style=flat-square&labelColor=1d4f91" alt="6 public repos" /></a>
+  <img src="https://img.shields.io/badge/Configured_sources-103-151515?style=flat-square&labelColor=8f5d12" alt="103 configured sources" />
+  <img src="https://img.shields.io/badge/Reliability_tests-167-151515?style=flat-square&labelColor=9f3a2f" alt="167 reliability tests" />
+</p>
+
 ## At a glance
 
 | | |
 |:---|:---|
 | **Role**     | Software engineer · AI, data, analytics |
 | **Based**    | London |
-| **Shipping** | [Inference Brief](https://inferencebrief.co/) (live, paid) · Happening (private venue-ingestion system, 103 sources / 167 tests) |
+| **Shipping** | [Inference Brief](https://inferencebrief.co/) (live, paid) · Happening (private venue-ingestion system) |
 | **Open to**  | Product, data, and automation roles |
 | **Stack**    | Python · TypeScript · FastAPI · Next.js · Postgres / DuckDB · Playwright · GitHub Actions |
 | **Specs**    | [Constitution](.specify/memory/constitution.md) · [Feature spec](specs/001-portfolio-store-reliability/spec.md) · [Validator](scripts/validate-store.mjs) · [Lighthouse CI](.lighthouserc.json) |
+
+## How the work flows
+
+```mermaid
+flowchart LR
+    A[Messy public data] --> B[Configured ingestion]
+    B --> C[Validation & dedupe]
+    C --> D[Spec-driven catalogue]
+    D --> E[Inspectable product]
+    E --> F[Deploy gate · validator + Lighthouse CI]
+    F -.->|fail| B
+    F -->|pass| G[Shipped]
+```
+
+Every project I publish has this shape: a configured input, an explicit check, an artifact that can be opened, and a deploy gate that refuses drift. The [portfolio store](https://matthewpaver.github.io/MatthewPaver/store/) itself runs on that loop — a Spec Kit constitution, a validator, Lighthouse CI gates, no framework, no build system.
 
 ## Featured builds
 
@@ -57,32 +80,47 @@
 
 ## Public repos to open
 
-**Runnable applications**
+<table>
+<tr>
+<td valign="top" width="50%">
 
-| Repo | What you see when you open it |
+**▸ Runnable applications**
+
+- [Marketing ML Lakehouse](https://github.com/MatthewPaver/marketing-ml-lakehouse) — Bronze/silver/gold DuckDB flow, XGBoost training, data-quality checks, Streamlit dashboard
+- [ProjectLens](https://github.com/MatthewPaver/ProjectLens) — Schedule-risk Flask app: upload, slippage analysis, milestone pressure, Power BI-ready exports
+
+**▸ Analytics handoff**
+
+- [HR Performance Analytics](https://github.com/MatthewPaver/hr-performance-dashboards) — Power BI dashboard package: PBIX files, dashboard previews, methodology PDF, stakeholder commentary
+
+</td>
+<td valign="top" width="50%">
+
+**▸ Notebook demos and technical examples**
+
+- [Dating App Recommendation System](https://github.com/MatthewPaver/dating-app-recommendation-system) — Implicit-feedback ranking with temporal holdouts and Top-K metrics
+- [Sentence Similarity Analysis](https://github.com/MatthewPaver/sentence-similarity-analysis) — Embedding retrieval with a deliberate point about similarity not being truth
+- [PySpark Kafka Streaming](https://github.com/MatthewPaver/pyspark-kafka-streaming) — DataFrames, Structured Streaming, JSON event production
+
+</td>
+</tr>
+</table>
+
+## Latest shipping
+
+| When | What |
 |:---|:---|
-| [Marketing ML Lakehouse](https://github.com/MatthewPaver/marketing-ml-lakehouse) | Bronze/silver/gold DuckDB flow, XGBoost training, data-quality checks, Streamlit dashboard. Runs locally end-to-end. |
-| [ProjectLens](https://github.com/MatthewPaver/ProjectLens) | Schedule-risk Flask app: upload, slippage analysis, milestone pressure, Power BI-ready exports. |
+| **2026-05** | Spec-driven portfolio governance: constitution, validator, Lighthouse CI, JSON-LD, manifest, CSP |
+| **2026-04** | Inference Brief — accounts, paid subscriptions, bookmarks, reading history |
+| **2026-03** | Happening — 167-test reliability suite, 103 venue source configs |
+| **2026-02** | QuickSupply MVP — three-sided workflow, sequential assignment, live SSE status |
 
-**Notebook demos and technical examples**
+## GitHub signals
 
-| Repo | What you see when you open it |
-|:---|:---|
-| [Dating App Recommendation System](https://github.com/MatthewPaver/dating-app-recommendation-system) | Implicit-feedback ranking with temporal holdouts and Top-K metrics. Demo data + CLI smoke path. |
-| [Sentence Similarity Analysis](https://github.com/MatthewPaver/sentence-similarity-analysis) | Embedding retrieval with a deliberate point about similarity not being truth. |
-| [PySpark Kafka Streaming](https://github.com/MatthewPaver/pyspark-kafka-streaming) | Compact examples covering DataFrames, Structured Streaming, JSON event production. |
-
-**Analytics handoff**
-
-| Repo | What you see when you open it |
-|:---|:---|
-| [HR Performance Analytics](https://github.com/MatthewPaver/hr-performance-dashboards) | Power BI dashboard package: PBIX files, dashboard previews, methodology PDF, stakeholder commentary. |
-
-## How the work is shaped
-
-I run this repository like a small product. There's a written constitution in [`.specify/memory/`](.specify/memory/constitution.md), a feature spec in [`specs/001-portfolio-store-reliability/`](specs/001-portfolio-store-reliability/spec.md), and a deploy-gate validator in [`scripts/validate-store.mjs`](scripts/validate-store.mjs) that checks the catalogue, image dimensions, sitemap coverage, manifest, favicons, JSON-LD, CSP, print stylesheet, and progressive-enhancement contracts. Lighthouse CI gates accessibility and SEO before each deploy.
-
-When I publish a project I write it so a reviewer can be running it locally inside a few minutes — README, run command, tests, sample data, a screenshot, and notes on what to look at first. The work is meant to be opened, not just admired.
+<p>
+  <img src="https://github-readme-stats.vercel.app/api?username=MatthewPaver&show_icons=true&hide_border=false&bg_color=fbfaf7&title_color=0f766e&text_color=151515&icon_color=8f5d12&border_color=d8d2c8&include_all_commits=true" alt="GitHub stats" height="160" />
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=MatthewPaver&layout=compact&hide_border=false&bg_color=fbfaf7&title_color=0f766e&text_color=151515&border_color=d8d2c8&langs_count=8" alt="Top languages" height="160" />
+</p>
 
 ## Credentials
 
