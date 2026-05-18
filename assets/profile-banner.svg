@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 360" role="img" aria-label="Matthew Paver — AI products, data systems, and analytics">
+  <defs>
+    <radialGradient id="glowTeal" cx="80%" cy="0%" r="60%">
+      <stop offset="0%" stop-color="#0f766e" stop-opacity="0.10"/>
+      <stop offset="100%" stop-color="#0f766e" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="glowGold" cx="0%" cy="100%" r="55%">
+      <stop offset="0%" stop-color="#8f5d12" stop-opacity="0.07"/>
+      <stop offset="100%" stop-color="#8f5d12" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <rect width="1280" height="360" fill="#fbfaf7"/>
+  <rect width="1280" height="360" fill="url(#glowTeal)"/>
+  <rect width="1280" height="360" fill="url(#glowGold)"/>
+
+  <!-- accent rule + eyebrow -->
+  <rect x="80" y="92" width="36" height="2" fill="#0f766e"/>
+  <text x="128" y="100" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="13" font-weight="900" letter-spacing="2.6" fill="#69625b">PORTFOLIO STORE</text>
+
+  <!-- name -->
+  <text x="80" y="178" font-family="'Iowan Old Style', Georgia, 'Times New Roman', serif" font-size="68" font-weight="700" fill="#151515" letter-spacing="-0.5">Matthew Paver</text>
+
+  <!-- tagline -->
+  <text x="80" y="226" font-family="'Iowan Old Style', Georgia, serif" font-size="26" font-weight="400" fill="#57534e">AI products · data systems · analytics</text>
+
+  <!-- horizontal rule -->
+  <line x1="80" y1="262" x2="1040" y2="262" stroke="#d8d2c8" stroke-width="1"/>
+
+  <!-- spec strip -->
+  <g font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif">
+    <text x="80" y="296" font-size="11" font-weight="900" letter-spacing="1.6" fill="#69625b">SHIPPING</text>
+    <text x="80" y="318" font-size="14" font-weight="600" fill="#151515">Inference Brief — live</text>
+
+    <text x="320" y="296" font-size="11" font-weight="900" letter-spacing="1.6" fill="#69625b">BASED</text>
+    <text x="320" y="318" font-size="14" font-weight="600" fill="#151515">London</text>
+
+    <text x="500" y="296" font-size="11" font-weight="900" letter-spacing="1.6" fill="#69625b">OPEN TO</text>
+    <text x="500" y="318" font-size="14" font-weight="600" fill="#151515">Product · data · automation work</text>
+  </g>
+
+  <!-- MP mark on the right -->
+  <g transform="translate(1080 100)">
+    <rect width="120" height="120" rx="16" fill="#d9a441"/>
+    <text x="60" y="84" font-family="'Iowan Old Style', Georgia, serif" font-size="68" font-weight="700" fill="#161411" text-anchor="middle">MP</text>
+  </g>
+
+  <!-- live dot -->
+  <circle cx="234" cy="313" r="4" fill="#16a34a"/>
+</svg>
