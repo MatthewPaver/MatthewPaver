@@ -159,12 +159,12 @@ Every project I publish has this shape: a configured input, an explicit check, a
 
 _This section is automatically refreshed by GitHub Actions._
 
-- Last refresh (UTC): 2026-05-18 11:12
+- Last refresh (UTC): 2026-05-19 10:45
 
 | Repo | Last push | What it is |
 |:---|:---:|:---|
+| [MatthewPaver](https://github.com/MatthewPaver/MatthewPaver) | 2026-05-18 | Portfolio: AI products, data systems, ML, and analytics — every project has a preview,… |
 | [hr-performance-dashboards](https://github.com/MatthewPaver/hr-performance-dashboards) | 2026-05-17 | Power BI dashboard handoff package for HR, absence, and sales performance analytics. |
-| [MatthewPaver](https://github.com/MatthewPaver/MatthewPaver) | 2026-05-17 | AI and data engineering portfolio: product store, case studies, public repo map, and cr… |
 | [marketing-ml-lakehouse](https://github.com/MatthewPaver/marketing-ml-lakehouse) | 2026-05-17 | Local DuckDB, XGBoost, and Streamlit analytics pipeline for marketing performance data. |
 | [netflix-content-analysis](https://github.com/MatthewPaver/netflix-content-analysis) | 2026-05-17 | Notebook EDA of Netflix title data with country, genre, timeline, and catalog growth an… |
 | [sentence-similarity-analysis](https://github.com/MatthewPaver/sentence-similarity-analysis) | 2026-05-16 | Sentence-transformer notebook showing embedding similarity, cosine ranking, and retriev… |
