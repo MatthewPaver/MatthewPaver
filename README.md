@@ -1,6 +1,6 @@
 <p align="center">
   <a href="https://matthewpaver.github.io/MatthewPaver/store/">
-    <img src="assets/profile-banner.svg" alt="Matthew Paver — AI products, data systems, and analytics" width="100%" />
+    <img src="assets/profile-banner.svg" alt="Matthew Paver — I build AI products and the data systems behind them." width="100%" />
   </a>
 </p>
 
@@ -81,6 +81,8 @@ flowchart LR
 
 Every project I publish has this shape: a configured input, an explicit check, an artifact that can be opened, and a deploy gate that refuses drift. The [portfolio store](https://matthewpaver.github.io/MatthewPaver/store/) runs on that loop — Spec Kit constitution, validator, Lighthouse CI gates, no framework, no build system.
 
+<p align="center"><img src="assets/mp-rule.svg" alt="" width="320" height="32" /></p>
+
 ## Open these next
 
 <table>
@@ -89,21 +91,21 @@ Every project I publish has this shape: a configured input, an explicit check, a
 
 **▸ Runnable applications**
 
-- [Marketing ML Lakehouse](https://github.com/MatthewPaver/marketing-ml-lakehouse) — Bronze/silver/gold DuckDB flow, XGBoost training, data-quality checks, Streamlit dashboard
-- [ProjectLens](https://github.com/MatthewPaver/ProjectLens) — Schedule-risk Flask app: upload, slippage analysis, milestone pressure, Power BI-ready exports
+- [Marketing ML Lakehouse](https://github.com/MatthewPaver/marketing-ml-lakehouse) — Bronze/silver/gold DuckDB flow, XGBoost training, data-quality checks, Streamlit dashboard<br/><sub><img src="https://img.shields.io/github/last-commit/MatthewPaver/marketing-ml-lakehouse?style=flat-square&label=Last%20commit&color=8f5d12&labelColor=151515" alt="Last commit" /> <img src="https://img.shields.io/github/languages/top/MatthewPaver/marketing-ml-lakehouse?style=flat-square&color=0f766e&labelColor=151515" alt="Top language" /></sub>
+- [ProjectLens](https://github.com/MatthewPaver/ProjectLens) — Schedule-risk Flask app: upload, slippage analysis, milestone pressure, Power BI-ready exports<br/><sub><img src="https://img.shields.io/github/last-commit/MatthewPaver/ProjectLens?style=flat-square&label=Last%20commit&color=8f5d12&labelColor=151515" alt="Last commit" /> <img src="https://img.shields.io/github/languages/top/MatthewPaver/ProjectLens?style=flat-square&color=0f766e&labelColor=151515" alt="Top language" /></sub>
 
 **▸ Analytics handoff**
 
-- [HR Performance Analytics](https://github.com/MatthewPaver/hr-performance-dashboards) — Power BI dashboard package: PBIX files, dashboard previews, methodology PDF, stakeholder commentary
+- [HR Performance Analytics](https://github.com/MatthewPaver/hr-performance-dashboards) — Power BI dashboard package: PBIX files, dashboard previews, methodology PDF, stakeholder commentary<br/><sub><img src="https://img.shields.io/github/last-commit/MatthewPaver/hr-performance-dashboards?style=flat-square&label=Last%20commit&color=8f5d12&labelColor=151515" alt="Last commit" /> <img src="https://img.shields.io/github/repo-size/MatthewPaver/hr-performance-dashboards?style=flat-square&label=Size&color=0f766e&labelColor=151515" alt="Repo size" /></sub>
 
 </td>
 <td valign="top" width="50%">
 
 **▸ Notebook demos and technical examples**
 
-- [Dating App Recommendation System](https://github.com/MatthewPaver/dating-app-recommendation-system) — Implicit-feedback ranking with temporal holdouts and Top-K metrics
-- [Sentence Similarity Analysis](https://github.com/MatthewPaver/sentence-similarity-analysis) — Embedding retrieval with a deliberate point about similarity not being truth
-- [PySpark Kafka Streaming](https://github.com/MatthewPaver/pyspark-kafka-streaming) — DataFrames, Structured Streaming, JSON event production
+- [Dating App Recommendation System](https://github.com/MatthewPaver/dating-app-recommendation-system) — Implicit-feedback ranking with temporal holdouts and Top-K metrics<br/><sub><img src="https://img.shields.io/github/last-commit/MatthewPaver/dating-app-recommendation-system?style=flat-square&label=Last%20commit&color=8f5d12&labelColor=151515" alt="Last commit" /> <img src="https://img.shields.io/github/languages/top/MatthewPaver/dating-app-recommendation-system?style=flat-square&color=0f766e&labelColor=151515" alt="Top language" /></sub>
+- [Sentence Similarity Analysis](https://github.com/MatthewPaver/sentence-similarity-analysis) — Embedding retrieval with a deliberate point about similarity not being truth<br/><sub><img src="https://img.shields.io/github/last-commit/MatthewPaver/sentence-similarity-analysis?style=flat-square&label=Last%20commit&color=8f5d12&labelColor=151515" alt="Last commit" /> <img src="https://img.shields.io/github/languages/top/MatthewPaver/sentence-similarity-analysis?style=flat-square&color=0f766e&labelColor=151515" alt="Top language" /></sub>
+- [PySpark Kafka Streaming](https://github.com/MatthewPaver/pyspark-kafka-streaming) — DataFrames, Structured Streaming, JSON event production<br/><sub><img src="https://img.shields.io/github/last-commit/MatthewPaver/pyspark-kafka-streaming?style=flat-square&label=Last%20commit&color=8f5d12&labelColor=151515" alt="Last commit" /> <img src="https://img.shields.io/github/languages/top/MatthewPaver/pyspark-kafka-streaming?style=flat-square&color=0f766e&labelColor=151515" alt="Top language" /></sub>
 
 </td>
 </tr>
@@ -148,6 +150,7 @@ Every project I publish has this shape: a configured input, an explicit check, a
 | The best visual overview | [Portfolio Store](https://matthewpaver.github.io/MatthewPaver/store/) |
 | A live paid product | [Inference Brief](https://inferencebrief.co/) |
 | Architecture and tradeoff stories | [Case Studies](CASE_STUDIES.md) |
+| A piece of writing with an opinion | [What a 167-test scraping suite actually catches](writing/what-a-scraping-suite-catches.md) |
 | The full repo map | [Projects appendix](Projects.md) |
 | Background and experience | [CV](CV.pdf) |
 
@@ -173,6 +176,8 @@ _This section is automatically refreshed by GitHub Actions._
 <!-- AUTO:ACTIVITY_END -->
 
 </details>
+
+<p align="center"><img src="assets/mp-rule.svg" alt="" width="320" height="32" /></p>
 
 <p align="center">
   <sub>Hand-built. Spec-driven. Deploy gated. — <a href="https://github.com/MatthewPaver/MatthewPaver">github.com/MatthewPaver</a></sub>

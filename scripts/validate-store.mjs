@@ -264,6 +264,27 @@ const tasks = readFile(`${specDirectory}/tasks.md`);
 const uncheckedTasks = [...tasks.matchAll(/^- \[ \] /gm)];
 assert(uncheckedTasks.length === 0, "Spec task list contains unchecked tasks");
 
+// Emit a small JSON status file the store reads to render a live deploy-gate panel.
+const sitemapUrlCount = (sitemap.match(/<loc>/g) || []).length;
+const status = {
+  generatedAt: new Date().toISOString(),
+  passing: true,
+  checks: [
+    { name: "Catalogue entries", value: String(indexRows.length), pass: indexRows.length >= 10 },
+    { name: "Shelves", value: String(tagRows.length), pass: tagRows.length >= 6 },
+    { name: "Previews wired", value: String(previewSlugs.length), pass: previewSlugs.length === indexRows.length },
+    { name: "Image tags", value: String(imageTags.length), pass: imageTags.length > 0 },
+    { name: "Spec artifacts", value: String(requiredSpecFiles.length), pass: true },
+    { name: "Sitemap URLs", value: String(sitemapUrlCount), pass: sitemapUrlCount >= indexRows.length },
+    { name: "Structured data", value: "JSON-LD", pass: indexHtml.includes("application/ld+json") },
+    { name: "Security headers", value: "CSP meta", pass: indexHtml.includes('http-equiv="Content-Security-Policy"') }
+  ]
+};
+fs.writeFileSync(
+  path.join(root, "store/validator-status.json"),
+  JSON.stringify(status, null, 2) + "\n"
+);
+
 console.log(
   `Validated ${indexRows.length} indexed store entries, ${tagRows.length} shelves, ${previewSlugs.length} previews, ${imageTags.length} image tags.`
 );

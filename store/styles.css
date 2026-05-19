@@ -2125,3 +2125,165 @@ body {
   background: var(--accent-ink);
   border-color: var(--accent-ink);
 }
+
+/* ----- Live deploy gate panel ----- */
+
+.deploy-gate {
+  display: grid;
+  grid-template-columns: minmax(240px, 320px) minmax(0, 1fr);
+  gap: 28px;
+  align-items: start;
+  margin: 56px 0;
+  padding: 28px 0;
+  border-top: 1px solid var(--line-strong);
+  border-bottom: 1px solid var(--line-strong);
+}
+
+.deploy-gate-copy h2 {
+  font-family: Charter, "Iowan Old Style", Georgia, serif;
+  font-size: clamp(1.85rem, 3.2vw, 3rem);
+  font-weight: 700;
+}
+
+.deploy-gate-copy p {
+  margin: 14px 0 0;
+  color: var(--muted);
+  line-height: 1.55;
+}
+
+.deploy-gate-panel {
+  border: 1px solid var(--line-strong);
+  background: var(--surface);
+  padding: 18px 20px 20px;
+  font-variant-numeric: tabular-nums;
+}
+
+.deploy-gate-loading {
+  margin: 0;
+  color: var(--soft);
+  font-weight: 700;
+}
+
+.deploy-gate-header {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px 18px;
+  align-items: baseline;
+  padding-bottom: 14px;
+  border-bottom: 1px solid var(--line);
+}
+
+.deploy-gate-state {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 0.72rem;
+  font-weight: 900;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.deploy-gate-state.pass {
+  color: #15803d;
+}
+
+.deploy-gate-state.fail {
+  color: var(--red);
+}
+
+.deploy-gate-dot {
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  background: currentColor;
+  box-shadow: 0 0 0 0 currentColor;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .deploy-gate-state.pass .deploy-gate-dot {
+    animation: live-pulse 2s var(--ease-out) infinite;
+  }
+}
+
+.deploy-gate-summary {
+  color: var(--ink);
+  font-weight: 900;
+}
+
+.deploy-gate-stamp {
+  margin-left: auto;
+  color: var(--soft);
+  font-size: 0.78rem;
+  font-weight: 700;
+}
+
+.deploy-gate-list {
+  display: grid;
+  gap: 0;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.deploy-gate-list li {
+  display: grid;
+  grid-template-columns: 20px minmax(0, 1fr) auto;
+  gap: 12px;
+  align-items: baseline;
+  padding: 10px 0;
+  border-bottom: 1px solid var(--line);
+}
+
+.deploy-gate-list li:last-child {
+  border-bottom: 0;
+}
+
+.deploy-gate-mark {
+  display: inline-block;
+  width: 18px;
+  height: 18px;
+  text-align: center;
+  line-height: 18px;
+  font-weight: 900;
+}
+
+.deploy-gate-list li.pass .deploy-gate-mark {
+  color: #15803d;
+}
+
+.deploy-gate-list li.fail .deploy-gate-mark {
+  color: var(--red);
+}
+
+.deploy-gate-name {
+  color: var(--ink);
+  font-weight: 700;
+}
+
+.deploy-gate-value {
+  color: var(--soft);
+  font-size: 0.85rem;
+  font-weight: 800;
+}
+
+/* signature mark ornament between sections */
+.signature-row {
+  margin: 56px 0 0;
+  text-align: center;
+}
+
+.signature-mark {
+  display: inline-block;
+  opacity: 0.85;
+}
+
+@media (max-width: 920px) {
+  .deploy-gate {
+    grid-template-columns: 1fr;
+    gap: 18px;
+  }
+
+  .deploy-gate-stamp {
+    margin-left: 0;
+  }
+}

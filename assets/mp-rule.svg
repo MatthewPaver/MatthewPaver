@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 32" role="img" aria-label="Matthew Paver section mark" width="320" height="32">
+  <line x1="0" y1="16" x2="135" y2="16" stroke="#d8d2c8" stroke-width="1"/>
+  <line x1="185" y1="16" x2="320" y2="16" stroke="#d8d2c8" stroke-width="1"/>
+  <rect x="146" y="6" width="28" height="20" rx="3" fill="#d9a441"/>
+  <text x="160" y="21" font-family="'Iowan Old Style', Georgia, serif" font-size="13" font-weight="700" fill="#161411" text-anchor="middle" letter-spacing="0.5">MP</text>
+</svg>

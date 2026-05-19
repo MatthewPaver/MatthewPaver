@@ -36,7 +36,7 @@
 
   <!-- tagline -->
   <text x="80" y="226" font-family="'Iowan Old Style', Georgia, serif" font-size="26" font-weight="400" fill="#57534e" opacity="0">
-    AI products · data systems · analytics
+    I build AI products and the data systems behind them.
     <animate attributeName="opacity" from="0" to="1" dur="0.7s" begin="0.85s" fill="freeze"/>
   </text>
 
