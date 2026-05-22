@@ -21,14 +21,13 @@
 
 ---
 
-## Hiring snapshot
+## Work Snapshot
 
 | | |
 |:---|:---|
-| **Best fit** | Software engineer for AI products, data systems, automation, and analytics tooling |
-| **What I bring** | Product-shaped engineering: ingestion, validation, evals, dashboards, deploy gates, and user-facing workflows |
+| **Focus** | AI products, data systems, automation, and analytics tooling |
+| **Pattern** | Product-shaped engineering: ingestion, validation, evals, dashboards, deploy gates, and user-facing workflows |
 | **Proof to inspect** | [Portfolio Store](https://matthewpaver.github.io/MatthewPaver/store/) · [Inference Brief](https://inferencebrief.co/) · [AI Workflow Evaluator](https://github.com/MatthewPaver/ai-workflow-evaluator) · [Marketing ML Lakehouse](https://github.com/MatthewPaver/marketing-ml-lakehouse) |
-| **Open to** | Product engineering, AI/data tooling, automation, analytics engineering |
 | **Based** | London |
 
 ## Problems I Solve
@@ -81,11 +80,10 @@
 | **Role**     | Software engineer · AI, data, analytics |
 | **Based**    | London |
 | **Shipping** | [Inference Brief](https://inferencebrief.co/) (live, paid) · Happening (private venue-ingestion system) |
-| **Open to**  | Product, data, and automation roles |
 | **Stack**    | Python · TypeScript · FastAPI · Next.js · Postgres / DuckDB · Playwright · GitHub Actions |
 | **Specs**    | [Constitution](.specify/memory/constitution.md) · [Feature spec](specs/001-portfolio-store-reliability/spec.md) · [Validator](scripts/validate-store.mjs) · [Lighthouse CI](.lighthouserc.json) |
 
-## What I Can Do For A Team
+## How I Build
 
 - Build AI/data products that someone can open, inspect, and use.
 - Turn messy source material into repeatable pipelines with validation and failure visibility.
@@ -121,7 +119,7 @@ Every project I publish has this shape: a configured input, an explicit check, a
 - [ProjectLens](https://github.com/MatthewPaver/ProjectLens) — Schedule-risk Flask app: upload, slippage analysis, milestone pressure, Power BI-ready exports<br/><sub><img src="https://img.shields.io/github/last-commit/MatthewPaver/ProjectLens?style=flat-square&label=Last%20commit&color=8f5d12&labelColor=151515" alt="Last commit" /> <img src="https://img.shields.io/github/languages/top/MatthewPaver/ProjectLens?style=flat-square&color=0f766e&labelColor=151515" alt="Top language" /></sub>
 - [AI Workflow Evaluator](https://github.com/MatthewPaver/ai-workflow-evaluator) — Evidence gate for AI-generated outputs: source facts, blocked claims, latency, cost, review, ship/block decision · [demo](https://matthewpaver.github.io/ai-workflow-evaluator/app/)<br/><sub><img src="https://img.shields.io/github/actions/workflow/status/MatthewPaver/ai-workflow-evaluator/validate.yml?style=flat-square&label=CI&color=0f766e&labelColor=151515" alt="AI Workflow Evaluator CI" /> <img src="https://img.shields.io/github/languages/top/MatthewPaver/ai-workflow-evaluator?style=flat-square&color=8f5d12&labelColor=151515" alt="Top language" /></sub>
 
-<sub><strong>Proof standard:</strong> the top public repos are expected to include a run command, tests or checks, demo/sample data where possible, screenshots or previews, architecture notes, and documented limitations.</sub>
+<sub><strong>Project standard:</strong> the top public repos are expected to include a run command, tests or checks, demo/sample data where possible, screenshots or previews, architecture notes, and documented limitations.</sub>
 
 **▸ Analytics handoff**
 
