@@ -224,14 +224,14 @@
     "points": [
       "Uses deterministic rules, so the sample suite runs locally without API keys.",
       "Produces ship, review, or block decisions with evidence notes.",
-      "Includes a static workbench, sample data, tests, and GitHub Actions validation."
+      "Includes baseline deltas, dataset/scorer versions, trace evidence, tests, and GitHub Actions validation."
     ],
     "stack": ["Python", "HTML", "CSS", "JavaScript", "GitHub Actions"],
     "links": [
       { "label": "Open demo", "href": "https://matthewpaver.github.io/ai-workflow-evaluator/app/", "primary": true },
       { "label": "Open repo", "href": "https://github.com/MatthewPaver/ai-workflow-evaluator" }
     ],
-    "note": "A compact public repo that shows how I think about AI product reliability: evidence first, criteria visible, review gates explicit."
+    "note": "A compact public repo that shows how I think about AI product reliability: evidence first, criteria visible, review gates explicit, calibration shown."
   },
   "hr": {
     "kicker": "Public dashboard package",

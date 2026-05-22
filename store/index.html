@@ -2,7 +2,7 @@
 <html lang="en" class="no-js">
   <head>
     <meta charset="utf-8" />
-    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self'; img-src 'self' data:; media-src 'self'; font-src 'self'; connect-src 'self'; base-uri 'self'; form-action 'self'; frame-ancestors 'none'" />
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self'; img-src 'self' data:; media-src 'self'; font-src 'self'; connect-src 'self'; base-uri 'self'; form-action 'self'" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="theme-color" content="#fbfaf7" />
     <title>Matthew Paver Portfolio Store</title>
@@ -562,7 +562,7 @@
           </div>
         </article>
 
-        <article class="app-card image-card" data-slug="ai-evaluator" data-tags="ml product automation" data-status="Runnable evaluator" data-solves="Checks AI workflow outputs" data-shows="Quality gates for LLMs">
+        <article class="app-card image-card" data-slug="ai-evaluator" data-tags="ml product automation" data-status="Runnable evaluator" data-solves="Checks AI output claims" data-shows="Evidence gates for AI outputs">
           <img src="./assets/ai-workflow-evaluator-thumb.svg" width="1200" height="675" loading="lazy" alt="AI Workflow Evaluator product thumbnail" />
           <div class="app-body">
             <div class="app-title-row">
@@ -576,7 +576,7 @@
             <ul class="proof-list">
               <li>Deterministic scoring rules</li>
               <li>Ship, review, or block decisions</li>
-              <li>Workbench dashboard and CI checks</li>
+              <li>Versioned dataset, baseline, and CI checks</li>
             </ul>
             <div class="repo-confidence" aria-label="Public repo signals">
               <span>Open repo</span><span>Run locally</span><span>Tests</span>
@@ -726,6 +726,36 @@
           </div>
         </div>
         <a class="text-link" href="./preview.html?app=happening">Open Happening preview</a>
+      </section>
+
+      <section class="featured-build public-build" aria-labelledby="public-build-heading">
+        <div class="featured-build-copy">
+          <p class="eyebrow">Featured public build</p>
+          <h2 id="public-build-heading">AI Workflow Evaluator: stop polished AI copy from overclaiming.</h2>
+          <p>
+            A small, runnable workbench that checks generated summaries against source evidence,
+            blocked claims, cost, latency, review status, and labelled expectations.
+          </p>
+        </div>
+        <div class="story-steps" aria-label="AI Workflow Evaluator story">
+          <div>
+            <span>Problem</span>
+            <strong>AI outputs can sound ready while missing facts or claiming more than the sources support.</strong>
+          </div>
+          <div>
+            <span>Decision</span>
+            <strong>Use deterministic scorers first: facts, sources, blocked claims, thresholds, and review state.</strong>
+          </div>
+          <div>
+            <span>Proof</span>
+            <strong>Portfolio grounding suite catches a recommender overclaim and reports calibration against labelled cases.</strong>
+          </div>
+          <div>
+            <span>Lesson</span>
+            <strong>Good AI product work needs visible gates, not just better prompts.</strong>
+          </div>
+        </div>
+        <a class="text-link" href="./preview.html?app=ai-evaluator">Open evaluator preview</a>
       </section>
 
       <section class="deploy-gate" aria-labelledby="deploy-gate-heading">
