@@ -16,6 +16,7 @@ Each case study is deliberately short: problem, goal, what I built, architecture
 |:---|:---|
 | [Featured Build: Happening](#featured-build-happening) | Reliable ingestion from fragmented public web sources |
 | [Inference Brief](#inference-brief) | Live AI product plus publishing workflow |
+| [AI Workflow Evaluator](#ai-workflow-evaluator) | Evidence gates for AI-generated outputs |
 | [AI Study Companion](#ai-study-companion) | Document AI, async jobs, and adaptive learning loops |
 | [Smart Job Market Intelligence](#smart-job-market-intelligence) | Repeatable market intelligence product from scraped listings |
 
@@ -172,6 +173,54 @@ flowchart LR
 
 ---
 
+## AI Workflow Evaluator
+
+**Type:** Public repo
+**Problem:** AI-generated summaries can sound polished while quietly overclaiming, missing required facts, citing weak evidence, or skipping review. Generic "looks good" checks are not enough when the output is going into a product, portfolio, or operational workflow.
+
+**Goal:** Build a small, runnable evidence gate that turns subjective review into a repeatable `ship`, `review`, or `block` decision.
+
+### What I Built
+
+- Deterministic scoring for required facts, source grounding, blocked claims, latency, cost, and review status
+- Dataset and scorer version metadata in every report
+- Baseline deltas so a run can be compared against the previous accepted state
+- Trace-level explanations for why an output shipped, needs review, or was blocked
+- A portfolio-grounding suite that checks repo summary copy against README-style evidence
+- Static dashboard, tests, CI, and GitHub Pages demo
+
+### Before / After Proof
+
+| Stage | Example |
+|:---|:---|
+| **Before** | "This is a deployed dating-app recommender used in production with online feedback loops." |
+| **Evaluator catches** | Forbidden claims: `deployed dating-app recommender`, `used in production`, `online feedback loops`; missing evidence for production usage; weak grounding against the source notes |
+| **After** | "Offline recommendation exercise using swipe-style implicit feedback, temporal holdouts, and Top-K metrics." |
+
+### Architecture
+
+```mermaid
+flowchart LR
+    A["Logged AI output"] --> B["Expected facts"]
+    A --> C["Forbidden claims"]
+    A --> D["Source evidence"]
+    B --> E["Deterministic scorers"]
+    C --> E
+    D --> E
+    E --> F["Trace evidence"]
+    E --> G["Ship / review / block"]
+    G --> H["Static workbench"]
+```
+
+**Tradeoffs:** deterministic checks are narrower than semantic evals or LLM-as-judge workflows, but they are cheap, reproducible, easy to inspect, and useful when the expected evidence is known. Production use would still need auth, trace storage, provider telemetry, and human review workflows.
+
+**Engineering signal:** evaluation discipline, not just prompt writing. The project shows how I think about AI reliability: evidence first, visible criteria, labelled expectations, and explicit limitations.
+
+**Stack:** `Python` `HTML` `CSS` `JavaScript` `GitHub Actions`
+[Repo](https://github.com/MatthewPaver/ai-workflow-evaluator) · [Live demo](https://matthewpaver.github.io/ai-workflow-evaluator/app/)
+
+---
+
 ## Public Portfolio Notes
 
 Public repositories provide runnable proof across the same themes:
@@ -180,6 +229,7 @@ Public repositories provide runnable proof across the same themes:
 |:---|:---|
 | [Marketing ML Lakehouse](https://github.com/MatthewPaver/marketing-ml-lakehouse) | Data engineering + ML workflow |
 | [ProjectLens](https://github.com/MatthewPaver/ProjectLens) | Analytics application + project-risk reporting |
+| [AI Workflow Evaluator](https://github.com/MatthewPaver/ai-workflow-evaluator) | AI reliability + deterministic eval workbench |
 | [Architexa](https://github.com/MatthewPaver/Architexa) | Model training + image generation + API integration |
 | [Dating App Recommendation System](https://github.com/MatthewPaver/dating-app-recommendation-system) | Practical recommendation modelling |
 | [Sentence Similarity Analysis](https://github.com/MatthewPaver/sentence-similarity-analysis) | Embedding-based retrieval patterns |

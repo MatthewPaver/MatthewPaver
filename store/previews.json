@@ -229,7 +229,8 @@
     "stack": ["Python", "HTML", "CSS", "JavaScript", "GitHub Actions"],
     "links": [
       { "label": "Open demo", "href": "https://matthewpaver.github.io/ai-workflow-evaluator/app/", "primary": true },
-      { "label": "Open repo", "href": "https://github.com/MatthewPaver/ai-workflow-evaluator" }
+      { "label": "Open repo", "href": "https://github.com/MatthewPaver/ai-workflow-evaluator" },
+      { "label": "Read case study", "href": "https://github.com/MatthewPaver/MatthewPaver/blob/main/CASE_STUDIES.md#ai-workflow-evaluator" }
     ],
     "note": "A compact public repo that shows how I think about AI product reliability: evidence first, criteria visible, review gates explicit, calibration shown."
   },
