@@ -93,7 +93,7 @@ Every project I publish has this shape: a configured input, an explicit check, a
 
 - [Marketing ML Lakehouse](https://github.com/MatthewPaver/marketing-ml-lakehouse) — Bronze/silver/gold DuckDB flow, XGBoost training, data-quality checks, Streamlit dashboard<br/><sub><img src="https://img.shields.io/github/last-commit/MatthewPaver/marketing-ml-lakehouse?style=flat-square&label=Last%20commit&color=8f5d12&labelColor=151515" alt="Last commit" /> <img src="https://img.shields.io/github/languages/top/MatthewPaver/marketing-ml-lakehouse?style=flat-square&color=0f766e&labelColor=151515" alt="Top language" /></sub>
 - [ProjectLens](https://github.com/MatthewPaver/ProjectLens) — Schedule-risk Flask app: upload, slippage analysis, milestone pressure, Power BI-ready exports<br/><sub><img src="https://img.shields.io/github/last-commit/MatthewPaver/ProjectLens?style=flat-square&label=Last%20commit&color=8f5d12&labelColor=151515" alt="Last commit" /> <img src="https://img.shields.io/github/languages/top/MatthewPaver/ProjectLens?style=flat-square&color=0f766e&labelColor=151515" alt="Top language" /></sub>
-- [AI Workflow Evaluator](https://github.com/MatthewPaver/ai-workflow-evaluator) — Runnable quality gate for LLM outputs: accuracy, grounding, hallucination risk, latency, cost, review · [demo](https://matthewpaver.github.io/ai-workflow-evaluator/app/)<br/><sub><img src="https://img.shields.io/github/actions/workflow/status/MatthewPaver/ai-workflow-evaluator/validate.yml?style=flat-square&label=CI&color=0f766e&labelColor=151515" alt="AI Workflow Evaluator CI" /> <img src="https://img.shields.io/github/languages/top/MatthewPaver/ai-workflow-evaluator?style=flat-square&color=8f5d12&labelColor=151515" alt="Top language" /></sub>
+- [AI Workflow Evaluator](https://github.com/MatthewPaver/ai-workflow-evaluator) — Evidence gate for AI-generated outputs: source facts, blocked claims, latency, cost, review, ship/block decision · [demo](https://matthewpaver.github.io/ai-workflow-evaluator/app/)<br/><sub><img src="https://img.shields.io/github/actions/workflow/status/MatthewPaver/ai-workflow-evaluator/validate.yml?style=flat-square&label=CI&color=0f766e&labelColor=151515" alt="AI Workflow Evaluator CI" /> <img src="https://img.shields.io/github/languages/top/MatthewPaver/ai-workflow-evaluator?style=flat-square&color=8f5d12&labelColor=151515" alt="Top language" /></sub>
 
 **▸ Analytics handoff**
 
@@ -116,7 +116,7 @@ Every project I publish has this shape: a configured input, an explicit check, a
 
 | When | What |
 |:---|:---|
-| **2026-05** | AI Workflow Evaluator — local quality gate for LLM outputs with dashboard, tests, and CI |
+| **2026-05** | AI Workflow Evaluator — evidence gate for AI-generated outputs with dashboard, tests, and CI |
 | **2026-05** | Spec-driven portfolio governance: constitution, validator, Lighthouse CI, JSON-LD, manifest, CSP, custom OG card |
 | **2026-04** | Inference Brief — accounts, paid subscriptions, bookmarks, reading history |
 | **2026-03** | Happening — 167-test reliability suite, 103 venue source configs |

@@ -214,24 +214,24 @@
   "ai-evaluator": {
     "kicker": "Public evaluator app",
     "title": "AI Workflow Evaluator",
-    "summary": "A runnable quality gate for testing LLM workflow outputs before they reach users.",
+    "summary": "A small evidence gate that decides whether AI-generated output can ship, needs review, or should be blocked.",
     "image": "./assets/ai-workflow-evaluator-thumb.svg",
     "imageAlt": "AI Workflow Evaluator product thumbnail",
     "role": "LLM evaluation tooling",
     "status": "Public",
     "focus": "Output quality gates",
-    "problem": "LLM workflows need more than a nice answer. This project turns logged outputs into repeatable checks for accuracy, hallucination risk, source grounding, latency, cost, and human review status.",
+    "problem": "AI-generated summaries and recommendations can sound polished while quietly overclaiming. This project checks each output against source evidence, required facts, blocked claims, latency, cost, and review status.",
     "points": [
       "Uses deterministic rules, so the sample suite runs locally without API keys.",
       "Produces ship, review, or block decisions with evidence notes.",
-      "Includes a static dashboard, sample data, tests, and GitHub Actions validation."
+      "Includes a static workbench, sample data, tests, and GitHub Actions validation."
     ],
     "stack": ["Python", "HTML", "CSS", "JavaScript", "GitHub Actions"],
     "links": [
       { "label": "Open demo", "href": "https://matthewpaver.github.io/ai-workflow-evaluator/app/", "primary": true },
       { "label": "Open repo", "href": "https://github.com/MatthewPaver/ai-workflow-evaluator" }
     ],
-    "note": "A compact public repo that shows how I think about AI product reliability: criteria first, evidence visible, review gates explicit."
+    "note": "A compact public repo that shows how I think about AI product reliability: evidence first, criteria visible, review gates explicit."
   },
   "hr": {
     "kicker": "Public dashboard package",
