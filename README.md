@@ -13,7 +13,7 @@
 <p align="center">
   <img src="https://img.shields.io/github/actions/workflow/status/MatthewPaver/MatthewPaver/pages.yml?label=Pages%20deploy&style=flat-square&color=0f766e&labelColor=151515" alt="Pages deploy status" />
   <img src="https://img.shields.io/github/last-commit/MatthewPaver/MatthewPaver?label=Last%20commit&style=flat-square&color=8f5d12&labelColor=151515" alt="Last commit" />
-  <img src="https://img.shields.io/badge/Projects-13-151515?style=flat-square&labelColor=151515&color=0f766e" alt="13 projects" />
+  <img src="https://img.shields.io/badge/Projects-14-151515?style=flat-square&labelColor=151515&color=0f766e" alt="14 projects" />
   <img src="https://img.shields.io/badge/Live_paid_product-1-151515?style=flat-square&labelColor=151515&color=16a34a" alt="1 live paid product" />
   <img src="https://img.shields.io/badge/Configured_sources-103-151515?style=flat-square&labelColor=151515&color=8f5d12" alt="103 configured sources" />
   <img src="https://img.shields.io/badge/Reliability_tests-167-151515?style=flat-square&labelColor=151515&color=9f3a2f" alt="167 reliability tests" />
@@ -93,6 +93,7 @@ Every project I publish has this shape: a configured input, an explicit check, a
 
 - [Marketing ML Lakehouse](https://github.com/MatthewPaver/marketing-ml-lakehouse) — Bronze/silver/gold DuckDB flow, XGBoost training, data-quality checks, Streamlit dashboard<br/><sub><img src="https://img.shields.io/github/last-commit/MatthewPaver/marketing-ml-lakehouse?style=flat-square&label=Last%20commit&color=8f5d12&labelColor=151515" alt="Last commit" /> <img src="https://img.shields.io/github/languages/top/MatthewPaver/marketing-ml-lakehouse?style=flat-square&color=0f766e&labelColor=151515" alt="Top language" /></sub>
 - [ProjectLens](https://github.com/MatthewPaver/ProjectLens) — Schedule-risk Flask app: upload, slippage analysis, milestone pressure, Power BI-ready exports<br/><sub><img src="https://img.shields.io/github/last-commit/MatthewPaver/ProjectLens?style=flat-square&label=Last%20commit&color=8f5d12&labelColor=151515" alt="Last commit" /> <img src="https://img.shields.io/github/languages/top/MatthewPaver/ProjectLens?style=flat-square&color=0f766e&labelColor=151515" alt="Top language" /></sub>
+- [AI Workflow Evaluator](https://github.com/MatthewPaver/ai-workflow-evaluator) — Runnable quality gate for LLM outputs: accuracy, grounding, hallucination risk, latency, cost, review<br/><sub><img src="https://img.shields.io/github/actions/workflow/status/MatthewPaver/ai-workflow-evaluator/validate.yml?style=flat-square&label=CI&color=0f766e&labelColor=151515" alt="AI Workflow Evaluator CI" /> <img src="https://img.shields.io/github/languages/top/MatthewPaver/ai-workflow-evaluator?style=flat-square&color=8f5d12&labelColor=151515" alt="Top language" /></sub>
 
 **▸ Analytics handoff**
 
@@ -115,6 +116,7 @@ Every project I publish has this shape: a configured input, an explicit check, a
 
 | When | What |
 |:---|:---|
+| **2026-05** | AI Workflow Evaluator — local quality gate for LLM outputs with dashboard, tests, and CI |
 | **2026-05** | Spec-driven portfolio governance: constitution, validator, Lighthouse CI, JSON-LD, manifest, CSP, custom OG card |
 | **2026-04** | Inference Brief — accounts, paid subscriptions, bookmarks, reading history |
 | **2026-03** | Happening — 167-test reliability suite, 103 venue source configs |

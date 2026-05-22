@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="675" viewBox="0 0 1200 675" role="img" aria-labelledby="title desc">
+  <title id="title">AI Workflow Evaluator thumbnail</title>
+  <desc id="desc">A premium thumbnail for an AI workflow evaluation dashboard with quality gates and risk scores.</desc>
+  <rect width="1200" height="675" fill="#f7f4ee"/>
+  <path d="M0 84h1200M0 168h1200M0 252h1200M0 336h1200M0 420h1200M0 504h1200M0 588h1200M120 0v675M240 0v675M360 0v675M480 0v675M600 0v675M720 0v675M840 0v675M960 0v675M1080 0v675" stroke="#e3ddd1" stroke-width="1.5"/>
+  <rect x="72" y="72" width="1056" height="531" fill="#fffefa" stroke="#151412" stroke-width="3"/>
+  <text x="112" y="138" fill="#b84f31" font-family="Arial, sans-serif" font-size="20" font-weight="800" letter-spacing="2">LLM QUALITY GATE</text>
+  <text x="112" y="218" fill="#151412" font-family="Arial, sans-serif" font-size="62" font-weight="900">AI Workflow Evaluator</text>
+  <text x="112" y="266" fill="#5f625c" font-family="Arial, sans-serif" font-size="24">Accuracy · grounding · hallucination risk · latency · cost · review</text>
+  <rect x="112" y="332" width="278" height="158" fill="#fbf8f1" stroke="#ded8cb" stroke-width="2"/>
+  <rect x="426" y="332" width="278" height="158" fill="#fbf8f1" stroke="#ded8cb" stroke-width="2"/>
+  <rect x="740" y="332" width="278" height="158" fill="#fbf8f1" stroke="#ded8cb" stroke-width="2"/>
+  <rect x="132" y="356" width="68" height="30" fill="#167351"/>
+  <text x="146" y="377" fill="#fffefa" font-family="Arial, sans-serif" font-size="14" font-weight="800">SHIP</text>
+  <text x="132" y="426" fill="#151412" font-family="Arial, sans-serif" font-size="28" font-weight="800">News brief</text>
+  <rect x="132" y="452" width="210" height="12" fill="#ebe4d8"/>
+  <rect x="132" y="452" width="210" height="12" fill="#0c6f66"/>
+  <rect x="446" y="356" width="92" height="30" fill="#b97800"/>
+  <text x="462" y="377" fill="#fffefa" font-family="Arial, sans-serif" font-size="14" font-weight="800">REVIEW</text>
+  <text x="446" y="426" fill="#151412" font-family="Arial, sans-serif" font-size="28" font-weight="800">Budget rec</text>
+  <rect x="446" y="452" width="210" height="12" fill="#ebe4d8"/>
+  <rect x="446" y="452" width="154" height="12" fill="#0c6f66"/>
+  <rect x="760" y="356" width="74" height="30" fill="#a6342f"/>
+  <text x="775" y="377" fill="#fffefa" font-family="Arial, sans-serif" font-size="14" font-weight="800">BLOCK</text>
+  <text x="760" y="426" fill="#151412" font-family="Arial, sans-serif" font-size="28" font-weight="800">Policy QA</text>
+  <rect x="760" y="452" width="210" height="12" fill="#ebe4d8"/>
+  <rect x="760" y="452" width="89" height="12" fill="#0c6f66"/>
+  <circle cx="1028" cy="188" r="70" fill="#e7dfd2"/>
+  <path d="M1028 118a70 70 0 1 1-55 113" fill="none" stroke="#0c6f66" stroke-width="16"/>
+  <circle cx="1028" cy="188" r="46" fill="#fffefa"/>
+  <text x="988" y="200" fill="#151412" font-family="Arial, sans-serif" font-size="30" font-weight="900">85%</text>
+</svg>

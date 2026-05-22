@@ -211,6 +211,27 @@
     ],
     "note": "This preview is about evaluation discipline: how the recommender is tested matters as much as the model choice."
   },
+  "ai-evaluator": {
+    "kicker": "Public evaluator app",
+    "title": "AI Workflow Evaluator",
+    "summary": "A runnable quality gate for testing LLM workflow outputs before they reach users.",
+    "image": "./assets/ai-workflow-evaluator-thumb.svg",
+    "imageAlt": "AI Workflow Evaluator product thumbnail",
+    "role": "LLM evaluation tooling",
+    "status": "Public",
+    "focus": "Output quality gates",
+    "problem": "LLM workflows need more than a nice answer. This project turns logged outputs into repeatable checks for accuracy, hallucination risk, source grounding, latency, cost, and human review status.",
+    "points": [
+      "Uses deterministic rules, so the sample suite runs locally without API keys.",
+      "Produces ship, review, or block decisions with evidence notes.",
+      "Includes a static dashboard, sample data, tests, and GitHub Actions validation."
+    ],
+    "stack": ["Python", "HTML", "CSS", "JavaScript", "GitHub Actions"],
+    "links": [
+      { "label": "Open repo", "href": "https://github.com/MatthewPaver/ai-workflow-evaluator", "primary": true }
+    ],
+    "note": "A compact public repo that shows how I think about AI product reliability: criteria first, evidence visible, review gates explicit."
+  },
   "hr": {
     "kicker": "Public dashboard package",
     "title": "HR Performance Analytics",
