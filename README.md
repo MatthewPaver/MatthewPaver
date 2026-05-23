@@ -25,8 +25,8 @@
 
 | | |
 |:---|:---|
-| **Focus** | AI products, data systems, automation, and analytics tooling |
-| **Pattern** | Product-shaped engineering: ingestion, validation, evals, dashboards, deploy gates, and user-facing workflows |
+| **Focus** | Automation, AI products, data systems, and analytics tooling |
+| **Pattern** | Practical workflow systems: ingest, clean, automate, check, and package the result |
 | **Proof to inspect** | [Portfolio Store](https://matthewpaver.github.io/MatthewPaver/store/) · [Inference Brief](https://inferencebrief.co/) · [AI Workflow Evaluator](https://github.com/MatthewPaver/ai-workflow-evaluator) · [Marketing ML Lakehouse](https://github.com/MatthewPaver/marketing-ml-lakehouse) |
 | **Based** | London |
 
@@ -34,10 +34,10 @@
 
 | Problem | How I approach it | Proof |
 |:---|:---|:---|
+| Repetitive workflow needs automating | Turn manual steps into scheduled jobs, checks, dashboards, and handoff paths | [Happening case study](CASE_STUDIES.md#featured-build-happening) |
 | AI output needs trust | Add evidence checks, blocked-claim rules, calibration, and human review gates | [AI Workflow Evaluator](https://github.com/MatthewPaver/ai-workflow-evaluator) |
 | Public data is messy | Turn source-specific behaviour into configured ingestion, validation, and tests | [Happening case study](CASE_STUDIES.md#featured-build-happening) |
 | Analytics needs to be usable | Package analysis into apps, dashboards, exports, and handoff notes | [ProjectLens](https://github.com/MatthewPaver/ProjectLens) · [HR Analytics](https://github.com/MatthewPaver/hr-performance-dashboards) |
-| ML demos need evaluation | Make the split, metric, limitation, and run path visible | [Recommendation system](https://github.com/MatthewPaver/dating-app-recommendation-system) |
 
 ## Featured products
 
@@ -77,7 +77,7 @@
 
 | | |
 |:---|:---|
-| **Role**     | Software engineer · AI, data, analytics |
+| **Role**     | Software engineer · automation specialist · AI, data, analytics |
 | **Based**    | London |
 | **Shipping** | [Inference Brief](https://inferencebrief.co/) (live, paid) · Happening (private venue-ingestion system) |
 | **Stack**    | Python · TypeScript · FastAPI · Next.js · Postgres / DuckDB · Playwright · GitHub Actions |
@@ -85,10 +85,10 @@
 
 ## How I Build
 
-- Build AI/data products that someone can open, inspect, and use.
-- Turn messy source material into repeatable pipelines with validation and failure visibility.
-- Add evaluation, tests, CI, and deploy gates around workflows that would otherwise drift.
-- Package technical work for review: screenshots, demo data, run commands, architecture notes, and limitations.
+- Start with the workflow: what is manual, slow, repeated, or hard to check.
+- Automate the repeatable parts, then add checks so failures are visible.
+- Package the result as something inspectable: dashboard, report, app, export, or runbook.
+- Keep limitations visible so the work is useful without being oversold.
 
 ## How the work flows
 
