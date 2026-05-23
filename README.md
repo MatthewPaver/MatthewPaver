@@ -129,7 +129,7 @@ npm test
 npm run audit:portfolio
 ```
 
-[Latest audit report](PORTFOLIO_AUDIT.md) | [App ideas backlog](APP_IDEAS.md)
+[Latest audit report](PORTFOLIO_AUDIT.md) | [App ideas backlog](APP_IDEAS.md) | [Portfolio wiki](wiki/index.md)
 
 ## GitHub signals
 

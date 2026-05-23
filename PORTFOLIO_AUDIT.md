@@ -17,12 +17,21 @@ This report is produced by deterministic portfolio review passes. It is designed
 | Catalogue agent | Checks store/card/preview consistency. |
 | Repo packaging agent | Checks whether public projects are presented with confidence. |
 | Ideas agent | Keeps a small backlog of portfolio-grade next builds. |
+| Karpathy wiki agent | Checks source/wiki separation, compiled pages, index, and maintenance log. |
 
 ## Benchmark Notes
 
 - Awesome GitHub Profile README: https://github.com/abhisheknaiidu/awesome-github-profile-readme - Breadth of profile README patterns and what to avoid when the page becomes badge-heavy.
 - Best GitHub Profile README: https://github.com/maxontech/best-github-profile-readme - Visual inspiration, layout variety, and quick comparison against strong profile pages.
 - Creative Profile README: https://coderjojo.github.io/creative-profile-readme/ - Examples of memorable profile treatments without copying a template.
+
+Karpathy wiki-pattern principles used by the audit:
+
+- Keep raw/source material separate from the maintained wiki layer.
+- Compile knowledge into durable Markdown pages instead of rediscovering it at query time.
+- Cross-link pages so projects, decisions, and quality gates can compound.
+- Maintain an index and operation log so future edits have context.
+- Use a schema or rules file to define what the wiki owns and how it should be updated.
 
 ## Findings
 

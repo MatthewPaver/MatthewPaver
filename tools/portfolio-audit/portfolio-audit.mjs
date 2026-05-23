@@ -247,6 +247,56 @@ function inspectAppIdeas(findings) {
   }
 }
 
+function inspectWikiPattern(findings) {
+  const requiredWikiFiles = [
+    "wiki/README.md",
+    "wiki/index.md",
+    "wiki/log.md",
+    "wiki/raw/source-register.md",
+    "wiki/pages/portfolio-system.md",
+    "wiki/pages/project-catalogue.md",
+    "wiki/pages/quality-gates.md"
+  ];
+
+  for (const file of requiredWikiFiles) {
+    if (!exists(file)) {
+      addFinding(findings, "Karpathy wiki agent", "medium", `Missing wiki-pattern file: ${file}.`, "Keep raw sources, compiled wiki pages, index, and log in the repo.");
+    }
+  }
+
+  if (!requiredWikiFiles.every(exists)) return;
+
+  const schema = readFile("wiki/README.md");
+  const index = readFile("wiki/index.md");
+  const log = readFile("wiki/log.md");
+  const sourceRegister = readFile("wiki/raw/source-register.md");
+  const pageFiles = requiredWikiFiles.filter((file) => file.startsWith("wiki/pages/"));
+
+  for (const principle of benchmarks.wikiPatternPrinciples) {
+    const keyword = principle.split(" ")[1]?.toLowerCase();
+    if (keyword && !schema.toLowerCase().includes(keyword)) {
+      addFinding(findings, "Karpathy wiki agent", "low", `Wiki schema may not explicitly cover: ${principle}`, "Keep the wiki README as the schema for source, compile, index, and log rules.");
+    }
+  }
+
+  for (const file of pageFiles) {
+    const link = file.replace("wiki/", "");
+    if (!index.includes(link)) {
+      addFinding(findings, "Karpathy wiki agent", "medium", `wiki/index.md does not link to ${file}.`, "Keep the wiki index as the entry point for every compiled page.");
+    }
+  }
+
+  for (const source of ["README.md", "store/app-index.csv", "store/previews.json", "CASE_STUDIES.md", "Projects.md"]) {
+    if (!sourceRegister.includes(source)) {
+      addFinding(findings, "Karpathy wiki agent", "low", `Source register does not mention ${source}.`, "List canonical source files in wiki/raw/source-register.md.");
+    }
+  }
+
+  if (!log.includes("Portfolio audit agents") && !log.includes("Karpathy")) {
+    addFinding(findings, "Karpathy wiki agent", "low", "wiki/log.md does not record the current portfolio-audit/wiki pass.", "Record notable ingest and maintenance passes in wiki/log.md.");
+  }
+}
+
 function renderReport(findings, rows) {
   const ordered = [...findings].sort((a, b) => severityWeight(a.severity) - severityWeight(b.severity));
   const byAgent = Map.groupBy ? Map.groupBy(ordered, (finding) => finding.agent) : groupByAgent(ordered);
@@ -272,10 +322,15 @@ function renderReport(findings, rows) {
     "| Catalogue agent | Checks store/card/preview consistency. |",
     "| Repo packaging agent | Checks whether public projects are presented with confidence. |",
     "| Ideas agent | Keeps a small backlog of portfolio-grade next builds. |",
+    "| Karpathy wiki agent | Checks source/wiki separation, compiled pages, index, and maintenance log. |",
     "",
     "## Benchmark Notes",
     "",
     ...benchmarks.profileCollections.map((item) => `- ${item.name}: ${item.url} - ${item.useFor}`),
+    "",
+    "Karpathy wiki-pattern principles used by the audit:",
+    "",
+    ...benchmarks.wikiPatternPrinciples.map((principle) => `- ${principle}`),
     "",
     "## Findings",
     ""
@@ -344,6 +399,7 @@ inspectReadme(readme, findings);
 inspectStore(indexHtml, rows, previews, findings);
 inspectRepoPackaging(rows, findings);
 inspectAppIdeas(findings);
+inspectWikiPattern(findings);
 
 const report = renderReport(findings, rows);
 fs.writeFileSync(outputPath, report);

@@ -24,6 +24,13 @@
     "Separate flagship work from archive work.",
     "Make public repos runnable enough to support the visual polish."
   ],
+  "wikiPatternPrinciples": [
+    "Keep raw/source material separate from the maintained wiki layer.",
+    "Compile knowledge into durable Markdown pages instead of rediscovering it at query time.",
+    "Cross-link pages so projects, decisions, and quality gates can compound.",
+    "Maintain an index and operation log so future edits have context.",
+    "Use a schema or rules file to define what the wiki owns and how it should be updated."
+  ],
   "slopPhrases": [
     "enterprise-grade",
     "unlock insights",
