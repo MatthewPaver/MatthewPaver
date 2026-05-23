@@ -264,7 +264,7 @@ const tasks = readFile(`${specDirectory}/tasks.md`);
 const uncheckedTasks = [...tasks.matchAll(/^- \[ \] /gm)];
 assert(uncheckedTasks.length === 0, "Spec task list contains unchecked tasks");
 
-// Emit a small JSON status file the store reads to render a live deploy-gate panel.
+// Emit a small JSON status file for build tooling and future diagnostics.
 const sitemapUrlCount = (sitemap.match(/<loc>/g) || []).length;
 const status = {
   generatedAt: new Date().toISOString(),

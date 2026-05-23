@@ -189,7 +189,7 @@ flowchart LR
 - A portfolio-grounding suite that checks repo summary copy against README-style evidence
 - Static dashboard, tests, CI, and GitHub Pages demo
 
-### Before / After Proof
+### Before / After
 
 | Stage | Example |
 |:---|:---|
@@ -223,7 +223,7 @@ flowchart LR
 
 ## Public Portfolio Notes
 
-Public repositories provide runnable proof across the same themes:
+Public repositories back up the same themes:
 
 | Repo | Portfolio role |
 |:---|:---|

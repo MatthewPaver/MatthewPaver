@@ -26,7 +26,7 @@
     <img src="store/assets/inference-preview.gif" alt="Inference Brief — live demo" />
   </a>
   <h3>Inference Brief <sub>· <a href="https://inferencebrief.co/">live</a></sub></h3>
-  <p>An AI-news reader with paid subscriptions. Source collection, scoring, summaries, issues, bookmarks, and reading history.</p>
+  <p>A live AI-news reader with accounts, paid subscriptions, bookmarks, reading history, and a publishing flow behind it.</p>
   <p><code>Next.js</code> <code>TypeScript</code> <code>Supabase</code> <code>Python</code> <code>Stripe</code></p>
   <p><a href="https://matthewpaver.github.io/MatthewPaver/store/preview.html?app=inference">Preview ↗</a> · <a href="https://inferencebrief.co/">Open product ↗</a> · <a href="CASE_STUDIES.md#inference-brief">Case study ↗</a></p>
 </td>
@@ -35,7 +35,7 @@
     <img src="store/assets/happening-preview.gif" alt="Happening — venue ingestion demo" />
   </a>
   <h3>Happening <sub>· private</sub></h3>
-  <p>Turns 103 inconsistent venue pages into structured event data. 167-test reliability suite, scheduled daily runs.</p>
+  <p>Venue pages turned into structured event data, with source configs, scheduled runs, and a 167-test reliability suite.</p>
   <p><code>Python</code> <code>Playwright</code> <code>SQLite</code> <code>Pydantic</code> <code>GitHub Actions</code></p>
   <p><a href="https://matthewpaver.github.io/MatthewPaver/store/preview.html?app=happening">Preview ↗</a> · <a href="CASE_STUDIES.md#featured-build-happening">Case study ↗</a></p>
 </td>
@@ -61,7 +61,7 @@
 | **Stack**    | Python · TypeScript · FastAPI · Next.js · Postgres / DuckDB · Playwright · GitHub Actions |
 | **Specs**    | [Constitution](.specify/memory/constitution.md) · [Feature spec](specs/001-portfolio-store-reliability/spec.md) · [Validator](scripts/validate-store.mjs) · [Lighthouse CI](.lighthouserc.json) |
 
-## How the work flows
+## Build Pattern
 
 ```mermaid
 flowchart LR
@@ -74,7 +74,7 @@ flowchart LR
     F -->|pass| G[Shipped]
 ```
 
-Every project I publish has this shape: a configured input, an explicit check, an artifact that can be opened, and a deploy gate that refuses drift. The [portfolio store](https://matthewpaver.github.io/MatthewPaver/store/) runs on that loop — Spec Kit constitution, validator, Lighthouse CI gates, no framework, no build system.
+The pattern is practical: get the data in, clean it, check it, and turn it into something that can be opened. The [portfolio store](https://matthewpaver.github.io/MatthewPaver/store/) follows the same habit: indexed catalogue, validator, Lighthouse CI, no framework, no build step.
 
 <p align="center"><img src="assets/mp-rule.svg" alt="" width="320" height="32" /></p>
 
@@ -90,7 +90,7 @@ Every project I publish has this shape: a configured input, an explicit check, a
 - [ProjectLens](https://github.com/MatthewPaver/ProjectLens) — Schedule-risk Flask app: upload, slippage analysis, milestone pressure, Power BI-ready exports<br/><sub><img src="https://img.shields.io/github/last-commit/MatthewPaver/ProjectLens?style=flat-square&label=Last%20commit&color=8f5d12&labelColor=151515" alt="Last commit" /> <img src="https://img.shields.io/github/languages/top/MatthewPaver/ProjectLens?style=flat-square&color=0f766e&labelColor=151515" alt="Top language" /></sub>
 - [AI Workflow Evaluator](https://github.com/MatthewPaver/ai-workflow-evaluator) — Evidence gate for AI-generated outputs: source facts, blocked claims, latency, cost, review, ship/block decision · [demo](https://matthewpaver.github.io/ai-workflow-evaluator/app/)<br/><sub><img src="https://img.shields.io/github/actions/workflow/status/MatthewPaver/ai-workflow-evaluator/validate.yml?style=flat-square&label=CI&color=0f766e&labelColor=151515" alt="AI Workflow Evaluator CI" /> <img src="https://img.shields.io/github/languages/top/MatthewPaver/ai-workflow-evaluator?style=flat-square&color=8f5d12&labelColor=151515" alt="Top language" /></sub>
 
-<sub><strong>Project standard:</strong> the top public repos are expected to include a run command, tests or checks, demo/sample data where possible, screenshots or previews, architecture notes, and documented limitations.</sub>
+<sub><strong>Repo standard:</strong> run command, tests or checks, demo/sample data where possible, screenshots, architecture notes, and limitations.</sub>
 
 **▸ Analytics handoff**
 
@@ -179,5 +179,5 @@ _This section is automatically refreshed by GitHub Actions._
 <p align="center"><img src="assets/mp-rule.svg" alt="" width="320" height="32" /></p>
 
 <p align="center">
-  <sub>Hand-built. Spec-driven. Deploy gated. — <a href="https://github.com/MatthewPaver/MatthewPaver">github.com/MatthewPaver</a></sub>
+  <sub>Built and maintained by Matthew Paver — <a href="https://github.com/MatthewPaver/MatthewPaver">github.com/MatthewPaver</a></sub>
 </p>

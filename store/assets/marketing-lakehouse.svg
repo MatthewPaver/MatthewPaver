@@ -5,7 +5,7 @@
   <circle cx="1040" cy="30" r="260" fill="#0D6F5F" fill-opacity="0.16"/>
   <circle cx="120" cy="670" r="260" fill="#D9A441" fill-opacity="0.18"/>
   <text x="70" y="88" font-family="Arial, Helvetica, sans-serif" font-size="18" font-weight="900" letter-spacing="5" fill="#AD3F32">MARKETING ML LAKEHOUSE</text>
-  <text x="70" y="150" font-family="Georgia, serif" font-size="58" font-weight="700" fill="#161411">Local analytics stack with ML proof</text>
+  <text x="70" y="150" font-family="Georgia, serif" font-size="58" font-weight="700" fill="#161411">Local analytics stack with ML</text>
   <text x="72" y="192" font-family="Arial, Helvetica, sans-serif" font-size="22" font-weight="700" fill="#4E473F">DuckDB medallion layers, XGBoost models, quality checks, and Streamlit reporting.</text>
 
   <g font-family="Arial, Helvetica, sans-serif">
@@ -38,5 +38,5 @@
   <path d="M264 336L250 324M264 336L250 348M456 336L442 324M456 336L442 348M648 336L634 324M648 336L634 348M840 336L826 324M840 336L826 348M1032 336L1018 324M1032 336L1018 348" stroke="#161411" stroke-width="5" stroke-linecap="round"/>
 
   <rect x="70" y="548" width="1052" height="72" fill="#161411"/>
-  <text x="104" y="592" font-family="Arial, Helvetica, sans-serif" font-size="24" font-weight="900" fill="#FFF8EB">Runnable public proof: pipeline, models, quality checks, dashboard.</text>
+  <text x="104" y="592" font-family="Arial, Helvetica, sans-serif" font-size="24" font-weight="900" fill="#FFF8EB">Runnable public repo: pipeline, models, quality checks, dashboard.</text>
 </svg>

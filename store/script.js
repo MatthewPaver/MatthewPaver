@@ -22,10 +22,6 @@ document.addEventListener("DOMContentLoaded", () => {
     cards.forEach((card, index) => {
       const title = card.querySelector("h3")?.textContent?.trim();
       const titleRow = card.querySelector(".app-title-row");
-      const proofList = card.querySelector(".proof-list");
-      const solves = card.dataset.solves;
-      const shows = card.dataset.shows;
-
       card.style.setProperty("--card-number", `"${String(index + 1).padStart(2, "0")}"`);
       card.dataset.order = String(index);
       if (title) card.dataset.title = title;
@@ -42,24 +38,6 @@ document.addEventListener("DOMContentLoaded", () => {
           .join("")
           .toUpperCase();
         titleRow.prepend(icon);
-      }
-
-      if (solves && shows && proofList && !card.querySelector(".card-snapshot")) {
-        const snapshot = document.createElement("dl");
-        snapshot.className = "card-snapshot";
-        snapshot.innerHTML = `
-          <div>
-            <dt>Solves</dt>
-            <dd></dd>
-          </div>
-          <div>
-            <dt>Shows</dt>
-            <dd></dd>
-          </div>
-        `;
-        snapshot.querySelectorAll("dd")[0].textContent = solves;
-        snapshot.querySelectorAll("dd")[1].textContent = shows;
-        proofList.insertAdjacentElement("afterend", snapshot);
       }
 
       searchIndex.set(card, card.textContent.toLowerCase());
@@ -256,8 +234,6 @@ document.addEventListener("DOMContentLoaded", () => {
   initRevealMotion();
   initScrollChrome();
   initSpotlightCards();
-  initCountUp();
-  initDeployGate();
 });
 
 function initScrollChrome() {
@@ -301,109 +277,4 @@ function initSpotlightCards() {
       card.style.setProperty("--my", `${y}%`);
     });
   });
-}
-
-async function initDeployGate() {
-  const panel = document.querySelector("#deploy-gate-panel");
-  if (!panel) return;
-
-  const fail = (message) => {
-    panel.innerHTML = "";
-    const note = document.createElement("p");
-    note.className = "deploy-gate-loading";
-    note.textContent = message;
-    panel.append(note);
-  };
-
-  try {
-    const response = await fetch("./validator-status.json", { cache: "no-cache" });
-    if (!response.ok) throw new Error(`status ${response.status}`);
-    const data = await response.json();
-    if (!data || !Array.isArray(data.checks)) throw new Error("malformed status payload");
-
-    const total = data.checks.length;
-    const passing = data.checks.filter((c) => c.pass).length;
-    const allPass = passing === total && data.passing !== false;
-    const generated = new Date(data.generatedAt);
-    const stamp = Number.isFinite(generated.getTime())
-      ? generated.toLocaleString(undefined, { dateStyle: "medium", timeStyle: "short" })
-      : "unknown";
-
-    panel.innerHTML = "";
-
-    const header = document.createElement("div");
-    header.className = "deploy-gate-header";
-    header.innerHTML = `
-      <span class="deploy-gate-state ${allPass ? "pass" : "fail"}">
-        <span class="deploy-gate-dot" aria-hidden="true"></span>
-        ${allPass ? "Passing" : "Issues"}
-      </span>
-      <span class="deploy-gate-summary">${passing} of ${total} checks</span>
-      <span class="deploy-gate-stamp">Run ${stamp}</span>
-    `;
-    panel.append(header);
-
-    const list = document.createElement("ul");
-    list.className = "deploy-gate-list";
-    data.checks.forEach((check) => {
-      const item = document.createElement("li");
-      item.className = check.pass ? "pass" : "fail";
-      const mark = document.createElement("span");
-      mark.className = "deploy-gate-mark";
-      mark.setAttribute("aria-hidden", "true");
-      mark.textContent = check.pass ? "✓" : "×";
-      const name = document.createElement("span");
-      name.className = "deploy-gate-name";
-      name.textContent = check.name;
-      const value = document.createElement("span");
-      value.className = "deploy-gate-value";
-      value.textContent = check.value;
-      item.append(mark, name, value);
-      list.append(item);
-    });
-    panel.append(list);
-  } catch (error) {
-    fail("Validator status is unavailable. Open a fresh build to refresh.");
-  }
-}
-
-function initCountUp() {
-  const targets = document.querySelectorAll("[data-count-to]");
-  if (!targets.length) return;
-
-  const prefersReducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
-  if (prefersReducedMotion || !("IntersectionObserver" in window)) {
-    targets.forEach((node) => {
-      node.textContent = node.dataset.countTo;
-    });
-    return;
-  }
-
-  const animate = (node) => {
-    const target = Number(node.dataset.countTo) || 0;
-    const duration = 900 + Math.min(900, target * 6);
-    const start = performance.now();
-    node.textContent = "0";
-    const step = (now) => {
-      const progress = Math.min(1, (now - start) / duration);
-      const eased = 1 - Math.pow(1 - progress, 3);
-      node.textContent = String(Math.round(target * eased));
-      if (progress < 1) window.requestAnimationFrame(step);
-      else node.textContent = String(target);
-    };
-    window.requestAnimationFrame(step);
-  };
-
-  const observer = new IntersectionObserver(
-    (entries) => {
-      entries.forEach((entry) => {
-        if (!entry.isIntersecting) return;
-        animate(entry.target);
-        observer.unobserve(entry.target);
-      });
-    },
-    { threshold: 0.4 }
-  );
-
-  targets.forEach((node) => observer.observe(node));
 }
