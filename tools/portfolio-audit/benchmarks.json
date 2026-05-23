@@ -1,0 +1,43 @@
+{
+  "profileCollections": [
+    {
+      "name": "Awesome GitHub Profile README",
+      "url": "https://github.com/abhisheknaiidu/awesome-github-profile-readme",
+      "useFor": "Breadth of profile README patterns and what to avoid when the page becomes badge-heavy."
+    },
+    {
+      "name": "Best GitHub Profile README",
+      "url": "https://github.com/maxontech/best-github-profile-readme",
+      "useFor": "Visual inspiration, layout variety, and quick comparison against strong profile pages."
+    },
+    {
+      "name": "Creative Profile README",
+      "url": "https://coderjojo.github.io/creative-profile-readme/",
+      "useFor": "Examples of memorable profile treatments without copying a template."
+    }
+  ],
+  "portfolioPrinciples": [
+    "Lead with the work, not a wall of claims.",
+    "Make the strongest 3 projects obvious within 10 seconds.",
+    "Use real product screenshots where possible.",
+    "Keep copy specific: problem, build decision, proof, stack.",
+    "Separate flagship work from archive work.",
+    "Make public repos runnable enough to support the visual polish."
+  ],
+  "slopPhrases": [
+    "enterprise-grade",
+    "unlock insights",
+    "seamless",
+    "robust",
+    "cutting-edge",
+    "game-changing",
+    "AI-powered",
+    "revolutionary",
+    "transformative",
+    "leverage",
+    "synergy",
+    "end-to-end solution",
+    "messy inputs into useful outputs",
+    "product-shaped"
+  ]
+}

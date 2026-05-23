@@ -5,6 +5,7 @@
   "type": "module",
   "scripts": {
     "test": "node scripts/validate-store.mjs",
+    "audit:portfolio": "node tools/portfolio-audit/portfolio-audit.mjs",
     "bump": "node scripts/bump-cache-version.mjs"
   }
 }

@@ -113,11 +113,23 @@ The pattern is practical: get the data in, clean it, check it, and turn it into 
 
 | When | What |
 |:---|:---|
+| **2026-05** | Portfolio audit agents — README, thumbnail, catalogue, repo-packaging, and app-idea review passes |
 | **2026-05** | AI Workflow Evaluator — evidence gate for AI-generated outputs with dashboard, tests, and CI |
 | **2026-05** | Spec-driven portfolio governance: constitution, validator, Lighthouse CI, JSON-LD, manifest, CSP, custom OG card |
 | **2026-04** | Inference Brief — accounts, paid subscriptions, bookmarks, reading history |
 | **2026-03** | Happening — 167-test reliability suite, 103 venue source configs |
 | **2026-02** | QuickSupply MVP — three-sided workflow, sequential assignment, live SSE status |
+
+## Portfolio quality gates
+
+This profile is checked like a small product. The audit pass reviews the README, app-store catalogue, preview coverage, thumbnails, public-repo packaging, and the next-build backlog.
+
+```bash
+npm test
+npm run audit:portfolio
+```
+
+[Latest audit report](PORTFOLIO_AUDIT.md) | [App ideas backlog](APP_IDEAS.md)
 
 ## GitHub signals
 
@@ -151,6 +163,7 @@ The pattern is practical: get the data in, clean it, check it, and turn it into 
 | Architecture and tradeoff stories | [Case Studies](CASE_STUDIES.md) |
 | A piece of writing with an opinion | [What a 167-test scraping suite actually catches](writing/what-a-scraping-suite-catches.md) |
 | The full repo map | [Projects appendix](Projects.md) |
+| Portfolio quality report | [Portfolio audit](PORTFOLIO_AUDIT.md) |
 | Background and experience | [CV](CV.pdf) |
 
 <details>
