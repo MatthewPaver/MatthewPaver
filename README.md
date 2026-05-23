@@ -1,6 +1,6 @@
 <p align="center">
   <a href="https://matthewpaver.github.io/MatthewPaver/store/">
-    <img src="assets/profile-banner.svg" alt="Matthew Paver — I build AI products and the data systems behind them." width="100%" />
+    <img src="assets/profile-banner.svg" alt="Matthew Paver — automation, data, and AI projects." width="100%" />
   </a>
 </p>
 
@@ -13,31 +13,9 @@
 <p align="center">
   <img src="https://img.shields.io/github/actions/workflow/status/MatthewPaver/MatthewPaver/pages.yml?label=Pages%20deploy&style=flat-square&color=0f766e&labelColor=151515" alt="Pages deploy status" />
   <img src="https://img.shields.io/github/last-commit/MatthewPaver/MatthewPaver?label=Last%20commit&style=flat-square&color=8f5d12&labelColor=151515" alt="Last commit" />
-  <img src="https://img.shields.io/badge/Projects-14-151515?style=flat-square&labelColor=151515&color=0f766e" alt="14 projects" />
-  <img src="https://img.shields.io/badge/Live_paid_product-1-151515?style=flat-square&labelColor=151515&color=16a34a" alt="1 live paid product" />
-  <img src="https://img.shields.io/badge/Configured_sources-103-151515?style=flat-square&labelColor=151515&color=8f5d12" alt="103 configured sources" />
-  <img src="https://img.shields.io/badge/Reliability_tests-167-151515?style=flat-square&labelColor=151515&color=9f3a2f" alt="167 reliability tests" />
 </p>
 
 ---
-
-## Work Snapshot
-
-| | |
-|:---|:---|
-| **Focus** | Automation, AI products, data systems, and analytics tooling |
-| **Pattern** | Practical workflow systems: ingest, clean, automate, check, and package the result |
-| **Proof to inspect** | [Portfolio Store](https://matthewpaver.github.io/MatthewPaver/store/) · [Inference Brief](https://inferencebrief.co/) · [AI Workflow Evaluator](https://github.com/MatthewPaver/ai-workflow-evaluator) · [Marketing ML Lakehouse](https://github.com/MatthewPaver/marketing-ml-lakehouse) |
-| **Based** | London |
-
-## Problems I Solve
-
-| Problem | How I approach it | Proof |
-|:---|:---|:---|
-| Repetitive workflow needs automating | Turn manual steps into scheduled jobs, checks, dashboards, and handoff paths | [Happening case study](CASE_STUDIES.md#featured-build-happening) |
-| AI output needs trust | Add evidence checks, blocked-claim rules, calibration, and human review gates | [AI Workflow Evaluator](https://github.com/MatthewPaver/ai-workflow-evaluator) |
-| Public data is messy | Turn source-specific behaviour into configured ingestion, validation, and tests | [Happening case study](CASE_STUDIES.md#featured-build-happening) |
-| Analytics needs to be usable | Package analysis into apps, dashboards, exports, and handoff notes | [ProjectLens](https://github.com/MatthewPaver/ProjectLens) · [HR Analytics](https://github.com/MatthewPaver/hr-performance-dashboards) |
 
 ## Featured products
 
@@ -82,13 +60,6 @@
 | **Shipping** | [Inference Brief](https://inferencebrief.co/) (live, paid) · Happening (private venue-ingestion system) |
 | **Stack**    | Python · TypeScript · FastAPI · Next.js · Postgres / DuckDB · Playwright · GitHub Actions |
 | **Specs**    | [Constitution](.specify/memory/constitution.md) · [Feature spec](specs/001-portfolio-store-reliability/spec.md) · [Validator](scripts/validate-store.mjs) · [Lighthouse CI](.lighthouserc.json) |
-
-## How I Build
-
-- Start with the workflow: what is manual, slow, repeated, or hard to check.
-- Automate the repeatable parts, then add checks so failures are visible.
-- Package the result as something inspectable: dashboard, report, app, export, or runbook.
-- Keep limitations visible so the work is useful without being oversold.
 
 ## How the work flows
 
