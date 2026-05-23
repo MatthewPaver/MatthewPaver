@@ -190,7 +190,7 @@ Every project I publish has this shape: a configured input, an explicit check, a
 
 _This section is automatically refreshed by GitHub Actions._
 
-- Last refresh (UTC): 2026-05-22 10:29
+- Last refresh (UTC): 2026-05-23 09:15
 
 | Repo | Last push | What it is |
 |:---|:---:|:---|
