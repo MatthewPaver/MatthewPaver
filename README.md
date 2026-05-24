@@ -55,9 +55,10 @@
 
 | | |
 |:---|:---|
-| **Role**     | Software engineer · automation specialist · AI, data, analytics |
+| **Role**     | Software engineer and automation specialist |
 | **Based**    | London |
-| **Shipping** | [Inference Brief](https://inferencebrief.co/) (live, paid) · Happening (private venue-ingestion system) |
+| **Focus**    | Automation, data products, AI workflows, analytics tools |
+| **Shipping** | [Inference Brief](https://inferencebrief.co/) (live, paid) · Happening (private venue-ingestion system) · QuickSupply (private MVP) |
 | **Stack**    | Python · TypeScript · FastAPI · Next.js · Postgres / DuckDB · Playwright · GitHub Actions |
 | **Specs**    | [Constitution](.specify/memory/constitution.md) · [Feature spec](specs/001-portfolio-store-reliability/spec.md) · [Validator](scripts/validate-store.mjs) · [Lighthouse CI](.lighthouserc.json) |
 
@@ -74,7 +75,7 @@ flowchart LR
     F -->|pass| G[Shipped]
 ```
 
-The pattern is practical: get the data in, clean it, check it, and turn it into something that can be opened. The [portfolio store](https://matthewpaver.github.io/MatthewPaver/store/) follows the same habit: indexed catalogue, validator, Lighthouse CI, no framework, no build step.
+The pattern is practical: collect the messy input, clean it, check it, and turn it into something you can open. The [portfolio store](https://matthewpaver.github.io/MatthewPaver/store/) follows the same habit: indexed catalogue, validator, Lighthouse CI, no framework, no build step.
 
 <p align="center"><img src="assets/mp-rule.svg" alt="" width="320" height="32" /></p>
 
@@ -122,7 +123,7 @@ The pattern is practical: get the data in, clean it, check it, and turn it into 
 
 ## Portfolio quality gates
 
-This profile is checked like a small product. The audit pass reviews the README, app-store catalogue, preview coverage, thumbnails, public-repo packaging, and the next-build backlog.
+This profile is checked like a small product. The audit reviews the README, app-store catalogue, preview coverage, thumbnails, public-repo packaging, and build backlog.
 
 ```bash
 npm test
@@ -154,17 +155,15 @@ npm run audit:portfolio
   <a href="CV.pdf"><img src="https://img.shields.io/badge/CV-Open_PDF-151515?style=flat-square&logo=readthedocs&logoColor=white" alt="Open CV PDF" /></a>
 </p>
 
-## Routes through the work
+## Shortcuts
 
-| If you want | Open |
+| Open | For |
 |:---|:---|
-| The best visual overview | [Portfolio Store](https://matthewpaver.github.io/MatthewPaver/store/) |
-| A live paid product | [Inference Brief](https://inferencebrief.co/) |
-| Architecture and tradeoff stories | [Case Studies](CASE_STUDIES.md) |
-| A piece of writing with an opinion | [What a 167-test scraping suite actually catches](writing/what-a-scraping-suite-catches.md) |
-| The full repo map | [Projects appendix](Projects.md) |
-| Portfolio quality report | [Portfolio audit](PORTFOLIO_AUDIT.md) |
-| Background and experience | [CV](CV.pdf) |
+| [Portfolio Store](https://matthewpaver.github.io/MatthewPaver/store/) | Visual project catalogue |
+| [Inference Brief](https://inferencebrief.co/) | Live product |
+| [Case Studies](CASE_STUDIES.md) | Architecture and tradeoffs |
+| [Portfolio audit](PORTFOLIO_AUDIT.md) | Quality checks behind the profile |
+| [CV](CV.pdf) | Background and experience |
 
 <details>
 <summary><strong>Latest public activity</strong> (auto-updated daily)</summary>
