@@ -212,27 +212,27 @@
     "note": "This preview is about evaluation discipline: how the recommender is tested matters as much as the model choice."
   },
   "ai-evaluator": {
-    "kicker": "Public evaluator app",
+    "kicker": "Public AI Ops app",
     "title": "AI Workflow Evaluator",
-    "summary": "A small evidence gate that decides whether AI-generated output can ship, needs review, or should be blocked.",
+    "summary": "A deterministic AI Ops gate for checking quality, cost, latency, routing, and review status across text and multimodal workflows.",
     "image": "./assets/ai-workflow-evaluator-thumb.svg",
     "imageAlt": "AI Workflow Evaluator product thumbnail",
-    "role": "LLM evaluation tooling",
+    "role": "AI Ops evaluation tooling",
     "status": "Public",
-    "focus": "Output quality gates",
-    "problem": "AI-generated summaries and recommendations can sound polished while quietly overclaiming. This project checks each output against source evidence, required facts, blocked claims, latency, cost, and review status.",
+    "focus": "Quality, cost, and routing gates",
+    "problem": "AI workflows can become expensive or risky before anyone notices. This project checks outputs against source evidence, blocked claims, token and multimodal cost, projected monthly spend, latency, routing, and human review status.",
     "points": [
       "Uses deterministic rules, so the sample suite runs locally without API keys.",
-      "Produces ship, review, or block decisions with evidence notes.",
-      "Includes baseline deltas, dataset/scorer versions, trace evidence, tests, and GitHub Actions validation."
+      "Models text, screenshot, PDF, image, and audio workflows.",
+      "Produces ship, review, block, routing, and cost-control decisions with evidence notes."
     ],
     "stack": ["Python", "HTML", "CSS", "JavaScript", "GitHub Actions"],
     "links": [
-      { "label": "Open demo", "href": "https://matthewpaver.github.io/ai-workflow-evaluator/app/", "primary": true },
+      { "label": "Open AI Ops demo", "href": "https://matthewpaver.github.io/ai-workflow-evaluator/app/?suite=aiops", "primary": true },
       { "label": "Open repo", "href": "https://github.com/MatthewPaver/ai-workflow-evaluator" },
       { "label": "Read case study", "href": "https://github.com/MatthewPaver/MatthewPaver/blob/main/CASE_STUDIES.md#ai-workflow-evaluator" }
     ],
-    "note": "A compact public repo that shows how I think about AI product reliability: evidence first, criteria visible, review gates explicit, calibration shown."
+    "note": "A compact public repo for a real company problem: when AI work uses more context, files, screenshots, and audio, quality and spend need visible gates."
   },
   "hr": {
     "kicker": "Public dashboard package",

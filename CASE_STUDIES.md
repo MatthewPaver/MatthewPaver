@@ -16,7 +16,7 @@ Each case study is deliberately short: problem, goal, what I built, architecture
 |:---|:---|
 | [Featured Build: Happening](#featured-build-happening) | Reliable ingestion from fragmented public web sources |
 | [Inference Brief](#inference-brief) | Live AI product plus publishing workflow |
-| [AI Workflow Evaluator](#ai-workflow-evaluator) | Evidence gates for AI-generated outputs |
+| [AI Workflow Evaluator](#ai-workflow-evaluator) | AI Ops gates for quality, cost, routing, and review |
 | [AI Study Companion](#ai-study-companion) | Document AI, async jobs, and adaptive learning loops |
 | [Smart Job Market Intelligence](#smart-job-market-intelligence) | Repeatable market intelligence product from scraped listings |
 
@@ -178,11 +178,12 @@ flowchart LR
 **Type:** Public repo
 **Problem:** AI-generated summaries can sound polished while quietly overclaiming, missing required facts, citing weak evidence, or skipping review. Generic "looks good" checks are not enough when the output is going into a product, portfolio, or operational workflow.
 
-**Goal:** Build a small, runnable evidence gate that turns subjective review into a repeatable `ship`, `review`, or `block` decision.
+**Goal:** Build a small, runnable AI Ops gate that turns subjective review into a repeatable decision about quality, cost, latency, routing, and human sign-off.
 
 ### What I Built
 
-- Deterministic scoring for required facts, source grounding, blocked claims, latency, cost, and review status
+- Deterministic scoring for required facts, source grounding, blocked claims, latency, token cost, multimodal cost, and review status
+- Routing recommendations for cheap model, stronger model, human review, context retrieval, input compression, async queueing, or block/rewrite
 - Dataset and scorer version metadata in every report
 - Baseline deltas so a run can be compared against the previous accepted state
 - Trace-level explanations for why an output shipped, needs review, or was blocked
