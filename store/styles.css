@@ -1350,18 +1350,6 @@ h1 {
     transform: scale(1.025);
   }
 
-  .reveal-item {
-    opacity: 0;
-    transform: translateY(18px);
-  }
-
-  .reveal-item.is-visible {
-    opacity: 1;
-    transform: translateY(0);
-    transition: opacity 620ms var(--ease-out), transform 620ms var(--ease-out);
-    transition-delay: calc(var(--reveal-index, 0) * 45ms);
-  }
-
   .preview-copy > *,
   .preview-media,
   .preview-panel {
@@ -1620,8 +1608,7 @@ h1 {
     text-decoration: underline;
   }
 
-  .app-card::before,
-  .reveal-item {
+  .app-card::before {
     display: none !important;
   }
 

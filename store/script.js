@@ -14,8 +14,6 @@ document.addEventListener("DOMContentLoaded", () => {
 
   let activeFilter = "all";
   const validFilters = new Set(filters.map((button) => button.dataset.filter).filter(Boolean));
-  const prefersReducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
-
   const searchIndex = new Map();
 
   function initCardDetails() {
@@ -42,53 +40,6 @@ document.addEventListener("DOMContentLoaded", () => {
 
       searchIndex.set(card, card.textContent.toLowerCase());
     });
-  }
-
-  function initRevealMotion() {
-    const targets = Array.from(
-      document.querySelectorAll(".selected-card, .credential-group a, .featured-build, .personal-note, .shelf-grid a, .app-card")
-    );
-
-    if (prefersReducedMotion) return;
-
-    targets.forEach((target, index) => {
-      target.classList.add("reveal-item");
-      target.style.setProperty("--reveal-index", String(index % 6));
-    });
-
-    const reveal = (target) => target.classList.add("is-visible");
-
-    // Reveal anything already in the initial viewport synchronously so nothing
-    // sits at opacity:0 on first paint (e.g. headless captures, fast scrolls).
-    targets.forEach((target) => {
-      const rect = target.getBoundingClientRect();
-      if (rect.top < window.innerHeight + 120) reveal(target);
-    });
-
-    if (!("IntersectionObserver" in window)) {
-      targets.forEach(reveal);
-      return;
-    }
-
-    const observer = new IntersectionObserver(
-      (entries) => {
-        entries.forEach((entry) => {
-          if (!entry.isIntersecting) return;
-          reveal(entry.target);
-          observer.unobserve(entry.target);
-        });
-      },
-      { rootMargin: "0px 0px -2% 0px", threshold: 0.05 }
-    );
-
-    targets.forEach((target) => {
-      if (!target.classList.contains("is-visible")) observer.observe(target);
-    });
-
-    // Safety net: anything still hidden after 1.5s is forced visible. Catches
-    // headless renderers, broken IO implementations, and pages that never get
-    // scrolled into view (search engines, social-card crawlers).
-    window.setTimeout(() => targets.forEach(reveal), 1500);
   }
 
   function updateUrlState() {
@@ -231,7 +182,6 @@ document.addEventListener("DOMContentLoaded", () => {
     updateStore({ syncUrl: false });
   }
 
-  initRevealMotion();
   initScrollChrome();
   initSpotlightCards();
 });
