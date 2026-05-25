@@ -52,7 +52,7 @@
     "role": "Workflow product",
     "status": "Private MVP",
     "focus": "School cover ops",
-    "problem": "School cover coordination can become a spreadsheet-and-message chain. QuickSupply shapes the job around request intake, sequential agency assignment, teacher availability, compliance checks, and status updates.",
+    "problem": "School cover coordination can become a spreadsheet-and-message chain. The practical test is whether one same-day cover request can move from school to agency to teacher with eligibility, offers, declines, and live status visible.",
     "points": [
       "Separates school, agency, and teacher workflows instead of flattening them into one admin view.",
       "Uses live status updates so bookings can move without manual chasing.",
@@ -73,7 +73,7 @@
     "role": "AI learning workflow",
     "status": "Private",
     "focus": "Study material generation",
-    "problem": "Revision material often starts as a pile of documents and notes. This product shape turns those inputs into structured practice: cards, quizzes, plans, and spaced review.",
+    "problem": "Revision material often starts as a pile of documents and notes. The practical test is whether a learner can upload source material and get review assets they can use: cards, quizzes, plans, and spaced repetition.",
     "points": [
       "Ingests PDF, DOCX, and text material before generating study assets.",
       "Separates background generation jobs from the learner-facing review flow.",
@@ -94,7 +94,7 @@
     "role": "Data product",
     "status": "Private",
     "focus": "Job-market signals",
-    "problem": "Job listings are noisy snapshots. This system normalises listings and turns them into repeatable reports and alerts that are easier to compare over time.",
+    "problem": "Job listings are noisy snapshots. The practical test is whether many listings can become a repeatable market brief: salary movement, skill demand, remote-work ratios, volume changes, and alerts.",
     "points": [
       "Normalises listing data so trend analysis has a consistent base.",
       "Packages salary, skill, volume, and remote-work signals into usable outputs.",
@@ -115,7 +115,7 @@
     "role": "Workflow prototype",
     "status": "Private",
     "focus": "Operations triage",
-    "problem": "Operational requests get messy when status, ownership, evidence, payment context, and triage notes live in different places. This prototype brings that work into one interface model.",
+    "problem": "Operational requests get messy when status, ownership, evidence, payment context, and triage notes live in different places. The practical test is whether one request keeps its history, owner, next action, and evidence visible.",
     "points": [
       "Models resident request intake and operations follow-up as a traceable workflow.",
       "Includes audit trail and service-charge visibility concepts.",
@@ -136,7 +136,7 @@
     "role": "Analytics engineering",
     "status": "Public",
     "focus": "Lakehouse + ML",
-    "problem": "Many analytics demos stop at a notebook. This repo packages the full local loop: ingest raw marketing data, model it, check it, and expose it through a dashboard.",
+    "problem": "Many analytics demos stop at a notebook. The practical test is whether raw campaign CSVs can rebuild a trusted local dashboard: DuckDB tables, model features, checks, and Streamlit views.",
     "points": [
       "Uses a bronze, silver, and gold flow to make the data path inspectable.",
       "Includes model training and data-quality checks rather than only charts.",
@@ -157,7 +157,7 @@
     "role": "Analytics product",
     "status": "Public",
     "focus": "Delivery risk",
-    "problem": "Schedule data can be hard to read until the risk is already obvious. ProjectLens packages upload, cleaning, slippage analysis, milestone pressure, and reporting into a clearer workflow.",
+    "problem": "Schedule data can be hard to read until the risk is already obvious. The practical test is whether an uploaded schedule can become a delivery-risk report with slippage, milestone pressure, forecast issues, and outputs.",
     "points": [
       "Turns project schedule inputs into risk and slippage outputs.",
       "Packages analysis into reporting views rather than leaving it as raw tables.",
@@ -178,7 +178,7 @@
     "role": "Generative ML",
     "status": "Public",
     "focus": "Architecture imagery",
-    "problem": "The project explores image generation for architecture-style outputs, including how the data is prepared, how the model is trained, and how generated outputs can be served.",
+    "problem": "Image-generation projects often stop at generated samples. The practical test here is whether the work covers the path around the model too: dataset preparation, conditional GAN training, output inspection, and API serving shape.",
     "points": [
       "Curates image data before model training.",
       "Uses a conditional GAN workflow for generation.",
@@ -199,7 +199,7 @@
     "role": "Ranking system",
     "status": "Public",
     "focus": "Recommendation evaluation",
-    "problem": "Recommendation demos often skip the evaluation question. This project uses swipe-style interaction data and temporal splitting to make ranking performance easier to reason about.",
+    "problem": "Recommendation demos often skip the evaluation question. The practical test is whether swipe history can rank unseen profiles in a way that survives temporal holdout evaluation.",
     "points": [
       "Builds candidate ranking from implicit interaction data.",
       "Uses temporal holdouts so evaluation is closer to real recommendation timing.",
@@ -220,7 +220,7 @@
     "role": "AI Ops evaluation tooling",
     "status": "Public",
     "focus": "Quality, cost, and routing gates",
-    "problem": "AI workflows can become expensive or risky before anyone notices. This project checks outputs against source evidence, blocked claims, token and multimodal cost, projected monthly spend, latency, routing, and human review status.",
+    "problem": "AI workflows can become expensive or risky before anyone notices. The practical test is whether a logged AI output can ship, needs review, should be blocked, or should be routed through a different model path.",
     "points": [
       "Uses deterministic rules, so the sample suite runs locally without API keys.",
       "Models text, screenshot, PDF, image, and audio workflows.",
@@ -243,7 +243,7 @@
     "role": "BI reporting",
     "status": "Public",
     "focus": "People analytics",
-    "problem": "Dashboard work is only useful when someone can understand the business question and inspect the handoff material. This package keeps screenshots, PBIX files, data, and commentary together.",
+    "problem": "Dashboard work is only useful when someone can understand the business question and inspect the handoff material. The practical test is whether HR, absence, and sales data can be handed over as PBIX, source CSVs, screenshots, and commentary.",
     "points": [
       "Covers summary, sales, and absence views.",
       "Includes prepared data and dashboard files for inspection.",
@@ -264,7 +264,7 @@
     "role": "NLP analysis",
     "status": "Public",
     "focus": "Embedding retrieval",
-    "problem": "Similarity search is useful, but similarity is not the same as truth. This notebook is a small, focused demo of embedding comparison and retrieval caveats.",
+    "problem": "Similarity search is useful, but similarity is not the same as truth. The practical test is whether embeddings can find related text while making the limitation visible.",
     "points": [
       "Uses transformer embeddings to compare sentence meaning.",
       "Ranks examples with cosine similarity.",

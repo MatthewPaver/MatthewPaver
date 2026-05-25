@@ -178,7 +178,7 @@ flowchart LR
 **Type:** Public repo
 **Problem:** AI-generated summaries can sound polished while quietly overclaiming, missing required facts, citing weak evidence, or skipping review. Generic "looks good" checks are not enough when the output is going into a product, portfolio, or operational workflow.
 
-**Goal:** Build a small, runnable AI Ops gate that turns subjective review into a repeatable decision about quality, cost, latency, routing, and human sign-off.
+**Goal:** Build a small, runnable regression test for logged AI outputs. Given the model answer, allowed evidence, blocked claims, cost limits, latency limits, and review status, the tool should return a practical decision: ship, review, block, or reroute.
 
 ### What I Built
 
