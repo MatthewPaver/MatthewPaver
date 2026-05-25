@@ -232,11 +232,8 @@ for (const tag of imageTags) {
   );
 }
 
-// Sitemap covers every catalogue slug
-for (const row of indexRows) {
-  const url = `${siteBase}/store/preview.html?app=${row.slug}`;
-  assert(sitemap.includes(url), `sitemap.xml is missing entry for ${url}`);
-}
+// Sitemap only includes canonical, indexable surfaces. Dynamic preview URLs are
+// followable UX pages, but the store ItemList carries their catalogue metadata.
 assert(sitemap.includes(`${siteBase}/store/`), "sitemap.xml must include the store root");
 
 // robots.txt points to actual sitemap
