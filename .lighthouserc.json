@@ -3,8 +3,7 @@
     "collect": {
       "staticDistDir": ".",
       "url": [
-        "/store/index.html",
-        "/store/preview.html?app=inference"
+        "/store/index.html"
       ],
       "settings": {
         "preset": "desktop"
