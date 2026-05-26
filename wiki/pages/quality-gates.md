@@ -33,5 +33,5 @@ Review passes:
 
 ## Current Known Improvements
 
-- Replace the tall AI Study Companion thumbnail with a calmer 16:9 or 3:2 preview.
-- Replace remaining SVG-style public thumbnails with real or sanitised screenshots when available.
+- Keep replacing archive-only SVG thumbnails with real screenshots when an archive item becomes front-door work again.
+- Add a short demo video only when it explains a workflow better than a still screenshot.

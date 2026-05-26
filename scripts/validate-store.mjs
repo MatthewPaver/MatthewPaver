@@ -225,7 +225,7 @@ for (const tag of imageTags) {
   const abs = path.join(root, assetPath);
   if (!fs.existsSync(abs)) continue;
   const dims = pngDimensions(readBuffer(assetPath));
-  if (!dims) continue;
+  assert(dims, `Image ${tag.src} has a .png extension but is not valid PNG data`);
   assert(
     dims.width === tag.width && dims.height === tag.height,
     `Image dimension mismatch for ${tag.src}: declared ${tag.width}x${tag.height}, actual ${dims.width}x${dims.height}`
