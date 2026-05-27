@@ -173,16 +173,16 @@ npm run audit:portfolio
 
 _This section is automatically refreshed by GitHub Actions._
 
-- Last refresh (UTC): 2026-05-25 11:17
+- Last refresh (UTC): 2026-05-27 11:01
 
 | Repo | Last push | What it is |
 |:---|:---:|:---|
-| [ai-workflow-evaluator](https://github.com/MatthewPaver/ai-workflow-evaluator) | 2026-05-25 | Runnable quality gate for LLM workflow outputs: accuracy, grounding, hallucination risk… |
+| [ai-workflow-evaluator](https://github.com/MatthewPaver/ai-workflow-evaluator) | 2026-05-26 | Runnable quality gate for LLM workflow outputs: accuracy, grounding, hallucination risk… |
+| [MatthewPaver](https://github.com/MatthewPaver/MatthewPaver) | 2026-05-26 | Portfolio: AI products, data systems, ML, and analytics — every project has a preview,… |
 | [hr-performance-dashboards](https://github.com/MatthewPaver/hr-performance-dashboards) | 2026-05-25 | Power BI dashboard handoff package for HR, absence, and sales performance analytics. |
 | [sentence-similarity-analysis](https://github.com/MatthewPaver/sentence-similarity-analysis) | 2026-05-25 | Sentence-transformer notebook showing embedding similarity, cosine ranking, and retriev… |
 | [dating-app-recommendation-system](https://github.com/MatthewPaver/dating-app-recommendation-system) | 2026-05-25 | Swipe-style recommendation system with implicit feedback, temporal holdouts, and Top-K… |
 | [ProjectLens](https://github.com/MatthewPaver/ProjectLens) | 2026-05-25 | Flask schedule-risk app for slippage, milestone pressure, forecasting, and Power BI-rea… |
-| [marketing-ml-lakehouse](https://github.com/MatthewPaver/marketing-ml-lakehouse) | 2026-05-25 | Local DuckDB, XGBoost, and Streamlit analytics pipeline for marketing performance data. |
 
 <!-- AUTO:ACTIVITY_END -->
 
