@@ -173,11 +173,11 @@ npm run audit:portfolio
 
 _This section is automatically refreshed by GitHub Actions._
 
-- Last refresh (UTC): 2026-05-29 10:54
+- Last refresh (UTC): 2026-05-30 09:25
 
 | Repo | Last push | What it is |
 |:---|:---:|:---|
-| [MatthewPaver](https://github.com/MatthewPaver/MatthewPaver) | 2026-05-28 | Portfolio: AI products, data systems, ML, and analytics — every project has a preview,… |
+| [MatthewPaver](https://github.com/MatthewPaver/MatthewPaver) | 2026-05-29 | Portfolio: AI products, data systems, ML, and analytics — every project has a preview,… |
 | [ai-workflow-evaluator](https://github.com/MatthewPaver/ai-workflow-evaluator) | 2026-05-26 | Runnable quality gate for LLM workflow outputs: accuracy, grounding, hallucination risk… |
 | [hr-performance-dashboards](https://github.com/MatthewPaver/hr-performance-dashboards) | 2026-05-25 | Power BI dashboard handoff package for HR, absence, and sales performance analytics. |
 | [sentence-similarity-analysis](https://github.com/MatthewPaver/sentence-similarity-analysis) | 2026-05-25 | Sentence-transformer notebook showing embedding similarity, cosine ranking, and retriev… |
