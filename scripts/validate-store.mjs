@@ -199,6 +199,11 @@ assert(
   fetchPriorityHigh <= 2,
   `Only the preload + LCP image should use fetchpriority="high" (found ${fetchPriorityHigh})`
 );
+const eagerImages = (indexHtml.match(/loading="eager"/g) || []).length;
+assert(eagerImages <= 2, `Only first-viewport images should load eagerly (found ${eagerImages})`);
+const lazyImages = (indexHtml.match(/loading="lazy"/g) || []).length;
+assert(lazyImages >= 10, `Catalogue thumbnails should lazy-load below the first viewport (found ${lazyImages})`);
+assert(indexHtml.includes('decoding="async"'), "Store images should opt into async decoding where practical");
 
 assert(indexHtml.includes('rel="manifest"'), "Store HTML should link the web manifest");
 assert(indexHtml.includes('apple-touch-icon'), "Store HTML should link an apple-touch-icon");
