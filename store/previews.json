@@ -288,27 +288,5 @@
       { "label": "Open repo", "href": "https://github.com/MatthewPaver/sentence-similarity-analysis", "primary": true }
     ],
     "note": "This is intentionally small: it works as a clear NLP concept demo in the broader portfolio."
-  },
-  "archive": {
-    "kicker": "Archive shelf",
-    "title": "Newsletter + Scraper Utilities",
-    "summary": "Earlier automation utilities kept for provenance: newsletter rendering and image collection patterns.",
-    "image": "./assets/archive-utilities-thumb.svg",
-    "imageAlt": "Newsletter and scraper utilities archive visual",
-    "role": "Earlier automation",
-    "status": "Archived",
-    "focus": "Superseded utilities",
-    "problem": "Not every project should be presented as current flagship work. These utilities show earlier automation patterns that fed later product and data experiments.",
-    "points": [
-      "Article-to-HTML newsletter rendering helped shape later publishing workflows.",
-      "Image collection utilities supported earlier dataset experiments.",
-      "Kept in the store as archive context, not as the first thing to inspect."
-    ],
-    "stack": ["Python", "HTML", "Automation", "Scraping"],
-    "links": [
-      { "label": "Newsletter repo", "href": "https://github.com/MatthewPaver/generate-newsletter", "primary": true },
-      { "label": "Scraper repo", "href": "https://github.com/MatthewPaver/pinterest-image-scraper" }
-    ],
-    "note": "This preview is deliberately honest: archived work can be useful evidence without competing with the strongest builds."
   }
 }

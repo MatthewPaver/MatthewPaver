@@ -16,7 +16,7 @@ const requiredColumns = [
   "solves",
   "shows"
 ];
-const allowedShelves = new Set(["product", "data", "automation", "ml", "analytics", "archive"]);
+const allowedShelves = new Set(["product", "data", "automation", "ml", "analytics"]);
 const specDirectory = "specs/001-portfolio-store-reliability";
 const requiredSpecFiles = [
   ".specify/memory/constitution.md",
@@ -131,7 +131,7 @@ const slugs = new Set();
 const tagSet = new Set(tagRows.map((row) => row.tag));
 
 assert(indexRows.length >= 10, "store/app-index.csv should include the full project catalogue");
-assert(tagRows.length >= 6, "store/tags.csv should include the store shelves");
+assert(tagRows.length >= 5, "store/tags.csv should include the store shelves");
 assert(!fs.existsSync(path.join(root, "store/catalogue.csv")), "store/catalogue.csv was removed in favour of app-index.csv");
 
 for (const row of indexRows) {

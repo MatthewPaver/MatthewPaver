@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="675" viewBox="0 0 1200 675" role="img" aria-labelledby="title desc">
+  <title id="title">AI Study Companion product thumbnail</title>
+  <desc id="desc">A product thumbnail showing notes uploaded into flashcards, quizzes, and spaced review.</desc>
+  <rect width="1200" height="675" fill="#eef3f0"/>
+  <rect x="48" y="44" width="1104" height="587" fill="#ffffff" stroke="#151515" stroke-width="3"/>
+  <rect x="48" y="44" width="1104" height="78" fill="#151515"/>
+  <text x="86" y="94" font-family="Avenir Next, Segoe UI, Arial, sans-serif" font-size="28" font-weight="850" fill="#ffffff">AI Study Companion</text>
+  <text x="880" y="92" font-family="Avenir Next, Segoe UI, Arial, sans-serif" font-size="17" font-weight="900" letter-spacing="3" fill="#7dd3c7">LEARNING WORKFLOW</text>
+
+  <rect x="86" y="166" width="292" height="368" fill="#f4f0e9" stroke="#d8d2c8" stroke-width="2"/>
+  <text x="116" y="207" font-family="Avenir Next, Segoe UI, Arial, sans-serif" font-size="17" font-weight="900" letter-spacing="3" fill="#0f766e">SOURCE MATERIAL</text>
+  <rect x="116" y="244" width="220" height="46" fill="#ffffff" stroke="#151515" stroke-width="2"/>
+  <rect x="116" y="314" width="220" height="46" fill="#ffffff" stroke="#151515" stroke-width="2"/>
+  <rect x="116" y="384" width="220" height="46" fill="#ffffff" stroke="#151515" stroke-width="2"/>
+  <text x="138" y="274" font-family="Avenir Next, Segoe UI, Arial, sans-serif" font-size="20" font-weight="800" fill="#151515">notes.txt</text>
+  <text x="138" y="344" font-family="Avenir Next, Segoe UI, Arial, sans-serif" font-size="20" font-weight="800" fill="#151515">lecture.pdf</text>
+  <text x="138" y="414" font-family="Avenir Next, Segoe UI, Arial, sans-serif" font-size="20" font-weight="800" fill="#151515">exam brief</text>
+  <text x="116" y="486" font-family="Avenir Next, Segoe UI, Arial, sans-serif" font-size="19" font-weight="750" fill="#57534e">Upload notes once.</text>
+
+  <rect x="454" y="166" width="292" height="368" fill="#151515"/>
+  <text x="486" y="207" font-family="Avenir Next, Segoe UI, Arial, sans-serif" font-size="17" font-weight="900" letter-spacing="3" fill="#7dd3c7">GENERATE PRACTICE</text>
+  <text x="486" y="282" font-family="Charter, Georgia, serif" font-size="56" font-weight="700" fill="#ffffff">Cards</text>
+  <text x="486" y="350" font-family="Charter, Georgia, serif" font-size="56" font-weight="700" fill="#ffffff">Quizzes</text>
+  <text x="486" y="418" font-family="Charter, Georgia, serif" font-size="56" font-weight="700" fill="#ffffff">Plans</text>
+  <rect x="486" y="462" width="198" height="18" fill="#0f766e"/>
+  <rect x="486" y="494" width="154" height="18" fill="#8f5d12"/>
+
+  <rect x="822" y="166" width="292" height="368" fill="#f4f0e9" stroke="#d8d2c8" stroke-width="2"/>
+  <text x="852" y="207" font-family="Avenir Next, Segoe UI, Arial, sans-serif" font-size="17" font-weight="900" letter-spacing="3" fill="#0f766e">SPACED REVIEW</text>
+  <circle cx="900" cy="285" r="35" fill="#0f766e"/>
+  <circle cx="988" cy="285" r="35" fill="#1d4f91"/>
+  <circle cx="1076" cy="285" r="35" fill="#8f5d12"/>
+  <text x="880" y="395" font-family="Charter, Georgia, serif" font-size="58" font-weight="700" fill="#151515">SM-2</text>
+  <text x="852" y="448" font-family="Avenir Next, Segoe UI, Arial, sans-serif" font-size="20" font-weight="750" fill="#57534e">Review what is due next.</text>
+
+  <path d="M398 350H434M766 350H802" stroke="#151515" stroke-width="7"/>
+  <path d="M434 350L418 334M434 350L418 366M802 350L786 334M802 350L786 366" stroke="#151515" stroke-width="7" stroke-linecap="round"/>
+  <rect x="86" y="574" width="1028" height="20" fill="#d8d2c8"/>
+  <rect x="86" y="574" width="732" height="20" fill="#0f766e"/>
+  <text x="86" y="620" font-family="Avenir Next, Segoe UI, Arial, sans-serif" font-size="18" font-weight="850" fill="#151515">Practical point: not just content generation, a review loop someone can use.</text>
+</svg>

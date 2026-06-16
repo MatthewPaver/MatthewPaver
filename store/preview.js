@@ -34,7 +34,7 @@ function renderUnknown(slug) {
   setText("preview-title", `No preview for “${slug}”`);
   setText(
     "preview-summary",
-    "That preview slug is not in the store catalogue. The project may have been renamed or archived. Head back to browse every project."
+    "That preview slug is not in the store catalogue. The project may have been renamed or removed. Head back to browse every project."
   );
 
   const media = document.querySelector(".preview-media");

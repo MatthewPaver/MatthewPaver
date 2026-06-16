@@ -7,7 +7,6 @@ document.addEventListener("DOMContentLoaded", () => {
   const visibleCount = document.querySelector("#visible-count");
   const emptyState = document.querySelector(".empty-state");
   const storeGrid = document.querySelector(".store-grid");
-  const archiveShelf = document.querySelector(".archive-shelf");
   const announcer = document.querySelector("#store-filter-announcement");
 
   if (!searchInput || !visibleCount || !emptyState) return;
@@ -106,11 +105,6 @@ document.addEventListener("DOMContentLoaded", () => {
       card.classList.toggle("hidden", !isVisible);
       if (isVisible) count += 1;
     });
-
-    if (archiveShelf) {
-      const archiveCard = archiveShelf.querySelector(".app-card");
-      archiveShelf.hidden = archiveCard?.classList.contains("hidden") ?? true;
-    }
 
     visibleCount.textContent = String(count);
     emptyState.hidden = count > 0;

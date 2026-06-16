@@ -1131,42 +1131,6 @@ h1 {
   border-bottom: 1px solid var(--line);
 }
 
-.archive-thumb {
-  min-height: 216px;
-  display: grid;
-  align-content: center;
-  gap: 12px;
-  border-bottom: 1px solid var(--line);
-  background:
-    linear-gradient(90deg, rgba(21, 21, 21, 0.08) 1px, transparent 1px),
-    linear-gradient(180deg, rgba(21, 21, 21, 0.08) 1px, transparent 1px),
-    var(--surface-warm);
-  background-size: 32px 32px;
-  padding: 24px;
-}
-
-.archive-thumb span {
-  color: var(--accent);
-  font-size: 0.7rem;
-  font-weight: 850;
-  letter-spacing: 0.12em;
-  text-transform: uppercase;
-}
-
-.archive-thumb strong {
-  max-width: 300px;
-  font-family: Charter, "Iowan Old Style", Georgia, serif;
-  font-size: 1.9rem;
-  line-height: 1.02;
-}
-
-.archive-thumb small {
-  max-width: 320px;
-  color: var(--muted);
-  font-weight: 750;
-  line-height: 1.35;
-}
-
 .app-body {
   display: flex;
   flex: 1;
@@ -1223,10 +1187,6 @@ h1 {
 
 .status.public {
   color: var(--blue);
-}
-
-.status.archive {
-  color: var(--soft);
 }
 
 .app-body p {
@@ -1316,15 +1276,6 @@ h1 {
 
 .card-actions a:hover {
   color: var(--accent);
-}
-
-.archive-shelf {
-  margin: -28px 0 64px;
-}
-
-.archive-shelf .app-card {
-  max-width: 760px;
-  min-height: 0;
 }
 
 @keyframes rise-in {
@@ -1826,10 +1777,6 @@ h1 {
   background: rgba(159, 58, 47, 0.08);
 }
 
-.status.archive {
-  background: rgba(105, 98, 91, 0.08);
-}
-
 /* filter pills: softer hover, smoother transitions */
 .filter {
   transition: background 240ms var(--ease-smooth), color 240ms var(--ease-smooth), border-color 240ms var(--ease-smooth), transform 220ms var(--ease-smooth);
@@ -1918,7 +1865,6 @@ h1 {
 /* lock major sections to consistent 56px vertical gaps */
 .selected-work,
 .shelf-index,
-.archive-shelf,
 .featured-build,
 .quality-band,
 .credential-band {
