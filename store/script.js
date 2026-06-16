@@ -13,6 +13,7 @@ document.addEventListener("DOMContentLoaded", () => {
   if (!searchInput || !visibleCount || !emptyState) return;
 
   let activeFilter = "all";
+  let lastSortMode = "curated";
   const validFilters = new Set(filters.map((button) => button.dataset.filter).filter(Boolean));
   const searchIndex = new Map();
 
@@ -20,7 +21,6 @@ document.addEventListener("DOMContentLoaded", () => {
     cards.forEach((card, index) => {
       const title = card.querySelector("h3")?.textContent?.trim();
       const titleRow = card.querySelector(".app-title-row");
-      card.style.setProperty("--card-number", `"${String(index + 1).padStart(2, "0")}"`);
       card.dataset.order = String(index);
       if (title) card.dataset.title = title;
 
@@ -71,12 +71,16 @@ document.addEventListener("DOMContentLoaded", () => {
   function sortCards() {
     if (!storeGrid || !sortSelect) return;
 
+    const sortMode = sortSelect.value;
+    if (sortMode === lastSortMode) return;
+    lastSortMode = sortMode;
+
     const sortedCards = [...cards].sort((a, b) => {
-      if (sortSelect.value === "alpha") {
+      if (sortMode === "alpha") {
         return (a.dataset.title || "").localeCompare(b.dataset.title || "");
       }
 
-      if (sortSelect.value === "public") {
+      if (sortMode === "public") {
         const aPublic = a.dataset.status?.toLowerCase().includes("public") || a.querySelector(".status.public");
         const bPublic = b.dataset.status?.toLowerCase().includes("public") || b.querySelector(".status.public");
         if (Boolean(aPublic) !== Boolean(bPublic)) return aPublic ? -1 : 1;

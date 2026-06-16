@@ -1006,6 +1006,7 @@ h1 {
 }
 
 .store-grid {
+  counter-reset: app-card;
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 16px;
@@ -1013,6 +1014,7 @@ h1 {
 }
 
 .app-card {
+  counter-increment: app-card;
   position: relative;
   isolation: isolate;
   min-height: 500px;
@@ -1026,7 +1028,7 @@ h1 {
 }
 
 .app-card::before {
-  content: var(--card-number, "");
+  content: counter(app-card, decimal-leading-zero);
   position: absolute;
   top: 10px;
   left: 10px;
