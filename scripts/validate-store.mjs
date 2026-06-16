@@ -182,6 +182,9 @@ assert(indexHtml.includes('class="store-toolbar js-only"'), "Search/sort toolbar
 assert(indexHtml.includes('class="filters js-only"'), "Filter toolbar should be hidden when JS is disabled");
 assert(storeCss.includes(".no-js .js-only"), "CSS should hide JS-only controls without JavaScript");
 assert(storeCss.includes("@media print"), "CSS should include a print stylesheet");
+assert(!storeCss.includes("overscroll-behavior-y: none"), "Store page must not block vertical browser scrolling");
+assert(storeCss.includes("overflow-y: auto"), "Store CSS should leave vertical document scrolling enabled");
+assert(storeCss.includes("touch-action: pan-y"), "Large store surfaces should allow vertical touch scrolling");
 assert(storeScript.includes("#project-grid-heading"), "Shelf filtering should scroll to the project grid heading");
 assert(storeScript.includes("searchIndex"), "Search should use a pre-computed index rather than reading textContent each keystroke");
 

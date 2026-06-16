@@ -26,22 +26,28 @@
 }
 
 html {
+  min-height: 100%;
+  overflow-y: auto;
   scroll-behavior: smooth;
   scroll-padding-top: 82px;
+  -webkit-overflow-scrolling: touch;
 }
 
 html,
 body {
-  overflow-x: hidden;
+  overflow-x: clip;
 }
 
 body {
+  min-height: 100%;
   margin: 0;
+  overflow-y: visible;
   background: var(--bg);
   color: var(--ink);
   font-family: "Avenir Next", "Segoe UI", Helvetica, Arial, sans-serif;
   -webkit-tap-highlight-color: rgba(15, 118, 110, 0.2);
-  overscroll-behavior-y: none;
+  overscroll-behavior-y: auto;
+  touch-action: pan-y;
 }
 
 a {
@@ -290,6 +296,7 @@ h1 {
   color: var(--ink);
   padding-bottom: 16px;
   text-decoration: none;
+  touch-action: pan-y;
   transition: border-color 220ms var(--ease-smooth), background 220ms var(--ease-smooth), transform 220ms var(--ease-smooth), box-shadow 220ms var(--ease-smooth);
 }
 
@@ -1005,6 +1012,7 @@ h1 {
   overflow: hidden;
   border: 1px solid var(--line);
   background: var(--surface);
+  touch-action: pan-y;
   transition: border-color 220ms var(--ease-smooth), background 220ms var(--ease-smooth), box-shadow 220ms var(--ease-smooth), transform 220ms var(--ease-smooth);
 }
 
