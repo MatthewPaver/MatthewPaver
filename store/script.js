@@ -183,8 +183,17 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 
   initScrollChrome();
-  initSpotlightCards();
+  runWhenIdle(initSpotlightCards);
 });
+
+function runWhenIdle(callback) {
+  if ("requestIdleCallback" in window) {
+    window.requestIdleCallback(callback, { timeout: 1200 });
+    return;
+  }
+
+  window.setTimeout(callback, 250);
+}
 
 function initScrollChrome() {
   const progress = document.querySelector(".scroll-progress");
