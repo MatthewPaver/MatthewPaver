@@ -65,11 +65,25 @@ function renderPreview(preview, slug) {
   setText("preview-note", preview.note);
 
   const image = document.querySelector("#preview-image");
+  const imageAvif = document.querySelector("#preview-image-avif");
   const video = document.querySelector("#preview-video");
+  const picture = document.querySelector("#preview-picture");
+  if (imageAvif) {
+    if (preview.imageAvif) {
+      imageAvif.srcset = preview.imageAvif;
+    } else {
+      imageAvif.removeAttribute("srcset");
+    }
+  }
+
   if (image) {
     image.src = preview.image;
     image.alt = preview.imageAlt;
     image.hidden = Boolean(preview.video);
+  }
+
+  if (picture) {
+    picture.hidden = Boolean(preview.video);
   }
 
   if (video) {

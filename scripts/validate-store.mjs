@@ -105,6 +105,17 @@ function findImageTags(html) {
   return tags;
 }
 
+function findAvifSources(html) {
+  const sources = [];
+  const regex = /<source\b[^>]*?type=["']image\/avif["'][^>]*?>/g;
+  let match;
+  while ((match = regex.exec(html)) !== null) {
+    const srcset = /\bsrcset=["']([^"']+)["']/.exec(match[0])?.[1];
+    if (srcset) sources.push(srcset);
+  }
+  return sources;
+}
+
 const indexRows = parseCsv(readFile("store/app-index.csv"));
 const tagRows = parseCsv(readFile("store/tags.csv"));
 const indexHtml = readFile("store/index.html");
@@ -137,6 +148,10 @@ for (const row of indexRows) {
   assert(previews[row.slug], `Missing previews.json entry for ${row.slug}`);
   assert(previews[row.slug].title, `previews.json entry for ${row.slug} lacks a title`);
   assert(previews[row.slug].image, `previews.json entry for ${row.slug} lacks an image`);
+  if (previews[row.slug].image.endsWith(".png")) {
+    assert(previews[row.slug].imageAvif, `previews.json entry for ${row.slug} lacks an AVIF image`);
+    assert(fs.existsSync(path.join(root, "store", previews[row.slug].imageAvif.replace(/^\.\//, ""))), `Missing AVIF preview image for ${row.slug}: ${previews[row.slug].imageAvif}`);
+  }
   assert(Array.isArray(previews[row.slug].links) && previews[row.slug].links.length > 0, `previews.json entry for ${row.slug} lacks links`);
 }
 
@@ -204,6 +219,16 @@ assert(eagerImages <= 2, `Only first-viewport images should load eagerly (found 
 const lazyImages = (indexHtml.match(/loading="lazy"/g) || []).length;
 assert(lazyImages >= 10, `Catalogue thumbnails should lazy-load below the first viewport (found ${lazyImages})`);
 assert(indexHtml.includes('decoding="async"'), "Store images should opt into async decoding where practical");
+assert(indexHtml.includes('type="image/avif"'), "Store thumbnails should offer AVIF sources with PNG fallbacks");
+
+const avifSources = findAvifSources(indexHtml).concat(findAvifSources(previewHtml));
+const pngScreenshotCount = indexRows.filter((row) => row.asset.endsWith(".png")).length;
+assert(avifSources.length >= pngScreenshotCount, `Store should expose AVIF sources for project screenshots (found ${avifSources.length})`);
+for (const source of avifSources) {
+  const cleanPath = source.replace(/^\.\//, "").replace(/^\//, "");
+  const assetPath = cleanPath.startsWith("store/") ? cleanPath : `store/${cleanPath}`;
+  assert(fs.existsSync(path.join(root, assetPath)), `Missing AVIF source: ${source}`);
+}
 
 assert(indexHtml.includes('rel="manifest"'), "Store HTML should link the web manifest");
 assert(indexHtml.includes('apple-touch-icon'), "Store HTML should link an apple-touch-icon");
