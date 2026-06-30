@@ -138,7 +138,7 @@ function renderPreview(preview, slug) {
 
 async function init() {
   const params = new URLSearchParams(window.location.search);
-  const slug = params.get("app") || "inference";
+  const slug = params.get("app") || "happening";
 
   try {
     const response = await fetch("./previews.json", { cache: "no-cache" });

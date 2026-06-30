@@ -1,27 +1,4 @@
 {
-  "inference": {
-    "kicker": "Live product",
-    "title": "Inference Brief",
-    "summary": "A working AI-news reader built for people who want the signal without living in feeds.",
-    "image": "./assets/inference-brief.png",
-    "imageAvif": "./assets/inference-brief.avif",
-    "imageAlt": "Inference Brief issue and article interface",
-    "role": "Product + data pipeline",
-    "status": "Live",
-    "focus": "AI news workflow",
-    "problem": "AI news is noisy, repetitive, and easy to over-skim. Inference Brief turns source collection, scoring, summarisation, issue publishing, and reader history into one product flow.",
-    "points": [
-      "Collects and scores stories before they become reader-facing issues.",
-      "Packages summaries, bookmarks, account history, and preferences around the reading job.",
-      "Built as a real product rather than a static newsletter archive."
-    ],
-    "stack": ["Next.js", "TypeScript", "Supabase", "Python", "Stripe"],
-    "links": [
-      { "label": "Open product", "href": "https://inferencebrief.co/", "primary": true },
-      { "label": "Read case study", "href": "https://github.com/MatthewPaver/MatthewPaver/blob/main/CASE_STUDIES.md#inference-brief" }
-    ],
-    "note": "Best opened as the live product; the preview sets the context before you leave the store."
-  },
   "happening": {
     "kicker": "Private system",
     "title": "Happening",
