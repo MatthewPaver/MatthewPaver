@@ -6,7 +6,6 @@
 
 <p align="center">
   <a href="https://matthewpaver.github.io/MatthewPaver/store/"><img src="https://img.shields.io/badge/Portfolio_Store-Open-0f766e?style=for-the-badge&logoColor=white" alt="Open Portfolio Store" /></a>
-  <a href="https://inferencebrief.co/"><img src="https://img.shields.io/badge/Inference_Brief-Live-8f5d12?style=for-the-badge&logoColor=white" alt="Open Inference Brief" /></a>
   <a href="https://www.linkedin.com/in/matthew-paver-534262166/"><img src="https://img.shields.io/badge/LinkedIn-Connect-0a66c2?style=for-the-badge&logo=linkedin&logoColor=white" alt="Connect on LinkedIn" /></a>
 </p>
 
@@ -22,13 +21,13 @@
 <table>
 <tr>
 <td width="33%" valign="top">
-  <a href="https://matthewpaver.github.io/MatthewPaver/store/preview.html?app=inference">
-    <img src="store/assets/inference-preview.gif" alt="Inference Brief — live demo" />
+  <a href="https://matthewpaver.github.io/MatthewPaver/store/preview.html?app=study">
+    <img src="store/assets/ai-study-companion-thumb.png" alt="AI Study Companion — study workflow demo" />
   </a>
-  <h3>Inference Brief <sub>· <a href="https://inferencebrief.co/">live</a></sub></h3>
-  <p>A live AI-news reader with accounts, paid subscriptions, bookmarks, reading history, and a publishing flow behind it.</p>
-  <p><code>Next.js</code> <code>TypeScript</code> <code>Supabase</code> <code>Python</code> <code>Stripe</code></p>
-  <p><a href="https://matthewpaver.github.io/MatthewPaver/store/preview.html?app=inference">Preview ↗</a> · <a href="https://inferencebrief.co/">Open product ↗</a> · <a href="CASE_STUDIES.md#inference-brief">Case study ↗</a></p>
+  <h3>AI Study Companion <sub>· private</sub></h3>
+  <p>Uploaded study material turned into flashcards, quizzes, plans, and spaced review sessions.</p>
+  <p><code>FastAPI</code> <code>PostgreSQL</code> <code>Redis</code> <code>Celery</code> <code>LLMs</code></p>
+  <p><a href="https://matthewpaver.github.io/MatthewPaver/store/preview.html?app=study">Preview ↗</a> · <a href="CASE_STUDIES.md#ai-study-companion">Case study ↗</a></p>
 </td>
 <td width="33%" valign="top">
   <a href="https://matthewpaver.github.io/MatthewPaver/store/preview.html?app=happening">
@@ -58,7 +57,7 @@
 | **Role**     | Software engineer and automation specialist |
 | **Based**    | London |
 | **Focus**    | Automation, data products, AI workflows, analytics tools |
-| **Shipping** | [Inference Brief](https://inferencebrief.co/) (live, paid) · Happening (private venue-ingestion system) · QuickSupply (private MVP) |
+| **Shipping** | Happening (private venue-ingestion system) · QuickSupply (private MVP) · AI Study Companion (private) |
 | **Stack**    | Python · TypeScript · FastAPI · Next.js · Postgres / DuckDB · Playwright · GitHub Actions |
 | **Specs**    | [Constitution](.specify/memory/constitution.md) · [Feature spec](specs/001-portfolio-store-reliability/spec.md) · [Validator](scripts/validate-store.mjs) · [Lighthouse CI](.lighthouserc.json) |
 
@@ -117,7 +116,6 @@ The pattern is practical: collect the messy input, clean it, check it, and turn 
 | **2026-05** | Portfolio audit agents — README, thumbnail, catalogue, repo-packaging, and app-idea review passes |
 | **2026-05** | AI Workflow Evaluator — regression test for text, screenshot, PDF, image, and audio outputs before they ship |
 | **2026-05** | Spec-driven portfolio governance: constitution, validator, Lighthouse CI, JSON-LD, manifest, CSP, custom OG card |
-| **2026-04** | Inference Brief — accounts, paid subscriptions, bookmarks, reading history |
 | **2026-03** | Happening — 167-test reliability suite, 103 venue source configs |
 | **2026-02** | QuickSupply MVP — three-sided workflow, sequential assignment, live SSE status |
 
@@ -160,7 +158,6 @@ npm run audit:portfolio
 | Open | For |
 |:---|:---|
 | [Portfolio Store](https://matthewpaver.github.io/MatthewPaver/store/) | Visual project catalogue |
-| [Inference Brief](https://inferencebrief.co/) | Live product |
 | [Case Studies](CASE_STUDIES.md) | Architecture and tradeoffs |
 | [Portfolio audit](PORTFOLIO_AUDIT.md) | Quality checks behind the profile |
 | [CV](CV.pdf) | Background and experience |
@@ -177,8 +174,7 @@ _This section is automatically refreshed by GitHub Actions._
 
 | Repo | Last push | What it is |
 |:---|:---:|:---|
-| [MatthewPaver](https://github.com/MatthewPaver/MatthewPaver) | 2026-06-29 | Portfolio: AI products, data systems, ML, and analytics — every project has a preview,… |
-| [parent-tv-config](https://github.com/MatthewPaver/parent-tv-config) | 2026-06-27 | No description |
+| [MatthewPaver](https://github.com/MatthewPaver/MatthewPaver) | 2026-06-30 | Portfolio: AI products, data systems, ML, and analytics — every project has a preview,… |
 | [ai-workflow-evaluator](https://github.com/MatthewPaver/ai-workflow-evaluator) | 2026-06-16 | Runnable quality gate for LLM workflow outputs: accuracy, grounding, hallucination risk… |
 | [hr-performance-dashboards](https://github.com/MatthewPaver/hr-performance-dashboards) | 2026-05-25 | Power BI dashboard handoff package for HR, absence, and sales performance analytics. |
 | [sentence-similarity-analysis](https://github.com/MatthewPaver/sentence-similarity-analysis) | 2026-05-25 | Sentence-transformer notebook showing embedding similarity, cosine ranking, and retriev… |
