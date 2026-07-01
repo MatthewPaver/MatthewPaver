@@ -170,7 +170,7 @@ npm run audit:portfolio
 
 _This section is automatically refreshed by GitHub Actions._
 
-- Last refresh (UTC): 2026-06-30 10:40
+- Last refresh (UTC): 2026-07-01 10:49
 
 | Repo | Last push | What it is |
 |:---|:---:|:---|
@@ -179,6 +179,7 @@ _This section is automatically refreshed by GitHub Actions._
 | [hr-performance-dashboards](https://github.com/MatthewPaver/hr-performance-dashboards) | 2026-05-25 | Power BI dashboard handoff package for HR, absence, and sales performance analytics. |
 | [sentence-similarity-analysis](https://github.com/MatthewPaver/sentence-similarity-analysis) | 2026-05-25 | Sentence-transformer notebook showing embedding similarity, cosine ranking, and retriev… |
 | [dating-app-recommendation-system](https://github.com/MatthewPaver/dating-app-recommendation-system) | 2026-05-25 | Swipe-style recommendation system with implicit feedback, temporal holdouts, and Top-K… |
+| [ProjectLens](https://github.com/MatthewPaver/ProjectLens) | 2026-05-25 | Flask schedule-risk app for slippage, milestone pressure, forecasting, and Power BI-rea… |
 
 <!-- AUTO:ACTIVITY_END -->
 
