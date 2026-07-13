@@ -58,7 +58,7 @@ JSON object keyed by slug. Each entry must declare `title`, `image`, `imageAlt`,
 - Both HTML pages declare a `rel="canonical"` URL.
 - Both HTML pages declare a CSP meta tag.
 - Store HTML embeds JSON-LD `Person`, `WebSite`, and `ItemList` schema.
-- Store HTML preloads the LCP image (`happening-web.avif`) with `fetchpriority="high"`.
+- Store HTML preloads the LCP image (`project-1966-card.avif`) with `fetchpriority="high"`.
 - No more than two `fetchpriority="high"` images per page (preload + LCP).
 - `store/preview.js` updates `og:*`, `twitter:*`, and `link[rel="canonical"]` to per-slug values at runtime.
 - `og:image` is 1200×630 (`store/assets/og-image.png`).

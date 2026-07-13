@@ -21,13 +21,13 @@
 <table>
 <tr>
 <td width="33%" valign="top">
-  <a href="https://matthewpaver.github.io/MatthewPaver/store/preview.html?app=study">
-    <img src="store/assets/ai-study-companion-thumb.png" alt="AI Study Companion — study workflow demo" />
+  <a href="https://matthewpaver.github.io/can-england-win-it/">
+    <img src="store/assets/project-1966-profile.png" alt="Can England Win It simulation result screen" />
   </a>
-  <h3>AI Study Companion <sub>· private</sub></h3>
-  <p>Uploaded study material turned into flashcards, quizzes, plans, and spaced review sessions.</p>
-  <p><code>FastAPI</code> <code>PostgreSQL</code> <code>Redis</code> <code>Celery</code> <code>LLMs</code></p>
-  <p><a href="https://matthewpaver.github.io/MatthewPaver/store/preview.html?app=study">Preview ↗</a> · <a href="CASE_STUDIES.md#ai-study-companion">Case study ↗</a></p>
+  <h3>Can England Win It? <sub>· live</sub></h3>
+  <p>A playable World Cup probability lab: make three matchday calls and run 10,000 tournament futures.</p>
+  <p><code>React</code> <code>TypeScript</code> <code>Vite</code> <code>Vitest</code> <code>Monte Carlo</code></p>
+  <p><a href="https://matthewpaver.github.io/can-england-win-it/">Play live ↗</a> · <a href="https://github.com/MatthewPaver/can-england-win-it">Repo ↗</a></p>
 </td>
 <td width="33%" valign="top">
   <a href="https://matthewpaver.github.io/MatthewPaver/store/preview.html?app=happening">
@@ -57,7 +57,7 @@
 | **Role**     | Software engineer and automation specialist |
 | **Based**    | London |
 | **Focus**    | Automation, data products, AI workflows, analytics tools |
-| **Shipping** | Happening (private venue-ingestion system) · QuickSupply (private MVP) · AI Study Companion (private) |
+| **Shipping** | Project 1966 (live simulator) · Happening (private venue-ingestion system) · QuickSupply (private MVP) |
 | **Stack**    | Python · TypeScript · FastAPI · Next.js · Postgres / DuckDB · Playwright · GitHub Actions |
 | **Specs**    | [Constitution](.specify/memory/constitution.md) · [Feature spec](specs/001-portfolio-store-reliability/spec.md) · [Validator](scripts/validate-store.mjs) · [Lighthouse CI](.lighthouserc.json) |
 

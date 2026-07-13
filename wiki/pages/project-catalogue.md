@@ -4,12 +4,13 @@ The catalogue is grouped by shelf so the portfolio does not read as one long lis
 
 ## Flagship Work
 
-- Inference Brief: live AI-news reader and paid product surface.
+- Can England Win It?: live World Cup probability game with 10,000 seeded simulations.
 - Happening: private event-ingestion system with configured sources and reliability checks.
 - QuickSupply: private MVP for school cover workflows.
 
 ## Public Inspection Repos
 
+- Can England Win It?: React simulation product with shareable scenarios and unit-tested model logic.
 - Marketing ML Lakehouse: local data pipeline, model training, checks, and Streamlit dashboard.
 - ProjectLens: schedule-risk upload and reporting workflow.
 - AI Workflow Evaluator: quality gate for AI outputs.

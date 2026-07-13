@@ -25,6 +25,7 @@ All professional examples are intentionally anonymised and focused on engineerin
 
 | Project | Status | Best signal | Link |
 |:---|:---|:---|:---|
+| Can England Win It? | Live interactive experiment | 10,000 seeded simulations, explainable assumptions, shareable scenarios | [Play live](https://matthewpaver.github.io/can-england-win-it/) · [Repo](https://github.com/MatthewPaver/can-england-win-it) |
 | Happening | Private system | 103 configured sources, daily ingestion, 167 tests | [Case study](CASE_STUDIES.md#happening) |
 | Inference Brief | Live product | Editorial workflow + personalised reading product | [Live site](https://inferencebrief.co/) |
 | AI Study Companion | Private product | Document AI + spaced repetition + async jobs | [Case study](CASE_STUDIES.md#ai-study-companion) |
@@ -82,6 +83,7 @@ All professional examples are intentionally anonymised and focused on engineerin
 
 | Project | Status | What to look for |
 |:---|:---|:---|
+| [Can England Win It?](https://github.com/MatthewPaver/can-england-win-it) | Live interactive experiment | React interface, explainable Monte Carlo simulation, URL-based sharing, unit tests |
 | [Marketing ML Lakehouse](https://github.com/MatthewPaver/marketing-ml-lakehouse) | Runnable application | Bronze/silver/gold DuckDB flow, model training, Streamlit reporting |
 | [ProjectLens](https://github.com/MatthewPaver/ProjectLens) | Runnable application | Flask interface, schedule-risk pipeline, reporting outputs |
 | [HR Performance Analytics](https://github.com/MatthewPaver/hr-performance-dashboards) | Dashboard portfolio | Power BI dashboards, datasets, methodology, documentation |

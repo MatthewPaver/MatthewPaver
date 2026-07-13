@@ -1,4 +1,27 @@
 {
+  "project-1966": {
+    "kicker": "Live interactive experiment",
+    "title": "Can England Win It?",
+    "summary": "A playable World Cup probability lab: make three matchday calls, back an England hero, and run 10,000 possible tournament futures.",
+    "image": "./assets/project-1966-cinema.png",
+    "imageAvif": "./assets/project-1966-cinema.avif",
+    "imageAlt": "Project 1966 simulation result showing England's trophy probability",
+    "role": "Simulation product",
+    "status": "Live",
+    "focus": "10,000 tournament runs",
+    "problem": "A single win probability hides the assumptions behind it. Project 1966 turns those assumptions into three clear matchday choices, then shows how they change England's route through the semi-final and final.",
+    "points": [
+      "Runs 10,000 seeded Monte Carlo tournament simulations in the browser.",
+      "Keeps the model explainable and separates playful wildcard boosts from the core ratings.",
+      "Encodes each scenario in the URL so results can be shared and challenged."
+    ],
+    "stack": ["React", "TypeScript", "Vite", "Vitest", "Monte Carlo"],
+    "links": [
+      { "label": "Play live", "href": "https://matthewpaver.github.io/can-england-win-it/", "primary": true },
+      { "label": "Open repo", "href": "https://github.com/MatthewPaver/can-england-win-it" }
+    ],
+    "note": "This is an illustrative scenario model, not a forecast or betting product. The assumptions and model range are visible in the app."
+  },
   "happening": {
     "kicker": "Private system",
     "title": "Happening",
