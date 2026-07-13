@@ -1,4 +1,4 @@
-name: Deploy Idea Store
+name: Deploy Portfolio Store
 
 on:
   push:

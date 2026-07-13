@@ -163,11 +163,47 @@ function inspectReadme(readme, findings) {
     addFinding(findings, "README agent", "low", "The README has no collapsed maintenance/reference block.", "Keep auto-updated or long reference material inside details.");
   }
 
+  const presentationDrift = [
+    ["## Latest shipping", "A dated shipping table goes stale quickly."],
+    ["## Portfolio quality gates", "Portfolio maintenance details are competing with the work."],
+    ["## GitHub signals", "Generic GitHub stat cards add little project evidence."],
+    ["## Shortcuts", "The shortcuts repeat links already exposed above."]
+  ];
+
+  for (const [heading, message] of presentationDrift) {
+    if (readme.includes(heading)) {
+      addFinding(findings, "README agent", "medium", message, `Remove ${heading.replace("## ", "")} from the public profile.`);
+    }
+  }
+
+  if (/store\/assets\/[\w-]+\.gif/.test(readme)) {
+    addFinding(findings, "README agent", "medium", "Animated project previews make the profile busy and can move too quickly.", "Use calm, representative screenshots in the profile and keep video on preview pages.");
+  }
+
   for (const phrase of benchmarks.slopPhrases) {
     const regex = new RegExp(phrase.replace(/[.*+?^${}()|[\]\\]/g, "\\$&"), "i");
     if (regex.test(readme)) {
       addFinding(findings, "README slop detector", "low", `Potential generic phrase in README: "${phrase}".`, "Replace with a concrete project detail or remove it.");
     }
+  }
+}
+
+function inspectPortfolioContracts(indexHtml, findings) {
+  const rootIndex = readFile("index.html");
+  const pagesWorkflow = readFile(".github/workflows/pages.yml");
+  const contract = readFile("specs/001-portfolio-store-reliability/contracts/store-catalogue.md");
+  const preload = indexHtml.match(/rel="preload"[^>]+href="\.\/assets\/([^"]+)"/)?.[1];
+
+  if (rootIndex.includes("Idea Store")) {
+    addFinding(findings, "catalogue agent", "low", "The root redirect still calls the site the Idea Store.", "Use Portfolio Store consistently across the redirect and catalogue.");
+  }
+
+  if (pagesWorkflow.includes("Idea Store")) {
+    addFinding(findings, "catalogue agent", "low", "The Pages workflow still uses the old Idea Store name.", "Use Portfolio Store consistently in Actions and on the deployed site.");
+  }
+
+  if (preload && !contract.includes(`\`${preload}\``)) {
+    addFinding(findings, "catalogue agent", "medium", `The SEO contract does not name the current LCP preload (${preload}).`, "Keep the written contract aligned with the deployed preload asset.");
   }
 }
 
@@ -337,7 +373,7 @@ function renderReport(findings, rows) {
   ];
 
   if (ordered.length === 0) {
-    lines.push("No findings. The portfolio is in very good shape.");
+    lines.push("No findings. The portfolio is in very good shape.", "");
   } else {
     for (const [agent, agentFindings] of byAgent.entries()) {
       lines.push(`### ${agent}`, "");
@@ -397,6 +433,7 @@ const findings = [];
 
 inspectReadme(readme, findings);
 inspectStore(indexHtml, rows, previews, findings);
+inspectPortfolioContracts(indexHtml, findings);
 inspectRepoPackaging(rows, findings);
 inspectAppIdeas(findings);
 inspectWikiPattern(findings);

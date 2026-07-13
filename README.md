@@ -31,7 +31,7 @@
 </td>
 <td width="33%" valign="top">
   <a href="https://matthewpaver.github.io/MatthewPaver/store/preview.html?app=happening">
-    <img src="store/assets/happening-preview.gif" alt="Happening — venue ingestion demo" />
+    <img src="store/assets/happening-web.png" alt="Happening venue ingestion dashboard" />
   </a>
   <h3>Happening <sub>· private</sub></h3>
   <p>Venue pages turned into structured event data, with source configs, scheduled runs, and a 167-test reliability suite.</p>
@@ -40,7 +40,7 @@
 </td>
 <td width="33%" valign="top">
   <a href="https://matthewpaver.github.io/MatthewPaver/store/preview.html?app=quicksupply">
-    <img src="store/assets/quicksupply-preview.gif" alt="QuickSupply — cover ops demo" />
+    <img src="store/assets/quicksupply-dashboard.png" alt="QuickSupply cover operations dashboard" />
   </a>
   <h3>QuickSupply <sub>· private MVP</sub></h3>
   <p>A school cover-ops workflow built for three sides: school, agency, teacher. Sequential assignment, compliance checks, live status.</p>
@@ -61,7 +61,7 @@
 | **Stack**    | Python · TypeScript · FastAPI · Next.js · Postgres / DuckDB · Playwright · GitHub Actions |
 | **Specs**    | [Constitution](.specify/memory/constitution.md) · [Feature spec](specs/001-portfolio-store-reliability/spec.md) · [Validator](scripts/validate-store.mjs) · [Lighthouse CI](.lighthouserc.json) |
 
-## Build Pattern
+## Build pattern
 
 ```mermaid
 flowchart LR
@@ -109,38 +109,6 @@ The pattern is practical: collect the messy input, clean it, check it, and turn 
 </tr>
 </table>
 
-## Latest shipping
-
-| When | What |
-|:---|:---|
-| **2026-05** | Portfolio audit agents — README, thumbnail, catalogue, repo-packaging, and app-idea review passes |
-| **2026-05** | AI Workflow Evaluator — regression test for text, screenshot, PDF, image, and audio outputs before they ship |
-| **2026-05** | Spec-driven portfolio governance: constitution, validator, Lighthouse CI, JSON-LD, manifest, CSP, custom OG card |
-| **2026-03** | Happening — 167-test reliability suite, 103 venue source configs |
-| **2026-02** | QuickSupply MVP — three-sided workflow, sequential assignment, live SSE status |
-
-## Portfolio quality gates
-
-This profile is checked like a small product. The audit reviews the README, app-store catalogue, preview coverage, thumbnails, public-repo packaging, and build backlog.
-
-```bash
-npm test
-npm run audit:portfolio
-```
-
-[Latest audit report](PORTFOLIO_AUDIT.md) | [App ideas backlog](APP_IDEAS.md) | [Portfolio wiki](wiki/index.md)
-
-## GitHub signals
-
-<p>
-  <a href="https://github.com/anuraghazra/github-readme-stats">
-    <img src="https://github-readme-stats.vercel.app/api?username=MatthewPaver&show_icons=true&hide_border=false&bg_color=fbfaf7&title_color=0f766e&text_color=151515&icon_color=8f5d12&border_color=d8d2c8&include_all_commits=true&count_private=false" alt="GitHub stats" height="170" />
-  </a>
-  <a href="https://github.com/anuraghazra/github-readme-stats">
-    <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=MatthewPaver&layout=compact&hide_border=false&bg_color=fbfaf7&title_color=0f766e&text_color=151515&border_color=d8d2c8&langs_count=8&hide=hcl" alt="Top languages" height="170" />
-  </a>
-</p>
-
 ## Credentials
 
 <p>
@@ -152,15 +120,6 @@ npm run audit:portfolio
   <a href="https://drive.google.com/file/d/15yLBx8nzlhn_PwrGoqQbumRG8zRQPC9t/view"><img src="https://img.shields.io/badge/BCS-Diploma_in_IT-151515?style=flat-square&logo=bcs&logoColor=white" alt="BCS Diploma in IT" /></a>
   <a href="CV.pdf"><img src="https://img.shields.io/badge/CV-Open_PDF-151515?style=flat-square&logo=readthedocs&logoColor=white" alt="Open CV PDF" /></a>
 </p>
-
-## Shortcuts
-
-| Open | For |
-|:---|:---|
-| [Portfolio Store](https://matthewpaver.github.io/MatthewPaver/store/) | Visual project catalogue |
-| [Case Studies](CASE_STUDIES.md) | Architecture and tradeoffs |
-| [Portfolio audit](PORTFOLIO_AUDIT.md) | Quality checks behind the profile |
-| [CV](CV.pdf) | Background and experience |
 
 <details>
 <summary><strong>Latest public activity</strong> (auto-updated daily)</summary>

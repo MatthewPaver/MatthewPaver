@@ -36,12 +36,13 @@ Karpathy wiki-pattern principles used by the audit:
 ## Findings
 
 No findings. The portfolio is in very good shape.
+
 ## Catalogue Snapshot
 
 | Shelf | Count |
 |:---|---:|
-| product | 4 |
 | automation | 1 |
+| product | 3 |
 | data | 2 |
 | analytics | 2 |
 | ml | 4 |
