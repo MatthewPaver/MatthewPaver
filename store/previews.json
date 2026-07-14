@@ -178,6 +178,29 @@
     ],
     "note": "The repo is packaged for review with a clear workflow, tests, and public inspection path."
   },
+  "decisiongraph": {
+    "kicker": "Live decision-support application",
+    "title": "DecisionGraph",
+    "summary": "A project-memory demonstrator that retrieves comparable changes, explains each match and connects interventions to measured outcomes.",
+    "image": "./assets/decisiongraph.png",
+    "imageAvif": "./assets/decisiongraph.avif",
+    "imageAlt": "DecisionGraph knowledge graph connecting a new project change to comparable decisions and observed outcomes",
+    "role": "Project knowledge retrieval",
+    "status": "Live",
+    "focus": "What happened last time?",
+    "problem": "Change requests, decision logs, risks and lessons are often stored but not retrieved when the next similar decision is being made. The practical test is whether a new delivery problem can surface comparable cases, explain why they matter and show what happened after the intervention.",
+    "points": [
+      "Retrieves comparable cases using deterministic, inspectable scoring.",
+      "Connects the original problem, decision, intervention, outcome and source trail in a knowledge graph.",
+      "Requires human review and captures the eventual outcome back into organisational memory."
+    ],
+    "stack": ["JavaScript", "Information retrieval", "Knowledge graphs", "Local import", "GitHub Pages"],
+    "links": [
+      { "label": "Open live demo", "href": "https://matthewpaver.github.io/DecisionGraph/", "primary": true },
+      { "label": "Open repo", "href": "https://github.com/MatthewPaver/DecisionGraph" }
+    ],
+    "note": "The public demo uses 16 synthetic cases. Production RAG would require evaluated embeddings, permissions, source-quality controls and durable storage."
+  },
   "architexa": {
     "kicker": "Public ML project",
     "title": "Architexa",
