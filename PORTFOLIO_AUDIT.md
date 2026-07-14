@@ -41,7 +41,7 @@ No findings. The portfolio is in very good shape.
 
 | Shelf | Count |
 |:---|---:|
-| product | 4 |
+| product | 5 |
 | automation | 1 |
 | data | 2 |
 | analytics | 2 |
