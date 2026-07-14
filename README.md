@@ -127,15 +127,16 @@ The pattern is practical: collect the messy input, clean it, check it, and turn 
 
 _This section is automatically refreshed by GitHub Actions._
 
-- Last refresh (UTC): 2026-07-13 10:35
+- Last refresh (UTC): 2026-07-14 09:18
 
 | Repo | Last push | What it is |
 |:---|:---:|:---|
-| [MatthewPaver](https://github.com/MatthewPaver/MatthewPaver) | 2026-07-12 | Portfolio: AI products, data systems, ML, and analytics — every project has a preview,… |
+| [MatthewPaver](https://github.com/MatthewPaver/MatthewPaver) | 2026-07-14 | Portfolio: AI products, data systems, ML, and analytics — every project has a preview,… |
+| [ProjectLens](https://github.com/MatthewPaver/ProjectLens) | 2026-07-14 | Explainable schedule-risk analysis that turns evidence into accountable recovery decisi… |
+| [DecisionGraph](https://github.com/MatthewPaver/DecisionGraph) | 2026-07-14 | Evidence-linked project decision memory and comparable-case retrieval demo |
+| [can-england-win-it](https://github.com/MatthewPaver/can-england-win-it) | 2026-07-13 | An interactive World Cup probability lab: tune England's form, run 10,000 simulations,… |
 | [hr-performance-dashboards](https://github.com/MatthewPaver/hr-performance-dashboards) | 2026-05-25 | Power BI dashboard handoff package for HR, absence, and sales performance analytics. |
 | [sentence-similarity-analysis](https://github.com/MatthewPaver/sentence-similarity-analysis) | 2026-05-25 | Sentence-transformer notebook showing embedding similarity, cosine ranking, and retriev… |
-| [dating-app-recommendation-system](https://github.com/MatthewPaver/dating-app-recommendation-system) | 2026-05-25 | Swipe-style recommendation system with implicit feedback, temporal holdouts, and Top-K… |
-| [ProjectLens](https://github.com/MatthewPaver/ProjectLens) | 2026-05-25 | Flask schedule-risk app for slippage, milestone pressure, forecasting, and Power BI-rea… |
 
 <!-- AUTO:ACTIVITY_END -->
 
