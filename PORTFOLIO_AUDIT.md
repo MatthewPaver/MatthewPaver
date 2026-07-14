@@ -45,7 +45,7 @@ No findings. The portfolio is in very good shape.
 | automation | 1 |
 | data | 2 |
 | analytics | 2 |
-| ml | 4 |
+| ml | 3 |
 
 ## Next Best Actions
 

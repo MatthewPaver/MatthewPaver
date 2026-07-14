@@ -18,7 +18,6 @@ document.addEventListener("DOMContentLoaded", () => {
   const curatedOrder = new Map(
     [
       "project-1966",
-      "ai-evaluator",
       "lakehouse",
       "happening",
       "quicksupply",

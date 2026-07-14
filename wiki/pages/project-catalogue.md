@@ -13,7 +13,6 @@ The catalogue is grouped by shelf so the portfolio does not read as one long lis
 - Can England Win It?: React simulation product with shareable scenarios and unit-tested model logic.
 - Marketing ML Lakehouse: local data pipeline, model training, checks, and Streamlit dashboard.
 - ProjectLens: schedule-risk upload and reporting workflow.
-- AI Workflow Evaluator: quality gate for AI outputs.
 - Dating App Recommendation System: deterministic recommendation evaluation.
 - Sentence Similarity Analysis: retrieval/evaluation lab.
 - HR Performance Analytics: Power BI handoff package.

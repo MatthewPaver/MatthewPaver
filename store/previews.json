@@ -245,30 +245,6 @@
     ],
     "note": "This preview is about evaluation discipline: how the recommender is tested matters as much as the model choice."
   },
-  "ai-evaluator": {
-    "kicker": "Public AI Ops app",
-    "title": "AI Workflow Evaluator",
-    "summary": "A deterministic AI Ops gate for checking quality, cost, latency, routing, and review status across text and multimodal workflows.",
-    "image": "./assets/ai-workflow-evaluator-dashboard.png",
-    "imageAvif": "./assets/ai-workflow-evaluator-dashboard.avif",
-    "imageAlt": "AI Workflow Evaluator product thumbnail",
-    "role": "AI Ops evaluation tooling",
-    "status": "Public",
-    "focus": "Quality, cost, and routing gates",
-    "problem": "AI workflows can become expensive or risky before anyone notices. The practical test is whether a logged AI output can ship, needs review, should be blocked, or should be routed through a different model path.",
-    "points": [
-      "Uses deterministic rules, so the sample suite runs locally without API keys.",
-      "Models text, screenshot, PDF, image, and audio workflows.",
-      "Produces ship, review, block, routing, and cost-control decisions with evidence notes."
-    ],
-    "stack": ["Python", "HTML", "CSS", "JavaScript", "GitHub Actions"],
-    "links": [
-      { "label": "Open AI Ops demo", "href": "https://matthewpaver.github.io/ai-workflow-evaluator/app/?suite=aiops", "primary": true },
-      { "label": "Open repo", "href": "https://github.com/MatthewPaver/ai-workflow-evaluator" },
-      { "label": "Read case study", "href": "https://github.com/MatthewPaver/MatthewPaver/blob/main/CASE_STUDIES.md#ai-workflow-evaluator" }
-    ],
-    "note": "A compact public repo for a real company problem: when AI work uses more context, files, screenshots, and audio, quality and spend need visible gates."
-  },
   "hr": {
     "kicker": "Public dashboard package",
     "title": "HR Performance Analytics",

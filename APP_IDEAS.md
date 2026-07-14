@@ -7,7 +7,6 @@ These are ideas that fit the current portfolio: automation, data systems, AI qua
 | Idea | Why it fits | Portfolio signal | Suggested scope |
 |:---|:---|:---|:---|
 | Automation Control Tower | Central dashboard for scheduled jobs, failures, retries, owners, and evidence logs. | Strong automation-specialist signal; connects to Happening, QuickSupply, and evaluator work. | One local app with demo jobs, run history, failure reasons, and handoff notes. |
-| AI Governance Inbox | Review queue for AI outputs that need approval, source checks, policy checks, and audit trail. | Turns AI Workflow Evaluator into a product workflow instead of a scoring demo. | Ingest sample outputs, assign review status, show evidence, export decision log. |
 | Data Quality Command Centre | Dataset checks, schema drift, anomaly alerts, freshness checks, and plain-English issue summaries. | Strong enterprise data-engineering signal. | DuckDB-backed demo with failing/passing sample datasets and a quality timeline. |
 | Ops Handoff Generator | Converts messy notes, tickets, emails, and status updates into a clean shift/handoff brief. | Very aligned with automation and operational tooling. | Upload/paste notes, classify issues, produce handoff, risk list, and follow-up tasks. |
 | Market Signal Monitor | Public demo version of Smart Job Market Intelligence for one narrow sector. | Makes the private job-market system visible without exposing private code. | Use demo data, trend cards, anomaly notes, and weekly brief output. |

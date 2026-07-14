@@ -21,6 +21,7 @@ START_MARKER = "<!-- AUTO:ACTIVITY_START -->"
 END_MARKER = "<!-- AUTO:ACTIVITY_END -->"
 USERNAME = os.getenv("PROFILE_USERNAME", "MatthewPaver")
 MAX_REPOS = int(os.getenv("PROFILE_ACTIVITY_REPOS", "6"))
+EXCLUDED_REPOS = {"ai-workflow-evaluator"}
 
 
 def fetch_json(url: str, token: str | None) -> list[dict] | dict:
@@ -88,7 +89,11 @@ def main() -> int:
         raise RuntimeError("Unexpected GitHub API response for repos list")
 
     public_non_fork = [
-        r for r in data if not r.get("private", True) and not r.get("fork", False)
+        r
+        for r in data
+        if not r.get("private", True)
+        and not r.get("fork", False)
+        and r.get("name") not in EXCLUDED_REPOS
     ]
     public_non_fork.sort(key=lambda r: r.get("pushed_at") or "", reverse=True)
     top_repos = public_non_fork[:MAX_REPOS]

@@ -88,8 +88,6 @@ The pattern is practical: collect the messy input, clean it, check it, and turn 
 
 - [Marketing ML Lakehouse](https://github.com/MatthewPaver/marketing-ml-lakehouse) — Bronze/silver/gold DuckDB flow, XGBoost training, data-quality checks, Streamlit dashboard<br/><sub><img src="https://img.shields.io/github/last-commit/MatthewPaver/marketing-ml-lakehouse?style=flat-square&label=Last%20commit&color=8f5d12&labelColor=151515" alt="Last commit" /> <img src="https://img.shields.io/github/languages/top/MatthewPaver/marketing-ml-lakehouse?style=flat-square&color=0f766e&labelColor=151515" alt="Top language" /></sub>
 - [ProjectLens](https://github.com/MatthewPaver/ProjectLens) — Schedule-risk Flask app: upload, slippage analysis, milestone pressure, Power BI-ready exports<br/><sub><img src="https://img.shields.io/github/last-commit/MatthewPaver/ProjectLens?style=flat-square&label=Last%20commit&color=8f5d12&labelColor=151515" alt="Last commit" /> <img src="https://img.shields.io/github/languages/top/MatthewPaver/ProjectLens?style=flat-square&color=0f766e&labelColor=151515" alt="Top language" /></sub>
-- [AI Workflow Evaluator](https://github.com/MatthewPaver/ai-workflow-evaluator) — Regression test for logged AI outputs: ship, review, block, or reroute based on evidence, cost, latency, and sign-off · [demo](https://matthewpaver.github.io/ai-workflow-evaluator/app/?suite=aiops)<br/><sub><img src="https://img.shields.io/github/actions/workflow/status/MatthewPaver/ai-workflow-evaluator/validate.yml?style=flat-square&label=CI&color=0f766e&labelColor=151515" alt="AI Workflow Evaluator CI" /> <img src="https://img.shields.io/github/languages/top/MatthewPaver/ai-workflow-evaluator?style=flat-square&color=8f5d12&labelColor=151515" alt="Top language" /></sub>
-
 <sub><strong>Repo standard:</strong> run command, tests or checks, demo/sample data where possible, screenshots, architecture notes, and limitations.</sub>
 
 **▸ Analytics handoff**
@@ -134,7 +132,6 @@ _This section is automatically refreshed by GitHub Actions._
 | Repo | Last push | What it is |
 |:---|:---:|:---|
 | [MatthewPaver](https://github.com/MatthewPaver/MatthewPaver) | 2026-07-12 | Portfolio: AI products, data systems, ML, and analytics — every project has a preview,… |
-| [ai-workflow-evaluator](https://github.com/MatthewPaver/ai-workflow-evaluator) | 2026-06-16 | Runnable quality gate for LLM workflow outputs: accuracy, grounding, hallucination risk… |
 | [hr-performance-dashboards](https://github.com/MatthewPaver/hr-performance-dashboards) | 2026-05-25 | Power BI dashboard handoff package for HR, absence, and sales performance analytics. |
 | [sentence-similarity-analysis](https://github.com/MatthewPaver/sentence-similarity-analysis) | 2026-05-25 | Sentence-transformer notebook showing embedding similarity, cosine ranking, and retriev… |
 | [dating-app-recommendation-system](https://github.com/MatthewPaver/dating-app-recommendation-system) | 2026-05-25 | Swipe-style recommendation system with implicit feedback, temporal holdouts, and Top-K… |
