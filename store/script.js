@@ -12,15 +12,32 @@ document.addEventListener("DOMContentLoaded", () => {
   if (!searchInput || !visibleCount || !emptyState) return;
 
   let activeFilter = "all";
-  let lastSortMode = "curated";
+  let lastSortMode = "";
   const validFilters = new Set(filters.map((button) => button.dataset.filter).filter(Boolean));
   const searchIndex = new Map();
+  const curatedOrder = new Map(
+    [
+      "project-1966",
+      "ai-evaluator",
+      "lakehouse",
+      "happening",
+      "quicksupply",
+      "projectlens",
+      "study",
+      "smart-job",
+      "operations",
+      "hr",
+      "recommender",
+      "sentence",
+      "architexa",
+    ].map((slug, index) => [slug, index])
+  );
 
   function initCardDetails() {
     cards.forEach((card, index) => {
       const title = card.querySelector("h3")?.textContent?.trim();
       const titleRow = card.querySelector(".app-title-row");
-      card.dataset.order = String(index);
+      card.dataset.order = String(curatedOrder.get(card.dataset.slug) ?? index);
       if (title) card.dataset.title = title;
 
       if (titleRow && title && !titleRow.querySelector(".app-icon")) {
@@ -35,6 +52,18 @@ document.addEventListener("DOMContentLoaded", () => {
           .join("")
           .toUpperCase();
         titleRow.prepend(icon);
+      }
+
+      const media = card.querySelector(":scope > picture");
+      const previewLink = card.querySelector('.card-actions a[href*="preview.html"]');
+      const fallbackLink = card.querySelector(".card-actions a");
+      if (media && title && !media.parentElement?.classList.contains("card-media-link")) {
+        const mediaLink = document.createElement("a");
+        mediaLink.className = "card-media-link";
+        mediaLink.href = previewLink?.href || fallbackLink?.href || "#";
+        mediaLink.setAttribute("aria-label", `View ${title} details`);
+        media.before(mediaLink);
+        mediaLink.append(media);
       }
 
       searchIndex.set(card, card.textContent.toLowerCase());
@@ -80,8 +109,8 @@ document.addEventListener("DOMContentLoaded", () => {
       }
 
       if (sortMode === "public") {
-        const aPublic = a.dataset.status?.toLowerCase().includes("public") || a.querySelector(".status.public");
-        const bPublic = b.dataset.status?.toLowerCase().includes("public") || b.querySelector(".status.public");
+        const aPublic = a.querySelector(".status.public, .status.live");
+        const bPublic = b.querySelector(".status.public, .status.live");
         if (Boolean(aPublic) !== Boolean(bPublic)) return aPublic ? -1 : 1;
       }
 
