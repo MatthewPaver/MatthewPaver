@@ -7,7 +7,7 @@
     <meta name="theme-color" content="#fbfaf7" />
     <title>Matthew Paver Portfolio Store</title>
     <link rel="canonical" href="https://matthewpaver.github.io/MatthewPaver/store/" />
-    <link rel="preload" as="image" href="./assets/project-1966-card.avif" type="image/avif" fetchpriority="high" />
+    <link rel="preload" as="image" href="./assets/project-1966-cinema.avif" type="image/avif" fetchpriority="high" />
     <meta
       name="description"
       content="Matthew Paver's portfolio store: practical automation, AI workflow, data engineering, analytics, and machine learning projects you can inspect."
@@ -45,7 +45,7 @@
     <script>
       document.documentElement.className = document.documentElement.className.replace("no-js", "js-enabled");
     </script>
-    <link rel="stylesheet" href="./styles.css?v=20260714-1" />
+    <link rel="stylesheet" href="./styles.css?v=20260714-2" />
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
@@ -111,121 +111,75 @@
     </div>
 
     <header class="shell hero">
-      <section class="hero-grid">
-        <div class="hero-copy">
-          <p class="eyebrow">Matthew Paver · Portfolio Store</p>
-          <h1>Automation, data, and AI projects.</h1>
-          <dl class="hero-spec" aria-label="At a glance">
-            <div>
-              <dt>Role</dt>
-              <dd>Software engineer and automation specialist</dd>
-            </div>
-            <div>
-              <dt>Status</dt>
-              <dd><span class="status-dot" aria-hidden="true"></span>Current focus is workflow automation and data systems</dd>
-            </div>
-            <div>
-              <dt>Based</dt>
-              <dd>London</dd>
-            </div>
-          </dl>
-          <div class="hero-actions">
-            <a class="button primary" href="#store">Browse projects</a>
-            <a class="button ghost" href="https://www.linkedin.com/in/matthew-paver-534262166/">Connect with me</a>
-          </div>
+      <div class="hero-copy">
+        <p class="eyebrow">Matthew Paver · Portfolio Store</p>
+        <h1>Software for messy, real-world work.</h1>
+        <p class="lede">Automation, data systems, ML experiments, and focused products you can open or inspect.</p>
+        <div class="hero-actions">
+          <a class="button primary" href="#projects">Browse projects</a>
+          <a class="button ghost" href="https://www.linkedin.com/in/matthew-paver-534262166/">Connect with me</a>
         </div>
-      </section>
-
+      </div>
     </header>
 
     <main id="store" class="shell">
-      <section class="selected-work" aria-labelledby="selected-heading">
-        <div class="section-heading compact">
-          <div>
-            <p class="eyebrow">Start here</p>
-            <h2 id="selected-heading">Start with something live.</h2>
+      <section class="store-spotlight" aria-labelledby="spotlight-heading">
+        <a class="spotlight-media" href="https://matthewpaver.github.io/can-england-win-it/" aria-label="Play Can England Win It">
+          <picture>
+            <source srcset="./assets/project-1966-cinema.avif" type="image/avif" />
+            <img src="./assets/project-1966-cinema.png" width="1440" height="1000" alt="Can England Win It simulation result screen" fetchpriority="high" decoding="async" />
+          </picture>
+        </a>
+        <div class="spotlight-copy">
+          <p class="eyebrow"><span class="spotlight-live" aria-hidden="true"></span>Live now</p>
+          <h2 id="spotlight-heading">Can England Win It?</h2>
+          <p>Make three matchday calls, choose a wildcard player, and run 10,000 seeded World Cup scenarios.</p>
+          <p class="spotlight-meta">React · TypeScript · Monte Carlo simulation</p>
+          <div class="spotlight-actions">
+            <a class="button primary" href="https://matthewpaver.github.io/can-england-win-it/">Play the simulation</a>
+            <a class="button ghost" href="./preview.html?app=project-1966">View details</a>
           </div>
-          <p>Play a public build, then inspect two deeper systems.</p>
-        </div>
-
-        <div class="selected-grid">
-          <a class="selected-card selected-card-live" href="https://matthewpaver.github.io/can-england-win-it/">
-            <picture>
-              <source srcset="./assets/project-1966-card.avif" type="image/avif" />
-              <img src="./assets/project-1966-card.png" width="1200" height="630" alt="Can England Win It interactive World Cup simulator" fetchpriority="high" decoding="async" />
-            </picture>
-            <span class="selected-status"><i aria-hidden="true"></i>Live interactive</span>
-            <strong>Can England Win It?</strong>
-            <small>Pick the mood, back a hero, and run 10,000 World Cup futures.</small>
-            <em>Play now</em>
-          </a>
-          <a class="selected-card" href="./preview.html?app=happening">
-            <picture>
-              <source srcset="./assets/happening-web.avif" type="image/avif" />
-              <img src="./assets/happening-web.png" width="1200" height="760" alt="Happening web app screenshot" loading="lazy" decoding="async" />
-            </picture>
-            <strong>Happening</strong>
-            <small>Venue pages turned into checked event data.</small>
-            <em>Open preview</em>
-          </a>
-          <a class="selected-card" href="./preview.html?app=quicksupply">
-            <picture>
-              <source srcset="./assets/quicksupply-dashboard.avif" type="image/avif" />
-              <img src="./assets/quicksupply-dashboard.png" width="1200" height="760" alt="QuickSupply dashboard screenshot" loading="lazy" decoding="async" />
-            </picture>
-            <strong>QuickSupply</strong>
-            <small>Cover requests, agency assignment, teacher offers, and live status.</small>
-            <em>Open preview</em>
-          </a>
         </div>
       </section>
 
-      <section class="shelf-index" aria-labelledby="shelf-index-heading">
-        <div class="shelf-index-copy">
-          <p class="eyebrow">Catalogue mode</p>
-          <h2 id="shelf-index-heading">Browse by shelf.</h2>
-          <p>Jump straight to the type of work you care about.</p>
+      <section id="projects" class="catalogue-heading" aria-labelledby="project-grid-heading">
+        <div>
+          <p class="eyebrow">Catalogue</p>
+          <h2 id="project-grid-heading">Projects</h2>
         </div>
-        <div class="shelf-grid" aria-label="Project shelves">
-          <a href="?filter=product#project-grid-heading" data-filter-link="product">
-            <svg class="shelf-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 6h16v12H4z"/><path d="M4 10h16"/><circle cx="7" cy="8" r="0.5" fill="currentColor"/><circle cx="9" cy="8" r="0.5" fill="currentColor"/></svg>
-            <strong>Apps and experiments</strong>
-            <small>Project 1966, QuickSupply, Study Companion</small>
-          </a>
-          <a href="?filter=data#project-grid-heading" data-filter-link="data">
-            <svg class="shelf-icon" viewBox="0 0 24 24" aria-hidden="true"><ellipse cx="12" cy="5" rx="7" ry="2.2"/><path d="M5 5v14c0 1.2 3.1 2.2 7 2.2s7-1 7-2.2V5"/><path d="M5 11c0 1.2 3.1 2.2 7 2.2s7-1 7-2.2"/></svg>
-            <strong>Data systems</strong>
-            <small>Happening, Lakehouse, job-market signals</small>
-          </a>
-          <a href="?filter=automation#project-grid-heading" data-filter-link="automation">
-            <svg class="shelf-icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="3"/><path d="M12 3v3M12 18v3M3 12h3M18 12h3M5.6 5.6l2.1 2.1M16.3 16.3l2.1 2.1M5.6 18.4l2.1-2.1M16.3 7.7l2.1-2.1"/></svg>
-            <strong>Automation</strong>
-            <small>Runs, checks, alerts, handoffs</small>
-          </a>
-          <a href="?filter=ml#project-grid-heading" data-filter-link="ml">
-            <svg class="shelf-icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="6" cy="6" r="2"/><circle cx="18" cy="6" r="2"/><circle cx="6" cy="18" r="2"/><circle cx="18" cy="18" r="2"/><circle cx="12" cy="12" r="2"/><path d="M8 6h2M14 6h2M8 18h2M14 18h2M6 8v2M6 14v2M18 8v2M18 14v2"/></svg>
-            <strong>ML and retrieval</strong>
-            <small>Ranking, embeddings, GANs, evaluation</small>
-          </a>
-          <a href="?filter=analytics#project-grid-heading" data-filter-link="analytics">
-            <svg class="shelf-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 20V4M4 20h16"/><rect x="8" y="13" width="3" height="5"/><rect x="13" y="9" width="3" height="9"/><rect x="18" y="6" width="3" height="12"/></svg>
-            <strong>Analytics</strong>
-            <small>ProjectLens, HR dashboards, reporting outputs</small>
-          </a>
-        </div>
+        <p>Public builds, private systems, and completed experiments. Use the filters to narrow the shelf.</p>
       </section>
 
-      <div id="project-grid-heading" class="store-toolbar js-only">
+      <noscript>
+        <nav class="no-script-shelves" aria-label="Project categories">
+          <a href="?filter=product#project-grid-heading">Apps</a>
+          <a href="?filter=automation#project-grid-heading">Automation</a>
+          <a href="?filter=data#project-grid-heading">Data systems</a>
+          <a href="?filter=analytics#project-grid-heading">Analytics</a>
+          <a href="?filter=ml#project-grid-heading">ML</a>
+        </nav>
+      </noscript>
+
+      <div class="filters js-only" role="toolbar" aria-label="Filter projects">
+        <button class="filter active" data-filter="all" type="button" aria-pressed="true">All</button>
+        <button class="filter" data-filter="product" type="button" aria-pressed="false">Apps</button>
+        <button class="filter" data-filter="automation" type="button" aria-pressed="false">Automation</button>
+        <button class="filter" data-filter="data" type="button" aria-pressed="false">Data systems</button>
+        <button class="filter" data-filter="analytics" type="button" aria-pressed="false">Analytics</button>
+        <button class="filter" data-filter="ml" type="button" aria-pressed="false">ML</button>
+      </div>
+
+      <div class="store-toolbar js-only">
         <label class="search-box">
           <span>Search projects</span>
           <span class="search-row">
-            <input id="store-search" name="store-search" type="search" autocomplete="off" placeholder="Try simulation, automation, embeddings…" />
+            <input id="store-search" name="store-search" type="search" autocomplete="off" placeholder="Search by name or stack…" />
             <button id="clear-search" class="clear-search" type="button" hidden>Clear</button>
           </span>
         </label>
         <div class="result-count">
           <span id="visible-count">13</span>
-          <span>projects showing</span>
+          <span>projects</span>
         </div>
         <label class="sort-box">
           <span>Sort</span>
@@ -240,17 +194,8 @@
       <!-- aria-live on one node avoids duplicate polite announcements from the grid -->
       <p id="store-filter-announcement" class="visually-hidden" aria-live="polite" aria-atomic="true"></p>
 
-      <div class="filters js-only" role="toolbar" aria-label="Filter projects">
-        <button class="filter active" data-filter="all" type="button" aria-pressed="true">All</button>
-        <button class="filter" data-filter="product" type="button" aria-pressed="false">Apps</button>
-        <button class="filter" data-filter="data" type="button" aria-pressed="false">Data systems</button>
-        <button class="filter" data-filter="automation" type="button" aria-pressed="false">Automation</button>
-        <button class="filter" data-filter="ml" type="button" aria-pressed="false">ML</button>
-        <button class="filter" data-filter="analytics" type="button" aria-pressed="false">Analytics</button>
-      </div>
-
       <section class="store-grid">
-        <article class="app-card featured image-card" data-slug="project-1966" data-tags="product analytics" data-status="Live interactive experiment" data-solves="Makes tournament probabilities playable" data-shows="10,000 explainable futures">
+        <article class="app-card image-card" data-slug="project-1966" data-tags="product analytics" data-status="Live interactive experiment" data-solves="Makes tournament probabilities playable" data-shows="10,000 explainable futures">
           <picture>
             <source srcset="./assets/project-1966-card.avif" type="image/avif" />
             <img src="./assets/project-1966-card.png" width="1200" height="630" loading="lazy" decoding="async" alt="Can England Win It interactive World Cup simulator" />
@@ -323,8 +268,8 @@
               <span class="status private">Private</span>
             </div>
             <p>
-              Practical test: can a learner upload source material and get a review loop they can trust?
-              The app parses notes, generates practice, and schedules what to revisit next.
+              Upload notes or documents and turn them into flashcards, quizzes, and a spaced-review plan.
+              Source material stays part of the review loop.
             </p>
             <ul class="proof-list">
               <li>PDF/DOCX/TXT ingestion</li>
@@ -352,8 +297,8 @@
               <span class="status private">Private</span>
             </div>
             <p>
-              Practical test: can noisy job listings become a weekly market brief? Listings are
-              normalised, compared, and turned into salary, skill, remote-work, and volume signals.
+              Normalises noisy job listings into salary, skills, remote-work, and hiring-volume
+              signals for a weekly market brief.
             </p>
             <ul class="proof-list">
               <li>Listing ingestion and normalisation</li>
@@ -381,8 +326,8 @@
               <span class="status private">Private</span>
             </div>
             <p>
-              Practical test: can a same-day cover request move from school to agency to teacher
-              without message chasing? QuickSupply models eligibility, offers, and live status.
+              Moves same-day cover from school request to agency assignment and teacher offer, with
+              eligibility and live status in one workflow.
             </p>
             <ul class="proof-list">
               <li>Sequential assignment engine</li>
@@ -409,8 +354,8 @@
               <span class="status private">Private</span>
             </div>
             <p>
-              Practical test: can a resident request keep its status, owner, evidence, and payment
-              context in one place? This prototype models intake, audit trail, and triage.
+              Keeps a resident request's status, owner, evidence, and payment context together from
+              intake to triage.
             </p>
             <ul class="proof-list">
               <li>Resident request intake</li>
@@ -437,8 +382,8 @@
               <span class="status public">Public</span>
             </div>
             <p>
-              Practical test: can raw campaign CSVs become a trusted local dashboard? This repo
-              rebuilds DuckDB tables, model features, checks, and Streamlit views from demo data.
+              Turns campaign CSVs into DuckDB tables, model features, checks, and Streamlit views
+              that rebuild from demo data.
             </p>
             <ul class="proof-list">
               <li>Bronze/silver/gold flow</li>
@@ -469,8 +414,8 @@
               <span class="status public">Public</span>
             </div>
             <p>
-              Practical test: can a project schedule file become a delivery-risk report? ProjectLens
-              turns uploads into slippage, milestone pressure, forecasts, and reporting outputs.
+              Reads project schedule files and produces slippage, milestone pressure, forecasts,
+              and reporting outputs.
             </p>
             <ul class="proof-list">
               <li>Upload-to-analysis flow</li>
@@ -501,8 +446,8 @@
               <span class="status public">Public</span>
             </div>
             <p>
-              Practical test: can an image model move past a notebook into a small service path?
-              Architexa covers dataset prep, conditional GAN training, generated outputs, and API shape.
+              Packages dataset preparation, conditional GAN training, generated outputs, and a
+              small API path.
             </p>
             <ul class="proof-list">
               <li>Conditional GAN</li>
@@ -533,8 +478,8 @@
               <span class="status public">Public</span>
             </div>
             <p>
-              Practical test: can swipe history rank unseen profiles better than a static list?
-              The repo evaluates that question with temporal holdouts and Top-K metrics.
+              Uses swipe history to rank unseen profiles, with temporal holdouts and Top-K metrics
+              instead of a random train-test split.
             </p>
             <ul class="proof-list">
               <li>Implicit-feedback ranking</li>
@@ -565,8 +510,8 @@
               <span class="status public">Public</span>
             </div>
             <p>
-              Practical test: can a logged AI output ship, or should it be reviewed, blocked,
-              or rerouted? The app checks evidence, claims, cost, latency, and sign-off.
+              Runs logged AI outputs through evidence, claim, cost, latency, and sign-off checks
+              before release.
             </p>
             <ul class="proof-list">
               <li>Text, screenshot, PDF, image, and audio scenarios</li>
@@ -599,8 +544,8 @@
               <span class="status public">Public</span>
             </div>
             <p>
-              Practical test: can HR, absence, and sales data be handed to a stakeholder as a
-              review pack? The repo keeps PBIX files, data, screenshots, and commentary together.
+              Packages HR, absence, and sales data into a stakeholder review pack with PBIX files,
+              prepared data, screenshots, and commentary.
             </p>
             <ul class="proof-list">
               <li>Summary, sales, and absence views</li>
@@ -631,8 +576,8 @@
               <span class="status public">Public</span>
             </div>
             <p>
-              Practical test: can embeddings find related text without pretending related means true?
-              The notebook ranks sentences and shows where similarity can mislead.
+              Compares embedding models for retrieval and shows where semantic similarity stops
+              being evidence.
             </p>
             <ul class="proof-list">
               <li>Transformer embeddings</li>
@@ -748,6 +693,6 @@
       <div><a href="https://github.com/MatthewPaver">GitHub</a> · <a href="https://www.linkedin.com/in/matthew-paver-534262166/">Connect on LinkedIn</a></div>
     </footer>
 
-    <script src="./script.js?v=20260714-1"></script>
+    <script src="./script.js?v=20260714-2"></script>
   </body>
 </html>
