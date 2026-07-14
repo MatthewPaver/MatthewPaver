@@ -1,24 +1,65 @@
 # Case Studies
 
-Short, sanitised case studies across AI, data, automation, and analytics.
+Product and engineering notes from selected builds across automation, data, AI, and analytics.
 
 [Back to Profile](README.md) | [Portfolio Store](https://matthewpaver.github.io/MatthewPaver/store/) | [Project Appendix](Projects.md)
 
-All professional examples are intentionally anonymised and focused on architecture, tradeoffs, and delivery patterns rather than internal identifiers.
+Private and professional examples are anonymised. Public builds link to the working product and source.
 
 ---
 
 ## How To Read These
 
-Each case study is deliberately short: problem, goal, what I built, architecture, engineering signal, and stack. The point is to show product judgment and system design without exposing private repo contents or professional identifiers.
+Start with the project that matches what you want to inspect. Each note covers the problem, decisions, tradeoffs, result, and implementation.
 
 | Case study | Best signal |
 |:---|:---|
+| [Can England Win It?](#product-case-study-can-england-win-it) | Public product design, explainable simulation, and shareable scenarios |
 | [Featured Build: Happening](#featured-build-happening) | Reliable ingestion from fragmented public web sources |
-| [Inference Brief](#inference-brief) | Live AI product plus publishing workflow |
 | [AI Workflow Evaluator](#ai-workflow-evaluator) | AI Ops gates for quality, cost, routing, and review |
 | [AI Study Companion](#ai-study-companion) | Document AI, async jobs, and adaptive learning loops |
 | [Smart Job Market Intelligence](#smart-job-market-intelligence) | Repeatable market intelligence product from scraped listings |
+
+---
+
+## Product Case Study: Can England Win It?
+
+**Type:** Live public product
+
+[Open product](https://matthewpaver.github.io/can-england-win-it/) | [Inspect source](https://github.com/MatthewPaver/can-england-win-it)
+
+### Problem
+
+Tournament probabilities usually arrive as a single percentage. That number is hard to question because the assumptions sit somewhere else, if they are published at all. I wanted to make the probability explorable without turning the experience into a spreadsheet.
+
+### Product Decisions
+
+- **Start with three matchday choices.** A short path gets someone to a result quickly. Analyst mode keeps the four detailed controls available without making them the front door.
+- **Show the model boundary.** The app labels its ratings and player boosts as illustrative. It describes the result as a scenario, not a forecast or betting claim.
+- **Keep the calculation in the browser.** The static build has no account, database, or backend dependency. Anyone can open it from GitHub Pages and run the same model.
+- **Make every result repeatable.** A seeded simulation gives the same output for the same inputs. The URL carries the scenario so another person can open and challenge it.
+- **Give the result a proper finish.** A full-screen tournament sequence turns the calculation into a product moment, then returns to the probability, range, and assumptions.
+
+### Trade-offs
+
+The team ratings in `src/model.ts` are isolated and replaceable, but they are not a live forecasting feed. The player choice adds an entertainment boost rather than a measured player statistic. Those limits keep the product honest, though they also mean the result cannot claim predictive accuracy.
+
+Ten thousand runs give a stable result while keeping the simulation immediate on a phone or laptop. A seeded generator reduces random variation between visits, which helps sharing and testing, but it also means rerunning an unchanged scenario will not produce a fresh sample.
+
+### Result
+
+The shipped product runs **10,000 tournament simulations** for each scenario, exposes a central estimate and illustrative range, and supports shareable URLs. It has a responsive, keyboard-friendly interface, six simulation tests, and an automated GitHub Pages deployment.
+
+```mermaid
+flowchart LR
+    A["Matchday choices or analyst controls"] --> B["England rating adjustment"]
+    B --> C["Elo-style match probabilities"]
+    C --> D["Seeded Monte Carlo tournament"]
+    D --> E["Central estimate and model range"]
+    E --> F["Result screen and shareable URL"]
+```
+
+**Stack:** `React` `TypeScript` `Vite` `Vitest` `GitHub Pages`
 
 ---
 
@@ -99,47 +140,6 @@ flowchart LR
 
 **Engineering signal:** product-grade pipeline design, not just prompt orchestration.  
 **Stack:** `Python` `FastAPI` `PostgreSQL` `Redis` `Celery`
-
----
-
-## Inference Brief
-
-**Type:** Live product  
-**Problem:** AI news moves quickly, repeats across sources, and often rewards scrolling rather than useful reading. The product challenge was to make the workflow feel calm: collect enough signal, shape it into a briefing, and give readers a place to return to.
-
-**Constraints:** the product needed to stay lightweight, publish consistently, support account-level reading features, and avoid becoming a static newsletter archive. It also had to separate editorial judgement from automation so the output could be reviewed before it reached readers.
-
-**Decisions:** I built it as a product loop rather than a content dump: source collection, filtering, scoring, summarisation, issue assembly, publishing, reader accounts, bookmarks, history, and preferences. The product surface matters because the user job is not just "read AI news"; it is "stay current without losing the thread."
-
-**Tradeoffs:** full automation would be faster, but it risks publishing weak summaries or duplicate stories. A curated pipeline is slower, but easier to check and improve. Keeping the live product focused also means not adding every possible news feature until the reading loop is solid.
-
-**Result:** Inference Brief is live at [inferencebrief.co](https://inferencebrief.co/) with a working reader experience, account flows, issue archive, bookmarking, reading history, and an editorial publishing workflow.
-
-**What changed after shipping:** the store and profile now frame it as a product with a workflow, not just a newsletter. That is the right signal: the build is about turning noisy sources into a repeatable reader experience.
-
-### Product Shape
-
-- Source collection and filtering
-- Story scoring and summarisation
-- Issue assembly and publishing
-- Account-based reader experience
-- Bookmarks, reading history, archive, and preferences
-- Subscription boundary for future product growth
-
-```mermaid
-flowchart LR
-    A["Sources"] --> B["Collect"]
-    B --> C["Filter and score"]
-    C --> D["Summarize"]
-    D --> E["Editorial issue"]
-    E --> F["Web product"]
-    F --> G["Bookmarks and reading history"]
-```
-
-**Engineering signal:** combines editorial judgment, automation, and product UX into a reusable publishing loop.
-
-**Stack:** `Next.js` `TypeScript` `Supabase` `Python` `Stripe`  
-[Live site](https://inferencebrief.co/)
 
 ---
 

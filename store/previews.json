@@ -18,6 +18,7 @@
     "stack": ["React", "TypeScript", "Vite", "Vitest", "Monte Carlo"],
     "links": [
       { "label": "Play live", "href": "https://matthewpaver.github.io/can-england-win-it/", "primary": true },
+      { "label": "Read case study", "href": "https://github.com/MatthewPaver/MatthewPaver/blob/main/CASE_STUDIES.md#product-case-study-can-england-win-it" },
       { "label": "Open repo", "href": "https://github.com/MatthewPaver/can-england-win-it" }
     ],
     "note": "This is an illustrative scenario model, not a forecast or betting product. The assumptions and model range are visible in the app."
@@ -71,9 +72,9 @@
     "kicker": "Private product",
     "title": "AI Study Companion",
     "summary": "A study workflow for turning uploaded notes into flashcards, quizzes, plans, and review sessions.",
-    "image": "./assets/ai-study-companion-thumb.png",
-    "imageAvif": "./assets/ai-study-companion-thumb.avif",
-    "imageAlt": "AI Study Companion product workspace",
+    "image": "./assets/ai-study-companion-ui.png",
+    "imageAvif": "./assets/ai-study-companion-ui.avif",
+    "imageAlt": "AI Study Companion document workspace with uploaded notes",
     "role": "AI learning workflow",
     "status": "Private",
     "focus": "Study material generation",

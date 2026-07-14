@@ -27,7 +27,7 @@
   <h3>Can England Win It? <sub>· live</sub></h3>
   <p>A playable World Cup probability lab: make three matchday calls and run 10,000 tournament futures.</p>
   <p><code>React</code> <code>TypeScript</code> <code>Vite</code> <code>Vitest</code> <code>Monte Carlo</code></p>
-  <p><a href="https://matthewpaver.github.io/can-england-win-it/">Play live ↗</a> · <a href="https://github.com/MatthewPaver/can-england-win-it">Repo ↗</a></p>
+  <p><a href="https://matthewpaver.github.io/can-england-win-it/">Play live ↗</a> · <a href="CASE_STUDIES.md#product-case-study-can-england-win-it">Case study ↗</a> · <a href="https://github.com/MatthewPaver/can-england-win-it">Repo ↗</a></p>
 </td>
 <td width="33%" valign="top">
   <a href="https://matthewpaver.github.io/MatthewPaver/store/preview.html?app=happening">

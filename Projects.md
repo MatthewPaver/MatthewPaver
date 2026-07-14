@@ -25,9 +25,8 @@ All professional examples are intentionally anonymised and focused on engineerin
 
 | Project | Status | Best signal | Link |
 |:---|:---|:---|:---|
-| Can England Win It? | Live interactive experiment | 10,000 seeded simulations, explainable assumptions, shareable scenarios | [Play live](https://matthewpaver.github.io/can-england-win-it/) · [Repo](https://github.com/MatthewPaver/can-england-win-it) |
+| Can England Win It? | Live interactive experiment | 10,000 seeded simulations, explainable assumptions, shareable scenarios | [Play live](https://matthewpaver.github.io/can-england-win-it/) · [Case study](CASE_STUDIES.md#product-case-study-can-england-win-it) · [Repo](https://github.com/MatthewPaver/can-england-win-it) |
 | Happening | Private system | 103 configured sources, daily ingestion, 167 tests | [Case study](CASE_STUDIES.md#happening) |
-| Inference Brief | Live product | Editorial workflow + personalised reading product | [Live site](https://inferencebrief.co/) |
 | AI Study Companion | Private product | Document AI + spaced repetition + async jobs | [Case study](CASE_STUDIES.md#ai-study-companion) |
 | Smart Job Market Intelligence | Private system | Scraping, trend analysis, alerts, API tiering | [Case study](CASE_STUDIES.md#smart-job-market-intelligence) |
 | QuickSupply | Private MVP | Multi-sided scheduling workflow + sequential assignment | Private |
@@ -39,6 +38,16 @@ All professional examples are intentionally anonymised and focused on engineerin
 
 ## Flagship Systems
 
+### Can England Win It? ![Live](https://img.shields.io/badge/Live-0f766e?style=flat-square)
+
+- Interactive World Cup probability game with a short matchday flow and detailed analyst controls.
+- Ten thousand seeded simulations, visible assumptions, and a shareable URL for each scenario.
+- Static React product with six model tests and automated GitHub Pages deployment.
+
+**Stack:** `React` `TypeScript` `Vite` `Vitest` `GitHub Pages`
+
+[Play live](https://matthewpaver.github.io/can-england-win-it/) | [Case study](CASE_STUDIES.md#product-case-study-can-england-win-it) | [Repo](https://github.com/MatthewPaver/can-england-win-it)
+
 ### Happening ![Private](https://img.shields.io/badge/Private-grey?style=flat-square&logo=lock&logoColor=white)
 
 - Deterministic event-ingestion platform across **103 venues**.
@@ -47,15 +56,6 @@ All professional examples are intentionally anonymised and focused on engineerin
 
 **Stack:** `Python` `Playwright` `SQLite` `Pydantic` `GitHub Actions`  
 [Case study](CASE_STUDIES.md#happening)
-
-### Inference Brief
-
-- AI newsletter workflow plus personalised reading surface.
-- Collection, filtering, scoring, summarisation, publishing, and subscription flows.
-- Product includes bookmarks, reading history, and issue archive.
-
-**Stack:** `Next.js` `TypeScript` `Supabase` `Python` `Stripe`  
-[Live site](https://inferencebrief.co/) | [Case study](CASE_STUDIES.md#inference-brief)
 
 ### AI Study Companion ![Private](https://img.shields.io/badge/Private-grey?style=flat-square&logo=lock&logoColor=white)
 
@@ -87,7 +87,7 @@ All professional examples are intentionally anonymised and focused on engineerin
 | [Marketing ML Lakehouse](https://github.com/MatthewPaver/marketing-ml-lakehouse) | Runnable application | Bronze/silver/gold DuckDB flow, model training, Streamlit reporting |
 | [ProjectLens](https://github.com/MatthewPaver/ProjectLens) | Runnable application | Flask interface, schedule-risk pipeline, reporting outputs |
 | [HR Performance Analytics](https://github.com/MatthewPaver/hr-performance-dashboards) | Dashboard portfolio | Power BI dashboards, datasets, methodology, documentation |
-| [AI Weekly](https://github.com/MatthewPaver/ai-weekly) | Archived output | Earlier newsletter surface later superseded by Inference Brief |
+| [AI Weekly](https://github.com/MatthewPaver/ai-weekly) | Archived output | Earlier collection and newsletter interface |
 
 ### ML, Data, and Streaming
 
