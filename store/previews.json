@@ -157,26 +157,28 @@
     "note": "A strong public repo to inspect: end-to-end data flow, model training, tests, and a dashboard in one place."
   },
   "projectlens": {
-    "kicker": "Public application",
+    "kicker": "Live project-decision application",
     "title": "ProjectLens",
-    "summary": "A schedule-risk app for turning project updates into slippage, milestone, and forecast outputs.",
-    "image": "./assets/projectlens-overview.png",
-    "imageAvif": "./assets/projectlens-overview.avif",
-    "imageAlt": "ProjectLens schedule risk product thumbnail",
-    "role": "Analytics product",
-    "status": "Public",
-    "focus": "Delivery risk",
-    "problem": "Schedule data can be hard to read until the risk is already obvious. The practical test is whether an uploaded schedule can become a delivery-risk report with slippage, milestone pressure, forecast issues, and outputs.",
+    "summary": "A browser-local change-assurance workflow that checks the pack, surfaces decision blockers, records human authority and tracks approval conditions.",
+    "image": "./assets/projectlens-change-assurance.png",
+    "imageAvif": "./assets/projectlens-change-assurance.avif",
+    "imageAlt": "ProjectLens change assurance showing a decision-readiness result and three evidence blockers",
+    "role": "Project assurance product",
+    "status": "Live",
+    "focus": "Is this change ready to decide?",
+    "problem": "Change boards receive narratives, schedules, risks and actions that may not agree. The practical test is whether the evidence can be reduced to a clear readiness decision without hiding the source trail or transferring authority to a model.",
     "points": [
-      "Turns project schedule inputs into risk and slippage outputs.",
-      "Packages analysis into reporting views rather than leaving it as raw tables.",
-      "Includes tests and validation so the public repo is more reviewer-friendly."
+      "Shows no more than three decision blockers before exposing detailed analysis.",
+      "Checks a real browser-local XER pair against the supplied narrative.",
+      "Preserves the human decision, evidence version and open approval conditions."
     ],
-    "stack": ["Python", "Flask", "pandas", "Forecasting", "Power BI"],
+    "stack": ["JavaScript", "Python", "Primavera P6 XER", "Evidence contracts", "GitHub Pages"],
     "links": [
-      { "label": "Open repo", "href": "https://github.com/MatthewPaver/ProjectLens", "primary": true }
+      { "label": "Review a change pack", "href": "https://matthewpaver.github.io/ProjectLens/change-assurance.html", "primary": true },
+      { "label": "Explore public evidence", "href": "https://matthewpaver.github.io/ProjectLens/" },
+      { "label": "Open repo", "href": "https://github.com/MatthewPaver/ProjectLens" }
     ],
-    "note": "The repo is packaged for review with a clear workflow, tests, and public inspection path."
+    "note": "The public workflow uses synthetic Northstar evidence and browser-local storage. It supports professional review; it does not establish causation, entitlement or approval."
   },
   "decisiongraph": {
     "kicker": "Live decision-support application",
