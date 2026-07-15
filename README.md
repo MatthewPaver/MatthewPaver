@@ -127,16 +127,16 @@ The pattern is practical: collect the messy input, clean it, check it, and turn 
 
 _This section is automatically refreshed by GitHub Actions._
 
-- Last refresh (UTC): 2026-07-14 09:18
+- Last refresh (UTC): 2026-07-15 09:22
 
 | Repo | Last push | What it is |
 |:---|:---:|:---|
-| [MatthewPaver](https://github.com/MatthewPaver/MatthewPaver) | 2026-07-14 | Portfolio: AI products, data systems, ML, and analytics — every project has a preview,… |
-| [ProjectLens](https://github.com/MatthewPaver/ProjectLens) | 2026-07-14 | Explainable schedule-risk analysis that turns evidence into accountable recovery decisi… |
-| [DecisionGraph](https://github.com/MatthewPaver/DecisionGraph) | 2026-07-14 | Evidence-linked project decision memory and comparable-case retrieval demo |
-| [can-england-win-it](https://github.com/MatthewPaver/can-england-win-it) | 2026-07-13 | An interactive World Cup probability lab: tune England's form, run 10,000 simulations,… |
-| [hr-performance-dashboards](https://github.com/MatthewPaver/hr-performance-dashboards) | 2026-05-25 | Power BI dashboard handoff package for HR, absence, and sales performance analytics. |
-| [sentence-similarity-analysis](https://github.com/MatthewPaver/sentence-similarity-analysis) | 2026-05-25 | Sentence-transformer notebook showing embedding similarity, cosine ranking, and retriev… |
+| [ProjectLens](https://github.com/MatthewPaver/ProjectLens) | 2026-07-15 | Evidence-bound project change assurance: check the pack, record the human decision, tra… |
+| [MatthewPaver](https://github.com/MatthewPaver/MatthewPaver) | 2026-07-15 | Portfolio: AI products, data systems, ML, and analytics — every project has a preview,… |
+| [DecisionGraph](https://github.com/MatthewPaver/DecisionGraph) | 2026-07-15 | Evidence-linked project decision memory and comparable-case retrieval demo |
+| [MatthewPaver.github.io](https://github.com/MatthewPaver/MatthewPaver.github.io) | 2026-07-15 | Live apps, open-source tools and private product pilots by Matthew Paver |
+| [paper-trading-bot](https://github.com/MatthewPaver/paper-trading-bot) | 2026-07-15 | Evidence-first paper-trading research engine with reproducible backtests, risk controls… |
+| [happening-open-core](https://github.com/MatthewPaver/happening-open-core) | 2026-07-15 | Evidence-aware event schemas and reproducible source-coverage benchmarks |
 
 <!-- AUTO:ACTIVITY_END -->
 
