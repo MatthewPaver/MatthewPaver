@@ -159,24 +159,25 @@
   "projectlens": {
     "kicker": "Public application",
     "title": "ProjectLens",
-    "summary": "A schedule-risk app for turning project updates into slippage, milestone, and forecast outputs.",
+    "summary": "A source-linked early-warning product built from four years of UK major-project disclosures.",
     "image": "./assets/projectlens-overview.png",
     "imageAvif": "./assets/projectlens-overview.avif",
-    "imageAlt": "ProjectLens schedule risk product thumbnail",
-    "role": "Analytics product",
+    "imageAlt": "ProjectLens UK major projects early-warning interface",
+    "role": "Public-data product",
     "status": "Public",
-    "focus": "Delivery risk",
-    "problem": "Schedule data can be hard to read until the risk is already obvious. The practical test is whether an uploaded schedule can become a delivery-risk report with slippage, milestone pressure, forecast issues, and outputs.",
+    "focus": "Delivery intelligence",
+    "problem": "Annual major-project disclosures are usually read as separate snapshots. ProjectLens joins them into an evidence-linked history of rating, end-date and narrative change.",
     "points": [
-      "Turns project schedule inputs into risk and slippage outputs.",
-      "Packages analysis into reporting views rather than leaving it as raw tables.",
-      "Includes tests and validation so the public repo is more reviewer-friendly."
+      "Compares 873 project-year records across four official releases.",
+      "Keeps contradictory signals visible and links every insight to its published source.",
+      "Finds comparable projects that later improved using transparent similarity rules."
     ],
-    "stack": ["Python", "Flask", "pandas", "Forecasting", "Power BI"],
+    "stack": ["Python", "pandas", "JavaScript", "Public data", "GitHub Pages"],
     "links": [
-      { "label": "Open repo", "href": "https://github.com/MatthewPaver/ProjectLens", "primary": true }
+      { "label": "Open live product", "href": "https://matthewpaver.github.io/ProjectLens/", "primary": true },
+      { "label": "Open repo", "href": "https://github.com/MatthewPaver/ProjectLens" }
     ],
-    "note": "The repo is packaged for review with a clear workflow, tests, and public inspection path."
+    "note": "The attention score is fully specified and is presented as a review queue, never as a probability of project failure."
   },
   "decisiongraph": {
     "kicker": "Live decision-support application",

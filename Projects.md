@@ -32,7 +32,7 @@ All professional examples are intentionally anonymised and focused on engineerin
 | QuickSupply | Private MVP | Multi-sided scheduling workflow + sequential assignment | Private |
 | Operations Platform Prototype | Private prototype | Operations workflow + payment rails + AI triage pattern | Private |
 | Marketing ML Lakehouse | Public runnable app | DuckDB medallion layers + XGBoost + Streamlit | [Repo](https://github.com/MatthewPaver/marketing-ml-lakehouse) |
-| ProjectLens | Public runnable app | Schedule risk analysis + reporting outputs | [Repo](https://github.com/MatthewPaver/ProjectLens) |
+| ProjectLens | Live public-data app | Four-year major-project evidence trails + comparable cases | [Live](https://matthewpaver.github.io/ProjectLens/) · [Repo](https://github.com/MatthewPaver/ProjectLens) |
 
 ---
 
@@ -85,7 +85,7 @@ All professional examples are intentionally anonymised and focused on engineerin
 |:---|:---|:---|
 | [Can England Win It?](https://github.com/MatthewPaver/can-england-win-it) | Live interactive experiment | React interface, explainable Monte Carlo simulation, URL-based sharing, unit tests |
 | [Marketing ML Lakehouse](https://github.com/MatthewPaver/marketing-ml-lakehouse) | Runnable application | Bronze/silver/gold DuckDB flow, model training, Streamlit reporting |
-| [ProjectLens](https://github.com/MatthewPaver/ProjectLens) | Runnable application | Flask interface, schedule-risk pipeline, reporting outputs |
+| [ProjectLens](https://github.com/MatthewPaver/ProjectLens) | Live application | Official GMPP data, longitudinal change analysis, evidence links, transparent case matching |
 | [HR Performance Analytics](https://github.com/MatthewPaver/hr-performance-dashboards) | Dashboard portfolio | Power BI dashboards, datasets, methodology, documentation |
 | [AI Weekly](https://github.com/MatthewPaver/ai-weekly) | Archived output | Earlier collection and newsletter interface |
 
