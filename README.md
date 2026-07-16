@@ -127,14 +127,14 @@ The pattern is practical: collect the messy input, clean it, check it, and turn 
 
 _This section is automatically refreshed by GitHub Actions._
 
-- Last refresh (UTC): 2026-07-15 09:22
+- Last refresh (UTC): 2026-07-16 09:30
 
 | Repo | Last push | What it is |
 |:---|:---:|:---|
-| [ProjectLens](https://github.com/MatthewPaver/ProjectLens) | 2026-07-15 | Evidence-bound project change assurance: check the pack, record the human decision, tra… |
-| [MatthewPaver](https://github.com/MatthewPaver/MatthewPaver) | 2026-07-15 | Portfolio: AI products, data systems, ML, and analytics — every project has a preview,… |
-| [DecisionGraph](https://github.com/MatthewPaver/DecisionGraph) | 2026-07-15 | Evidence-linked project decision memory and comparable-case retrieval demo |
 | [MatthewPaver.github.io](https://github.com/MatthewPaver/MatthewPaver.github.io) | 2026-07-15 | Live apps, open-source tools and private product pilots by Matthew Paver |
+| [MatthewPaver](https://github.com/MatthewPaver/MatthewPaver) | 2026-07-15 | Portfolio: AI products, data systems, ML, and analytics — every project has a preview,… |
+| [ProjectLens](https://github.com/MatthewPaver/ProjectLens) | 2026-07-15 | Evidence-bound project change assurance: check the pack, record the human decision, tra… |
+| [DecisionGraph](https://github.com/MatthewPaver/DecisionGraph) | 2026-07-15 | Evidence-linked project decision memory and comparable-case retrieval demo |
 | [paper-trading-bot](https://github.com/MatthewPaver/paper-trading-bot) | 2026-07-15 | Evidence-first paper-trading research engine with reproducible backtests, risk controls… |
 | [happening-open-core](https://github.com/MatthewPaver/happening-open-core) | 2026-07-15 | Evidence-aware event schemas and reproducible source-coverage benchmarks |
 
