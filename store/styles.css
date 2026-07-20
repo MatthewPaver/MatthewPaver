@@ -393,7 +393,7 @@ h1 {
   gap: 0;
   min-height: 350px;
   border-right: 1px solid var(--line-strong);
-  background: #173f38;
+  background: #17202a;
   color: #fffdf7;
   padding: clamp(26px, 5vw, 54px);
 }
@@ -1220,8 +1220,7 @@ h1 {
   margin-top: 24px;
   padding: 10px 0;
   border-bottom: 1px solid var(--line);
-  background: rgba(251, 250, 247, 0.94);
-  backdrop-filter: blur(8px);
+  background: var(--bg);
 }
 
 .filter {
@@ -1545,26 +1544,6 @@ h1 {
 }
 
 @media (prefers-reduced-motion: no-preference) {
-  .hero-copy > * {
-    animation: rise-in 760ms var(--ease-out) both;
-  }
-
-  .hero-copy > *:nth-child(1) {
-    animation-delay: 60ms;
-  }
-
-  .hero-copy > *:nth-child(2) {
-    animation-delay: 130ms;
-  }
-
-  .hero-copy > *:nth-child(3) {
-    animation-delay: 200ms;
-  }
-
-  .hero-copy > *:nth-child(4) {
-    animation-delay: 280ms;
-  }
-
   .selected-card:hover img,
   .app-card:hover > picture img,
   .app-card:hover .dashboard-strip img,
@@ -1573,31 +1552,6 @@ h1 {
     transform: scale(1.025);
   }
 
-  .preview-copy > *,
-  .preview-media,
-  .preview-panel {
-    animation: scale-in 720ms var(--ease-out) both;
-  }
-
-  .preview-copy > *:nth-child(1) {
-    animation-delay: 40ms;
-  }
-
-  .preview-copy > *:nth-child(2) {
-    animation-delay: 100ms;
-  }
-
-  .preview-copy > *:nth-child(3) {
-    animation-delay: 170ms;
-  }
-
-  .preview-copy > *:nth-child(4) {
-    animation-delay: 240ms;
-  }
-
-  .preview-media {
-    animation-delay: 180ms;
-  }
 
   .preview-panel:first-child {
     animation-delay: 280ms;
@@ -1901,7 +1855,7 @@ h1 {
   height: 2px;
   width: 0;
   z-index: 100;
-  background: linear-gradient(90deg, var(--accent) 0%, var(--gold) 60%, var(--red) 100%);
+  background: var(--accent);
   transition: width 120ms linear;
   pointer-events: none;
 }
@@ -1940,17 +1894,6 @@ h1 {
   box-shadow: 0 0 0 0 rgba(22, 163, 74, 0.55);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .status.live::before {
-    animation: live-pulse 1.8s var(--ease-out) infinite;
-  }
-}
-
-@keyframes live-pulse {
-  0%   { box-shadow: 0 0 0 0 rgba(22, 163, 74, 0.55); }
-  70%  { box-shadow: 0 0 0 8px rgba(22, 163, 74, 0); }
-  100% { box-shadow: 0 0 0 0 rgba(22, 163, 74, 0); }
-}
 
 /* cursor-tracking spotlight on featured / selected cards */
 .selected-card,
@@ -1960,21 +1903,7 @@ h1 {
 }
 
 .selected-card::after,
-.app-card.featured::after {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background: radial-gradient(420px circle at var(--mx) var(--my), rgba(15, 118, 110, 0.10), transparent 60%);
-  opacity: 0;
-  transition: opacity 260ms var(--ease-smooth);
-  pointer-events: none;
-  z-index: 1;
-}
-
-.selected-card:hover::after,
-.app-card.featured:hover::after {
-  opacity: 1;
-}
+.app-card.featured::after { content: none; }
 
 .selected-card > *,
 .app-card.featured > * {
@@ -2292,11 +2221,6 @@ body {
   box-shadow: 0 0 0 0 rgba(22, 163, 74, 0.55);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .status-dot {
-    animation: live-pulse 1.8s var(--ease-out) infinite;
-  }
-}
 
 @media (max-width: 640px) {
   .hero-spec {

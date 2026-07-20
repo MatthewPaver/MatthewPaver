@@ -5,7 +5,7 @@
 </p>
 
 <p align="center">
-  <a href="https://matthewpaver.github.io/MatthewPaver/store/workbench.html"><img src="https://img.shields.io/badge/Everyday_Workbench-Use_the_tools-0f766e?style=for-the-badge&logoColor=white" alt="Use the Everyday Workbench" /></a>
+  <a href="https://matthewpaver.github.io/ProjectLens/board-readiness.html"><img src="https://img.shields.io/badge/Project_Evidence_Desk-Prepare_a_board_review-244a67?style=for-the-badge&logoColor=white" alt="Prepare a board review with Project Evidence Desk" /></a>
   <a href="https://matthewpaver.github.io/MatthewPaver/store/"><img src="https://img.shields.io/badge/Project_Catalogue-Inspect-8f5d12?style=for-the-badge&logoColor=white" alt="Inspect the project catalogue" /></a>
   <a href="https://www.linkedin.com/in/matthew-paver-534262166/"><img src="https://img.shields.io/badge/LinkedIn-Connect-0a66c2?style=for-the-badge&logo=linkedin&logoColor=white" alt="Connect on LinkedIn" /></a>
 </p>
@@ -58,7 +58,7 @@
 | **Role**     | Software engineer and automation specialist |
 | **Based**    | London |
 | **Focus**    | Automation, data products, AI workflows, analytics tools |
-| **Shipping** | Everyday Workbench (weekly updates, handovers, change comparison) · MeetingProof · ProjectLens · DecisionGraph |
+| **Shipping** | Project Evidence Desk · MeetingProof · ProjectLens · DecisionGraph · Quick Draft Utilities |
 | **Stack**    | Python · TypeScript · FastAPI · Next.js · Postgres / DuckDB · Playwright · GitHub Actions |
 | **Specs**    | [Constitution](.specify/memory/constitution.md) · [Feature spec](specs/001-portfolio-store-reliability/spec.md) · [Validator](scripts/validate-store.mjs) · [Lighthouse CI](.lighthouserc.json) |
 
@@ -75,7 +75,7 @@ flowchart LR
     F -->|pass| G[Shipped]
 ```
 
-The pattern is practical: collect the messy input, clean it, check it, and turn it into something you can use. The [Everyday Workbench](https://matthewpaver.github.io/MatthewPaver/store/workbench.html) applies it to ordinary work; the [project catalogue](https://matthewpaver.github.io/MatthewPaver/store/) exposes the engineering underneath.
+The pattern is practical: collect the messy input, clean it, check it, and turn it into something a person can use. [Project Evidence Desk](https://matthewpaver.github.io/ProjectLens/board-readiness.html) applies that pattern to the evidence before, during and after a project-board decision; the [project catalogue](https://matthewpaver.github.io/MatthewPaver/store/) exposes the engineering underneath. Smaller weekly-update, handover and comparison tools remain available as [Quick Draft Utilities](https://matthewpaver.github.io/MatthewPaver/store/workbench.html).
 
 <p align="center"><img src="assets/mp-rule.svg" alt="" width="320" height="32" /></p>
 
@@ -89,7 +89,7 @@ The pattern is practical: collect the messy input, clean it, check it, and turn 
 
 - [MeetingProof](https://github.com/MatthewPaver/MeetingProof) — Browser-local meeting follow-up, exact source lines, LangGraph human approval, synthetic evaluation fixtures
 - [Marketing ML Lakehouse](https://github.com/MatthewPaver/marketing-ml-lakehouse) — Bronze/silver/gold DuckDB flow, XGBoost training, data-quality checks, Streamlit dashboard<br/><sub><img src="https://img.shields.io/github/last-commit/MatthewPaver/marketing-ml-lakehouse?style=flat-square&label=Last%20commit&color=8f5d12&labelColor=151515" alt="Last commit" /> <img src="https://img.shields.io/github/languages/top/MatthewPaver/marketing-ml-lakehouse?style=flat-square&color=0f766e&labelColor=151515" alt="Top language" /></sub>
-- [ProjectLens](https://github.com/MatthewPaver/ProjectLens) — Browser-local change assurance: compare evidence, expose three blockers, record human authority and approval conditions<br/><sub><img src="https://img.shields.io/github/last-commit/MatthewPaver/ProjectLens?style=flat-square&label=Last%20commit&color=8f5d12&labelColor=151515" alt="Last commit" /> <img src="https://img.shields.io/github/languages/top/MatthewPaver/ProjectLens?style=flat-square&color=0f766e&labelColor=151515" alt="Top language" /></sub>
+- [ProjectLens](https://github.com/MatthewPaver/ProjectLens) — Browser-local board readiness: reconcile five evidence groups, expose source-linked findings, record human authority and follow approval conditions<br/><sub><img src="https://img.shields.io/github/last-commit/MatthewPaver/ProjectLens?style=flat-square&label=Last%20commit&color=8f5d12&labelColor=151515" alt="Last commit" /> <img src="https://img.shields.io/github/languages/top/MatthewPaver/ProjectLens?style=flat-square&color=0f766e&labelColor=151515" alt="Top language" /></sub>
 - [DecisionGraph](https://github.com/MatthewPaver/DecisionGraph) — Comparable project cases with inspectable retrieval, problem-to-outcome evidence chains and human review
 <sub><strong>Repo standard:</strong> run command, tests or checks, demo/sample data where possible, screenshots, architecture notes, and limitations.</sub>
 
