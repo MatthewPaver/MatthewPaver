@@ -25,6 +25,7 @@ All professional examples are intentionally anonymised and focused on engineerin
 
 | Project | Status | Best signal | Link |
 |:---|:---|:---|:---|
+| MeetingProof | Live everyday work tool | Browser-local follow-up, exact source lines, human approval, tested LangGraph reference | [Use live](https://matthewpaver.github.io/MeetingProof/) · [Tutorial](https://matthewpaver.github.io/MeetingProof/tutorials/obsidian-claude-mcp.html) · [Repo](https://github.com/MatthewPaver/MeetingProof) |
 | Can England Win It? | Live interactive experiment | 10,000 seeded simulations, explainable assumptions, shareable scenarios | [Play live](https://matthewpaver.github.io/can-england-win-it/) · [Case study](CASE_STUDIES.md#product-case-study-can-england-win-it) · [Repo](https://github.com/MatthewPaver/can-england-win-it) |
 | Happening | Private system | 103 configured sources, daily ingestion, 167 tests | [Case study](CASE_STUDIES.md#happening) |
 | AI Study Companion | Private product | Document AI + spaced repetition + async jobs | [Case study](CASE_STUDIES.md#ai-study-companion) |
@@ -32,7 +33,8 @@ All professional examples are intentionally anonymised and focused on engineerin
 | QuickSupply | Private MVP | Multi-sided scheduling workflow + sequential assignment | Private |
 | Operations Platform Prototype | Private prototype | Operations workflow + payment rails + AI triage pattern | Private |
 | Marketing ML Lakehouse | Public runnable app | DuckDB medallion layers + XGBoost + Streamlit | [Repo](https://github.com/MatthewPaver/marketing-ml-lakehouse) |
-| ProjectLens | Public runnable app | Schedule risk analysis + reporting outputs | [Repo](https://github.com/MatthewPaver/ProjectLens) |
+| ProjectLens | Live project assurance | Browser-local XER comparison, three decision blockers, human decision record and approval-condition follow-up | [Use live](https://matthewpaver.github.io/ProjectLens/change-assurance.html) · [Repo](https://github.com/MatthewPaver/ProjectLens) |
+| DecisionGraph | Live decision support | 16 comparable cases, inspectable evidence graph and human outcome feedback | [Use live](https://matthewpaver.github.io/DecisionGraph/) · [Repo](https://github.com/MatthewPaver/DecisionGraph) |
 
 ---
 
@@ -83,9 +85,11 @@ All professional examples are intentionally anonymised and focused on engineerin
 
 | Project | Status | What to look for |
 |:---|:---|:---|
+| [MeetingProof](https://github.com/MatthewPaver/MeetingProof) | Live work tool | Browser-local product, LangGraph pause/resume, evidence verification, synthetic evaluations and safe MCP tutorial |
 | [Can England Win It?](https://github.com/MatthewPaver/can-england-win-it) | Live interactive experiment | React interface, explainable Monte Carlo simulation, URL-based sharing, unit tests |
 | [Marketing ML Lakehouse](https://github.com/MatthewPaver/marketing-ml-lakehouse) | Runnable application | Bronze/silver/gold DuckDB flow, model training, Streamlit reporting |
-| [ProjectLens](https://github.com/MatthewPaver/ProjectLens) | Runnable application | Flask interface, schedule-risk pipeline, reporting outputs |
+| [ProjectLens](https://github.com/MatthewPaver/ProjectLens) | Live project assurance | Browser-local evidence comparison, decision blockers, human authority and approval conditions |
+| [DecisionGraph](https://github.com/MatthewPaver/DecisionGraph) | Live decision support | Comparable-case retrieval, evidence graph and problem-to-outcome chain |
 | [HR Performance Analytics](https://github.com/MatthewPaver/hr-performance-dashboards) | Dashboard portfolio | Power BI dashboards, datasets, methodology, documentation |
 | [AI Weekly](https://github.com/MatthewPaver/ai-weekly) | Archived output | Earlier collection and newsletter interface |
 

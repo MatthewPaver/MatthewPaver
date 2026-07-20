@@ -21,13 +21,13 @@
 <table>
 <tr>
 <td width="33%" valign="top">
-  <a href="https://matthewpaver.github.io/can-england-win-it/">
-    <img src="store/assets/project-1966-profile.png" alt="Can England Win It simulation result screen" />
+  <a href="https://matthewpaver.github.io/MeetingProof/">
+    <img src="store/assets/meetingproof.svg" alt="MeetingProof evidence-linked meeting follow-up" />
   </a>
-  <h3>Can England Win It? <sub>· live</sub></h3>
-  <p>A playable World Cup probability lab: make three matchday calls and run 10,000 tournament futures.</p>
-  <p><code>React</code> <code>TypeScript</code> <code>Vite</code> <code>Vitest</code> <code>Monte Carlo</code></p>
-  <p><a href="https://matthewpaver.github.io/can-england-win-it/">Play live ↗</a> · <a href="CASE_STUDIES.md#product-case-study-can-england-win-it">Case study ↗</a> · <a href="https://github.com/MatthewPaver/can-england-win-it">Repo ↗</a></p>
+  <h3>MeetingProof <sub>· live</sub></h3>
+  <p>Turn meeting notes into evidence-linked decisions, actions and questions, then review and approve the follow-up yourself.</p>
+  <p><code>JavaScript</code> <code>LangGraph</code> <code>LangSmith</code> <code>Pydantic</code> <code>GitHub Pages</code></p>
+  <p><a href="https://matthewpaver.github.io/MeetingProof/">Use the tool ↗</a> · <a href="https://matthewpaver.github.io/MeetingProof/tutorials/obsidian-claude-mcp.html">Tutorial ↗</a> · <a href="https://github.com/MatthewPaver/MeetingProof">Repo ↗</a></p>
 </td>
 <td width="33%" valign="top">
   <a href="https://matthewpaver.github.io/MatthewPaver/store/preview.html?app=happening">
@@ -57,7 +57,7 @@
 | **Role**     | Software engineer and automation specialist |
 | **Based**    | London |
 | **Focus**    | Automation, data products, AI workflows, analytics tools |
-| **Shipping** | Project 1966 (live simulator) · Happening (private venue-ingestion system) · QuickSupply (private MVP) |
+| **Shipping** | MeetingProof (live work tool) · ProjectLens (live project assurance) · DecisionGraph (live precedent retrieval) |
 | **Stack**    | Python · TypeScript · FastAPI · Next.js · Postgres / DuckDB · Playwright · GitHub Actions |
 | **Specs**    | [Constitution](.specify/memory/constitution.md) · [Feature spec](specs/001-portfolio-store-reliability/spec.md) · [Validator](scripts/validate-store.mjs) · [Lighthouse CI](.lighthouserc.json) |
 
@@ -86,8 +86,10 @@ The pattern is practical: collect the messy input, clean it, check it, and turn 
 
 **▸ Runnable applications**
 
+- [MeetingProof](https://github.com/MatthewPaver/MeetingProof) — Browser-local meeting follow-up, exact source lines, LangGraph human approval, synthetic evaluation fixtures
 - [Marketing ML Lakehouse](https://github.com/MatthewPaver/marketing-ml-lakehouse) — Bronze/silver/gold DuckDB flow, XGBoost training, data-quality checks, Streamlit dashboard<br/><sub><img src="https://img.shields.io/github/last-commit/MatthewPaver/marketing-ml-lakehouse?style=flat-square&label=Last%20commit&color=8f5d12&labelColor=151515" alt="Last commit" /> <img src="https://img.shields.io/github/languages/top/MatthewPaver/marketing-ml-lakehouse?style=flat-square&color=0f766e&labelColor=151515" alt="Top language" /></sub>
-- [ProjectLens](https://github.com/MatthewPaver/ProjectLens) — Schedule-risk Flask app: upload, slippage analysis, milestone pressure, Power BI-ready exports<br/><sub><img src="https://img.shields.io/github/last-commit/MatthewPaver/ProjectLens?style=flat-square&label=Last%20commit&color=8f5d12&labelColor=151515" alt="Last commit" /> <img src="https://img.shields.io/github/languages/top/MatthewPaver/ProjectLens?style=flat-square&color=0f766e&labelColor=151515" alt="Top language" /></sub>
+- [ProjectLens](https://github.com/MatthewPaver/ProjectLens) — Browser-local change assurance: compare evidence, expose three blockers, record human authority and approval conditions<br/><sub><img src="https://img.shields.io/github/last-commit/MatthewPaver/ProjectLens?style=flat-square&label=Last%20commit&color=8f5d12&labelColor=151515" alt="Last commit" /> <img src="https://img.shields.io/github/languages/top/MatthewPaver/ProjectLens?style=flat-square&color=0f766e&labelColor=151515" alt="Top language" /></sub>
+- [DecisionGraph](https://github.com/MatthewPaver/DecisionGraph) — Comparable project cases with inspectable retrieval, problem-to-outcome evidence chains and human review
 <sub><strong>Repo standard:</strong> run command, tests or checks, demo/sample data where possible, screenshots, architecture notes, and limitations.</sub>
 
 **▸ Analytics handoff**
