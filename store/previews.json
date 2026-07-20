@@ -180,24 +180,25 @@
     "note": "A strong public repo to inspect: end-to-end data flow, model training, tests, and a dashboard in one place."
   },
   "projectlens": {
-    "kicker": "Live project-decision application",
+    "kicker": "Live project board-assurance application",
     "title": "ProjectLens",
-    "summary": "A browser-local change-assurance workflow that checks the pack, surfaces decision blockers, records human authority and tracks approval conditions.",
+    "summary": "A browser-local board-readiness workflow that reconciles familiar project evidence, surfaces decision blockers, records human authority and tracks approval conditions.",
     "image": "./assets/projectlens-change-assurance.png",
     "imageAvif": "./assets/projectlens-change-assurance.avif",
-    "imageAlt": "ProjectLens change assurance showing a decision-readiness result and three evidence blockers",
+    "imageAlt": "ProjectLens source-linked board and change assurance workflow",
     "role": "Project assurance product",
     "status": "Live",
-    "focus": "Is this change ready to decide?",
-    "problem": "Change boards receive narratives, schedules, risks and actions that may not agree. The practical test is whether the evidence can be reduced to a clear readiness decision without hiding the source trail or transferring authority to a model.",
+    "focus": "What can this board pack actually prove?",
+    "problem": "Project boards receive packs, RAID logs, actions, decisions and schedules that may not agree. The practical test is whether the evidence can be reconciled before the meeting without hiding the source trail or transferring authority to a model.",
     "points": [
-      "Shows no more than three decision blockers before exposing detailed analysis.",
+      "Checks five recognisable evidence groups and produces a concise board brief.",
       "Checks a real browser-local XER pair against the supplied narrative.",
       "Preserves the human decision, evidence version and open approval conditions."
     ],
     "stack": ["JavaScript", "Python", "Primavera P6 XER", "Evidence contracts", "GitHub Pages"],
     "links": [
-      { "label": "Review a change pack", "href": "https://matthewpaver.github.io/ProjectLens/change-assurance.html", "primary": true },
+      { "label": "Prepare a board review", "href": "https://matthewpaver.github.io/ProjectLens/board-readiness.html", "primary": true },
+      { "label": "Review a change pack", "href": "https://matthewpaver.github.io/ProjectLens/change-assurance.html" },
       { "label": "Explore public evidence", "href": "https://matthewpaver.github.io/ProjectLens/" },
       { "label": "Open repo", "href": "https://github.com/MatthewPaver/ProjectLens" }
     ],

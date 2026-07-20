@@ -214,10 +214,10 @@ assert(storeCss.includes("touch-action: pan-y"), "Large store surfaces should al
 assert(storeScript.includes("#project-grid-heading"), "Shelf filtering should scroll to the project grid heading");
 assert(storeScript.includes("searchIndex"), "Search should use a pre-computed index rather than reading textContent each keystroke");
 assert(indexHtml.includes('class="task-first"'), "Store should lead with a task-first work-tool section");
-assert(indexHtml.includes("What are you trying to finish?"), "Task-first section should use relatable problem-led copy");
+assert(indexHtml.includes("A project board should decide, not reconcile documents."), "Task-first section should use relatable project-board copy");
 assert(indexHtml.includes("./workbench.html"), "Portfolio should link directly to the Everyday Workbench");
 assert(indexHtml.includes("https://matthewpaver.github.io/MeetingProof/"), "Task-first section should link to MeetingProof");
-assert(indexHtml.includes("https://matthewpaver.github.io/ProjectLens/change-assurance.html"), "Task-first section should link to ProjectLens");
+assert(indexHtml.includes("https://matthewpaver.github.io/ProjectLens/board-readiness.html"), "Task-first section should link to ProjectLens board readiness");
 assert(indexHtml.includes("https://matthewpaver.github.io/DecisionGraph/"), "Task-first section should link to DecisionGraph");
 assert(workbenchHtml.includes("Finish the jobs that usually get left half-done."), "Workbench should lead with a relatable job-to-be-done");
 assert(workbenchHtml.includes("Your text stays in this browser."), "Workbench should state its data boundary");

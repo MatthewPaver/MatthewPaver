@@ -31,7 +31,7 @@ with sync_playwright() as playwright:
     assert page.locator("#visible-count").inner_text() == "14"
     assert page.locator('a[href="https://matthewpaver.github.io/MeetingProof/"]').count() >= 1
     assert page.locator(
-        'a[href="https://matthewpaver.github.io/ProjectLens/change-assurance.html"]'
+        'a[href="https://matthewpaver.github.io/ProjectLens/board-readiness.html"]'
     ).count() >= 1
     assert page.locator('a[href="https://matthewpaver.github.io/DecisionGraph/"]').count() >= 1
 

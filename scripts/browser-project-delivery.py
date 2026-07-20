@@ -22,14 +22,14 @@ with sync_playwright() as playwright:
 
     card = page.locator('[data-slug="projectlens"]')
     assert card.count() == 1
-    assert "Checks whether a project change is ready to decide" == card.get_attribute("data-solves")
+    assert "Checks whether a project board pack is ready to decide" == card.get_attribute("data-solves")
     assert card.locator('img[src*="projectlens-change-assurance.png"]').count() == 1
-    assert card.locator('a[href="https://matthewpaver.github.io/ProjectLens/change-assurance.html"]').count() == 1
+    assert card.locator('a[href="https://matthewpaver.github.io/ProjectLens/board-readiness.html"]').count() == 1
 
     page.goto(f"{BASE_URL}preview.html?app=projectlens")
     page.wait_for_load_state("networkidle")
     assert "decision blockers" in page.locator("#preview-summary").inner_text().lower()
-    assert page.locator('a[href="https://matthewpaver.github.io/ProjectLens/change-assurance.html"]').count() == 1
+    assert page.locator('a[href="https://matthewpaver.github.io/ProjectLens/board-readiness.html"]').count() == 1
 
     mobile = browser.new_page(viewport={"width": 390, "height": 844})
     mobile.goto(BASE_URL)

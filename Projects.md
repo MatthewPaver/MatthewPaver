@@ -33,7 +33,7 @@ All professional examples are intentionally anonymised and focused on engineerin
 | QuickSupply | Private MVP | Multi-sided scheduling workflow + sequential assignment | Private |
 | Operations Platform Prototype | Private prototype | Operations workflow + payment rails + AI triage pattern | Private |
 | Marketing ML Lakehouse | Public runnable app | DuckDB medallion layers + XGBoost + Streamlit | [Repo](https://github.com/MatthewPaver/marketing-ml-lakehouse) |
-| ProjectLens | Live project assurance | Browser-local XER comparison, three decision blockers, human decision record and approval-condition follow-up | [Use live](https://matthewpaver.github.io/ProjectLens/change-assurance.html) · [Repo](https://github.com/MatthewPaver/ProjectLens) |
+| ProjectLens | Live project assurance | Board-readiness check across five evidence groups, source-linked findings, human decision record and approval-condition follow-up | [Use live](https://matthewpaver.github.io/ProjectLens/board-readiness.html) · [Repo](https://github.com/MatthewPaver/ProjectLens) |
 | DecisionGraph | Live decision support | 16 comparable cases, inspectable evidence graph and human outcome feedback | [Use live](https://matthewpaver.github.io/DecisionGraph/) · [Repo](https://github.com/MatthewPaver/DecisionGraph) |
 
 ---
