@@ -4,7 +4,7 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "test": "node scripts/validate-store.mjs",
+    "test": "node scripts/validate-store.mjs && node scripts/test-workbench.mjs",
     "audit:portfolio": "node tools/portfolio-audit/portfolio-audit.mjs",
     "bump": "node scripts/bump-cache-version.mjs"
   }

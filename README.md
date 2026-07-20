@@ -5,7 +5,8 @@
 </p>
 
 <p align="center">
-  <a href="https://matthewpaver.github.io/MatthewPaver/store/"><img src="https://img.shields.io/badge/Portfolio_Store-Open-0f766e?style=for-the-badge&logoColor=white" alt="Open Portfolio Store" /></a>
+  <a href="https://matthewpaver.github.io/MatthewPaver/store/workbench.html"><img src="https://img.shields.io/badge/Everyday_Workbench-Use_the_tools-0f766e?style=for-the-badge&logoColor=white" alt="Use the Everyday Workbench" /></a>
+  <a href="https://matthewpaver.github.io/MatthewPaver/store/"><img src="https://img.shields.io/badge/Project_Catalogue-Inspect-8f5d12?style=for-the-badge&logoColor=white" alt="Inspect the project catalogue" /></a>
   <a href="https://www.linkedin.com/in/matthew-paver-534262166/"><img src="https://img.shields.io/badge/LinkedIn-Connect-0a66c2?style=for-the-badge&logo=linkedin&logoColor=white" alt="Connect on LinkedIn" /></a>
 </p>
 
@@ -57,7 +58,7 @@
 | **Role**     | Software engineer and automation specialist |
 | **Based**    | London |
 | **Focus**    | Automation, data products, AI workflows, analytics tools |
-| **Shipping** | MeetingProof (live work tool) · ProjectLens (live project assurance) · DecisionGraph (live precedent retrieval) |
+| **Shipping** | Everyday Workbench (weekly updates, handovers, change comparison) · MeetingProof · ProjectLens · DecisionGraph |
 | **Stack**    | Python · TypeScript · FastAPI · Next.js · Postgres / DuckDB · Playwright · GitHub Actions |
 | **Specs**    | [Constitution](.specify/memory/constitution.md) · [Feature spec](specs/001-portfolio-store-reliability/spec.md) · [Validator](scripts/validate-store.mjs) · [Lighthouse CI](.lighthouserc.json) |
 
@@ -74,7 +75,7 @@ flowchart LR
     F -->|pass| G[Shipped]
 ```
 
-The pattern is practical: collect the messy input, clean it, check it, and turn it into something you can open. The [portfolio store](https://matthewpaver.github.io/MatthewPaver/store/) follows the same habit: indexed catalogue, validator, Lighthouse CI, no framework, no build step.
+The pattern is practical: collect the messy input, clean it, check it, and turn it into something you can use. The [Everyday Workbench](https://matthewpaver.github.io/MatthewPaver/store/workbench.html) applies it to ordinary work; the [project catalogue](https://matthewpaver.github.io/MatthewPaver/store/) exposes the engineering underneath.
 
 <p align="center"><img src="assets/mp-rule.svg" alt="" width="320" height="32" /></p>
 

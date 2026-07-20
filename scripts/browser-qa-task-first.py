@@ -51,9 +51,43 @@ with sync_playwright() as playwright:
     mobile = browser.new_page(viewport={"width": 390, "height": 844})
     mobile.goto(BASE_URL, wait_until="networkidle")
     assert mobile.locator(".task-route").count() == 3
-    assert mobile.locator(".task-route-primary img").is_visible()
+    assert mobile.locator(".task-route-primary .workbench-preview").is_visible()
     assert_no_horizontal_overflow(mobile)
     mobile.screenshot(path="/tmp/portfolio-task-first-mobile.png", full_page=True)
+
+    page.goto(f"{BASE_URL}workbench.html", wait_until="networkidle")
+    assert page.locator("[data-tool-tab]").count() == 3
+    assert "stays in this browser" in page.locator("body").inner_text()
+    page.locator('[data-sample="update"]').click()
+    page.locator("#build-update").click()
+    assert page.locator(".result-section").count() == 5
+    assert "Supplier shortlist agreed" in page.locator("#workbench-output").inner_text()
+    assert "Source line 1" in page.locator("#workbench-output").inner_text()
+    assert page.locator("#export-result").is_enabled()
+
+    page.locator('[data-tool-tab="handover"]').click()
+    page.locator('[data-sample="handover"]').click()
+    page.locator("#build-handover").click()
+    assert page.locator(".result-section").count() == 6
+    assert "Project Cedar" in page.locator("#workbench-output").inner_text()
+
+    page.locator('[data-tool-tab="change"]').click()
+    page.locator('[data-sample="change"]').click()
+    page.locator("#compare-change").click()
+    assert page.locator(".change-totals").is_visible()
+    assert page.locator(".change-added li").count() == 4
+    assert page.locator(".change-removed li").count() == 4
+    page.screenshot(path="/tmp/everyday-workbench-desktop.png", full_page=True)
+    assert_no_horizontal_overflow(page)
+
+    workbench_mobile = browser.new_page(viewport={"width": 390, "height": 844})
+    workbench_mobile.goto(f"{BASE_URL}workbench.html", wait_until="networkidle")
+    workbench_mobile.locator('[data-tool-tab="change"]').click()
+    workbench_mobile.locator('[data-sample="change"]').click()
+    workbench_mobile.locator("#compare-change").click()
+    assert workbench_mobile.locator(".change-totals").is_visible()
+    assert_no_horizontal_overflow(workbench_mobile)
+    workbench_mobile.screenshot(path="/tmp/everyday-workbench-mobile.png", full_page=True)
 
     no_js_context = browser.new_context(java_script_enabled=False)
     no_js = no_js_context.new_page()

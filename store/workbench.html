@@ -1,0 +1,142 @@
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self'; img-src 'self' data:; connect-src 'self'; base-uri 'self'; form-action 'self'" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#f3efe6" />
+    <title>Everyday Workbench · Matthew Paver</title>
+    <meta name="description" content="Small, browser-local tools for weekly updates, handovers, change comparisons and evidence-linked meeting follow-up." />
+    <link rel="canonical" href="https://matthewpaver.github.io/MatthewPaver/store/workbench.html" />
+    <link rel="icon" type="image/svg+xml" href="./assets/favicon.svg" />
+    <link rel="stylesheet" href="./workbench.css?v=20260720-1" />
+    <script>document.documentElement.className = "js-enabled";</script>
+  </head>
+  <body>
+    <a class="skip-link" href="#tools">Skip to tools</a>
+    <nav class="workbench-nav shell" aria-label="Workbench navigation">
+      <a class="workbench-brand" href="./">
+        <span aria-hidden="true">MP</span>
+        <strong>Everyday Workbench</strong>
+      </a>
+      <a href="./">Portfolio &amp; project catalogue</a>
+    </nav>
+
+    <header class="workbench-hero shell">
+      <div>
+        <p class="eyebrow">Small tools for real work</p>
+        <h1>Finish the jobs that usually get left half-done.</h1>
+        <p class="lede">Turn rough notes into a useful draft, see what changed, and keep the source beside the result. No account, no upload, no silent action.</p>
+      </div>
+      <aside class="trust-note" aria-label="How this workbench handles your data">
+        <span class="trust-icon" aria-hidden="true">◎</span>
+        <div>
+          <strong>Your text stays in this browser.</strong>
+          <p>These three tools use deterministic code. They do not call an AI service, save your text, or send anything to another person.</p>
+        </div>
+      </aside>
+    </header>
+
+    <main id="tools" class="shell">
+      <section class="situation-strip" aria-label="Choose a work situation">
+        <a href="#builder" data-open-tool="update"><span>01</span><strong>I need to update people</strong><small>Build a weekly update</small></a>
+        <a href="#builder" data-open-tool="handover"><span>02</span><strong>I am handing work over</strong><small>Build a handover</small></a>
+        <a href="#builder" data-open-tool="change"><span>03</span><strong>I need to compare changes</strong><small>Explain two versions</small></a>
+        <a href="https://matthewpaver.github.io/MeetingProof/"><span>04</span><strong>I just left a meeting</strong><small>Open MeetingProof ↗</small></a>
+      </section>
+
+      <section id="builder" class="builder" aria-labelledby="builder-heading">
+        <div class="builder-intro">
+          <p class="eyebrow">Run once · leave with a file</p>
+          <h2 id="builder-heading">Choose the thing you need to finish.</h2>
+          <p>Start with the safe sample to see the shape of the result. Then replace it with your own text.</p>
+        </div>
+
+        <div class="tool-tabs" role="tablist" aria-label="Workbench tools">
+          <button class="active" id="tab-update" data-tool-tab="update" role="tab" aria-controls="panel-update" aria-selected="true" type="button">Weekly update</button>
+          <button id="tab-handover" data-tool-tab="handover" role="tab" aria-controls="panel-handover" aria-selected="false" tabindex="-1" type="button">Handover</button>
+          <button id="tab-change" data-tool-tab="change" role="tab" aria-controls="panel-change" aria-selected="false" tabindex="-1" type="button">Change explainer</button>
+        </div>
+
+        <noscript>
+          <div class="noscript-note">The workbench needs JavaScript to make local drafts. Your browser can still open <a href="https://matthewpaver.github.io/MeetingProof/">MeetingProof</a> or return to the <a href="./">project catalogue</a>.</div>
+        </noscript>
+
+        <div class="workspace">
+          <div class="input-column">
+            <section id="panel-update" data-tool-panel="update" role="tabpanel" aria-labelledby="tab-update">
+              <div class="tool-heading">
+                <div><p class="step">Input</p><h3>What happened this week?</h3></div>
+                <button class="sample-button" data-sample="update" type="button">Use safe sample</button>
+              </div>
+              <p class="field-help">Use labels such as <code>Done:</code>, <code>Blocker:</code>, <code>Decision:</code>, <code>Next:</code> and <code>Metric:</code>. Each line remains traceable.</p>
+              <label for="update-input">Rough update notes</label>
+              <textarea id="update-input" rows="13" spellcheck="true" placeholder="Done: …&#10;Blocker: …&#10;Decision: …&#10;Next: …"></textarea>
+              <button id="build-update" class="make-button" type="button">Make weekly update <span aria-hidden="true">→</span></button>
+            </section>
+
+            <section id="panel-handover" data-tool-panel="handover" role="tabpanel" aria-labelledby="tab-handover" hidden>
+              <div class="tool-heading">
+                <div><p class="step">Input</p><h3>What must the next person know?</h3></div>
+                <button class="sample-button" data-sample="handover" type="button">Use safe sample</button>
+              </div>
+              <p class="field-help">Use labels such as <code>Open:</code>, <code>Owner:</code>, <code>Due:</code>, <code>Risk:</code>, <code>Where:</code> and <code>Next:</code>.</p>
+              <label for="handover-input">Rough handover notes</label>
+              <textarea id="handover-input" rows="13" spellcheck="true" placeholder="Open: …&#10;Owner: …&#10;Due: …&#10;Risk: …"></textarea>
+              <button id="build-handover" class="make-button" type="button">Make handover <span aria-hidden="true">→</span></button>
+            </section>
+
+            <section id="panel-change" data-tool-panel="change" role="tabpanel" aria-labelledby="tab-change" hidden>
+              <div class="tool-heading">
+                <div><p class="step">Input</p><h3>What changed between two versions?</h3></div>
+                <button class="sample-button" data-sample="change" type="button">Use safe sample</button>
+              </div>
+              <p class="field-help">Paste one statement or list item per line. The comparison is exact: added, removed and unchanged.</p>
+              <div class="version-grid">
+                <label for="before-input">Before<textarea id="before-input" rows="9" spellcheck="true" placeholder="Paste the earlier version…"></textarea></label>
+                <label for="after-input">After<textarea id="after-input" rows="9" spellcheck="true" placeholder="Paste the new version…"></textarea></label>
+              </div>
+              <button id="compare-change" class="make-button" type="button">Compare versions <span aria-hidden="true">→</span></button>
+            </section>
+          </div>
+
+          <aside class="output-column" aria-labelledby="output-title">
+            <div class="output-toolbar">
+              <div>
+                <p class="step">Draft</p>
+                <h3 id="output-title">Your draft will appear here</h3>
+              </div>
+              <span id="output-state">Nothing has been sent or saved</span>
+            </div>
+            <div id="workbench-output" class="result" tabindex="-1" aria-live="polite"></div>
+            <div class="output-actions">
+              <button id="copy-result" type="button" disabled>Copy</button>
+              <button id="export-result" type="button" disabled>Download .md</button>
+              <button id="reset-result" class="quiet-button" type="button">Clear draft</button>
+            </div>
+            <p class="review-reminder"><strong>Human checkpoint:</strong> check names, dates and meaning before you share the draft.</p>
+          </aside>
+        </div>
+      </section>
+
+      <section class="proof-section" aria-labelledby="proof-heading">
+        <div>
+          <p class="eyebrow">What “safe” means here</p>
+          <h2 id="proof-heading">Clear boundaries, not vague badges.</h2>
+        </div>
+        <dl>
+          <div><dt>Data handling</dt><dd>Text remains in the current browser tab.</dd></div>
+          <div><dt>External changes</dt><dd>None. The tools only produce a draft or download.</dd></div>
+          <div><dt>Calculation</dt><dd>Deterministic JavaScript, with no model call.</dd></div>
+          <div><dt>Exit</dt><dd>Copy the result, download Markdown, or close the tab.</dd></div>
+        </dl>
+      </section>
+    </main>
+
+    <footer class="shell">
+      <p>Built by Matthew Paver as a public, testable product experiment.</p>
+      <a href="https://github.com/MatthewPaver/MatthewPaver">Inspect the code ↗</a>
+    </footer>
+    <script type="module" src="./workbench.js?v=20260720-1"></script>
+  </body>
+</html>
