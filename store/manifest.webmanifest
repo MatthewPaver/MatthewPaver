@@ -1,7 +1,7 @@
 {
-  "name": "Matthew Paver Portfolio Store",
-  "short_name": "MP Portfolio",
-  "description": "Curated AI, data, automation, ML, and analytics work.",
+  "name": "Matthew Paver Everyday Workbench",
+  "short_name": "MP Workbench",
+  "description": "Useful browser-local work tools with inspectable AI, automation, data, and analytics engineering.",
   "start_url": "/MatthewPaver/store/",
   "scope": "/MatthewPaver/store/",
   "display": "standalone",

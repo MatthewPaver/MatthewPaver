@@ -130,6 +130,10 @@ const previewHtml = readFile("store/preview.html");
 const previews = JSON.parse(readFile("store/previews.json"));
 const storeScript = readFile("store/script.js");
 const storeCss = readFile("store/styles.css");
+const workbenchHtml = readFile("store/workbench.html");
+const workbenchScript = readFile("store/workbench.js");
+const workbenchCore = readFile("store/workbench-core.js");
+const workbenchCss = readFile("store/workbench.css");
 const robots = readFile("robots.txt");
 const sitemap = readFile("sitemap.xml");
 const manifest = JSON.parse(readFile("store/manifest.webmanifest"));
@@ -210,10 +214,22 @@ assert(storeCss.includes("touch-action: pan-y"), "Large store surfaces should al
 assert(storeScript.includes("#project-grid-heading"), "Shelf filtering should scroll to the project grid heading");
 assert(storeScript.includes("searchIndex"), "Search should use a pre-computed index rather than reading textContent each keystroke");
 assert(indexHtml.includes('class="task-first"'), "Store should lead with a task-first work-tool section");
-assert(indexHtml.includes("Start with what is on your desk."), "Task-first section should use relatable problem-led copy");
+assert(indexHtml.includes("What are you trying to finish?"), "Task-first section should use relatable problem-led copy");
+assert(indexHtml.includes("./workbench.html"), "Portfolio should link directly to the Everyday Workbench");
 assert(indexHtml.includes("https://matthewpaver.github.io/MeetingProof/"), "Task-first section should link to MeetingProof");
 assert(indexHtml.includes("https://matthewpaver.github.io/ProjectLens/change-assurance.html"), "Task-first section should link to ProjectLens");
 assert(indexHtml.includes("https://matthewpaver.github.io/DecisionGraph/"), "Task-first section should link to DecisionGraph");
+assert(workbenchHtml.includes("Finish the jobs that usually get left half-done."), "Workbench should lead with a relatable job-to-be-done");
+assert(workbenchHtml.includes("Your text stays in this browser."), "Workbench should state its data boundary");
+assert(workbenchHtml.includes("Human checkpoint:"), "Workbench should make the review point explicit");
+assert(workbenchHtml.includes('data-tool-panel="update"'), "Workbench should include the Weekly Update Builder");
+assert(workbenchHtml.includes('data-tool-panel="handover"'), "Workbench should include the Handover Builder");
+assert(workbenchHtml.includes('data-tool-panel="change"'), "Workbench should include the Change Explainer");
+assert(workbenchScript.includes("navigator.clipboard.writeText"), "Workbench should support copying a result");
+assert(workbenchScript.includes("new Blob"), "Workbench should support Markdown export");
+assert(workbenchCore.includes("compareVersions"), "Workbench should use a testable deterministic comparison");
+assert(workbenchCss.includes("@media print"), "Workbench should include a useful print mode");
+assert(workbenchCss.includes("prefers-reduced-motion"), "Workbench should respect reduced-motion preferences");
 
 // SEO + meta hygiene
 assert(indexHtml.includes('rel="canonical"'), "Store HTML should declare a canonical URL");
