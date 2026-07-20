@@ -16,8 +16,9 @@ const requiredColumns = [
   "solves",
   "shows"
 ];
-const allowedShelves = new Set(["product", "data", "automation", "ml", "analytics"]);
+const allowedShelves = new Set(["work", "product", "data", "automation", "ml", "analytics"]);
 const specDirectory = "specs/001-portfolio-store-reliability";
+const taskFirstSpecDirectory = "specs/002-task-first-work-tools";
 const requiredSpecFiles = [
   ".specify/memory/constitution.md",
   `${specDirectory}/spec.md`,
@@ -25,7 +26,13 @@ const requiredSpecFiles = [
   `${specDirectory}/research.md`,
   `${specDirectory}/quickstart.md`,
   `${specDirectory}/tasks.md`,
-  `${specDirectory}/contracts/store-catalogue.md`
+  `${specDirectory}/contracts/store-catalogue.md`,
+  `${taskFirstSpecDirectory}/spec.md`,
+  `${taskFirstSpecDirectory}/plan.md`,
+  `${taskFirstSpecDirectory}/research.md`,
+  `${taskFirstSpecDirectory}/quickstart.md`,
+  `${taskFirstSpecDirectory}/tasks.md`,
+  `${taskFirstSpecDirectory}/contracts/task-route.md`
 ];
 const siteBase = "https://matthewpaver.github.io/MatthewPaver";
 
@@ -202,6 +209,11 @@ assert(storeCss.includes("overflow-y: auto"), "Store CSS should leave vertical d
 assert(storeCss.includes("touch-action: pan-y"), "Large store surfaces should allow vertical touch scrolling");
 assert(storeScript.includes("#project-grid-heading"), "Shelf filtering should scroll to the project grid heading");
 assert(storeScript.includes("searchIndex"), "Search should use a pre-computed index rather than reading textContent each keystroke");
+assert(indexHtml.includes('class="task-first"'), "Store should lead with a task-first work-tool section");
+assert(indexHtml.includes("Start with what is on your desk."), "Task-first section should use relatable problem-led copy");
+assert(indexHtml.includes("https://matthewpaver.github.io/MeetingProof/"), "Task-first section should link to MeetingProof");
+assert(indexHtml.includes("https://matthewpaver.github.io/ProjectLens/change-assurance.html"), "Task-first section should link to ProjectLens");
+assert(indexHtml.includes("https://matthewpaver.github.io/DecisionGraph/"), "Task-first section should link to DecisionGraph");
 
 // SEO + meta hygiene
 assert(indexHtml.includes('rel="canonical"'), "Store HTML should declare a canonical URL");
@@ -293,6 +305,12 @@ assert(spec.includes("Story 3: Use previews safely"), "Feature spec must cover p
 const tasks = readFile(`${specDirectory}/tasks.md`);
 const uncheckedTasks = [...tasks.matchAll(/^- \[ \] /gm)];
 assert(uncheckedTasks.length === 0, "Spec task list contains unchecked tasks");
+
+const taskFirstSpec = readFile(`${taskFirstSpecDirectory}/spec.md`);
+assert(taskFirstSpec.includes("Story 1: Choose from a familiar situation"), "Task-first feature spec must cover relatable routing");
+const taskFirstTasks = readFile(`${taskFirstSpecDirectory}/tasks.md`);
+const uncheckedTaskFirstTasks = [...taskFirstTasks.matchAll(/^- \[ \] /gm)];
+assert(uncheckedTaskFirstTasks.length === 0, "Task-first spec task list contains unchecked tasks");
 
 // Emit a small JSON status file for build tooling and future diagnostics.
 const sitemapUrlCount = (sitemap.match(/<loc>/g) || []).length;

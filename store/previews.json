@@ -1,4 +1,27 @@
 {
+  "meetingproof": {
+    "kicker": "Live everyday work tool",
+    "title": "MeetingProof",
+    "summary": "A browser-local meeting follow-up tool that keeps every decision, action and open question tied to the exact source line and waits for a named human reviewer.",
+    "image": "./assets/meetingproof.svg",
+    "imageAlt": "MeetingProof evidence-linked meeting follow-up with a human review boundary",
+    "role": "Meeting follow-up assurance",
+    "status": "Live",
+    "focus": "What did the meeting actually leave behind?",
+    "problem": "Meeting summaries can sound complete while losing the precise agreement, owner, due date or unanswered question. MeetingProof creates a draft only from clearly labelled notes, exposes missing fields, and makes a person approve the export.",
+    "points": [
+      "The public workflow runs entirely in the browser and keeps exact source lines beside every item.",
+      "The reference LangGraph pauses and resumes at the human review boundary rather than inferring approval.",
+      "Synthetic LangSmith-ready evaluations test unsupported evidence, prompt injection, omissions and human edit rate."
+    ],
+    "stack": ["JavaScript", "LangGraph", "LangSmith", "Pydantic", "GitHub Pages"],
+    "links": [
+      { "label": "Use MeetingProof", "href": "https://matthewpaver.github.io/MeetingProof/", "primary": true },
+      { "label": "Obsidian + Claude tutorial", "href": "https://matthewpaver.github.io/MeetingProof/tutorials/obsidian-claude-mcp.html" },
+      { "label": "Open repo", "href": "https://github.com/MatthewPaver/MeetingProof" }
+    ],
+    "note": "The public tool uses transparent labelled-note extraction and stores only the approved record in this browser. A production team version still needs authentication, tenant isolation, retention controls and organisation-specific validation."
+  },
   "project-1966": {
     "kicker": "Live interactive experiment",
     "title": "Can England Win It?",
