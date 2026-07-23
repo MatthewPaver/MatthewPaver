@@ -130,11 +130,11 @@ The pattern is practical: collect the messy input, clean it, check it, and turn 
 
 _This section is automatically refreshed by GitHub Actions._
 
-- Last refresh (UTC): 2026-07-22 09:39
+- Last refresh (UTC): 2026-07-23 09:38
 
 | Repo | Last push | What it is |
 |:---|:---:|:---|
-| [MatthewPaver](https://github.com/MatthewPaver/MatthewPaver) | 2026-07-21 | Portfolio: AI products, data systems, ML, and analytics — every project has a preview,… |
+| [MatthewPaver](https://github.com/MatthewPaver/MatthewPaver) | 2026-07-22 | Portfolio: AI products, data systems, ML, and analytics — every project has a preview,… |
 | [newco-assurance](https://github.com/MatthewPaver/newco-assurance) | 2026-07-20 | Production-readiness assurance for AI-built project workflows |
 | [ProjectLens](https://github.com/MatthewPaver/ProjectLens) | 2026-07-20 | Evidence-bound project change assurance: check the pack, record the human decision, tra… |
 | [DecisionGraph](https://github.com/MatthewPaver/DecisionGraph) | 2026-07-20 | Evidence-linked project decision memory and comparable-case retrieval demo |
