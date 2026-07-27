@@ -2,7 +2,7 @@
 
 Product and engineering notes from selected builds across automation, data, AI, and analytics.
 
-[Back to Profile](README.md) | [Portfolio Store](https://matthewpaver.github.io/MatthewPaver/store/) | [Project Appendix](Projects.md)
+[Back to Profile](README.md) | [Portfolio Store](https://matthewpaver.github.io/) | [Project Appendix](Projects.md)
 
 Private and professional examples are anonymised. Public builds link to the working product and source.
 
