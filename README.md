@@ -130,16 +130,16 @@ The pattern is practical: collect the messy input, clean it, check it, and turn 
 
 _This section is automatically refreshed by GitHub Actions._
 
-- Last refresh (UTC): 2026-07-26 09:25
+- Last refresh (UTC): 2026-07-27 10:50
 
 | Repo | Last push | What it is |
 |:---|:---:|:---|
-| [MatthewPaver](https://github.com/MatthewPaver/MatthewPaver) | 2026-07-25 | Portfolio: AI products, data systems, ML, and analytics — every project has a preview,… |
-| [newco-assurance](https://github.com/MatthewPaver/newco-assurance) | 2026-07-23 | Production-readiness assurance for AI-built project workflows |
-| [ProjectLens](https://github.com/MatthewPaver/ProjectLens) | 2026-07-20 | Evidence-bound project change assurance: check the pack, record the human decision, tra… |
-| [DecisionGraph](https://github.com/MatthewPaver/DecisionGraph) | 2026-07-20 | Evidence-linked project decision memory and comparable-case retrieval demo |
-| [MeetingProof](https://github.com/MatthewPaver/MeetingProof) | 2026-07-20 | Evidence-linked meeting follow-up with LangGraph human approval and LangSmith-ready eva… |
-| [MatthewPaver.github.io](https://github.com/MatthewPaver/MatthewPaver.github.io) | 2026-07-15 | Live apps, open-source tools and private product pilots by Matthew Paver |
+| [MatthewPaver](https://github.com/MatthewPaver/MatthewPaver) | 2026-07-27 | Portfolio: AI products, data systems, ML, and analytics — every project has a preview,… |
+| [MatthewPaver.github.io](https://github.com/MatthewPaver/MatthewPaver.github.io) | 2026-07-27 | Live apps, open-source tools and private product pilots by Matthew Paver |
+| [hr-performance-dashboards](https://github.com/MatthewPaver/hr-performance-dashboards) | 2026-07-27 | Power BI dashboard handoff package for HR, absence, and sales performance analytics. |
+| [hr-performance-portfolio](https://github.com/MatthewPaver/hr-performance-portfolio) | 2026-07-27 | Stakeholder-facing HR analytics portfolio with methodology, recommendations, and dashbo… |
+| [paper-trading-bot](https://github.com/MatthewPaver/paper-trading-bot) | 2026-07-27 | Evidence-first paper-trading research engine with reproducible backtests, risk controls… |
+| [winchester-buyer-check](https://github.com/MatthewPaver/winchester-buyer-check) | 2026-07-27 | Private-by-design homebuyer budget and mortgage calculator for Winchester buyers |
 
 <!-- AUTO:ACTIVITY_END -->
 
