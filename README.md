@@ -1,12 +1,12 @@
 <p align="center">
-  <a href="https://matthewpaver.github.io/MatthewPaver/store/">
+  <a href="https://matthewpaver.github.io/">
     <img src="assets/profile-banner.svg" alt="Matthew Paver — automation, data, and AI projects." width="100%" />
   </a>
 </p>
 
 <p align="center">
   <a href="https://matthewpaver.github.io/ProjectLens/board-readiness.html"><img src="https://img.shields.io/badge/Project_Evidence_Desk-Prepare_a_board_review-244a67?style=for-the-badge&logoColor=white" alt="Prepare a board review with Project Evidence Desk" /></a>
-  <a href="https://matthewpaver.github.io/MatthewPaver/store/"><img src="https://img.shields.io/badge/Project_Catalogue-Inspect-8f5d12?style=for-the-badge&logoColor=white" alt="Inspect the project catalogue" /></a>
+  <a href="https://matthewpaver.github.io/"><img src="https://img.shields.io/badge/Project_Catalogue-Inspect-8f5d12?style=for-the-badge&logoColor=white" alt="Inspect the project catalogue" /></a>
   <a href="https://www.linkedin.com/in/matthew-paver-534262166/"><img src="https://img.shields.io/badge/LinkedIn-Connect-0a66c2?style=for-the-badge&logo=linkedin&logoColor=white" alt="Connect on LinkedIn" /></a>
 </p>
 
@@ -31,22 +31,22 @@
   <p><a href="https://matthewpaver.github.io/MeetingProof/">Use the tool ↗</a> · <a href="https://matthewpaver.github.io/MeetingProof/tutorials/obsidian-claude-mcp.html">Tutorial ↗</a> · <a href="https://github.com/MatthewPaver/MeetingProof">Repo ↗</a></p>
 </td>
 <td width="33%" valign="top">
-  <a href="https://matthewpaver.github.io/MatthewPaver/store/preview.html?app=happening">
+  <a href="https://matthewpaver.github.io/store/apps/happening/">
     <img src="store/assets/happening-web.png" alt="Happening venue ingestion dashboard" />
   </a>
   <h3>Happening <sub>· private</sub></h3>
   <p>Venue pages turned into structured event data, with source configs, scheduled runs, and a 167-test reliability suite.</p>
   <p><code>Python</code> <code>Playwright</code> <code>SQLite</code> <code>Pydantic</code> <code>GitHub Actions</code></p>
-  <p><a href="https://matthewpaver.github.io/MatthewPaver/store/preview.html?app=happening">Preview ↗</a> · <a href="CASE_STUDIES.md#featured-build-happening">Case study ↗</a></p>
+  <p><a href="https://matthewpaver.github.io/store/apps/happening/">Preview ↗</a> · <a href="CASE_STUDIES.md#featured-build-happening">Case study ↗</a></p>
 </td>
 <td width="33%" valign="top">
-  <a href="https://matthewpaver.github.io/MatthewPaver/store/preview.html?app=quicksupply">
+  <a href="https://matthewpaver.github.io/store/apps/quicksupply/">
     <img src="store/assets/quicksupply-dashboard.png" alt="QuickSupply cover operations dashboard" />
   </a>
   <h3>QuickSupply <sub>· private MVP</sub></h3>
   <p>A school cover-ops workflow built for three sides: school, agency, teacher. Sequential assignment, compliance checks, live status.</p>
   <p><code>Next.js</code> <code>TypeScript</code> <code>PostgreSQL</code> <code>Drizzle</code> <code>SSE</code></p>
-  <p><a href="https://matthewpaver.github.io/MatthewPaver/store/preview.html?app=quicksupply">Preview ↗</a></p>
+  <p><a href="https://matthewpaver.github.io/store/apps/quicksupply/">Preview ↗</a></p>
 </td>
 </tr>
 </table>
@@ -75,7 +75,7 @@ flowchart LR
     F -->|pass| G[Shipped]
 ```
 
-The pattern is practical: collect the messy input, clean it, check it, and turn it into something a person can use. [Project Evidence Desk](https://matthewpaver.github.io/ProjectLens/board-readiness.html) applies that pattern to the evidence before, during and after a project-board decision; the [project catalogue](https://matthewpaver.github.io/MatthewPaver/store/) exposes the engineering underneath. Smaller weekly-update, handover and comparison tools remain available as [Quick Draft Utilities](https://matthewpaver.github.io/MatthewPaver/store/workbench.html).
+The pattern is practical: collect the messy input, clean it, check it, and turn it into something a person can use. [Project Evidence Desk](https://matthewpaver.github.io/ProjectLens/board-readiness.html) applies that pattern to the evidence before, during and after a project-board decision; the [project catalogue](https://matthewpaver.github.io/) exposes the engineering underneath.
 
 <p align="center"><img src="assets/mp-rule.svg" alt="" width="320" height="32" /></p>
 
