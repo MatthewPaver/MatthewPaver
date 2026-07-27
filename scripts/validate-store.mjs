@@ -1,354 +1,42 @@
 import fs from "node:fs";
-import path from "node:path";
 
-const root = process.cwd();
-const requiredColumns = [
-  "slug",
-  "title",
-  "shelf",
-  "status",
-  "kind",
-  "problem",
-  "proof",
-  "stack",
-  "preview",
-  "asset",
-  "solves",
-  "shows"
-];
-const allowedShelves = new Set(["work", "product", "data", "automation", "ml", "analytics"]);
-const specDirectory = "specs/001-portfolio-store-reliability";
-const taskFirstSpecDirectory = "specs/002-task-first-work-tools";
-const requiredSpecFiles = [
-  ".specify/memory/constitution.md",
-  `${specDirectory}/spec.md`,
-  `${specDirectory}/plan.md`,
-  `${specDirectory}/research.md`,
-  `${specDirectory}/quickstart.md`,
-  `${specDirectory}/tasks.md`,
-  `${specDirectory}/contracts/store-catalogue.md`,
-  `${taskFirstSpecDirectory}/spec.md`,
-  `${taskFirstSpecDirectory}/plan.md`,
-  `${taskFirstSpecDirectory}/research.md`,
-  `${taskFirstSpecDirectory}/quickstart.md`,
-  `${taskFirstSpecDirectory}/tasks.md`,
-  `${taskFirstSpecDirectory}/contracts/task-route.md`
-];
-const siteBase = "https://matthewpaver.github.io/MatthewPaver";
-
-function readFile(relativePath) {
-  return fs.readFileSync(path.join(root, relativePath), "utf8");
-}
-
-function readBuffer(relativePath) {
-  return fs.readFileSync(path.join(root, relativePath));
-}
-
-function parseCsv(text) {
-  const rows = [];
-  let row = [];
-  let field = "";
-  let inQuotes = false;
-
-  for (let i = 0; i < text.length; i += 1) {
-    const char = text[i];
-    const next = text[i + 1];
-
-    if (char === '"' && inQuotes && next === '"') {
-      field += '"';
-      i += 1;
-    } else if (char === '"') {
-      inQuotes = !inQuotes;
-    } else if (char === "," && !inQuotes) {
-      row.push(field);
-      field = "";
-    } else if ((char === "\n" || char === "\r") && !inQuotes) {
-      if (char === "\r" && next === "\n") i += 1;
-      row.push(field);
-      if (row.some((value) => value.trim())) rows.push(row);
-      row = [];
-      field = "";
-    } else {
-      field += char;
-    }
-  }
-
-  if (field || row.length) {
-    row.push(field);
-    if (row.some((value) => value.trim())) rows.push(row);
-  }
-
-  const [headers, ...records] = rows;
-  return records.map((record) =>
-    Object.fromEntries(headers.map((header, index) => [header.trim(), (record[index] || "").trim()]))
-  );
-}
+const canonicalStore = "https://matthewpaver.github.io/";
+const storeHtml = fs.readFileSync("store/index.html", "utf8");
+const previewHtml = fs.readFileSync("store/preview.html", "utf8");
 
 function assert(condition, message) {
   if (!condition) throw new Error(message);
 }
 
-function pngDimensions(buffer) {
-  const signature = [0x89, 0x50, 0x4e, 0x47, 0x0d, 0x0a, 0x1a, 0x0a];
-  for (let i = 0; i < signature.length; i += 1) {
-    if (buffer[i] !== signature[i]) return null;
-  }
-  const width = buffer.readUInt32BE(16);
-  const height = buffer.readUInt32BE(20);
-  return { width, height };
-}
+assert(
+  storeHtml.includes(`rel="canonical" href="${canonicalStore}"`),
+  "Legacy store must identify the root product store as canonical",
+);
+assert(
+  storeHtml.includes(`window.location.replace("${canonicalStore}")`),
+  "Legacy store must redirect visitors to the root product store",
+);
+assert(
+  storeHtml.includes('name="robots" content="noindex,follow"'),
+  "Legacy store must not compete with the canonical store in search",
+);
+assert(
+  previewHtml.includes('name="robots" content="noindex,follow"'),
+  "Legacy preview routes must remain out of the search index",
+);
 
-function findImageTags(html) {
-  const tags = [];
-  const regex = /<img\b[^>]*?>/g;
-  let match;
-  while ((match = regex.exec(html)) !== null) {
-    const tag = match[0];
-    const src = /\bsrc=["']([^"']+)["']/.exec(tag)?.[1];
-    const width = /\bwidth=["'](\d+)["']/.exec(tag)?.[1];
-    const height = /\bheight=["'](\d+)["']/.exec(tag)?.[1];
-    if (src) tags.push({ src, width: width ? Number(width) : null, height: height ? Number(height) : null });
-  }
-  return tags;
-}
-
-function findAvifSources(html) {
-  const sources = [];
-  const regex = /<source\b[^>]*?type=["']image\/avif["'][^>]*?>/g;
-  let match;
-  while ((match = regex.exec(html)) !== null) {
-    const srcset = /\bsrcset=["']([^"']+)["']/.exec(match[0])?.[1];
-    if (srcset) sources.push(srcset);
-  }
-  return sources;
-}
-
-const indexRows = parseCsv(readFile("store/app-index.csv"));
-const tagRows = parseCsv(readFile("store/tags.csv"));
-const indexHtml = readFile("store/index.html");
-const previewHtml = readFile("store/preview.html");
-const previews = JSON.parse(readFile("store/previews.json"));
-const storeScript = readFile("store/script.js");
-const storeCss = readFile("store/styles.css");
-const workbenchHtml = readFile("store/workbench.html");
-const workbenchScript = readFile("store/workbench.js");
-const workbenchCore = readFile("store/workbench-core.js");
-const workbenchCss = readFile("store/workbench.css");
-const robots = readFile("robots.txt");
-const sitemap = readFile("sitemap.xml");
-const manifest = JSON.parse(readFile("store/manifest.webmanifest"));
-
-const slugs = new Set();
-const tagSet = new Set(tagRows.map((row) => row.tag));
-
-assert(indexRows.length >= 10, "store/app-index.csv should include the full project catalogue");
-assert(tagRows.length >= 5, "store/tags.csv should include the store shelves");
-assert(!fs.existsSync(path.join(root, "store/catalogue.csv")), "store/catalogue.csv was removed in favour of app-index.csv");
-
-for (const row of indexRows) {
-  for (const column of requiredColumns) {
-    assert(row[column], `Missing ${column} for ${row.slug || row.title || "unknown row"}`);
-  }
-
-  assert(!slugs.has(row.slug), `Duplicate slug in app index: ${row.slug}`);
-  slugs.add(row.slug);
-  assert(allowedShelves.has(row.shelf), `Unknown shelf "${row.shelf}" for ${row.slug}`);
-  assert(tagSet.has(row.shelf), `Shelf "${row.shelf}" is missing from tags.csv`);
-  assert(row.preview === `preview.html?app=${row.slug}`, `Preview link should match slug for ${row.slug}`);
-  assert(fs.existsSync(path.join(root, "store", row.asset)), `Missing asset for ${row.slug}: ${row.asset}`);
-  assert(previews[row.slug], `Missing previews.json entry for ${row.slug}`);
-  assert(previews[row.slug].title, `previews.json entry for ${row.slug} lacks a title`);
-  assert(previews[row.slug].image, `previews.json entry for ${row.slug} lacks an image`);
-  if (previews[row.slug].image.endsWith(".png")) {
-    assert(previews[row.slug].imageAvif, `previews.json entry for ${row.slug} lacks an AVIF image`);
-    assert(fs.existsSync(path.join(root, "store", previews[row.slug].imageAvif.replace(/^\.\//, ""))), `Missing AVIF preview image for ${row.slug}: ${previews[row.slug].imageAvif}`);
-  }
-  assert(Array.isArray(previews[row.slug].links) && previews[row.slug].links.length > 0, `previews.json entry for ${row.slug} lacks links`);
-}
-
-const previewSlugs = Object.keys(previews);
-for (const slug of previewSlugs) {
-  assert(slugs.has(slug), `previews.json contains slug not present in app-index.csv: ${slug}`);
-}
-
-// Card title + data attribute parity
-const articleRegex = /<article\b([^>]*?)class="app-card[^"]*"([^>]*?)>([\s\S]*?)<\/article>/g;
-const cardMatches = [...indexHtml.matchAll(articleRegex)];
-const cardsBySlug = new Map();
-for (const match of cardMatches) {
-  const openingAttrs = `${match[1]} ${match[2]}`;
-  const slug = /data-slug=["']([^"']+)["']/.exec(openingAttrs)?.[1];
-  const solves = /data-solves=["']([^"']+)["']/.exec(openingAttrs)?.[1];
-  const shows = /data-shows=["']([^"']+)["']/.exec(openingAttrs)?.[1];
-  const title = /<h3>([^<]+)<\/h3>/.exec(match[3])?.[1];
-  if (slug) cardsBySlug.set(slug, { solves, shows, title });
-}
-
-for (const row of indexRows) {
-  const card = cardsBySlug.get(row.slug);
-  assert(card, `Store page is missing a card for slug ${row.slug}`);
-  assert(card.title === row.title, `Card title mismatch for ${row.slug}: card has "${card.title}", CSV has "${row.title}"`);
-  assert(card.solves === row.solves, `data-solves mismatch for ${row.slug}: card has "${card.solves}", CSV has "${row.solves}"`);
-  assert(card.shows === row.shows, `data-shows mismatch for ${row.slug}: card has "${card.shows}", CSV has "${row.shows}"`);
-}
-
-for (const tag of tagSet) {
-  assert(indexHtml.includes(`data-filter="${tag}"`), `Store page is missing filter button for ${tag}`);
+for (const slug of [
+  "meetingproof",
+  "projectlens",
+  "decisiongraph",
+  "happening",
+  "quicksupply",
+  "marketing-ml-lakehouse",
+]) {
   assert(
-    indexHtml.includes(`href="?filter=${tag}#project-grid-heading"`),
-    `Shelf link for ${tag} should work as a no-JS jump to the project grid`
+    previewHtml.includes(`"${slug}"`),
+    `Legacy preview redirect is missing the ${slug} destination`,
   );
 }
 
-assert(indexHtml.includes('class="no-js"'), "Store HTML should start with a no-js class for progressive enhancement");
-assert(indexHtml.includes("js-enabled"), "Store HTML should switch to js-enabled when scripts run");
-assert(previewHtml.includes('class="no-js"'), "Preview HTML should start with a no-js class for progressive enhancement");
-assert(previewHtml.includes("<noscript>"), "Preview page should include a no-JS fallback");
-assert(indexHtml.includes('class="store-toolbar js-only"'), "Search/sort toolbar should be hidden when JS is disabled");
-assert(indexHtml.includes('class="filters js-only"'), "Filter toolbar should be hidden when JS is disabled");
-assert(storeCss.includes(".no-js .js-only"), "CSS should hide JS-only controls without JavaScript");
-assert(storeCss.includes("@media print"), "CSS should include a print stylesheet");
-assert(!storeCss.includes("overscroll-behavior-y: none"), "Store page must not block vertical browser scrolling");
-assert(storeCss.includes("overflow-y: auto"), "Store CSS should leave vertical document scrolling enabled");
-assert(storeCss.includes("touch-action: pan-y"), "Large store surfaces should allow vertical touch scrolling");
-assert(storeScript.includes("#project-grid-heading"), "Shelf filtering should scroll to the project grid heading");
-assert(storeScript.includes("searchIndex"), "Search should use a pre-computed index rather than reading textContent each keystroke");
-assert(indexHtml.includes('class="task-first"'), "Store should lead with a task-first work-tool section");
-assert(indexHtml.includes("A project board should decide, not reconcile documents."), "Task-first section should use relatable project-board copy");
-assert(indexHtml.includes("./workbench.html"), "Portfolio should link directly to the Everyday Workbench");
-assert(indexHtml.includes("https://matthewpaver.github.io/MeetingProof/"), "Task-first section should link to MeetingProof");
-assert(indexHtml.includes("https://matthewpaver.github.io/ProjectLens/board-readiness.html"), "Task-first section should link to ProjectLens board readiness");
-assert(indexHtml.includes("https://matthewpaver.github.io/DecisionGraph/"), "Task-first section should link to DecisionGraph");
-assert(workbenchHtml.includes("Finish the jobs that usually get left half-done."), "Workbench should lead with a relatable job-to-be-done");
-assert(workbenchHtml.includes("Your text stays in this browser."), "Workbench should state its data boundary");
-assert(workbenchHtml.includes("Human checkpoint:"), "Workbench should make the review point explicit");
-assert(workbenchHtml.includes('data-tool-panel="update"'), "Workbench should include the Weekly Update Builder");
-assert(workbenchHtml.includes('data-tool-panel="handover"'), "Workbench should include the Handover Builder");
-assert(workbenchHtml.includes('data-tool-panel="change"'), "Workbench should include the Change Explainer");
-assert(workbenchScript.includes("navigator.clipboard.writeText"), "Workbench should support copying a result");
-assert(workbenchScript.includes("new Blob"), "Workbench should support Markdown export");
-assert(workbenchCore.includes("compareVersions"), "Workbench should use a testable deterministic comparison");
-assert(workbenchCss.includes("@media print"), "Workbench should include a useful print mode");
-assert(workbenchCss.includes("prefers-reduced-motion"), "Workbench should respect reduced-motion preferences");
-
-// SEO + meta hygiene
-assert(indexHtml.includes('rel="canonical"'), "Store HTML should declare a canonical URL");
-assert(previewHtml.includes('rel="canonical"'), "Preview HTML should declare a canonical URL");
-assert(indexHtml.includes('application/ld+json'), "Store HTML should embed JSON-LD structured data");
-assert(indexHtml.includes('rel="preload"') && indexHtml.includes('as="image"'), "Store HTML should preload the LCP image");
-
-const fetchPriorityHigh = (indexHtml.match(/fetchpriority="high"/g) || []).length;
-assert(
-  fetchPriorityHigh <= 2,
-  `Only the preload + LCP image should use fetchpriority="high" (found ${fetchPriorityHigh})`
-);
-const eagerImages = (indexHtml.match(/loading="eager"/g) || []).length;
-assert(eagerImages <= 2, `Only first-viewport images should load eagerly (found ${eagerImages})`);
-const lazyImages = (indexHtml.match(/loading="lazy"/g) || []).length;
-assert(lazyImages >= 10, `Catalogue thumbnails should lazy-load below the first viewport (found ${lazyImages})`);
-assert(indexHtml.includes('decoding="async"'), "Store images should opt into async decoding where practical");
-assert(indexHtml.includes('type="image/avif"'), "Store thumbnails should offer AVIF sources with PNG fallbacks");
-
-const avifSources = findAvifSources(indexHtml).concat(findAvifSources(previewHtml));
-const pngScreenshotCount = indexRows.filter((row) => row.asset.endsWith(".png")).length;
-assert(avifSources.length >= pngScreenshotCount, `Store should expose AVIF sources for project screenshots (found ${avifSources.length})`);
-for (const source of avifSources) {
-  const cleanPath = source.replace(/^\.\//, "").replace(/^\//, "");
-  const assetPath = cleanPath.startsWith("store/") ? cleanPath : `store/${cleanPath}`;
-  assert(fs.existsSync(path.join(root, assetPath)), `Missing AVIF source: ${source}`);
-}
-
-assert(indexHtml.includes('rel="manifest"'), "Store HTML should link the web manifest");
-assert(indexHtml.includes('apple-touch-icon'), "Store HTML should link an apple-touch-icon");
-assert(indexHtml.includes('http-equiv="Content-Security-Policy"'), "Store HTML should declare a CSP meta tag");
-assert(previewHtml.includes('http-equiv="Content-Security-Policy"'), "Preview HTML should declare a CSP meta tag");
-
-// Favicon + manifest assets
-const requiredAssets = [
-  "store/assets/favicon.svg",
-  "store/assets/favicon-dark.svg",
-  "store/assets/apple-touch-icon.svg",
-  "store/assets/og-image.png",
-  "store/manifest.webmanifest"
-];
-for (const asset of requiredAssets) {
-  assert(fs.existsSync(path.join(root, asset)), `Missing required asset: ${asset}`);
-}
-assert(manifest.name && manifest.icons?.length, "manifest.webmanifest must declare a name and icons");
-
-// PNG declared vs real dimensions
-const imageTags = findImageTags(indexHtml).concat(findImageTags(previewHtml));
-for (const tag of imageTags) {
-  if (!tag.src.endsWith(".png")) continue;
-  if (!tag.width || !tag.height) continue;
-  const cleanPath = tag.src.replace(/^\.\//, "").replace(/^\//, "");
-  const assetPath = cleanPath.startsWith("store/") ? cleanPath : `store/${cleanPath}`;
-  const abs = path.join(root, assetPath);
-  if (!fs.existsSync(abs)) continue;
-  const dims = pngDimensions(readBuffer(assetPath));
-  assert(dims, `Image ${tag.src} has a .png extension but is not valid PNG data`);
-  assert(
-    dims.width === tag.width && dims.height === tag.height,
-    `Image dimension mismatch for ${tag.src}: declared ${tag.width}x${tag.height}, actual ${dims.width}x${dims.height}`
-  );
-}
-
-// Sitemap only includes canonical, indexable surfaces. Dynamic preview URLs are
-// followable UX pages, but the store ItemList carries their catalogue metadata.
-assert(sitemap.includes(`${siteBase}/store/`), "sitemap.xml must include the store root");
-
-// robots.txt points to actual sitemap
-assert(robots.includes(`Sitemap: ${siteBase}/sitemap.xml`), "robots.txt Sitemap line must point to /MatthewPaver/sitemap.xml");
-
-// Spec artifacts
-for (const file of requiredSpecFiles) {
-  const absolutePath = path.join(root, file);
-  assert(fs.existsSync(absolutePath), `Missing Spec Kit artifact: ${file}`);
-  const contents = readFile(file);
-  assert(!contents.includes("[NEEDS CLARIFICATION]"), `Unresolved clarification marker in ${file}`);
-}
-
-const constitution = readFile(".specify/memory/constitution.md");
-assert(
-  constitution.includes("Progressive enhancement is mandatory"),
-  "Constitution must preserve the browser compatibility principle"
-);
-
-const spec = readFile(`${specDirectory}/spec.md`);
-assert(spec.includes("Story 2: Navigate by category"), "Feature spec must cover category navigation");
-assert(spec.includes("Story 3: Use previews safely"), "Feature spec must cover preview fallback behavior");
-
-const tasks = readFile(`${specDirectory}/tasks.md`);
-const uncheckedTasks = [...tasks.matchAll(/^- \[ \] /gm)];
-assert(uncheckedTasks.length === 0, "Spec task list contains unchecked tasks");
-
-const taskFirstSpec = readFile(`${taskFirstSpecDirectory}/spec.md`);
-assert(taskFirstSpec.includes("Story 1: Choose from a familiar situation"), "Task-first feature spec must cover relatable routing");
-const taskFirstTasks = readFile(`${taskFirstSpecDirectory}/tasks.md`);
-const uncheckedTaskFirstTasks = [...taskFirstTasks.matchAll(/^- \[ \] /gm)];
-assert(uncheckedTaskFirstTasks.length === 0, "Task-first spec task list contains unchecked tasks");
-
-// Emit a small JSON status file for build tooling and future diagnostics.
-const sitemapUrlCount = (sitemap.match(/<loc>/g) || []).length;
-const status = {
-  generatedAt: new Date().toISOString(),
-  passing: true,
-  checks: [
-    { name: "Catalogue entries", value: String(indexRows.length), pass: indexRows.length >= 10 },
-    { name: "Shelves", value: String(tagRows.length), pass: tagRows.length >= 6 },
-    { name: "Previews wired", value: String(previewSlugs.length), pass: previewSlugs.length === indexRows.length },
-    { name: "Image tags", value: String(imageTags.length), pass: imageTags.length > 0 },
-    { name: "Spec artifacts", value: String(requiredSpecFiles.length), pass: true },
-    { name: "Sitemap URLs", value: String(sitemapUrlCount), pass: sitemapUrlCount >= indexRows.length },
-    { name: "Structured data", value: "JSON-LD", pass: indexHtml.includes("application/ld+json") },
-    { name: "Security headers", value: "CSP meta", pass: indexHtml.includes('http-equiv="Content-Security-Policy"') }
-  ]
-};
-fs.writeFileSync(
-  path.join(root, "store/validator-status.json"),
-  JSON.stringify(status, null, 2) + "\n"
-);
-
-console.log(
-  `Validated ${indexRows.length} indexed store entries, ${tagRows.length} shelves, ${previewSlugs.length} previews, ${imageTags.length} image tags.`
-);
+console.log("Legacy store redirects point to the canonical product store.");
