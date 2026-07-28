@@ -129,16 +129,16 @@ The pattern is practical: collect the messy input, clean it, check it, and turn 
 
 _This section is automatically refreshed by GitHub Actions._
 
-- Last refresh (UTC): 2026-07-27 10:50
+- Last refresh (UTC): 2026-07-28 09:56
 
 | Repo | Last push | What it is |
 |:---|:---:|:---|
-| [MatthewPaver](https://github.com/MatthewPaver/MatthewPaver) | 2026-07-27 | Portfolio: AI products, data systems, ML, and analytics — every project has a preview,… |
-| [MatthewPaver.github.io](https://github.com/MatthewPaver/MatthewPaver.github.io) | 2026-07-27 | Live apps, open-source tools and private product pilots by Matthew Paver |
-| [hr-performance-dashboards](https://github.com/MatthewPaver/hr-performance-dashboards) | 2026-07-27 | Power BI dashboard handoff package for HR, absence, and sales performance analytics. |
-| [hr-performance-portfolio](https://github.com/MatthewPaver/hr-performance-portfolio) | 2026-07-27 | Stakeholder-facing HR analytics portfolio with methodology, recommendations, and dashbo… |
-| [paper-trading-bot](https://github.com/MatthewPaver/paper-trading-bot) | 2026-07-27 | Evidence-first paper-trading research engine with reproducible backtests, risk controls… |
-| [winchester-buyer-check](https://github.com/MatthewPaver/winchester-buyer-check) | 2026-07-27 | Private-by-design homebuyer budget and mortgage calculator for Winchester buyers |
+| [MatthewPaver.github.io](https://github.com/MatthewPaver/MatthewPaver.github.io) | 2026-07-28 | Live apps, open-source tools and private product pilots by Matthew Paver |
+| [hr-performance-dashboards](https://github.com/MatthewPaver/hr-performance-dashboards) | 2026-07-28 | Power BI dashboard handoff package for HR, absence, and sales performance analytics. |
+| [ProjectLens](https://github.com/MatthewPaver/ProjectLens) | 2026-07-28 | Evidence-bound project change assurance: check the pack, record the human decision, tra… |
+| [marketing-ml-lakehouse](https://github.com/MatthewPaver/marketing-ml-lakehouse) | 2026-07-28 | Local DuckDB, XGBoost, and Streamlit analytics pipeline for marketing performance data. |
+| [DecisionGraph](https://github.com/MatthewPaver/DecisionGraph) | 2026-07-28 | Evidence-linked project decision memory and comparable-case retrieval demo |
+| [happening-open-core](https://github.com/MatthewPaver/happening-open-core) | 2026-07-28 | Evidence-aware event schemas and reproducible source-coverage benchmarks |
 
 <!-- AUTO:ACTIVITY_END -->
 
