@@ -98,7 +98,6 @@ All professional examples are intentionally anonymised and focused on engineerin
 |:---|:---|:---|
 | [Sentence Similarity Analysis](https://github.com/MatthewPaver/sentence-similarity-analysis) | Notebook demo | Embeddings + cosine retrieval |
 | [PySpark Kafka Streaming](https://github.com/MatthewPaver/pyspark-kafka-streaming) | Technical example | Structured Streaming consumer + Kafka producer |
-| [Netflix Content Analysis](https://github.com/MatthewPaver/netflix-content-analysis) | Notebook EDA | Country, genre, and timeline analysis |
 
 ## Operational Stack (Cross-Project)
 
