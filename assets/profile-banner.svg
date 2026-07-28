@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 300" role="img" aria-label="Matthew Paver — automation, data, and AI projects">
+  <rect width="1280" height="300" fill="#fbfaf7"/>
+  <rect x="0" y="0" width="12" height="300" fill="#0f766e"/>
+  <line x1="80" y1="62" x2="1040" y2="62" stroke="#d8d2c8"/>
+
+  <text x="80" y="48" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="13" font-weight="800" fill="#69625b">
+    PORTFOLIO STORE
+  </text>
+  <text x="80" y="158" font-family="'Iowan Old Style', Georgia, 'Times New Roman', serif" font-size="68" font-weight="700" fill="#151515">
+    Matthew Paver
+  </text>
+  <text x="80" y="207" font-family="'Iowan Old Style', Georgia, 'Times New Roman', serif" font-size="26" fill="#57534e">
+    Automation, data, and AI projects.
+  </text>
+  <text x="80" y="250" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="15" font-weight="600" fill="#0f766e">
+    Browse working software, technical demos, and case studies
+  </text>
+
+  <g transform="translate(1080 90)">
+    <rect width="120" height="120" rx="8" fill="#d9a441"/>
+    <text x="60" y="83" font-family="'Iowan Old Style', Georgia, 'Times New Roman', serif" font-size="68" font-weight="700" fill="#161411" text-anchor="middle">MP</text>
+  </g>
+</svg>

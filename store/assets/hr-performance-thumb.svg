@@ -1,0 +1,65 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" role="img" aria-labelledby="title desc">
+  <title id="title">HR Performance Analytics thumbnail</title>
+  <desc id="desc">A standardised product thumbnail showing HR headcount, sales, absence, and employee performance panels.</desc>
+  <rect width="1200" height="675" fill="#fbfaf7"/>
+  <rect x="44" y="42" width="1112" height="591" fill="#ffffff" stroke="#a9a195" stroke-width="2"/>
+  <rect x="44" y="42" width="1112" height="74" fill="#151515"/>
+  <circle cx="82" cy="79" r="8" fill="#9f3a2f"/>
+  <circle cx="110" cy="79" r="8" fill="#8f5d12"/>
+  <circle cx="138" cy="79" r="8" fill="#0f766e"/>
+  <text x="184" y="88" fill="#ffffff" font-family="Avenir Next, Segoe UI, Arial, sans-serif" font-size="30" font-weight="800">HR Performance Analytics</text>
+  <text x="936" y="84" fill="#d8d2c8" font-family="Avenir Next, Segoe UI, Arial, sans-serif" font-size="17" font-weight="800" letter-spacing="2">POWER BI PACKAGE</text>
+
+  <rect x="82" y="154" width="248" height="154" fill="#f4f0e9" stroke="#d8d2c8"/>
+  <text x="108" y="192" fill="#57534e" font-family="Avenir Next, Segoe UI, Arial, sans-serif" font-size="16" font-weight="800" letter-spacing="1.4">HEADCOUNT</text>
+  <text x="108" y="258" fill="#151515" font-family="Charter, Georgia, serif" font-size="66" font-weight="700">290</text>
+  <text x="218" y="254" fill="#0f766e" font-family="Avenir Next, Segoe UI, Arial, sans-serif" font-size="18" font-weight="900">EMPLOYEES</text>
+
+  <rect x="366" y="154" width="382" height="386" fill="#ffffff" stroke="#d8d2c8"/>
+  <text x="392" y="194" fill="#57534e" font-family="Avenir Next, Segoe UI, Arial, sans-serif" font-size="16" font-weight="800" letter-spacing="1.4">EMPLOYEE DECOMPOSITION</text>
+  <g fill="#1d4f91">
+    <rect x="412" y="438" width="26" height="52"/>
+    <rect x="458" y="360" width="26" height="130"/>
+    <rect x="504" y="314" width="26" height="176"/>
+    <rect x="550" y="286" width="26" height="204"/>
+    <rect x="596" y="332" width="26" height="158"/>
+    <rect x="642" y="390" width="26" height="100"/>
+  </g>
+  <g stroke="#d8d2c8" stroke-width="1">
+    <line x1="398" y1="490" x2="706" y2="490"/>
+    <line x1="398" y1="424" x2="706" y2="424"/>
+    <line x1="398" y1="358" x2="706" y2="358"/>
+    <line x1="398" y1="292" x2="706" y2="292"/>
+  </g>
+  <text x="412" y="228" fill="#151515" font-family="Avenir Next, Segoe UI, Arial, sans-serif" font-size="20" font-weight="850">Production leads headcount</text>
+  <text x="412" y="258" fill="#69625b" font-family="Avenir Next, Segoe UI, Arial, sans-serif" font-size="16" font-weight="700">Department split, tenure, and role mix</text>
+
+  <rect x="784" y="154" width="334" height="178" fill="#ffffff" stroke="#d8d2c8"/>
+  <text x="810" y="194" fill="#57534e" font-family="Avenir Next, Segoe UI, Arial, sans-serif" font-size="16" font-weight="800" letter-spacing="1.4">SALES PERFORMANCE</text>
+  <rect x="810" y="236" width="236" height="20" fill="#1d4f91"/>
+  <rect x="810" y="270" width="188" height="20" fill="#1d4f91"/>
+  <rect x="810" y="304" width="150" height="20" fill="#1d4f91"/>
+  <rect x="810" y="236" width="122" height="20" fill="#0f766e"/>
+  <rect x="810" y="270" width="96" height="20" fill="#0f766e"/>
+  <rect x="810" y="304" width="78" height="20" fill="#0f766e"/>
+
+  <rect x="784" y="362" width="334" height="178" fill="#ffffff" stroke="#d8d2c8"/>
+  <text x="810" y="402" fill="#57534e" font-family="Avenir Next, Segoe UI, Arial, sans-serif" font-size="16" font-weight="800" letter-spacing="1.4">ABSENCE SIGNAL</text>
+  <text x="810" y="462" fill="#151515" font-family="Charter, Georgia, serif" font-size="58" font-weight="700">9.09</text>
+  <text x="930" y="456" fill="#69625b" font-family="Avenir Next, Segoe UI, Arial, sans-serif" font-size="16" font-weight="800">avg sick-leave hours</text>
+  <rect x="810" y="488" width="250" height="9" fill="#d8d2c8"/>
+  <rect x="810" y="488" width="164" height="9" fill="#9f3a2f"/>
+
+  <rect x="82" y="350" width="248" height="190" fill="#ffffff" stroke="#d8d2c8"/>
+  <text x="108" y="390" fill="#57534e" font-family="Avenir Next, Segoe UI, Arial, sans-serif" font-size="16" font-weight="800" letter-spacing="1.4">REPORT VIEWS</text>
+  <g fill="#151515" font-family="Avenir Next, Segoe UI, Arial, sans-serif" font-size="18" font-weight="760">
+    <text x="108" y="435">Summary dashboard</text>
+    <text x="108" y="474">Sales dashboard</text>
+    <text x="108" y="513">Sick leave view</text>
+  </g>
+  <g fill="#0f766e">
+    <rect x="274" y="420" width="20" height="20"/>
+    <rect x="274" y="459" width="20" height="20"/>
+    <rect x="274" y="498" width="20" height="20"/>
+  </g>
+</svg>

@@ -1,0 +1,274 @@
+{
+  "meetingproof": {
+    "kicker": "Live everyday work tool",
+    "title": "MeetingProof",
+    "summary": "A browser-local meeting follow-up tool that keeps every decision, action and open question tied to the exact source line and waits for a named human reviewer.",
+    "image": "./assets/meetingproof.svg",
+    "imageAlt": "MeetingProof evidence-linked meeting follow-up with a human review boundary",
+    "role": "Meeting follow-up assurance",
+    "status": "Live",
+    "focus": "What did the meeting actually leave behind?",
+    "problem": "Meeting summaries can sound complete while losing the precise agreement, owner, due date or unanswered question. MeetingProof creates a draft only from clearly labelled notes, exposes missing fields, and makes a person approve the export.",
+    "points": [
+      "The public workflow runs entirely in the browser and keeps exact source lines beside every item.",
+      "The reference LangGraph pauses and resumes at the human review boundary rather than inferring approval.",
+      "Synthetic LangSmith-ready evaluations test unsupported evidence, prompt injection, omissions and human edit rate."
+    ],
+    "stack": ["JavaScript", "LangGraph", "LangSmith", "Pydantic", "GitHub Pages"],
+    "links": [
+      { "label": "Use MeetingProof", "href": "https://matthewpaver.github.io/MeetingProof/", "primary": true },
+      { "label": "Obsidian + Claude tutorial", "href": "https://matthewpaver.github.io/MeetingProof/tutorials/obsidian-claude-mcp.html" },
+      { "label": "Open repo", "href": "https://github.com/MatthewPaver/MeetingProof" }
+    ],
+    "note": "The public tool uses transparent labelled-note extraction and stores only the approved record in this browser. A production team version still needs authentication, tenant isolation, retention controls and organisation-specific validation."
+  },
+  "project-1966": {
+    "kicker": "Archived interactive retrospective",
+    "title": "Can England Win It?",
+    "summary": "A playable World Cup probability lab: make three matchday calls, back an England hero, and run 10,000 possible tournament futures.",
+    "image": "./assets/project-1966-cinema.png",
+    "imageAvif": "./assets/project-1966-cinema.avif",
+    "imageAlt": "Project 1966 simulation result showing England's trophy probability",
+    "role": "Simulation product",
+    "status": "Archived",
+    "focus": "10,000 tournament runs",
+    "problem": "A single win probability hides the assumptions behind it. Project 1966 turns those assumptions into three clear matchday choices, then shows how they change England's route through the semi-final and final.",
+    "points": [
+      "Runs 10,000 seeded Monte Carlo tournament simulations in the browser.",
+      "Keeps the model explainable and separates playful wildcard boosts from the core ratings.",
+      "Encodes each scenario in the URL so results can be shared and challenged."
+    ],
+    "stack": ["React", "TypeScript", "Vite", "Vitest", "Monte Carlo"],
+    "links": [
+      { "label": "View retrospective", "href": "https://matthewpaver.github.io/can-england-win-it/", "primary": true },
+      { "label": "Read case study", "href": "https://github.com/MatthewPaver/MatthewPaver/blob/main/CASE_STUDIES.md#product-case-study-can-england-win-it" },
+      { "label": "Open repo", "href": "https://github.com/MatthewPaver/can-england-win-it" }
+    ],
+    "note": "This is an illustrative scenario model, not a forecast or betting product. The assumptions and model range are visible in the app."
+  },
+  "happening": {
+    "kicker": "Private system",
+    "title": "Happening",
+    "summary": "A venue-event ingestion system that turns inconsistent public pages into checked event data.",
+    "image": "./assets/happening-web.png",
+    "imageAvif": "./assets/happening-web.avif",
+    "imageAlt": "Happening event feed, source drawer, and map interface",
+    "role": "Crawler + reliability system",
+    "status": "Private",
+    "focus": "103+ venue sources",
+    "problem": "Venue listings are scattered across pages with different layouts, calendars, markup, and failure modes. Happening treats each source as a configured data contract with extraction, dedupe, validation, and regression tests.",
+    "points": [
+      "Uses source configs so behaviour is explicit and reviewable.",
+      "Combines crawling, extraction, dedupe, checks, and scheduled runs.",
+      "Backed by a 167-test private reliability suite across the ingestion surface."
+    ],
+    "stack": ["Python", "Playwright", "SQLite", "Pydantic", "GitHub Actions"],
+    "links": [
+      { "label": "Read case study", "href": "https://github.com/MatthewPaver/MatthewPaver/blob/main/CASE_STUDIES.md#featured-build-happening", "primary": true }
+    ],
+    "note": "The preview shows the product surface and the private case study explains the reliability work behind it."
+  },
+  "quicksupply": {
+    "kicker": "Workflow app",
+    "title": "QuickSupply",
+    "summary": "A supply-cover workflow for requests, agencies, teacher offers, compliance, and live status.",
+    "image": "./assets/quicksupply-dashboard.png",
+    "imageAvif": "./assets/quicksupply-dashboard.avif",
+    "imageAlt": "QuickSupply agency dashboard interface",
+    "video": "./assets/quicksupply-demo.m4v",
+    "role": "Workflow product",
+    "status": "Private MVP",
+    "focus": "School cover ops",
+    "problem": "School cover coordination can become a spreadsheet-and-message chain. The practical test is whether one same-day cover request can move from school to agency to teacher with eligibility, offers, declines, and live status visible.",
+    "points": [
+      "Separates school, agency, and teacher workflows instead of flattening them into one admin view.",
+      "Uses live status updates so bookings can move without manual chasing.",
+      "Designed around operational clarity: who has the request, what changed, and what happens next."
+    ],
+    "stack": ["Next.js", "TypeScript", "PostgreSQL", "Drizzle", "SSE"],
+    "links": [
+      { "label": "View catalogue card", "href": "./#quicksupply", "primary": true }
+    ],
+    "note": "The demo gives a quick pass through the agency workflow: request view, assignment context, and live booking status."
+  },
+  "study": {
+    "kicker": "Private product",
+    "title": "AI Study Companion",
+    "summary": "A study workflow for turning uploaded notes into flashcards, quizzes, plans, and review sessions.",
+    "image": "./assets/ai-study-companion-ui.png",
+    "imageAvif": "./assets/ai-study-companion-ui.avif",
+    "imageAlt": "AI Study Companion source-led study workspace",
+    "role": "AI learning workflow",
+    "status": "Private",
+    "focus": "Study material generation",
+    "problem": "Revision material often starts as a pile of documents and notes. The practical test is whether a learner can upload source material and get review assets they can use: cards, quizzes, plans, and spaced repetition.",
+    "points": [
+      "Ingests PDF, DOCX, and text material before generating study assets.",
+      "Separates background generation jobs from the learner-facing review flow.",
+      "Uses a spaced-repetition loop so the product is about retention, not just content generation."
+    ],
+    "stack": ["FastAPI", "PostgreSQL", "Redis", "Celery", "LLMs"],
+    "links": [
+      { "label": "Read case study", "href": "https://github.com/MatthewPaver/MatthewPaver/blob/main/CASE_STUDIES.md#ai-study-companion", "primary": true }
+    ],
+    "note": "This is a private build, so the preview focuses on the workflow and system decisions rather than exposing code."
+  },
+  "smart-job": {
+    "kicker": "Private system",
+    "title": "Smart Job Market Intelligence",
+    "summary": "A labour-market signal layer for turning listings into salary, skill, remote-work, and volume trends.",
+    "image": "./assets/smart-job-market.png",
+    "imageAvif": "./assets/smart-job-market.avif",
+    "imageAlt": "Smart Job Market Intelligence interface",
+    "role": "Data product",
+    "status": "Private",
+    "focus": "Job-market signals",
+    "problem": "Job listings are noisy snapshots. The practical test is whether many listings can become a repeatable market brief: salary movement, skill demand, remote-work ratios, volume changes, and alerts.",
+    "points": [
+      "Normalises listing data so trend analysis has a consistent base.",
+      "Packages salary, skill, volume, and remote-work signals into usable outputs.",
+      "Frames the product around alerts, reports, and API tiers rather than one-off analysis."
+    ],
+    "stack": ["Python", "FastAPI", "PostgreSQL", "Redis", "Celery"],
+    "links": [
+      { "label": "Read case study", "href": "https://github.com/MatthewPaver/MatthewPaver/blob/main/CASE_STUDIES.md#smart-job-market-intelligence", "primary": true }
+    ],
+    "note": "The preview keeps the emphasis on the decision-support workflow: collect, normalise, compare, alert."
+  },
+  "operations": {
+    "kicker": "Private prototype",
+    "title": "Operations Platform Prototype",
+    "summary": "A property-operations concept for resident requests, audit trails, payments, and AI-assisted triage.",
+    "image": "./assets/operations-platform.png",
+    "imageAvif": "./assets/operations-platform.avif",
+    "imageAlt": "Operations platform prototype interface",
+    "role": "Workflow prototype",
+    "status": "Private",
+    "focus": "Operations triage",
+    "problem": "Operational requests get messy when status, ownership, evidence, payment context, and triage notes live in different places. The practical test is whether one request keeps its history, owner, next action, and evidence visible.",
+    "points": [
+      "Models resident request intake and operations follow-up as a traceable workflow.",
+      "Includes audit trail and service-charge visibility concepts.",
+      "Explores where AI triage can help without hiding operational accountability."
+    ],
+    "stack": ["Next.js", "TypeScript", "Payments", "AI triage", "Product docs"],
+    "links": [
+      { "label": "View catalogue", "href": "./#store", "primary": true }
+    ],
+    "note": "This sits in the store as a product prototype: useful for showing product thinking, not as a public repo."
+  },
+  "lakehouse": {
+    "kicker": "Public application",
+    "title": "Marketing ML Lakehouse",
+    "summary": "A local analytics loop that moves raw marketing CSVs through DuckDB, model training, checks, and a dashboard.",
+    "image": "./assets/marketing-lakehouse-dashboard.png",
+    "imageAvif": "./assets/marketing-lakehouse-dashboard.avif",
+    "imageAlt": "Marketing ML Lakehouse product thumbnail",
+    "role": "Analytics engineering",
+    "status": "Public",
+    "focus": "Lakehouse + ML",
+    "problem": "Many analytics demos stop at a notebook. The practical test is whether raw campaign CSVs can rebuild a trusted local dashboard: DuckDB tables, model features, checks, and Streamlit views.",
+    "points": [
+      "Uses a bronze, silver, and gold flow to make the data path inspectable.",
+      "Includes model training and data-quality checks rather than only charts.",
+      "Has repo packaging and validation so reviewers can inspect it as a runnable project."
+    ],
+    "stack": ["Python", "DuckDB", "XGBoost", "Streamlit", "Makefile"],
+    "links": [
+      { "label": "Open repo", "href": "https://github.com/MatthewPaver/marketing-ml-lakehouse", "primary": true }
+    ],
+    "note": "A strong public repo to inspect: end-to-end data flow, model training, tests, and a dashboard in one place."
+  },
+  "projectlens": {
+    "kicker": "Live project board-assurance application",
+    "title": "ProjectLens",
+    "summary": "A browser-local board-readiness workflow that reconciles familiar project evidence, surfaces decision blockers, records human authority and tracks approval conditions.",
+    "image": "./assets/projectlens-change-assurance.png",
+    "imageAvif": "./assets/projectlens-change-assurance.avif",
+    "imageAlt": "ProjectLens source-linked board and change assurance workflow",
+    "role": "Project assurance product",
+    "status": "Live",
+    "focus": "What can this board pack actually prove?",
+    "problem": "Project boards receive packs, RAID logs, actions, decisions and schedules that may not agree. The practical test is whether the evidence can be reconciled before the meeting without hiding the source trail or transferring authority to a model.",
+    "points": [
+      "Checks five recognisable evidence groups and produces a concise board brief.",
+      "Checks a real browser-local XER pair against the supplied narrative.",
+      "Preserves the human decision, evidence version and open approval conditions."
+    ],
+    "stack": ["JavaScript", "Python", "Primavera P6 XER", "Evidence contracts", "GitHub Pages"],
+    "links": [
+      { "label": "Prepare a board review", "href": "https://matthewpaver.github.io/ProjectLens/board-readiness.html", "primary": true },
+      { "label": "Review a change pack", "href": "https://matthewpaver.github.io/ProjectLens/change-assurance.html" },
+      { "label": "Explore public evidence", "href": "https://matthewpaver.github.io/ProjectLens/" },
+      { "label": "Open repo", "href": "https://github.com/MatthewPaver/ProjectLens" }
+    ],
+    "note": "The public workflow uses synthetic Northstar evidence and browser-local storage. It supports professional review; it does not establish causation, entitlement or approval."
+  },
+  "decisiongraph": {
+    "kicker": "Live decision-support application",
+    "title": "DecisionGraph",
+    "summary": "A project-memory demonstrator that retrieves comparable changes, explains each match and connects interventions to measured outcomes.",
+    "image": "./assets/decisiongraph.png",
+    "imageAvif": "./assets/decisiongraph.avif",
+    "imageAlt": "DecisionGraph knowledge graph connecting a new project change to comparable decisions and observed outcomes",
+    "role": "Project knowledge retrieval",
+    "status": "Live",
+    "focus": "What happened last time?",
+    "problem": "Change requests, decision logs, risks and lessons are often stored but not retrieved when the next similar decision is being made. The practical test is whether a new delivery problem can surface comparable cases, explain why they matter and show what happened after the intervention.",
+    "points": [
+      "Retrieves comparable cases using deterministic, inspectable scoring.",
+      "Connects the original problem, decision, intervention, outcome and source trail in a knowledge graph.",
+      "Requires human review and captures the eventual outcome back into organisational memory."
+    ],
+    "stack": ["JavaScript", "Information retrieval", "Knowledge graphs", "Local import", "GitHub Pages"],
+    "links": [
+      { "label": "Open live demo", "href": "https://matthewpaver.github.io/DecisionGraph/", "primary": true },
+      { "label": "Open repo", "href": "https://github.com/MatthewPaver/DecisionGraph" }
+    ],
+    "note": "The public demo uses 16 synthetic cases. Production RAG would require evaluated embeddings, permissions, source-quality controls and durable storage."
+  },
+  "hr": {
+    "kicker": "Public dashboard package",
+    "title": "HR Performance Analytics",
+    "summary": "A Power BI dashboard package for headcount, sales performance, absence, and stakeholder-ready reporting.",
+    "image": "./assets/hr-summary-preview.png",
+    "imageAvif": "./assets/hr-summary-preview.avif",
+    "imageAlt": "HR Performance Analytics product thumbnail",
+    "role": "BI reporting",
+    "status": "Public",
+    "focus": "People analytics",
+    "problem": "Dashboard work is only useful when someone can understand the business question and inspect the handoff material. The practical test is whether HR, absence, and sales analysis can be handed over as PBIX files, screenshots, methodology, and commentary.",
+    "points": [
+      "Covers summary, sales, and absence views.",
+      "Includes prepared data and dashboard files for inspection.",
+      "Frames the work as a handoff package rather than a single screenshot."
+    ],
+    "stack": ["Power BI", "DAX", "CSV", "Reporting", "PDF exports"],
+    "links": [
+      { "label": "Open repo", "href": "https://github.com/MatthewPaver/hr-performance-dashboards", "primary": true }
+    ],
+    "note": "The repo is framed as a dashboard handoff package with files, screenshots, and commentary together."
+  },
+  "sentence": {
+    "kicker": "Public NLP demo",
+    "title": "Sentence Similarity Analysis",
+    "summary": "A compact NLP notebook showing embeddings, cosine ranking, and the limits of similarity as a signal.",
+    "image": "./assets/sentence-similarity-eval-thumb.png",
+    "imageAvif": "./assets/sentence-similarity-eval-thumb.avif",
+    "imageAlt": "Sentence similarity product thumbnail",
+    "role": "NLP analysis",
+    "status": "Public",
+    "focus": "Embedding retrieval",
+    "problem": "Similarity search is useful, but similarity is not the same as truth. The practical test is whether embeddings can find related text while making the limitation visible.",
+    "points": [
+      "Uses transformer embeddings to compare sentence meaning.",
+      "Ranks examples with cosine similarity.",
+      "Calls out where retrieval-style scoring can mislead."
+    ],
+    "stack": ["Python", "Jupyter", "sentence-transformers", "PyTorch"],
+    "links": [
+      { "label": "Open repo", "href": "https://github.com/MatthewPaver/sentence-similarity-analysis", "primary": true }
+    ],
+    "note": "This is intentionally small: it works as a clear NLP concept demo in the broader portfolio."
+  }
+}

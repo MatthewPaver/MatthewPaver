@@ -1,0 +1,58 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="675" viewBox="0 0 1200 675" role="img" aria-labelledby="title desc">
+  <title id="title">Marketing ML Lakehouse product thumbnail</title>
+  <desc id="desc">A polished analytics engineering interface showing pipeline stages, model metrics, and a dashboard preview.</desc>
+  <rect width="1200" height="675" fill="#fbfaf7"/>
+  <rect x="54" y="52" width="1092" height="571" rx="0" fill="#ffffff" stroke="#151515" stroke-width="3"/>
+  <rect x="54" y="52" width="1092" height="72" fill="#151515"/>
+  <circle cx="94" cy="88" r="10" fill="#e76f51"/>
+  <circle cx="126" cy="88" r="10" fill="#e9c46a"/>
+  <circle cx="158" cy="88" r="10" fill="#2a9d8f"/>
+  <text x="198" y="96" font-family="Avenir Next, Segoe UI, Arial, sans-serif" font-size="26" font-weight="800" fill="#ffffff">Marketing ML Lakehouse</text>
+  <text x="886" y="95" font-family="Avenir Next, Segoe UI, Arial, sans-serif" font-size="18" font-weight="800" fill="#7dd3c7">RUNNABLE DATA APP</text>
+
+  <rect x="94" y="166" width="300" height="392" fill="#f4f0e9" stroke="#d8d2c8" stroke-width="2"/>
+  <text x="122" y="208" font-family="Avenir Next, Segoe UI, Arial, sans-serif" font-size="17" font-weight="900" fill="#064e3b">PIPELINE</text>
+  <g font-family="Avenir Next, Segoe UI, Arial, sans-serif" font-size="22" font-weight="800" fill="#151515">
+    <text x="122" y="265">Bronze</text>
+    <text x="122" y="338">Silver</text>
+    <text x="122" y="411">Gold</text>
+    <text x="122" y="484">Model</text>
+  </g>
+  <g stroke="#0f766e" stroke-width="4" fill="none" stroke-linecap="square">
+    <path d="M242 258h82"/>
+    <path d="M242 331h82"/>
+    <path d="M242 404h82"/>
+    <path d="M242 477h82"/>
+  </g>
+  <g fill="#ffffff" stroke="#151515" stroke-width="2">
+    <rect x="324" y="238" width="42" height="42"/>
+    <rect x="324" y="311" width="42" height="42"/>
+    <rect x="324" y="384" width="42" height="42"/>
+    <rect x="324" y="457" width="42" height="42"/>
+  </g>
+
+  <rect x="426" y="166" width="336" height="183" fill="#ffffff" stroke="#d8d2c8" stroke-width="2"/>
+  <text x="454" y="207" font-family="Avenir Next, Segoe UI, Arial, sans-serif" font-size="17" font-weight="900" fill="#064e3b">MODEL CHECKS</text>
+  <text x="454" y="268" font-family="Charter, Georgia, serif" font-size="58" font-weight="700" fill="#151515">XGBoost</text>
+  <text x="454" y="307" font-family="Avenir Next, Segoe UI, Arial, sans-serif" font-size="20" font-weight="700" fill="#57534e">training + data-quality tests</text>
+
+  <rect x="426" y="375" width="336" height="183" fill="#ffffff" stroke="#d8d2c8" stroke-width="2"/>
+  <text x="454" y="416" font-family="Avenir Next, Segoe UI, Arial, sans-serif" font-size="17" font-weight="900" fill="#064e3b">LOCAL REVIEW</text>
+  <rect x="454" y="447" width="248" height="16" fill="#151515"/>
+  <rect x="454" y="480" width="200" height="16" fill="#0f766e"/>
+  <rect x="454" y="513" width="278" height="16" fill="#8f5d12"/>
+
+  <rect x="794" y="166" width="310" height="392" fill="#151515"/>
+  <text x="826" y="212" font-family="Avenir Next, Segoe UI, Arial, sans-serif" font-size="17" font-weight="900" fill="#7dd3c7">DASHBOARD</text>
+  <polyline points="836,472 892,420 948,438 1004,344 1068,296" fill="none" stroke="#7dd3c7" stroke-width="8" stroke-linecap="square"/>
+  <g fill="#ffffff">
+    <rect x="836" y="246" width="86" height="64"/>
+    <rect x="948" y="246" width="86" height="64"/>
+    <rect x="836" y="520" width="232" height="12"/>
+  </g>
+  <g fill="#f4f0e9">
+    <rect x="858" y="264" width="42" height="10"/>
+    <rect x="970" y="264" width="42" height="10"/>
+    <rect x="836" y="542" width="168" height="10"/>
+  </g>
+</svg>

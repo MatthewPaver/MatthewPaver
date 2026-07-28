@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="robots" content="noindex,follow" />
+    <link rel="canonical" href="https://matthewpaver.github.io/" />
+    <title>Project page moved · Matthew Paver</title>
+  </head>
+  <body>
+    <main>
+      <h1>This project page has moved</h1>
+      <p><a id="destination" href="https://matthewpaver.github.io/">Open the canonical product store</a>.</p>
+    </main>
+    <script>
+      const destinations = {
+        meetingproof: "meetingproof",
+        projectlens: "projectlens",
+        decisiongraph: "decisiongraph",
+        happening: "happening",
+        quicksupply: "quicksupply",
+        lakehouse: "marketing-ml-lakehouse",
+      };
+      const app = new URLSearchParams(window.location.search).get("app");
+      const slug = app ? destinations[app] : undefined;
+      const target = slug
+        ? `https://matthewpaver.github.io/store/apps/${slug}/`
+        : "https://matthewpaver.github.io/";
+      document.querySelector("#destination").href = target;
+      window.location.replace(target);
+    </script>
+  </body>
+</html>

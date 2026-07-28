@@ -1,0 +1,24 @@
+{
+  "name": "Matthew Paver Everyday Workbench",
+  "short_name": "MP Workbench",
+  "description": "Useful browser-local work tools with inspectable AI, automation, data, and analytics engineering.",
+  "start_url": "/MatthewPaver/store/",
+  "scope": "/MatthewPaver/store/",
+  "display": "standalone",
+  "background_color": "#fbfaf7",
+  "theme_color": "#fbfaf7",
+  "icons": [
+    {
+      "src": "./assets/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    },
+    {
+      "src": "./assets/apple-touch-icon.svg",
+      "sizes": "180x180",
+      "type": "image/svg+xml",
+      "purpose": "maskable"
+    }
+  ]
+}
