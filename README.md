@@ -17,6 +17,8 @@
 
 ---
 
+**Check the evidence before you approve, send or ship.** I build human-in-the-loop tools for the decisions teams get wrong under pressure — board approvals, meeting follow-ups, AI releases. Try one below; the demos run in your browser on synthetic data.
+
 ## Featured products
 
 <table>
