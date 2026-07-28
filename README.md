@@ -31,34 +31,36 @@
   <p><a href="https://matthewpaver.github.io/MeetingProof/">Use the tool ↗</a> · <a href="https://matthewpaver.github.io/MeetingProof/tutorials/obsidian-claude-mcp.html">Tutorial ↗</a> · <a href="https://github.com/MatthewPaver/MeetingProof">Repo ↗</a></p>
 </td>
 <td width="33%" valign="top">
-  <a href="https://matthewpaver.github.io/store/apps/happening/">
-    <img src="store/assets/happening-web.png" alt="Happening venue ingestion dashboard" />
+  <a href="https://matthewpaver.github.io/ProjectLens/change-assurance.html">
+    <img src="store/assets/projectlens-change-assurance.png" alt="ProjectLens change assurance workspace" />
   </a>
-  <h3>Happening <sub>· private</sub></h3>
-  <p>Venue pages turned into structured event data, with source configs, scheduled runs, and a 167-test reliability suite.</p>
-  <p><code>Python</code> <code>Playwright</code> <code>SQLite</code> <code>Pydantic</code> <code>GitHub Actions</code></p>
-  <p><a href="https://matthewpaver.github.io/store/apps/happening/">Preview ↗</a> · <a href="CASE_STUDIES.md#featured-build-happening">Case study ↗</a></p>
+  <h3>ProjectLens <sub>· live</sub></h3>
+  <p>Compare a change pack with its schedule before the board meeting: the three largest conflicts, source dates and a recorded board response.</p>
+  <p><code>Python</code> <code>Playwright</code> <code>GitHub Pages</code> <code>UK GMPP data</code></p>
+  <p><a href="https://matthewpaver.github.io/ProjectLens/change-assurance.html">Use the tool ↗</a> · <a href="https://matthewpaver.github.io/store/apps/projectlens/">Product notes ↗</a> · <a href="https://github.com/MatthewPaver/ProjectLens">Repo ↗</a></p>
 </td>
 <td width="33%" valign="top">
-  <a href="https://matthewpaver.github.io/store/apps/quicksupply/">
-    <img src="store/assets/quicksupply-dashboard.png" alt="QuickSupply cover operations dashboard" />
+  <a href="https://matthewpaver.github.io/ai-workflow-evaluator/app/">
+    <img src="store/assets/output-gate-workbench.png" alt="Output Gate regression check workbench" />
   </a>
-  <h3>QuickSupply <sub>· private MVP</sub></h3>
-  <p>A school cover-ops workflow built for three sides: school, agency, teacher. Sequential assignment, compliance checks, live status.</p>
-  <p><code>Next.js</code> <code>TypeScript</code> <code>PostgreSQL</code> <code>Drizzle</code> <code>SSE</code></p>
-  <p><a href="https://matthewpaver.github.io/store/apps/quicksupply/">Preview ↗</a></p>
+  <h3>Output Gate <sub>· live</sub></h3>
+  <p>Catch known AI-output regressions before release: required and banned phrases, checked in the browser or CI, no model call needed.</p>
+  <p><code>Python</code> <code>GitHub Actions</code> <code>JSON</code></p>
+  <p><a href="https://matthewpaver.github.io/ai-workflow-evaluator/app/">Use the tool ↗</a> · <a href="https://matthewpaver.github.io/store/apps/output-gate/">Product notes ↗</a> · <a href="https://github.com/MatthewPaver/ai-workflow-evaluator">Repo ↗</a></p>
 </td>
 </tr>
 </table>
+
+<sub>Also in progress, privately: <a href="https://matthewpaver.github.io/store/apps/happening/">Happening</a> (event-data platform — open-core schemas and benchmark are public) and QuickSupply (school cover-ops MVP).</sub>
 
 ## At a glance
 
 | | |
 |:---|:---|
-| **Role**     | Software engineer and automation specialist |
+| **Role**     | Product engineer |
 | **Based**    | London |
-| **Focus**    | Automation, data products, AI workflows, analytics tools |
-| **Shipping** | Project Evidence Desk · MeetingProof · ProjectLens · DecisionGraph · Quick Draft Utilities |
+| **Focus**    | Human-in-the-loop decision tools, data products, applied AI |
+| **Shipping** | ProjectLens · MeetingProof · Output Gate · Paper Trading Research Engine |
 | **Stack**    | Python · TypeScript · FastAPI · Next.js · Postgres / DuckDB · Playwright · GitHub Actions |
 | **Specs**    | [Constitution](.specify/memory/constitution.md) · [Feature spec](specs/001-portfolio-store-reliability/spec.md) · [Validator](scripts/validate-store.mjs) · [Lighthouse CI](.lighthouserc.json) |
 
