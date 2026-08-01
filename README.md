@@ -39,7 +39,7 @@
   <h3>ProjectLens <sub>· live</sub></h3>
   <p>Compare a change pack with its schedule before the board meeting: the three largest conflicts, source dates and a recorded board response.</p>
   <p><code>Python</code> <code>Playwright</code> <code>GitHub Pages</code> <code>UK GMPP data</code></p>
-  <p><a href="https://matthewpaver.github.io/ProjectLens/change-assurance.html">Use the tool ↗</a> · <a href="https://matthewpaver.github.io/store/apps/projectlens/">Product notes ↗</a> · <a href="https://github.com/MatthewPaver/ProjectLens">Repo ↗</a></p>
+  <p><a href="https://matthewpaver.github.io/ProjectLens/change-assurance.html">Use the tool ↗</a> · <a href="https://matthewpaver.github.io/preview.html?app=projectlens">Product notes ↗</a> · <a href="https://github.com/MatthewPaver/ProjectLens">Repo ↗</a></p>
 </td>
 <td width="33%" valign="top">
   <a href="https://matthewpaver.github.io/ai-workflow-evaluator/app/">
@@ -48,12 +48,12 @@
   <h3>Output Gate <sub>· live</sub></h3>
   <p>Catch known AI-output regressions before release: required and banned phrases, checked in the browser or CI, no model call needed.</p>
   <p><code>Python</code> <code>GitHub Actions</code> <code>JSON</code></p>
-  <p><a href="https://matthewpaver.github.io/ai-workflow-evaluator/app/">Use the tool ↗</a> · <a href="https://matthewpaver.github.io/store/apps/output-gate/">Product notes ↗</a> · <a href="https://github.com/MatthewPaver/ai-workflow-evaluator">Repo ↗</a></p>
+  <p><a href="https://matthewpaver.github.io/ai-workflow-evaluator/app/">Use the tool ↗</a> · <a href="https://matthewpaver.github.io/preview.html?app=ai-evaluator">Product notes ↗</a> · <a href="https://github.com/MatthewPaver/ai-workflow-evaluator">Repo ↗</a></p>
 </td>
 </tr>
 </table>
 
-<sub>Also in progress, privately: <a href="https://matthewpaver.github.io/store/apps/happening/">Happening</a> (event-data platform — open-core schemas and benchmark are public) and QuickSupply (school cover-ops MVP).</sub>
+<sub>Also in progress, privately: <a href="https://github.com/MatthewPaver/happening-open-core">Happening</a> (event-data platform — open-core schemas and benchmark are public) and QuickSupply (school cover-ops MVP).</sub>
 
 ## At a glance
 
