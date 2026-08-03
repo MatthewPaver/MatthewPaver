@@ -25,7 +25,6 @@ All professional examples are intentionally anonymised and focused on engineerin
 
 | Project | Status | Best signal | Link |
 |:---|:---|:---|:---|
-| MeetingProof | Live everyday work tool | Browser-local follow-up, exact source lines, human approval, tested LangGraph reference | [Use live](https://matthewpaver.github.io/MeetingProof/) · [Tutorial](https://matthewpaver.github.io/MeetingProof/tutorials/obsidian-claude-mcp.html) · [Repo](https://github.com/MatthewPaver/MeetingProof) |
 | Can England Win It? | Archived interactive retrospective | 10,000 seeded simulations, explainable assumptions, shareable scenarios | [View retrospective](https://matthewpaver.github.io/can-england-win-it/) · [Case study](CASE_STUDIES.md#product-case-study-can-england-win-it) · [Repo](https://github.com/MatthewPaver/can-england-win-it) |
 | Happening | Private system | 103 configured sources, daily ingestion, 167 tests | [Case study](CASE_STUDIES.md#happening) |
 | AI Study Companion | Private product | Document AI + spaced repetition + async jobs | [Case study](CASE_STUDIES.md#ai-study-companion) |
@@ -85,7 +84,6 @@ All professional examples are intentionally anonymised and focused on engineerin
 
 | Project | Status | What to look for |
 |:---|:---|:---|
-| [MeetingProof](https://github.com/MatthewPaver/MeetingProof) | Live work tool | Browser-local product, LangGraph pause/resume, evidence verification, synthetic evaluations and safe MCP tutorial |
 | [Can England Win It?](https://github.com/MatthewPaver/can-england-win-it) | Archived interactive retrospective | React interface, explainable Monte Carlo simulation, URL-based sharing, unit tests |
 | [Marketing ML Lakehouse](https://github.com/MatthewPaver/marketing-ml-lakehouse) | Runnable application | Bronze/silver/gold DuckDB flow, model training, Streamlit reporting |
 | [ProjectLens](https://github.com/MatthewPaver/ProjectLens) | Live project assurance | Browser-local evidence comparison, decision blockers, human authority and approval conditions |
