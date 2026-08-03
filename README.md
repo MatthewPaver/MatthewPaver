@@ -133,16 +133,16 @@ The pattern is practical: collect the messy input, clean it, check it, and turn 
 
 _This section is automatically refreshed by GitHub Actions._
 
-- Last refresh (UTC): 2026-08-02 09:23
+- Last refresh (UTC): 2026-08-03 10:51
 
 | Repo | Last push | What it is |
 |:---|:---:|:---|
-| [ProjectLens](https://github.com/MatthewPaver/ProjectLens) | 2026-08-01 | Evidence-bound project change assurance: check the pack, record the human decision, tra… |
-| [MatthewPaver](https://github.com/MatthewPaver/MatthewPaver) | 2026-08-01 | Portfolio: AI products, data systems, ML, and analytics — every project has a preview,… |
-| [MatthewPaver.github.io](https://github.com/MatthewPaver/MatthewPaver.github.io) | 2026-08-01 | Live demos and open-source tools by Matthew Paver |
-| [Autonomous-Security-Engineer](https://github.com/MatthewPaver/Autonomous-Security-Engineer) | 2026-08-01 | ASE — Find → Challenge → Fix → Prove. Authorised AppSec review with human approval and… |
-| [MeetingProof](https://github.com/MatthewPaver/MeetingProof) | 2026-07-28 | Evidence-linked meeting follow-up with LangGraph human approval and LangSmith-ready eva… |
-| [DecisionGraph](https://github.com/MatthewPaver/DecisionGraph) | 2026-07-28 | Evidence-linked project decision memory and comparable-case retrieval demo |
+| [ase-overlay-probe-1785753866](https://github.com/MatthewPaver/ase-overlay-probe-1785753866) | 2026-08-03 | No description |
+| [MatthewPaver.github.io](https://github.com/MatthewPaver/MatthewPaver.github.io) | 2026-08-02 | Live demos and open-source tools by Matthew Paver |
+| [ProjectLens](https://github.com/MatthewPaver/ProjectLens) | 2026-08-02 | Evidence-bound project change assurance: check the pack, record the human decision, tra… |
+| [Autonomous-Security-Engineer](https://github.com/MatthewPaver/Autonomous-Security-Engineer) | 2026-08-02 | ASE — Find → Challenge → Fix → Prove. Authorised AppSec review with human approval and… |
+| [output-gate-demo](https://github.com/MatthewPaver/output-gate-demo) | 2026-08-02 | Minimal consumer example for the Output Gate GitHub Action: CI fails on a seeded bad ou… |
+| [MatthewPaver](https://github.com/MatthewPaver/MatthewPaver) | 2026-08-02 | Portfolio: AI products, data systems, ML, and analytics — every project has a preview,… |
 
 <!-- AUTO:ACTIVITY_END -->
 
