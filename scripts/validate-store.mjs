@@ -26,7 +26,6 @@ assert(
 );
 
 for (const slug of [
-  "meetingproof",
   "projectlens",
   "decisiongraph",
   "happening",
