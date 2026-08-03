@@ -17,21 +17,12 @@
 
 ---
 
-**Check the evidence before you approve, send or ship.** I build human-in-the-loop tools for the decisions teams get wrong under pressure — board approvals, meeting follow-ups, AI releases. Try one below; the demos run in your browser on synthetic data.
+**Check the evidence before you approve, send or ship.** I build human-in-the-loop tools for the decisions teams get wrong under pressure — board approvals and AI releases. Try one below; the demos run in your browser on synthetic data.
 
 ## Featured products
 
 <table>
 <tr>
-<td width="33%" valign="top">
-  <a href="https://matthewpaver.github.io/MeetingProof/">
-    <img src="store/assets/meetingproof.svg" alt="MeetingProof evidence-linked meeting follow-up" />
-  </a>
-  <h3>MeetingProof <sub>· live</sub></h3>
-  <p>Turn meeting notes into evidence-linked decisions, actions and questions, then review and approve the follow-up yourself.</p>
-  <p><code>JavaScript</code> <code>LangGraph</code> <code>LangSmith</code> <code>Pydantic</code> <code>GitHub Pages</code></p>
-  <p><a href="https://matthewpaver.github.io/MeetingProof/">Use the tool ↗</a> · <a href="https://matthewpaver.github.io/MeetingProof/tutorials/obsidian-claude-mcp.html">Tutorial ↗</a> · <a href="https://github.com/MatthewPaver/MeetingProof">Repo ↗</a></p>
-</td>
 <td width="33%" valign="top">
   <a href="https://matthewpaver.github.io/ProjectLens/change-assurance.html">
     <img src="store/assets/projectlens-change-assurance.png" alt="ProjectLens change assurance workspace" />
@@ -62,7 +53,7 @@
 | **Role**     | Product engineer |
 | **Based**    | London |
 | **Focus**    | Human-in-the-loop decision tools, data products, applied AI |
-| **Shipping** | ProjectLens · MeetingProof · Output Gate · Paper Trading Research Engine |
+| **Shipping** | ProjectLens · Output Gate · Paper Trading Research Engine |
 | **Stack**    | Python · TypeScript · FastAPI · Next.js · Postgres / DuckDB · Playwright · GitHub Actions |
 | **Specs**    | [Constitution](.specify/memory/constitution.md) · [Feature spec](specs/001-portfolio-store-reliability/spec.md) · [Validator](scripts/validate-store.mjs) · [Lighthouse CI](.lighthouserc.json) |
 
@@ -91,7 +82,6 @@ The pattern is practical: collect the messy input, clean it, check it, and turn 
 
 **▸ Runnable applications**
 
-- [MeetingProof](https://github.com/MatthewPaver/MeetingProof) — Browser-local meeting follow-up, exact source lines, LangGraph human approval, synthetic evaluation fixtures
 - [Marketing ML Lakehouse](https://github.com/MatthewPaver/marketing-ml-lakehouse) — Bronze/silver/gold DuckDB flow, XGBoost training, data-quality checks, Streamlit dashboard<br/><sub><img src="https://img.shields.io/github/last-commit/MatthewPaver/marketing-ml-lakehouse?style=flat-square&label=Last%20commit&color=8f5d12&labelColor=151515" alt="Last commit" /> <img src="https://img.shields.io/github/languages/top/MatthewPaver/marketing-ml-lakehouse?style=flat-square&color=0f766e&labelColor=151515" alt="Top language" /></sub>
 - [ProjectLens](https://github.com/MatthewPaver/ProjectLens) — Browser-local board readiness: reconcile five evidence groups, expose source-linked findings, record human authority and follow approval conditions<br/><sub><img src="https://img.shields.io/github/last-commit/MatthewPaver/ProjectLens?style=flat-square&label=Last%20commit&color=8f5d12&labelColor=151515" alt="Last commit" /> <img src="https://img.shields.io/github/languages/top/MatthewPaver/ProjectLens?style=flat-square&color=0f766e&labelColor=151515" alt="Top language" /></sub>
 - [DecisionGraph](https://github.com/MatthewPaver/DecisionGraph) — Comparable project cases with inspectable retrieval, problem-to-outcome evidence chains and human review

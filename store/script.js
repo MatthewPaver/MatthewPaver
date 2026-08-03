@@ -17,7 +17,6 @@ document.addEventListener("DOMContentLoaded", () => {
   const searchIndex = new Map();
   const curatedOrder = new Map(
     [
-      "meetingproof",
       "projectlens",
       "decisiongraph",
       "project-1966",

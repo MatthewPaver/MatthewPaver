@@ -17,7 +17,6 @@ The old `/MatthewPaver/store/` routes are retained only as `noindex` redirects.
 | Product | Public handoff | Current boundary |
 |:---|:---|:---|
 | ProjectLens | Live browser example, source, tests, release | Decision support, not contractual analysis |
-| MeetingProof | Live browser example, source, tests, release | Human approval remains mandatory |
 | Output Gate | Live browser/CLI example, source, tests, release | Known assertions, not a general truth detector |
 | DecisionGraph | Live browser example, source, tests, release | Synthetic cases; no invented organisational history |
 | Marketing ML Lakehouse | Runnable local pipeline, source, tests, release | Synthetic sample data; no ad-platform credentials |
@@ -72,7 +71,7 @@ product are explicit. The best next integrations are:
 | HR Performance Dashboards | [ONS sickness-absence data](https://www.ons.gov.uk/employmentandlabourmarket/peopleinwork/employmentandemployeetypes/datasets/sicknessabsenceinthelabourmarket) | An external UK benchmark beside internal absence measures | Label population/method changes and never compare unlike periods silently |
 | Happening | [London cultural-infrastructure data](https://data.london.gov.uk/) | Venue seed coverage and source-completeness checks | Treat it as a benchmark, not a replacement for current event evidence |
 
-MeetingProof and Output Gate should continue to use synthetic regression cases:
+Output Gate should continue to use synthetic regression cases:
 public corpora would add little while making privacy and expected-answer
 boundaries harder to explain. Marketing ML Lakehouse should retain a generated
 sample by default. Paper Trading should retain hashed, reproducible market-data

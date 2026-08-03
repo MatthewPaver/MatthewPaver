@@ -108,7 +108,6 @@ Direct, practical, technical, calm, and specific. Prefer plain English over hype
 
 - Portfolio audit score: 100/100.
 - Everyday Workbench has three browser-local draft tools with deterministic unit and browser QA.
-- MeetingProof has a tested LangGraph approval gate and a 30-case synthetic release evaluation.
 - Marketing ML Lakehouse, ProjectLens, recommender, sentence similarity, Smart Job, QuickSupply, and AI Study Companion now explain the practical test they serve.
 - Store includes structured data, Open Graph image, sitemap, robots.txt, previews, and repo links.
 
