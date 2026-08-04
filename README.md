@@ -123,16 +123,16 @@ The pattern is practical: collect the messy input, clean it, check it, and turn 
 
 _This section is automatically refreshed by GitHub Actions._
 
-- Last refresh (UTC): 2026-08-03 10:51
+- Last refresh (UTC): 2026-08-04 09:59
 
 | Repo | Last push | What it is |
 |:---|:---:|:---|
-| [ase-overlay-probe-1785753866](https://github.com/MatthewPaver/ase-overlay-probe-1785753866) | 2026-08-03 | No description |
-| [MatthewPaver.github.io](https://github.com/MatthewPaver/MatthewPaver.github.io) | 2026-08-02 | Live demos and open-source tools by Matthew Paver |
-| [ProjectLens](https://github.com/MatthewPaver/ProjectLens) | 2026-08-02 | Evidence-bound project change assurance: check the pack, record the human decision, tra… |
-| [Autonomous-Security-Engineer](https://github.com/MatthewPaver/Autonomous-Security-Engineer) | 2026-08-02 | ASE — Find → Challenge → Fix → Prove. Authorised AppSec review with human approval and… |
-| [output-gate-demo](https://github.com/MatthewPaver/output-gate-demo) | 2026-08-02 | Minimal consumer example for the Output Gate GitHub Action: CI fails on a seeded bad ou… |
-| [MatthewPaver](https://github.com/MatthewPaver/MatthewPaver) | 2026-08-02 | Portfolio: AI products, data systems, ML, and analytics — every project has a preview,… |
+| [Autonomous-Security-Engineer](https://github.com/MatthewPaver/Autonomous-Security-Engineer) | 2026-08-04 | ASE — Find → Challenge → Fix → Prove. Authorised AppSec review with human approval and… |
+| [MatthewPaver](https://github.com/MatthewPaver/MatthewPaver) | 2026-08-04 | Portfolio: AI products, data systems, ML, and analytics — every project has a preview,… |
+| [MatthewPaver.github.io](https://github.com/MatthewPaver/MatthewPaver.github.io) | 2026-08-04 | Live demos and open-source tools by Matthew Paver |
+| [output-gate-demo](https://github.com/MatthewPaver/output-gate-demo) | 2026-08-04 | Minimal consumer example for the Output Gate GitHub Action: CI fails on a seeded bad ou… |
+| [ProjectLens](https://github.com/MatthewPaver/ProjectLens) | 2026-08-03 | Evidence-bound project change assurance: check the pack, record the human decision, tra… |
+| [iam-policy-auditor](https://github.com/MatthewPaver/iam-policy-auditor) | 2026-08-03 | PolicyLens — ask who can do what in AWS IAM, with cited deterministic answers |
 
 <!-- AUTO:ACTIVITY_END -->
 
