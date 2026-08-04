@@ -44,7 +44,7 @@
 </tr>
 </table>
 
-<sub>Also in progress, privately: <a href="https://github.com/MatthewPaver/happening-open-core">Happening</a> (event-data platform — open-core schemas and benchmark are public) and QuickSupply (school cover-ops MVP).</sub>
+<sub>Also private / parked: Happening (event ingestion — paused), QuickSupply (school cover MVP). Study demos archived on GitHub Aug 2026.</sub>
 
 ## At a glance
 
@@ -53,7 +53,7 @@
 | **Role**     | Product engineer |
 | **Based**    | London |
 | **Focus**    | Human-in-the-loop decision tools, data products, applied AI |
-| **Shipping** | ProjectLens · Output Gate · Paper Trading Research Engine |
+| **Shipping** | ProjectLens · Output Gate |
 | **Stack**    | Python · TypeScript · FastAPI · Next.js · Postgres / DuckDB · Playwright · GitHub Actions |
 | **Specs**    | [Constitution](.specify/memory/constitution.md) · [Feature spec](specs/001-portfolio-store-reliability/spec.md) · [Validator](scripts/validate-store.mjs) · [Lighthouse CI](.lighthouserc.json) |
 
