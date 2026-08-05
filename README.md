@@ -123,16 +123,16 @@ The pattern is practical: collect the messy input, clean it, check it, and turn 
 
 _This section is automatically refreshed by GitHub Actions._
 
-- Last refresh (UTC): 2026-08-04 09:59
+- Last refresh (UTC): 2026-08-05 09:57
 
 | Repo | Last push | What it is |
 |:---|:---:|:---|
-| [Autonomous-Security-Engineer](https://github.com/MatthewPaver/Autonomous-Security-Engineer) | 2026-08-04 | ASE — Find → Challenge → Fix → Prove. Authorised AppSec review with human approval and… |
-| [MatthewPaver](https://github.com/MatthewPaver/MatthewPaver) | 2026-08-04 | Portfolio: AI products, data systems, ML, and analytics — every project has a preview,… |
-| [MatthewPaver.github.io](https://github.com/MatthewPaver/MatthewPaver.github.io) | 2026-08-04 | Live demos and open-source tools by Matthew Paver |
-| [output-gate-demo](https://github.com/MatthewPaver/output-gate-demo) | 2026-08-04 | Minimal consumer example for the Output Gate GitHub Action: CI fails on a seeded bad ou… |
-| [ProjectLens](https://github.com/MatthewPaver/ProjectLens) | 2026-08-03 | Evidence-bound project change assurance: check the pack, record the human decision, tra… |
-| [iam-policy-auditor](https://github.com/MatthewPaver/iam-policy-auditor) | 2026-08-03 | PolicyLens — ask who can do what in AWS IAM, with cited deterministic answers |
+| [ProjectLens](https://github.com/MatthewPaver/ProjectLens) | 2026-08-05 | Evidence-bound project change assurance: check the pack, record the human decision, tra… |
+| [MatthewPaver.github.io](https://github.com/MatthewPaver/MatthewPaver.github.io) | 2026-08-05 | Live demos and open-source tools by Matthew Paver |
+| [dating-app-recommendation-system](https://github.com/MatthewPaver/dating-app-recommendation-system) | 2026-08-05 | Swipe-style recommendation system with implicit feedback, temporal holdouts, and Top-K… |
+| [sentence-similarity-analysis](https://github.com/MatthewPaver/sentence-similarity-analysis) | 2026-08-05 | Sentence-transformer notebook showing embedding similarity, cosine ranking, and retriev… |
+| [pyspark-kafka-streaming](https://github.com/MatthewPaver/pyspark-kafka-streaming) | 2026-08-05 | Compact PySpark and Kafka technical examples covering DataFrames, Structured Streaming,… |
+| [marketing-ml-lakehouse](https://github.com/MatthewPaver/marketing-ml-lakehouse) | 2026-08-05 | Local DuckDB, XGBoost, and Streamlit analytics pipeline for marketing performance data. |
 
 <!-- AUTO:ACTIVITY_END -->
 
