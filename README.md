@@ -123,16 +123,16 @@ The pattern is practical: collect the messy input, clean it, check it, and turn 
 
 _This section is automatically refreshed by GitHub Actions._
 
-- Last refresh (UTC): 2026-08-05 09:57
+- Last refresh (UTC): 2026-08-06 10:00
 
 | Repo | Last push | What it is |
 |:---|:---:|:---|
 | [ProjectLens](https://github.com/MatthewPaver/ProjectLens) | 2026-08-05 | Evidence-bound project change assurance: check the pack, record the human decision, tra… |
 | [MatthewPaver.github.io](https://github.com/MatthewPaver/MatthewPaver.github.io) | 2026-08-05 | Live demos and open-source tools by Matthew Paver |
+| [MatthewPaver](https://github.com/MatthewPaver/MatthewPaver) | 2026-08-05 | Portfolio: AI products, data systems, ML, and analytics — every project has a preview,… |
 | [dating-app-recommendation-system](https://github.com/MatthewPaver/dating-app-recommendation-system) | 2026-08-05 | Swipe-style recommendation system with implicit feedback, temporal holdouts, and Top-K… |
 | [sentence-similarity-analysis](https://github.com/MatthewPaver/sentence-similarity-analysis) | 2026-08-05 | Sentence-transformer notebook showing embedding similarity, cosine ranking, and retriev… |
 | [pyspark-kafka-streaming](https://github.com/MatthewPaver/pyspark-kafka-streaming) | 2026-08-05 | Compact PySpark and Kafka technical examples covering DataFrames, Structured Streaming,… |
-| [marketing-ml-lakehouse](https://github.com/MatthewPaver/marketing-ml-lakehouse) | 2026-08-05 | Local DuckDB, XGBoost, and Streamlit analytics pipeline for marketing performance data. |
 
 <!-- AUTO:ACTIVITY_END -->
 
