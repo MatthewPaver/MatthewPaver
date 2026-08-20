@@ -123,11 +123,11 @@ The pattern is practical: collect the messy input, clean it, check it, and turn 
 
 _This section is automatically refreshed by GitHub Actions._
 
-- Last refresh (UTC): 2026-08-19 07:55
+- Last refresh (UTC): 2026-08-20 07:58
 
 | Repo | Last push | What it is |
 |:---|:---:|:---|
-| [MatthewPaver](https://github.com/MatthewPaver/MatthewPaver) | 2026-08-18 | Portfolio: AI products, data systems, ML, and analytics — every project has a preview,… |
+| [MatthewPaver](https://github.com/MatthewPaver/MatthewPaver) | 2026-08-19 | Portfolio: AI products, data systems, ML, and analytics — every project has a preview,… |
 | [MatthewPaver.github.io](https://github.com/MatthewPaver/MatthewPaver.github.io) | 2026-08-11 | Live demos and open-source tools by Matthew Paver |
 | [NVG-Crestovian-Analytics](https://github.com/MatthewPaver/NVG-Crestovian-Analytics) | 2026-08-11 | Private take-home assessment submission for authorised reviewers |
 | [ProjectLens](https://github.com/MatthewPaver/ProjectLens) | 2026-08-05 | Evidence-bound project change assurance: check the pack, record the human decision, tra… |
