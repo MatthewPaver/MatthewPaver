@@ -2,8 +2,6 @@ name: Refresh Profile README
 
 on:
   workflow_dispatch:
-  schedule:
-    - cron: "17 7 * * *"
 
 permissions:
   contents: write
@@ -20,7 +18,10 @@ jobs:
         with:
           python-version: "3.11"
 
-      - name: Update auto-generated profile section
+      - name: Check optional activity refresh
+        run: python .github/scripts/test_update_profile_activity.py
+
+      - name: Update profile only when activity markers are present
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           PROFILE_USERNAME: MatthewPaver

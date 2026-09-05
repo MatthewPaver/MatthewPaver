@@ -79,6 +79,11 @@ def main() -> int:
     if not README_PATH.exists():
         raise FileNotFoundError("README.md not found")
 
+    text = README_PATH.read_text(encoding="utf-8")
+    if START_MARKER not in text or END_MARKER not in text:
+        print("No complete activity markers: preserving the curated profile.")
+        return 0
+
     token = os.getenv("GITHUB_TOKEN")
     repo_api = (
         f"https://api.github.com/users/{USERNAME}/repos"
@@ -99,21 +104,13 @@ def main() -> int:
     top_repos = public_non_fork[:MAX_REPOS]
 
     block = build_block(top_repos)
-    text = README_PATH.read_text(encoding="utf-8")
 
     pattern = re.compile(
         rf"{re.escape(START_MARKER)}[\s\S]*?{re.escape(END_MARKER)}",
         re.MULTILINE,
     )
 
-    if START_MARKER in text and END_MARKER in text:
-        updated = pattern.sub(block.strip(), text)
-    else:
-        anchor = "## Certifications"
-        if anchor in text:
-            updated = text.replace(anchor, block + "\n" + anchor)
-        else:
-            updated = text.rstrip() + "\n\n" + block
+    updated = pattern.sub(lambda _: block.strip(), text)
 
     README_PATH.write_text(updated + ("" if updated.endswith("\n") else "\n"), encoding="utf-8")
     return 0

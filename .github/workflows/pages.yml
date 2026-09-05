@@ -1,4 +1,4 @@
-name: Deploy Portfolio Store
+name: Deploy Profile Redirect
 
 on:
   push:
@@ -33,15 +33,11 @@ jobs:
         with:
           node-version: "24"
 
-      - name: Validate store catalogue
-        run: npm test
+      - name: Test profile refresh
+        run: python3 .github/scripts/test_update_profile_activity.py
 
-      - name: Lighthouse CI
-        uses: treosh/lighthouse-ci-action@v12
-        with:
-          configPath: ./.lighthouserc.json
-          uploadArtifacts: true
-          temporaryPublicStorage: true
+      - name: Prepare redirects and CV
+        run: node scripts/prepare-profile-pages.mjs
 
       - name: Setup Pages
         uses: actions/configure-pages@v6
@@ -49,7 +45,7 @@ jobs:
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v5
         with:
-          path: .
+          path: profile-pages
 
       - name: Deploy to GitHub Pages
         id: deployment
