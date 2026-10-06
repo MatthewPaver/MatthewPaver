@@ -14,7 +14,7 @@ I'm looking for AI engineering and solutions architecture roles where I can comb
 |:---|:---|:---|
 | [ProjectLens](https://matthewpaver.github.io/store/apps/projectlens/) | Find disagreements between a project's written change request and its schedule before a review meeting. | A browser demo with synthetic schedules, source-linked findings and an exportable review record. |
 | [QuickSupply](https://matthewpaver.github.io/store/apps/quicksupply/) | Follow a supply-teacher booking from school request through agency assignment to teacher response. | A recorded redesign case study based on an outdated Liverpool booking process, plus public source. It is not a live staffing service. |
-| [Marketing ML Lakehouse](https://matthewpaver.github.io/store/apps/lakehouse/) | Turn campaign files into checked reporting tables that another person can rebuild. | A public Python template and a fixed browser sample. My newer next-day prediction evaluation is a local extension, not part of the published walkthrough yet. |
+| [Marketing ML Lakehouse](https://matthewpaver.github.io/store/apps/lakehouse/) | Turn campaign files into checked reporting tables that another person can rebuild. | A public Python template and a fixed browser sample. Includes a next-day prediction evaluation against a prior-day baseline, with its limits stated: on the 24-row sample it shows no reliable skill over the baseline. |
 
 [All public projects and smaller examples](https://matthewpaver.github.io/work/) · [Case-study notes](CASE_STUDIES.md) · [Repository guide](Projects.md)
 
