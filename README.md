@@ -22,7 +22,7 @@ I'm looking for AI engineering and solutions architecture roles where I can comb
 
 [PolicyLens](https://github.com/MatthewPaver/iam-policy-auditor) explores AWS permission reachability. Its deterministic checks produce the evidence; optional AI explains that evidence rather than deciding permissions. The public repository includes a local demo and benchmark. The portfolio also documents a newer local change-review extension, with its publication status made explicit.
 
-[Sentence Similarity Analysis](https://github.com/MatthewPaver/sentence-similarity-analysis) is a smaller embedding notebook. It is useful for inspecting how semantic similarity behaves, but it is not a finished RAG product or an independently evaluated retrieval system.
+[RAG Retrieval Gate](https://github.com/MatthewPaver/rag-retrieval-gate) checks whether a change to a RAG system (embedding model, chunking or retriever) still finds the right evidence. It scores labelled questions on the public SciFact benchmark and fails CI when quality drops; on SciFact a small dense model scores below a BM25 baseline (MRR 0.60 vs 0.63), so the gate rejects it.
 
 ## How I work
 
