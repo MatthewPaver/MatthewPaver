@@ -2,7 +2,7 @@
 
 I'm an AI solutions architect and hands-on engineer based in London. I build AI systems, automation and data products, from understanding the problem through to release and operation.
 
-I have spent seven years in data and AI. Six of them were at Projecting Success, where I progressed from data analysis through data science into solutions architecture. My work has included knowledge graphs, AI-assisted workflows, cloud automation, privacy reviews and technical training.
+Since November 2025 I have been an Automation & AI Consultant at Ciklum, placed at Trustpilot, where I lead AI and automation projects from discovery to support after launch. Before that I spent six years at Projecting Success, progressing from data analysis through data science into solutions architecture. My work has included knowledge graphs, AI-assisted workflows, cloud automation, privacy reviews and technical training.
 
 I'm looking for AI engineering and solutions architecture roles where I can combine technical decisions with building and testing the software.
 
