@@ -2,7 +2,7 @@
 
 I'm an AI solutions architect and hands-on engineer based in London. I build AI systems, automation and data products, from understanding the problem through to release and operation.
 
-I progressed from data analysis through data science into solutions architecture over six years at Projecting Success. My work has included knowledge graphs, AI-assisted workflows, cloud automation, privacy reviews and technical training.
+I have spent seven years in data and AI. Six of them were at Projecting Success, where I progressed from data analysis through data science into solutions architecture. My work has included knowledge graphs, AI-assisted workflows, cloud automation, privacy reviews and technical training.
 
 I'm looking for AI engineering and solutions architecture roles where I can combine technical decisions with building and testing the software.
 
@@ -20,7 +20,7 @@ I'm looking for AI engineering and solutions architecture roles where I can comb
 
 ## AI work you can question
 
-[PolicyLens](https://github.com/MatthewPaver/iam-policy-auditor) explores AWS permission reachability. Its deterministic checks produce the evidence; optional AI explains that evidence rather than deciding permissions. The public repository includes a local demo and benchmark. The portfolio also documents a newer local change-review extension, with its publication status made explicit.
+[PolicyLens](https://github.com/MatthewPaver/iam-policy-auditor) explores AWS permission reachability. Its deterministic checks produce the evidence; optional AI explains that evidence rather than deciding permissions. The public repository includes the AWS change-review workflow, an org-wide demo and an authored benchmark, all runnable locally without an AWS account.
 
 [RAG Retrieval Gate](https://github.com/MatthewPaver/rag-retrieval-gate) checks whether a change to a RAG system (embedding model, chunking or retriever) still finds the right evidence. It scores labelled questions on the public SciFact benchmark and fails CI when quality drops; on SciFact it blocks a 12-word chunking change that scores below a BM25 baseline (MRR 0.53 vs 0.63).
 
