@@ -12,17 +12,18 @@ I'm looking for AI engineering and solutions architecture roles where I can comb
 
 | Project | What it helps someone do | What you can inspect |
 |:---|:---|:---|
-| [ProjectLens](https://matthewpaver.github.io/store/apps/projectlens/) | Find disagreements between a project's written change request and its schedule before a review meeting. | A browser demo with synthetic schedules, source-linked findings and an exportable review record. |
+| [PolicyLens](https://github.com/MatthewPaver/iam-policy-auditor) | Check whether an AWS IAM change widens who can do what, before it is approved. | Deterministic checks produce cited evidence; optional AI explains that evidence rather than deciding. Includes the change-review workflow, an org-wide demo and an authored benchmark, all runnable locally without an AWS account. |
+| [RAG Retrieval Gate](https://github.com/MatthewPaver/rag-retrieval-gate) | Stop a change to a RAG system (embedding model, chunking or retriever) from shipping if it finds the right evidence less often. | Scores labelled questions on the public SciFact benchmark with paired-bootstrap confidence intervals and fails CI on a real drop. It blocks a 12-word chunking change (MRR 0.53 vs 0.63) and passes a hybrid retriever, the only significant gain. [Case study](https://matthewpaver.github.io/work/rag-regression-gate/). |
+| [ProjectLens](https://matthewpaver.github.io/store/apps/projectlens/) | Find disagreements between a project's written change request and its schedule before a review meeting. | A browser demo with synthetic schedules, cited precedents from a public corpus, source-linked findings and a human-recorded decision. |
+
+## Also worth a look
+
+| Project | What it helps someone do | What you can inspect |
+|:---|:---|:---|
 | [QuickSupply](https://matthewpaver.github.io/store/apps/quicksupply/) | Follow a supply-teacher booking from school request through agency assignment to teacher response. | A recorded redesign case study based on an outdated Liverpool booking process, plus public source. It is not a live staffing service. |
-| [Marketing ML Lakehouse](https://matthewpaver.github.io/store/apps/lakehouse/) | Turn campaign files into checked reporting tables that another person can rebuild. | A public Python template and a fixed browser sample. Includes a next-day prediction evaluation against a prior-day baseline, with its limits stated: on the 24-row sample it shows no reliable skill over the baseline. |
+| [Marketing ML Lakehouse](https://matthewpaver.github.io/store/apps/lakehouse/) | Turn campaign files into checked reporting tables that another person can rebuild. | A public Python template and a console built from its generated evidence. Its next-day model is compared with a prior-day baseline: on the 24-row holdout it shows no reliable skill yet, and the README says so. |
 
 [All public projects and smaller examples](https://matthewpaver.github.io/work/) · [Case-study notes](CASE_STUDIES.md) · [Repository guide](Projects.md)
-
-## AI work you can question
-
-[PolicyLens](https://github.com/MatthewPaver/iam-policy-auditor) explores AWS permission reachability. Its deterministic checks produce the evidence; optional AI explains that evidence rather than deciding permissions. The public repository includes the AWS change-review workflow, an org-wide demo and an authored benchmark, all runnable locally without an AWS account.
-
-[RAG Retrieval Gate](https://github.com/MatthewPaver/rag-retrieval-gate) checks whether a change to a RAG system (embedding model, chunking or retriever) still finds the right evidence. It scores labelled questions on the public SciFact benchmark and fails CI when quality drops; on SciFact it blocks a 12-word chunking change that scores below a BM25 baseline (MRR 0.53 vs 0.63).
 
 ## How I work
 
