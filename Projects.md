@@ -20,7 +20,7 @@ This is a selected guide, not an inventory of everything on my account. Start wi
 
 | Repository | What to inspect | Scope |
 |:---|:---|:---|
-| [Sentence Similarity Analysis](https://github.com/MatthewPaver/sentence-similarity-analysis) | An embedding-based similarity notebook. | A starting point for retrieval experiments, not a finished RAG application. |
+| [RAG Retrieval Gate](https://github.com/MatthewPaver/rag-retrieval-gate) | A CI gate that scores retrieval changes on labelled questions and the public SciFact benchmark. | Checks that labelled evidence is retrieved, not that an answer is true. |
 | [PySpark Kafka Streaming](https://github.com/MatthewPaver/pyspark-kafka-streaming) | Small DataFrame examples and Kafka producer/consumer code. | Data-processing foundations, not a production streaming platform. |
 | [Dating App Recommendation System](https://github.com/MatthewPaver/dating-app-recommendation-system) | A sample recommendation CLI with fictional interactions. | A ranking exercise, not evidence of real dating outcomes. |
 
