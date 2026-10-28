@@ -10,25 +10,27 @@ I'm looking for AI engineering and solutions architecture roles where I can comb
 
 ## Start with these three
 
-| Project | What it helps someone do | What you can inspect |
+Each one runs in your browser with a made-up example. No install or account needed.
+
+| Project | What it helps someone do | Try it |
 |:---|:---|:---|
-| [PolicyLens](https://github.com/MatthewPaver/iam-policy-auditor) | Check whether an AWS IAM change widens who can do what, before it is approved. | Deterministic checks produce cited evidence; optional AI explains that evidence rather than deciding. Includes the change-review workflow, an org-wide demo and an authored benchmark, all runnable locally without an AWS account. |
-| [RAG Retrieval Gate](https://github.com/MatthewPaver/rag-retrieval-gate) | Stop a change to a RAG system (embedding model, chunking or retriever) from shipping if it finds the right evidence less often. | Scores labelled questions on the public SciFact benchmark with paired-bootstrap confidence intervals and fails CI on a real drop. It blocks a 12-word chunking change (MRR 0.53 vs 0.63) and passes a hybrid retriever, the only significant gain. [Case study](https://matthewpaver.github.io/work/rag-regression-gate/). |
-| [ProjectLens](https://matthewpaver.github.io/store/apps/projectlens/) | Find disagreements between a project's written change request and its schedule before a review meeting. | A browser demo with synthetic schedules, cited precedents from a public corpus, source-linked findings and a human-recorded decision. |
+| **PolicyLens** | See whether an AWS permission change gives someone too much access, which policy line causes it, and whether a fix removes it without breaking the access people need. | [Open the example](https://matthewpaver.github.io/iam-policy-auditor/)<br>[Case study](https://matthewpaver.github.io/work/policylens/)<br>[Code](https://github.com/MatthewPaver/iam-policy-auditor) |
+| **ProjectLens** | Check whether a written project update agrees with its schedule files (Primavera P6), see what moved, and record a decision. | [Open the example](https://matthewpaver.github.io/ProjectLens/change-assurance.html)<br>[Case study](https://matthewpaver.github.io/work/projectlens/)<br>[Code](https://github.com/MatthewPaver/ProjectLens) |
+| **RAG Regression Gate** | Many AI assistants look up documents before they answer (RAG). This checks that a search update still finds the right policy, and holds the update if an old document now ranks above it. | [Open the example](https://matthewpaver.github.io/demos/rag-gate/)<br>[Case study](https://matthewpaver.github.io/work/rag-regression-gate/)<br>[Code](https://github.com/MatthewPaver/rag-retrieval-gate) |
 
 ## Also worth a look
 
-| Project | What it helps someone do | What you can inspect |
+| Project | What it helps someone do | See it |
 |:---|:---|:---|
-| [QuickSupply](https://matthewpaver.github.io/store/apps/quicksupply/) | Follow a supply-teacher booking from school request through agency assignment to teacher response. | A recorded redesign case study based on an outdated Liverpool booking process, plus public source. It is not a live staffing service. |
-| [Marketing ML Lakehouse](https://matthewpaver.github.io/store/apps/lakehouse/) | Turn campaign files into checked reporting tables that another person can rebuild. | A public Python template and a console built from its generated evidence. Its next-day model is compared with a prior-day baseline: on the 24-row holdout it shows no reliable skill yet, and the README says so. |
+| **QuickSupply** | Follow a school's request for a supply teacher through the agency to the teacher. Based on an outdated Liverpool booking process; a recorded prototype, not a live service. | [Watch the walkthrough](https://matthewpaver.github.io/preview.html?app=quicksupply)<br>[Code](https://github.com/MatthewPaver/QuickSupply) |
+| **Marketing ML Lakehouse** | Turn raw ad-campaign files into checked reporting tables, and test whether a next-day forecast beats the simple guess that tomorrow looks like today. On the sample data it does not, and the page says so. | [Open the data checks](https://matthewpaver.github.io/marketing-ml-lakehouse/)<br>[Code](https://github.com/MatthewPaver/marketing-ml-lakehouse) |
 
-[All public projects and smaller examples](https://matthewpaver.github.io/work/) · [Case-study notes](CASE_STUDIES.md) · [Repository guide](Projects.md)
+[All public projects and code examples](https://matthewpaver.github.io/work/) · [Case-study notes](CASE_STUDIES.md) · [Repository guide](Projects.md)
 
 ## How I work
 
 I start with the user's decision and the data available to support it. I build a small end-to-end path, check the output against a simple alternative, and keep the evidence separate from the interpretation. Where a person must make the decision, the interface should make that responsibility clear.
 
-The portfolio separates live demos, recorded prototypes, reusable code and historical work. It also calls out synthetic data and unfinished evaluation. These projects show how I work; they do not imply commercial adoption or measured business results.
+These are personal projects with made-up data. Each one says what it does not do. None is client or employer work.
 
 **Tools I use:** Python, TypeScript, SQL, AWS, Docker, GitHub Actions, DuckDB, Power BI and LLM APIs. The implementation and limitations are documented with each project.

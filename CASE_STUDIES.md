@@ -14,7 +14,7 @@ These are personal public projects, not claims of client deployment. The portfol
 
 **Boundary:** The bundled schedules are synthetic. Static precedent cards are not live retrieval. A schedule difference does not establish its cause, contractual responsibility or the probability of project failure.
 
-[Read the case](https://matthewpaver.github.io/store/apps/projectlens/) · [Try the review](https://matthewpaver.github.io/ProjectLens/change-assurance.html) · [Source](https://github.com/MatthewPaver/ProjectLens)
+[Read the case](https://matthewpaver.github.io/work/projectlens/) · [Try the review](https://matthewpaver.github.io/ProjectLens/change-assurance.html) · [Source](https://github.com/MatthewPaver/ProjectLens)
 
 ## QuickSupply
 
@@ -42,7 +42,7 @@ These are personal public projects, not claims of client deployment. The portfol
 
 ## Further work
 
-- [PolicyLens](https://matthewpaver.github.io/store/apps/policylens/): separating permission evidence from AI explanation, with explicit limits to the AWS model.
-- [Winchester House Hunter](https://matthewpaver.github.io/store/apps/winchester/): an example home shortlist with budget filters, evidence checks and separate historical completed-sale context.
+- [PolicyLens](https://matthewpaver.github.io/work/policylens/): separating permission evidence from AI explanation, with explicit limits to the AWS model.
+- [Winchester Buyer Check](https://matthewpaver.github.io/store/apps/winchester/): an example home shortlist with budget filters, evidence checks and separate historical completed-sale context.
 - [HR Performance Analytics](https://matthewpaver.github.io/store/apps/hr/): a historical dashboard and a correction to two unsupported field interpretations. The original exports still need rebuilding.
 - [Can England Win It?](https://matthewpaver.github.io/store/apps/england/): a finished interactive simulation showing assumptions and repeatable scenarios, not a sporting forecast.

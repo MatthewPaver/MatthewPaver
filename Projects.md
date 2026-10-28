@@ -11,7 +11,7 @@ This is a selected guide, not an inventory of everything on my account. Start wi
 | [ProjectLens](https://github.com/MatthewPaver/ProjectLens) | Browser-based schedule comparison and review record. | Sample schedules are synthetic; evidence differences do not establish delay causation. |
 | [QuickSupply](https://github.com/MatthewPaver/QuickSupply) | Recorded three-role booking prototype and source. | Historical case study, not a live or deployment-ready staffing service. |
 | [PolicyLens](https://github.com/MatthewPaver/iam-policy-auditor) | Local AWS IAM change review, org-wide demo and documented benchmark. | Partial permission model; the benchmark is authored cases, not an AWS simulator check. |
-| [Winchester House Hunter](https://github.com/MatthewPaver/winchester-buyer-check) | Browser shortlist with seeded homes and public completed-sale context. | Example homes and heuristic scores, not current listings or valuations. |
+| [Winchester Buyer Check](https://github.com/MatthewPaver/winchester-buyer-check) | Browser shortlist with made-up example homes and public completed-sale context. | Example homes and heuristic scores, not current listings or valuations. |
 | [Marketing ML Lakehouse](https://github.com/MatthewPaver/marketing-ml-lakehouse) | Python rebuild instructions and fixed browser sample. | The newer prospective evaluation and GA4 adapter are local extensions. |
 | [HR Performance Analytics](https://github.com/MatthewPaver/hr-performance-dashboards) | Historical Power BI files and exports. | Read the [correction](https://matthewpaver.github.io/store/apps/hr/) first. The public exports retain unsupported absence and age interpretations. |
 | [Can England Win It?](https://github.com/MatthewPaver/can-england-win-it) | Finished browser-based scenario simulation. | An entertainment experiment, not a current forecast or betting tool. |
@@ -20,7 +20,7 @@ This is a selected guide, not an inventory of everything on my account. Start wi
 
 | Repository | What to inspect | Scope |
 |:---|:---|:---|
-| [RAG Retrieval Gate](https://github.com/MatthewPaver/rag-retrieval-gate) | A CI gate that scores retrieval changes on labelled questions and the public SciFact benchmark. | Checks that labelled evidence is retrieved, not that an answer is true. |
+| [RAG Regression Gate](https://github.com/MatthewPaver/rag-retrieval-gate) | A CI gate that scores retrieval changes on labelled questions and the public SciFact benchmark. | Checks that labelled evidence is retrieved, not that an answer is true. |
 | [PySpark Kafka Streaming](https://github.com/MatthewPaver/pyspark-kafka-streaming) | Small DataFrame examples and Kafka producer/consumer code. | Data-processing foundations, not a production streaming platform. |
 | [Recommender Evaluation Lab](https://github.com/MatthewPaver/recommender-eval-lab) | An offline lab that tests whether personalised recommendations beat a popularity baseline, using fictional sample interactions. | The sample is too small to establish model quality or online user benefit. |
 
