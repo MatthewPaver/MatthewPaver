@@ -1,122 +1,48 @@
-# Portfolio Audit
+# Portfolio evidence register
 
-Last verified: 27 July 2026
+Last verified: 11 November 2026
 
-This is the current disposition of the 35 repositories on this account. It
-replaces the old generated `100/100` report: a portfolio audit is a judgement
-record, not a score to optimise.
+This replaces the 27 July 2026 disposition list. It is a dated register of what the public entrance currently claims, not a scorecard to optimise.
 
-## Canonical product store
+## One public entrance
 
-[matthewpaver.github.io](https://matthewpaver.github.io/) is the one public
-entrance. It contains eight flagship products and three protected case studies.
-The old `/MatthewPaver/store/` routes are retained only as `noindex` redirects.
+[matthewpaver.github.io](https://matthewpaver.github.io/) is the store. Profile README and repository About text should match the same For / Job / Evidence / Limits pattern.
 
-### Flagships
+## Front door (inspectable prototypes)
 
-| Product | Public handoff | Current boundary |
-|:---|:---|:---|
-| ProjectLens | Live browser example, source, tests, release | Decision support, not contractual analysis |
-| Output Gate | Live browser/CLI example, source, tests, release | Known assertions, not a general truth detector |
-| DecisionGraph | Live browser example, source, tests, release | Synthetic cases; no invented organisational history |
-| Marketing ML Lakehouse | Runnable local pipeline, source, tests, release | Synthetic sample data; no ad-platform credentials |
-| Paper Trading | Reproducible research engine and draft release | Simulation only; no performance promise |
-| Winchester Buyer Check | Live private-by-design calculator and release | Illustrative planning, not financial advice |
-| Newco Assurance | Protected product boundary and private tested code | Method and customer-sensitive material remain private |
-
-Cadence, QuickSupply and Happening are presented as case studies. They are not
-dead-end “apps”: each page explains the problem, evidence, current boundary and
-why the operating code is protected.
-
-## Repository disposition
-
-### Keep public and actively maintain
-
-- The eight public-facing tool repositories named above, except the private
-  Newco implementation.
-- `happening-open-core` as the safe public schema and benchmark boundary.
-- `hr-performance-dashboards` as a technical Power BI handoff, not an app.
-- `pyspark-kafka-streaming` and `sentence-similarity-analysis` as supporting
-  technical evidence. They are intentionally not featured products.
-- `MatthewPaver` and `MatthewPaver.github.io` for profile routing and the
-  canonical store.
-
-### Keep private
-
-- Commercial product systems: Newco Assurance, Inference Brief, Cadence,
-  QuickSupply, full Happening and Winchester House.
-- Coursework, private datasets, credentialed pipelines and experiments whose
-  data or differentiation should not be redistributed.
-- Architexa and the dating recommender: both carry dataset/licensing or
-  commercial-boundary concerns that make a public showcase misleading.
-
-### Archived with provenance retained
-
-- `netflix-content-analysis`, `can-england-win-it`, `ai-weekly`,
-  `generate-newsletter`, `pinterest-image-scraper`, `portfolio` and
-  `hr-performance-portfolio`.
-- Archived repositories may remain readable when they explain useful history,
-  but they do not appear in the product store and should not receive scheduled
-  maintenance workflows.
-
-## Public-data decisions
-
-Public data is useful only when its licence, update cycle and role in the
-product are explicit. The best next integrations are:
-
-| Repository | Candidate | Useful for | Guardrail |
+| Product | Who for | Measured evidence on the page | Boundary |
 |:---|:---|:---|:---|
-| ProjectLens / DecisionGraph | [NISTA major-project data](https://www.gov.uk/government/collections/major-projects-data) | External benchmark fixtures for portfolio cost, confidence and delivery patterns | Do not invent task-level schedules, decisions or causality that the source does not contain |
-| Winchester House | [HM Land Registry Price Paid Data and UK HPI](https://www.gov.uk/government/publications/hm-land-registry-data/public-data) | Local sale-price context and transparent comparables | Keep the integration private until address-data reuse, attribution and product terms are settled |
-| HR Performance Dashboards | [ONS sickness-absence data](https://www.ons.gov.uk/employmentandlabourmarket/peopleinwork/employmentandemployeetypes/datasets/sicknessabsenceinthelabourmarket) | An external UK benchmark beside internal absence measures | Label population/method changes and never compare unlike periods silently |
-| Happening | [London cultural-infrastructure data](https://data.london.gov.uk/) | Venue seed coverage and source-completeness checks | Treat it as a benchmark, not a replacement for current event evidence |
+| RAG Regression Gate | Engineers checking search updates for staff assistants | Saved CLI comparisons; pass means “not worse”, not “answers are good” | Browser is a saved run, not a live re-score |
+| Marketing ML Lakehouse | Analysts rebuilding campaign tables | Model does not beat persistence beyond noise on sample data | Synthetic sample; no ad-platform credentials |
+| Winchester Buyer Check | First-time buyers planning an offer | HMLR Winchester snapshot + dated GOV.UK rules | Nine homes are made-up; no AI; not advice |
+| PolicyLens | Cloud reviewers comparing IAM policy versions | Set 5 **21/30**; false pass `PLH5-A21` (MFA-less trust) published | Not whole-account; Pass ≠ approval |
+| ProjectLens | Project reviewers checking updates vs dates | Set 5 **29/40**; contradiction class **3/10** | Misses contradictions; no causation/entitlement |
 
-Output Gate should continue to use synthetic regression cases:
-public corpora would add little while making privacy and expected-answer
-boundaries harder to explain. Marketing ML Lakehouse should retain a generated
-sample by default. Paper Trading should retain hashed, reproducible market-data
-provenance and must not package fixture results as real returns.
+## Support / case study
 
-When one of the candidates is implemented, prefer a small fetch/normalise
-script, source URL, licence note, retrieval date and content hash over committing
-an opaque bulk download.
+| Product | Role |
+|:---|:---|
+| QuickSupply | Recorded fictional booking prototype, not a live service |
+| recommender-eval-lab | Teaching fixture on planted synthetic preferences |
+| pyspark-kafka-streaming | Local streaming examples |
+| hr-performance-dashboards | AdventureWorks Power BI case study |
 
-## GitHub Actions policy
+## Private (not public proof)
 
-- Product repositories: lint, tests, build, dependency/security audit and one
-  meaningful browser smoke path on pull requests.
-- Deployed products: a small scheduled production-health check.
-- Data products: scheduled ingestion only where data genuinely changes, plus
-  freshness/source-health checks. Generation, deployment and source health
-  remain separate when they fail for different reasons.
-- Static evidence repositories: validate on change; do not run expensive
-  mutation, scrape or browser jobs on a schedule without a maintained threshold
-  and an owner.
-- Archived repositories: no scheduled workflows.
+Commercial and personal systems stay private. Public pages must not imply they are live customer products. Do not list private venture names on the homepage.
 
-This keeps Actions as product evidence rather than activity theatre.
+## Archived names no longer front door
 
-## Packaging for non-technical users
+Output Gate, DecisionGraph, Paper Trading, Can England Win It? and similar archived experiments may remain readable where useful. They are not current flagships.
 
-- Browser tools are the preferred executable: they need no install and can keep
-  sensitive inputs local.
-- GitHub Releases provide a stable versioned download for the flagship public
-  repositories.
-- A desktop executable is worthwhile only where the user needs offline file
-  access or a long-running local process. It would add signing, update and
-  malware-warning support obligations, so it is not a useful wrapper for every
-  notebook, data pipeline or static site.
+## How to read a card
 
-## Commercial boundary
+1. **For** — the person and decision  
+2. **Job** — what they give the tool and what comes back  
+3. **Evidence** — linked example, measured result, important failure  
+4. **Limits** — what is unproved; who decides  
+5. **Next** — one accurately labelled action  
 
-Do not place the whole portfolio in the public domain. MIT is appropriate for
-the small reusable public tools; it does not protect the product name or create
-a warranty. Keep customer workflows, private datasets, scoring methods,
-credentialed collectors and operating advantages private. Winchester Buyer
-Check remains publicly viewable with copyright retained rather than being
-silently open-sourced.
+## Verification habit
 
-GitHub Pages is appropriate for the public static catalogue and browser demos.
-Commercial SaaS, authentication, sensitive transactions and paid product
-workflows belong on dedicated hosting.
-
+When claims change, update this file’s date, the homepage cards and the repository READMEs in the same change. Seen regression sets and held-out fixtures must not be described as “pending” if the files are in the tree.
