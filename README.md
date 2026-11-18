@@ -22,7 +22,7 @@ Each card follows the same pattern: who it is for, the job, the evidence (includ
 |:---|:---|:---|
 | **QuickSupply** | Follow a school’s cover request through agency to teacher. Recorded prototype, not a live service. | [Watch the walkthrough](https://matthewpaver.github.io/preview.html?app=quicksupply)<br>[Code](https://github.com/MatthewPaver/QuickSupply) |
 | **Marketing ML Lakehouse** | Rebuild campaign tables and test a next-day forecast against “tomorrow looks like today”. On the sample it does not beat that baseline, and the page says so. | [Open the data checks](https://matthewpaver.github.io/marketing-ml-lakehouse/)<br>[Code](https://github.com/MatthewPaver/marketing-ml-lakehouse) |
-| **Winchester Buyer Check** | First-time-buyer planning aid with dated GOV.UK rules and a real HMLR snapshot. Nine homes are made-up; no AI. | [Open the shortlist](https://matthewpaver.github.io/winchester-buyer-check/)<br>[Code](https://github.com/MatthewPaver/winchester-buyer-check) |
+| **Winchester Buyer Check** | First-time-buyer planning aid with dated GOV.UK rules. The nine homes and their price bands are made up; the market page uses a real 2025 HMLR snapshot. No AI. | [Open the shortlist](https://matthewpaver.github.io/winchester-buyer-check/)<br>[Code](https://github.com/MatthewPaver/winchester-buyer-check) |
 
 [All public projects](https://matthewpaver.github.io/work/) · [Case-study notes](CASE_STUDIES.md) · [Repository guide](Projects.md)
 
